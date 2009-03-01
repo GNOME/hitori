@@ -31,6 +31,7 @@ void
 hitori_new_game (Hitori *hitori, guint board_size)
 {
 	hitori->made_a_move = FALSE;
+	hitori->display_error = FALSE;
 
 	hitori_generate_board (hitori, board_size, -1);
 	hitori_clear_undo_stack (hitori);
@@ -133,6 +134,16 @@ hitori_disable_events (Hitori *hitori)
 	gtk_action_set_sensitive (hitori->redo_action, FALSE);
 	gtk_action_set_sensitive (hitori->undo_action, FALSE);
 	gtk_action_set_sensitive (hitori->hint_action, FALSE);
+}
+
+void
+hitori_set_error_position (Hitori *hitori, HitoriVector position)
+{
+	if (hitori->debug)
+		g_debug ("Setting error position as %u, %u", position.x, position.y);
+
+	hitori->error_position = position;
+	hitori->display_error = TRUE;
 }
 
 void

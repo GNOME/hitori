@@ -23,7 +23,9 @@
 #include "main.h"
 
 /* Rule 1: There must only be one of each number in the unpainted cells
- * in each row and column. */
+ * in each row and column.
+ * NOTE: We don't set the error position with this rule, or it would give
+ * the game away! */
 gboolean
 hitori_check_rule1 (Hitori *hitori)
 {
@@ -127,6 +129,10 @@ hitori_check_rule2 (Hitori *hitori)
 				    (iter.y < hitori->board_size - 1 && hitori->board[iter.x][iter.y+1].status & CELL_PAINTED)) {
 					if (hitori->debug)
 						    g_debug ("Rule 2 failed");
+
+					/* Set the error position */
+					hitori_set_error_position (hitori, iter);
+
 					return FALSE;
 				}
 			}
@@ -135,6 +141,9 @@ hitori_check_rule2 (Hitori *hitori)
 
 	if (hitori->debug)
 		g_debug ("Rule 2 OK");
+
+	/* Clear the error */
+	hitori->display_error = FALSE;
 
 	return TRUE;
 }
@@ -235,6 +244,9 @@ hitori_check_rule3 (Hitori *hitori)
 				if (max_group == 0)
 					max_group = group_bases[groups[iter.x][iter.y]];
 				else if (group_bases[groups[iter.x][iter.y]] != max_group) {
+					/* Set the error position */
+					hitori_set_error_position (hitori, iter);
+
 					/* Rule failed */
 					g_queue_free (unchecked_cells_x);
 					g_queue_free (unchecked_cells_y);
@@ -262,6 +274,9 @@ hitori_check_rule3 (Hitori *hitori)
 
 	if (hitori->debug)
 		g_debug ("Rule 3 OK");
+
+	/* Clear the error */
+	hitori->display_error = FALSE;
 
 	return TRUE;
 }

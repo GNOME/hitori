@@ -85,6 +85,25 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	gdouble x_pos, y_pos;
 	GtkStyle *style;
 
+	/* Check to see if all three rules are satisfied yet.
+	 * If they are, we've won.
+	 * NOTE: We check rule 1 last, as it's the only rule
+	 * which won't set an error position. */
+	if (check_win &&
+	    hitori_check_rule2 (hitori) &&
+	    hitori_check_rule3 (hitori) &&
+	    hitori_check_rule1 (hitori)) {
+		/* Win! */
+		hitori_disable_events (hitori);
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_INFO,
+				GTK_BUTTONS_OK,
+				_("You've won!"));
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
+	}
+
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
 	style = gtk_widget_get_style (hitori->drawing_area);
 
@@ -120,7 +139,11 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 				state = GTK_STATE_INSENSITIVE;
 
 			/* Draw the fill */
-			gdk_cairo_set_source_color (cr, &style->bg[state]);
+			if (hitori->display_error == TRUE &&
+			    hitori->error_position.x == iter.x && hitori->error_position.y == iter.y)
+				cairo_set_source_rgb (cr, 0.678431373, 0.498039216, 0.658823529); /* Tango's lightest "plum" */
+			else
+				gdk_cairo_set_source_color (cr, &style->bg[state]);
 			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 			cairo_fill (cr);
 
@@ -187,23 +210,6 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 		cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
 		cairo_stroke (cr);
 	}
-
-	/* Check to see if all three rules are satisfied yet.
-	 * If they are, we've won. */
-	if (check_win &&
-	    hitori_check_rule1 (hitori) &&
-	    hitori_check_rule2 (hitori) &&
-	    hitori_check_rule3 (hitori)) {
-		/* Win! */
-		hitori_disable_events (hitori);
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_INFO,
-				GTK_BUTTONS_OK,
-				_("You've won!"));
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
-	}
 }
 
 /**
@@ -249,15 +255,14 @@ hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori
 gboolean
 hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori)
 {
-	if (hitori->processing_events == FALSE)
-		return FALSE;
-
 	gint width, height;
 	gfloat cell_size;
 	HitoriVector pos;
-	cairo_t *cr;
 	HitoriUndo *undo;
 	gboolean recheck = FALSE;
+
+	if (hitori->processing_events == FALSE)
+		return FALSE;
 
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &width, &height);
 
@@ -308,12 +313,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	hitori->hint_status = HINT_FLASHES;
 
 	/* Redraw */
-	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
-	cairo_rectangle (cr, pos.x * cell_size + hitori->drawing_area_x_offset, pos.y * cell_size + hitori->drawing_area_y_offset,
-				cell_size, cell_size);
-	cairo_clip (cr);
-	hitori_draw_board (hitori, cr, recheck);
-	cairo_destroy (cr);
+	hitori_draw_board_simple (hitori, recheck, FALSE);
 
 	return FALSE;
 }

@@ -83,6 +83,7 @@ typedef struct {
 	guint hint_status;
 	HitoriVector hint_position;
 
+	gboolean display_error;
 	HitoriVector error_position;
 } Hitori;
 
@@ -93,6 +94,7 @@ void hitori_print_board (Hitori *hitori);
 void hitori_free_board (Hitori *hitori);
 void hitori_enable_events (Hitori *hitori);
 void hitori_disable_events (Hitori *hitori);
+void hitori_set_error_position (Hitori *hitori, HitoriVector position);
 void hitori_quit (Hitori *hitori);
 
 G_END_DECLS
