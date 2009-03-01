@@ -25,8 +25,12 @@
 
 G_BEGIN_DECLS
 
-#define BOARD_SIZE hitori->board_size
 #define DEFAULT_BOARD_SIZE 5
+
+typedef struct {
+	guchar x;
+	guchar y;
+} HitoriVector;
 
 typedef enum {
 	UNDO_NEW_GAME,
@@ -38,18 +42,21 @@ typedef enum {
 typedef struct _HitoriUndo HitoriUndo;
 struct _HitoriUndo {
 	HitoriUndoType type;
-	guint x;
-	guint y;
+	HitoriVector cell;
 	HitoriUndo *undo;
 	HitoriUndo *redo;
 };
 
+typedef enum {
+	CELL_PAINTED = 1 << 1,
+	CELL_SHOULD_BE_PAINTED = 1 << 2,
+	CELL_TAG1 = 1 << 3,
+	CELL_TAG2 = 1 << 4
+} HitoriCellStatus;
+
 typedef struct {
-	guint num;
-	gboolean painted;
-	gboolean tag1;
-	gboolean tag2;
-	gboolean should_be_painted;
+	guchar num;
+	guchar status;
 } HitoriCell;
 
 typedef struct {
@@ -74,8 +81,9 @@ typedef struct {
 	HitoriUndo *undo_stack;
 
 	guint hint_status;
-	guint hint_x;
-	guint hint_y;
+	HitoriVector hint_position;
+
+	HitoriVector error_position;
 } Hitori;
 
 void hitori_new_game (Hitori *hitori, guint board_size);

@@ -27,7 +27,9 @@
 void
 hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 {
-	guint i, total, old_total, x, y;
+	guchar i;
+	guint total, old_total;
+	HitoriVector iter;
 	gboolean *accum, **horiz_accum;
 
 	/* Seed the random number generator */
@@ -47,15 +49,15 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 
 	hitori->board_size = new_board_size;
 
-	accum = g_new0 (gboolean, BOARD_SIZE + 2); /* Stores which numbers have been used in the current column */
-	horiz_accum = g_new (gboolean*, BOARD_SIZE); /* Stores which numbers have been used in each row */
-	for (x = 0; x < BOARD_SIZE; x++)
-		horiz_accum[x] = g_slice_alloc0 (sizeof (gboolean) * (BOARD_SIZE + 2));
+	accum = g_new0 (gboolean, hitori->board_size + 2); /* Stores which numbers have been used in the current column */
+	horiz_accum = g_new (gboolean*, hitori->board_size); /* Stores which numbers have been used in each row */
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
+		horiz_accum[iter.x] = g_slice_alloc0 (sizeof (gboolean) * (hitori->board_size + 2));
 
 	/* Allocate the board */
-	hitori->board = g_new (HitoriCell*, BOARD_SIZE);
-	for (i = 0; i < BOARD_SIZE; i++)
-		hitori->board[i] = g_slice_alloc0 (sizeof (HitoriCell) * BOARD_SIZE);
+	hitori->board = g_new (HitoriCell*, hitori->board_size);
+	for (i = 0; i < hitori->board_size; i++)
+		hitori->board[i] = g_slice_alloc0 (sizeof (HitoriCell) * hitori->board_size);
 
 	/* Generate some randomly-placed painted cells */
 	total = rand () % 5 + 13; /* Total number of painted cells (between 14 and 18 inclusive) */
@@ -64,91 +66,90 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	 * future. */
 	for (i = 0; i < total; i++) {
 		do {
-			x = rand () % BOARD_SIZE;
-			y = rand () % BOARD_SIZE;
+			iter.x = rand () % hitori->board_size;
+			iter.y = rand () % hitori->board_size;
 
-			if (y >= 1 && hitori->board[x][y-1].painted == FALSE &&
-			    y + 1 < BOARD_SIZE && hitori->board[x][y+1].painted == FALSE &&
-			    x >= 1 && hitori->board[x-1][y].painted == FALSE &&
-			    x + 1 < BOARD_SIZE && hitori->board[x+1][y].painted == FALSE)
+			if (iter.y >= 1 && (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE &&
+			    iter.y + 1 < hitori->board_size && (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE &&
+			    iter.x >= 1 && (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE &&
+			    iter.x + 1 < hitori->board_size && (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE)
 				break;
 		} while (TRUE);
 
-		hitori->board[x][y].painted = TRUE;
-		hitori->board[x][y].should_be_painted = TRUE;
+		hitori->board[iter.x][iter.y].status |= (CELL_PAINTED | CELL_SHOULD_BE_PAINTED);
 	}
 
 	/* Check that the painted squares don't mess everything up */
 	if (hitori_check_rule2 (hitori) == FALSE ||
 	    hitori_check_rule3 (hitori) == FALSE) {
 	    	g_free (accum);
-		for (x = 0; x < BOARD_SIZE; x++)
-			g_slice_free1 (sizeof (gboolean) * (BOARD_SIZE + 2), horiz_accum[x]);
+		for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
+			g_slice_free1 (sizeof (gboolean) * (hitori->board_size + 2), horiz_accum[iter.x]);
 		g_free (horiz_accum);
 
-		return hitori_generate_board (hitori, BOARD_SIZE, seed + 1);
+		return hitori_generate_board (hitori, hitori->board_size, seed + 1);
 	}
 
 	/* Fill in the squares, leaving the painted ones blank,
 	 * and making sure not to repeat any previous numbers. */
-	for (x = 0; x < BOARD_SIZE; x++) {
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
 		/* Reset the vertical accumulator */
-		for (y = 1; y < BOARD_SIZE + 2; y++)
-			accum[y] = FALSE;
+		for (iter.y = 1; iter.y < hitori->board_size + 2; iter.y++)
+			accum[iter.y] = FALSE;
 
 		i = 0;
 		accum[0] = TRUE;
-		total = BOARD_SIZE + 1;
+		total = hitori->board_size + 1;
 		old_total = total;
 
-		for (y = 0; y < BOARD_SIZE; y++) {
-			if (hitori->board[x][y].painted == FALSE) {
-				while (accum[i] == TRUE || horiz_accum[y][i] == TRUE) {
-					if (horiz_accum[y][i] == TRUE && accum[i] == FALSE)
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
+			if ((hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE) {
+				while (accum[i] == TRUE || horiz_accum[iter.y][i] == TRUE) {
+					if (horiz_accum[iter.y][i] == TRUE && accum[i] == FALSE)
 						total--;
 
 					if (total < 1) {
 						g_free (accum);
-						for (x = 0; x < BOARD_SIZE; x++)
-							g_slice_free1 (sizeof (gboolean) * (BOARD_SIZE + 2), horiz_accum[x]);
+						for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
+							g_slice_free1 (sizeof (gboolean) * (hitori->board_size + 2), horiz_accum[iter.x]);
 						g_free (horiz_accum);
 
-						return hitori_generate_board (hitori, BOARD_SIZE, seed + 1); /* We're buggered */
+						return hitori_generate_board (hitori, hitori->board_size, seed + 1); /* We're buggered */
 					}
 
-					i = rand () % (BOARD_SIZE + 1) + 1;
+					i = rand () % (hitori->board_size + 1) + 1;
 				}
 
 				accum[i] = TRUE;
-				horiz_accum[y][i] = TRUE;
+				horiz_accum[iter.y][i] = TRUE;
 				total = old_total;
 				total--;
 
-				hitori->board[x][y].num = i;
+				hitori->board[iter.x][iter.y].num = i;
 			}
 		}
 	}
 
 	g_free (accum);
-	for (x = 0; x < BOARD_SIZE; x++)
-		g_slice_free1 (sizeof (gboolean) * (BOARD_SIZE + 2), horiz_accum[x]);
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
+		g_slice_free1 (sizeof (gboolean) * (hitori->board_size + 2), horiz_accum[iter.x]);
 	g_free (horiz_accum);
 
 	/* Fill in the painted squares, making sure they duplicate a number
 	 * already in the column/row. */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++) {
-			if (hitori->board[x][y].painted == TRUE) {
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
 				do {
-					i = rand () % BOARD_SIZE;
-					if (x > y)
-						total = hitori->board[x][i].num; /* Take a number from the row */
+					i = rand () % hitori->board_size;
+					if (iter.x > iter.y)
+						total = hitori->board[iter.x][i].num; /* Take a number from the row */
 					else
-						total = hitori->board[i][y].num; /* Take a number from the column */
+						total = hitori->board[i][iter.y].num; /* Take a number from the column */
 				} while (total == 0);
 
-				hitori->board[x][y].num = total;
-				hitori->board[x][y].painted = FALSE;
+				hitori->board[iter.x][iter.y].num = total;
+				hitori->board[iter.x][iter.y].status &= ~CELL_PAINTED;
 			}
 		}
 	}

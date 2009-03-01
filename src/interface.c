@@ -27,6 +27,12 @@
 #include "interface.h"
 #include "rules.h"
 
+#define FONT_SCALE 0.9
+#define TAG_OFFSET 0.75
+#define TAG_RADIUS 0.25
+#define HINT_FLASHES 6
+#define HINT_INTERVAL 500
+
 GtkWidget *
 hitori_create_interface (Hitori *hitori)
 {
@@ -73,7 +79,8 @@ void
 hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 {
 	gint area_width, area_height;
-	guint x, y, board_width, board_height;
+	HitoriVector iter;
+	guint board_width, board_height;
 	gfloat cell_size;
 	gdouble x_pos, y_pos;
 	GtkStyle *style;
@@ -91,7 +98,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	}
 
 	/* Work out the cell size and scale all text accordingly */
-	cell_size = board_width / BOARD_SIZE;
+	cell_size = board_width / hitori->board_size;
 	pango_font_description_set_absolute_size (style->font_desc, cell_size * FONT_SCALE * 0.8 * PANGO_SCALE);
 
 	/* Centre the board */
@@ -101,15 +108,15 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 
 	/* Draw the cells */
 	x_pos = 0;
-	for (x = 0; x < BOARD_SIZE; x++) { /* columns (X) */
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) { /* columns (X) */
 		y_pos = 0;
-		for (y = 0; y < BOARD_SIZE; y++) { /* rows (Y) */
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) { /* rows (Y) */
 			gchar *text;
 			PangoLayout *layout;
 			gint text_width, text_height;
 			GtkStateType state = GTK_STATE_NORMAL;
 
-			if (hitori->board[x][y].painted == TRUE)
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
 				state = GTK_STATE_INSENSITIVE;
 
 			/* Draw the fill */
@@ -118,8 +125,8 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 			cairo_fill (cr);
 
 			/* If the cell is tagged, draw the tag dots */
-			if (hitori->board[x][y].tag1 == TRUE) {
-				if (hitori->board[x][y].painted == TRUE)
+			if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
+				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
 					cairo_set_source_rgb (cr, 0.643137255, 0, 0); /* Tango's darkest "scarlet red" */				
 				else
 					cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
@@ -131,8 +138,8 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 				cairo_fill (cr);
 			}
 
-			if (hitori->board[x][y].tag2 == TRUE) {
-				if (hitori->board[x][y].painted == TRUE)
+			if (hitori->board[iter.x][iter.y].status & CELL_TAG2) {
+				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
 					cairo_set_source_rgb (cr, 0.305882353, 0.603921569, 0.023529412); /* Tango's darkest "chameleon" */
 				else
 					cairo_set_source_rgb (cr, 0.541176471, 0.88627451, 0.203921569); /* Tango's lightest "chameleon" */
@@ -151,7 +158,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 			cairo_stroke (cr);
 
 			/* Draw the text */
-			text = g_strdup_printf ("%u", hitori->board[x][y].num);
+			text = g_strdup_printf ("%u", hitori->board[iter.x][iter.y].num);
 			layout = pango_cairo_create_layout (cr);
 
 			pango_layout_set_text (layout, text, -1);
@@ -177,7 +184,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
 		cairo_set_source_rgb (cr, 1, 0, 0); /* red */
-		cairo_rectangle (cr, hitori->hint_x * cell_size, hitori->hint_y * cell_size, cell_size, cell_size);
+		cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
 		cairo_stroke (cr);
 	}
 
@@ -247,7 +254,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 
 	gint width, height;
 	gfloat cell_size;
-	guint x, y;
+	HitoriVector pos;
 	cairo_t *cr;
 	HitoriUndo *undo;
 	gboolean recheck = FALSE;
@@ -260,33 +267,32 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	else if (width < height)
 		height = width;
 
-	cell_size = width / BOARD_SIZE;
+	cell_size = width / hitori->board_size;
 
 	/* Determine the cell in which the button was released */
-	x = floor ((event->x - hitori->drawing_area_x_offset) / cell_size);
-	y = floor ((event->y - hitori->drawing_area_y_offset) / cell_size);
+	pos.x = floor ((event->x - hitori->drawing_area_x_offset) / cell_size);
+	pos.y = floor ((event->y - hitori->drawing_area_y_offset) / cell_size);
 
-	if (x >= BOARD_SIZE || y >= BOARD_SIZE)
+	if (pos.x >= hitori->board_size || pos.y >= hitori->board_size)
 		return FALSE;
 
 	/* Update the undo stack */
 	undo = g_new (HitoriUndo, 1);
-	undo->x = x;
-	undo->y = y;
+	undo->cell = pos;
 	undo->undo = hitori->undo_stack;
 	undo->redo = NULL;
 
 	if (event->state & GDK_SHIFT_MASK) {
 		/* Update tag 1's state */
-		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1);
+		hitori->board[pos.x][pos.y].status ^= CELL_TAG1;
 		undo->type = UNDO_TAG1;
 	} else if (event->state & GDK_CONTROL_MASK) {
 		/* Update tag 2's state */
-		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2);
+		hitori->board[pos.x][pos.y].status ^= CELL_TAG2;
 		undo->type = UNDO_TAG2;
 	} else {
 		/* Update the paint overlay */
-		hitori->board[x][y].painted = !(hitori->board[x][y].painted);
+		hitori->board[pos.x][pos.y].status ^= CELL_PAINTED;
 		undo->type = UNDO_PAINT;
 		recheck = TRUE;
 	}
@@ -303,7 +309,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 
 	/* Redraw */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
-	cairo_rectangle (cr, x * cell_size + hitori->drawing_area_x_offset, y * cell_size + hitori->drawing_area_y_offset,
+	cairo_rectangle (cr, pos.x * cell_size + hitori->drawing_area_x_offset, pos.y * cell_size + hitori->drawing_area_y_offset,
 				cell_size, cell_size);
 	cairo_clip (cr);
 	hitori_draw_board (hitori, cr, recheck);
@@ -321,7 +327,7 @@ hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 void
 hitori_new_game_cb (GtkAction *action, Hitori *hitori)
 {
-	hitori_new_game (hitori, BOARD_SIZE);
+	hitori_new_game (hitori, hitori->board_size);
 }
 
 static gboolean
@@ -348,7 +354,7 @@ hitori_update_hint (gpointer user_data)
 		board_height = area_width;
 	}
 
-	cell_size = board_width / BOARD_SIZE;
+	cell_size = board_width / hitori->board_size;
 
 	/* Centre the board */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
@@ -359,7 +365,7 @@ hitori_update_hint (gpointer user_data)
 	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
 
 	/* Clip to the cell */
-	cairo_rectangle (cr, hitori->hint_x * cell_size, hitori->hint_y * cell_size, cell_size, cell_size);
+	cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
 	cairo_clip (cr);
 	cairo_restore (cr);
 
@@ -372,17 +378,18 @@ hitori_update_hint (gpointer user_data)
 void
 hitori_hint_cb (GtkAction *action, Hitori *hitori)
 {
-	guint x, y;
+	HitoriVector iter;
 
 	/* Find the first cell which should be painted, but isn't (or vice-versa) */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++) {
-			if ((hitori->board[x][y].painted == FALSE && hitori->board[x][y].should_be_painted == TRUE) ||
-			    (hitori->board[x][y].painted == TRUE && hitori->board[x][y].should_be_painted == FALSE)) {
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
+			guchar status = hitori->board[iter.x][iter.y].status & (CELL_PAINTED | CELL_SHOULD_BE_PAINTED);
+
+			if (status <= MAX (CELL_SHOULD_BE_PAINTED, CELL_PAINTED) &&
+			    status > 0) {
 				/* Set up the cell for hinting */
 				hitori->hint_status = 0;
-				hitori->hint_x = x;
-				hitori->hint_y = y;
+				hitori->hint_position = iter;
 				g_timeout_add (HINT_INTERVAL, hitori_update_hint,(gpointer) hitori);
 				hitori_update_hint ((gpointer) hitori);
 				return;
@@ -399,13 +406,13 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 
 	switch (hitori->undo_stack->type) {
 		case UNDO_PAINT:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_PAINTED;
 			break;
 		case UNDO_TAG1:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
 			break;
 		case UNDO_TAG2:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
 			/* This is just here to stop the compiler warning */
@@ -432,13 +439,13 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 
 	switch (hitori->undo_stack->type) {
 		case UNDO_PAINT:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_PAINTED;
 			break;
 		case UNDO_TAG1:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
 			break;
 		case UNDO_TAG2:
-			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2);
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
 			/* This is just here to stop the compiler warning */
@@ -474,7 +481,7 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
-				_("The help contents could not be displayed."), PACKAGE_DATA_DIR);
+				_("The help contents could not be displayed."));
 		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), error->message);
 
 		gtk_dialog_run (GTK_DIALOG (dialog));
