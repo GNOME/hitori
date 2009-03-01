@@ -175,6 +175,8 @@ main (int argc, char *argv[])
 	undo->undo = NULL;
 	hitori->undo_stack = undo;
 
+	/* Showtime! */
+	srand (time (0));
 	hitori_create_interface (hitori);
 	hitori_generate_board (hitori);
 	gtk_widget_show (hitori->window);
