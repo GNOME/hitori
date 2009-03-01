@@ -84,6 +84,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	gfloat cell_size;
 	gdouble x_pos, y_pos;
 	GtkStyle *style;
+	gboolean has_won = FALSE;
 
 	/* Check to see if all three rules are satisfied yet.
 	 * If they are, we've won.
@@ -93,15 +94,8 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	    hitori_check_rule2 (hitori) &&
 	    hitori_check_rule3 (hitori) &&
 	    hitori_check_rule1 (hitori)) {
-		/* Win! */
-		hitori_disable_events (hitori);
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_INFO,
-				GTK_BUTTONS_OK,
-				_("You've won!"));
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
+		/* Win! (Tell them later, once we've re-rendered the winning board) */
+		has_won = TRUE;
 	}
 
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
@@ -202,6 +196,19 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 		}
 
 		x_pos += cell_size;
+	}
+
+	if (has_won == TRUE) {
+		/* Tell the user they've won, and don't draw any hints */
+		hitori_disable_events (hitori);
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_INFO,
+				GTK_BUTTONS_OK,
+				_("You've won!"));
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
+		return;
 	}
 
 	/* Draw a hint if applicable */

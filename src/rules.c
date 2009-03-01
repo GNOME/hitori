@@ -153,120 +153,90 @@ gboolean
 hitori_check_rule3 (Hitori *hitori)
 {
 	HitoriVector iter;
-	guint max_group = 0;
-	GQueue *unchecked_cells_x, *unchecked_cells_y;
-	guint **groups = g_new (guint*, hitori->board_size);
+	guint i, max_group, *group_bases, **groups;
+
+	max_group = 0;
+
+	groups = g_new (guint*, hitori->board_size);
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
 		groups[iter.x] = g_new0 (guint, hitori->board_size);
-	guint *group_bases = g_new0 (guint, hitori->board_size * hitori->board_size / 2);
+	group_bases = g_new0 (guint, hitori->board_size * hitori->board_size / 2);
 
-	/* HACKHACK! TODO: Clean up this horrible mess */
-	unchecked_cells_x = g_queue_new ();
-	unchecked_cells_y = g_queue_new ();
+	/* Loop through each cell assigning it a group, and gradually merging the
+	 * groups until either there's only one group of unpainted cells left
+	 * (the rule is satisfied), or there are several (the rule is broken).
+	 * We only look at the cells above and to the left of the current one, as
+	 * this eliminates a lot of lookups, yet we still examine the relationship
+	 * between each pair of contiguous cells. */
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
+			guint *this_group, up_group, left_group;
 
-	iter.x = 0;
-	iter.y = 0;
+			/* To save lots of lookups in the following code,
+			 * get the local groups up now. If the indices are invalid,
+			 * they're set to 0 so that some checks below can be removed. */
+			this_group = &groups[iter.x][iter.y];
+			up_group = (iter.y >= 1) ? groups[iter.x][iter.y - 1] : 0;
+			left_group = (iter.x >= 1) ? groups[iter.x - 1][iter.y] : 0;
 
-	do {
-		if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
-			/* If it's painted ensure it's in group 0 */
-			groups[iter.x][iter.y] = 0;
-		} else {
-			/* Try and apply a group from a surrounding cell */
-			if (iter.y >= 1 && groups[iter.x][iter.y-1] != 0 && (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE)
-				groups[iter.x][iter.y] = groups[iter.x][iter.y-1];
-			else if (iter.y + 1 < hitori->board_size && groups[iter.x][iter.y+1] != 0 && (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE)
-				groups[iter.x][iter.y] = groups[iter.x][iter.y+1];
-			else if (iter.x >= 1 && groups[iter.x-1][iter.y] != 0 && (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE)
-				groups[iter.x][iter.y] = groups[iter.x-1][iter.y];
-			else if (iter.x + 1 < hitori->board_size && groups[iter.x+1][iter.y] != 0 && (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE)
-				groups[iter.x][iter.y] = groups[iter.x+1][iter.y];
-			else {
-				max_group++;
-				group_bases[max_group] = max_group;
-				groups[iter.x][iter.y] = max_group;
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
+				/* If it's painted ensure it's in group 0 */
+				*this_group = 0;
+			} else {
+				/* Try and apply a group from a surrounding cell */
+				if (up_group != 0)
+					*this_group = up_group;
+				else if (left_group != 0)
+					*this_group = left_group;
+				else {
+					/* Create a new group */
+					max_group++;
+					group_bases[max_group] = max_group;
+					*this_group = max_group;
+				}
+
+				/* Check for converged groups */
+				if (up_group != 0 && group_bases[up_group] != group_bases[*this_group])
+					group_bases[*this_group] = group_bases[up_group];
+				else if (left_group != 0 && group_bases[left_group] != group_bases[*this_group])
+					group_bases[*this_group] = group_bases[left_group];
 			}
-
-			/* Check for converged groups */
-			if (iter.y >= 1 && (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE && groups[iter.x][iter.y-1] != 0 && group_bases[groups[iter.x][iter.y-1]] != group_bases[groups[iter.x][iter.y]])
-				group_bases[groups[iter.x][iter.y]] = group_bases[groups[iter.x][iter.y-1]];
-			else if (iter.y + 1 < hitori->board_size && (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE && groups[iter.x][iter.y+1] != 0 && group_bases[groups[iter.x][iter.y+1]] != group_bases[groups[iter.x][iter.y]])
-				group_bases[groups[iter.x][iter.y]] = group_bases[groups[iter.x][iter.y+1]];
-			else if (iter.x >= 1 && (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE && groups[iter.x-1][iter.y] != 0 && group_bases[groups[iter.x-1][iter.y]] != group_bases[groups[iter.x][iter.y]])
-				group_bases[groups[iter.x][iter.y]] = group_bases[groups[iter.x-1][iter.y]];
-			else if (iter.x + 1 < hitori->board_size && (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE && groups[iter.x+1][iter.y] != 0 && group_bases[groups[iter.x+1][iter.y]] != group_bases[groups[iter.x][iter.y]])
-				group_bases[groups[iter.x][iter.y]] = group_bases[groups[iter.x+1][iter.y]];
 		}
-
-		/* Find somewhere else to go */
-		if (iter.y >= 1 && iter.x < hitori->board_size && groups[iter.x][iter.y-1] == 0 && (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE) {
-			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (iter.x));
-			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (iter.y-1));
-		}
-		if (iter.y + 1 < hitori->board_size && groups[iter.x][iter.y+1] == 0 && (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE) {
-			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (iter.x));
-			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (iter.y+1));
-		}
-		if (iter.x >= 1 && iter.y < hitori->board_size && groups[iter.x-1][iter.y] == 0 && (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE) {
-			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (iter.x-1));
-			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (iter.y));
-		}
-		if (iter.x + 1 < hitori->board_size && groups[iter.x+1][iter.y] == 0 && (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE) {
-			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (iter.x+1));
-			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (iter.y));
-		}
-
-		/* Fetch some new coordinates to spider */
-		iter.x = GPOINTER_TO_UINT (g_queue_pop_head (unchecked_cells_x));
-		iter.y = GPOINTER_TO_UINT (g_queue_pop_head (unchecked_cells_y));
-	} while ((GUINT_TO_POINTER (iter.x) != NULL || GUINT_TO_POINTER (iter.y) != NULL) &&
-		 g_queue_get_length (unchecked_cells_x) >= 0);
+	}
 
 	if (hitori->debug) {
 		/* Print out the groups */
 		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
 			for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
-				if ((hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE)
-					g_printf ("%u ", groups[iter.x][iter.y]);
-				else
+				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
 					g_printf ("X ");
+				else
+					g_printf ("%u ", groups[iter.x][iter.y]);
 			}
 			g_printf ("\n");
 		}
 	}
 
 	/* Check that there's only one group; if there's more than
-	 * one, the rule fails. */
-	max_group = 0;
-	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
-		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
-			if ((hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE) {
-				if (max_group == 0)
-					max_group = group_bases[groups[iter.x][iter.y]];
-				else if (group_bases[groups[iter.x][iter.y]] != max_group) {
-					/* Set the error position */
-					hitori_set_error_position (hitori, iter);
+	 * one, the rule fails. Start at 2 to give room to subtract
+	 * 1 without underflowing, and also skip the first entry, as
+	 * it's reserved for ungrouped cells. */
+	for (i = 2; i <= max_group; i++) {
+		if (group_bases[i - 1] != group_bases[i]) {
+			/* Rule failed */
+			g_free (group_bases);
+			for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
+				g_free (groups[iter.x]);
+			g_free (groups);
 
-					/* Rule failed */
-					g_queue_free (unchecked_cells_x);
-					g_queue_free (unchecked_cells_y);
-					g_free (group_bases);
-					for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
-						g_free (groups[iter.x]);
-					g_free (groups);
+			if (hitori->debug)
+				g_debug ("Rule 3 failed");
 
-					if (hitori->debug)
-						g_debug ("Rule 3 failed");
-
-					return FALSE;
-				}
-			}
+			return FALSE;
 		}
 	}
 
 	/* Free everything */
-	g_queue_free (unchecked_cells_x);
-	g_queue_free (unchecked_cells_y);
 	g_free (group_bases);
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
 		g_free (groups[iter.x]);
@@ -274,9 +244,6 @@ hitori_check_rule3 (Hitori *hitori)
 
 	if (hitori->debug)
 		g_debug ("Rule 3 OK");
-
-	/* Clear the error */
-	hitori->display_error = FALSE;
 
 	return TRUE;
 }
