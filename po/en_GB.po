@@ -1,14 +1,14 @@
-# English/GB translation of PACKAGE.
-# Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Philip Withnall <philip@tecnocode.co.uk>, 2007.
+# English/GB translation of hitori.
+# Copyright (C) 2007-2008 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Philip Withnall <philip@tecnocode.co.uk>, 2007-2008.
 # 
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-03 20:27+0100\n"
+"POT-Creation-Date: 2008-04-20 15:47+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: English/GB <en@li.org>\n"
@@ -18,77 +18,83 @@ msgstr ""
 
 #: ../src/interface.c:45
 #, c-format
-msgid "UI file \"%s\" could not be loaded. Error: %s"
-msgstr "UI file \"%s\" could not be loaded. Error: %s"
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"
+msgstr "UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"
 
-#: ../src/interface.c:170
+#: ../src/interface.c:174
 msgid "You've won!"
 msgstr "You've won!"
 
-#: ../src/interface.c:391
+#: ../src/interface.c:428
+msgid ""
+"Hitori is free software: you can redistribute it and/or modify it under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation, either version 3 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"Hitori is free software: you can redistribute it and/or modify it under the "
+"terms of the GNU General Public Licence as published by the Free Software "
+"Foundation, either version 3 of the Licence, or (at your option) any later "
+"version."
+
+#: ../src/interface.c:432
+msgid ""
+"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details."
+msgstr ""
+"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
+"details."
+
+#: ../src/interface.c:436
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"You should have received a copy of the GNU General Public Licence along with "
+"Hitori.  If not, see <http://www.gnu.org/licences/>."
+
+#: ../src/interface.c:448
+msgid "Copyright © 2007-2008 Philip Withnall"
+msgstr "Copyright © 2007-2008 Philip Withnall"
+
+#: ../src/interface.c:449
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:399
-msgid ""
-"Hitori is free software; you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Hitori is free software; you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation; either version 2 of the License, or (at your option) any later "
-"version."
-
-#: ../src/interface.c:403
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-
-#: ../src/interface.c:407
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA  02111-1307  USA"
-msgstr ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori; if not, write to the Free Software Foundation, Inc., 59 Temple "
-"Place, Suite 330, Boston, MA  02111-1307  USA"
-
-#: ../src/interface.c:420
-msgid "Copyright © 2007 Philip Withnall"
-msgstr "Copyright © 2007 Philip Withnall"
-
-#: ../src/interface.c:423
+#: ../src/interface.c:451
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:427
+#: ../src/interface.c:455
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
-#: ../src/main.c:105
+#: ../src/main.c:73
+msgid "Do you want to stop the current game?"
+msgstr "Do you want to stop the current game?"
+
+#: ../src/main.c:174
 msgid "Enable debug mode"
 msgstr "Enable debug mode"
 
-#: ../src/main.c:117
+#: ../src/main.c:175
+msgid "Seed the board generation"
+msgstr "Seed the board generation"
+
+#: ../src/main.c:187
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Options
-#: ../src/main.c:121
+#: ../src/main.c:191
 msgid "- Play a game of Hitori"
 msgstr "- Play a game of Hitori"
 
-#: ../src/main.c:131
+#: ../src/main.c:201
 #, c-format
 msgid "Command-line options could not be parsed. Error: %s"
 msgstr "Command-line options could not be parsed. Error: %s"
