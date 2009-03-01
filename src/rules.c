@@ -43,7 +43,7 @@ hitori_check_rule1 (Hitori *hitori)
 			if (hitori->board[x][y].painted == FALSE) {
 				if (accum[hitori->board[x][y].num-1] == TRUE) {
 					if (hitori->debug) {
-						g_message ("Rule 1 failed in column %u, row %u", x, y);
+						g_debug ("Rule 1 failed in column %u, row %u", x, y);
 
 						/* Print out the accumulator */
 						for (y = 0; y < BOARD_SIZE+1; y++) {
@@ -72,7 +72,7 @@ hitori_check_rule1 (Hitori *hitori)
 			if (hitori->board[x][y].painted == FALSE) {
 				if (accum[hitori->board[x][y].num-1] == TRUE) {
 					if (hitori->debug) {
-						g_message ("Rule 1 failed in row %u, column %u", y, x);
+						g_debug ("Rule 1 failed in row %u, column %u", y, x);
 
 						/* Print out the accumulator */
 						for (y = 0; y < BOARD_SIZE+1; y++) {
@@ -92,7 +92,7 @@ hitori_check_rule1 (Hitori *hitori)
 	}
 
 	if (hitori->debug)
-		g_message("Rule 1 OK");
+		g_debug ("Rule 1 OK");
 	return TRUE;
 }
 
@@ -110,7 +110,7 @@ hitori_check_rule2 (Hitori *hitori)
 				if ((x < BOARD_SIZE - 1 && hitori->board[x+1][y].painted == TRUE) ||
 				    (y < BOARD_SIZE - 1 && hitori->board[x][y+1].painted == TRUE)) {
 					if (hitori->debug)
-						    g_message ("Rule 2 failed");
+						    g_debug ("Rule 2 failed");
 					return FALSE;
 				}
 			}
@@ -118,7 +118,7 @@ hitori_check_rule2 (Hitori *hitori)
 	}
 
 	if (hitori->debug)
-		g_message("Rule 2 OK");
+		g_debug ("Rule 2 OK");
 	return TRUE;
 }
 
@@ -220,7 +220,7 @@ hitori_check_rule3 (Hitori *hitori)
 					max_group = group_bases[groups[x][y]];
 				else if (group_bases[groups[x][y]] != max_group) {
 					if (hitori->debug)
-						g_message ("Rule 3 failed");
+						g_debug ("Rule 3 failed");
 					return FALSE;
 				}
 			}
@@ -232,7 +232,7 @@ hitori_check_rule3 (Hitori *hitori)
 	g_queue_free (unchecked_cells_y);
 
 	if (hitori->debug)
-		g_message("Rule 3 OK");
+		g_debug ("Rule 3 OK");
 
 	return TRUE;
 }

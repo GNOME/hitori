@@ -25,6 +25,8 @@
 #include <config.h>
 #include <stdlib.h>
 #include <gtk/gtk.h>
+#include <glib/gi18n.h>
+
 #include "main.h"
 #include "interface.h"
 #include "generator.h"
@@ -122,9 +124,11 @@ main (int argc, char *argv[])
 	GOptionContext *context;
 	GError *error = NULL;
 	gboolean debug = FALSE;
+	gint seed = -1;
 
 	const GOptionEntry options[] = {
 	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
+	        { "seed", 0, 0, G_OPTION_ARG_INT, &seed, N_("Seed the board generation"), NULL },
 	        { NULL }
 	};
 
@@ -151,10 +155,8 @@ main (int argc, char *argv[])
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
 				_("Command-line options could not be parsed. Error: %s"), error->message);
-		g_signal_connect_swapped (dialog, "response", 
-				G_CALLBACK (gtk_widget_destroy),
-				dialog);
-		gtk_widget_show_all (dialog);
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
 
 		g_error_free (error);
 		exit (1);
@@ -176,7 +178,13 @@ main (int argc, char *argv[])
 	hitori->undo_stack = undo;
 
 	/* Showtime! */
-	srand (time (0));
+	if (seed == -1)
+		seed = time (0);
+	if (debug)
+		g_debug ("Seed value: %u", seed);
+
+	srand (seed);
+
 	hitori_create_interface (hitori);
 	hitori_generate_board (hitori);
 	gtk_widget_show (hitori->window);
