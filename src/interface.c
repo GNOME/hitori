@@ -163,7 +163,15 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	    hitori_check_rule2 (hitori) &&
 	    hitori_check_rule3 (hitori)) {
 		/* Win! */
-		g_message("TODO: win");
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_INFO,
+				GTK_BUTTONS_OK,
+				_("You've won!"));
+		g_signal_connect_swapped (dialog, "response", 
+				G_CALLBACK (gtk_widget_destroy),
+				dialog);
+		gtk_widget_show_all (dialog);
 	}
 }
 
