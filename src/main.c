@@ -110,6 +110,19 @@ hitori_print_board (Hitori *hitori)
 }
 
 void
+hitori_free_board (Hitori *hitori)
+{
+	guint i;
+
+	if (hitori->board == NULL)
+		return;
+
+	for (i = 0; i < BOARD_SIZE; i++)
+		g_slice_free1 (sizeof (HitoriCell) * BOARD_SIZE, hitori->board[i]);
+	g_free (hitori->board);
+}
+
+void
 hitori_enable_events (Hitori *hitori)
 {
 	hitori->processing_events = TRUE;
@@ -133,18 +146,16 @@ hitori_disable_events (Hitori *hitori)
 void
 hitori_quit (Hitori *hitori)
 {
-	guint i;
 	static gboolean quitting = FALSE;
 
 	if (quitting == TRUE)
 		return;
 	quitting = TRUE;
 
-	for (i = 0; i < BOARD_SIZE; i++)
-		g_free (hitori->board[i]);
-	g_free (hitori->board);
+	hitori_free_board (hitori);
 	hitori_clear_undo_stack (hitori);
 	g_free (hitori->undo_stack); /* Clear the new game element */
+
 	if (hitori->window != NULL)
 		gtk_widget_destroy (hitori->window);
 

@@ -87,6 +87,7 @@ void hitori_new_game (Hitori *hitori, guint board_size);
 void hitori_clear_undo_stack (Hitori *hitori);
 void hitori_set_board_size (Hitori *hitori, guint board_size);
 void hitori_print_board (Hitori *hitori);
+void hitori_free_board (Hitori *hitori);
 void hitori_enable_events (Hitori *hitori);
 void hitori_disable_events (Hitori *hitori);
 void hitori_quit (Hitori *hitori);
