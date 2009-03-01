@@ -97,6 +97,14 @@ main (int argc, char *argv[])
 {
 	Hitori *hitori;
 	HitoriUndo *undo;
+	GOptionContext *context;
+	GError *error = NULL;
+	gboolean debug = FALSE;
+
+	const GOptionEntry options[] = {
+	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
+	        { NULL }
+	};
 
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -109,9 +117,30 @@ main (int argc, char *argv[])
 	g_set_application_name (_("Hitori"));
 	gtk_window_set_default_icon_name ("hitori");
 
+	/* Options */
+	context = g_option_context_new (_("- Play a game of Hitori"));
+	g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
+	g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
+
+	if (g_option_context_parse (context, &argc, &argv, &error) == FALSE) {
+		/* Show an error */
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_ERROR,
+				GTK_BUTTONS_OK,
+				_("Command-line options could not be parsed. Error: %s"), error->message);
+		g_signal_connect_swapped (dialog, "response", 
+				G_CALLBACK (gtk_widget_destroy),
+				dialog);
+		gtk_widget_show_all (dialog);
+
+		g_error_free (error);
+		exit (1);
+	}
+
 	/* Setup */
 	hitori = g_new (Hitori, 1);
-	hitori->debug = TRUE; /* TODO: Make this a runtime parameter */
+	hitori->debug = debug;
 
 	undo = g_new (HitoriUndo, 1);
 	undo->type = UNDO_NEW_GAME;

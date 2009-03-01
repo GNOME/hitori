@@ -8,13 +8,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2007-09-03 16:05+0100\n"
+"POT-Creation-Date: 2007-09-03 20:22+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: English/GB <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit"
+"Content-Transfer-Encoding: 8bit\n"
 
 #: ../src/interface.c:45
 #, c-format
@@ -25,7 +25,7 @@ msgstr "UI file \"%s\" could not be loaded. Error: %s"
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:390
+#: ../src/interface.c:391
 msgid ""
 "Hitori is free software; you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -37,7 +37,7 @@ msgstr ""
 "Foundation; either version 2 of the License, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:394
+#: ../src/interface.c:395
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -49,7 +49,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 "details."
 
-#: ../src/interface.c:398
+#: ../src/interface.c:399
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori; if not, write to the Free Software Foundation, Inc., 59 Temple "
@@ -59,19 +59,32 @@ msgstr ""
 "Hitori; if not, write to the Free Software Foundation, Inc., 59 Temple "
 "Place, Suite 330, Boston, MA  02111-1307  USA"
 
-#: ../src/interface.c:411
+#: ../src/interface.c:412
 msgid "Copyright © 2007 Philip Withnall"
 msgstr "Copyright © 2007 Philip Withnall"
 
-#: ../src/interface.c:414
+#: ../src/interface.c:415
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:418
+#: ../src/interface.c:419
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
-#: ../src/main.c:109
+#: ../src/main.c:105
+msgid "Enable debug mode"
+msgstr "Enable debug mode"
+
+#: ../src/main.c:117
 msgid "Hitori"
 msgstr "Hitori"
 
+#. Options
+#: ../src/main.c:121
+msgid "- Play a game of Hitori"
+msgstr "- Play a game of Hitori"
+
+#: ../src/main.c:131
+#, c-format
+msgid "Command-line options could not be parsed. Error: %s"
+msgstr "Command-line options could not be parsed. Error: %s"
