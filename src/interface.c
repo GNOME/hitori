@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 /*
  * Hitori
- * Copyright (C) Philip Withnall 2007-2008 <philip@tecnocode.co.uk>
+ * Copyright (C) Philip Withnall 2007-2009 <philip@tecnocode.co.uk>
  * 
  * Hitori is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -49,7 +49,7 @@ hitori_create_interface (Hitori *hitori)
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
 				_("UI file \"%s/hitori/hitori.ui\" could not be loaded."), PACKAGE_DATA_DIR);
-		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), error->message);
+		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
 
@@ -476,20 +476,15 @@ hitori_quit_cb (GtkAction *action, Hitori *hitori)
 void
 hitori_contents_cb (GtkAction *action, Hitori *hitori)
 {
-	GTimeVal current_time;
 	GError *error = NULL;
 
-	g_get_current_time (&current_time);
-
-	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "ghelp:hitori",
-			  current_time.tv_sec * 1000 + current_time.tv_usec,
-			  &error) == FALSE) {
+	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "ghelp:hitori", gtk_get_current_event_time (), &error) == FALSE) {
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_ERROR,
-				GTK_BUTTONS_OK,
-				_("The help contents could not be displayed."));
-		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), error->message);
+							    GTK_DIALOG_MODAL,
+							    GTK_MESSAGE_ERROR,
+							    GTK_BUTTONS_OK,
+							    _("The help contents could not be displayed."));
+		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 
 		gtk_dialog_run (GTK_DIALOG (dialog));
 
@@ -529,7 +524,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 
 	gtk_show_about_dialog (GTK_WINDOW (hitori->window),
 				"version", VERSION,
-				"copyright", _("Copyright \xc2\xa9 2007-2008 Philip Withnall"),
+				"copyright", _("Copyright \xc2\xa9 2007-2009 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
 				"authors", authors,
 				"translator-credits", _("translator-credits"),

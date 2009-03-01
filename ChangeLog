@@ -1,5 +1,12 @@
 2009-03-01  Philip Withnall  <philip@tecnocode.co.uk>
 
+	* src/interface.c (hitori_create_interface), (hitori_contents_cb),
+	(hitori_about_cb):
+	* src/main.c (main): Fixed some calls to printf()-style functions
+	without format specifiers, and some bad code for displaying the help.
+
+2009-03-01  Philip Withnall  <philip@tecnocode.co.uk>
+
 	Updated svn:ignore properties.
 
 ============ Version 0.2.1
