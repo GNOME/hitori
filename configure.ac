@@ -1,6 +1,3 @@
-dnl Process this file with autoconf to produce a configure script.
-dnl Created by Anjuta application wizard.
-
 AC_INIT(hitori, 0.1)
 
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
@@ -13,8 +10,22 @@ AM_PROG_CC_STDC
 AC_HEADER_STDC
 
 dnl ***************************************************************************
-dnl Internatinalization
+dnl Options
 dnl ***************************************************************************
+
+AC_ARG_ENABLE([debug],
+	[ --enable-debug	Turn on debugging],
+	[case "${enableval}" in
+		yes) debug=true ;;
+		no)  debug=false ;;
+		*) AC_MSG_ERROR([bad value ${enableval} for --enable-debug]) ;;
+	esac],[debug=false])
+	AM_CONDITIONAL([DEBUG], [test x$debug = xtrue])
+
+dnl ***************************************************************************
+dnl Internationalisation
+dnl ***************************************************************************
+
 GETTEXT_PACKAGE=hitori
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [GETTEXT package name])
