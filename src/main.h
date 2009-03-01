@@ -52,10 +52,6 @@ G_BEGIN_DECLS
 #	define N_(String) (String)
 #endif
 
-/* For testing propose use the local (not installed) UI file */
-/* #define UI_FILE PACKAGE_DATA_DIR"/hitori/hitori.ui" */
-#define UI_FILE "../data/hitori.ui"
-
 #define BOARD_SIZE 8
 
 typedef enum {

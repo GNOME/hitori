@@ -37,13 +37,14 @@ hitori_create_interface (Hitori *hitori)
 	GtkBuilder *builder;
 
 	builder = gtk_builder_new ();
-	if (gtk_builder_add_from_file (builder, UI_FILE, &error) == FALSE) {
+
+	if (gtk_builder_add_from_file (builder, PACKAGE_DATA_DIR"/hitori/hitori.ui", &error) == FALSE) {
 		/* Show an error */
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
-				_("UI file \"%s\" could not be loaded. Error: %s"), UI_FILE, error->message);
+				_("UI file \""PACKAGE_DATA_DIR"/hitori/hitori.ui\" could not be loaded. Error: %s"), error->message);
 		g_signal_connect_swapped (dialog, "response", 
 				G_CALLBACK (gtk_widget_destroy),
 				dialog);
@@ -52,6 +53,7 @@ hitori_create_interface (Hitori *hitori)
 		g_error_free (error);
 		g_object_unref (builder);
 		hitori_quit (hitori);
+
 		return NULL;
 	}
 

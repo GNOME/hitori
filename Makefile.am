@@ -1,18 +1,24 @@
-## Process this file with automake to produce Makefile.in
-## Created by Anjuta
-
 SUBDIRS = src po data
 
 hitoridocdir = ${prefix}/doc/hitori
 hitoridoc_DATA = \
-	README\
-	COPYING\
-	AUTHORS\
-	ChangeLog\
-	INSTALL\
+	README		\
+	COPYING		\
+	AUTHORS		\
+	INSTALL		\
 	NEWS
 
-EXTRA_DIST = $(hitoridoc_DATA)
+EXTRA_DIST =			\
+	autogen.sh		\
+	intltool-extract.in	\
+	intltool-merge.in	\
+	intltool-update.in	\
+	$(hitoridoc_DATA)
+
+DISTCLEANFILES = \
+	intltool-extract	\
+	intltool-merge		\
+	intltool-update
 
 # Copy all the spec files. Of cource, only one is actually used.
 dist-hook:
