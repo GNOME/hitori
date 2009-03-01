@@ -66,7 +66,7 @@ hitori_create_interface (Hitori *hitori)
 }
 
 void
-hitori_draw_board (Hitori *hitori, cairo_t *cr)
+hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 {
 	gint width, height;
 	guint x, y;
@@ -131,7 +131,8 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr)
 
 	/* Check to see if all three rules are satisfied yet.
 	 * If they are, we've won. */
-	if (hitori_check_rule1 (hitori) &&
+	if (check_win &&
+	    hitori_check_rule1 (hitori) &&
 	    hitori_check_rule2 (hitori) &&
 	    hitori_check_rule3 (hitori)) {
 		/* Win! */
@@ -143,15 +144,14 @@ gboolean
 hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori)
 {
 	cairo_t *cr;
-	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
 
+	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
 	cairo_rectangle (cr, event->area.x, event->area.y,
 				event->area.width, event->area.height);
 	cairo_clip (cr);
-
-	hitori_draw_board (hitori, cr);
-
+	hitori_draw_board (hitori, cr, FALSE);
 	cairo_destroy (cr);
+
 	return FALSE;
 }
 
@@ -180,26 +180,19 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (x >= BOARD_SIZE || y >= BOARD_SIZE)
 		return FALSE;
 
-	if (event->state & GDK_SHIFT_MASK) {
-		/* Update tag 1's state */
-		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1);
-	} else if (event->state & GDK_CONTROL_MASK) {
-		/* Update tag 2's state */
-		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2);
-	} else {
-		/* Update the paint overlay */
-		hitori->board[x][y].painted = !(hitori->board[x][y].painted);
-	}
+	if (event->state & GDK_SHIFT_MASK)
+		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1); /* Update tag 1's state */
+	else if (event->state & GDK_CONTROL_MASK)
+		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2); /* Update tag 2's state */
+	else
+		hitori->board[x][y].painted = !(hitori->board[x][y].painted); /* Update the paint overlay */
 
 	/* Redraw */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
-
 	cairo_rectangle (cr, x * cell_size, y * cell_size,
 				cell_size, cell_size);
 	cairo_clip (cr);
-
-	hitori_draw_board (hitori, cr);
-
+	hitori_draw_board (hitori, cr, TRUE);
 	cairo_destroy (cr);
 
 	return FALSE;

@@ -22,21 +22,15 @@
  * 	Boston, MA  02110-1301, USA.
  */
 
-#include <gtk/gtk.h>
-#include <cairo/cairo.h>
-#include "main.h"
+#include <glib.h>
 
-#ifndef HITORI_INTERFACE_H
-#define HITORI_INTERFACE_H
+#ifndef HITORI_GENERATOR_H
+#define HITORI_GENERATOR_H
 
 G_BEGIN_DECLS
 
-#define FONT_SCALE 0.9
-#define TAG_OFFSET 0.75
-
-GtkWidget* hitori_create_interface (Hitori *hitori);
-void hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win);
+void hitori_generate_board (Hitori *hitori);
 
 G_END_DECLS
 
-#endif /* HITORI_INTERFACE_H */
+#endif /* HITORI_GENERATOR_H */

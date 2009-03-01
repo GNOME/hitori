@@ -45,7 +45,8 @@ CONFIG_CLEAN_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 binPROGRAMS_INSTALL = $(INSTALL_PROGRAM)
 PROGRAMS = $(bin_PROGRAMS)
-am_hitori_OBJECTS = main.$(OBJEXT) interface.$(OBJEXT)
+am_hitori_OBJECTS = main.$(OBJEXT) interface.$(OBJEXT) \
+	generator.$(OBJEXT)
 hitori_OBJECTS = $(am_hitori_OBJECTS)
 am__DEPENDENCIES_1 =
 hitori_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -237,7 +238,9 @@ hitori_SOURCES = \
 	main.c  \
 	interface.c  \
 	main.h  \
-	interface.h
+	interface.h  \
+	generator.c  \
+	generator.h
 
 hitori_LDFLAGS = 
 hitori_LDADD = $(GTK_LIBS)
@@ -312,6 +315,7 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/generator.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/interface.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
 

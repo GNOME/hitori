@@ -22,20 +22,14 @@
  * 	Boston, MA  02110-1301, USA.
  */
 
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
-#include <string.h>
-#include <stdio.h>
-/* TODO: Remove me (below) */
-#include <stdlib.h>
-#include <math.h>
 #include <config.h>
 #include <gtk/gtk.h>
-
 #include "main.h"
 #include "interface.h"
+#include "generator.h"
 
+/* Rule 1: There must only be one of each number in the unpainted cells
+ * in each row and column. */
 gboolean
 hitori_check_rule1 (Hitori *hitori)
 {
@@ -46,53 +40,58 @@ hitori_check_rule1 (Hitori *hitori)
 	for (x = 0; x < BOARD_SIZE; x++) {
 		for (y = 0; y < BOARD_SIZE; y++) {
 			if (hitori->board[x][y].painted == FALSE) {
-				if (accum[hitori->board[x][y].num-1] == TRUE)
+				if (accum[hitori->board[x][y].num-1] == TRUE) {
+					g_message ("Rule 1 failed");
 					return FALSE;
+				}
 
 				accum[hitori->board[x][y].num-1] = TRUE;
 			}
 		}
 
 		/* Reset accum */
-		for (y = 0; y < BOARD_SIZE; y++) {
+		for (y = 0; y < BOARD_SIZE; y++)
 			accum[y] = FALSE;
-		}
 	}
 
 	/* Now check the rows */
 	for (y = 0; y < BOARD_SIZE; y++) {
 		for (x = 0; x < BOARD_SIZE; x++) {
 			if (hitori->board[x][y].painted == FALSE) {
-				if (accum[hitori->board[x][y].num-1] == TRUE)
+				if (accum[hitori->board[x][y].num-1] == TRUE) {
+					g_message ("Rule 1 failed");
 					return FALSE;
+				}
 
 				accum[hitori->board[x][y].num-1] = TRUE;
 			}
 		}
 
 		/* Reset accum */
-		for (y = 0; y < BOARD_SIZE; y++) {
+		for (y = 0; y < BOARD_SIZE; y++)
 			accum[y] = FALSE;
-		}
 	}
 
 	g_message("Rule 1 OK");
 	return TRUE;
 }
 
+/* Rule 2: No painted cell may be adjacent to another, vertically or horizontally. */
 gboolean
 hitori_check_rule2 (Hitori *hitori)
 {
 	guint x, y;
-return TRUE;
+
 	/* Check the squares immediately below and to the right of the current one;
 	 * if they're painted in, it's illegal. */
 	for (x = 0; x < BOARD_SIZE; x++) {
 		for (y = 0; y < BOARD_SIZE; y++) {
 			if (hitori->board[x][y].painted == TRUE) {
 				if ((x < BOARD_SIZE - 1 && hitori->board[x+1][y].painted == TRUE) ||
-				    (y < BOARD_SIZE - 1 && hitori->board[x][y+1].painted == TRUE))
+				    (y < BOARD_SIZE - 1 && hitori->board[x][y+1].painted == TRUE)) {
+					g_message ("Rule 2 failed");
 					return FALSE;
+				}
 			}
 		}
 	}
@@ -101,6 +100,7 @@ return TRUE;
 	return TRUE;
 }
 
+/* Rule 3: all the unpainted cells must be joined together in one group. */
 gboolean
 hitori_check_rule3 (Hitori *hitori)
 {
@@ -112,9 +112,8 @@ hitori_check_rule3 (Hitori *hitori)
 
 	/* Clear the groups */
 	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++) {
+		for (y = 0; y < BOARD_SIZE; y++)
 			groups[x][y] = 0;
-		}
 	}
 
 	/* HACKHACK! */
@@ -186,8 +185,25 @@ hitori_check_rule3 (Hitori *hitori)
 		}
 		printf ("\n");
 	}
+	/* TODO: Check we've freed everything */
 	g_message("Rule 3 OK");
 	return TRUE;
+}
+
+void
+hitori_print_board (Hitori *hitori)
+{
+	guint x, y;
+
+	for (y = 0; y < BOARD_SIZE; y++) {
+		for (x = 0; x < BOARD_SIZE; x++) {
+			if (hitori->board[x][y].painted == FALSE)
+				printf ("%u ", hitori->board[x][y].num);
+			else
+				printf ("X ");
+		}
+		printf ("\n");
+	}
 }
 
 void
@@ -202,7 +218,6 @@ int
 main (int argc, char *argv[])
 {
 	Hitori *hitori;
-	guint x, y;
 
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -215,35 +230,13 @@ main (int argc, char *argv[])
 
 	/* Setup */
 	hitori = g_new (Hitori, 1);
-
-	/* TODO: Generate a board */
-	/*for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++) {
-			hitori->board[x][y].num = ceil (rand () % (BOARD_SIZE + 1));
-			if (hitori->board[x][y].num < 1)
-				hitori->board[x][y].num = 1;
-		}
-	}*/
-	guint temp_board[BOARD_SIZE][BOARD_SIZE] = {
-		{4, 8, 1, 6, 3, 2, 5, 7},
-		{3, 6, 7, 2, 1, 6, 5, 4},
-		{2, 3, 4, 8, 2, 8, 6, 1},
-		{4, 1, 6, 5, 7, 7, 3, 5},
-		{7, 2, 3, 1, 8, 5, 1, 2},
-		{3, 5, 6, 7, 3, 1, 8, 4},
-		{6, 4, 2, 3, 5, 4, 7, 8},
-		{8, 7, 1, 4, 2, 3, 5, 6}
-	};
-
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++) {
-			hitori->board[x][y].num = temp_board[y][x];
-		}
-	}
-
+	hitori_generate_board (hitori);
 	hitori_create_interface (hitori);
 	gtk_widget_show (hitori->window);
-
+/* TODO:
+ *		Split the rule-checking functions out into another file
+ *		Allow a command-line --debug parameter
+ */
 	gtk_main ();
 	return 0;
 }
