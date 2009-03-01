@@ -105,6 +105,11 @@ hitori_disable_events (Hitori *hitori)
 void
 hitori_quit (Hitori *hitori)
 {
+	guint i;
+
+	for (i = 0; i < BOARD_SIZE; i++)
+		g_free (hitori->board[i]);
+	g_free (hitori->board);
 	hitori_clear_undo_stack (hitori);
 	g_free (hitori->undo_stack); /* Clear the new game element */
 	if (hitori->window != NULL)
@@ -125,6 +130,7 @@ main (int argc, char *argv[])
 	GError *error = NULL;
 	gboolean debug = FALSE;
 	gint seed = -1;
+	guint i;
 
 	const GOptionEntry options[] = {
 	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
@@ -176,6 +182,13 @@ main (int argc, char *argv[])
 	undo->redo = NULL;
 	undo->undo = NULL;
 	hitori->undo_stack = undo;
+
+	/* Create the board */
+	/* TODO: Add an interface */
+	hitori->board_size = 10;
+	hitori->board = g_malloc (sizeof (HitoriCell*) * BOARD_SIZE);
+	for (i = 0; i < BOARD_SIZE; i++)
+		hitori->board[i] = g_malloc0 (sizeof (HitoriCell) * BOARD_SIZE);
 
 	/* Showtime! */
 	if (seed == -1)

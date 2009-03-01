@@ -31,7 +31,7 @@ gboolean
 hitori_check_rule1 (Hitori *hitori)
 {
 	guint x, y;
-	gboolean accum[BOARD_SIZE+1];
+	gboolean *accum = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 1));
 
 	/* Check columns for repeating numbers */
 	for (x = 0; x < BOARD_SIZE; x++) {
@@ -91,8 +91,11 @@ hitori_check_rule1 (Hitori *hitori)
 		}
 	}
 
+	g_free (accum);
+
 	if (hitori->debug)
 		g_debug ("Rule 1 OK");
+
 	return TRUE;
 }
 
@@ -119,6 +122,7 @@ hitori_check_rule2 (Hitori *hitori)
 
 	if (hitori->debug)
 		g_debug ("Rule 2 OK");
+
 	return TRUE;
 }
 
@@ -126,16 +130,12 @@ hitori_check_rule2 (Hitori *hitori)
 gboolean
 hitori_check_rule3 (Hitori *hitori)
 {
-	guint groups[BOARD_SIZE][BOARD_SIZE];
-	guint group_bases[BOARD_SIZE * BOARD_SIZE / 2];
 	guint x = 0, y = 0, max_group = 0;
 	GQueue *unchecked_cells_x, *unchecked_cells_y;
-
-	/* Clear the groups */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE; y++)
-			groups[x][y] = 0;
-	}
+	guint **groups = g_malloc (sizeof (guint*) * BOARD_SIZE);
+	for (x = 0; x < BOARD_SIZE; x++)
+		groups[x] = g_malloc0 (sizeof (guint) * BOARD_SIZE);
+	guint *group_bases = g_malloc0 (sizeof (guint) * (BOARD_SIZE * BOARD_SIZE / 2));
 
 	/* HACKHACK! */
 	unchecked_cells_x = g_queue_new ();
@@ -230,6 +230,10 @@ hitori_check_rule3 (Hitori *hitori)
 	/* Free everything */
 	g_queue_free (unchecked_cells_x);
 	g_queue_free (unchecked_cells_y);
+	g_free (group_bases);
+	for (x = 0; x < BOARD_SIZE; x++)
+		g_free (groups[x]);
+	g_free (groups);
 
 	if (hitori->debug)
 		g_debug ("Rule 3 OK");

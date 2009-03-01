@@ -32,8 +32,10 @@ void
 hitori_generate_board (Hitori *hitori)
 {
 	guint i, total, old_total, x, y;
-	gboolean accum[BOARD_SIZE+2]; /* Stores which numbers have been used in the current column */
-	gboolean horiz_accum[BOARD_SIZE][BOARD_SIZE+2]; /* Stores which numbers have been used in each row */
+	gboolean *accum = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 2)); /* Stores which numbers have been used in the current column */
+	gboolean **horiz_accum = g_malloc (sizeof (gboolean*) * BOARD_SIZE); /* Stores which numbers have been used in each row */
+	for (x = 0; x < BOARD_SIZE; x++)
+		horiz_accum[x] = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 2));
 
 	/* Clear the board */
 	for (x = 0; x < BOARD_SIZE; x++) {
@@ -46,6 +48,7 @@ hitori_generate_board (Hitori *hitori)
 		}
 	}
 
+	/* TODO: Different ranges for different grid sizes */
 	/* Generate some randomly-placed painted cells */
 	total = rand () % 5 + 13; /* Total number of painted cells (between 14 and 18 inclusive) */
 	/* For the moment, I'm hardcoding the range in the number of painted
@@ -71,13 +74,6 @@ hitori_generate_board (Hitori *hitori)
 	if (hitori_check_rule2 (hitori) == FALSE ||
 	    hitori_check_rule3 (hitori) == FALSE)
 		return hitori_generate_board (hitori);
-
-	/* Initialise the vertical accumulator */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (y = 0; y < BOARD_SIZE + 2; y++) {
-			horiz_accum[x][y] = FALSE;
-		}
-	}
 
 	/* Fill in the squares, leaving the painted ones blank,
 	 * and making sure not to repeat any previous numbers. */
@@ -112,6 +108,11 @@ hitori_generate_board (Hitori *hitori)
 			}
 		}
 	}
+
+	g_free (accum);
+	for (x = 0; x < BOARD_SIZE; x++)
+		g_free (horiz_accum[x]);
+	g_free (horiz_accum);
 
 	/* Fill in the painted squares, making sure they duplicate a number
 	 * already in the column/row. */

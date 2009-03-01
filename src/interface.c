@@ -40,7 +40,7 @@ hitori_create_interface (Hitori *hitori)
 
 	builder = gtk_builder_new ();
 
-	if (gtk_builder_add_from_file (builder, PACKAGE_DATA_DIR"/hitori/hitori.ui", &error) == FALSE) {
+	if (gtk_builder_add_from_file (builder, "./data/hitori.ui", &error) == FALSE) {
 		/* Show an error */
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 				GTK_DIALOG_MODAL,

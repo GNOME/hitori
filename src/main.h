@@ -30,7 +30,7 @@
 
 G_BEGIN_DECLS
 
-#define BOARD_SIZE 8
+#define BOARD_SIZE hitori->board_size
 
 typedef enum {
 	UNDO_NEW_GAME,
@@ -69,7 +69,8 @@ typedef struct {
 	guint drawing_area_x_offset;
 	guint drawing_area_y_offset;
 
-	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
+	guint board_size;
+	HitoriCell **board;
 
 	gboolean debug;
 	gboolean processing_events;
