@@ -411,7 +411,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 	const gchar *authors[] =
 	{
 		"Philip Withnall <philip@tecnocode.co.uk>",
-		"Ben Windsor <ben.windsor@gmail.com>",
+		"Ben Windsor <benjw_823@hotmail.com>",
 		NULL
 	};
 	const gchar *license_parts[] = {
