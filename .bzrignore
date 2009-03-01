@@ -29,3 +29,7 @@ config.guess
 config.sub
 ltmain.sh
 mkinstalldirs
+INSTALL
+depcomp
+install-sh
+missing
