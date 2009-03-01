@@ -25,3 +25,7 @@ intltool-extract.in
 intltool-merge.in
 intltool-update.in
 po/Makefile.in.in
+config.guess
+config.sub
+ltmain.sh
+mkinstalldirs
