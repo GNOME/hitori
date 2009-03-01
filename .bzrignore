@@ -48,3 +48,6 @@ help/en_GB/legal.xml
 help/en_GB/*.mo
 help/hitori-C.omf
 help/hitori-en_GB.omf
+data/hitori.desktop
+po/.intltool-merge-cache
+meta
