@@ -10,13 +10,13 @@
  * Foundation; either version 2 of the License, or (at your option)
  * any later version.
  * 
- * main.c is distributed in the hope that it will be useful,
+ * Hitori is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  * See the GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with main.c.  If not, write to:
+ * along with Hitori.  If not, write to:
  * 	The Free Software Foundation, Inc.,
  * 	51 Franklin Street, Fifth Floor
  * 	Boston, MA  02110-1301, USA.
@@ -374,4 +374,50 @@ void
 hitori_quit_cb (GtkAction *action, Hitori *hitori)
 {
 	hitori_quit (hitori);
+}
+
+void
+hitori_about_cb (GtkAction *action, Hitori *hitori)
+{
+	gchar *license;
+	const gchar *description = N_("A logic puzzle designed by Nikoli.");
+	const gchar *authors[] =
+	{
+		"Philip Withnall <philip@tecnocode.co.uk>",
+		NULL
+	};
+	const gchar *license_parts[] = {
+		N_("Hitori is free software; you can redistribute it and/or modify "
+		   "it under the terms of the GNU General Public License as published by "
+		   "the Free Software Foundation; either version 2 of the License, or "
+		   "(at your option) any later version."),
+		N_("Hitori is distributed in the hope that it will be useful, "
+		   "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+		   "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
+		   "GNU General Public License for more details."),
+		N_("You should have received a copy of the GNU General Public License "
+		   "along with Hitori; if not, write to the Free Software Foundation, Inc., "
+		   "59 Temple Place, Suite 330, Boston, MA  02111-1307  USA"),
+	};
+
+	license = g_strjoin ("\n\n",
+			  _(license_parts[0]),
+			  _(license_parts[1]),
+			  _(license_parts[2]),
+			  NULL);
+
+	gtk_show_about_dialog (GTK_WINDOW (hitori->window),
+				"version", VERSION,
+				"copyright", _("Copyright \xc2\xa9 2007 Philip Withnall"),
+				"comments", _(description),
+				"authors", authors,
+				"translator-credits", _("translator-credits"),
+				"logo-icon-name", "hitori",
+				"license", license,
+				"wrap-license", TRUE,
+				"website-label", _("Hitori Website"),
+				"website", "http://hitori.tecnocode.co.uk/",
+				NULL);
+
+	g_free (license);
 }

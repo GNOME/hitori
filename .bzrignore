@@ -1,3 +1,17 @@
 .anjuta
 autom4te.cache
 .tm_project2.cache
+Makefile
+Makefile.in
+POTFILES
+en_GB.gmo
+hitori.pot
+stamp-it
+.deps
+.libs
+src/hitori
+config.h
+config.log
+config.status
+libtool
+stamp-h1
