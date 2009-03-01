@@ -43,3 +43,8 @@ src/main.gcno
 src/rules.gcno
 src/rules.c.gcov
 help/hitori-C.omf
+help/en_GB/hitori.xml
+help/en_GB/legal.xml
+help/en_GB/*.mo
+help/hitori-C.omf
+help/hitori-en_GB.omf

@@ -6,3 +6,4 @@ DOC_ENTITIES =
 DOC_INCLUDES = legal.xml
 DOC_FIGURES = \
              figures/hitori_main_window.png
+DOC_LINGUAS = en_GB

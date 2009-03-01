@@ -2,13 +2,13 @@
 # Copyright (C) 2007-2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Philip Withnall <philip@tecnocode.co.uk>, 2007-2008.
-# 
-# 
+#
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-04-20 15:47+0100\n"
+"POT-Creation-Date: 2008-06-08 15:39+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: English/GB <en@li.org>\n"
@@ -18,14 +18,18 @@ msgstr ""
 
 #: ../src/interface.c:45
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"
-msgstr "UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr "UI file \"%s/hitori/hitori.ui\" could not be loaded."
 
-#: ../src/interface.c:174
+#: ../src/interface.c:196
 msgid "You've won!"
 msgstr "You've won!"
 
-#: ../src/interface.c:428
+#: ../src/interface.c:477
+msgid "The help contents could not be displayed."
+msgstr "The help contents could not be displayed."
+
+#: ../src/interface.c:498
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -37,7 +41,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:432
+#: ../src/interface.c:502
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -49,7 +53,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:436
+#: ../src/interface.c:506
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -57,19 +61,19 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:448
+#: ../src/interface.c:518
 msgid "Copyright © 2007-2008 Philip Withnall"
 msgstr "Copyright © 2007-2008 Philip Withnall"
 
-#: ../src/interface.c:449
+#: ../src/interface.c:519
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:451
+#: ../src/interface.c:521
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:455
+#: ../src/interface.c:525
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
@@ -95,6 +99,5 @@ msgid "- Play a game of Hitori"
 msgstr "- Play a game of Hitori"
 
 #: ../src/main.c:201
-#, c-format
-msgid "Command-line options could not be parsed. Error: %s"
-msgstr "Command-line options could not be parsed. Error: %s"
+msgid "Command-line options could not be parsed."
+msgstr "Command-line options could not be parsed."
