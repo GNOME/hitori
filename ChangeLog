@@ -1,3 +1,17 @@
+============ Version 0.2.1
+
+2008-07-08  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* data/icons/16x16/Makefile.am:
+	* data/icons/22x22/Makefile.am:
+	* data/icons/32x32/Makefile.am:
+	* data/icons/48x48/Makefile.am: Include the SVG versions of the icons
+	in the tarball.
+	* src/Makefile.am: Revert change of binary installation location.
+	* NEWS:
+	* README:
+	* configure.ac: Bump to version 0.2.1.
+
 2008-07-08  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* .bzrignore:

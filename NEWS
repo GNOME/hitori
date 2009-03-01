@@ -1,5 +1,9 @@
 Major new features in version...
 
+0.2.1:
+* Fixed some build problems
+* Fixed documentation licensing
+
 0.2:
 * Added --seed option
 * Added dynamic board sizing
