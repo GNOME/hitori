@@ -19,3 +19,9 @@ intltool-extract
 intltool-merge
 intltool-update
 hitori-0.1.tar.gz
+aclocal.m4
+configure
+intltool-extract.in
+intltool-merge.in
+intltool-update.in
+po/Makefile.in.in
