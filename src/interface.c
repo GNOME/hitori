@@ -42,7 +42,8 @@ hitori_create_interface (Hitori *hitori)
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
-				_("UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"), PACKAGE_DATA_DIR, error->message);
+				_("UI file \"%s/hitori/hitori.ui\" could not be loaded."), PACKAGE_DATA_DIR);
+		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), error->message);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
 
@@ -456,6 +457,31 @@ void
 hitori_quit_cb (GtkAction *action, Hitori *hitori)
 {
 	hitori_quit (hitori);
+}
+
+void
+hitori_contents_cb (GtkAction *action, Hitori *hitori)
+{
+	GTimeVal current_time;
+	GError *error = NULL;
+
+	g_get_current_time (&current_time);
+
+	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "ghelp:hitori",
+			  current_time.tv_sec * 1000 + current_time.tv_usec,
+			  &error) == FALSE) {
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_ERROR,
+				GTK_BUTTONS_OK,
+				_("The help contents could not be displayed."), PACKAGE_DATA_DIR);
+		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), error->message);
+
+		gtk_dialog_run (GTK_DIALOG (dialog));
+
+		gtk_widget_destroy (dialog);
+		g_error_free (error);
+	}
 }
 
 void

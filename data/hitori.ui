@@ -121,6 +121,7 @@
 					<object class="GtkAction" id="contents_menu">
 						<property name="stock_id">gtk-help</property>
 						<property name="name">contents_menu</property>
+						<signal name="activate" handler="hitori_contents_cb"/>
 					</object>
 					<accelerator key="F1"/>
 				</child>
@@ -158,7 +159,7 @@
 					<menuitem action="preferences_menu"/>
 				</menu>-->
 				<menu action="help_menu">
-					<!--<menuitem action="contents_menu"/>-->
+					<menuitem action="contents_menu"/>
 					<menuitem action="about_menu"/>
 				</menu>
 			</menubar>

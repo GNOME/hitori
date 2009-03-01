@@ -39,7 +39,7 @@ dnl ***************************************************************************
 dnl Dependencies
 dnl ***************************************************************************
 
-PKG_CHECK_MODULES(GTK, glib-2.0 gtk+-2.0 >= 2.11 gmodule-2.0)
+PKG_CHECK_MODULES(GTK, glib-2.0 gtk+-2.0 >= 2.13 gmodule-2.0)
 AC_SUBST(GTK_CFLAGS)
 AC_SUBST(GTK_LIBS)
 

@@ -31,8 +31,12 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	gboolean *accum, **horiz_accum;
 
 	/* Seed the random number generator */
-	if (seed == -1)
-		seed = time (0);
+	if (seed == -1) {
+		GTimeVal time;
+		g_get_current_time (&time);
+		seed = time.tv_sec + time.tv_usec;
+	}
+
 	if (hitori->debug)
 		g_debug ("Seed value: %u", seed);
 
@@ -53,7 +57,6 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	for (i = 0; i < BOARD_SIZE; i++)
 		hitori->board[i] = g_slice_alloc0 (sizeof (HitoriCell) * BOARD_SIZE);
 
-	/* TODO: Different ranges for different grid sizes */
 	/* Generate some randomly-placed painted cells */
 	total = rand () % 5 + 13; /* Total number of painted cells (between 14 and 18 inclusive) */
 	/* For the moment, I'm hardcoding the range in the number of painted
