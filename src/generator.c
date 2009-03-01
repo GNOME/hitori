@@ -24,6 +24,7 @@
 
 #include <glib.h>
 #include <stdlib.h>
+
 #include "main.h"
 #include "generator.h"
 #include "rules.h"

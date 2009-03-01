@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
+#include <glib/gprintf.h>
 
 #include "main.h"
 #include "interface.h"
@@ -99,11 +100,11 @@ hitori_print_board (Hitori *hitori)
 		for (y = 0; y < BOARD_SIZE; y++) {
 			for (x = 0; x < BOARD_SIZE; x++) {
 				if (hitori->board[x][y].painted == FALSE)
-					printf ("%u ", hitori->board[x][y].num);
+					g_printf ("%u ", hitori->board[x][y].num);
 				else
-					printf ("X ");
+					g_printf ("X ");
 			}
-			printf ("\n");
+			g_printf ("\n");
 		}
 	}
 }
