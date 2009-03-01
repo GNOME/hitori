@@ -1,4 +1,4 @@
-AC_INIT(hitori, 0.1)
+AC_INIT(hitori, 0.2)
 
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
 AM_CONFIG_HEADER(config.h)
@@ -39,13 +39,9 @@ dnl ***************************************************************************
 dnl Dependencies
 dnl ***************************************************************************
 
-PKG_CHECK_MODULES(GTK, glib-2.0 gtk+-2.0 >= 2.13 gmodule-2.0)
-AC_SUBST(GTK_CFLAGS)
-AC_SUBST(GTK_LIBS)
-
-PKG_CHECK_MODULES(CAIRO, cairo >= 1.4)
-AC_SUBST(CAIRO_CFLAGS)
-AC_SUBST(CAIRO_LIBS)
+PKG_CHECK_MODULES(GENERAL, glib-2.0 gtk+-2.0 >= 2.13 gmodule-2.0 cairo >= 1.4)
+AC_SUBST(GENERAL_CFLAGS)
+AC_SUBST(GENERAL_LIBS)
 
 AC_OUTPUT([
 Makefile

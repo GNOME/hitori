@@ -51,3 +51,5 @@ help/hitori-en_GB.omf
 data/hitori.desktop
 po/.intltool-merge-cache
 meta
+config.status.lineno
+po/messages.mo

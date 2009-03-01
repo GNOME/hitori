@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-06-08 15:39+0100\n"
+"POT-Creation-Date: 2008-06-27 20:08+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: English/GB <en@li.org>\n"
@@ -16,20 +16,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../src/interface.c:45
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:195
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "Play the Hitori puzzle game"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "Board _Size"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "_Game"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "_Help"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "_Hint"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "_Settings"
+
+#: ../src/interface.c:51
 #, c-format
 msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
 msgstr "UI file \"%s/hitori/hitori.ui\" could not be loaded."
 
-#: ../src/interface.c:196
+#: ../src/interface.c:208
 msgid "You've won!"
 msgstr "You've won!"
 
-#: ../src/interface.c:477
+#: ../src/interface.c:491
 msgid "The help contents could not be displayed."
 msgstr "The help contents could not be displayed."
 
-#: ../src/interface.c:498
+#: ../src/interface.c:512
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -41,7 +93,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:502
+#: ../src/interface.c:516
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -53,7 +105,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:506
+#: ../src/interface.c:520
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -61,43 +113,39 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:518
+#: ../src/interface.c:532
 msgid "Copyright © 2007-2008 Philip Withnall"
 msgstr "Copyright © 2007-2008 Philip Withnall"
 
-#: ../src/interface.c:519
+#: ../src/interface.c:533
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:521
+#: ../src/interface.c:535
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:525
+#: ../src/interface.c:539
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
-#: ../src/main.c:73
+#: ../src/main.c:74
 msgid "Do you want to stop the current game?"
 msgstr "Do you want to stop the current game?"
 
-#: ../src/main.c:174
+#: ../src/main.c:182
 msgid "Enable debug mode"
 msgstr "Enable debug mode"
 
-#: ../src/main.c:175
+#: ../src/main.c:183
 msgid "Seed the board generation"
 msgstr "Seed the board generation"
 
-#: ../src/main.c:187
-msgid "Hitori"
-msgstr "Hitori"
-
 #. Options
-#: ../src/main.c:191
+#: ../src/main.c:199
 msgid "- Play a game of Hitori"
 msgstr "- Play a game of Hitori"
 
-#: ../src/main.c:201
+#: ../src/main.c:209
 msgid "Command-line options could not be parsed."
 msgstr "Command-line options could not be parsed."

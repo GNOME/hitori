@@ -2,8 +2,7 @@ INCLUDES = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\"	\
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\"				\
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\"				\
-	$(GTK_CFLAGS)							\
-	$(CAIRO_CFLAGS)
+	$(GENERAL_CFLAGS)
 
 AM_CFLAGS = \
 	-Wall		\
@@ -28,7 +27,4 @@ hitori_SOURCES = \
 	rules.h
 
 hitori_LDFLAGS = 
-
-hitori_LDADD = \
-	$(GTK_LIBS)	\
-	$(CAIRO_LIBS)
+hitori_LDADD = $(GENERAL_LIBS)

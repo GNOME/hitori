@@ -7,24 +7,24 @@
 				<child>
 					<object class="GtkAction" id="game_menu">
 						<property name="name">game_menu</property>
-						<property name="label">_Game</property>
+						<property name="label" translatable="yes">_Game</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkAction" id="new_game_menu">
-						<property name="stock_id">gtk-new</property>
+						<property name="stock-id">gtk-new</property>
 						<property name="name">new_game_menu</property>
 						<signal name="activate" handler="hitori_new_game_cb"/>
 					</object>
 				</child>
 				<child>
 					<object class="GtkAction" id="board_size_menu">
-						<property name="label">Board _Size</property>
+						<property name="label" translatable="yes">Board _Size</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_5">
-						<property name="label">5x5</property>
+						<property name="label" translatable="yes">5×5</property>
 						<property name="value">5</property>
 						<property name="current-value">5</property>
 						<signal name="changed" handler="hitori_board_size_cb"/>
@@ -32,51 +32,51 @@
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_6">
-						<property name="label">6x6</property>
+						<property name="label" translatable="yes">6×6</property>
 						<property name="value">6</property>
 						<property name="group">board_size_5</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_7">
-						<property name="label">7x7</property>
+						<property name="label" translatable="yes">7×7</property>
 						<property name="value">7</property>
 						<property name="group">board_size_5</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_8">
-						<property name="label">8x8</property>
+						<property name="label" translatable="yes">8×8</property>
 						<property name="value">8</property>
 						<property name="group">board_size_5</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_9">
-						<property name="label">9x9</property>
+						<property name="label" translatable="yes">9×9</property>
 						<property name="value">9</property>
 						<property name="group">board_size_5</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkRadioAction" id="board_size_10">
-						<property name="label">10x10</property>
+						<property name="label" translatable="yes">10×10</property>
 						<property name="value">10</property>
 						<property name="group">board_size_5</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkAction" id="hint_menu">
-						<property name="stock_id">gtk-info</property>
+						<property name="stock-id">gtk-info</property>
 						<property name="name">hint_menu</property>
-						<property name="label">_Hint</property>
+						<property name="label" translatable="yes">_Hint</property>
 						<signal name="activate" handler="hitori_hint_cb"/>
 					</object>
 					<accelerator key="H" modifiers="GDK_CONTROL_MASK"/>
 				</child>
 				<child>
 					<object class="GtkAction" id="undo_menu">
-						<property name="stock_id">gtk-undo</property>
+						<property name="stock-id">gtk-undo</property>
 						<property name="name">undo_menu</property>
 						<property name="sensitive">False</property>
 						<signal name="activate" handler="hitori_undo_cb"/>
@@ -85,7 +85,7 @@
 				</child>
 				<child>
 					<object class="GtkAction" id="redo_menu">
-						<property name="stock_id">gtk-redo</property>
+						<property name="stock-id">gtk-redo</property>
 						<property name="name">redo_menu</property>
 						<property name="sensitive">False</property>
 						<signal name="activate" handler="hitori_redo_cb"/>
@@ -94,32 +94,32 @@
 				</child>
 				<child>
 					<object class="GtkAction" id="quit_menu">
-						<property name="stock_id">gtk-quit</property>
+						<property name="stock-id">gtk-quit</property>
 						<property name="name">quit_menu</property>
 						<signal name="activate" handler="hitori_quit_cb"/>
 					</object>
 				</child>
-				<child>
+				<!--<child>
 					<object class="GtkAction" id="settings_menu">
 						<property name="name">settings_menu</property>
-						<property name="label">_Settings</property>
+						<property name="label" translatable="yes">_Settings</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkAction" id="preferences_menu">
-						<property name="stock_id">gtk-preferences</property>
+						<property name="stock-id">gtk-preferences</property>
 						<property name="name">preferences_menu</property>
 					</object>
-				</child>
+				</child>-->
 				<child>
 					<object class="GtkAction" id="help_menu">
 						<property name="name">help_menu</property>
-						<property name="label">_Help</property>
+						<property name="label" translatable="yes">_Help</property>
 					</object>
 				</child>
 				<child>
 					<object class="GtkAction" id="contents_menu">
-						<property name="stock_id">gtk-help</property>
+						<property name="stock-id">gtk-help</property>
 						<property name="name">contents_menu</property>
 						<signal name="activate" handler="hitori_contents_cb"/>
 					</object>
@@ -127,7 +127,7 @@
 				</child>
 				<child>
 					<object class="GtkAction" id="about_menu">
-						<property name="stock_id">gtk-about</property>
+						<property name="stock-id">gtk-about</property>
 						<property name="name">about_menu</property>
 						<signal name="activate" handler="hitori_about_cb"/>
 					</object>
