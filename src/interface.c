@@ -47,10 +47,8 @@ hitori_create_interface (Hitori *hitori)
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
 				_("UI file \""PACKAGE_DATA_DIR"/hitori/hitori.ui\" could not be loaded. Error: %s"), error->message);
-		g_signal_connect_swapped (dialog, "response", 
-				G_CALLBACK (gtk_widget_destroy),
-				dialog);
-		gtk_widget_show_all (dialog);
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
 
 		g_error_free (error);
 		g_object_unref (builder);
@@ -178,10 +176,8 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 				GTK_MESSAGE_INFO,
 				GTK_BUTTONS_OK,
 				_("You've won!"));
-		g_signal_connect_swapped (dialog, "response", 
-				G_CALLBACK (gtk_widget_destroy),
-				dialog);
-		gtk_widget_show_all (dialog);
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
 	}
 }
 
@@ -262,6 +258,8 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 		recheck = TRUE;
 	}
 
+	hitori->made_a_move = TRUE;
+
 	if (hitori->undo_stack != NULL)
 		hitori->undo_stack->redo = undo;
 	hitori->undo_stack = undo;
@@ -290,7 +288,7 @@ hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 void
 hitori_new_game_cb (GtkAction *action, Hitori *hitori)
 {
-	hitori_new_game (hitori);
+	hitori_new_game (hitori, BOARD_SIZE);
 }
 
 static gboolean
@@ -450,4 +448,10 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 				NULL);
 
 	g_free (license);
+}
+
+void
+hitori_board_size_cb (GtkRadioAction *action, GtkRadioAction *current, Hitori *hitori)
+{
+	hitori_set_board_size (hitori, gtk_radio_action_get_current_value (current));
 }

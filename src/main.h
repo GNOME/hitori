@@ -31,6 +31,7 @@
 G_BEGIN_DECLS
 
 #define BOARD_SIZE hitori->board_size
+#define DEFAULT_BOARD_SIZE 5
 
 typedef enum {
 	UNDO_NEW_GAME,
@@ -74,6 +75,7 @@ typedef struct {
 
 	gboolean debug;
 	gboolean processing_events;
+	gboolean made_a_move;
 	HitoriUndo *undo_stack;
 
 	guint hint_status;
@@ -81,8 +83,9 @@ typedef struct {
 	guint hint_y;
 } Hitori;
 
-void hitori_new_game (Hitori *hitori);
+void hitori_new_game (Hitori *hitori, guint board_size);
 void hitori_clear_undo_stack (Hitori *hitori);
+void hitori_set_board_size (Hitori *hitori, guint board_size);
 void hitori_print_board (Hitori *hitori);
 void hitori_enable_events (Hitori *hitori);
 void hitori_disable_events (Hitori *hitori);

@@ -18,6 +18,54 @@
           </object>
         </child>
         <child>
+          <object class="GtkAction" id="board_size_menu">
+            <property name="label">Board _Size</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_5">
+            <property name="label">5x5</property>
+            <property name="value">5</property>
+            <property name="current-value">5</property>
+            <signal name="changed" handler="hitori_board_size_cb"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_6">
+            <property name="label">6x6</property>
+            <property name="value">6</property>
+            <property name="group">board_size_5</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_7">
+            <property name="label">7x7</property>
+            <property name="value">7</property>
+            <property name="group">board_size_5</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_8">
+            <property name="label">8x8</property>
+            <property name="value">8</property>
+            <property name="group">board_size_5</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_9">
+            <property name="label">9x9</property>
+            <property name="value">9</property>
+            <property name="group">board_size_5</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkRadioAction" id="board_size_10">
+            <property name="label">10x10</property>
+            <property name="value">10</property>
+            <property name="group">board_size_5</property>
+          </object>
+        </child>
+        <child>
           <object class="GtkAction" id="hint_menu">
             <property name="stock_id">gtk-info</property>
             <property name="name">hint_menu</property>
@@ -91,6 +139,15 @@
           <menuitem action="new_game_menu"/>
           <separator/>
           <menuitem action="hint_menu"/>
+          <separator/>
+          <menu name="board_size" action="board_size_menu">
+            <menuitem name="board_size_5" action="board_size_5"/>
+            <menuitem name="board_size_6" action="board_size_6"/>
+            <menuitem name="board_size_7" action="board_size_7"/>
+            <menuitem name="board_size_8" action="board_size_8"/>
+            <menuitem name="board_size_9" action="board_size_9"/>
+            <menuitem name="board_size_10" action="board_size_10"/>
+          </menu>
           <separator/>
           <menuitem action="undo_menu"/>
           <menuitem action="redo_menu"/>

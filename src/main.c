@@ -32,9 +32,11 @@
 #include "generator.h"
 
 void
-hitori_new_game (Hitori *hitori)
+hitori_new_game (Hitori *hitori, guint board_size)
 {
-	hitori_generate_board (hitori);
+	hitori->made_a_move = FALSE;
+
+	hitori_generate_board (hitori, board_size);
 	hitori_clear_undo_stack (hitori);
 	hitori_draw_board_simple (hitori, FALSE);
 }
@@ -61,6 +63,31 @@ hitori_clear_undo_stack (Hitori *hitori)
 
 	gtk_action_set_sensitive (hitori->undo_action, FALSE);
 	gtk_action_set_sensitive (hitori->redo_action, FALSE);
+}
+
+void
+hitori_set_board_size (Hitori *hitori, guint board_size)
+{
+	/* Ask the user if they want to stop the current game, if they're playing at the moment */
+	if (hitori->processing_events == TRUE && hitori->made_a_move == TRUE) {
+		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+				GTK_DIALOG_MODAL,
+				GTK_MESSAGE_QUESTION,
+				GTK_BUTTONS_YES_NO,
+				_("Do you want to stop the current game?"));
+		if (gtk_dialog_run (GTK_DIALOG (dialog)) == GTK_RESPONSE_YES) {
+			/* Kill the current game and resize the board */
+			gtk_widget_destroy (dialog);
+			hitori_new_game (hitori, board_size);
+			return;
+		}
+
+		gtk_widget_destroy (dialog);
+	} else {
+		/* We won't actually start a new game, but resize the board anyway */
+		hitori_generate_board (hitori, board_size);
+		hitori_draw_board_simple (hitori, FALSE);
+	}
 }
 
 void
@@ -106,6 +133,11 @@ void
 hitori_quit (Hitori *hitori)
 {
 	guint i;
+	static gboolean quitting = FALSE;
+
+	if (quitting == TRUE)
+		return;
+	quitting = TRUE;
 
 	for (i = 0; i < BOARD_SIZE; i++)
 		g_free (hitori->board[i]);
@@ -130,7 +162,6 @@ main (int argc, char *argv[])
 	GError *error = NULL;
 	gboolean debug = FALSE;
 	gint seed = -1;
-	guint i;
 
 	const GOptionEntry options[] = {
 	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
@@ -171,6 +202,8 @@ main (int argc, char *argv[])
 	/* Setup */
 	hitori = g_new (Hitori, 1);
 	hitori->debug = debug;
+	hitori->board_size = DEFAULT_BOARD_SIZE;
+	hitori->board = NULL;
 	hitori->hint_status = 0;
 	hitori->hint_x = 0;
 	hitori->hint_y = 0;
@@ -183,13 +216,6 @@ main (int argc, char *argv[])
 	undo->undo = NULL;
 	hitori->undo_stack = undo;
 
-	/* Create the board */
-	/* TODO: Add an interface */
-	hitori->board_size = 10;
-	hitori->board = g_malloc (sizeof (HitoriCell*) * BOARD_SIZE);
-	for (i = 0; i < BOARD_SIZE; i++)
-		hitori->board[i] = g_malloc0 (sizeof (HitoriCell) * BOARD_SIZE);
-
 	/* Showtime! */
 	if (seed == -1)
 		seed = time (0);
@@ -199,7 +225,7 @@ main (int argc, char *argv[])
 	srand (seed);
 
 	hitori_create_interface (hitori);
-	hitori_generate_board (hitori);
+	hitori_generate_board (hitori, BOARD_SIZE);
 	gtk_widget_show (hitori->window);
 
 	g_option_context_free (context);

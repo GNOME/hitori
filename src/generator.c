@@ -29,16 +29,33 @@
 #include "rules.h"
 
 void
-hitori_generate_board (Hitori *hitori)
+hitori_generate_board (Hitori *hitori, guint new_board_size)
 {
 	guint i, total, old_total, x, y;
-	gboolean *accum = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 2)); /* Stores which numbers have been used in the current column */
-	gboolean **horiz_accum = g_malloc (sizeof (gboolean*) * BOARD_SIZE); /* Stores which numbers have been used in each row */
+	gboolean *accum;
+	gboolean **horiz_accum;
+
+	/* Deallocate any previous board */
+	if (hitori->board != NULL) {
+		for (i = 0; i < BOARD_SIZE; i++)
+			g_free (hitori->board[i]);
+		g_free (hitori->board);
+	}
+
+	hitori->board_size = new_board_size;
+
+	accum = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 2)); /* Stores which numbers have been used in the current column */
+	horiz_accum = g_malloc (sizeof (gboolean*) * BOARD_SIZE); /* Stores which numbers have been used in each row */
 	for (x = 0; x < BOARD_SIZE; x++)
 		horiz_accum[x] = g_malloc0 (sizeof (gboolean) * (BOARD_SIZE + 2));
 
+	/* Allocate the board */
+	hitori->board = g_malloc (sizeof (HitoriCell*) * BOARD_SIZE);
+	for (i = 0; i < BOARD_SIZE; i++)
+		hitori->board[i] = g_malloc0 (sizeof (HitoriCell) * BOARD_SIZE);
+
 	/* Clear the board */
-	for (x = 0; x < BOARD_SIZE; x++) {
+	/*for (x = 0; x < BOARD_SIZE; x++) {
 		for (y = 0; y < BOARD_SIZE; y++) {
 			hitori->board[x][y].painted = FALSE;
 			hitori->board[x][y].tag1 = FALSE;
@@ -46,7 +63,7 @@ hitori_generate_board (Hitori *hitori)
 			hitori->board[x][y].should_be_painted = FALSE;
 			hitori->board[x][y].num = 0;
 		}
-	}
+	}*/
 
 	/* TODO: Different ranges for different grid sizes */
 	/* Generate some randomly-placed painted cells */
@@ -73,7 +90,7 @@ hitori_generate_board (Hitori *hitori)
 	/* Check that the painted squares don't mess everything up */
 	if (hitori_check_rule2 (hitori) == FALSE ||
 	    hitori_check_rule3 (hitori) == FALSE)
-		return hitori_generate_board (hitori);
+		return hitori_generate_board (hitori, BOARD_SIZE);
 
 	/* Fill in the squares, leaving the painted ones blank,
 	 * and making sure not to repeat any previous numbers. */
@@ -94,7 +111,7 @@ hitori_generate_board (Hitori *hitori)
 						total--;
 
 					if (total < 1)
-						return hitori_generate_board (hitori); /* We're buggered */
+						return hitori_generate_board (hitori, BOARD_SIZE); /* We're buggered */
 
 					i = rand () % (BOARD_SIZE + 1) + 1;
 				}
