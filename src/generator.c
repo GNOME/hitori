@@ -26,6 +26,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include "generator.h"
+#include "rules.h"
 
 void
 hitori_generate_board (Hitori *hitori)
@@ -60,6 +61,7 @@ hitori_generate_board (Hitori *hitori)
 		} while (TRUE);
 
 		hitori->board[x][y].painted = TRUE;
+		hitori->board[x][y].should_be_painted = TRUE;
 	}
 
 	/* Check that the painted squares don't mess everything up */

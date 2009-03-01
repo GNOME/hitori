@@ -28,9 +28,13 @@
 #include "config.h"
 #include "main.h"
 #include "interface.h"
+#include "rules.h"
 
 /* Callbacks for GtkBuilder */
 gboolean hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori);
+gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
+void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
+void hitori_quit_cb (GtkAction *action, Hitori *hitori);
 
 GtkWidget*
 hitori_create_interface (Hitori *hitori)
@@ -196,4 +200,16 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	cairo_destroy (cr);
 
 	return FALSE;
+}
+
+void
+hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
+{
+	hitori_quit (hitori);
+}
+
+void
+hitori_quit_cb (GtkAction *action, Hitori *hitori)
+{
+	hitori_quit (hitori);
 }

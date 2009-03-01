@@ -16,7 +16,9 @@ hitori_SOURCES = \
 	main.h  \
 	interface.h  \
 	generator.c  \
-	generator.h
+	generator.h  \
+	rules.c  \
+	rules.h
 
 hitori_LDFLAGS = 
 

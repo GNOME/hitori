@@ -63,6 +63,7 @@ typedef struct {
 	gboolean painted;
 	gboolean tag1;
 	gboolean tag2;
+	gboolean should_be_painted;
 } HitoriCell;
 
 typedef struct {
@@ -74,11 +75,10 @@ typedef struct {
 	gdouble drawing_area_height;
 	
 	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
+
+	gboolean debug;
 } Hitori;
 
-gboolean hitori_check_rule1 (Hitori *hitori);
-gboolean hitori_check_rule2 (Hitori *hitori);
-gboolean hitori_check_rule3 (Hitori *hitori);
 void hitori_print_board (Hitori *hitori);
 void hitori_quit (Hitori *hitori);
 
