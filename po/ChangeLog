@@ -1,3 +1,7 @@
+2009-03-01  Philip Withnall  <philip@tecnocode.co.uk>
+
+	Updated svn:ignore properties.
+
 2008-06-27  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* ChangeLog: Ported bzr history to ChangeLogs.
