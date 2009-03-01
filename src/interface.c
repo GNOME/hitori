@@ -306,20 +306,52 @@ static gboolean
 hitori_update_hint (gpointer user_data)
 {
 	Hitori *hitori;
+	cairo_t *cr;
+	gint area_width, area_height;
+	guint board_width, board_height;
+	gfloat cell_size;
 	gboolean return_value = FALSE;
 
 	hitori = (Hitori*) user_data;
 	hitori->hint_status++;
 
+	/* Calculate the area to redraw (just the hinted cell, hopefully) */
+	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
+
+	/* Clamp the width/height to the minimum */
+	if (area_height < area_width) {
+		board_width = area_height;
+		board_height = area_height;
+	} else {
+		board_width = area_width;
+		board_height = area_width;
+	}
+
+	cell_size = board_width / BOARD_SIZE;
+
+	/* Centre the board */
+	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	cairo_save (cr);
+
+	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
+	hitori->drawing_area_y_offset = (area_height - board_height) / 2;
+	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
+
+	/* Clip to the cell */
+	cairo_rectangle (cr, hitori->hint_x * cell_size, hitori->hint_y * cell_size, cell_size, cell_size);
+	cairo_clip (cr);
+	cairo_restore (cr);
+
 	if (hitori->hint_status >= HINT_FLASHES) {
+		hitori->hint_status = 0;
 		hitori->hint_x = 0;
 		hitori->hint_y = 0;
-		hitori->hint_status = 0;
 	} else {
 		return_value = TRUE;
 	}
 
-	hitori_draw_board_simple (hitori, FALSE, FALSE);
+	hitori_draw_board (hitori, cr, FALSE);
+	cairo_destroy (cr);
 
 	return return_value;
 }
