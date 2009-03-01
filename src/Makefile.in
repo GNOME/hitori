@@ -49,7 +49,7 @@ am_hitori_OBJECTS = main.$(OBJEXT) interface.$(OBJEXT) \
 	generator.$(OBJEXT) rules.$(OBJEXT)
 hitori_OBJECTS = $(am_hitori_OBJECTS)
 am__DEPENDENCIES_1 =
-hitori_DEPENDENCIES = $(am__DEPENDENCIES_1)
+hitori_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 hitori_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) \
 	--mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(hitori_LDFLAGS) \
 	$(LDFLAGS) -o $@
@@ -78,6 +78,8 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+CAIRO_CFLAGS = @CAIRO_CFLAGS@
+CAIRO_LIBS = @CAIRO_LIBS@
 CATALOGS = @CATALOGS@
 CATOBJEXT = @CATOBJEXT@
 CC = @CC@
@@ -228,7 +230,8 @@ INCLUDES = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
-	$(GTK_CFLAGS)
+	$(GTK_CFLAGS) \
+	$(CAIRO_CFLAGS)
 
 AM_CFLAGS = \
 	 -Wall\
@@ -245,7 +248,10 @@ hitori_SOURCES = \
 	rules.h
 
 hitori_LDFLAGS = 
-hitori_LDADD = $(GTK_LIBS)
+hitori_LDADD = \
+	$(GTK_LIBS) \
+	$(CAIRO_LIBS)
+
 all: all-am
 
 .SUFFIXES:

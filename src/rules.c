@@ -31,44 +31,64 @@ gboolean
 hitori_check_rule1 (Hitori *hitori)
 {
 	guint x, y;
-	gboolean accum[BOARD_SIZE];
+	gboolean accum[BOARD_SIZE+1];
 
 	/* Check columns for repeating numbers */
 	for (x = 0; x < BOARD_SIZE; x++) {
+		/* Reset accum */
+		for (y = 0; y < BOARD_SIZE+1; y++)
+			accum[y] = FALSE;
+
 		for (y = 0; y < BOARD_SIZE; y++) {
 			if (hitori->board[x][y].painted == FALSE) {
 				if (accum[hitori->board[x][y].num-1] == TRUE) {
-					if (hitori->debug)
-						g_message ("Rule 1 failed");
+					if (hitori->debug) {
+						g_message ("Rule 1 failed in column %u, row %u", x, y);
+
+						/* Print out the accumulator */
+						for (y = 0; y < BOARD_SIZE+1; y++) {
+							if (accum[y] == TRUE)
+								printf ("X");
+							else
+								printf ("_");
+						}
+						printf ("\n");
+					}
 					return FALSE;
 				}
 
 				accum[hitori->board[x][y].num-1] = TRUE;
 			}
 		}
-
-		/* Reset accum */
-		for (y = 0; y < BOARD_SIZE; y++)
-			accum[y] = FALSE;
 	}
 
 	/* Now check the rows */
 	for (y = 0; y < BOARD_SIZE; y++) {
+		/* Reset accum */
+		for (x = 0; x < BOARD_SIZE+1; x++)
+			accum[x] = FALSE;
+
 		for (x = 0; x < BOARD_SIZE; x++) {
 			if (hitori->board[x][y].painted == FALSE) {
 				if (accum[hitori->board[x][y].num-1] == TRUE) {
-					if (hitori->debug)
-						g_message ("Rule 1 failed");
+					if (hitori->debug) {
+						g_message ("Rule 1 failed in row %u, column %u", y, x);
+
+						/* Print out the accumulator */
+						for (y = 0; y < BOARD_SIZE+1; y++) {
+							if (accum[y] == TRUE)
+								printf ("X");
+							else
+								printf ("_");
+						}
+						printf ("\n");
+					}
 					return FALSE;
 				}
 
 				accum[hitori->board[x][y].num-1] = TRUE;
 			}
 		}
-
-		/* Reset accum */
-		for (y = 0; y < BOARD_SIZE; y++)
-			accum[y] = FALSE;
 	}
 
 	if (hitori->debug)

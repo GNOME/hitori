@@ -131,4 +131,7 @@ hitori_generate_board (Hitori *hitori)
 			}
 		}
 	}
+
+	/* Update things */
+	hitori_enable_events (hitori);
 }

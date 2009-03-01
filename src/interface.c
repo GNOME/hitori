@@ -34,9 +34,10 @@ GtkWidget*
 hitori_create_interface (Hitori *hitori)
 {
 	GError *error = NULL;
+	GtkBuilder *builder;
 
-	hitori->builder = gtk_builder_new ();
-	if (gtk_builder_add_from_file (hitori->builder, UI_FILE, &error) == FALSE) {
+	builder = gtk_builder_new ();
+	if (gtk_builder_add_from_file (builder, UI_FILE, &error) == FALSE) {
 		/* Show an error */
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 				GTK_DIALOG_MODAL,
@@ -49,18 +50,22 @@ hitori_create_interface (Hitori *hitori)
 		gtk_widget_show_all (dialog);
 
 		g_error_free (error);
+		g_object_unref (builder);
 		hitori_quit (hitori);
 		return NULL;
 	}
 
-	gtk_builder_set_translation_domain (hitori->builder, GETTEXT_PACKAGE);
-	gtk_builder_connect_signals (hitori->builder, hitori);
+	gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);
+	gtk_builder_connect_signals (builder, hitori);
 
 	/* Setup the main window */
-	hitori->window = GTK_WIDGET (gtk_builder_get_object (hitori->builder, "hitori_main_window"));
-	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (hitori->builder, "hitori_drawing_area"));
-	hitori->undo_action = GTK_ACTION (gtk_builder_get_object (hitori->builder, "undo_menu"));
-	hitori->redo_action = GTK_ACTION (gtk_builder_get_object (hitori->builder, "redo_menu"));
+	hitori->window = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_main_window"));
+	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
+	hitori->undo_action = GTK_ACTION (gtk_builder_get_object (builder, "undo_menu"));
+	hitori->redo_action = GTK_ACTION (gtk_builder_get_object (builder, "redo_menu"));
+	hitori->hint_action = GTK_ACTION (gtk_builder_get_object (builder, "hint_menu"));
+
+	g_object_unref (builder);
 
 	return hitori->window;
 }
@@ -163,6 +168,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	    hitori_check_rule2 (hitori) &&
 	    hitori_check_rule3 (hitori)) {
 		/* Win! */
+		hitori_disable_events (hitori);
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_INFO,
@@ -203,11 +209,15 @@ hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori
 gboolean
 hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori)
 {
+	if (hitori->processing_events == FALSE)
+		return FALSE;
+
 	gint width, height;
 	gfloat cell_size;
 	guint x, y;
 	cairo_t *cr;
 	HitoriUndo *undo;
+	gboolean recheck = FALSE;
 
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &width, &height);
 
@@ -226,6 +236,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (x >= BOARD_SIZE || y >= BOARD_SIZE)
 		return FALSE;
 
+	/* Update the undo stack */
 	undo = g_new (HitoriUndo, 1);
 	undo->x = x;
 	undo->y = y;
@@ -244,6 +255,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 		/* Update the paint overlay */
 		hitori->board[x][y].painted = !(hitori->board[x][y].painted);
 		undo->type = UNDO_PAINT;
+		recheck = TRUE;
 	}
 
 	if (hitori->undo_stack != NULL)
@@ -251,12 +263,15 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	hitori->undo_stack = undo;
 	gtk_action_set_sensitive (hitori->undo_action, TRUE);
 
+	/* Stop any current hints */
+	hitori->hint_status = HINT_FLASHES;
+
 	/* Redraw */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
 	cairo_rectangle (cr, x * cell_size + hitori->drawing_area_x_offset, y * cell_size + hitori->drawing_area_y_offset,
 				cell_size, cell_size);
 	cairo_clip (cr);
-	hitori_draw_board (hitori, cr, TRUE);
+	hitori_draw_board (hitori, cr, recheck);
 	cairo_destroy (cr);
 
 	return FALSE;
@@ -278,20 +293,22 @@ static gboolean
 hitori_update_hint (gpointer user_data)
 {
 	Hitori *hitori;
+	gboolean return_value = FALSE;
 
 	hitori = (Hitori*) user_data;
 	hitori->hint_status++;
 
-	hitori_draw_board_simple (hitori, FALSE);
-
-	if (hitori->hint_status == HINT_FLASHES) {
+	if (hitori->hint_status >= HINT_FLASHES) {
 		hitori->hint_x = 0;
 		hitori->hint_y = 0;
 		hitori->hint_status = 0;
-		return FALSE;
+	} else {
+		return_value = TRUE;
 	}
 
-	return TRUE;
+	hitori_draw_board_simple (hitori, FALSE);
+
+	return return_value;
 }
 
 void
@@ -425,7 +442,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 				"license", license,
 				"wrap-license", TRUE,
 				"website-label", _("Hitori Website"),
-				"website", "http://hitori.tecnocode.co.uk/",
+				"website", "http://tecnocode.co.uk?page=blog&action=view_item&id=60",
 				NULL);
 
 	g_free (license);

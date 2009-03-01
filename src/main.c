@@ -32,8 +32,8 @@
 void
 hitori_new_game (Hitori *hitori)
 {
-	hitori_clear_undo_stack (hitori);
 	hitori_generate_board (hitori);
+	hitori_clear_undo_stack (hitori);
 	hitori_draw_board_simple (hitori, FALSE);
 }
 
@@ -58,6 +58,7 @@ hitori_clear_undo_stack (Hitori *hitori)
 	hitori->undo_stack->redo = NULL;
 
 	gtk_action_set_sensitive (hitori->undo_action, FALSE);
+	gtk_action_set_sensitive (hitori->redo_action, FALSE);
 }
 
 void
@@ -79,17 +80,38 @@ hitori_print_board (Hitori *hitori)
 }
 
 void
+hitori_enable_events (Hitori *hitori)
+{
+	hitori->processing_events = TRUE;
+
+	if (hitori->undo_stack->redo != NULL)
+		gtk_action_set_sensitive (hitori->redo_action, TRUE);
+	if (hitori->undo_stack->undo != NULL)
+		gtk_action_set_sensitive (hitori->redo_action, TRUE);
+	gtk_action_set_sensitive (hitori->hint_action, TRUE);
+}
+
+void
+hitori_disable_events (Hitori *hitori)
+{
+	hitori->processing_events = FALSE;
+	gtk_action_set_sensitive (hitori->redo_action, FALSE);
+	gtk_action_set_sensitive (hitori->undo_action, FALSE);
+	gtk_action_set_sensitive (hitori->hint_action, FALSE);
+}
+
+void
 hitori_quit (Hitori *hitori)
 {
+	hitori_clear_undo_stack (hitori);
+	g_free (hitori->undo_stack); /* Clear the new game element */
+	if (hitori->window != NULL)
+		gtk_widget_destroy (hitori->window);
+
 	if (gtk_main_level () > 0)
 		gtk_main_quit ();
 
-	if (hitori == NULL)
-		exit (0);
-
-	hitori_clear_undo_stack (hitori);
-	g_free (hitori->undo_stack); /* Clear the new game element */
-	g_free (hitori);
+	exit (0);
 }
 
 int
@@ -141,6 +163,9 @@ main (int argc, char *argv[])
 	/* Setup */
 	hitori = g_new (Hitori, 1);
 	hitori->debug = debug;
+	hitori->hint_status = 0;
+	hitori->hint_x = 0;
+	hitori->hint_y = 0;
 
 	undo = g_new (HitoriUndo, 1);
 	undo->type = UNDO_NEW_GAME;
@@ -150,9 +175,11 @@ main (int argc, char *argv[])
 	undo->undo = NULL;
 	hitori->undo_stack = undo;
 
-	hitori_generate_board (hitori);
 	hitori_create_interface (hitori);
+	hitori_generate_board (hitori);
 	gtk_widget_show (hitori->window);
+
+	g_option_context_free (context);
 
 	gtk_main ();
 	return 0;

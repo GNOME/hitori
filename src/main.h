@@ -84,10 +84,10 @@ typedef struct {
 
 typedef struct {
 	GtkWidget *window;
-	GtkBuilder *builder;
 	GtkWidget *drawing_area;
 	GtkAction *undo_action;
 	GtkAction *redo_action;
+	GtkAction *hint_action;
 
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;
@@ -98,6 +98,7 @@ typedef struct {
 	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
 
 	gboolean debug;
+	gboolean processing_events;
 	HitoriUndo *undo_stack;
 
 	guint hint_status;
@@ -108,6 +109,8 @@ typedef struct {
 void hitori_new_game (Hitori *hitori);
 void hitori_clear_undo_stack (Hitori *hitori);
 void hitori_print_board (Hitori *hitori);
+void hitori_enable_events (Hitori *hitori);
+void hitori_disable_events (Hitori *hitori);
 void hitori_quit (Hitori *hitori);
 
 G_END_DECLS
