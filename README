@@ -44,7 +44,7 @@ BUGS
 ====
 
 Bugs should be sent to me:
-http://tecnocode.co.uk/?page=contact
+http://tecnocode.co.uk/contact
 
 To get a better debug output, run:
 # hitori --debug
@@ -53,4 +53,4 @@ Contact
 =======
 
 Philip Withnall <philip@tecnocode.co.uk>
-http://tecnocode.co.uk?page=blog&action=view_item&id=60
+http://tecnocode.co.uk/projects/hitori
