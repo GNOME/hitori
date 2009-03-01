@@ -34,25 +34,28 @@ hitori_new_game (Hitori *hitori)
 {
 	hitori_clear_undo_stack (hitori);
 	hitori_generate_board (hitori);
+	hitori_draw_board_simple (hitori, FALSE);
 }
 
 void
 hitori_clear_undo_stack (Hitori *hitori)
-{
-	HitoriUndo *undo;
-	
+{	
 	/* Clear the undo stack */
 	if (hitori->undo_stack != NULL) {
-		undo = hitori->undo_stack;
-		while (undo->next != NULL)
-			undo = undo->next;
+		while (hitori->undo_stack->redo != NULL)
+			hitori->undo_stack = hitori->undo_stack->redo;
 
-		while (undo->prev != NULL) {
-			undo = undo->prev;
-			if (undo->next->type != UNDO_NEW_GAME)
-				g_free (undo->next);
+		while (hitori->undo_stack->undo != NULL) {
+			hitori->undo_stack = hitori->undo_stack->undo;
+			g_free (hitori->undo_stack->redo);
+			if (hitori->undo_stack->type == UNDO_NEW_GAME)
+				break;
 		}
 	}
+
+	/* Reset the "new game" item */
+	hitori->undo_stack->undo = NULL;
+	hitori->undo_stack->redo = NULL;
 
 	gtk_action_set_sensitive (hitori->undo_action, FALSE);
 }
@@ -60,9 +63,9 @@ hitori_clear_undo_stack (Hitori *hitori)
 void
 hitori_print_board (Hitori *hitori)
 {
-	guint x, y;
-
 	if (hitori->debug) {
+		guint x, y;
+
 		for (y = 0; y < BOARD_SIZE; y++) {
 			for (x = 0; x < BOARD_SIZE; x++) {
 				if (hitori->board[x][y].painted == FALSE)
@@ -112,8 +115,8 @@ main (int argc, char *argv[])
 	undo->type = UNDO_NEW_GAME;
 	undo->x = 0;
 	undo->y = 0;
-	undo->next = NULL;
-	undo->prev = NULL;
+	undo->redo = NULL;
+	undo->undo = NULL;
 	hitori->undo_stack = undo;
 
 	hitori_generate_board (hitori);

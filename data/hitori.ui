@@ -18,6 +18,14 @@
           </object>
         </child>
         <child>
+          <object class="GtkAction" id="hint_menu">
+            <property name="name">hint_menu</property>
+            <property name="label">_Hint</property>
+            <signal name="activate" handler="hitori_hint_cb"/>
+          </object>
+          <accelerator key="H"/>
+        </child>
+        <child>
           <object class="GtkAction" id="undo_menu">
             <property name="stock_id">gtk-undo</property>
             <property name="name">undo_menu</property>
@@ -77,6 +85,9 @@
       <menubar name="hitori_menu_bar">
         <menu action="game_menu">
           <menuitem action="new_game_menu"/>
+          <separator/>
+          <menuitem action="hint_menu"/>
+          <separator/>
           <menuitem action="undo_menu"/>
           <menuitem action="redo_menu"/>
           <separator/>

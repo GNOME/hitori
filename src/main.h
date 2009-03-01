@@ -70,8 +70,8 @@ struct _HitoriUndo {
 	HitoriUndoType type;
 	guint x;
 	guint y;
-	HitoriUndo *prev;
-	HitoriUndo *next;
+	HitoriUndo *undo;
+	HitoriUndo *redo;
 };
 
 typedef struct {
@@ -91,11 +91,18 @@ typedef struct {
 
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;
-	
+
+	guint drawing_area_x_offset;
+	guint drawing_area_y_offset;
+
 	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
 
 	gboolean debug;
 	HitoriUndo *undo_stack;
+
+	guint hint_status;
+	guint hint_x;
+	guint hint_y;
 } Hitori;
 
 void hitori_new_game (Hitori *hitori);

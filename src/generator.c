@@ -39,6 +39,9 @@ hitori_generate_board (Hitori *hitori)
 	for (x = 0; x < BOARD_SIZE; x++) {
 		for (y = 0; y < BOARD_SIZE; y++) {
 			hitori->board[x][y].painted = FALSE;
+			hitori->board[x][y].tag1 = FALSE;
+			hitori->board[x][y].tag2 = FALSE;
+			hitori->board[x][y].should_be_painted = FALSE;
 			hitori->board[x][y].num = 0;
 		}
 	}

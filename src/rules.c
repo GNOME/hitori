@@ -122,6 +122,8 @@ hitori_check_rule3 (Hitori *hitori)
 	unchecked_cells_y = g_queue_new ();
 
 	/* Find the first unpainted cell */
+	x = 0;
+	y = 0;
 	if (hitori->board[x][y].painted == TRUE)
 		x = 1;
 
@@ -152,19 +154,19 @@ hitori_check_rule3 (Hitori *hitori)
 			group_bases[groups[x][y]] = group_bases[groups[x+1][y]];
 
 		/* Find somewhere else to go */
-		if (y >= 1 && groups[x][y-1] == 0 && hitori->board[x][y-1].painted == FALSE) {
+		if (y >= 1 && x < BOARD_SIZE && groups[x][y-1] == 0 && hitori->board[x][y-1].painted == FALSE) {
 			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (x));
 			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (y-1));
 		}
-		if (y + 1 < BOARD_SIZE && groups[x][y+1] == 0 && hitori->board[x][y+1].painted == FALSE) {
+		if (y + 1 < BOARD_SIZE && x >= 0 && groups[x][y+1] == 0 && hitori->board[x][y+1].painted == FALSE) {
 			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (x));
 			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (y+1));
 		}
-		if (x >= 1 && groups[x-1][y] == 0 && hitori->board[x-1][y].painted == FALSE) {
+		if (x >= 1 && y < BOARD_SIZE && groups[x-1][y] == 0 && hitori->board[x-1][y].painted == FALSE) {
 			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (x-1));
 			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (y));
 		}
-		if (x + 1 < BOARD_SIZE && groups[x+1][y] == 0 && hitori->board[x+1][y].painted == FALSE) {
+		if (x + 1 < BOARD_SIZE && y >= 0 && groups[x+1][y] == 0 && hitori->board[x+1][y].painted == FALSE) {
 			g_queue_push_head (unchecked_cells_x, GUINT_TO_POINTER (x+1));
 			g_queue_push_head (unchecked_cells_y, GUINT_TO_POINTER (y));
 		}
