@@ -29,7 +29,7 @@
 
 G_BEGIN_DECLS
 
-void hitori_generate_board (Hitori *hitori, guint new_board_size);
+void hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed);
 
 G_END_DECLS
 

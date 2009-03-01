@@ -36,9 +36,9 @@ hitori_new_game (Hitori *hitori, guint board_size)
 {
 	hitori->made_a_move = FALSE;
 
-	hitori_generate_board (hitori, board_size);
+	hitori_generate_board (hitori, board_size, -1);
 	hitori_clear_undo_stack (hitori);
-	hitori_draw_board_simple (hitori, FALSE);
+	hitori_draw_board_simple (hitori, FALSE, TRUE);
 }
 
 void
@@ -85,8 +85,8 @@ hitori_set_board_size (Hitori *hitori, guint board_size)
 		gtk_widget_destroy (dialog);
 	} else {
 		/* We won't actually start a new game, but resize the board anyway */
-		hitori_generate_board (hitori, board_size);
-		hitori_draw_board_simple (hitori, FALSE);
+		hitori_generate_board (hitori, board_size, -1);
+		hitori_draw_board_simple (hitori, FALSE, TRUE);
 	}
 }
 
@@ -217,15 +217,8 @@ main (int argc, char *argv[])
 	hitori->undo_stack = undo;
 
 	/* Showtime! */
-	if (seed == -1)
-		seed = time (0);
-	if (debug)
-		g_debug ("Seed value: %u", seed);
-
-	srand (seed);
-
 	hitori_create_interface (hitori);
-	hitori_generate_board (hitori, BOARD_SIZE);
+	hitori_generate_board (hitori, BOARD_SIZE, seed);
 	gtk_widget_show (hitori->window);
 
 	g_option_context_free (context);

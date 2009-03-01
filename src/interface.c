@@ -40,13 +40,14 @@ hitori_create_interface (Hitori *hitori)
 
 	builder = gtk_builder_new ();
 
-	if (gtk_builder_add_from_file (builder, "./data/hitori.ui", &error) == FALSE) {
+	if (gtk_builder_add_from_file (builder, PACKAGE_DATA_DIR"/hitori/hitori.ui", &error) == FALSE &&
+	    gtk_builder_add_from_file (builder, "./data/hitori.ui", NULL) == FALSE) {
 		/* Show an error */
 		GtkWidget *dialog = gtk_message_dialog_new (NULL,
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
-				_("UI file \""PACKAGE_DATA_DIR"/hitori/hitori.ui\" could not be loaded. Error: %s"), error->message);
+				_("UI file \"%s/hitori/hitori.ui\" could not be loaded. Error: %s"), PACKAGE_DATA_DIR, error->message);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
 
@@ -93,7 +94,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	}
 
 	cell_size = board_width / BOARD_SIZE;
-	cairo_set_font_size (cr, cell_size * FONT_SCALE);
+	cairo_set_font_size (cr, cell_size * FONT_SCALE * 0.8);
 
 	/* Centre the board */
 	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
@@ -181,10 +182,25 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	}
 }
 
+/**
+ * hitori_draw_board_simple:
+ * @hitori: a #Hitori
+ * @check_win: %TRUE if the win status should be checked after drawing
+ * @clear_first: %TRUE if the drawing area should be cleared before re-drawing
+ *
+ * Allows easy re-drawing of the board. If @check_win is %TRUE, the board will
+ * be checked to see if the player's won after it's been drawn, and if @clear_first
+ * is %TRUE, the drawing area will be completely cleared before being drawn.
+ * @clear_first is intended to be used only if there's a possibility the size of the
+ * board has changed.
+ **/
 void
-hitori_draw_board_simple (Hitori *hitori, gboolean check_win)
+hitori_draw_board_simple (Hitori *hitori, gboolean check_win, gboolean clear_first)
 {
 	cairo_t *cr;
+
+	if (clear_first)
+		gdk_window_clear (hitori->drawing_area->window);
 
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
 	hitori_draw_board (hitori, cr, check_win);
@@ -308,7 +324,7 @@ hitori_update_hint (gpointer user_data)
 		return_value = TRUE;
 	}
 
-	hitori_draw_board_simple (hitori, FALSE);
+	hitori_draw_board_simple (hitori, FALSE, FALSE);
 
 	return return_value;
 }
@@ -363,7 +379,7 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 		gtk_action_set_sensitive (hitori->undo_action, FALSE);
 
 	/* Redraw */
-	hitori_draw_board_simple (hitori, TRUE);
+	hitori_draw_board_simple (hitori, TRUE, FALSE);
 }
 
 void
@@ -394,7 +410,7 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 		gtk_action_set_sensitive (hitori->redo_action, FALSE);
 
 	/* Redraw */
-	hitori_draw_board_simple (hitori, TRUE);
+	hitori_draw_board_simple (hitori, TRUE, FALSE);
 }
 
 void

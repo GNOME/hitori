@@ -141,7 +141,7 @@ hitori_check_rule3 (Hitori *hitori)
 	unchecked_cells_x = g_queue_new ();
 	unchecked_cells_y = g_queue_new ();
 
-	/* Find the first unpainted cell */
+	/* Find the first unpainted cell; it's either (0,0) or (1,0) due to rule 2 */
 	x = 0;
 	y = 0;
 	if (hitori->board[x][y].painted == TRUE)

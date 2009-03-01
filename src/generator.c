@@ -29,11 +29,18 @@
 #include "rules.h"
 
 void
-hitori_generate_board (Hitori *hitori, guint new_board_size)
+hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 {
 	guint i, total, old_total, x, y;
-	gboolean *accum;
-	gboolean **horiz_accum;
+	gboolean *accum, **horiz_accum;
+
+	/* Seed the random number generator */
+	if (seed == -1)
+		seed = time (0);
+	if (hitori->debug)
+		g_debug ("Seed value: %u", seed);
+
+	srand (seed);
 
 	/* Deallocate any previous board */
 	if (hitori->board != NULL) {
@@ -90,7 +97,7 @@ hitori_generate_board (Hitori *hitori, guint new_board_size)
 	/* Check that the painted squares don't mess everything up */
 	if (hitori_check_rule2 (hitori) == FALSE ||
 	    hitori_check_rule3 (hitori) == FALSE)
-		return hitori_generate_board (hitori, BOARD_SIZE);
+		return hitori_generate_board (hitori, BOARD_SIZE, seed + 1);
 
 	/* Fill in the squares, leaving the painted ones blank,
 	 * and making sure not to repeat any previous numbers. */
@@ -111,7 +118,7 @@ hitori_generate_board (Hitori *hitori, guint new_board_size)
 						total--;
 
 					if (total < 1)
-						return hitori_generate_board (hitori, BOARD_SIZE); /* We're buggered */
+						return hitori_generate_board (hitori, BOARD_SIZE, seed + 1); /* We're buggered */
 
 					i = rand () % (BOARD_SIZE + 1) + 1;
 				}
