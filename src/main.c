@@ -30,6 +30,34 @@
 #include "generator.h"
 
 void
+hitori_new_game (Hitori *hitori)
+{
+	hitori_clear_undo_stack (hitori);
+	hitori_generate_board (hitori);
+}
+
+void
+hitori_clear_undo_stack (Hitori *hitori)
+{
+	HitoriUndo *undo;
+	
+	/* Clear the undo stack */
+	if (hitori->undo_stack != NULL) {
+		undo = hitori->undo_stack;
+		while (undo->next != NULL)
+			undo = undo->next;
+
+		while (undo->prev != NULL) {
+			undo = undo->prev;
+			if (undo->next->type != UNDO_NEW_GAME)
+				g_free (undo->next);
+		}
+	}
+
+	gtk_action_set_sensitive (hitori->undo_action, FALSE);
+}
+
+void
 hitori_print_board (Hitori *hitori)
 {
 	guint x, y;
@@ -56,6 +84,8 @@ hitori_quit (Hitori *hitori)
 	if (hitori == NULL)
 		exit (0);
 
+	hitori_clear_undo_stack (hitori);
+	g_free (hitori->undo_stack); /* Clear the new game element */
 	g_free (hitori);
 }
 
@@ -63,6 +93,7 @@ int
 main (int argc, char *argv[])
 {
 	Hitori *hitori;
+	HitoriUndo *undo;
 
 #ifdef ENABLE_NLS
 	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -76,6 +107,14 @@ main (int argc, char *argv[])
 	/* Setup */
 	hitori = g_new (Hitori, 1);
 	hitori->debug = TRUE; /* TODO: Make this a runtime parameter */
+
+	undo = g_new (HitoriUndo, 1);
+	undo->type = UNDO_NEW_GAME;
+	undo->x = 0;
+	undo->y = 0;
+	undo->next = NULL;
+	undo->prev = NULL;
+	hitori->undo_stack = undo;
 
 	hitori_generate_board (hitori);
 	hitori_create_interface (hitori);

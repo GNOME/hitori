@@ -65,6 +65,8 @@ hitori_create_interface (Hitori *hitori)
 	/* Setup the main window */
 	hitori->window = GTK_WIDGET (gtk_builder_get_object (hitori->builder, "hitori_main_window"));
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (hitori->builder, "hitori_drawing_area"));
+	hitori->undo_action = GTK_ACTION (gtk_builder_get_object (hitori->builder, "undo_menu"));
+	hitori->redo_action = GTK_ACTION (gtk_builder_get_object (hitori->builder, "redo_menu"));
 
 	return hitori->window;
 }
@@ -166,6 +168,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	gfloat cell_size;
 	guint x, y;
 	cairo_t *cr;
+	HitoriUndo *undo;
 
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &width, &height);
 
@@ -184,12 +187,30 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (x >= BOARD_SIZE || y >= BOARD_SIZE)
 		return FALSE;
 
-	if (event->state & GDK_SHIFT_MASK)
-		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1); /* Update tag 1's state */
-	else if (event->state & GDK_CONTROL_MASK)
-		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2); /* Update tag 2's state */
-	else
-		hitori->board[x][y].painted = !(hitori->board[x][y].painted); /* Update the paint overlay */
+	undo = g_new (HitoriUndo, 1);
+	undo->x = x;
+	undo->y = y;
+	undo->prev = hitori->undo_stack;
+	undo->next = NULL;
+
+	if (event->state & GDK_SHIFT_MASK) {
+		/* Update tag 1's state */
+		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1);
+		undo->type = UNDO_TAG1;
+	} else if (event->state & GDK_CONTROL_MASK) {
+		/* Update tag 2's state */
+		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2);
+		undo->type = UNDO_TAG2;
+	} else {
+		/* Update the paint overlay */
+		hitori->board[x][y].painted = !(hitori->board[x][y].painted);
+		undo->type = UNDO_PAINT;
+	}
+
+	if (hitori->undo_stack != NULL)
+		hitori->undo_stack->next = undo;
+	hitori->undo_stack = undo;
+	gtk_action_set_sensitive (hitori->undo_action, TRUE);
 
 	/* Redraw */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
@@ -206,6 +227,82 @@ void
 hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 {
 	hitori_quit (hitori);
+}
+
+void
+hitori_new_game_cb (GtkAction *action, Hitori *hitori)
+{
+	hitori_new_game (hitori);
+}
+
+void
+hitori_undo_cb (GtkAction *action, Hitori *hitori)
+{
+	cairo_t *cr;
+
+	if (hitori->undo_stack->prev == NULL)
+		return;
+
+	switch (hitori->undo_stack->type) {
+		case UNDO_PAINT:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted);
+			break;
+		case UNDO_TAG1:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1);
+			break;
+		case UNDO_TAG2:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2);
+			break;
+		case UNDO_NEW_GAME:
+			/* This is just here to stop the compiler warning */
+			break;
+	}
+
+	hitori->undo_stack = hitori->undo_stack->prev;
+
+	gtk_action_set_sensitive (hitori->redo_action, TRUE);
+	if (hitori->undo_stack->prev == NULL || hitori->undo_stack->type == UNDO_NEW_GAME)
+		gtk_action_set_sensitive (hitori->undo_action, FALSE);
+
+	/* Redraw */
+	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	hitori_draw_board (hitori, cr, TRUE);
+	cairo_destroy (cr);
+}
+
+void
+hitori_redo_cb (GtkAction *action, Hitori *hitori)
+{
+	cairo_t *cr;
+
+	if (hitori->undo_stack->next == NULL)
+		return;
+
+	hitori->undo_stack = hitori->undo_stack->next;
+
+	switch (hitori->undo_stack->type) {
+		case UNDO_PAINT:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].painted);
+			break;
+		case UNDO_TAG1:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag1);
+			break;
+		case UNDO_TAG2:
+			hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2 = !(hitori->board[hitori->undo_stack->x][hitori->undo_stack->y].tag2);
+			break;
+		case UNDO_NEW_GAME:
+			/* This is just here to stop the compiler warning */
+			break;
+	}
+
+	gtk_action_set_sensitive (hitori->undo_action, TRUE);
+	if (hitori->undo_stack->next == NULL)
+		gtk_action_set_sensitive (hitori->redo_action, FALSE);
+
+	/* Redraw */
+	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	hitori_draw_board (hitori, cr, TRUE);
+	cairo_destroy (cr);
 }
 
 void

@@ -14,12 +14,23 @@
           <object class="GtkAction" id="new_game_menu">
             <property name="stock_id">gtk-new</property>
             <property name="name">new_game_menu</property>
+            <signal name="activate" handler="hitori_new_game_cb"/>
           </object>
         </child>
         <child>
           <object class="GtkAction" id="undo_menu">
             <property name="stock_id">gtk-undo</property>
             <property name="name">undo_menu</property>
+            <property name="sensitive">False</property>
+            <signal name="activate" handler="hitori_undo_cb"/>
+          </object>
+        </child>
+        <child>
+          <object class="GtkAction" id="redo_menu">
+            <property name="stock_id">gtk-redo</property>
+            <property name="name">redo_menu</property>
+            <property name="sensitive">False</property>
+            <signal name="activate" handler="hitori_redo_cb"/>
           </object>
         </child>
         <child>
@@ -67,6 +78,7 @@
         <menu action="game_menu">
           <menuitem action="new_game_menu"/>
           <menuitem action="undo_menu"/>
+          <menuitem action="redo_menu"/>
           <separator/>
           <menuitem action="quit_menu"/>
         </menu>

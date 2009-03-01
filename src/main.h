@@ -58,6 +58,22 @@ G_BEGIN_DECLS
 
 #define BOARD_SIZE 8
 
+typedef enum {
+	UNDO_NEW_GAME,
+	UNDO_PAINT,
+	UNDO_TAG1,
+	UNDO_TAG2
+} HitoriUndoType;
+
+typedef struct _HitoriUndo HitoriUndo;
+struct _HitoriUndo {
+	HitoriUndoType type;
+	guint x;
+	guint y;
+	HitoriUndo *prev;
+	HitoriUndo *next;
+};
+
 typedef struct {
 	guint num;
 	gboolean painted;
@@ -70,6 +86,8 @@ typedef struct {
 	GtkWidget *window;
 	GtkBuilder *builder;
 	GtkWidget *drawing_area;
+	GtkAction *undo_action;
+	GtkAction *redo_action;
 
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;
@@ -77,8 +95,11 @@ typedef struct {
 	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
 
 	gboolean debug;
+	HitoriUndo *undo_stack;
 } Hitori;
 
+void hitori_new_game (Hitori *hitori);
+void hitori_clear_undo_stack (Hitori *hitori);
 void hitori_print_board (Hitori *hitori);
 void hitori_quit (Hitori *hitori);
 
