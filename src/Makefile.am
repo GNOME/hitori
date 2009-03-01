@@ -14,6 +14,7 @@ if DEBUG
 		-ftest-coverage
 endif
 
+bindir = /usr/games
 bin_PROGRAMS = hitori
 
 hitori_SOURCES = \

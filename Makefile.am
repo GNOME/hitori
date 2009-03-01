@@ -1,20 +1,17 @@
 SUBDIRS = src po data help
 
-hitoridocdir = ${prefix}/doc/hitori
-hitoridoc_DATA = \
-	README		\
-	COPYING		\
-	AUTHORS		\
-	INSTALL		\
-	NEWS
-
 EXTRA_DIST =			\
 	autogen.sh		\
 	intltool-extract.in	\
 	intltool-merge.in	\
 	intltool-update.in	\
 	gnome-doc-utils.make	\
-	$(hitoridoc_DATA)
+	README			\
+	COPYING			\
+	COPYING-DOCS		\
+	AUTHORS			\
+	INSTALL			\
+	NEWS
 
 DISTCLEANFILES = \
 	intltool-extract	\

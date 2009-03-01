@@ -53,3 +53,4 @@ po/.intltool-merge-cache
 meta
 config.status.lineno
 po/messages.mo
+gnome-doc-utils.make

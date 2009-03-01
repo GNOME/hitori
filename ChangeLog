@@ -1,3 +1,11 @@
+2008-07-08  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* .bzrignore:
+	* gnome-doc-utils.make:
+	* autogen.sh: Converted to use gnome-autogen.sh.
+	* Makefile.am: Fixed to include COPYING-DOCS in the tarball.
+	* src/Makefile.am: Fixed to put the binary in /usr/games.
+
 2008-06-29  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* data/hitori.desktop.in: Removed incorrect Bugzilla details.
