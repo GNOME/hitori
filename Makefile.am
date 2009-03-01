@@ -1,4 +1,4 @@
-SUBDIRS = src po data
+SUBDIRS = src po data help
 
 hitoridocdir = ${prefix}/doc/hitori
 hitoridoc_DATA = \
@@ -13,12 +13,16 @@ EXTRA_DIST =			\
 	intltool-extract.in	\
 	intltool-merge.in	\
 	intltool-update.in	\
+	gnome-doc-utils.make	\
 	$(hitoridoc_DATA)
 
 DISTCLEANFILES = \
 	intltool-extract	\
 	intltool-merge		\
-	intltool-update
+	intltool-update		\
+	gnome-doc-utils.make
+
+DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
 
 # Copy all the spec files. Of cource, only one is actually used.
 dist-hook:

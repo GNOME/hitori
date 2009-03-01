@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+	<!ENTITY appname "Hitori">
+	<!ENTITY app "<application>Hitori</application>">
+	<!ENTITY appversion "0.2">
+	<!ENTITY manrevision "0.1">
+	<!ENTITY date "June 2008">
+	<!-- Information about the entities
+	Use the app and appname entities to specify the name of the application.  
+	Use the appversion entity to specify the version of the application.
+	Use the manrevision entity to specify the revision number of this manual.
+	Use the date entity to specify the release date of this manual.
+	-->
+]>
+<!--
+	(Do not remove this comment block.)
+	Maintained by the GNOME Documentation Project
+	http://live.gnome.org/DocumentationProject
+	Template version: 3.0 beta
+	Template last modified 2006-11-21
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="en">
+	<articleinfo> 
+		<title>&app; Manual</title>
+		<abstract role="description"><para>&app; is a simple puzzle game.</para></abstract>
+		<copyright> 
+			<year>2008</year> 
+			<holder>Philip Withnall</holder> 
+		</copyright> 
+		<publisher role="maintainer"> 
+			<publishername>Philip Withnall</publishername> 
+		</publisher>
+
+		<xi:include href="legal.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+		<!-- The file legal.xml contains link to license for the documentation, 
+		and other legal stuff such as "NO WARRANTY" statement. 
+		Please do not change any of this. -->
+
+		<authorgroup> 
+			<author> 
+				<firstname>Philip</firstname> 
+				<surname>Withnall</surname> 
+				<affiliation> 
+					<address><email>philip@tecnocode.co.uk</email></address> 
+				</affiliation> 
+			</author>
+		</authorgroup>
+		<!-- According to GNU FDL, revision history is mandatory if you are -->
+		<!-- modifying/reusing someone else's document.  If not, you can omit it. -->
+		<!-- Remember to remove the &manrevision; entity from the revision entries other -->
+		<!-- than the current revision. -->
+		<!-- The revision numbering system for GNOME manuals is as follows: -->
+		<!-- * the revision number consists of two components -->
+		<!-- * the first component of the revision number reflects the release version of the GNOME desktop. -->
+		<!-- * the second component of the revision number is a decimal unit that is incremented with each revision of the manual. -->
+		<!-- For example, if the GNOME desktop release is V2.x, the first version of the manual that -->
+		<!-- is written in that desktop timeframe is V2.0, the second version of the manual is V2.1, etc. -->
+		<!-- When the desktop release version changes to V3.x, the revision number of the manual changes -->
+		<!-- to V3.0, and so on. -->  
+		<revhistory>
+			<revision> 
+				<revnumber>Hitori Manual V&manrevision;</revnumber> 
+				<date>&date;</date> 
+				<revdescription><para role="author">Philip Withnall <email>philip@tecnocode.co.uk</email></para></revdescription>
+			</revision>
+		</revhistory> 
+
+		<releaseinfo>This manual describes version &appversion; of Hitori.</releaseinfo> 
+		<legalnotice> 
+			<title>Feedback</title> 
+			<para>To report a bug or make a suggestion regarding the &app; application or this manual, follow the directions on the 
+			<ulink url="http://tecnocode.co.uk/projects/hitori" type="http">&app; Web page</ulink>.</para>
+			<!-- Translators may also add here feedback address for translations -->
+		</legalnotice>
+	</articleinfo> 
+
+	<indexterm zone="index"> 
+		<primary>Hitori</primary> 
+	</indexterm> 
+	<indexterm zone="index"> 
+		<primary>hitori</primary>
+	</indexterm>
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+	<sect1 id="hitori-introduction">
+		<title>Introduction</title>
+		<sect2 id="hitori-game">
+			<title>Hitori the Game</title>
+			<para>Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board
+			of numbers, and has to "paint out" cells until there are no duplicate numbers in each row and column. The following rules apply:</para>
+			<itemizedlist> 
+				<listitem><para>There must only be one of each number in the unpainted cells in each row and column.</para></listitem>
+				<listitem><para>No painted cell may be adjacent to another, vertically or horizontally.</para></listitem>
+				<listitem><para>All the unpainted cells must be joined together vertically and horizontally in one group.</para></listitem>
+			</itemizedlist>
+			<para>These are the only three rules of the game, and so there may be multiple solutions to a Hitori puzzle board, although it's unlikely.</para>
+		</sect2>
+		<sect2 id="hitori-interface">
+			<title>Interface</title>
+			<para>&app; has only one window; the main window, which consists of the menubar and number board, shown below.</para>
+			<figure id="mainwindow-fig"> 
+				<title>&app; Main Window</title> 
+				<screenshot> 
+					<mediaobject> 
+						<imageobject><imagedata fileref="figures/hitori_main_window.png" format="PNG"/></imageobject>
+						<textobject> 
+							<phrase>Shows &app; main window, containing the number board, Game and Help menus.</phrase> 
+						</textobject> 
+					</mediaobject> 
+				</screenshot> 
+			</figure>
+			<para>To paint a cell, left-click on it; to unpaint it again, left-click on it again. When cells are painted such that none
+			of the three rules are broken, the game will end and the board may no longer be manipulated.</para>
+			<para>&app; also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding
+			<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells
+			can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while
+			holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>.</para>
+		</sect2>
+		<sect2 id="hitori-customization">
+			<title>Customizing the Game</title>
+			<para>The game can be customized by changing the board size &#8212; boards from 5&#8211;10 cells square are allowed.</para>
+			<para>To change the board size, choose an option from
+			<menuchoice> 
+				<guimenu>Game</guimenu> 
+				<guimenuitem>Board Size</guimenuitem> 
+			</menuchoice>. &app; will ask if you want to stop the current game if you're in the middle of one, then start a new game
+			with the requested board size.</para>
+		</sect2>
+	</sect1>
+<!-- ============= About ================================== -->
+	<sect1 id="myapp-about"> 
+		<title>About &app;</title> 
+		<para>&app; was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about &app;,
+		report a bug or make a suggestion about the application or this manual, please visit the
+		<ulink url="http://tecnocode.co.uk/projects/hitori" type="http">&app; Web page</ulink>.</para>
+		<para>This program is distributed under the terms of the GNU General Public license as published by the Free Software
+		Foundation; either version 3 of the License, or (at your option) any later version. A
+		<ulink url="ghelp:gpl" type="help">copy of this license</ulink> is included with this documentation; another can be found
+		in the file COPYING included with the source code of this program.</para>
+	</sect1> 
+</article>
+

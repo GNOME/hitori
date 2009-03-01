@@ -42,3 +42,4 @@ src/interface.gcno
 src/main.gcno
 src/rules.gcno
 src/rules.c.gcov
+help/hitori-C.omf
