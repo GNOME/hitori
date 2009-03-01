@@ -95,7 +95,7 @@
 				<listitem><para>No painted cell may be adjacent to another, vertically or horizontally.</para></listitem>
 				<listitem><para>All the unpainted cells must be joined together vertically and horizontally in one group.</para></listitem>
 			</itemizedlist>
-			<para>These are the only three rules of the game, and so there may be multiple solutions to a Hitori puzzle board, although it's unlikely.</para>
+			<para>These are the only three rules of the game, and so there may well be multiple solutions to a Hitori puzzle board.</para>
 		</sect2>
 		<sect2 id="hitori-interface">
 			<title>Interface</title>
