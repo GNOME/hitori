@@ -310,7 +310,6 @@ hitori_update_hint (gpointer user_data)
 	gint area_width, area_height;
 	guint board_width, board_height;
 	gfloat cell_size;
-	gboolean return_value = FALSE;
 
 	hitori = (Hitori*) user_data;
 	hitori->hint_status++;
@@ -342,18 +341,10 @@ hitori_update_hint (gpointer user_data)
 	cairo_clip (cr);
 	cairo_restore (cr);
 
-	if (hitori->hint_status >= HINT_FLASHES) {
-		hitori->hint_status = 0;
-		hitori->hint_x = 0;
-		hitori->hint_y = 0;
-	} else {
-		return_value = TRUE;
-	}
-
 	hitori_draw_board (hitori, cr, FALSE);
 	cairo_destroy (cr);
 
-	return return_value;
+	return (hitori->hint_status < HINT_FLASHES) ? TRUE : FALSE;
 }
 
 void
