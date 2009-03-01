@@ -226,7 +226,7 @@ main (int argc, char *argv[])
 	/* Showtime! */
 	hitori_create_interface (hitori);
 	hitori_generate_board (hitori, BOARD_SIZE, seed);
-	gtk_widget_show (hitori->window);
+	gtk_widget_show_all (hitori->window);
 
 	g_option_context_free (context);
 

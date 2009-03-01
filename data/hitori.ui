@@ -1,200 +1,190 @@
 <?xml version="1.0"?>
 <!--*- mode: xml -*-->
 <interface>
-  <object class="GtkUIManager" id="hitori_ui_manager">
-    <child>
-      <object class="GtkActionGroup" id="hitori_action_group">
-        <child>
-          <object class="GtkAction" id="game_menu">
-            <property name="name">game_menu</property>
-            <property name="label">_Game</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="new_game_menu">
-            <property name="stock_id">gtk-new</property>
-            <property name="name">new_game_menu</property>
-            <signal name="activate" handler="hitori_new_game_cb"/>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="board_size_menu">
-            <property name="label">Board _Size</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_5">
-            <property name="label">5x5</property>
-            <property name="value">5</property>
-            <property name="current-value">5</property>
-            <signal name="changed" handler="hitori_board_size_cb"/>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_6">
-            <property name="label">6x6</property>
-            <property name="value">6</property>
-            <property name="group">board_size_5</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_7">
-            <property name="label">7x7</property>
-            <property name="value">7</property>
-            <property name="group">board_size_5</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_8">
-            <property name="label">8x8</property>
-            <property name="value">8</property>
-            <property name="group">board_size_5</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_9">
-            <property name="label">9x9</property>
-            <property name="value">9</property>
-            <property name="group">board_size_5</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkRadioAction" id="board_size_10">
-            <property name="label">10x10</property>
-            <property name="value">10</property>
-            <property name="group">board_size_5</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="hint_menu">
-            <property name="stock_id">gtk-info</property>
-            <property name="name">hint_menu</property>
-            <property name="label">_Hint</property>
-            <signal name="activate" handler="hitori_hint_cb"/>
-          </object>
-          <accelerator key="H" modifiers="GDK_CONTROL_MASK"/>
-        </child>
-        <child>
-          <object class="GtkAction" id="undo_menu">
-            <property name="stock_id">gtk-undo</property>
-            <property name="name">undo_menu</property>
-            <property name="sensitive">False</property>
-            <signal name="activate" handler="hitori_undo_cb"/>
-          </object>
-          <accelerator key="Z" modifiers="GDK_CONTROL_MASK"/>
-        </child>
-        <child>
-          <object class="GtkAction" id="redo_menu">
-            <property name="stock_id">gtk-redo</property>
-            <property name="name">redo_menu</property>
-            <property name="sensitive">False</property>
-            <signal name="activate" handler="hitori_redo_cb"/>
-          </object>
-          <accelerator key="Z" modifiers="GDK_CONTROL_MASK|GDK_SHIFT_MASK"/>
-        </child>
-        <child>
-          <object class="GtkAction" id="quit_menu">
-            <property name="stock_id">gtk-quit</property>
-            <property name="name">quit_menu</property>
-            <signal name="activate" handler="hitori_quit_cb"/>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="settings_menu">
-            <property name="name">settings_menu</property>
-            <property name="label">_Settings</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="preferences_menu">
-            <property name="stock_id">gtk-preferences</property>
-            <property name="name">preferences_menu</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="help_menu">
-            <property name="name">help_menu</property>
-            <property name="label">_Help</property>
-          </object>
-        </child>
-        <child>
-          <object class="GtkAction" id="contents_menu">
-            <property name="stock_id">gtk-help</property>
-            <property name="name">contents_menu</property>
-          </object>
-          <accelerator key="F1"/>
-        </child>
-        <child>
-          <object class="GtkAction" id="about_menu">
-            <property name="stock_id">gtk-about</property>
-            <property name="name">about_menu</property>
-            <signal name="activate" handler="hitori_about_cb"/>
-          </object>
-        </child>
-      </object>
-    </child>
-    <ui>
-      <menubar name="hitori_menu_bar">
-        <menu action="game_menu">
-          <menuitem action="new_game_menu"/>
-          <separator/>
-          <menuitem action="hint_menu"/>
-          <separator/>
-          <menu name="board_size" action="board_size_menu">
-            <menuitem name="board_size_5" action="board_size_5"/>
-            <menuitem name="board_size_6" action="board_size_6"/>
-            <menuitem name="board_size_7" action="board_size_7"/>
-            <menuitem name="board_size_8" action="board_size_8"/>
-            <menuitem name="board_size_9" action="board_size_9"/>
-            <menuitem name="board_size_10" action="board_size_10"/>
-          </menu>
-          <separator/>
-          <menuitem action="undo_menu"/>
-          <menuitem action="redo_menu"/>
-          <separator/>
-          <menuitem action="quit_menu"/>
-        </menu>
-        <!--<menu action="settings_menu">
-          <menuitem action="preferences_menu"/>
-        </menu>-->
-        <menu action="help_menu">
-          <!--<menuitem action="contents_menu"/>-->
-          <menuitem action="about_menu"/>
-        </menu>
-      </menubar>
-    </ui>
-  </object>
-  <object class="GtkWindow" id="hitori_main_window">
-    <property name="visible">True</property>
-    <property name="title" translatable="yes">Hitori</property>
-    <property name="default_width">500</property>
-    <property name="default_height">500</property>
-    <signal name="destroy" handler="hitori_destroy_cb"/>
-    <child>
-      <object class="GtkVBox" id="vbox1">
-        <property name="visible">True</property>
-        <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-        <child>
-          <object class="GtkMenuBar" constructor="hitori_ui_manager" id="hitori_menu_bar">
-            <property name="visible">True</property>
-            <property name="events">GDK_POINTER_MOTION_MASK | GDK_POINTER_MOTION_HINT_MASK | GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-          </object>
-          <packing>
-            <property name="expand">False</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkDrawingArea" id="hitori_drawing_area">
-            <property name="visible">True</property>
-            <property name="events">GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
-            <signal name="expose-event" handler="hitori_expose_cb"/>
-            <signal name="button-release-event" handler="hitori_button_release_cb"/>
-          </object>
-          <packing>
-            <property name="position">1</property>
-          </packing>
-        </child>
-      </object>
-    </child>
-  </object>
+	<object class="GtkUIManager" id="hitori_ui_manager">
+		<child>
+			<object class="GtkActionGroup" id="hitori_action_group">
+				<child>
+					<object class="GtkAction" id="game_menu">
+						<property name="name">game_menu</property>
+						<property name="label">_Game</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="new_game_menu">
+						<property name="stock_id">gtk-new</property>
+						<property name="name">new_game_menu</property>
+						<signal name="activate" handler="hitori_new_game_cb"/>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="board_size_menu">
+						<property name="label">Board _Size</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_5">
+						<property name="label">5x5</property>
+						<property name="value">5</property>
+						<property name="current-value">5</property>
+						<signal name="changed" handler="hitori_board_size_cb"/>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_6">
+						<property name="label">6x6</property>
+						<property name="value">6</property>
+						<property name="group">board_size_5</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_7">
+						<property name="label">7x7</property>
+						<property name="value">7</property>
+						<property name="group">board_size_5</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_8">
+						<property name="label">8x8</property>
+						<property name="value">8</property>
+						<property name="group">board_size_5</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_9">
+						<property name="label">9x9</property>
+						<property name="value">9</property>
+						<property name="group">board_size_5</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkRadioAction" id="board_size_10">
+						<property name="label">10x10</property>
+						<property name="value">10</property>
+						<property name="group">board_size_5</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="hint_menu">
+						<property name="stock_id">gtk-info</property>
+						<property name="name">hint_menu</property>
+						<property name="label">_Hint</property>
+						<signal name="activate" handler="hitori_hint_cb"/>
+					</object>
+					<accelerator key="H" modifiers="GDK_CONTROL_MASK"/>
+				</child>
+				<child>
+					<object class="GtkAction" id="undo_menu">
+						<property name="stock_id">gtk-undo</property>
+						<property name="name">undo_menu</property>
+						<property name="sensitive">False</property>
+						<signal name="activate" handler="hitori_undo_cb"/>
+					</object>
+					<accelerator key="Z" modifiers="GDK_CONTROL_MASK"/>
+				</child>
+				<child>
+					<object class="GtkAction" id="redo_menu">
+						<property name="stock_id">gtk-redo</property>
+						<property name="name">redo_menu</property>
+						<property name="sensitive">False</property>
+						<signal name="activate" handler="hitori_redo_cb"/>
+					</object>
+					<accelerator key="Z" modifiers="GDK_CONTROL_MASK|GDK_SHIFT_MASK"/>
+				</child>
+				<child>
+					<object class="GtkAction" id="quit_menu">
+						<property name="stock_id">gtk-quit</property>
+						<property name="name">quit_menu</property>
+						<signal name="activate" handler="hitori_quit_cb"/>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="settings_menu">
+						<property name="name">settings_menu</property>
+						<property name="label">_Settings</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="preferences_menu">
+						<property name="stock_id">gtk-preferences</property>
+						<property name="name">preferences_menu</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="help_menu">
+						<property name="name">help_menu</property>
+						<property name="label">_Help</property>
+					</object>
+				</child>
+				<child>
+					<object class="GtkAction" id="contents_menu">
+						<property name="stock_id">gtk-help</property>
+						<property name="name">contents_menu</property>
+					</object>
+					<accelerator key="F1"/>
+				</child>
+				<child>
+					<object class="GtkAction" id="about_menu">
+						<property name="stock_id">gtk-about</property>
+						<property name="name">about_menu</property>
+						<signal name="activate" handler="hitori_about_cb"/>
+					</object>
+				</child>
+			</object>
+		</child>
+		<ui>
+			<menubar name="hitori_menu_bar">
+				<menu action="game_menu">
+					<menuitem action="new_game_menu"/>
+					<separator/>
+					<menuitem action="hint_menu"/>
+					<separator/>
+					<menu name="board_size" action="board_size_menu">
+						<menuitem name="board_size_5" action="board_size_5"/>
+						<menuitem name="board_size_6" action="board_size_6"/>
+						<menuitem name="board_size_7" action="board_size_7"/>
+						<menuitem name="board_size_8" action="board_size_8"/>
+						<menuitem name="board_size_9" action="board_size_9"/>
+						<menuitem name="board_size_10" action="board_size_10"/>
+					</menu>
+					<separator/>
+					<menuitem action="undo_menu"/>
+					<menuitem action="redo_menu"/>
+					<separator/>
+					<menuitem action="quit_menu"/>
+				</menu>
+				<!--<menu action="settings_menu">
+					<menuitem action="preferences_menu"/>
+				</menu>-->
+				<menu action="help_menu">
+					<!--<menuitem action="contents_menu"/>-->
+					<menuitem action="about_menu"/>
+				</menu>
+			</menubar>
+		</ui>
+	</object>
+	<object class="GtkWindow" id="hitori_main_window">
+		<property name="title" translatable="yes">Hitori</property>
+		<signal name="destroy" handler="hitori_destroy_cb"/>
+		<child>
+			<object class="GtkVBox" id="vbox1">
+				<child>
+					<object class="GtkMenuBar" constructor="hitori_ui_manager" id="hitori_menu_bar"/>
+					<packing>
+						<property name="expand">False</property>
+					</packing>
+				</child>
+				<child>
+					<object class="GtkDrawingArea" id="hitori_drawing_area">
+						<property name="width-request">400</property>
+						<property name="height-request">400</property>
+						<property name="events">GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
+						<signal name="expose-event" handler="hitori_expose_cb"/>
+						<signal name="button-release-event" handler="hitori_button_release_cb"/>
+					</object>
+				</child>
+			</object>
+		</child>
+	</object>
 </interface>

@@ -27,7 +27,7 @@
 #include "interface.h"
 #include "rules.h"
 
-GtkWidget*
+GtkWidget *
 hitori_create_interface (Hitori *hitori)
 {
 	GError *error = NULL;
@@ -73,11 +73,12 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 {
 	gint area_width, area_height;
 	guint x, y, board_width, board_height;
-	gfloat cell_size, colour_modifier;
+	gfloat cell_size;
 	gdouble x_pos, y_pos;
-	cairo_text_extents_t extents;
+	GtkStyle *style;
 
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
+	style = gtk_widget_get_style (hitori->drawing_area);
 
 	/* Clamp the width/height to the minimum */
 	if (area_height < area_width) {
@@ -88,8 +89,9 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 		board_height = area_width;
 	}
 
+	/* Work out the cell size and scale all text accordingly */
 	cell_size = board_width / BOARD_SIZE;
-	cairo_set_font_size (cr, cell_size * FONT_SCALE * 0.8);
+	pango_font_description_set_absolute_size (style->font_desc, cell_size * FONT_SCALE * 0.8 * PANGO_SCALE);
 
 	/* Centre the board */
 	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
@@ -101,27 +103,39 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	for (x = 0; x < BOARD_SIZE; x++) { /* columns (X) */
 		y_pos = 0;
 		for (y = 0; y < BOARD_SIZE; y++) { /* rows (Y) */
+			gchar *text;
+			PangoLayout *layout;
+			gint text_width, text_height;
+			GtkStateType state = GTK_STATE_NORMAL;
+
 			if (hitori->board[x][y].painted == TRUE)
-				colour_modifier = 1.5;
-			else
-				colour_modifier = 1.0;
+				state = GTK_STATE_INSENSITIVE;
 
 			/* Draw the fill */
-			cairo_set_source_rgb (cr, 1.0 / colour_modifier, 1.0 / colour_modifier, 1.0 / colour_modifier); /* white / 50% grey */
+			gdk_cairo_set_source_color (cr, &style->bg[state]);
 			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 			cairo_fill (cr);
 
 			/* If the cell is tagged, draw the tag dots */
 			if (hitori->board[x][y].tag1 == TRUE) {
-				cairo_set_source_rgb (cr, 1.0 / colour_modifier, 0, 0); /* red */
+				if (hitori->board[x][y].painted == TRUE)
+					cairo_set_source_rgb (cr, 0.643137255, 0, 0); /* Tango's darkest "scarlet red" */				
+				else
+					cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
+
 				cairo_move_to (cr, x_pos, y_pos + TAG_OFFSET);
 				cairo_line_to (cr, x_pos, y_pos);
 				cairo_line_to (cr, x_pos + TAG_OFFSET, y_pos);
 				cairo_arc (cr, x_pos + TAG_OFFSET, y_pos + TAG_OFFSET, TAG_RADIUS * cell_size, 0.0, 0.5 * M_PI);
 				cairo_fill (cr);
 			}
+
 			if (hitori->board[x][y].tag2 == TRUE) {
-				cairo_set_source_rgb (cr, 0, 1.0 / colour_modifier, 0); /* green */
+				if (hitori->board[x][y].painted == TRUE)
+					cairo_set_source_rgb (cr, 0.305882353, 0.603921569, 0.023529412); /* Tango's darkest "chameleon" */
+				else
+					cairo_set_source_rgb (cr, 0.541176471, 0.88627451, 0.203921569); /* Tango's lightest "chameleon" */
+
 				cairo_move_to (cr, x_pos + cell_size - TAG_OFFSET, y_pos);
 				cairo_line_to (cr, x_pos + cell_size, y_pos);
 				cairo_line_to (cr, x_pos + cell_size, y_pos + TAG_OFFSET);
@@ -130,21 +144,28 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 			}
 
 			/* Draw the border */
-			cairo_set_source_rgb (cr, 0, 0, 0); /* black */
+			gdk_cairo_set_source_color (cr, &style->dark[state]);
+			cairo_set_line_width (cr, style->xthickness);
 			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 			cairo_stroke (cr);
 
 			/* Draw the text */
-			gchar *text;
-
 			text = g_strdup_printf ("%u", hitori->board[x][y].num);
-			cairo_text_extents (cr, text, &extents);
-			cairo_set_source_rgb (cr, 0, 0, 0); /* black */
+			layout = pango_cairo_create_layout (cr);
+
+			pango_layout_set_text (layout, text, -1);
+			pango_layout_set_font_description (layout, style->font_desc);
+
+			pango_layout_get_pixel_size (layout, &text_width, &text_height);
 			cairo_move_to (cr,
-				x_pos + (cell_size - extents.width) / 2,
-				y_pos + cell_size - (cell_size - extents.height) / 2);
-			cairo_show_text (cr, text);
+				       x_pos + (cell_size - text_width) / 2,
+				       y_pos + (cell_size - text_height) / 2);
+
+			gdk_cairo_set_source_color (cr, &style->text[state]);
+			pango_cairo_show_layout (cr, layout);
+
 			g_free (text);
+			g_object_unref (layout);
 
 			y_pos += cell_size;
 		}
