@@ -69,7 +69,7 @@ void
 hitori_draw_board (Hitori *hitori, cairo_t *cr)
 {
 	gint width, height;
-	guint i, x;
+	guint x, y;
 	gfloat cell_size;
 	cairo_text_extents_t extents;
 
@@ -82,61 +82,60 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr)
 		height = width;
 
 	cell_size = width / BOARD_SIZE;
-
-	/* Draw the border rectangle */
-	cairo_rectangle (cr, 0, 0, (gdouble) width, (gdouble) height);
-	cairo_set_source_rgb (cr, 1, 1, 1); /* white */
-	cairo_fill_preserve (cr);
-	cairo_set_source_rgb (cr, 0, 0, 0); /* black */
-	cairo_stroke (cr);
-
-	i = 0;
-	for (x = cell_size; x < width; x += cell_size) {
-		if (i >= BOARD_SIZE - 1)
-			break;
-
-		/* Draw the vertical line */
-		cairo_move_to (cr, x, 0);
-		cairo_line_to (cr, x, height);
-		cairo_stroke (cr);
-
-		/* Draw the horizontal line */
-		cairo_move_to (cr, 0, x);
-		cairo_line_to (cr, width, x);
-		cairo_stroke (cr);
-
-		i++;
-	}
-
-	/* Draw the paint overlay */
-	cairo_set_source_rgb (cr, 0.5, 0.5, 0.5); /* 50% grey */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (i = 0; i < BOARD_SIZE; i++) {
-			if (hitori->paint_overlay[x][i] == FALSE)
-				continue;
-
-			cairo_rectangle (cr, x * cell_size, i * cell_size, cell_size, cell_size);
-			cairo_fill (cr);
-		}
-	}
-
-	/* Setup font rendering */
 	cairo_set_font_size (cr, cell_size * FONT_SCALE);
-	cairo_set_source_rgb (cr, 0, 0, 0); /* black */
 
-	/* Draw the cell numbers */
-	for (x = 0; x < BOARD_SIZE; x++) {
-		for (i = 1; i <= BOARD_SIZE; i++) {
+	/* Draw the cells */
+	for (x = 0; x < BOARD_SIZE; x++) { /* columns (X) */
+		for (y = 0; y < BOARD_SIZE; y++) { /* rows (Y) */
+			/* Draw the fill */
+			if (hitori->board[x][y].painted == TRUE)
+				cairo_set_source_rgb (cr, 0.5, 0.5, 0.5); /* 50% grey */
+			else
+				cairo_set_source_rgb (cr, 1, 1, 1); /* white */
+
+			/* TODO: Optimise maths in these loops */
+			cairo_rectangle (cr, x * cell_size, y * cell_size, cell_size, cell_size);
+			cairo_fill_preserve (cr);
+
+			/* Draw the border */
+			cairo_set_source_rgb (cr, 0, 0, 0); /* black */
+			cairo_stroke (cr);
+
+			/* Draw the text */
 			gchar *text;
 
-			text = g_strdup_printf ("%u", hitori->board[x][i]);
+			text = g_strdup_printf ("%u", hitori->board[x][y].num);
 			cairo_text_extents (cr, text, &extents);
+			cairo_set_source_rgb (cr, 0, 0, 0); /* black */
 			cairo_move_to (cr,
 				x * cell_size + (cell_size - extents.width) / 2,
-				i * cell_size - (cell_size - extents.height) / 2);
+				(y + 1) * cell_size - (cell_size - extents.height) / 2);
 			cairo_show_text (cr, text);
 			g_free (text);
+
+			/* If the cell is tagged, draw the tag lines */
+			if (hitori->board[x][y].tag1 == TRUE) {
+				cairo_set_source_rgb (cr, 1, 0, 0); /* red */
+				cairo_move_to (cr, (x + TAG_OFFSET) * cell_size, y * cell_size);
+				cairo_line_to (cr, (x + 1) * cell_size, (y + 1.0 - TAG_OFFSET) * cell_size);
+				cairo_stroke (cr);
+			}
+			if (hitori->board[x][y].tag2 == TRUE) {
+				cairo_set_source_rgb (cr, 0, 1, 0); /* green */
+				cairo_move_to (cr, x * cell_size, (y + 1.0 - TAG_OFFSET) * cell_size);
+				cairo_line_to (cr, (x + 1.0 - TAG_OFFSET) * cell_size, y * cell_size);
+				cairo_stroke (cr);
+			}
 		}
+	}
+
+	/* Check to see if all three rules are satisfied yet.
+	 * If they are, we've won. */
+	if (hitori_check_rule1 (hitori) &&
+	    hitori_check_rule2 (hitori) &&
+	    hitori_check_rule3 (hitori)) {
+		/* Win! */
+		g_message("TODO: win");
 	}
 }
 
@@ -181,8 +180,16 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (x >= BOARD_SIZE || y >= BOARD_SIZE)
 		return FALSE;
 
-	/* Update the paint overlay */
-	hitori->paint_overlay[x][y] = !(hitori->paint_overlay[x][y]);
+	if (event->state & GDK_SHIFT_MASK) {
+		/* Update tag 1's state */
+		hitori->board[x][y].tag1 = !(hitori->board[x][y].tag1);
+	} else if (event->state & GDK_CONTROL_MASK) {
+		/* Update tag 2's state */
+		hitori->board[x][y].tag2 = !(hitori->board[x][y].tag2);
+	} else {
+		/* Update the paint overlay */
+		hitori->board[x][y].painted = !(hitori->board[x][y].painted);
+	}
 
 	/* Redraw */
 	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));

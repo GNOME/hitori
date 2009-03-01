@@ -32,6 +32,7 @@
 G_BEGIN_DECLS
 
 #define FONT_SCALE 0.9
+#define TAG_OFFSET 0.75
 
 GtkWidget* hitori_create_interface (Hitori *hitori);
 void hitori_draw_board (Hitori *hitori, cairo_t *cr);

@@ -59,6 +59,13 @@ G_BEGIN_DECLS
 #define BOARD_SIZE 8
 
 typedef struct {
+	guint num;
+	gboolean painted;
+	gboolean tag1;
+	gboolean tag2;
+} HitoriCell;
+
+typedef struct {
 	GtkWidget *window;
 	GtkBuilder *builder;
 	GtkWidget *drawing_area;
@@ -66,10 +73,12 @@ typedef struct {
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;
 	
-	guint board[BOARD_SIZE][BOARD_SIZE];
-	gboolean paint_overlay[BOARD_SIZE][BOARD_SIZE];
+	HitoriCell board[BOARD_SIZE][BOARD_SIZE];
 } Hitori;
 
+gboolean hitori_check_rule1 (Hitori *hitori);
+gboolean hitori_check_rule2 (Hitori *hitori);
+gboolean hitori_check_rule3 (Hitori *hitori);
 void hitori_quit (Hitori *hitori);
 
 G_END_DECLS
