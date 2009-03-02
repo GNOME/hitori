@@ -180,6 +180,7 @@ main (int argc, char *argv[])
 
 	const GOptionEntry options[] = {
 	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
+	        /* Translators: This means to choose a number as the "seed" for random number generation used when creating a board */
 	        { "seed", 0, 0, G_OPTION_ARG_INT, &seed, N_("Seed the board generation"), NULL },
 	        { NULL }
 	};
