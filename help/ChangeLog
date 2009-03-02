@@ -1,3 +1,9 @@
+2009-03-02  Daniel Nylander <po@danielnylander.se>
+
+	* sv/sv.po: Added Swedish translation.
+	* sv/figures: Added screenshot.
+	* Makefile.am: Added sv.
+
 2009-03-01  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* C/hitori.xml: Made it clearer that multiple solutions are possible.
