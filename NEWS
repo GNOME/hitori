@@ -1,0 +1,23 @@
+Major new features in version...
+
+0.2.1:
+* Fixed some build problems
+* Fixed documentation licensing
+
+0.2:
+* Added --seed option
+* Added dynamic board sizing
+* Improvements to rendering, including Tangoisation and the use of GtkStyle
+* Relicensed to GPLv3+
+* Added documentation
+* Improved random number seeding/generation
+* Halved memory footprint and improved algorithms
+* Added icon by Jakub Szypulka
+* Added desktop file
+
+0.1:
+* Project created
+* Board generation support
+* Rule-checking
+* Hints
+* Undo/Redo support

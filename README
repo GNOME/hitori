@@ -1,0 +1,57 @@
+Hitori
+======
+
+Hitori is (as the name suggests) a GTK+ application to generate and let you play games of Hitori, a logic game similar to Sudoku created by Nikoli.
+
+News
+====
+
+See NEWS file.
+
+Dependencies
+============
+
+GNOME 2.24 development platform
+	http://www.gnome.org
+
+Controls
+========
+
+Left-click on a cell:
+	Paint/Unpaint cell
+Ctrl+Left-click on a cell:
+	Tag cell
+Shift+Left-click on a cell:
+	Tag cell
+Ctrl+N:
+	New game
+Ctrl+H:
+	Display a hint
+Ctrl+Z:
+	Undo last move
+Ctrl+Shift+Z:
+	Redo last undone move
+Ctrl+Q:
+	Quit
+
+Copyright
+=========
+
+Philip Withnall <philip@tecnocode.co.uk>
+Algorithm assistance from Ben Windsor <benjw_823@hotmail.com>
+Icon by Jakub Szypulka <cube@szypulka.com>
+
+BUGS
+====
+
+Bugs should be sent to me:
+http://tecnocode.co.uk/contact
+
+To get a better debug output, run:
+# hitori --debug
+
+Contact
+=======
+
+Philip Withnall <philip@tecnocode.co.uk>
+http://tecnocode.co.uk/projects/hitori

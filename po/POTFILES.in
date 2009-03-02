@@ -1,0 +1,6 @@
+# List of source files containing translatable strings.
+[encoding: UTF-8]
+data/hitori.desktop.in
+[type: gettext/glade]data/hitori.ui
+src/interface.c
+src/main.c
