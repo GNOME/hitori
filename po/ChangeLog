@@ -1,6 +1,11 @@
-2009-03-01 Og Maciel <ogmaciel@gnome.org>
+2009-03-02 Og Maciel <ogmaciel@gnome.org>
 
 	* pt_BR.po: Updated Brazilian Portuguese translation.
+
+2009-03-01 Og Maciel <ogmaciel@gnome.org>
+
+	* pt_BR.po: Added Brazilian Portuguese translation.
+	* LINGUAS: Added pt_BR.
 
 2009-03-02  Daniel Nylander <po@danielnylander.se>
 
