@@ -1,0 +1,134 @@
+# Portuguese translations for HITORI package.
+# Copyright (C) 2009 THE HITORI'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the HITORI package.
+# Og Maciel <ogmaciel@gnome.org>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-03-01 19:12-0500\n"
+"PO-Revision-Date: 2009-03-01 19:55-0500\n"
+"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: ../data/hitori.desktop.in.h:1
+#: ../data/hitori.ui.h:8
+#: ../src/main.c:195
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "Jogue o quebra-cabeça Hitori"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "Tamanho do _tabuleiro"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "_Jogo"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "A_juda"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "_Dica"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "_Configurações"
+
+#: ../src/interface.c:51
+#, c-format
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr "Não foi possível carregar o arquivo de ui \"%s/hitori/hitori.ui\"."
+
+#: ../src/interface.c:208
+msgid "You've won!"
+msgstr "Você ganhou!"
+
+#: ../src/interface.c:486
+msgid "The help contents could not be displayed."
+msgstr "Não foi possível carregar o conteúdo de ajuda."
+
+#: ../src/interface.c:507
+msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgstr "Hitori é software livre; você pode redistribuí-lo e/ou modificá-lo sob os termos da Licença Pública Geral GNU publicada pela Free Software Foundation; qualquer versão 2 da licença, ou (à sua escolha) qualquer versão posterior."
+
+#: ../src/interface.c:511
+msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
+msgstr "Hitori é distribuído na expectativa de ser útil, mas SEM QUALQUER GARANTIA; sem mesmo a garantia implícita de COMERCIALIZAÇÃO ou de ADEQUAÇÃO A QUALQUER PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter mais detalhes."
+
+#: ../src/interface.c:515
+msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr "Você deve ter recebido uma cópia da Licença Pública Geral GNU (GNU General Public License) junto com o Hitori. Caso contrário, veja <http://www.gnu.org/licenses/>."
+
+#: ../src/interface.c:527
+msgid "Copyright © 2007-2009 Philip Withnall"
+msgstr "Copyright © 2007-2009 Philip Withnall"
+
+#: ../src/interface.c:528
+msgid "A logic puzzle designed by Nikoli."
+msgstr "Um quebra-cabeça de lógica criado por Nikoli."
+
+#: ../src/interface.c:530
+msgid "translator-credits"
+msgstr "Og Maciel <ogmaciel@gnome.org>"
+
+#: ../src/interface.c:534
+msgid "Hitori Website"
+msgstr "Website do Hitori"
+
+#: ../src/main.c:74
+msgid "Do you want to stop the current game?"
+msgstr "Você deseja para o jogo atual?"
+
+#: ../src/main.c:182
+msgid "Enable debug mode"
+msgstr "Habilitar o modo de depuração"
+
+#: ../src/main.c:183
+msgid "Seed the board generation"
+msgstr ""
+
+#. Options
+#: ../src/main.c:199
+msgid "- Play a game of Hitori"
+msgstr "- Jogar uma partida de Hitori"
+
+#: ../src/main.c:209
+msgid "Command-line options could not be parsed."
+msgstr "Não foi possível analisar as opções da linha de comando."
+
