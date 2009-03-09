@@ -1,5 +1,11 @@
 2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
 
+	* configure.ac: Modernised how the options are presented.
+
+	Updated svn:ignore properties.
+
+2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
+
 	* src/interface.c (hitori_button_release_cb), (hitori_update_hint),
 	(hitori_hint_cb): Fixed hinting so that hint rectangles don't get
 	stuck on the board any more.
