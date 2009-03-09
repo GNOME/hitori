@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 /*
  * Hitori
- * Copyright (C) Philip Withnall 2007-2008 <philip@tecnocode.co.uk>
+ * Copyright (C) Philip Withnall 2007-2009 <philip@tecnocode.co.uk>
  * 
  * Hitori is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -72,7 +72,7 @@ typedef struct {
 	guint drawing_area_x_offset;
 	guint drawing_area_y_offset;
 
-	guint board_size;
+	guchar board_size;
 	HitoriCell **board;
 
 	gboolean debug;

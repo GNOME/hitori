@@ -33,6 +33,19 @@
 #define HINT_FLASHES 6
 #define HINT_INTERVAL 500
 
+/* Declarations for GtkBuilder */
+gboolean hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori);
+gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
+void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
+void hitori_new_game_cb (GtkAction *action, Hitori *hitori);
+void hitori_hint_cb (GtkAction *action, Hitori *hitori);
+void hitori_undo_cb (GtkAction *action, Hitori *hitori);
+void hitori_redo_cb (GtkAction *action, Hitori *hitori);
+void hitori_quit_cb (GtkAction *action, Hitori *hitori);
+void hitori_contents_cb (GtkAction *action, Hitori *hitori);
+void hitori_about_cb (GtkAction *action, Hitori *hitori);
+void hitori_board_size_cb (GtkRadioAction *action, GtkRadioAction *current, Hitori *hitori);
+
 GtkWidget *
 hitori_create_interface (Hitori *hitori)
 {
@@ -199,13 +212,12 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	}
 
 	if (has_won == TRUE) {
+		GtkWidget *dialog;
+
 		/* Tell the user they've won, and don't draw any hints */
 		hitori_disable_events (hitori);
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_INFO,
-				GTK_BUTTONS_OK,
-				_("You've won!"));
+		dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
+						 _("You've won!"));
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
 		return;
@@ -422,7 +434,9 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
+		default:
 			/* This is just here to stop the compiler warning */
+			g_assert_not_reached ();
 			break;
 	}
 
@@ -455,7 +469,9 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
+		default:
 			/* This is just here to stop the compiler warning */
+			g_assert_not_reached ();
 			break;
 	}
 
@@ -496,6 +512,7 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 void
 hitori_about_cb (GtkAction *action, Hitori *hitori)
 {
+	#include "../help/hitori-docs.h"
 	gchar *license;
 	const gchar *authors[] =
 	{
@@ -527,6 +544,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 				"copyright", _("Copyright \xc2\xa9 2007-2009 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
 				"authors", authors,
+				"documenters", documentation_credits,
 				"translator-credits", _("translator-credits"),
 				"logo-icon-name", "hitori",
 				"license", license,

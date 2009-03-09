@@ -42,9 +42,7 @@
 			<author> 
 				<firstname>Philip</firstname> 
 				<surname>Withnall</surname> 
-				<affiliation> 
-					<address><email>philip@tecnocode.co.uk</email></address> 
-				</affiliation> 
+				<email>philip@tecnocode.co.uk</email>
 			</author>
 		</authorgroup>
 		<!-- According to GNU FDL, revision history is mandatory if you are -->

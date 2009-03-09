@@ -1,7 +1,7 @@
 /* -*- Mode: C; indent-tabs-mode: t; c-basic-offset: 8; tab-width: 8 -*- */
 /*
  * Hitori
- * Copyright (C) Philip Withnall 2007-2008 <philip@tecnocode.co.uk>
+ * Copyright (C) Philip Withnall 2007-2009 <philip@tecnocode.co.uk>
  * 
  * Hitori is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,6 +21,7 @@
 #include <glib/gprintf.h>
 
 #include "main.h"
+#include "rules.h"
 
 /* Rule 1: There must only be one of each number in the unpainted cells
  * in each row and column.
@@ -221,7 +222,7 @@ hitori_check_rule3 (Hitori *hitori)
 	 * one, the rule fails. Start at 2 to give room to subtract
 	 * 1 without underflowing, and also skip the first entry, as
 	 * it's reserved for ungrouped cells. */
-	for (i = 2; i <= max_group; i++) {
+	for (i = 2; i < max_group + 1; i++) {
 		if (group_bases[i - 1] != group_bases[i]) {
 			/* Rule failed */
 			g_free (group_bases);
