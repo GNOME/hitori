@@ -5,7 +5,7 @@
 	<!ENTITY app "<application>Hitori</application>">
 	<!ENTITY appversion "0.2.1">
 	<!ENTITY manrevision "0.1">
-	<!ENTITY date "June 2008">
+	<!ENTITY date "March 2009">
 	<!-- Information about the entities
 	Use the app and appname entities to specify the name of the application.  
 	Use the appversion entity to specify the version of the application.
@@ -26,7 +26,7 @@
 		<title>&app; Manual</title>
 		<abstract role="description"><para>&app; is a simple puzzle game.</para></abstract>
 		<copyright> 
-			<year>2008</year> 
+			<year>2008&#8211;2009</year> 
 			<holder>Philip Withnall</holder> 
 		</copyright> 
 		<publisher role="maintainer"> 
@@ -59,6 +59,11 @@
 		<!-- to V3.0, and so on. -->  
 		<revhistory>
 			<revision> 
+				<revnumber>Hitori Manual V0.1</revnumber> 
+				<date>June 2008</date> 
+				<revdescription><para role="author">Philip Withnall <email>philip@tecnocode.co.uk</email></para></revdescription>
+			</revision>
+			<revision> 
 				<revnumber>Hitori Manual V&manrevision;</revnumber> 
 				<date>&date;</date> 
 				<revdescription><para role="author">Philip Withnall <email>philip@tecnocode.co.uk</email></para></revdescription>
@@ -87,7 +92,8 @@
 		<sect2 id="hitori-game">
 			<title>Hitori the Game</title>
 			<para>Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board
-			of numbers, and has to "paint out" cells until there are no duplicate numbers in each row and column. The following rules apply:</para>
+			of numbers, and has to <quote>paint out</quote> cells until there are no duplicate numbers in each row and column. The following
+			rules apply:</para>
 			<itemizedlist> 
 				<listitem><para>There must only be one of each number in the unpainted cells in each row and column.</para></listitem>
 				<listitem><para>No painted cell may be adjacent to another, vertically or horizontally.</para></listitem>
@@ -109,12 +115,31 @@
 					</mediaobject> 
 				</screenshot> 
 			</figure>
-			<para>To paint a cell, left-click on it; to unpaint it again, left-click on it again. When cells are painted such that none
+		</sect2>
+		<sect2 id="hitori-playing">
+			<title>Playing a Game</title>
+			<para>To start a new game, choose <menuchoice>
+				<guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem>
+				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut>
+			</menuchoice>. If you are already playing a game, &app; will ask if you want to stop the current game.</para>
+			<para>To paint a cell, click on it; to unpaint it again, click on it again. When cells are painted such that none
 			of the three rules are broken, the game will end and the board may no longer be manipulated.</para>
 			<para>&app; also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding
 			<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells
 			can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while
 			holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>.</para>
+			<para>To undo or redo a move, choose <menuchoice>
+				<guimenu>Game</guimenu><guimenuitem>Undo</guimenuitem>
+				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
+			</menuchoice> or <menuchoice>
+				<guimenu>Game</guimenu><guimenuitem>Redo</guimenuitem>
+				<shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
+			</menuchoice>. You may undo or redo as many moves as you like without restriction.</para>
+			<para>To get a hint on which cells to paint out, choose <menuchoice>
+				<guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem>
+				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut>
+			</menuchoice>. A cell will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or
+			unpainted) is incorrect, and should be changed for the game to be won.</para>
 		</sect2>
 		<sect2 id="hitori-customization">
 			<title>Customizing the Game</title>
@@ -128,7 +153,7 @@
 		</sect2>
 	</sect1>
 <!-- ============= About ================================== -->
-	<sect1 id="myapp-about"> 
+	<sect1 id="hitori-about"> 
 		<title>About &app;</title> 
 		<para>&app; was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about &app;,
 		report a bug or make a suggestion about the application or this manual, please visit the

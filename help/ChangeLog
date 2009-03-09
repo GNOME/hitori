@@ -1,5 +1,9 @@
 2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
 
+	* C/hitori.xml: Expanded manual.
+
+2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
+
 	* C/hitori.xml:
 	* Makefile.am: Generate a list of documenters from the documentation
 	itself.
