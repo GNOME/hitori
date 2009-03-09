@@ -331,6 +331,9 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	/* Stop any current hints */
 	hitori->hint_status = HINT_FLASHES;
 
+	if (hitori->debug)
+		g_debug ("Stopping all current hints.");
+
 	/* Redraw */
 	hitori_draw_board_simple (hitori, recheck, FALSE);
 
@@ -350,16 +353,21 @@ hitori_new_game_cb (GtkAction *action, Hitori *hitori)
 }
 
 static gboolean
-hitori_update_hint (gpointer user_data)
+hitori_update_hint (Hitori *hitori)
 {
-	Hitori *hitori;
 	cairo_t *cr;
 	gint area_width, area_height;
 	guint board_width, board_height;
 	gfloat cell_size;
 
-	hitori = (Hitori*) user_data;
+	/* Check to see if hinting's been stopped by a cell being changed (race condition) */
+	if (hitori->hint_status >= HINT_FLASHES)
+		return FALSE;
+
 	hitori->hint_status++;
+
+	if (hitori->debug)
+		g_debug ("Updating hint status to %u.", hitori->hint_status);
 
 	/* Calculate the area to redraw (just the hinted cell, hopefully) */
 	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
@@ -406,11 +414,15 @@ hitori_hint_cb (GtkAction *action, Hitori *hitori)
 
 			if (status <= MAX (CELL_SHOULD_BE_PAINTED, CELL_PAINTED) &&
 			    status > 0) {
+				if (hitori->debug)
+					g_debug ("Beginning hinting in cell (%u,%u).", iter.x, iter.y);
+
 				/* Set up the cell for hinting */
 				hitori->hint_status = 0;
 				hitori->hint_position = iter;
-				g_timeout_add (HINT_INTERVAL, hitori_update_hint,(gpointer) hitori);
+				g_timeout_add (HINT_INTERVAL, (GSourceFunc) hitori_update_hint, hitori);
 				hitori_update_hint ((gpointer) hitori);
+
 				return;
 			}
 		}
