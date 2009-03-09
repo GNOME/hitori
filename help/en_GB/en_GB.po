@@ -2,153 +2,307 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "POT-Creation-Date: 2008-06-08 15:44+0100\n"
-"PO-Revision-Date: 2008-06-08 15:44+0100\n"
+"PO-Revision-Date: 2009-03-09 19:11+0000\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
-"Language-Team: English/GB <en@li.org>\n"
+"Language-Team: British English <en@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
-#: C/hitori.xml:107(None) 
-msgid "@@image: 'figures/hitori_main_window.png'; md5=df6d1e0cdc412bca7ea8b435891c1642"
-msgstr "@@image: 'figures/hitori_main_window.png'; md5=df6d1e0cdc412bca7ea8b435891c1642"
+#: ../C/hitori.xml:111(None)
+msgid ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
+msgstr ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
 
-#: C/hitori.xml:26(title) 
+#: ../C/hitori.xml:26(title)
 msgid "<application>Hitori</application> Manual"
 msgstr "<application>Hitori</application> Manual"
 
-#: C/hitori.xml:27(para) 
+#: ../C/hitori.xml:27(para)
 msgid "<application>Hitori</application> is a simple puzzle game."
 msgstr "<application>Hitori</application> is a simple puzzle game."
 
-#: C/hitori.xml:29(year) 
-msgid "2008"
-msgstr "2008"
+#: ../C/hitori.xml:29(year)
+msgid "2008–2009"
+msgstr "2008–2009"
 
-#: C/hitori.xml:30(holder) C/hitori.xml:33(publishername) 
+#: ../C/hitori.xml:30(holder) ../C/hitori.xml:33(publishername)
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
-#: C/hitori.xml:43(firstname) 
+#: ../C/hitori.xml:43(firstname)
 msgid "Philip"
 msgstr "Philip"
 
-#: C/hitori.xml:44(surname) 
+#: ../C/hitori.xml:44(surname)
 msgid "Withnall"
 msgstr "Withnall"
 
-#: C/hitori.xml:46(email) 
+#: ../C/hitori.xml:45(email)
 msgid "philip@tecnocode.co.uk"
 msgstr "philip@tecnocode.co.uk"
 
-#: C/hitori.xml:64(revnumber) 
+#: ../C/hitori.xml:62(revnumber) ../C/hitori.xml:67(revnumber)
 msgid "Hitori Manual V0.1"
 msgstr "Hitori Manual V0.1"
 
-#: C/hitori.xml:66(para) 
+#: ../C/hitori.xml:63(date)
+msgid "June 2008"
+msgstr "June 2008"
+
+#: ../C/hitori.xml:64(para) ../C/hitori.xml:69(para)
 msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
 msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
 
-#: C/hitori.xml:70(releaseinfo) 
-msgid "This manual describes version 0.2 of Hitori."
-msgstr "This manual describes version 0.2 of Hitori."
+#: ../C/hitori.xml:73(releaseinfo)
+msgid "This manual describes version 0.2.1 of Hitori."
+msgstr "This manual describes version 0.2.1 of Hitori."
 
-#: C/hitori.xml:72(title) 
+#: ../C/hitori.xml:75(title)
 msgid "Feedback"
 msgstr "Feedback"
 
-#: C/hitori.xml:73(para) 
-msgid "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+#: ../C/hitori.xml:76(para)
+msgid ""
+"To report a bug or make a suggestion regarding the <application>Hitori</"
+"application> application or this manual, follow the directions on the <ulink "
+"url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http"
+"\"><application>Hitori</application> Web page</ulink>."
+msgstr ""
+"To report a bug or make a suggestion regarding the <application>Hitori</"
+"application> application or this manual, follow the directions on the <ulink "
+"url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http"
+"\"><application>Hitori</application> Web page</ulink>."
 
-#: C/hitori.xml:80(primary) 
+#: ../C/hitori.xml:83(primary)
 msgid "Hitori"
 msgstr "Hitori"
 
-#: C/hitori.xml:83(primary) 
+#: ../C/hitori.xml:86(primary)
 msgid "hitori"
 msgstr "hitori"
 
-#: C/hitori.xml:88(title) 
+#: ../C/hitori.xml:91(title)
 msgid "Introduction"
 msgstr "Introduction"
 
-#: C/hitori.xml:90(title) 
+#: ../C/hitori.xml:93(title)
 msgid "Hitori the Game"
 msgstr "Hitori the Game"
 
-#: C/hitori.xml:91(para) 
-msgid "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board of numbers, and has to \"paint out\" cells until there are no duplicate numbers in each row and column. The following rules apply:"
-msgstr "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board of numbers, and has to \"paint out\" cells until there are no duplicate numbers in each row and column. The following rules apply:"
+#: ../C/hitori.xml:94(para)
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<quote>paint out</quote> cells until there are no duplicate numbers in each "
+"row and column. The following rules apply:"
+msgstr ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<quote>paint out</quote> cells until there are no duplicate numbers in each "
+"row and column. The following rules apply:"
 
-#: C/hitori.xml:94(para) 
-msgid "There must only be one of each number in the unpainted cells in each row and column."
-msgstr "There must only be one of each number in the unpainted cells in each row and column."
+#: ../C/hitori.xml:98(para)
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
 
-#: C/hitori.xml:95(para) 
+#: ../C/hitori.xml:99(para)
 msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"No painted cell may be adjacent to another, vertically or horizontally."
 
-#: C/hitori.xml:96(para) 
-msgid "All the unpainted cells must be joined together vertically and horizontally in one group."
-msgstr "All the unpainted cells must be joined together vertically and horizontally in one group."
+#: ../C/hitori.xml:100(para)
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
 
-#: C/hitori.xml:98(para) 
-msgid "These are the only three rules of the game, and so there may be multiple solutions to a Hitori puzzle board, although it's unlikely."
-msgstr "These are the only three rules of the game, and so there may be multiple solutions to a Hitori puzzle board, although it's unlikely."
+#: ../C/hitori.xml:102(para)
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
 
-#: C/hitori.xml:101(title) 
+#: ../C/hitori.xml:105(title)
 msgid "Interface"
 msgstr "Interface"
 
-#: C/hitori.xml:102(para) 
-msgid "<application>Hitori</application> has only one window; the main window, which consists of the menubar and number board, shown below."
-msgstr "<application>Hitori</application> has only one window; the main window, which consists of the menubar and number board, shown below."
+#: ../C/hitori.xml:106(para)
+msgid ""
+"<application>Hitori</application> has only one window; the main window, "
+"which consists of the menubar and number board, shown below."
+msgstr ""
+"<application>Hitori</application> has only one window; the main window, "
+"which consists of the menubar and number board, shown below."
 
-#: C/hitori.xml:104(title) 
+#: ../C/hitori.xml:108(title)
 msgid "<application>Hitori</application> Main Window"
 msgstr "<application>Hitori</application> Main Window"
 
-#: C/hitori.xml:109(phrase) 
-msgid "Shows <application>Hitori</application> main window, containing the number board, Game and Help menus."
-msgstr "Shows <application>Hitori</application> main window, containing the number board, Game and Help menus."
+#: ../C/hitori.xml:113(phrase)
+msgid ""
+"Shows <application>Hitori</application> main window, containing the number "
+"board, Game and Help menus."
+msgstr ""
+"Shows <application>Hitori</application> main window, containing the number "
+"board, Game and Help menus."
 
-#: C/hitori.xml:114(para) 
-msgid "To paint a cell, left-click on it; to unpaint it again, left-click on it again. When cells are painted such that none of the three rules are broken, the game will end and the board may no longer be manipulated."
-msgstr "To paint a cell, left-click on it; to unpaint it again, left-click on it again. When cells are painted such that none of the three rules are broken, the game will end and the board may no longer be manipulated."
+#: ../C/hitori.xml:120(title)
+msgid "Playing a Game"
+msgstr "Playing a Game"
 
-#: C/hitori.xml:116(para) 
-msgid "<application>Hitori</application> also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding <keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>."
-msgstr "<application>Hitori</application> also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding <keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>."
+#: ../C/hitori.xml:121(para)
+msgid ""
+"To start a new game, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>N</keycap></keycombo></shortcut></menuchoice>. If you are "
+"already playing a game, <application>Hitori</application> will ask if you "
+"want to stop the current game."
+msgstr ""
+"To start a new game, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>New Game</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>N</keycap></keycombo></shortcut></menuchoice>. If you are "
+"already playing a game, <application>Hitori</application> will ask if you "
+"want to stop the current game."
 
-#: C/hitori.xml:122(title) 
+#: ../C/hitori.xml:125(para)
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+
+#: ../C/hitori.xml:127(para)
+msgid ""
+"<application>Hitori</application> also allows you to highlight cells for "
+"your own reference when solving a board. This can be achieved by holding "
+"<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They "
+"both highlight cells differently, and cells can be highlighted in both "
+"manners at the same time. Highlighted cells can be de-highlighted by "
+"clicking on them again while holding either <keycap>Ctrl</keycap> or "
+"<keycap>Shift</keycap>."
+msgstr ""
+"<application>Hitori</application> also allows you to highlight cells for "
+"your own reference when solving a board. This can be achieved by holding "
+"<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They "
+"both highlight cells differently, and cells can be highlighted in both "
+"manners at the same time. Highlighted cells can be de-highlighted by "
+"clicking on them again while holding either <keycap>Ctrl</keycap> or "
+"<keycap>Shift</keycap>."
+
+#: ../C/hitori.xml:131(para)
+msgid ""
+"To undo or redo a move, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Undo</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>Z</keycap></keycombo></shortcut></menuchoice> or "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Redo</"
+"guimenuitem><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
+"keycap><keycap>Z</keycap></keycombo></shortcut></menuchoice>. You may undo "
+"or redo as many moves as you like without restriction."
+msgstr ""
+"To undo or redo a move, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Undo</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>Z</keycap></keycombo></shortcut></menuchoice> or "
+"<menuchoice><guimenu>Game</guimenu><guimenuitem>Redo</"
+"guimenuitem><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
+"keycap><keycap>Z</keycap></keycombo></shortcut></menuchoice>. You may undo "
+"or redo as many moves as you like without restriction."
+
+#: ../C/hitori.xml:138(para)
+msgid ""
+"To get a hint on which cells to paint out, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Hint</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>H</keycap></keycombo></shortcut></menuchoice>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"To get a hint on which cells to paint out, choose <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Hint</guimenuitem><shortcut><keycombo><keycap>Ctrl</"
+"keycap><keycap>H</keycap></keycombo></shortcut></menuchoice>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+
+#: ../C/hitori.xml:145(title)
 msgid "Customizing the Game"
 msgstr "Customising the Game"
 
-#: C/hitori.xml:123(para) 
-msgid "The game can be customized by changing the board size — boards from 5–10 cells square are allowed."
-msgstr "The game can be customised by changing the board size — boards from 5–10 cells square are allowed."
+#: ../C/hitori.xml:146(para)
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"The game can be customised by changing the board size — boards from 5–10 "
+"cells square are allowed."
 
-#: C/hitori.xml:124(para) 
-msgid "To change the board size, choose an option from <menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. <application>Hitori</application> will ask if you want to stop the current game if you're in the middle of one, then start a new game with the requested board size."
-msgstr "To change the board size, choose an option from <menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. <application>Hitori</application> will ask if you want to stop the current game if you're in the middle of one, then start a new game with the requested board size."
+#: ../C/hitori.xml:147(para)
+msgid ""
+"To change the board size, choose an option from <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. "
+"<application>Hitori</application> will ask if you want to stop the current "
+"game if you're in the middle of one, then start a new game with the "
+"requested board size."
+msgstr ""
+"To change the board size, choose an option from <menuchoice><guimenu>Game</"
+"guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. "
+"<application>Hitori</application> will ask if you want to stop the current "
+"game if you're in the middle of one, then start a new game with the "
+"requested board size."
 
-#: C/hitori.xml:134(title) 
+#: ../C/hitori.xml:157(title)
 msgid "About <application>Hitori</application>"
 msgstr "About <application>Hitori</application>"
 
-#: C/hitori.xml:135(para) 
-msgid "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+#: ../C/hitori.xml:158(para)
+msgid ""
+"<application>Hitori</application> was written by Philip Withnall "
+"(<email>philip@tecnocode.co.uk</email>). To find more information about "
+"<application>Hitori</application>, report a bug or make a suggestion about "
+"the application or this manual, please visit the <ulink url=\"http://"
+"tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</"
+"application> Web page</ulink>."
+msgstr ""
+"<application>Hitori</application> was written by Philip Withnall "
+"(<email>philip@tecnocode.co.uk</email>). To find more information about "
+"<application>Hitori</application>, report a bug or make a suggestion about "
+"the application or this manual, please visit the <ulink url=\"http://"
+"tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</"
+"application> Web page</ulink>."
 
-#: C/hitori.xml:138(para) 
-msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
-msgstr "This program is distributed under the terms of the GNU General Public licence as published by the Free Software Foundation; either version 3 of the Licence, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this licence</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
+#: ../C/hitori.xml:161(para)
+msgid ""
+"This program is distributed under the terms of the GNU General Public "
+"license as published by the Free Software Foundation; either version 3 of "
+"the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl"
+"\" type=\"help\">copy of this license</ulink> is included with this "
+"documentation; another can be found in the file COPYING included with the "
+"source code of this program."
+msgstr ""
+"This program is distributed under the terms of the GNU General Public "
+"licence as published by the Free Software Foundation; either version 3 of "
+"the Licence, or (at your option) any later version. A <ulink url=\"ghelp:gpl"
+"\" type=\"help\">copy of this licence</ulink> is included with this "
+"documentation; another can be found in the file COPYING included with the "
+"source code of this program."
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/hitori.xml:0(None) 
+#: ../C/hitori.xml:0(None)
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>, 2008"
-
