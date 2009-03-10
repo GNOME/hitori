@@ -1,3 +1,9 @@
+2009-03-02  Mario Blättermann  <mariobl@svn.gnome.org>
+
+	* de/de.po: Added German translation.
+	* de/figures: Added screenshot.
+	* Makefile.am: Added de.
+
 2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* en_GB/en_GB.po: Updated British English translation.
