@@ -114,8 +114,8 @@ msgstr ""
 "licenses/>."
 
 #: ../src/interface.c:556
-msgid "Copyright © 2007-2009 Philip Withnall"
-msgstr "Copyright © 2007-2009 Philip Withnall"
+msgid "Copyright © 2007–2009 Philip Withnall"
+msgstr "Copyright © 2007–2009 Philip Withnall"
 
 #: ../src/interface.c:557
 msgid "A logic puzzle designed by Nikoli."

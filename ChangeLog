@@ -1,3 +1,10 @@
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* README: Updated the README to give the new website.
+	* src/interface.c (hitori_about_cb): Updated the About dialogue to
+	give the new website, and to fix the punctuation in the copyright
+	string.
+
 2009-03-09  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* configure.ac: Modernised how the options are presented.

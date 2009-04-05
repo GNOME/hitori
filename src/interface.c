@@ -553,7 +553,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 
 	gtk_show_about_dialog (GTK_WINDOW (hitori->window),
 				"version", VERSION,
-				"copyright", _("Copyright \xc2\xa9 2007-2009 Philip Withnall"),
+				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232009 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
 				"authors", authors,
 				"documenters", documentation_credits,
@@ -562,7 +562,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 				"license", license,
 				"wrap-license", TRUE,
 				"website-label", _("Hitori Website"),
-				"website", "http://tecnocode.co.uk/projects/hitori",
+				"website", "http://live.gnome.org/Hitori",
 				NULL);
 
 	g_free (license);

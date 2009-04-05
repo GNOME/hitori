@@ -1,3 +1,11 @@
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* de.po:
+	* en_GB.po:
+	* es.po:
+	* pt_BR.po:
+	* sv.po: Corrected the punctuation in the copyright string.
+
 2009-03-24  Daniel Nylander <po@danielnylander.se>
 
 	* sv.po: Updated Swedish translation.
