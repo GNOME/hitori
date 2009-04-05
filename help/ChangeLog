@@ -4,6 +4,10 @@
 
 2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
 
+	* en_GB/en_GB.po: Updated British English translation.
+
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
 	* C/hitori.xml:
 	* de/de.po: Fixed markup in manual such that it validates, and updated
 	translations accordingly.
