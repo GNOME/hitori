@@ -1,5 +1,18 @@
 Major new features in version...
 
+0.2.2:
+* Fixed how hints are drawn
+* Cleaned up some of the code
+* Fixed markup validation in the documentation
+* Migrated bug handling to GNOME Bugzilla (http://bugzilla.gnome.org/enter_bug.cgi?product=hitori)
+* Migrated website to live.gnome.org (http://live.gnome.org/Hitori)
+* Translations:
+** de (Mario Blättermann)
+** en_GB (Philip Withnall)
+** es (Jorge Gonzalez)
+** pt_BR (Og Maciel)
+** sv (Daniel Nylander)
+
 0.2.1:
 * Fixed some build problems
 * Fixed documentation licensing

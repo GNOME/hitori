@@ -1,3 +1,10 @@
+============ Version 0.2.2
+
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* NEWS:
+	* configure.ac: Bump to version 0.2.2.
+
 2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
 
 	* README: Updated the README to give the new website.
