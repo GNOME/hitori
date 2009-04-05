@@ -1,5 +1,12 @@
 2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
 
+	* C/hitori.xml:
+	* de/de.po:
+	* en_GB/en_GB.po:
+	* sv/sv.po: Changed the website to live.gnome.org.
+
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
 	* en_GB/en_GB.po: Updated British English translation.
 
 2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>

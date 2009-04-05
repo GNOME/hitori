@@ -61,8 +61,8 @@ msgid "Feedback"
 msgstr "Återkoppling"
 
 #: C/hitori.xml:73(para)
-msgid "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "För att rapportera ett fel eller föreslå någonting angående programmet <application>Hitori</application> eller denna handbok, följ anvisningarna på <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
+msgid "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+msgstr "För att rapportera ett fel eller föreslå någonting angående programmet <application>Hitori</application> eller denna handbok, följ anvisningarna på <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
 
 #: C/hitori.xml:80(primary)
 msgid "Hitori"
@@ -141,8 +141,8 @@ msgid "About <application>Hitori</application>"
 msgstr "Om <application>Hitori</application>"
 
 #: C/hitori.xml:135(para)
-msgid "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "<application>Hitori</application> skrevs av Philip Withnall (<email>philip@tecnocode.co.uk</email>). För att hitta mer information om <application>Hitori</application>, rapportera ett fel eller föreslå någonting angående detta program eller denna handbok så besök <ulink url=\"http://tecnocode.co.uk/projects/hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
+msgid "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+msgstr "<application>Hitori</application> skrevs av Philip Withnall (<email>philip@tecnocode.co.uk</email>). För att hitta mer information om <application>Hitori</application>, rapportera ett fel eller föreslå någonting angående detta program eller denna handbok så besök <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
 
 #: C/hitori.xml:138(para)
 msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."

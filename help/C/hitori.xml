@@ -74,7 +74,7 @@
 		<legalnotice> 
 			<title>Feedback</title> 
 			<para>To report a bug or make a suggestion regarding the &app; application or this manual, follow the directions on the 
-			<ulink url="http://tecnocode.co.uk/projects/hitori" type="http">&app; Web page</ulink>.</para>
+			<ulink url="http://live.gnome.org/Hitori" type="http">&app; Web page</ulink>.</para>
 			<!-- Translators may also add here feedback address for translations -->
 		</legalnotice>
 	</articleinfo> 
@@ -157,7 +157,7 @@
 		<title>About &app;</title> 
 		<para>&app; was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about &app;,
 		report a bug or make a suggestion about the application or this manual, please visit the
-		<ulink url="http://tecnocode.co.uk/projects/hitori" type="http">&app; Web page</ulink>.</para>
+		<ulink url="http://live.gnome.org/Hitori" type="http">&app; Web page</ulink>.</para>
 		<para>This program is distributed under the terms of the GNU General Public license as published by the Free Software
 		Foundation; either version 3 of the License, or (at your option) any later version. A
 		<ulink url="ghelp:gpl" type="help">copy of this license</ulink> is included with this documentation; another can be found
