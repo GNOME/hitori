@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
-"http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" 
+"http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
 	<!ENTITY appname "Hitori">
-	<!ENTITY app "<application>Hitori</application>">
+	<!ENTITY app "<application>&appname;</application>">
 	<!ENTITY appversion "0.2.1">
 	<!ENTITY manrevision "0.1">
 	<!ENTITY date "March 2009">
@@ -119,8 +119,8 @@
 		<sect2 id="hitori-playing">
 			<title>Playing a Game</title>
 			<para>To start a new game, choose <menuchoice>
-				<guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem>
 				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut>
+				<guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem>
 			</menuchoice>. If you are already playing a game, &app; will ask if you want to stop the current game.</para>
 			<para>To paint a cell, click on it; to unpaint it again, click on it again. When cells are painted such that none
 			of the three rules are broken, the game will end and the board may no longer be manipulated.</para>
@@ -129,15 +129,15 @@
 			can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while
 			holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>.</para>
 			<para>To undo or redo a move, choose <menuchoice>
-				<guimenu>Game</guimenu><guimenuitem>Undo</guimenuitem>
 				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
+				<guimenu>Game</guimenu><guimenuitem>Undo</guimenuitem>
 			</menuchoice> or <menuchoice>
-				<guimenu>Game</guimenu><guimenuitem>Redo</guimenuitem>
 				<shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut>
+				<guimenu>Game</guimenu><guimenuitem>Redo</guimenuitem>
 			</menuchoice>. You may undo or redo as many moves as you like without restriction.</para>
 			<para>To get a hint on which cells to paint out, choose <menuchoice>
-				<guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem>
 				<shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut>
+				<guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem>
 			</menuchoice>. A cell will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or
 			unpainted) is incorrect, and should be changed for the game to be won.</para>
 		</sect2>

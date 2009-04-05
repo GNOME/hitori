@@ -1,3 +1,9 @@
+2009-04-05  Philip Withnall  <philip@tecnocode.co.uk>
+
+	* C/hitori.xml:
+	* de/de.po: Fixed markup in manual such that it validates, and updated
+	translations accordingly.
+
 2009-03-02  Mario Blättermann  <mariobl@svn.gnome.org>
 
 	* de/de.po: Added German translation.
