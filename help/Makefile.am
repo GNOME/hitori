@@ -8,3 +8,8 @@ DOC_H_DOCS = C/hitori.xml
 DOC_INCLUDES = legal.xml
 DOC_FIGURES = figures/hitori_main_window.png
 DOC_LINGUAS = de en_GB sv
+
+EXTRA_DIST = ChangeLog.pre-0-2-2
+GITIGNOREFILES = hitori-docs.h
+
+-include $(top_srcdir)/git.mk

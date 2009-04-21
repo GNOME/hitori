@@ -28,3 +28,5 @@ EXTRA_DIST = \
 	$(ui_DATA)	\
 	$(desktop_in_files)
 CLEANFILES = $(desktop_DATA)
+
+-include $(top_srcdir)/git.mk

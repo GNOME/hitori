@@ -28,3 +28,5 @@ hitori_SOURCES = \
 
 hitori_LDFLAGS = 
 hitori_LDADD = $(GENERAL_LIBS)
+
+-include $(top_srcdir)/git.mk
