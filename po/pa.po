@@ -1,0 +1,158 @@
+# Punjabi translation of hitori.
+# Copyright (C) 2009 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+#
+# A S Alam <aalam@users.sf.net>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug."
+"cgi?product=hitori&component=general\n"
+"POT-Creation-Date: 2009-06-07 21:45+0000\n"
+"PO-Revision-Date: 2009-06-16 06:36+0530\n"
+"Last-Translator: A S Alam <aalam@users.sf.net>\n"
+"Language-Team: Punjabi/Panjabi <punjab-l10n@list.sf.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+msgid "Hitori"
+msgstr "ਹੀਟੋਰੀ"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "ਹੀਟੋਰੀ ਬੁਝਾਰਤ ਖੇਡ ਖੇਡੋ"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "ਬੋਰਡ ਸਾਈਜ਼(_S)"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "ਖੇਡ(_G)"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "ਮੱਦਦ(_H)"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "ਹਿੰਟ(_H)"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "ਸੈਟਿੰਗ(_S)"
+
+#: ../src/interface.c:64
+#, c-format
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr "UI ਫਾਇਲ \"%s/hitori/hitori.ui\" ਨਹੀਂ ਲੋਡ ਕੀਤੀ ਜਾ ਸਕੀ।"
+
+#: ../src/interface.c:220
+msgid "You've won!"
+msgstr "ਤੁਸੀਂ ਜਿੱਤ ਗਏ!"
+
+#: ../src/interface.c:514
+msgid "The help contents could not be displayed."
+msgstr "ਮੱਦਦ ਸਮੱਗਰੀ ਹਾਲੇ ਨਹੀਂ ਵੇਖਾਈ ਜਾ ਸਕੀ।"
+
+#: ../src/interface.c:536
+msgid ""
+"Hitori is free software: you can redistribute it and/or modify it under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation, either version 3 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"ਹੀਟੋਰੀ ਪਰੋਗਰਾਮ ਇੱਕ ਮੁਫਤ ਸਾਫਟਵੇਅਰ ਹੈ, ਜਿਸ ਨੂੰ ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ, "
+"ਜਿਸ ਨੂੰ ਫਰੀ ਸਾਫਟਵੇਅਰ ਫਾਊਨਡੇਸ਼ਨ ਨੇ ਤਿਆਰ ਕੀਤਾ ਹੈ, ਦੇ ਵਰਜਨ ੨ ਜਾਂ ਨਵੇਂ ਦੀਆਂ "
+"ਸ਼ਰਤਾਂ "
+"(ਉਹ ਤੁਹਾਡੀ ਆਪਣੀ ਮਰਜ਼ੀ ਹੈ) ਅਧੀਨ ਵੰਡ ਅਤੇ/ਜਾਂ ਸੋਧ ਸਕਦੇ ਹੋ।"
+
+#: ../src/interface.c:540
+msgid ""
+"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details."
+msgstr ""
+"ਹਿਟੋਰੀ ਪਰੋਗਰਾਮ ਨੂੰ ਇਹ ਮੰਨ ਕੇ ਵੰਡਿਆ ਜਾ ਰਿਹਾ ਹੈ ਕਿ ਇਹ ਫਾਇਦੇਮੰਦ ਰਹੇਗਾ, "
+"ਪਰ ਇਸ ਦੀ ਕੋਈ ਵਾਰੰਟੀ ਨਹੀਂ ਲਈ ਜਾ ਰਹੀ ਹੈ, ਕਿਸੇ ਖਾਸ ਕੰਮ ਲਈ ਅਨੁਕੂਲ ਹੋਣ "
+"ਜਾਂ ਠੀਕ ਤਰ੍ਹਾਂ ਕੰਮ ਕਰਨ ਦੀ ਵੀ ਕੋਈ ਗਾਰੰਟੀ ਨਹੀਂ ਹੈ। ਹੋਰ ਵੇਰਵੇ ਲਈ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ "
+"ਲਾਇਸੈਂਸ ਨੂੰ ਪੜ੍ਹੋ।"
+
+#: ../src/interface.c:544
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"ਤੁਸੀਂ ਗਨੂ ਜਰਨਲ ਪਬਲਿਕ ਲਾਈਸੈਂਸ ਦੀ ਕਾਪੀ ਨੂੰ ਹੀਟੋਰੀ ਨਾਲ ਲਵੋਗੇ। ਜੇ ਨਹੀਂ ਤਾਂ "
+"<http://www.gnu.org/licenses/> ਵੇਖੋ।"
+
+#: ../src/interface.c:556
+msgid "Copyright © 2007–2009 Philip Withnall"
+msgstr "Copyright © 2007–2009 Philip Withnall"
+
+#: ../src/interface.c:557
+msgid "A logic puzzle designed by Nikoli."
+msgstr "ਨੀਕੋਲੀ ਵਲੋਂ ਡਿਜ਼ਾਇਨ ਕੀਤੀ ਲਾਜਿਕ ਬੁਝਾਰਤ"
+
+#: ../src/interface.c:560
+msgid "translator-credits"
+msgstr ""
+"ਅਮਨਪਰੀਤ ਸਿੰਘ ਆਲਮ\n"
+"Punjabi OpenSource Team\n"
+"http://www.satluj.com"
+
+#: ../src/interface.c:564
+msgid "Hitori Website"
+msgstr "ਹੀਟੋਰੀ ਵੈਬਸਾਈਟ"
+
+#: ../src/main.c:74
+msgid "Do you want to stop the current game?"
+msgstr "ਕੀ ਤੁਸੀਂ ਮੌਜੂਦਾ ਖੇਡ ਰੋਕਣੀ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#: ../src/main.c:182
+msgid "Enable debug mode"
+msgstr "ਡੀਬੱਗ ਮੋਡ ਚਾਲੂ"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:184
+msgid "Seed the board generation"
+msgstr "ਬੋਰਡ ਜਨਰੇਸ਼ਨ ਤਿਆਰ ਕਰੋ"
+
+#. Options
+#: ../src/main.c:200
+msgid "- Play a game of Hitori"
+msgstr "- ਹੀਟੋਰੀ ਦੀ ਖੇਡ ਖੇਡੋ"
+
+#: ../src/main.c:210
+msgid "Command-line options could not be parsed."
+msgstr "ਕਮਾਂਡ ਲਾਈਨ ਚੋਣਾਂ ਪਾਰਸ ਨਹੀਂ ਕੀਤੀਆਂ ਜਾ ਸਕੀਆਂ।"
+
