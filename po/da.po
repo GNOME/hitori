@@ -1,0 +1,156 @@
+# Danish translation for hitori.
+# Copyright (C) 2009 hitori's COPYRIGHT HOLDER.
+# This file is distributed under the same license as the hitori package.
+# Joe Hansen (joedalton2@yahoo.dk), 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-02 00:24+0200\n"
+"PO-Revision-Date: 2009-09-30 22:31+0200\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "Læg puslespillet Hitori"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "Bræt_størrelse"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "_Spil"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "_Hjælp"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "_Fif"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "_Opsætning"
+
+#: ../src/interface.c:64
+#, c-format
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr "UI-fil \"%s/hitori/hitori.ui\" kunne ikke indlæses."
+
+#: ../src/interface.c:220
+msgid "You've won!"
+msgstr "Du har vundet!"
+
+#: ../src/interface.c:514
+msgid "The help contents could not be displayed."
+msgstr "Hjælpeindholdet kunne ikke vises."
+
+#: ../src/interface.c:536
+msgid ""
+"Hitori is free software: you can redistribute it and/or modify it under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation, either version 3 of the License, or (at your option) any later "
+"version."
+msgstr ""
+"Hitori er fri software; det kan distribueres og/eller modificeres som "
+"betinget af GNU General Public License, udarbejdet af Free Software "
+"Foundation; enten version 3 af licensen eller, efter eget valg, enhver nyere "
+"version."
+
+#: ../src/interface.c:540
+msgid ""
+"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details."
+msgstr ""
+"Histori distribueres i håb om at det viser sig nyttigt, men UDEN NOGEN "
+"GARANTI; selv uden de underforståede garantier SALGBARHED eller EGNETHED TIL "
+"ET BESTEMT FORMÅL, idet der henvises til GNU General Public License for "
+"detaljer."
+
+#: ../src/interface.c:544
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr ""
+"Du bør have modtaget en kopi af GNU General Public License sammen med "
+"Hitori.  Er dette ikke tilfældet, så se <http://www.gnu.org/licenses/>."
+
+#: ../src/interface.c:556
+msgid "Copyright © 2007–2009 Philip Withnall"
+msgstr "Ophavsret © 2007-2009 Philip Withnall"
+
+#: ../src/interface.c:557
+msgid "A logic puzzle designed by Nikoli."
+msgstr "Et logisk puslespil designet af Nikoli."
+
+#: ../src/interface.c:560
+msgid "translator-credits"
+msgstr ""
+"Joe Hansen <joedalton2@yahoo.dk>, 2009.\n"
+"\n"
+"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
+"Mere info: http://www.dansk-gruppen.dk"
+
+#: ../src/interface.c:564
+msgid "Hitori Website"
+msgstr "Hitoris hjemmeside"
+
+#: ../src/main.c:74
+msgid "Do you want to stop the current game?"
+msgstr "Ønsker du at stoppe det aktuelle spil?"
+
+#: ../src/main.c:182
+msgid "Enable debug mode"
+msgstr "Slå fejlsøgningstilstand til"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:184
+msgid "Seed the board generation"
+msgstr "Grundlagstal for brætoprettelsen"
+
+#. Options
+#: ../src/main.c:200
+msgid "- Play a game of Hitori"
+msgstr "- Spil Hitori"
+
+#: ../src/main.c:210
+msgid "Command-line options could not be parsed."
+msgstr "Kommandolinjeindstillinger kunne ikke fortolkes."
