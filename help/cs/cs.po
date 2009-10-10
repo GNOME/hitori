@@ -1,0 +1,206 @@
+# Czech translation for hitori help.
+# Copyright (C) 2009 the author(s) of hitori.
+# This file is distributed under the same license as the hitori help.
+# Marek Černocký <marek@manet.cz>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2009-09-12 16:11+0000\n"
+"PO-Revision-Date: 2009-10-02 22:26+0100\n"
+"Last-Translator: Marek Černocký <marek@manet.cz>\n"
+"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: C/legal.xml:2(para)
+msgid "Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License (GFDL), Version 1.2 or any later version published by the Free Software Foundation with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+msgstr "Je povoleno kopírovat, šířit a/nebo upravovat tento dokument za podmínek GNU Free Documentation License, verze 1.1 nebo jakékoli další verze vydané nadací Free Software Foundation; bez neměnných oddílů, bez textů předních desek a bez textů zadních desek. Kopie této licence je zahrnuta v oddílu jménem <ulink type=\"help\" url=\"ghelp:fdl\">GNU Free Documentation License</ulink> nebo v souboru COPYING-DOCS dodávaném s touto příručkou."
+
+#: C/legal.xml:13(para)
+msgid "Many of the names used by companies to distinguish their products and services are claimed as trademarks. Where those names appear in any GNOME documentation, and the members of the GNOME Documentation Project are made aware of those trademarks, then the names are in capital letters or initial capital letters."
+msgstr "Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu GNOME jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku."
+
+#: C/legal.xml:29(para)
+msgid "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGES."
+msgstr "DOKUMENT JE POSKYTOVÁN V PODOBĚ „JAK JE“ BEZ ZÁRUKY V JAKÉKOLIV PODOBĚ, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, LEŽÍ NA VÁS. POKUD KVŮLI TOMUTO DOKUMENTU, NEBO JEHO UPRAVENÉ VERZI, NASTANE PROBLÉM, VY (NIKOLIV PŮVODNÍ AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE JAKÉKOLIV NÁKLADY ZA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ, PODLE TÉTO DOHODY, POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE ZA ŽÁDNÝCH OKOLNOSTÍ A ŽÁDNÝCH PRÁVNÍCH PŘEDPOKLADŮ, AŤ SE JEDNÁ O PŘEČIN (VČETNĚ NEDBALOSTNÍCH), SMLOUVU NEBO JINÉ, NENÍ AUTOR, PŮVODNÍ PISATEL, KTERÝKOLIV PŘISPĚVATEL NEBO KTERÝKOLIV DISTRIBUTOR TOHOTO DOKUMENTU NEBO UPRAVENÉ VERZE DOKUMENTU NEBO KTERÝKOLIV DODAVATEL NĚKTERÉ Z TĚCHTO STRAN ODPOVĚDNÝ NĚJAKÉ OSOBĚ ZA PŘÍMÉ, NEPŘÍMÉ, SPECIÁLNÍ, NAHODILÉ NEBO NÁSLEDNÉ ŠKODY JAKÉHOKOLIV CHARAKTERU, VČETNĚ, ALE NEJEN, ZA POŠKOZENÍ ZE ZTRÁTY DOBRÉHO JMÉNA, PŘERUŠENÍ PRÁCE, PORUCHY NEBO NESPRÁVNÉ FUNKCE POČÍTAČE NEBO JINÉHO A VŠECH DALŠÍCH ŠKOD NEBO ZTRÁT VYVSTÁVAJÍCÍCH Z NEBO VZTAHUJÍCÍCH SE K POUŽÍVÁNÍ TOHOTO DOKUMENTU NEBO UPRAVENÝCH VERZÍ DOKUMENTU, I KDYŽ BY TAKOVÁTO STRANA BYLA INFORMOVANÁ O MOŽNOSTI TAKOVÉHOTO POŠKOZENÍ."
+
+#: C/legal.xml:22(para)
+msgid "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: <placeholder-1/>"
+msgstr "DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <placeholder-1/>"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/hitori.xml:111(None)
+msgid "@@image: 'figures/hitori_main_window.png'; md5=7d84786ca244435340ecd6c7cb98dfd1"
+msgstr "@@image: 'figures/hitori_main_window.png'; md5=98a41ec309bc0e88da4ed4bdc1b46ae6"
+
+#: C/hitori.xml:26(title)
+msgid "<application>Hitori</application> Manual"
+msgstr "Příručka ke hře <application>Hitori</application>"
+
+#: C/hitori.xml:27(para)
+msgid "<application>Hitori</application> is a simple puzzle game."
+msgstr "<application>Hitori</application> je jednoduchá logická hra."
+
+#: C/hitori.xml:29(year)
+msgid "2008–2009"
+msgstr "2008–2009"
+
+#: C/hitori.xml:30(holder)
+#: C/hitori.xml:33(publishername)
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#: C/hitori.xml:43(firstname)
+msgid "Philip"
+msgstr "Philip"
+
+#: C/hitori.xml:44(surname)
+msgid "Withnall"
+msgstr "Withnall"
+
+#: C/hitori.xml:45(email)
+msgid "philip@tecnocode.co.uk"
+msgstr "philip@tecnocode.co.uk"
+
+#: C/hitori.xml:62(revnumber)
+#: C/hitori.xml:67(revnumber)
+msgid "Hitori Manual V0.1"
+msgstr "Příručka V0.1 ke hře Hitori"
+
+#: C/hitori.xml:63(date)
+msgid "June 2008"
+msgstr "Červen 2008"
+
+#: C/hitori.xml:64(para)
+#: C/hitori.xml:69(para)
+msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+
+#: C/hitori.xml:68(date)
+msgid "March 2009"
+msgstr "Březen 2009"
+
+#: C/hitori.xml:73(releaseinfo)
+msgid "This manual describes version 0.2.1 of Hitori."
+msgstr "Tato příručka popisuje hru Hitori ve verzi 0.2.1."
+
+#: C/hitori.xml:75(title)
+msgid "Feedback"
+msgstr "Ohlasy"
+
+#: C/hitori.xml:76(para)
+msgid "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+msgstr "Pokud chcete oznámit chybu nebo navrhnout vylepšení vztahující se k aplikaci <application>Hitori</application> nebo této příručce, postupujte dle instrukcí na <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\">webové stránce <application>Hitori</application></ulink>."
+
+#: C/hitori.xml:83(primary)
+#: C/hitori.xml:0(application)
+msgid "Hitori"
+msgstr "Hitori"
+
+#: C/hitori.xml:86(primary)
+msgid "hitori"
+msgstr "hitori"
+
+#: C/hitori.xml:91(title)
+msgid "Introduction"
+msgstr "Úvod"
+
+#: C/hitori.xml:93(title)
+msgid "Hitori the Game"
+msgstr "Hra Hitori"
+
+#: C/hitori.xml:94(para)
+msgid "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board of numbers, and has to <quote>paint out</quote> cells until there are no duplicate numbers in each row and column. The following rules apply:"
+msgstr "Hitori je malý logický hlavolam podobné povahy jako populárnější Sudoku. Hráč začíná hru s čtvercovou hrací deskou s čísly a musí <quote>zatřít</quote> políčka tak, aby se v žádném řádku ani sloupci žádné číslo neopakovalo. Platí přitom následující tři pravidla:"
+
+#: C/hitori.xml:98(para)
+msgid "There must only be one of each number in the unpainted cells in each row and column."
+msgstr "V každém řádku i sloupci se musí v nezatřených políčkách vyskytovat každé číslo jen jednou."
+
+#: C/hitori.xml:99(para)
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr "Žádná zatřená políčka nesmí navzájem svisle nebo vodorovně sousedit."
+
+#: C/hitori.xml:100(para)
+msgid "All the unpainted cells must be joined together vertically and horizontally in one group."
+msgstr "Všechna nezatřená políčka musí být spolu svisle nebo vodorovně propojená do jedné skupiny."
+
+#: C/hitori.xml:102(para)
+msgid "These are the only three rules of the game, and so there may well be multiple solutions to a Hitori puzzle board."
+msgstr "Musí se dodržovat pouhá tři pravidla, a tak je dost dobře možné, že může mít dané rozložení hrací desky Hitori více řešení."
+
+#: C/hitori.xml:105(title)
+msgid "Interface"
+msgstr "Rozhraní"
+
+#: C/hitori.xml:106(para)
+msgid "<application>Hitori</application> has only one window; the main window, which consists of the menubar and number board, shown below."
+msgstr "<application>Hitori</application> má jen jedno okno - hlavní okno, které sestává z panelu nabídek a číselné hrací desky, jak můžete vidět níže."
+
+#: C/hitori.xml:108(title)
+msgid "<application>Hitori</application> Main Window"
+msgstr "Hlavní okno hry <application>Hitori</application>"
+
+#: C/hitori.xml:113(phrase)
+msgid "Shows <placeholder-1/> main window, containing the number board, Game and Help menus."
+msgstr "Ukazuje hlavní okno <placeholder-1/>, které obsahuje hrací desku s čísly a nabídky Hra a Nápověda."
+
+#: C/hitori.xml:120(title)
+msgid "Playing a Game"
+msgstr "Jak hrát"
+
+#: C/hitori.xml:121(para)
+msgid "To start a new game, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. If you are already playing a game, <application>Hitori</application> will ask if you want to stop the current game."
+msgstr "Novou hru spustíte volbou <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. Pokud už máte rozehranou hru, <application>Hitori</application> se vás dotáže, jestli chcete současnou hru ukončit."
+
+#: C/hitori.xml:125(para)
+msgid "To paint a cell, click on it; to unpaint it again, click on it again. When cells are painted such that none of the three rules are broken, the game will end and the board may no longer be manipulated."
+msgstr "Políčko zatřete tím, že na něj klikněte. Zatření políčka zrušíte opětovným kliknutím na něj. Až jsou políčka zatřená tak, že neporušují žádné ze tří pravidel, hra končí a na hrací desce nelze nadále dělat žádné změny."
+
+#: C/hitori.xml:127(para)
+msgid "<application>Hitori</application> also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding <keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>."
+msgstr "<application>Hitori</application> vám také umožňuje si pro své potřeby při řešení políčka označovat. Dělá se to podržením klávesy <keycap>Ctrl</keycap> nebo <keycap>Shift</keycap> a kliknutím na políčko. Obě označení se liší a mohou být u stejného políčka použita i naráz. Označení zrušíte opětovným kliknutím za současného přidržení <keycap>Ctrl</keycap> nebo <keycap>Shift</keycap>."
+
+#: C/hitori.xml:131(para)
+msgid "To undo or redo a move, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Undo</guimenuitem></menuchoice> or <menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Redo</guimenuitem></menuchoice>. You may undo or redo as many moves as you like without restriction."
+msgstr "Pokud chcete vrátit tah zpět nebo jej provést znovu, zvolte <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Hra</guimenu><guimenuitem>Zpět</guimenuitem></menuchoice> nebo <menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Hra</guimenu><guimenuitem>Znovu</guimenuitem></menuchoice>. Vracet zpět a znovu provádět můžete libovolný počet tahů bez omezení."
+
+#: C/hitori.xml:138(para)
+msgid "To get a hint on which cells to paint out, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem></menuchoice>. A cell will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect, and should be changed for the game to be won."
+msgstr "Pokud chcete radu, které políčko zatřít, zvolte <menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></keycombo></shortcut><guimenu>Hra</guimenu><guimenuitem>Rada</guimenuitem></menuchoice>. Políčko se zvýrazní blikajícím červeným obrysem. To naznačuje, že současný stav políčka (zatřené nebo nezatřené) je nesprávný a pro vítězné dokončení hry by měl být změněn."
+
+#: C/hitori.xml:145(title)
+msgid "Customizing the Game"
+msgstr "Přizpůsobení hry"
+
+#: C/hitori.xml:146(para)
+msgid "The game can be customized by changing the board size — boards from 5–10 cells square are allowed."
+msgstr "Hru si lze přizpůsobit změnou velikosti hrací desky — dovolené jsou čtvercové hrací desky o rozměrech 5 až 10 políček."
+
+#: C/hitori.xml:147(para)
+msgid "To change the board size, choose an option from <menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. <application>Hitori</application> will ask if you want to stop the current game if you're in the middle of one, then start a new game with the requested board size."
+msgstr "Pokud chcete změnit velikost hrací desky, vyberte některou z voleb v <menuchoice><guimenu>Hra</guimenu><guimenuitem>Velikost hrací desky</guimenuitem></menuchoice>. V případě, že máte rozehranou hru, dotáže se <application>Hitori</application>, jestli ji má ukončit a po té spustí novou hru s požadovanými rozměry hrací desky."
+
+#: C/hitori.xml:157(title)
+msgid "About <application>Hitori</application>"
+msgstr "O hře <application>Hitori</application>"
+
+#: C/hitori.xml:158(para)
+msgid "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
+msgstr "Aplikaci <application>Hitori</application> napsal Philip Withnall (<email>philip@tecnocode.co.uk</email>). Pokud se chcete o <application>Hitori</application> dovědět více, nahlásit chybu nebo podat návrh týkající se aplikace nebo této příručky, navštivte prosím <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\">webovou stránku <application>Hitori</application></ulink>."
+
+#: C/hitori.xml:161(para)
+msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
+msgstr "Tento program je šířen za podmínek licence GNU General Public license v podobě, v jaké ji vydala Free Software Foundation, a to buď ve verzi 3 této licence nebo (dle vaší volby) v libovolné novější verzi. <ulink url=\"ghelp:gpl\" type=\"help\">Kopie této licence</ulink> je dodávaná spolu s touto dokumentací. Jinak ji můžete také nalézt v souboru COPYING, který je součástí zdrojového kódu tohoto programu."
+
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
+#: C/hitori.xml:0(None)
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>, 2009"
+
