@@ -1,5 +1,19 @@
 Major new features in version...
 
+0.2.3:
+* Move ChangeLogs to be generated from git logs
+* Fix a problem with rule 3 where it would incorrectly fail on some boards
+* Translations:
+** fr (Laurent Coudeur, Bruno Brouard)
+** zh_CN (Zhang Miao)
+** hu (Tamas Nemeth)
+** es (Jorge Gonzalez)
+** pa (A S Alam)
+** gl (Fran Dieguez)
+** el (Kostas Papadimas)
+** da (Kenneth Nielsen)
+** cz (Marek Cernocky)
+
 0.2.2:
 * Fixed how hints are drawn
 * Cleaned up some of the code
