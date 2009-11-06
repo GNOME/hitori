@@ -153,98 +153,82 @@ hitori_check_rule2 (Hitori *hitori)
 gboolean
 hitori_check_rule3 (Hitori *hitori)
 {
-	HitoriVector iter;
-	guint i, max_group, *group_bases, **groups;
+	GQueue queue = G_QUEUE_INIT;
+	gboolean **reached;
+	HitoriVector iter, *first = NULL;
+	gboolean success;
 
-	max_group = 0;
+	/* Pick an unpainted cell. */
+	for (iter.x = 0; first == NULL && iter.x < hitori->board_size; iter.x++)
+		for (iter.y = 0; !first && iter.y < hitori->board_size; iter.y++)
+			if ((hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE)
+				first = g_slice_dup (HitoriVector, &iter);
+	if (first == NULL)
+		return FALSE;
 
-	groups = g_new (guint*, hitori->board_size);
+	/* Allocate a board of booleans to keep track of which cells we can reach */
+	reached = g_new (gboolean*, hitori->board_size);
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
-		groups[iter.x] = g_new0 (guint, hitori->board_size);
-	group_bases = g_new0 (guint, hitori->board_size * hitori->board_size / 2);
+		reached[iter.x] = g_new0 (gboolean, hitori->board_size);
 
-	/* Loop through each cell assigning it a group, and gradually merging the
-	 * groups until either there's only one group of unpainted cells left
-	 * (the rule is satisfied), or there are several (the rule is broken).
-	 * We only look at the cells above and to the left of the current one, as
-	 * this eliminates a lot of lookups, yet we still examine the relationship
-	 * between each pair of contiguous cells. */
-	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
-		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
-			guint *this_group, up_group, left_group;
+	/* Use a basic floodfill algorithm to traverse the board */
+	g_queue_push_tail (&queue, first);
+	while (g_queue_is_empty (&queue) == FALSE) {
+		HitoriVector *ptr = g_queue_pop_head (&queue);
 
-			/* To save lots of lookups in the following code,
-			 * get the local groups up now. If the indices are invalid,
-			 * they're set to 0 so that some checks below can be removed. */
-			this_group = &groups[iter.x][iter.y];
-			up_group = (iter.y >= 1) ? groups[iter.x][iter.y - 1] : 0;
-			left_group = (iter.x >= 1) ? groups[iter.x - 1][iter.y] : 0;
+		iter = *ptr;
 
-			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
-				/* If it's painted ensure it's in group 0 */
-				*this_group = 0;
-			} else {
-				/* Try and apply a group from a surrounding cell */
-				if (up_group != 0)
-					*this_group = up_group;
-				else if (left_group != 0)
-					*this_group = left_group;
-				else {
-					/* Create a new group */
-					max_group++;
-					group_bases[max_group] = max_group;
-					*this_group = max_group;
-				}
+		if (reached[iter.x][iter.y] == FALSE && (hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE) {
+			/* Mark the cell as having been reached */
+			reached[iter.x][iter.y] = TRUE;
 
-				/* Check for converged groups */
-				if (up_group != 0 && group_bases[up_group] != group_bases[*this_group])
-					group_bases[*this_group] = group_bases[up_group];
-				else if (left_group != 0 && group_bases[left_group] != group_bases[*this_group])
-					group_bases[*this_group] = group_bases[left_group];
+			if (iter.x > 0) {
+				/* Cell to our left */
+				HitoriVector *neighbour = g_slice_new (HitoriVector);
+				neighbour->x = iter.x - 1;
+				neighbour->y = iter.y;
+				g_queue_push_tail (&queue, neighbour);
+			}
+			if (iter.y > 0) {
+				/* Cell above us */
+				HitoriVector *neighbour = g_slice_new (HitoriVector);
+				neighbour->x = iter.x;
+				neighbour->y = iter.y - 1;
+				g_queue_push_tail (&queue, neighbour);
+			}
+			if (iter.x < hitori->board_size - 1) {
+				/* Cell to our right */
+				HitoriVector *neighbour = g_slice_new (HitoriVector);
+				neighbour->x = iter.x + 1;
+				neighbour->y = iter.y;
+				g_queue_push_tail (&queue, neighbour);
+			}
+			if (iter.y < hitori->board_size - 1) {
+				/* Cell below us */
+				HitoriVector *neighbour = g_slice_new (HitoriVector);
+				neighbour->x = iter.x;
+				neighbour->y = iter.y + 1;
+				g_queue_push_tail (&queue, neighbour);
 			}
 		}
+
+		g_slice_free (HitoriVector, ptr);
 	}
 
-	if (hitori->debug) {
-		/* Print out the groups */
-		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
-			for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
-				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					g_printf ("X ");
-				else
-					g_printf ("%u ", groups[iter.x][iter.y]);
-			}
-			g_printf ("\n");
-		}
-	}
-
-	/* Check that there's only one group; if there's more than
-	 * one, the rule fails. Start at 2 to give room to subtract
-	 * 1 without underflowing, and also skip the first entry, as
-	 * it's reserved for ungrouped cells. */
-	for (i = 2; i < max_group + 1; i++) {
-		if (group_bases[i - 1] != group_bases[i]) {
-			/* Rule failed */
-			g_free (group_bases);
-			for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
-				g_free (groups[iter.x]);
-			g_free (groups);
-
-			if (hitori->debug)
-				g_debug ("Rule 3 failed");
-
-			return FALSE;
-		}
-	}
+	/* Check if there's an unpainted cell we haven't reached */
+	success = TRUE;
+	for (iter.x = 0; success && iter.x < hitori->board_size; iter.x++)
+		for (iter.y = 0; success && iter.y < hitori->board_size; iter.y++)
+			if (reached[iter.x][iter.y] == FALSE && (hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE)
+				success = FALSE;
 
 	/* Free everything */
-	g_free (group_bases);
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
-		g_free (groups[iter.x]);
-	g_free (groups);
+		g_free (reached[iter.x]);
+	g_free (reached);
 
 	if (hitori->debug)
-		g_debug ("Rule 3 OK");
+		g_debug (success ? "Rule 3 OK" : "Rule 3 failed");
 
-	return TRUE;
+	return success;
 }

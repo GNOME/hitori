@@ -34,9 +34,9 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 
 	/* Seed the random number generator */
 	if (seed == -1) {
-		GTimeVal time;
-		g_get_current_time (&time);
-		seed = time.tv_sec + time.tv_usec;
+		GTimeVal time_;
+		g_get_current_time (&time_);
+		seed = time_.tv_sec + time_.tv_usec;
 	}
 
 	if (hitori->debug)
