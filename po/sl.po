@@ -1,0 +1,137 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hitori\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
+"POT-Creation-Date: 2009-11-06 20:52+0000\n"
+"PO-Revision-Date: 2009-12-15 10:04+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
+"Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n%100==4 ? 3 : 0);\n"
+"X-Poedit-Country: SLOVENIA\n"
+"X-Poedit-Language: Slovenian\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ../data/hitori.desktop.in.h:1
+#: ../data/hitori.ui.h:8
+#: ../src/main.c:196
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "Igraj miselno igro Hitori"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "_Velikost plošče"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "_Igra"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "Pomo_č"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "N_amig"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "_Nastavitve"
+
+#: ../src/interface.c:64
+#, c-format
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr "Datoteke uporabniškega vmesnika \"%s/hitori/hitori.ui\" ni mogoče naložiti."
+
+#: ../src/interface.c:220
+msgid "You've won!"
+msgstr "Zmagali ste!"
+
+#: ../src/interface.c:514
+msgid "The help contents could not be displayed."
+msgstr "Vsebine pomoči ni moogče prikazati"
+
+#: ../src/interface.c:536
+msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
+msgstr "Hitori je prosta programska oprema; program lahko razširjate in/ali spreminjate pod pogoji Splošnega dovoljenja GNU (GNU General PublicLicense), kot ga je objavila ustanova Free Software Foundation; bodisi različice 2 ali (po vaši izbiri) katerekoli poznejše različice."
+
+#: ../src/interface.c:540
+msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
+msgstr "Hitori se razširja v upanju, da bo uporaben, vendar BREZ VSAKRŠNEGA JAMSTVA; tudi brez posredne zagotovitve CENOVNE VREDNOSTI ali PRIMERNOSTI ZA DOLOČEN NAMEN.  Za podrobnosti glejte besedilo GNU General Public License."
+
+#: ../src/interface.c:544
+msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošne javne licence. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
+
+#: ../src/interface.c:556
+msgid "Copyright © 2007–2009 Philip Withnall"
+msgstr "Zasluge © 2008-2009 Philip Withnall"
+
+#: ../src/interface.c:557
+msgid "A logic puzzle designed by Nikoli."
+msgstr "Miselna igra, ki jo je zasnoval Nikoli. "
+
+#: ../src/interface.c:560
+msgid "translator-credits"
+msgstr "Andrej Žnidaršič, <andrej.znidarsic@gmail.com>"
+
+#: ../src/interface.c:564
+msgid "Hitori Website"
+msgstr "Spletišče Hitori"
+
+#: ../src/main.c:74
+msgid "Do you want to stop the current game?"
+msgstr "Ali želite končati trenutno igro?"
+
+#: ../src/main.c:182
+msgid "Enable debug mode"
+msgstr "Omogoči razhroščevalni način"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:184
+msgid "Seed the board generation"
+msgstr "Seme za ustvarjanje plošče"
+
+#. Options
+#: ../src/main.c:200
+msgid "- Play a game of Hitori"
+msgstr "- Igrajte igro Hitori"
+
+#: ../src/main.c:210
+msgid "Command-line options could not be parsed."
+msgstr "Možnosti ukazne vrstice ni mogoče razčleniti."
+
