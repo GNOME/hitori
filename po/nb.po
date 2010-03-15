@@ -1,0 +1,147 @@
+# Norwegian translation of the gnome-games module (bokmål dialect).
+# Copyright © 1998-2002 Free Software Foundation, Inc.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2010.
+# Terance Edward Sola <terance@lyse.net>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-games 2.29.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-03-15 14:24+0100\n"
+"PO-Revision-Date: 2010-03-15 14:27+0100\n"
+"Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
+"Language-Team: Norwegian Bokmal <i18n-nb@lister.ping.uio.no>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "Spill det populære puslespillet Hitori"
+
+#: ../data/hitori.ui.h:1
+msgid "10×10"
+msgstr "10x10"
+
+#: ../data/hitori.ui.h:2
+msgid "5×5"
+msgstr "5x5"
+
+#: ../data/hitori.ui.h:3
+msgid "6×6"
+msgstr "6x6"
+
+#: ../data/hitori.ui.h:4
+msgid "7×7"
+msgstr "7x7"
+
+#: ../data/hitori.ui.h:5
+msgid "8×8"
+msgstr "8x8"
+
+#: ../data/hitori.ui.h:6
+msgid "9×9"
+msgstr "9x9"
+
+#: ../data/hitori.ui.h:7
+msgid "Board _Size"
+msgstr "_Størrelse på brett"
+
+#: ../data/hitori.ui.h:9
+msgid "_Game"
+msgstr "_Spill"
+
+#: ../data/hitori.ui.h:10
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: ../data/hitori.ui.h:11
+msgid "_Hint"
+msgstr "_Hint"
+
+#: ../data/hitori.ui.h:12
+msgid "_Settings"
+msgstr "_Innstillinger"
+
+#: ../src/interface.c:64
+#, c-format
+msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgstr ""
+
+#: ../src/interface.c:220
+msgid "You've won!"
+msgstr "Du har vunnet!"
+
+#: ../src/interface.c:514
+msgid "The help contents could not be displayed."
+msgstr "Kunne ikke vise hjelpinnholdet."
+
+#: ../src/interface.c:536
+msgid ""
+"Hitori is free software: you can redistribute it and/or modify it under the "
+"terms of the GNU General Public License as published by the Free Software "
+"Foundation, either version 3 of the License, or (at your option) any later "
+"version."
+msgstr "Hitori er fri programvare. Du kan redistribuere og/eller endre programmet under betingelsene gitt i GNU General Public License som utgitt av Free Software Foundation; enten versjon 3 av lisensen, eller (hvis du ønsker det) enhver senere versjon."
+
+#: ../src/interface.c:540
+msgid ""
+"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+"details."
+msgstr "Hitori distribueres i håp om at programmet er nyttig, men UTEN NOEN GARANTI, ikke engang implisitt garanti om at det er SALGBART eller PASSER ET BESTEMT FORMÅL. Se GNU General Public License for detaljer."
+
+#: ../src/interface.c:544
+msgid ""
+"You should have received a copy of the GNU General Public License along with "
+"Hitori.  If not, see <http://www.gnu.org/licenses/>."
+msgstr "Du skal ha mottatt en kopi av GNU General Public License sammen med Hitori. Hvis ikke se på <http://www.gnu.org/licenses/>."
+
+#: ../src/interface.c:556
+msgid "Copyright © 2007–2009 Philip Withnall"
+msgstr "Opphavsrett © 2007-2009 Philip Withnall"
+
+#: ../src/interface.c:557
+msgid "A logic puzzle designed by Nikoli."
+msgstr ""
+
+#: ../src/interface.c:560
+msgid "translator-credits"
+msgstr ""
+"Kjartan Maraas <kmaraas@gnome.org>\n"
+"Espen Stefansen <espens@svn.gnome.org>"
+
+#: ../src/interface.c:564
+msgid "Hitori Website"
+msgstr ""
+
+#: ../src/main.c:74
+#, fuzzy
+msgid "Do you want to stop the current game?"
+msgstr "Avslutt dette spillet"
+
+#: ../src/main.c:182
+#, fuzzy
+msgid "Enable debug mode"
+msgstr "Klarte ikke aktivere 3D-modus"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:184
+msgid "Seed the board generation"
+msgstr ""
+
+#. Options
+#: ../src/main.c:200
+msgid "- Play a game of Hitori"
+msgstr ""
+
+#: ../src/main.c:210
+msgid "Command-line options could not be parsed."
+msgstr ""
+
