@@ -1,13 +1,15 @@
+# Slovenian translation for hitori.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# This file is distributed under the same license as the hitori package.
+#
+# Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2009 - 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Hitori\n"
+"Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
 "POT-Creation-Date: 2009-11-06 20:52+0000\n"
-"PO-Revision-Date: 2009-12-15 10:04+0100\n"
+"PO-Revision-Date: 2010-04-24 08:13+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "MIME-Version: 1.0\n"
@@ -79,11 +81,11 @@ msgstr "Datoteke uporabniškega vmesnika \"%s/hitori/hitori.ui\" ni mogoče nalo
 
 #: ../src/interface.c:220
 msgid "You've won!"
-msgstr "Zmagali ste!"
+msgstr "Zmaga!"
 
 #: ../src/interface.c:514
 msgid "The help contents could not be displayed."
-msgstr "Vsebine pomoči ni moogče prikazati"
+msgstr "Vsebine pomoči ni mogoče prikazati"
 
 #: ../src/interface.c:536
 msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
@@ -95,7 +97,7 @@ msgstr "Hitori se razširja v upanju, da bo uporaben, vendar BREZ VSAKRŠNEGA JA
 
 #: ../src/interface.c:544
 msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošne javne licence. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
+msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošnega javnega dovoljenja. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
 
 #: ../src/interface.c:556
 msgid "Copyright © 2007–2009 Philip Withnall"
@@ -134,4 +136,3 @@ msgstr "- Igrajte igro Hitori"
 #: ../src/main.c:210
 msgid "Command-line options could not be parsed."
 msgstr "Možnosti ukazne vrstice ni mogoče razčleniti."
-
