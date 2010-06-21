@@ -1,19 +1,20 @@
 # Galician translation for hitori.
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
-# Fran Diéguez <fran.dieguez@glug.es>, 2009.
+# Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-08-22 16:33+0200\n"
-"PO-Revision-Date: 2009-08-19 20:23+0100\n"
-"Last-Translator: Fran Dieguez <fran.dieguez@glug.es>\n"
-"Language-Team: Galician <gnome@mancomun.org>\n"
+"POT-Creation-Date: 2010-06-21 11:00+0200\n"
+"PO-Revision-Date: 2010-06-21 11:00+0200\n"
+"Last-Translator: Fran Diéguez <frandieguez@ubuntu.com>\n"
+"Language-Team: Galician <gnome@g11.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\\\n"
 
 #: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
 msgid "Hitori"
@@ -137,7 +138,7 @@ msgstr "Activar modo de depuración"
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: ../src/main.c:184
 msgid "Seed the board generation"
-msgstr ""
+msgstr "Alimentar a xeración de taboleiros"
 
 #. Options
 #: ../src/main.c:200
