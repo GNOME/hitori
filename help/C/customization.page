@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="game">
+	<info>
+		<link type="guide" xref="index#play"/>
+		<desc>Changing how the game appears and plays.</desc>
+	</info>
+	<title>Customizing the Game</title>
+
+	<p>The game can be customized by changing the board size — boards from 5–10 cells square are allowed.</p>
+	<p>To change the board size, choose an option from <guiseq><gui style="menu">Game</gui><gui style="menuitem">Board Size</gui></guiseq>.
+		<app>Hitori</app> will ask if you want to stop the current game if you're in the middle of one, then start a new game with the
+		requested board size.</p>
+</page>

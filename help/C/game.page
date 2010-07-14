@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="game">
+	<info>
+		<link type="guide" xref="index#play"/>
+		<desc>Introduction to the game of Hitori.</desc>
+	</info>
+	<title>Hitori the Game</title>
+
+	<p>Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board of numbers,
+		and has to <em>paint out</em> cells until there are no duplicate numbers in each row and column. The following rules apply:</p>
+	<list>
+		<item><p>There must only be one of each number in the unpainted cells in each row and column.</p></item>
+		<item><p>No painted cell may be adjacent to another, vertically or horizontally.</p></item>
+		<item><p>All the unpainted cells must be joined together vertically and horizontally in one group.</p></item>
+	</list>
+	<p>These are the only three rules of the game, and so there may well be multiple solutions to a Hitori puzzle board.</p>
+
+	<figure>
+		<title>Main game window</title>
+		<desc><app>Hitori</app> main window</desc>
+		<media type="image" src="figures/hitori_main_window.png" mime="image/png" style="center">
+			<p><app>Hitori</app> main window.</p>
+		</media>
+	</figure>
+</page>

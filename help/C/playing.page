@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="game">
+	<info>
+		<link type="guide" xref="index#play"/>
+		<desc>Using <app>Hitori</app> to play a game.</desc>
+	</info>
+	<title>Playing a Game</title>
+
+	<p>To start a new game, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">New Game</gui></guiseq>. If you are already playing a
+		game, <app>Hitori</app> will ask if you want to stop the current game.</p>
+	<p>To paint a cell, click on it; to unpaint it again, click on it again. When cells are painted such that none
+		of the three rules are broken, the game will end and the board may no longer be manipulated.</p>
+	<p><app>Hitori</app> also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding
+		<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in
+		both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <key>Ctrl</key>
+		or <key>Shift</key> again.</p>
+	<p>To undo or redo a move, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Undo</gui></guiseq> or
+		<guiseq><gui style="menu">Game</gui><gui style="menuitem">Redo</gui></guiseq>. You may undo or redo as many moves as you like without
+		restriction.</p>
+	<p>To get a hint on which cells to paint out, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Hint</gui></guiseq>. A cell
+		will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect,
+		and should be changed for the game to be won.</p>
+</page>
