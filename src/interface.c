@@ -524,7 +524,6 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 void
 hitori_about_cb (GtkAction *action, Hitori *hitori)
 {
-	#include "../help/hitori-docs.h"
 	gchar *license;
 	const gchar *authors[] =
 	{
@@ -556,7 +555,6 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232009 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
 				"authors", authors,
-				"documenters", documentation_credits,
 				"translator-credits", _("translator-credits"),
 				"logo-icon-name", "hitori",
 				"license", license,
