@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" id="game">
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="playing">
 	<info>
 		<link type="guide" xref="index#play"/>
 		<desc>Using <app>Hitori</app> to play a game.</desc>
