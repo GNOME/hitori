@@ -9,7 +9,8 @@ DOC_PAGES = \
 	game.page \
 	index.page \
 	license.page \
-	playing.page
+	playing.page \
+	strategy.page
 
 EXTRA_DIST = ChangeLog.pre-0-2-2
 

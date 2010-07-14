@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy">
+	<info>
+		<link type="guide" xref="index#tips"/>
+		<desc>Strategies for playing Hitori.</desc>
+	</info>
+	<title>Gameplay Strategies</title>
+
+	<p>Hitori is quite similar to Sudoku, in that it takes logical deduction to work out which cells to paint out. One strategy is to use
+		<key>Shift</key>-clicking to highlight all the repeated numbers in each <em>column</em>, then use <key>Ctrl</key>-clicking to
+		highlight all the repeated numbers in each <em>row</em>.</p>
+	<p>Once this is done for the entire board, the cells which have been highlighted both ways are good candidates for painting, although not
+		always. When painting a cell, unhighlighting the other cells with the same number in the same row and column as that cell is a good
+		way to keep track of which cells are still violating <link xref="game">rule 1 of Hitori</link>.</p>
+	<p>Always bear in mind that rule 2 of Hitori means that two adjacent cells can't both be painted. <app>Hitori</app> will highlight in red the
+		leftmost cell which violates rule 2.</p>
+
+	<p>If you get stuck at any point, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Hint</gui></guiseq> for <app>Hitori</app>
+		to flag a cell which should be painted or unpainted to move closer to a solution.</p>
+</page>

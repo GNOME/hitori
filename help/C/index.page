@@ -17,4 +17,8 @@
 	<section id="play" style="2column">
 		<title>Basic Gameplay &amp; Usage</title>
 	</section>
+
+	<section id="tips" style="2column">
+		<title>Tips &amp; Tricks</title>
+	</section>
 </page>
