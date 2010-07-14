@@ -1,5 +1,15 @@
 Major new features in version...
 
+0.2.4:
+* Translations:
+** da (Joe Hansen)
+** es (Jorge González)
+** gl (Fran Diéguez)
+** id (Imam Musthaqim)
+** nb (Kjartan Maraas, Espen Stefansen)
+** sl (Andrej Žnidaršič)
+** zh_CN (zhang ping)
+
 0.2.3:
 * Move ChangeLogs to be generated from git logs
 * Fix a problem with rule 3 where it would incorrectly fail on some boards
