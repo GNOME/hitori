@@ -29,7 +29,8 @@ dnl ***************************************************************************
 GETTEXT_PACKAGE=hitori
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [GETTEXT package name])
-AM_GLIB_GNU_GETTEXT
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.17])
 IT_PROG_INTLTOOL([0.35.0])
 
 AM_PROG_LIBTOOL
