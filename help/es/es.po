@@ -3,11 +3,12 @@
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.help.master\n"
-"POT-Creation-Date: 2009-06-16 01:07+0000\n"
-"PO-Revision-Date: 2010-02-18 15:01+0100\n"
+"POT-Creation-Date: 2010-07-14 21:22+0000\n"
+"PO-Revision-Date: 2010-10-13 12:20+0200\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -16,271 +17,91 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: C/legal.xml:2(para)
+#: C/strategy.page:5(desc)
+msgid "Strategies for playing Hitori."
+msgstr "Estrategias para jugar Hitori."
+
+#: C/strategy.page:7(title)
+msgid "Gameplay Strategies"
+msgstr "Estrategias de juego"
+
+#: C/strategy.page:9(p)
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.2 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
 msgstr ""
-"Se concede permiso para copiar, distribuir o modificar este documento según "
-"las condiciones de la GNU Free Documentation License (GFDL), versión 1.2 o "
-"cualquier versión posterior publicada por la Free Software Foundation, sin "
-"Secciones invariantes, Textos de portada y Textos de contraportada. "
-"Encontrará una copia de la GFDL en este <ulink type=\"help\" url=\"ghelp:fdl"
-"\">enlace</ulink> o en el archivo COPYING-DOCS distribuido con este manual."
+"Hitori es bastante similar al Sudoku, de hecho usa parte de su deducción "
+"lógica para averiguar qué celdas se deben pintar. Una estrategia es usar "
+"<key>Mayús</key>-ratón para resaltar todos los números repetidos en cada "
+"<em>columna</em>, después usar <key>Ctrl</key>-ratón para resaltar todos los "
+"números repetidos en cada <em>fila</em>."
 
-#: C/legal.xml:13(para)
+#: C/strategy.page:12(p)
 msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Muchos de los nombres utilizados por las empresas para distinguir sus "
-"productos y servicios se consideran marcas comerciales. Cuando estos nombres "
-"aparezcan en la documentación de GNOME, y siempre que se haya informado a "
-"los miembros del Proyecto de documentación de GNOME de dichas marcas "
-"comerciales, los nombres aparecerán en mayúsculas o con las iniciales en "
-"mayúsculas."
+"Una vez que esto está echo para el tablero entero, las celdas que se han "
+"resaltado de ambas maneras, son buenas candidatas para ser pintadas, aunque "
+"no siempre. Al pintar una celda, quite el resaltado del resto de celdas con "
+"el mismo número en la misma fila y columna, ya que esa celda se convierte en "
+"una buena forma de mantener el seguimiento de qué celdas todavía violan la "
+"<link xref=\"game\">primera regla de Hitori</link>."
 
-#: C/legal.xml:29(para)
+#: C/strategy.page:15(p)
 msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND "
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the leftmost "
+"cell which violates rule 2."
 msgstr ""
-"EL DOCUMENTO SE OFRECE «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O "
-"IMPLÍCITA, INCLUYENDO, PERO SIN LIMITARSE A ELLA, LA GARANTÍA DE QUE EL "
-"DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO ESTÉ LIBRE DE DEFECTOS, GARANTÍA "
-"DE COMERCIALIZACIÓN, APTITUD PARA UN USO EN PARTICULAR O INCUMPLIMIENTO. "
-"TODOS LOS RIESGOS RELATIVOS A LA CALIDAD, EXACTITUD O RENDIMIENTO DEL "
-"DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO SON ASUMIDOS POR VD. EN CASO DE "
-"QUE EL DOCUMENTO O LA VERSIÓN MODIFICADA SEAN DEFECTUOSOS, VD. (NO EL "
-"ESCRITOR ORIGINAL NI EL AUTOR NI NINGUNO DE LOS COLABORADORES) ASUMIRÁ EL "
-"COSTE DE CUALQUIER MANTENIMIENTO, REPARACIÓN O CORRECCIÓN QUE SEAN "
-"NECESARIOS. ESTA RENUNCIA DE GARANTÍA CONSTITUYE UNA PARTE ESENCIAL DE ESTA "
-"LICENCIA NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO NI VERSIÓN MODIFICADA DEL "
-"MISMO, SALVO EN LAS CONDICIONES ESPECIFICADAS EN ESTA RENUNCIA; Y BAJO "
-"NINGUNA CIRCUNSTANCIA NI SUPUESTO LEGAL, YA SEA POR AGRAVIO (INCLUIDA LA "
-"NEGLIGENCIA), CONTRATO U OTROS CASOS, SERÁN RESPONSABLES EL AUTOR, EL "
-"ESCRITOR ORIGINAL, CUALQUIERA DE LOS COLABORADORES O DISTRIBUIDORES DEL "
-"DOCUMENTO O UNA VERSIÓN MODIFICADA DEL MISMO NI CUALQUIER PROVEEDOR DE TALES "
-"PARTES ANTE UN TERCERO, POR CUALQUIER PERJUICIO DIRECTO, INDIRECTO, "
-"ESPECIAL, ACCIDENTAL O CONSECUTIVO DE CUALQUIER TIPO, INCLUYENDO SIN "
-"LIMITACIÓN LOS DAÑOS POR PÉRDIDA DE CLIENTES, INTERRUPCIONES DEL TRABAJO, "
-"FALLO DE SISTEMAS O MALFUNCIONAMIENTO, O CUALQUIER OTRO DAÑO O PÉRDIDA "
-"CAUSADA O RELACIONADA CON EL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS "
-"DEL MISMO, AUN CUANDO SE HAYA INFORMADO DE LA POSIBILIDAD DE DICHOS DAÑOS."
+"Tenga siempre en mente la segunda regla de Hitori, dos celdas adyacentes no "
+"pueden estar ambas pintadas. <app>Hitori</app> resaltará en rojo la celda "
+"más a la izquierda que viole la regla número dos."
 
-#: C/legal.xml:22(para)
+#: C/strategy.page:18(p)
 msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
 msgstr ""
-"ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN SEGÚN "
-"LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU "
-"(GFDL) Y TENIENDO EN CUENTA QUE: <placeholder-1/>"
+"Si se queda parado en cualquier punto, elija <guiseq><gui style=\"menu"
+"\">Juego</gui><gui style=\"menuitem\">Sugerencias</gui></guiseq> para que "
+"<app>Hitori</app> marque una casilla que se debería pintar o limpiar y así "
+"acercarse a la solución."
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/hitori.xml:111(None)
-msgid ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
-msgstr ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
+#: C/playing.page:5(desc)
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Usando <app>Hitori</app> para jugar una partida."
 
-#: C/hitori.xml:26(title)
-msgid "<application>Hitori</application> Manual"
-msgstr "Manual de <application>Hitori</application>"
-
-#: C/hitori.xml:27(para)
-msgid "<application>Hitori</application> is a simple puzzle game."
-msgstr "<application>Hitori</application> es un juego simple tipo puzle."
-
-#: C/hitori.xml:29(year)
-msgid "2008–2009"
-msgstr "2008–2009"
-
-#: C/hitori.xml:30(holder) C/hitori.xml:33(publishername)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: C/hitori.xml:43(firstname)
-msgid "Philip"
-msgstr "Philip"
-
-#: C/hitori.xml:44(surname)
-msgid "Withnall"
-msgstr "Withnall"
-
-#: C/hitori.xml:45(email)
-msgid "philip@tecnocode.co.uk"
-msgstr "philip@tecnocode.co.uk"
-
-#: C/hitori.xml:62(revnumber) C/hitori.xml:67(revnumber)
-msgid "Hitori Manual V0.1"
-msgstr "Manual de Hitori V0.1"
-
-#: C/hitori.xml:63(date)
-msgid "June 2008"
-msgstr "Junio de 2008"
-
-#: C/hitori.xml:64(para) C/hitori.xml:69(para)
-msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-
-#: C/hitori.xml:68(date)
-msgid "March 2009"
-msgstr "Marzo de 2009"
-
-#: C/hitori.xml:73(releaseinfo)
-msgid "This manual describes version 0.2.1 of Hitori."
-msgstr "Este manual describe la versión 0.2.1 de Hitori."
-
-#: C/hitori.xml:75(title)
-msgid "Feedback"
-msgstr "Comentarios"
-
-#: C/hitori.xml:76(para)
-msgid ""
-"To report a bug or make a suggestion regarding the <application>Hitori</"
-"application> application or this manual, follow the directions on the <ulink "
-"url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</"
-"application> Web page</ulink>."
-msgstr ""
-"Para informar de un error o hacer una sugerencia acerca de la aplicación "
-"<application>Hitori</application> o este manual, siga las indicaciones en la "
-"<ulink url=\"http://live.gnome.org/Hitori\" type=\"http\">página web de "
-"<application>Hitori</application></ulink>."
-
-#: C/hitori.xml:83(primary) C/hitori.xml:0(application)
-msgid "Hitori"
-msgstr "Hitori"
-
-#: C/hitori.xml:86(primary)
-msgid "hitori"
-msgstr "hitori"
-
-#: C/hitori.xml:91(title)
-msgid "Introduction"
-msgstr "Introducción"
-
-#: C/hitori.xml:93(title)
-msgid "Hitori the Game"
-msgstr "El juego de Hitori"
-
-#: C/hitori.xml:94(para)
-msgid ""
-"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
-"In the game, the player starts with a square board of numbers, and has to "
-"<quote>paint out</quote> cells until there are no duplicate numbers in each "
-"row and column. The following rules apply:"
-msgstr ""
-"Hitori es un pequeño juego de puzle lógico del mismo tipo que el popular "
-"Sudoku. En la partida, el jugador comienza en un tablero cuadrado de números "
-"y tiene que <quote>escribir</quote> en las celdas hasta que no haya números "
-"duplicados en cada fila y columna. Se aplican las siguientes reglas:"
-
-#: C/hitori.xml:98(para)
-msgid ""
-"There must only be one of each number in the unpainted cells in each row and "
-"column."
-msgstr ""
-"Sólo debe existir un número de cada tipo en las celdas vacías en cada fila y "
-"columna."
-
-#: C/hitori.xml:99(para)
-msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr ""
-"Ninguna celda escrita debe estar adyacente a otra, vertical u "
-"horizontalmente."
-
-#: C/hitori.xml:100(para)
-msgid ""
-"All the unpainted cells must be joined together vertically and horizontally "
-"in one group."
-msgstr ""
-"Todas las celdas vacías deben unirse juntas vertical y horizontalmente en un "
-"grupo."
-
-#: C/hitori.xml:102(para)
-msgid ""
-"These are the only three rules of the game, and so there may well be "
-"multiple solutions to a Hitori puzzle board."
-msgstr ""
-"Estas son las tres únicas reglas del juego y por ello puede haber múltiples "
-"soluciones de un tablero de puzle Hitori."
-
-#: C/hitori.xml:105(title)
-msgid "Interface"
-msgstr "Interfaz"
-
-#: C/hitori.xml:106(para)
-msgid ""
-"<application>Hitori</application> has only one window; the main window, "
-"which consists of the menubar and number board, shown below."
-msgstr ""
-"<application>Hitori</application> sólo tiene una ventana; la ventana "
-"principal, que consiste en la barra de menú y el tablero de números, "
-"mostrados debajo."
-
-#: C/hitori.xml:108(title)
-msgid "<application>Hitori</application> Main Window"
-msgstr "Ventana principal de <application>Hitori</application>"
-
-#: C/hitori.xml:113(phrase)
-msgid ""
-"Shows <placeholder-1/> main window, containing the number board, Game and "
-"Help menus."
-msgstr ""
-"Muestra la ventana principal de <placeholder-1/>, contiene el tablero de "
-"números y los menús de Juego y Ayuda."
-
-#: C/hitori.xml:120(title)
+#: C/playing.page:7(title)
 msgid "Playing a Game"
 msgstr "Jugar una partida"
 
-#: C/hitori.xml:121(para)
+#: C/playing.page:9(p)
+#| msgid ""
+#| "To start a new game, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
+#| "keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</"
+#| "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. If you are "
+#| "already playing a game, <application>Hitori</application> will ask if you "
+#| "want to stop the current game."
 msgid ""
-"To start a new game, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
-"keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. If you are already "
-"playing a game, <application>Hitori</application> will ask if you want to "
-"stop the current game."
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
 msgstr ""
-"Para iniciar una partida nueva elija "
-"<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></"
-"keycombo></shortcut><guimenu>Juego</guimenu><guimenuitem>Juego nuevo</"
-"guimenuitem></menuchoice>. Si ya está jugando una partida "
-"<application>Hitori</application> le preguntará si quiere parar la partida "
+"Para iniciar una partida nueva elija <guiseq><gui style=\"menu\">Juego</"
+"gui><gui style=\"menuitem\">Juego nuevo</gui></guiseq>. Si ya está jugando "
+"una partida <app>Hitori</app> le preguntará si quiere parar la partida "
 "actual."
 
-#: C/hitori.xml:125(para)
+#: C/playing.page:11(p)
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -291,64 +112,277 @@ msgstr ""
 "ninguna de las tres reglas se ha roto, entonces el juego finalizará y no se "
 "podrá manipular el tablero."
 
-#: C/hitori.xml:127(para)
+#: C/playing.page:13(p)
+#| msgid ""
+#| "<application>Hitori</application> also allows you to highlight cells for "
+#| "your own reference when solving a board. This can be achieved by holding "
+#| "<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. "
+#| "They both highlight cells differently, and cells can be highlighted in "
+#| "both manners at the same time. Highlighted cells can be de-highlighted by "
+#| "clicking on them again while holding either <keycap>Ctrl</keycap> or "
+#| "<keycap>Shift</keycap>."
 msgid ""
-"<application>Hitori</application> also allows you to highlight cells for "
-"your own reference when solving a board. This can be achieved by holding "
-"<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They "
-"both highlight cells differently, and cells can be highlighted in both "
-"manners at the same time. Highlighted cells can be de-highlighted by "
-"clicking on them again while holding either <keycap>Ctrl</keycap> or "
-"<keycap>Shift</keycap>."
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgstr ""
-"<application>Hitori</application> también le permite resaltar celdas para su "
-"propia referencia mientras está resolviendo un tablero. Esto se puede hacer "
-"pulsando la tecla <keycap>Ctrl</keycap> o <keycap>Mayús</keycap> y pulsando "
-"sobre una celda. Ambas resaltan la celda de forma diferente y las celdas se "
-"pueden resaltar de ambas maneras a la vez. A las celdas resaltadas se las "
-"puede quitar el resaltado pulsando sobre ellas de nuevo con <keycap>Ctrl</"
-"keycap> o <keycap>Mayús</keycap>."
+"<app>Hitori</app> también le permite resaltar celdas para su propia "
+"referencia mientras está resolviendo un tablero. Esto se puede hacer "
+"pulsando la tecla <key>Ctrl</key> o <key>Mayús</key> y pulsando sobre una "
+"celda. Ambas resaltan la celda de forma diferente y las celdas se pueden "
+"resaltar de ambas maneras a la vez. A las celdas resaltadas se las puede "
+"quitar el resaltado pulsando sobre ellas de nuevo con <key>Ctrl</key> o "
+"<key>Mayús</key>."
 
-#: C/hitori.xml:131(para)
+#: C/playing.page:17(p)
+#| msgid ""
+#| "To undo or redo a move, choose "
+#| "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></"
+#| "keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Undo</"
+#| "guimenuitem></menuchoice> or "
+#| "<menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
+#| "keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
+#| "guimenu><guimenuitem>Redo</guimenuitem></menuchoice>. You may undo or "
+#| "redo as many moves as you like without restriction."
 msgid ""
-"To undo or redo a move, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
-"keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>Undo</guimenuitem></menuchoice> or "
-"<menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
-"keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>Redo</guimenuitem></menuchoice>. You may undo or redo "
-"as many moves as you like without restriction."
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
 msgstr ""
-"Para deshacer o rehacer un movimiento elija "
-"<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></"
-"keycombo></shortcut><guimenu>Juego</guimenu><guimenuitem>Deshacer</"
-"guimenuitem></menuchoice> o <menuchoice><shortcut><keycombo><keycap>Mayús</"
-"keycap><keycap>Ctrl</keycap><keycap>Z</keycap></keycombo></"
-"shortcut><guimenu>Juego</guimenu><guimenuitem>Rehacer</guimenuitem></"
-"menuchoice>. Puede deshacer y rehacer tantos movimientos como quiera, sin "
-"restricción."
+"Para deshacer o rehacer un movimiento elija <guiseq><gui style=\"menu"
+"\">Juego</gui><gui style=\"menuitem\">Deshacer</gui></guiseq> o <guiseq><gui "
+"style=\"menu\">Juego</gui><gui style=\"menuitem\">Reahcer</gui></guiseq>. "
+"Puede deshacer y rehacer tantos movimientos como quiera, sin restricción."
 
-#: C/hitori.xml:138(para)
+#: C/playing.page:20(p)
+#| msgid ""
+#| "To get a hint on which cells to paint out, choose "
+#| "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
+#| "keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Hint</"
+#| "guimenuitem></menuchoice>. A cell will be highlighted with a flashing red "
+#| "outline. This shows that the current status of the cell (painted or "
+#| "unpainted) is incorrect, and should be changed for the game to be won."
 msgid ""
-"To get a hint on which cells to paint out, choose "
-"<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
-"keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem></"
-"menuchoice>. A cell will be highlighted with a flashing red outline. This "
-"shows that the current status of the cell (painted or unpainted) is "
-"incorrect, and should be changed for the game to be won."
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
 msgstr ""
 "Para obtener una sugerencia acerca de cómo rellenar las celdas elija "
-"<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
-"keycombo></shortcut><guimenu>Juego</guimenu><guimenuitem>Sugerencia</"
-"guimenuitem></menuchoice>. Se resaltará una celda con un marco rojo. Esto "
-"muestra que el estado actual de la celda (escrita o vacía) es incorrecto y "
-"se debería cambiar para ganar la partida."
+"<guiseq><gui style=\"menu\">Juego</gui><gui style=\"menuitem\">Sugerencia</"
+"gui></guiseq>. Se resaltará una celda con un marco rojo. Esto muestra que el "
+"estado actual de la celda (escrita o vacía) es incorrecto y se debería "
+"cambiar para ganar la partida."
 
-#: C/hitori.xml:145(title)
+#: C/license.page:8(desc)
+msgid "Legal information."
+msgstr "Información legal."
+
+#: C/license.page:11(title)
+msgid "License"
+msgstr "Licencia"
+
+#: C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Este trabajo está licenciado bajo una Licencia Creative Commons Atribución - "
+"Compartir igual 3.0 sin soporte."
+
+#: C/license.page:20(p)
+msgid "You are free:"
+msgstr "Es libre de:"
+
+#: C/license.page:25(em)
+msgid "To share"
+msgstr "Compartir"
+
+#: C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Copiar, distribuir y comunicar públicamente la obra"
+
+#: C/license.page:29(em)
+msgid "To remix"
+msgstr "Hacer obras derivadas"
+
+#: C/license.page:30(p)
+msgid "To adapt the work."
+msgstr "Adaptar el trabajo."
+
+#: C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr "Bajo las siguientes condiciones:"
+
+#: C/license.page:38(em)
+#| msgid "Introduction"
+msgid "Attribution"
+msgstr "Atribución"
+
+#: C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Debe reconocer los créditos de la obra de la manera especificada por el "
+"autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo "
+"o apoyan el uso que hace de su obra)."
+
+#: C/license.page:46(em)
+msgid "Share Alike"
+msgstr "Compartir igual"
+
+#: C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Si transforma o modifica esta obra para crear una obra derivada, sólo puede "
+"distribuir la obra resultante bajo la misma licencia, una de similar o una "
+"de compatible."
+
+#: C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Para ver el texto completo de la licencia consulte la <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode/\">página web de Creative "
+"Commons</link> o lea el<link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Escrito de Commons</link>."
+
+#: C/index.page:6(name)
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#: C/index.page:7(email)
+msgid "philip@tecnocode.co.uk"
+msgstr "philip@tecnocode.co.uk"
+
+#: C/index.page:8(years)
+#| msgid "2008–2009"
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#: C/index.page:11(p)
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Este trabajo está licenciado bajo una <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/us/\">Licencia Creative Commons atribución - "
+"compartir igual 3.0 sin soporte</link>."
+
+#: C/index.page:15(title)
+#| msgid "Hitori"
+msgid "Hitori Help"
+msgstr "Ayuda de Hitori"
+
+#: C/index.page:18(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Uso básico del juego"
+
+#: C/index.page:22(title)
+msgid "Tips &amp; Tricks"
+msgstr "Sugerencias y trucos"
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: C/game.page:21(None)
+msgid ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
+msgstr ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
+
+#: C/game.page:5(desc)
+msgid "Introduction to the game of Hitori."
+msgstr "Introducción al juego Hitori."
+
+#: C/game.page:7(title)
+msgid "Hitori the Game"
+msgstr "El juego de Hitori"
+
+#: C/game.page:9(p)
+#| msgid ""
+#| "Hitori is a small logic puzzle in a similar vein to the more popular "
+#| "Sudoku. In the game, the player starts with a square board of numbers, "
+#| "and has to <quote>paint out</quote> cells until there are no duplicate "
+#| "numbers in each row and column. The following rules apply:"
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori es un pequeño juego de puzle lógico del mismo tipo que el popular "
+"Sudoku. En la partida, el jugador comienza en un tablero cuadrado de números "
+"y tiene que <em>escribir</em> en las celdas hasta que no haya números "
+"duplicados en cada fila y columna. Se aplican las siguientes reglas:"
+
+#: C/game.page:12(p)
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Sólo debe existir un número de cada tipo en las celdas vacías en cada fila y "
+"columna."
+
+#: C/game.page:13(p)
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Ninguna celda escrita debe estar adyacente a otra, vertical u "
+"horizontalmente."
+
+#: C/game.page:14(p)
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Todas las celdas vacías deben unirse juntas vertical y horizontalmente en un "
+"grupo."
+
+#: C/game.page:16(p)
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Estas son las tres únicas reglas del juego y por ello puede haber múltiples "
+"soluciones de un tablero de puzle Hitori."
+
+#: C/game.page:19(title)
+msgid "Main game window"
+msgstr "Ventana principal del juego"
+
+#: C/game.page:20(desc)
+#| msgid "<application>Hitori</application> Main Window"
+msgid "<app>Hitori</app> main window"
+msgstr "Ventana principal de <application>Hitori</application>"
+
+#: C/game.page:22(p)
+#| msgid "<application>Hitori</application> Main Window"
+msgid "<app>Hitori</app> main window."
+msgstr "Ventana principal de <application>Hitori</application>."
+
+#: C/customization.page:5(desc)
+msgid "Changing how the game appears and plays."
+msgstr "Cambiar la apariencia del juego y la jugabilidad."
+
+#: C/customization.page:7(title)
 msgid "Customizing the Game"
 msgstr "Personalizar el juego"
 
-#: C/hitori.xml:146(para)
+#: C/customization.page:9(p)
 msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
@@ -356,57 +390,209 @@ msgstr ""
 "El juego se puede personalizar cambiando el tamaño del tablero: se permiten "
 "tableros cuadrados de 5-10 celdas."
 
-#: C/hitori.xml:147(para)
+#: C/customization.page:10(p)
+#| msgid ""
+#| "To change the board size, choose an option from "
+#| "<menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></"
+#| "menuchoice>. <application>Hitori</application> will ask if you want to "
+#| "stop the current game if you're in the middle of one, then start a new "
+#| "game with the requested board size."
 msgid ""
-"To change the board size, choose an option from <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. "
-"<application>Hitori</application> will ask if you want to stop the current "
-"game if you're in the middle of one, then start a new game with the "
-"requested board size."
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
 msgstr ""
-"Para cambiar el tamaño del tablero elija una opción de "
-"<menuchoice><guimenu>Juego</guimenu><guimenuitem>Tamaño del tablero</"
-"guimenuitem></menuchoice>. <application>Hitori</application> le preguntará "
-"si quiere parar la partida actual si está en medio de una, después se "
-"iniciará una partida nueva con el tamaño de tablero solicitado."
+"Para cambiar el tamaño del tablero elija una opción de <guiseq><gui style="
+"\"menu\">Juego</gui><gui style=\"menuitem\">Tamaño del tablero</gui></"
+"guiseq>. <app>Hitori</app> le preguntará si quiere parar la partida actual "
+"si está en medio de una, después se iniciará una partida nueva con el tamaño "
+"de tablero solicitado."
 
-#: C/hitori.xml:157(title)
-msgid "About <application>Hitori</application>"
-msgstr "Acerca de <application>Hitori</application>"
-
-#: C/hitori.xml:158(para)
-msgid ""
-"<application>Hitori</application> was written by Philip Withnall "
-"(<email>philip@tecnocode.co.uk</email>). To find more information about "
-"<application>Hitori</application>, report a bug or make a suggestion about "
-"the application or this manual, please visit the <ulink url=\"http://live."
-"gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</"
-"ulink>."
-msgstr ""
-"Philip Withnall (<email>philip@tecnocode.co.uk</email>) escribió "
-"<application>Hitori</application>. Para obtener más información acerca de "
-"<application>Hitori</application>, informar de un error o hacer una "
-"sugerencia acerca de la aplicación o este manual, visite la <ulink url="
-"\"http://live.gnome.org/Hitori\" type=\"http\">página web de "
-"<application>Hitori</application></ulink>."
-
-#: C/hitori.xml:161(para)
-msgid ""
-"This program is distributed under the terms of the GNU General Public "
-"license as published by the Free Software Foundation; either version 3 of "
-"the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl"
-"\" type=\"help\">copy of this license</ulink> is included with this "
-"documentation; another can be found in the file COPYING included with the "
-"source code of this program."
-msgstr ""
-"Este programa se distribuye bajo los términos de la Licencia Pública General "
-"GNU tal como la publica la Free Software Foundation; tanto en la versión 3 "
-"de la Licencia, o (a su opción) cualquier otra versión posterior. Se incluye "
-"<ulink url=\"ghelp:gpl\" type=\"help\"> una copia de esta licencia</ulink> "
-"en esta documentación, otra copia se puede encontrar en el archivo COPYING "
-"incluido con el código fuente de este programa."
-
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/hitori.xml:0(None)
+#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
+#: C/index.page:0(None)
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.2 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Se concede permiso para copiar, distribuir o modificar este documento "
+#~ "según las condiciones de la GNU Free Documentation License (GFDL), "
+#~ "versión 1.2 o cualquier versión posterior publicada por la Free Software "
+#~ "Foundation, sin Secciones invariantes, Textos de portada y Textos de "
+#~ "contraportada. Encontrará una copia de la GFDL en este <ulink type=\"help"
+#~ "\" url=\"ghelp:fdl\">enlace</ulink> o en el archivo COPYING-DOCS "
+#~ "distribuido con este manual."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "Muchos de los nombres utilizados por las empresas para distinguir sus "
+#~ "productos y servicios se consideran marcas comerciales. Cuando estos "
+#~ "nombres aparezcan en la documentación de GNOME, y siempre que se haya "
+#~ "informado a los miembros del Proyecto de documentación de GNOME de dichas "
+#~ "marcas comerciales, los nombres aparecerán en mayúsculas o con las "
+#~ "iniciales en mayúsculas."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER "
+#~ "IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, "
+#~ "INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, "
+#~ "BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "EL DOCUMENTO SE OFRECE «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, EXPRESA O "
+#~ "IMPLÍCITA, INCLUYENDO, PERO SIN LIMITARSE A ELLA, LA GARANTÍA DE QUE EL "
+#~ "DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO ESTÉ LIBRE DE DEFECTOS, "
+#~ "GARANTÍA DE COMERCIALIZACIÓN, APTITUD PARA UN USO EN PARTICULAR O "
+#~ "INCUMPLIMIENTO. TODOS LOS RIESGOS RELATIVOS A LA CALIDAD, EXACTITUD O "
+#~ "RENDIMIENTO DEL DOCUMENTO O LA VERSIÓN MODIFICADA DEL MISMO SON ASUMIDOS "
+#~ "POR VD. EN CASO DE QUE EL DOCUMENTO O LA VERSIÓN MODIFICADA SEAN "
+#~ "DEFECTUOSOS, VD. (NO EL ESCRITOR ORIGINAL NI EL AUTOR NI NINGUNO DE LOS "
+#~ "COLABORADORES) ASUMIRÁ EL COSTE DE CUALQUIER MANTENIMIENTO, REPARACIÓN O "
+#~ "CORRECCIÓN QUE SEAN NECESARIOS. ESTA RENUNCIA DE GARANTÍA CONSTITUYE UNA "
+#~ "PARTE ESENCIAL DE ESTA LICENCIA NO SE AUTORIZA EL USO DE NINGÚN DOCUMENTO "
+#~ "NI VERSIÓN MODIFICADA DEL MISMO, SALVO EN LAS CONDICIONES ESPECIFICADAS "
+#~ "EN ESTA RENUNCIA; Y BAJO NINGUNA CIRCUNSTANCIA NI SUPUESTO LEGAL, YA SEA "
+#~ "POR AGRAVIO (INCLUIDA LA NEGLIGENCIA), CONTRATO U OTROS CASOS, SERÁN "
+#~ "RESPONSABLES EL AUTOR, EL ESCRITOR ORIGINAL, CUALQUIERA DE LOS "
+#~ "COLABORADORES O DISTRIBUIDORES DEL DOCUMENTO O UNA VERSIÓN MODIFICADA DEL "
+#~ "MISMO NI CUALQUIER PROVEEDOR DE TALES PARTES ANTE UN TERCERO, POR "
+#~ "CUALQUIER PERJUICIO DIRECTO, INDIRECTO, ESPECIAL, ACCIDENTAL O "
+#~ "CONSECUTIVO DE CUALQUIER TIPO, INCLUYENDO SIN LIMITACIÓN LOS DAÑOS POR "
+#~ "PÉRDIDA DE CLIENTES, INTERRUPCIONES DEL TRABAJO, FALLO DE SISTEMAS O "
+#~ "MALFUNCIONAMIENTO, O CUALQUIER OTRO DAÑO O PÉRDIDA CAUSADA O RELACIONADA "
+#~ "CON EL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO, AUN "
+#~ "CUANDO SE HAYA INFORMADO DE LA POSIBILIDAD DE DICHOS DAÑOS."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "ESTE DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL MISMO SE PROPORCIONAN "
+#~ "SEGÚN LAS CONDICIONES ESTABLECIDAS EN LA LICENCIA DE DOCUMENTACIÓN LIBRE "
+#~ "DE GNU (GFDL) Y TENIENDO EN CUENTA QUE: <placeholder-1/>"
+
+#~ msgid "<application>Hitori</application> Manual"
+#~ msgstr "Manual de <application>Hitori</application>"
+
+#~ msgid "<application>Hitori</application> is a simple puzzle game."
+#~ msgstr "<application>Hitori</application> es un juego simple tipo puzle."
+
+#~ msgid "Philip"
+#~ msgstr "Philip"
+
+#~ msgid "Withnall"
+#~ msgstr "Withnall"
+
+#~ msgid "Hitori Manual V0.1"
+#~ msgstr "Manual de Hitori V0.1"
+
+#~ msgid "June 2008"
+#~ msgstr "Junio de 2008"
+
+#~ msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+#~ msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+
+#~ msgid "March 2009"
+#~ msgstr "Marzo de 2009"
+
+#~ msgid "This manual describes version 0.2.1 of Hitori."
+#~ msgstr "Este manual describe la versión 0.2.1 de Hitori."
+
+#~ msgid "Feedback"
+#~ msgstr "Comentarios"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Hitori</"
+#~ "application> application or this manual, follow the directions on the "
+#~ "<ulink url=\"http://live.gnome.org/Hitori\" type=\"http"
+#~ "\"><application>Hitori</application> Web page</ulink>."
+#~ msgstr ""
+#~ "Para informar de un error o hacer una sugerencia acerca de la aplicación "
+#~ "<application>Hitori</application> o este manual, siga las indicaciones en "
+#~ "la <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\">página web "
+#~ "de <application>Hitori</application></ulink>."
+
+#~ msgid "hitori"
+#~ msgstr "hitori"
+
+#~ msgid "Interface"
+#~ msgstr "Interfaz"
+
+#~ msgid ""
+#~ "<application>Hitori</application> has only one window; the main window, "
+#~ "which consists of the menubar and number board, shown below."
+#~ msgstr ""
+#~ "<application>Hitori</application> sólo tiene una ventana; la ventana "
+#~ "principal, que consiste en la barra de menú y el tablero de números, "
+#~ "mostrados debajo."
+
+#~ msgid ""
+#~ "Shows <placeholder-1/> main window, containing the number board, Game and "
+#~ "Help menus."
+#~ msgstr ""
+#~ "Muestra la ventana principal de <placeholder-1/>, contiene el tablero de "
+#~ "números y los menús de Juego y Ayuda."
+
+#~ msgid "About <application>Hitori</application>"
+#~ msgstr "Acerca de <application>Hitori</application>"
+
+#~ msgid ""
+#~ "<application>Hitori</application> was written by Philip Withnall "
+#~ "(<email>philip@tecnocode.co.uk</email>). To find more information about "
+#~ "<application>Hitori</application>, report a bug or make a suggestion "
+#~ "about the application or this manual, please visit the <ulink url="
+#~ "\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</"
+#~ "application> Web page</ulink>."
+#~ msgstr ""
+#~ "Philip Withnall (<email>philip@tecnocode.co.uk</email>) escribió "
+#~ "<application>Hitori</application>. Para obtener más información acerca de "
+#~ "<application>Hitori</application>, informar de un error o hacer una "
+#~ "sugerencia acerca de la aplicación o este manual, visite la <ulink url="
+#~ "\"http://live.gnome.org/Hitori\" type=\"http\">página web de "
+#~ "<application>Hitori</application></ulink>."
+
+#~ msgid ""
+#~ "This program is distributed under the terms of the GNU General Public "
+#~ "license as published by the Free Software Foundation; either version 3 of "
+#~ "the License, or (at your option) any later version. A <ulink url=\"ghelp:"
+#~ "gpl\" type=\"help\">copy of this license</ulink> is included with this "
+#~ "documentation; another can be found in the file COPYING included with the "
+#~ "source code of this program."
+#~ msgstr ""
+#~ "Este programa se distribuye bajo los términos de la Licencia Pública "
+#~ "General GNU tal como la publica la Free Software Foundation; tanto en la "
+#~ "versión 3 de la Licencia, o (a su opción) cualquier otra versión "
+#~ "posterior. Se incluye <ulink url=\"ghelp:gpl\" type=\"help\"> una copia "
+#~ "de esta licencia</ulink> en esta documentación, otra copia se puede "
+#~ "encontrar en el archivo COPYING incluido con el código fuente de este "
+#~ "programa."
