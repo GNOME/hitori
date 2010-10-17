@@ -88,6 +88,7 @@ CLEANFILES = $(desktop_DATA)
 
 # Gubbins
 EXTRA_DIST += \
+	ABOUT-NLS \
 	autogen.sh \
 	intltool-extract.in \
 	intltool-merge.in \
@@ -101,6 +102,14 @@ EXTRA_DIST += \
 	NEWS \
 	ChangeLog.pre-0-2-2 \
 	po/ChangeLog.pre-0-2-2 \
+	po/Makevars.template \
+	po/Rules-quot \
+	po/boldquot.sed \
+	po/en@boldquot.header \
+	po/en@quot.header \
+	po/insert-header.sin \
+	po/quot.sed \
+	po/remove-potcdate.sin \
 	MAINTAINERS \
 	hitori.doap \
 	$(NULL)
@@ -112,21 +121,37 @@ DISTCLEANFILES = \
 	$(NULL)
 
 MAINTAINERCLEANFILES = \
+	ABOUT-NLS \
 	INSTALL \
 	aclocal.m4 \
 	compile \
 	config.guess \
 	config.h.in \
+	config.rpath \
 	config.sub \
 	depcomp \
 	install-sh \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in \
 	ltmain.sh \
+	`find "m4" -type f -name "*.m4" -print` \
 	missing \
 	mkinstalldirs \
 	gnome-doc-utils.make \
 	ChangeLog \
 	`find "$(srcdir)" -type f -name Makefile.in -print` \
+	po/Makevars.template \
+	po/Rules-quot \
+	po/boldquot.sed \
+	po/en@boldquot.header \
+	po/en@quot.header \
+	po/insert-header.sin \
+	po/quot.sed \
+	po/remove-potcdate.sin \
 	$(NULL)
+
+GITIGNOREFILES = src/.dirstamp
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
 

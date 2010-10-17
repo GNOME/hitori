@@ -14,4 +14,9 @@ DOC_PAGES = \
 
 EXTRA_DIST = ChangeLog.pre-0-2-2
 
+GITIGNOREFILES = \
+	$(_DOC_LC_PAGES) \
+	$(_DOC_MOFILES) \
+	$(NULL)
+
 -include $(top_srcdir)/git.mk
