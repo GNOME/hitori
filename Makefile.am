@@ -18,10 +18,14 @@ src_hitori_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
 	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	$(DISABLE_DEPRECATED) \
 	$(NULL)
 
 src_hitori_LDADD = $(GENERAL_LIBS)
-src_hitori_CFLAGS = $(GENERAL_CFLAGS)
+src_hitori_CFLAGS = \
+	$(GENERAL_CFLAGS) \
+	$(WARN_CFLAGS) \
+	$(NULL)
 
 if DEBUG
 src_hitori_CFLAGS += \

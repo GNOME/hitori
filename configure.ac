@@ -1,14 +1,18 @@
-AC_INIT([hitori],[0.2.4])
+AC_INIT([Hitori],[0.2.4],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[http://live.gnome.org/Hitori])
 
-AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+AM_INIT_AUTOMAKE([check-news dist-bzip2 subdir-objects])
 AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE
 
 AC_PROG_CC
+AM_PROG_CC_C_O
 AC_PROG_CPP
 LT_INIT
 
 m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+
+GNOME_COMPILE_WARNINGS([maximum])
+GNOME_MAINTAINER_MODE_DEFINES
 
 dnl ***************************************************************************
 dnl Options
