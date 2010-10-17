@@ -74,7 +74,9 @@ uidir = $(datadir)/hitori
 ui_DATA = data/hitori.ui
 
 # Desktop file
-@INTLTOOL_DESKTOP_RULE@
+# We can't use INTLTOOL_DESKTOP_RULE here due to lp#605826
+%.desktop: %.desktop.in
+	$(MKDIR_P) $(dir $@); LC_ALL=C $(INTLTOOL_MERGE) -d -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< $@
 
 desktop_in_files = data/hitori.desktop.in
 desktopdir = $(datadir)/applications
