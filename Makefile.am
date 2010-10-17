@@ -1,46 +1,132 @@
-SUBDIRS = help src po data
+SUBDIRS = help po
 
-EXTRA_DIST =			\
-	autogen.sh		\
-	intltool-extract.in	\
-	intltool-merge.in	\
-	intltool-update.in	\
-	gnome-doc-utils.make	\
-	README			\
-	COPYING			\
-	COPYING-DOCS		\
-	AUTHORS			\
-	INSTALL			\
-	NEWS			\
-	ChangeLog.pre-0-2-2	\
-	po/ChangeLog.pre-0-2-2	\
-	MAINTAINERS		\
-	hitori.doap
+# Executable
+bin_PROGRAMS = src/hitori
+
+src_hitori_SOURCES = \
+	src/main.c \
+	src/interface.c \
+	src/main.h \
+	src/interface.h \
+	src/generator.c \
+	src/generator.h \
+	src/rules.c \
+	src/rules.h \
+	$(NULL)
+
+src_hitori_CPPFLAGS = \
+	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
+	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
+	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+	$(NULL)
+
+src_hitori_LDADD = $(GENERAL_LIBS)
+src_hitori_CFLAGS = $(GENERAL_CFLAGS)
+
+if DEBUG
+src_hitori_CFLAGS += \
+	-fprofile-arcs \
+	-ftest-coverage \
+	$(NULL)
+endif
+
+# Icons
+icon_dir = $(datadir)/icons/hicolor
+gtk_update_icon_cache = gtk-update-icon-cache -f -t $(icon_dir)
+
+install-data-hook: update-icon-cache
+uninstall-hook: update-icon-cache
+update-icon-cache:
+	@-if test -z "$(DESTDIR)"; then \
+		echo "Updating GTK+ icon cache."; \
+		$(gtk_update_icon_cache); \
+	else \
+		echo "*** Icon cache not updated.  After (un)install, run this:"; \
+		echo "***   $(gtk_update_icon_cache)"; \
+	fi
+
+icon16dir = $(icon_dir)/16x16/apps
+icon16_DATA = data/icons/16x16/hitori.png
+icon22dir = $(icon_dir)/22x22/apps
+icon22_DATA = data/icons/22x22/hitori.png
+icon32dir = $(icon_dir)/32x32/apps
+icon32_DATA = data/icons/32x32/hitori.png
+icon48dir = $(icon_dir)/48x48/apps
+icon48_DATA = data/icons/48x48/hitori.png
+
+EXTRA_DIST = \
+	data/icons/16x16/hitori.svg \
+	$(icon16_DATA) \
+	data/icons/22x22/hitori.svg \
+	$(icon22_DATA) \
+	data/icons/32x32/hitori.svg \
+	$(icon32_DATA) \
+	data/icons/48x48/hitori.svg \
+	$(icon48_DATA) \
+	$(NULL)
+
+# UI file
+uidir = $(datadir)/hitori
+ui_DATA = data/hitori.ui
+
+# Desktop file
+@INTLTOOL_DESKTOP_RULE@
+
+desktop_in_files = data/hitori.desktop.in
+desktopdir = $(datadir)/applications
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+
+EXTRA_DIST += \
+	$(ui_DATA) \
+	$(desktop_in_files) \
+	$(NULL)
+CLEANFILES = $(desktop_DATA)
+
+# Gubbins
+EXTRA_DIST += \
+	autogen.sh \
+	intltool-extract.in \
+	intltool-merge.in \
+	intltool-update.in \
+	gnome-doc-utils.make \
+	README \
+	COPYING \
+	COPYING-DOCS \
+	AUTHORS \
+	INSTALL \
+	NEWS \
+	ChangeLog.pre-0-2-2 \
+	po/ChangeLog.pre-0-2-2 \
+	MAINTAINERS \
+	hitori.doap \
+	$(NULL)
 
 DISTCLEANFILES = \
-	intltool-extract	\
-	intltool-merge		\
-	intltool-update
+	intltool-extract \
+	intltool-merge \
+	intltool-update \
+	$(NULL)
 
 MAINTAINERCLEANFILES = \
-	INSTALL			\
-	aclocal.m4		\
-	compile			\
-	config.guess		\
-	config.h.in		\
-	config.sub		\
-	depcomp			\
-	install-sh		\
-	ltmain.sh		\
-	missing			\
-	mkinstalldirs		\
-	gnome-doc-utils.make	\
+	INSTALL \
+	aclocal.m4 \
+	compile \
+	config.guess \
+	config.h.in \
+	config.sub \
+	depcomp \
+	install-sh \
+	ltmain.sh \
+	missing \
+	mkinstalldirs \
+	gnome-doc-utils.make \
 	ChangeLog \
-	`find "$(srcdir)" -type f -name Makefile.in -print`
+	`find "$(srcdir)" -type f -name Makefile.in -print` \
+	$(NULL)
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
 
-# Copy all the spec files. Of cource, only one is actually used.
+# Copy all the spec files. Of course, only one is actually used.
 dist-hook:
 	for specfile in *.spec; do \
 		if test -f $$specfile; then \

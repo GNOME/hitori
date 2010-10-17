@@ -46,13 +46,6 @@ AC_SUBST(GENERAL_LIBS)
 
 AC_OUTPUT([
 Makefile
-src/Makefile
 po/Makefile.in
-data/Makefile
-data/icons/Makefile
-data/icons/16x16/Makefile
-data/icons/22x22/Makefile
-data/icons/32x32/Makefile
-data/icons/48x48/Makefile
 help/Makefile
 ])
