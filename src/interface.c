@@ -111,7 +111,7 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 		has_won = TRUE;
 	}
 
-	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
+	gdk_drawable_get_size (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)), &area_width, &area_height);
 	style = gtk_widget_get_style (hitori->drawing_area);
 
 	/* Clamp the width/height to the minimum */
@@ -249,9 +249,9 @@ hitori_draw_board_simple (Hitori *hitori, gboolean check_win, gboolean clear_fir
 	cairo_t *cr;
 
 	if (clear_first)
-		gdk_window_clear (hitori->drawing_area->window);
+		gdk_window_clear (gtk_widget_get_window (hitori->drawing_area));
 
-	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	cr = gdk_cairo_create (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)));
 	hitori_draw_board (hitori, cr, check_win);
 	cairo_destroy (cr);
 }
@@ -261,7 +261,7 @@ hitori_expose_cb (GtkWidget *drawing_area, GdkEventExpose *event, Hitori *hitori
 {
 	cairo_t *cr;
 
-	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	cr = gdk_cairo_create (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)));
 	cairo_rectangle (cr, event->area.x, event->area.y,
 				event->area.width, event->area.height);
 	cairo_clip (cr);
@@ -283,7 +283,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (hitori->processing_events == FALSE)
 		return FALSE;
 
-	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &width, &height);
+	gdk_drawable_get_size (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)), &width, &height);
 
 	/* Clamp the width/height to the minimum */
 	if (height < width)
@@ -370,7 +370,7 @@ hitori_update_hint (Hitori *hitori)
 		g_debug ("Updating hint status to %u.", hitori->hint_status);
 
 	/* Calculate the area to redraw (just the hinted cell, hopefully) */
-	gdk_drawable_get_size (GDK_DRAWABLE (hitori->drawing_area->window), &area_width, &area_height);
+	gdk_drawable_get_size (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)), &area_width, &area_height);
 
 	/* Clamp the width/height to the minimum */
 	if (area_height < area_width) {
@@ -384,7 +384,7 @@ hitori_update_hint (Hitori *hitori)
 	cell_size = board_width / hitori->board_size;
 
 	/* Centre the board */
-	cr = gdk_cairo_create (GDK_DRAWABLE (hitori->drawing_area->window));
+	cr = gdk_cairo_create (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)));
 	cairo_save (cr);
 
 	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
