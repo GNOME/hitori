@@ -1,20 +1,19 @@
-AC_INIT(hitori, 0.2.4)
+AC_INIT([hitori],[0.2.4])
 
 AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
-AM_CONFIG_HEADER(config.h)
+AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE
 
-AC_ISC_POSIX
 AC_PROG_CC
-AM_PROG_CC_STDC
-AC_HEADER_STDC
+AC_PROG_CPP
+LT_INIT
 
 dnl ***************************************************************************
 dnl Options
 dnl ***************************************************************************
 
 AC_ARG_ENABLE([debug],
-	AC_HELP_STRING([--enable-debug], [turn on debugging]),
+	AS_HELP_STRING([--enable-debug],[turn on debugging]),
 	[case "${enableval}" in
 		yes) debug=true ;;
 		no)  debug=false ;;
@@ -33,19 +32,21 @@ AM_GNU_GETTEXT([external])
 AM_GNU_GETTEXT_VERSION([0.17])
 IT_PROG_INTLTOOL([0.35.0])
 
-AM_PROG_LIBTOOL
 GNOME_DOC_INIT
 
 dnl ***************************************************************************
 dnl Dependencies
 dnl ***************************************************************************
 
+AC_CHECK_FUNCS([floor])
+
 PKG_CHECK_MODULES(GENERAL, glib-2.0 gtk+-2.0 >= 2.13 gmodule-2.0 cairo >= 1.4)
 AC_SUBST(GENERAL_CFLAGS)
 AC_SUBST(GENERAL_LIBS)
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 po/Makefile.in
 help/Makefile
 ])
+AC_OUTPUT
