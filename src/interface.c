@@ -61,7 +61,7 @@ hitori_create_interface (Hitori *hitori)
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
-				_("UI file \"%s/hitori/hitori.ui\" could not be loaded."), PACKAGE_DATA_DIR);
+				_("UI file \"%s/hitori/hitori.ui\" could not be loaded"), PACKAGE_DATA_DIR);
 		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 		gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
@@ -511,7 +511,7 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 							    GTK_DIALOG_MODAL,
 							    GTK_MESSAGE_ERROR,
 							    GTK_BUTTONS_OK,
-							    _("The help contents could not be displayed."));
+							    _("The help contents could not be displayed"));
 		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 
 		gtk_dialog_run (GTK_DIALOG (dialog));
