@@ -65,14 +65,15 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	 * cells, and only specifying it for 8x8 grids. This will change in the
 	 * future. */
 	for (i = 0; i < total; i++) {
+		/* Generate pairs of coordinates until we find one which lies between unpainted cells (or at the edge of the board) */
 		do {
 			iter.x = rand () % hitori->board_size;
 			iter.y = rand () % hitori->board_size;
 
-			if (iter.y >= 1 && (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE &&
-			    iter.y + 1 < hitori->board_size && (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE &&
-			    iter.x >= 1 && (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE &&
-			    iter.x + 1 < hitori->board_size && (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE)
+			if ((iter.y < 1 || (hitori->board[iter.x][iter.y-1].status & CELL_PAINTED) == FALSE) &&
+			    (iter.y + 1 >= hitori->board_size || (hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) == FALSE) &&
+			    (iter.x < 1 || (hitori->board[iter.x-1][iter.y].status & CELL_PAINTED) == FALSE) &&
+			    (iter.x + 1 >= hitori->board_size || (hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) == FALSE))
 				break;
 		} while (TRUE);
 
