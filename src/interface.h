@@ -27,8 +27,6 @@
 G_BEGIN_DECLS
 
 GtkWidget* hitori_create_interface (Hitori *hitori);
-void hitori_draw_board (Hitori *hitori, cairo_t *cr);
-void hitori_draw_board_simple (Hitori *hitori, gboolean check_win, gboolean clear_first);
 
 G_END_DECLS
 

@@ -35,7 +35,7 @@ hitori_new_game (Hitori *hitori, guint board_size)
 
 	hitori_generate_board (hitori, board_size, -1);
 	hitori_clear_undo_stack (hitori);
-	hitori_draw_board_simple (hitori, FALSE, TRUE);
+	gtk_widget_queue_draw (hitori->drawing_area);
 }
 
 void

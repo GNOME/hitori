@@ -88,8 +88,8 @@ hitori_create_interface (Hitori *hitori)
 	return hitori->window;
 }
 
-void
-hitori_draw_board (Hitori *hitori, cairo_t *cr)
+gboolean
+hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 {
 	gint area_width, area_height;
 	HitoriVector iter;
@@ -205,53 +205,6 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr)
 		cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
 		cairo_stroke (cr);
 	}
-}
-
-/**
- * hitori_draw_board_simple:
- * @hitori: a #Hitori
- * @check_win: %TRUE if the win status should be checked after drawing
- * @clear_first: %TRUE if the drawing area should be cleared before re-drawing
- *
- * Allows easy re-drawing of the board. If @check_win is %TRUE, the board will
- * be checked to see if the player's won after it's been drawn, and if @clear_first
- * is %TRUE, the drawing area will be completely cleared before being drawn.
- * @clear_first is intended to be used only if there's a possibility the size of the
- * board has changed.
- **/
-void
-hitori_draw_board_simple (Hitori *hitori, gboolean check_win, gboolean clear_first)
-{
-	cairo_t *cr;
-	GdkWindow *window;
-
-	window = gtk_widget_get_window (hitori->drawing_area);
-	cr = gdk_cairo_create (GDK_DRAWABLE (window));
-
-	if (clear_first) {
-		gint width, height;
-		GtkStyle *style;
-
-		width = gdk_window_get_width (window);
-		height = gdk_window_get_height (window);
-		style = gtk_widget_get_style (hitori->drawing_area);
-
-		cairo_set_source (cr, style->background[GTK_STATE_NORMAL]);
-		cairo_rectangle (cr, 0.0, 0.0, width, height);
-		cairo_paint (cr);
-	}
-
-	hitori_draw_board (hitori, cr);
-	cairo_destroy (cr);
-
-	if (check_win == TRUE)
-		hitori_check_win (hitori);
-}
-
-gboolean
-hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
-{
-	hitori_draw_board (hitori, cr);
 
 	return FALSE;
 }
@@ -321,7 +274,11 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 		g_debug ("Stopping all current hints.");
 
 	/* Redraw */
-	hitori_draw_board_simple (hitori, recheck, FALSE);
+	gtk_widget_queue_draw (hitori->drawing_area);
+
+	/* Check to see if the player's won */
+	if (recheck == TRUE)
+		hitori_check_win (hitori);
 
 	return FALSE;
 }
@@ -378,13 +335,9 @@ hitori_update_hint (Hitori *hitori)
 	hitori->drawing_area_y_offset = (area_height - board_height) / 2;
 	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
 
-	/* Clip to the cell */
-	cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
-	cairo_clip (cr);
-	cairo_restore (cr);
-
-	hitori_draw_board (hitori, cr);
-	cairo_destroy (cr);
+	/* Redraw the cell */
+	gtk_widget_queue_draw_area (hitori->drawing_area, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size,
+	                            cell_size, cell_size);
 
 	return (hitori->hint_status < HINT_FLASHES) ? TRUE : FALSE;
 }
@@ -446,7 +399,7 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 		gtk_action_set_sensitive (hitori->undo_action, FALSE);
 
 	/* Redraw */
-	hitori_draw_board_simple (hitori, TRUE, FALSE);
+	gtk_widget_queue_draw (hitori->drawing_area);
 }
 
 void
@@ -479,7 +432,7 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 		gtk_action_set_sensitive (hitori->redo_action, FALSE);
 
 	/* Redraw */
-	hitori_draw_board_simple (hitori, TRUE, FALSE);
+	gtk_widget_queue_draw (hitori->drawing_area);
 }
 
 void
