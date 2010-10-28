@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2009-12-18 00:22+0100\n"
+"POT-Creation-Date: 2010-10-29 00:25+0200\n"
 "PO-Revision-Date: 2009-12-11 22:31+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -15,257 +15,61 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../C/legal.xml:2(para)
+#: ../C/strategy.page:5(desc)
+msgid "Strategies for playing Hitori."
+msgstr ""
+
+#: ../C/strategy.page:7(title)
+msgid "Gameplay Strategies"
+msgstr ""
+
+#: ../C/strategy.page:9(p)
 msgid ""
-"Permission is granted to copy, distribute and/or modify this document under "
-"the terms of the GNU Free Documentation License (GFDL), Version 1.2 or any "
-"later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
-"of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> or "
-"in the file COPYING-DOCS distributed with this manual."
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
 msgstr ""
-"Tilladelse er givet til at kopiere, distribuere og/eller ændre dette "
-"dokument under betingelserne i GNU Free Documentation License (GFDL), "
-"version 1.1 eller enhver senere version udgivet af Free Software Foundation; "
-"uden invariante afsnit, forsidetekster, samt bagsidetekster. Du kan se en "
-"kopi af GFDL her <ulink type=\"help\" url=\"ghelp:fdl\">link</ulink> eller i "
-"filen COPYING-DOCS som distribueres sammen med denne manual."
 
-#: ../C/legal.xml:13(para)
+#: ../C/strategy.page:12(p)
 msgid ""
-"Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any GNOME "
-"documentation, and the members of the GNOME Documentation Project are made "
-"aware of those trademarks, then the names are in capital letters or initial "
-"capital letters."
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"En stor del af de navne som anvendes af firmaer til at identificere deres "
-"produkter og tjenester hævdes som værende varemærker. Hvor disse navne "
-"fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af GNOME-"
-"dokumentationsprojeket er gjort opmærksom på disse varemærker, så er disse "
-"navne vist med store bogstaver eller stort begyndelsesbogstav."
 
-#: ../C/legal.xml:29(para)
+#: ../C/strategy.page:15(p)
 msgid ""
-"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
-"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
-"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
-"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
-"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
-"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
-"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
-"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
-"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
-"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
-"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND "
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
-"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
-"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
-"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
-"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
-"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
-"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
-"POSSIBILITY OF SUCH DAMAGES."
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the leftmost "
+"cell which violates rule 2."
 msgstr ""
-"DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
-"GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
-"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR "
-"DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
-"SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR "
-"DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER "
-"EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM "
-"HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG SERVICE, "
-"REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE FORFATTER, "
-"SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM GARANTIFORBEHOLD "
-"ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET DOKUMENT ELLER "
-"ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER BORTSET FRA DENNE "
-"ANSVARSFRASKRIVELSE OG UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK "
-"TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING (INKLUSIVE "
-"UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN FORFATTEREN, "
-"SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE DOKUMENT ELLER "
-"MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN "
-"DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN "
-"INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, "
-"COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM "
-"ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE "
-"VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN "
-"FOR SÅDANNE SKADER."
 
-#: ../C/legal.xml:22(para)
+#: ../C/strategy.page:18(p)
 msgid ""
-"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
-"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
-"<placeholder-1/>"
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
 msgstr ""
-"DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER GNU "
-"FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <placeholder-1/>"
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: ../C/hitori.xml:111(None)
-msgid ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
+#: ../C/playing.page:5(desc)
+msgid "Using <app>Hitori</app> to play a game."
 msgstr ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
 
-#: ../C/hitori.xml:26(title)
-msgid "<application>Hitori</application> Manual"
-msgstr "Manual til <application>Hitori</application>"
-
-#: ../C/hitori.xml:27(para)
-msgid "<application>Hitori</application> is a simple puzzle game."
-msgstr "<application>Hitori</application> er et simpelt puslespil."
-
-#: ../C/hitori.xml:29(year)
-msgid "2008–2009"
-msgstr "2008-2009"
-
-#: ../C/hitori.xml:30(holder) ../C/hitori.xml:33(publishername)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: ../C/hitori.xml:43(firstname)
-msgid "Philip"
-msgstr "Philip"
-
-#: ../C/hitori.xml:44(surname)
-msgid "Withnall"
-msgstr "Withnall"
-
-#: ../C/hitori.xml:45(email)
-msgid "philip@tecnocode.co.uk"
-msgstr "philip@tecnocode.co.uk"
-
-#: ../C/hitori.xml:62(revnumber) ../C/hitori.xml:67(revnumber)
-msgid "Hitori Manual V0.1"
-msgstr "Hitoris manual version 0.1"
-
-#: ../C/hitori.xml:63(date)
-msgid "June 2008"
-msgstr "Juni 2008"
-
-#: ../C/hitori.xml:64(para) ../C/hitori.xml:69(para)
-msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-
-#: ../C/hitori.xml:73(releaseinfo)
-msgid "This manual describes version 0.2.1 of Hitori."
-msgstr "Denne manual beskriver version 0.2.1 af Hitori."
-
-#: ../C/hitori.xml:75(title)
-msgid "Feedback"
-msgstr "Tilbagemeldinger"
-
-#: ../C/hitori.xml:76(para)
-msgid ""
-"To report a bug or make a suggestion regarding the <application>Hitori</"
-"application> application or this manual, follow the directions on the <ulink "
-"url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</"
-"application> Web page</ulink>."
-msgstr ""
-"Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
-"vedrørende <application>Hitori</application> eller denne manual så følg "
-"vejledningen på siden <ulink url=\"http://live.gnome.org/Hitori\" type=\"http"
-"\"><application>Hitori</application></ulink>."
-
-#: ../C/hitori.xml:83(primary)
-msgid "Hitori"
-msgstr "Hitori"
-
-#: ../C/hitori.xml:86(primary)
-msgid "hitori"
-msgstr "hitori"
-
-#: ../C/hitori.xml:91(title)
-msgid "Introduction"
-msgstr "Indledning"
-
-#: ../C/hitori.xml:93(title)
-msgid "Hitori the Game"
-msgstr "Spillet Hitori"
-
-#: ../C/hitori.xml:94(para)
-msgid ""
-"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
-"In the game, the player starts with a square board of numbers, and has to "
-"<quote>paint out</quote> cells until there are no duplicate numbers in each "
-"row and column. The following rules apply:"
-msgstr ""
-"Hitori er et lille logisk puslespil, der ligner det mere populære Sudoku. I "
-"spillet starter spilleren med et firkantsbræt med numre, og skal herfra "
-"<quote>markere</quote> celler indtil der ikke længere er ens numre i hver "
-"række og kolonne. De følgende regler gælder:"
-
-#: ../C/hitori.xml:98(para)
-msgid ""
-"There must only be one of each number in the unpainted cells in each row and "
-"column."
-msgstr ""
-"Der må kun være et af hvert nummer i de umarkerede celler i hver række og "
-"kolonne."
-
-#: ../C/hitori.xml:99(para)
-msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr ""
-"Ingen markerede celle må være ved siden af en anden markeret celle, hverken "
-"vertikalt eller horisontalt."
-
-#: ../C/hitori.xml:100(para)
-msgid ""
-"All the unpainted cells must be joined together vertically and horizontally "
-"in one group."
-msgstr ""
-"Alle de umarkerede celler skal være forbundet vertikalt og horisontalt i en "
-"gruppe."
-
-#: ../C/hitori.xml:102(para)
-msgid ""
-"These are the only three rules of the game, and so there may well be "
-"multiple solutions to a Hitori puzzle board."
-msgstr ""
-"Dette er de eneste tre regler i spillet, og der kan derfor være flere "
-"løsninger i et Hitoripuslespil."
-
-#: ../C/hitori.xml:105(title)
-msgid "Interface"
-msgstr "Grænseflade"
-
-#: ../C/hitori.xml:106(para)
-msgid ""
-"<application>Hitori</application> has only one window; the main window, "
-"which consists of the menubar and number board, shown below."
-msgstr ""
-"<application>Hitori</application> har kun et vindue; hovedvinduet, som "
-"består af menubjælken og talbrættet, der vises nedenfor."
-
-#: ../C/hitori.xml:108(title)
-msgid "<application>Hitori</application> Main Window"
-msgstr "<application>Hitoris</application> hovedvindue"
-
-#: ../C/hitori.xml:113(phrase)
-#, fuzzy
-msgid ""
-"Shows <application>Hitori</application> main window, containing the number "
-"board, Game and Help menus."
-msgstr ""
-"Viser <placeholder-1/> hovedvindue, der indeholder nummerbrættet, spil- og "
-"hjælpemenuer."
-
-#: ../C/hitori.xml:120(title)
+#: ../C/playing.page:7(title)
 msgid "Playing a Game"
 msgstr "Et spil"
 
-#: ../C/hitori.xml:121(para)
+#: ../C/playing.page:9(p)
+#, fuzzy
 msgid ""
-"To start a new game, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
-"keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. If you are already "
-"playing a game, <application>Hitori</application> will ask if you want to "
-"stop the current game."
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
 msgstr ""
 "For at starte et nyt spil vælges "
 "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>N</keycap></"
@@ -274,7 +78,7 @@ msgstr ""
 "<application>Hitori</application> spørge, om du ønsker at stoppe det "
 "aktuelle spil."
 
-#: ../C/hitori.xml:125(para)
+#: ../C/playing.page:11(p)
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -284,15 +88,15 @@ msgstr ""
 "Når dine markerede celler ikke bryder nogen af de tre regler vil spillet "
 "slutte, og brættet kan ikke længeres manipuleres."
 
-#: ../C/hitori.xml:127(para)
+#: ../C/playing.page:13(p)
+#, fuzzy
 msgid ""
-"<application>Hitori</application> also allows you to highlight cells for "
-"your own reference when solving a board. This can be achieved by holding "
-"<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They "
-"both highlight cells differently, and cells can be highlighted in both "
-"manners at the same time. Highlighted cells can be de-highlighted by "
-"clicking on them again while holding either <keycap>Ctrl</keycap> or "
-"<keycap>Shift</keycap>."
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgstr ""
 "<application>Hitori</application> giver dig mulighed for at fremhæve celler, "
 "når du forsøger at løse et bræt. Dette kan gøres ved at holde <keycap>Ctrl</"
@@ -302,15 +106,13 @@ msgstr ""
 "klikke på dem igen, mens du holder enten <keycap>Ctrl</keycap> eller "
 "<keycap>Skift</keycap> nede."
 
-#: ../C/hitori.xml:131(para)
+#: ../C/playing.page:17(p)
+#, fuzzy
 msgid ""
-"To undo or redo a move, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
-"keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>Undo</guimenuitem></menuchoice> or "
-"<menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
-"keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
-"guimenu><guimenuitem>Redo</guimenuitem></menuchoice>. You may undo or redo "
-"as many moves as you like without restriction."
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
 msgstr ""
 "For at fortryde eller omgøre et træk så vælg "
 "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></"
@@ -321,14 +123,14 @@ msgstr ""
 "guimenu><guimenuitem>Omgør</guimenuitem></menuchoice>. Du kan fortryde, "
 "eller omgøre så mange træk du ønsker uden begrænsning."
 
-#: ../C/hitori.xml:138(para)
+#: ../C/playing.page:20(p)
+#, fuzzy
 msgid ""
-"To get a hint on which cells to paint out, choose "
-"<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
-"keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Hint</guimenuitem></"
-"menuchoice>. A cell will be highlighted with a flashing red outline. This "
-"shows that the current status of the cell (painted or unpainted) is "
-"incorrect, and should be changed for the game to be won."
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
 msgstr ""
 "For fif til hvilke celler der skal markeres vælges "
 "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
@@ -337,12 +139,192 @@ msgstr ""
 "Dette viser, at den aktuelle status på cellen (markeret eller umarkeret) er "
 "forkert, og bør ændres for at du kan vinde spillet."
 
+#: ../C/license.page:8(desc)
+msgid "Legal information."
+msgstr ""
+
+#: ../C/license.page:11(title)
+msgid "License"
+msgstr ""
+
+#: ../C/license.page:12(p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+
+#: ../C/license.page:20(p)
+msgid "You are free:"
+msgstr ""
+
+#: ../C/license.page:25(em)
+msgid "To share"
+msgstr ""
+
+#: ../C/license.page:26(p)
+msgid "To copy, distribute and transmit the work."
+msgstr ""
+
+#: ../C/license.page:29(em)
+msgid "To remix"
+msgstr ""
+
+#: ../C/license.page:30(p)
+msgid "To adapt the work."
+msgstr ""
+
+#: ../C/license.page:33(p)
+msgid "Under the following conditions:"
+msgstr ""
+
+#: ../C/license.page:38(em)
+#, fuzzy
+msgid "Attribution"
+msgstr "Indledning"
+
+#: ../C/license.page:39(p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+
+#: ../C/license.page:46(em)
+msgid "Share Alike"
+msgstr ""
+
+#: ../C/license.page:47(p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+
+#: ../C/license.page:53(p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+
+#: ../C/index.page:6(name)
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#: ../C/index.page:7(email)
+msgid "philip@tecnocode.co.uk"
+msgstr "philip@tecnocode.co.uk"
+
+#: ../C/index.page:8(years)
+#, fuzzy
+msgid "2008–2010"
+msgstr "2008-2009"
+
+#: ../C/index.page:11(p)
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+
+#: ../C/index.page:15(title)
+#, fuzzy
+msgid "Hitori Help"
+msgstr "Hitori"
+
+#: ../C/index.page:18(title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr ""
+
+#: ../C/index.page:22(title)
+msgid "Tips &amp; Tricks"
+msgstr ""
+
+#. When image changes, this message will be marked fuzzy or untranslated for you.
+#. It doesn't matter what you translate it to: it's not used at all.
+#: ../C/game.page:21(None)
+msgid ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
+msgstr ""
+"@@image: 'figures/hitori_main_window.png'; "
+"md5=7d84786ca244435340ecd6c7cb98dfd1"
+
+#: ../C/game.page:5(desc)
+msgid "Introduction to the game of Hitori."
+msgstr ""
+
+#: ../C/game.page:7(title)
+msgid "Hitori the Game"
+msgstr "Spillet Hitori"
+
+#: ../C/game.page:9(p)
+#, fuzzy
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori er et lille logisk puslespil, der ligner det mere populære Sudoku. I "
+"spillet starter spilleren med et firkantsbræt med numre, og skal herfra "
+"<quote>markere</quote> celler indtil der ikke længere er ens numre i hver "
+"række og kolonne. De følgende regler gælder:"
+
+#: ../C/game.page:12(p)
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Der må kun være et af hvert nummer i de umarkerede celler i hver række og "
+"kolonne."
+
+#: ../C/game.page:13(p)
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Ingen markerede celle må være ved siden af en anden markeret celle, hverken "
+"vertikalt eller horisontalt."
+
+#: ../C/game.page:14(p)
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Alle de umarkerede celler skal være forbundet vertikalt og horisontalt i en "
+"gruppe."
+
+#: ../C/game.page:16(p)
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Dette er de eneste tre regler i spillet, og der kan derfor være flere "
+"løsninger i et Hitoripuslespil."
+
+#: ../C/game.page:19(title)
+msgid "Main game window"
+msgstr ""
+
+#: ../C/game.page:20(desc)
+#, fuzzy
+msgid "<app>Hitori</app> main window"
+msgstr "<application>Hitoris</application> hovedvindue"
+
+#: ../C/game.page:22(p)
+#, fuzzy
+msgid "<app>Hitori</app> main window."
+msgstr "<application>Hitoris</application> hovedvindue"
+
+#: ../C/customization.page:5(desc)
+msgid "Changing how the game appears and plays."
+msgstr ""
+
 # måske Tilpasning af spillet
-#: ../C/hitori.xml:145(title)
+#: ../C/customization.page:7(title)
 msgid "Customizing the Game"
 msgstr "Tilpasse spillet"
 
-#: ../C/hitori.xml:146(para)
+#: ../C/customization.page:9(p)
 msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
@@ -350,13 +332,13 @@ msgstr ""
 "Spillet kan tilpasses ved at ændre brætstørrelsen - bræt med 5-10 "
 "cellefirkanter per række/kolonne er tilladt."
 
-#: ../C/hitori.xml:147(para)
+#: ../C/customization.page:10(p)
+#, fuzzy
 msgid ""
-"To change the board size, choose an option from <menuchoice><guimenu>Game</"
-"guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. "
-"<application>Hitori</application> will ask if you want to stop the current "
-"game if you're in the middle of one, then start a new game with the "
-"requested board size."
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
 msgstr ""
 "Ændring af brætstørrelse foretages ved at vælge en af mulighederne fra "
 "<menuchoice><guimenu>Spil</guimenu><guimenuitem>Brætstørrelse</guimenuitem></"
@@ -364,48 +346,190 @@ msgstr ""
 "standse det aktuelle spil, hvis du er i gang med et, og så starte et nyt "
 "spil med den ønskede brætstørrelse."
 
-#: ../C/hitori.xml:157(title)
-msgid "About <application>Hitori</application>"
-msgstr "Om <application>Hitori</application>"
-
-#: ../C/hitori.xml:158(para)
-msgid ""
-"<application>Hitori</application> was written by Philip Withnall "
-"(<email>philip@tecnocode.co.uk</email>). To find more information about "
-"<application>Hitori</application>, report a bug or make a suggestion about "
-"the application or this manual, please visit the <ulink url=\"http://live."
-"gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</"
-"ulink>."
-msgstr ""
-"<application>Hitori</application> blev skrevet af Philip Withnall "
-"(<email>philip@tecnocode.co.uk</email>). For yderligere information om "
-"<application>Hitori</application>, fejlrapportering eller forslag om dette "
-"program eller denne manual, så besøg <ulink url=\"http://live.gnome.org/"
-"Hitori\" type=\"http\"><application>Hitoris</application> hjemmeside</ulink>."
-
-#: ../C/hitori.xml:161(para)
-msgid ""
-"This program is distributed under the terms of the GNU General Public "
-"license as published by the Free Software Foundation; either version 3 of "
-"the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl"
-"\" type=\"help\">copy of this license</ulink> is included with this "
-"documentation; another can be found in the file COPYING included with the "
-"source code of this program."
-msgstr ""
-"Dette program distribueres under betingelserne i licensen GNU General Public "
-"der udgives af Free Software Foundation; enten version 3 eller (ved dit "
-"valg) enhver senere version. En kopi af denne licens kan findes her <ulink "
-"url=\"ghelp:gpl\" type=\"help\">link</ulink>, eller i filen COPYING der er "
-"inkluderet med kildekoden til dette program."
-
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: ../C/hitori.xml:0(None)
+#: ../C/customization.page:0(None)
 msgid "translator-credits"
 msgstr ""
 "Joe Hansen <joedalton2@yahoo.dk>, 2009.\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
+
+#~ msgid ""
+#~ "Permission is granted to copy, distribute and/or modify this document "
+#~ "under the terms of the GNU Free Documentation License (GFDL), Version 1.2 "
+#~ "or any later version published by the Free Software Foundation with no "
+#~ "Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. You "
+#~ "can find a copy of the GFDL at this <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> or in the file COPYING-DOCS distributed with this manual."
+#~ msgstr ""
+#~ "Tilladelse er givet til at kopiere, distribuere og/eller ændre dette "
+#~ "dokument under betingelserne i GNU Free Documentation License (GFDL), "
+#~ "version 1.1 eller enhver senere version udgivet af Free Software "
+#~ "Foundation; uden invariante afsnit, forsidetekster, samt bagsidetekster. "
+#~ "Du kan se en kopi af GFDL her <ulink type=\"help\" url=\"ghelp:fdl"
+#~ "\">link</ulink> eller i filen COPYING-DOCS som distribueres sammen med "
+#~ "denne manual."
+
+#~ msgid ""
+#~ "Many of the names used by companies to distinguish their products and "
+#~ "services are claimed as trademarks. Where those names appear in any GNOME "
+#~ "documentation, and the members of the GNOME Documentation Project are "
+#~ "made aware of those trademarks, then the names are in capital letters or "
+#~ "initial capital letters."
+#~ msgstr ""
+#~ "En stor del af de navne som anvendes af firmaer til at identificere deres "
+#~ "produkter og tjenester hævdes som værende varemærker. Hvor disse navne "
+#~ "fremgår i en hvilken som helst GNOME-dokumentation, og medlemmerne af "
+#~ "GNOME-dokumentationsprojeket er gjort opmærksom på disse varemærker, så "
+#~ "er disse navne vist med store bogstaver eller stort begyndelsesbogstav."
+
+#~ msgid ""
+#~ "DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+#~ "EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES "
+#~ "THAT THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+#~ "MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+#~ "RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+#~ "MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+#~ "WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+#~ "SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES "
+#~ "AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED "
+#~ "VERSION OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS "
+#~ "DISCLAIMER; AND UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER "
+#~ "IN TORT (INCLUDING NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, "
+#~ "INITIAL WRITER, ANY CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR "
+#~ "MODIFIED VERSION OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, "
+#~ "BE LIABLE TO ANY PERSON FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR "
+#~ "CONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, "
+#~ "DAMAGES FOR LOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR "
+#~ "MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR LOSSES ARISING OUT OF OR "
+#~ "RELATING TO USE OF THE DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT, "
+#~ "EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH "
+#~ "DAMAGES."
+#~ msgstr ""
+#~ "DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
+#~ "GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
+#~ "GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT "
+#~ "FOR DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU "
+#~ "HÆFTER SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE "
+#~ "FOR DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, "
+#~ "ELLER EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN "
+#~ "HVILKEN SOM HELST MÅDE, HÆFTER DU FOR BETALING FOR EVENTUEL NØDVENDIG "
+#~ "SERVICE, REPARATION ELLER KORREKTION (OG IKKE HVERKEN DEN OPRINDELIGE "
+#~ "FORFATTER, SKRIBENT ELLER NOGEN ANDEN BIDRAGYDER). DENNE ERKLÆRING OM "
+#~ "GARANTIFORBEHOLD ER EN ESSENTIEL DEL AF DENNE LICENS. INGEN BRUG AF NOGET "
+#~ "DOKUMENT ELLER ÆNDRET VERSION AF DOKUMENTET ER AUTORISERET HERUNDER "
+#~ "BORTSET FRA DENNE ANSVARSFRASKRIVELSE OG UNDER INGEN OMSTÆNDIGHEDER OG "
+#~ "UNDER INGEN JURIDISK TEORI, UANSET OM DET ER EN BEVIDST SKADENDE HANDLING "
+#~ "(INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM HELST ANDEN MÅDE, KAN "
+#~ "FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER ELLER FORSYNER AF DETTE "
+#~ "DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES ANSVARLIG OVERFOR NOGEN "
+#~ "PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, TILFÆLDIG ELLER FØLGENDE "
+#~ "SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, SKADE SOM FØLGE AF TAB AF "
+#~ "RYGTE, ARBEJDSSTOP, COMPUTERFEJL ELLER -SVIGT, ELLER ENHVER ANDEN FORM "
+#~ "FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED BRUG AF DETTE "
+#~ "DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN SÅDAN PART HAR "
+#~ "VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER."
+
+#~ msgid ""
+#~ "DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE "
+#~ "TERMS OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER "
+#~ "UNDERSTANDING THAT: <placeholder-1/>"
+#~ msgstr ""
+#~ "DOKUMENTET OG ÆNDREDE VERSIONER AF DOKUMENTET STILLES TIL RÅDIGHED UNDER "
+#~ "GNU FREE DOCOMENTATION LICENSE MED FØLGENDE BETINGELSER: <placeholder-1/>"
+
+#~ msgid "<application>Hitori</application> Manual"
+#~ msgstr "Manual til <application>Hitori</application>"
+
+#~ msgid "<application>Hitori</application> is a simple puzzle game."
+#~ msgstr "<application>Hitori</application> er et simpelt puslespil."
+
+#~ msgid "Philip"
+#~ msgstr "Philip"
+
+#~ msgid "Withnall"
+#~ msgstr "Withnall"
+
+#~ msgid "Hitori Manual V0.1"
+#~ msgstr "Hitoris manual version 0.1"
+
+#~ msgid "June 2008"
+#~ msgstr "Juni 2008"
+
+#~ msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+#~ msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
+
+#~ msgid "This manual describes version 0.2.1 of Hitori."
+#~ msgstr "Denne manual beskriver version 0.2.1 af Hitori."
+
+#~ msgid "Feedback"
+#~ msgstr "Tilbagemeldinger"
+
+#~ msgid ""
+#~ "To report a bug or make a suggestion regarding the <application>Hitori</"
+#~ "application> application or this manual, follow the directions on the "
+#~ "<ulink url=\"http://live.gnome.org/Hitori\" type=\"http"
+#~ "\"><application>Hitori</application> Web page</ulink>."
+#~ msgstr ""
+#~ "Hvis du ønsker at indrapportere en fejl eller komme med et forslag "
+#~ "vedrørende <application>Hitori</application> eller denne manual så følg "
+#~ "vejledningen på siden <ulink url=\"http://live.gnome.org/Hitori\" type="
+#~ "\"http\"><application>Hitori</application></ulink>."
+
+#~ msgid "hitori"
+#~ msgstr "hitori"
+
+#~ msgid "Interface"
+#~ msgstr "Grænseflade"
+
+#~ msgid ""
+#~ "<application>Hitori</application> has only one window; the main window, "
+#~ "which consists of the menubar and number board, shown below."
+#~ msgstr ""
+#~ "<application>Hitori</application> har kun et vindue; hovedvinduet, som "
+#~ "består af menubjælken og talbrættet, der vises nedenfor."
+
+#, fuzzy
+#~ msgid ""
+#~ "Shows <application>Hitori</application> main window, containing the "
+#~ "number board, Game and Help menus."
+#~ msgstr ""
+#~ "Viser <placeholder-1/> hovedvindue, der indeholder nummerbrættet, spil- "
+#~ "og hjælpemenuer."
+
+#~ msgid "About <application>Hitori</application>"
+#~ msgstr "Om <application>Hitori</application>"
+
+#~ msgid ""
+#~ "<application>Hitori</application> was written by Philip Withnall "
+#~ "(<email>philip@tecnocode.co.uk</email>). To find more information about "
+#~ "<application>Hitori</application>, report a bug or make a suggestion "
+#~ "about the application or this manual, please visit the <ulink url="
+#~ "\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</"
+#~ "application> Web page</ulink>."
+#~ msgstr ""
+#~ "<application>Hitori</application> blev skrevet af Philip Withnall "
+#~ "(<email>philip@tecnocode.co.uk</email>). For yderligere information om "
+#~ "<application>Hitori</application>, fejlrapportering eller forslag om "
+#~ "dette program eller denne manual, så besøg <ulink url=\"http://live.gnome."
+#~ "org/Hitori\" type=\"http\"><application>Hitoris</application> hjemmeside</"
+#~ "ulink>."
+
+#~ msgid ""
+#~ "This program is distributed under the terms of the GNU General Public "
+#~ "license as published by the Free Software Foundation; either version 3 of "
+#~ "the License, or (at your option) any later version. A <ulink url=\"ghelp:"
+#~ "gpl\" type=\"help\">copy of this license</ulink> is included with this "
+#~ "documentation; another can be found in the file COPYING included with the "
+#~ "source code of this program."
+#~ msgstr ""
+#~ "Dette program distribueres under betingelserne i licensen GNU General "
+#~ "Public der udgives af Free Software Foundation; enten version 3 eller "
+#~ "(ved dit valg) enhver senere version. En kopi af denne licens kan findes "
+#~ "her <ulink url=\"ghelp:gpl\" type=\"help\">link</ulink>, eller i filen "
+#~ "COPYING der er inkluderet med kildekoden til dette program."
 
 #~ msgid "March 2009"
 #~ msgstr "Marts 2009"
