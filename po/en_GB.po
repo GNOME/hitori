@@ -1,17 +1,18 @@
-# English/GB translation of hitori.
+# British English translation of Hitori.
 # Copyright (C) 2007-2008 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the hitori package.
-# Philip Withnall <philip@tecnocode.co.uk>, 2007-2008.
+# This file is distributed under the same license as the Hitori package.
+# Philip Withnall <philip@tecnocode.co.uk>, 2007, 2008, 2010.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-09 19:13+0000\n"
+"POT-Creation-Date: 2010-10-28 16:29+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
-"Language-Team: English/GB <en@li.org>\n"
+"Language-Team: British English <en@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -70,18 +71,18 @@ msgstr "_Settings"
 
 #: ../src/interface.c:64
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "UI file \"%s/hitori/hitori.ui\" could not be loaded."
+msgid "UI file “%s” could not be loaded"
+msgstr "UI file “%s” could not be loaded"
 
 #: ../src/interface.c:220
 msgid "You've won!"
 msgstr "You've won!"
 
 #: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "The help contents could not be displayed."
+msgid "The help contents could not be displayed"
+msgstr "The help contents could not be displayed"
 
-#: ../src/interface.c:536
+#: ../src/interface.c:535
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -93,7 +94,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:540
+#: ../src/interface.c:539
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -105,7 +106,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:544
+#: ../src/interface.c:543
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -113,19 +114,19 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:556
+#: ../src/interface.c:555
 msgid "Copyright © 2007–2009 Philip Withnall"
 msgstr "Copyright © 2007–2009 Philip Withnall"
 
-#: ../src/interface.c:557
+#: ../src/interface.c:556
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:560
+#: ../src/interface.c:558
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:564
+#: ../src/interface.c:562
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
@@ -148,5 +149,5 @@ msgid "- Play a game of Hitori"
 msgstr "- Play a game of Hitori"
 
 #: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "Command-line options could not be parsed."
+msgid "Command line options could not be parsed"
+msgstr "Command line options could not be parsed"
