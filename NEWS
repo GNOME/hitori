@@ -1,5 +1,19 @@
 Major new features in version...
 
+0.2.5:
+* Convert documentation to Mallard format
+* Expand the documentation
+* Use upstream gettext instead of glib-gettext
+* Convert to non-recursive automake
+* Make the code GSEAL safe
+* Improve the board generation algorithm to allow painted cells on the board edges
+* Improve some translatable strings
+* Translations:
+** de (Mario Blättermann)
+** en_GB (Philip Withnall)
+** es (Jorge González)
+** sl (Matej Urbančič)
+
 0.2.4:
 * Translations:
 ** da (Joe Hansen)
