@@ -19,6 +19,7 @@
 
 #include <glib.h>
 #include <glib/gprintf.h>
+#include <glib/gi18n.h>
 
 #include "main.h"
 #include "rules.h"
@@ -231,4 +232,28 @@ hitori_check_rule3 (Hitori *hitori)
 		g_debug (success ? "Rule 3 OK" : "Rule 3 failed");
 
 	return success;
+}
+
+gboolean
+hitori_check_win (Hitori *hitori)
+{
+	/* Check to see if all three rules are satisfied yet. If they are, we've won.
+	 * NOTE: We check rule 1 last, as it's the only rule which won't set an error position. */
+	if (hitori_check_rule2 (hitori) &&
+	    hitori_check_rule3 (hitori) &&
+	    hitori_check_rule1 (hitori)) {
+		/* Win! */
+		GtkWidget *dialog;
+
+		/* Tell the user they've won */
+		hitori_disable_events (hitori);
+		dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
+						 _("You've won!"));
+		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_widget_destroy (dialog);
+
+		return TRUE;
+	}
+
+	return FALSE;
 }

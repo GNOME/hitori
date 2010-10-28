@@ -89,7 +89,7 @@ hitori_create_interface (Hitori *hitori)
 }
 
 void
-hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
+hitori_draw_board (Hitori *hitori, cairo_t *cr)
 {
 	gint area_width, area_height;
 	HitoriVector iter;
@@ -97,19 +97,6 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 	gfloat cell_size;
 	gdouble x_pos, y_pos;
 	GtkStyle *style;
-	gboolean has_won = FALSE;
-
-	/* Check to see if all three rules are satisfied yet.
-	 * If they are, we've won.
-	 * NOTE: We check rule 1 last, as it's the only rule
-	 * which won't set an error position. */
-	if (check_win &&
-	    hitori_check_rule2 (hitori) &&
-	    hitori_check_rule3 (hitori) &&
-	    hitori_check_rule1 (hitori)) {
-		/* Win! (Tell them later, once we've re-rendered the winning board) */
-		has_won = TRUE;
-	}
 
 	area_width = gdk_window_get_width (gtk_widget_get_window (hitori->drawing_area));
 	area_height = gdk_window_get_height (gtk_widget_get_window (hitori->drawing_area));
@@ -212,18 +199,6 @@ hitori_draw_board (Hitori *hitori, cairo_t *cr, gboolean check_win)
 		x_pos += cell_size;
 	}
 
-	if (has_won == TRUE) {
-		GtkWidget *dialog;
-
-		/* Tell the user they've won, and don't draw any hints */
-		hitori_disable_events (hitori);
-		dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_OK,
-						 _("You've won!"));
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
-		return;
-	}
-
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
 		cairo_set_source_rgb (cr, 1, 0, 0); /* red */
@@ -266,14 +241,17 @@ hitori_draw_board_simple (Hitori *hitori, gboolean check_win, gboolean clear_fir
 		cairo_paint (cr);
 	}
 
-	hitori_draw_board (hitori, cr, check_win);
+	hitori_draw_board (hitori, cr);
 	cairo_destroy (cr);
+
+	if (check_win == TRUE)
+		hitori_check_win (hitori);
 }
 
 gboolean
 hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 {
-	hitori_draw_board (hitori, cr, FALSE);
+	hitori_draw_board (hitori, cr);
 
 	return FALSE;
 }
@@ -405,7 +383,7 @@ hitori_update_hint (Hitori *hitori)
 	cairo_clip (cr);
 	cairo_restore (cr);
 
-	hitori_draw_board (hitori, cr, FALSE);
+	hitori_draw_board (hitori, cr);
 	cairo_destroy (cr);
 
 	return (hitori->hint_status < HINT_FLASHES) ? TRUE : FALSE;
