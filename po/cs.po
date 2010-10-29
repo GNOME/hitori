@@ -1,14 +1,16 @@
 # Czech translation for hitori.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori package.
-# Marek Černocký <marek@manet.cz>, 2009.
+#
+# Marek Černocký <marek@manet.cz>, 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-06 00:53+0200\n"
-"PO-Revision-Date: 2009-09-28 22:35+0100\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&component=general\n"
+"POT-Creation-Date: 2010-10-28 22:28+0000\n"
+"PO-Revision-Date: 2010-10-29 13:18+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -72,18 +74,14 @@ msgstr "_Nastavení"
 
 #: ../src/interface.c:64
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "Nelze načíst soubor UI „%s/hitori/hitori.ui“."
+msgid "UI file “%s” could not be loaded"
+msgstr "Nelze načíst soubor „%s“ s uživatelským rozhraním."
 
-#: ../src/interface.c:220
-msgid "You've won!"
-msgstr "Zvítězili jste!"
+#: ../src/interface.c:454
+msgid "The help contents could not be displayed"
+msgstr "Nelze zobrazit obsah nápovědy"
 
-#: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "Nelze zobrazit obsah nápovědy."
-
-#: ../src/interface.c:536
+#: ../src/interface.c:475
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -95,7 +93,7 @@ msgstr ""
 "Software Foundation, a to buď ve verzi 3 této licence nebo (dle vaší volby) "
 "v libovolné novější verzi."
 
-#: ../src/interface.c:540
+#: ../src/interface.c:479
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -106,7 +104,7 @@ msgstr ""
 "bez předpokládané záruky na PRODEJNOST nebo VHODNOST PRO KONKRÉTNÍ ÚČEL. "
 "Více podrobností najdete přímo v licenci GNU General Public License."
 
-#: ../src/interface.c:544
+#: ../src/interface.c:483
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -114,19 +112,19 @@ msgstr ""
 "Spolu s Hitori byste měli obdržet kopii licence GNU General Public License. "
 "Pokud se tak nestalo, podívejte se na <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:556
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Copyright © 2007–2009 Philip Withnall"
+#: ../src/interface.c:495
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:557
+#: ../src/interface.c:496
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logický hlavolam navržený Nikoli."
 
-#: ../src/interface.c:560
+#: ../src/interface.c:498
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: ../src/interface.c:564
+#: ../src/interface.c:502
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
@@ -149,5 +147,6 @@ msgid "- Play a game of Hitori"
 msgstr "- hrát hru Hitori"
 
 #: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "Nelze analyzovat přepínače příkazové řádky."
+msgid "Command line options could not be parsed"
+msgstr "Nelze zpracovat přepínače příkazové řádky"
+
