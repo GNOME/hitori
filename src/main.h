@@ -51,7 +51,8 @@ typedef enum {
 	CELL_PAINTED = 1 << 1,
 	CELL_SHOULD_BE_PAINTED = 1 << 2,
 	CELL_TAG1 = 1 << 3,
-	CELL_TAG2 = 1 << 4
+	CELL_TAG2 = 1 << 4,
+	CELL_ERROR = 1 << 5
 } HitoriCellStatus;
 
 typedef struct {
@@ -82,9 +83,6 @@ typedef struct {
 
 	guint hint_status;
 	HitoriVector hint_position;
-
-	gboolean display_error;
-	HitoriVector error_position;
 
 	guint timer_value; /* seconds into the game */
 	GtkLabel *timer_label;

@@ -138,8 +138,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 				state = GTK_STATE_INSENSITIVE;
 
 			/* Draw the fill */
-			if (hitori->display_error == TRUE &&
-			    hitori->error_position.x == iter.x && hitori->error_position.y == iter.y)
+			if (hitori->board[iter.x][iter.y].status & CELL_ERROR)
 				cairo_set_source_rgb (cr, 0.678431373, 0.498039216, 0.658823529); /* Tango's lightest "plum" */
 			else
 				gdk_cairo_set_source_color (cr, &style->bg[state]);
@@ -407,6 +406,9 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 	if (hitori->undo_stack->undo == NULL || hitori->undo_stack->type == UNDO_NEW_GAME)
 		gtk_action_set_sensitive (hitori->undo_action, FALSE);
 
+	/* The player can't possibly have won, but we need to update the error highlighting */
+	hitori_check_win (hitori);
+
 	/* Redraw */
 	gtk_widget_queue_draw (hitori->drawing_area);
 }
@@ -439,6 +441,9 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 	gtk_action_set_sensitive (hitori->undo_action, TRUE);
 	if (hitori->undo_stack->redo == NULL)
 		gtk_action_set_sensitive (hitori->redo_action, FALSE);
+
+	/* The player can't possibly have won, but we need to update the error highlighting */
+	hitori_check_win (hitori);
 
 	/* Redraw */
 	gtk_widget_queue_draw (hitori->drawing_area);

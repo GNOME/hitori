@@ -150,7 +150,7 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 				} while (total == 0);
 
 				hitori->board[iter.x][iter.y].num = total;
-				hitori->board[iter.x][iter.y].status &= ~CELL_PAINTED;
+				hitori->board[iter.x][iter.y].status &= (~CELL_PAINTED & ~CELL_ERROR);
 			}
 		}
 	}

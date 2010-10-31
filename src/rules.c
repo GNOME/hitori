@@ -118,36 +118,33 @@ gboolean
 hitori_check_rule2 (Hitori *hitori)
 {
 	HitoriVector iter;
+	gboolean success = TRUE;
 
-	/*
-	 * Check the squares immediately below and to the right of the current one;
-	 * if they're painted in, the rule fails.
-	 */
-
+	/* Check the squares immediately next to the current one; if they're painted, the rule fails. */
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
 		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
-			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
-				if ((iter.x < hitori->board_size - 1 && hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) ||
-				    (iter.y < hitori->board_size - 1 && hitori->board[iter.x][iter.y+1].status & CELL_PAINTED)) {
-					if (hitori->debug)
-						    g_debug ("Rule 2 failed");
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED &&
+			    ((iter.x < hitori->board_size - 1 && hitori->board[iter.x+1][iter.y].status & CELL_PAINTED) ||
+			     (iter.y < hitori->board_size - 1 && hitori->board[iter.x][iter.y+1].status & CELL_PAINTED) ||
+			     (iter.x > 0 && hitori->board[iter.x - 1][iter.y].status & CELL_PAINTED) ||
+			     (iter.y > 0 && hitori->board[iter.x][iter.y - 1].status & CELL_PAINTED))) {
+				if (hitori->debug)
+					    g_debug ("Rule 2 failed");
 
-					/* Set the error position */
-					hitori_set_error_position (hitori, iter);
-
-					return FALSE;
-				}
+				/* Mark the cell as being erroneous and continue to the other cells so that they also get marked */
+				hitori->board[iter.x][iter.y].status |= CELL_ERROR;
+				success = FALSE;
+			} else {
+				/* Clear any error in the cell */
+				hitori->board[iter.x][iter.y].status &= ~CELL_ERROR;
 			}
 		}
 	}
 
-	if (hitori->debug)
+	if (hitori->debug && success)
 		g_debug ("Rule 2 OK");
 
-	/* Clear the error */
-	hitori->display_error = FALSE;
-
-	return TRUE;
+	return success;
 }
 
 /* Rule 3: all the unpainted cells must be joined together in one group. */
