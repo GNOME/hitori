@@ -206,6 +206,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
 		cairo_set_source_rgb (cr, 1, 0, 0); /* red */
+		cairo_set_line_width (cr, style->xthickness * 5.0);
 		cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
 		cairo_stroke (cr);
 	}
