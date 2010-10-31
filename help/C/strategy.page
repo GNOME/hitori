@@ -13,7 +13,8 @@
 		always. When painting a cell, unhighlighting the other cells with the same number in the same row and column as that cell is a good
 		way to keep track of which cells are still violating <link xref="game">rule 1 of Hitori</link>.</p>
 	<p>Always bear in mind that rule 2 of Hitori means that two adjacent cells can't both be painted. <app>Hitori</app> will highlight in red the
-		leftmost cell which violates rule 2.</p>
+		cells which violate rule 2. Similarly, groups of cells which violate rule 3 by separating one or more unpainted cells from the other
+		unpainted cells will be highlighted in red.</p>
 
 	<p>If you get stuck at any point, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Hint</gui></guiseq> for <app>Hitori</app>
 		to flag a cell which should be painted or unpainted to move closer to a solution.</p>
