@@ -40,6 +40,7 @@
 gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
 gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
 void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
+void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
 void hitori_new_game_cb (GtkAction *action, Hitori *hitori);
 void hitori_hint_cb (GtkAction *action, Hitori *hitori);
 void hitori_undo_cb (GtkAction *action, Hitori *hitori);
@@ -302,6 +303,23 @@ void
 hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 {
 	hitori_quit (hitori);
+}
+
+void
+hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori)
+{
+	if (hitori->debug)
+		g_debug ("Got window state event: %u (changed: %u)", event->new_window_state, event->changed_mask);
+
+	if (event->new_window_state & GDK_WINDOW_STATE_WITHDRAWN ||
+	    event->new_window_state & GDK_WINDOW_STATE_ICONIFIED ||
+	    event->new_window_state & GDK_WINDOW_STATE_BELOW) {
+		/* Pause the timer */
+		hitori_pause_timer (hitori);
+	} else {
+		/* Re-start the timer */
+		hitori_start_timer (hitori);
+	}
 }
 
 void

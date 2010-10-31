@@ -168,6 +168,7 @@
 	<object class="GtkWindow" id="hitori_main_window">
 		<property name="title" translatable="yes">Hitori</property>
 		<signal name="destroy" handler="hitori_destroy_cb"/>
+		<signal name="window-state-event" handler="hitori_window_state_event_cb"/>
 		<child>
 			<object class="GtkVBox" id="vbox1">
 				<child>
