@@ -29,6 +29,7 @@
 
 #define NORMAL_FONT_SCALE 0.9
 #define PAINTED_FONT_SCALE 0.6
+#define PAINTED_ALPHA 0.7
 #define TAG_OFFSET 0.75
 #define TAG_RADIUS 0.25
 #define HINT_FLASHES 6
@@ -156,7 +157,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			/* If the cell is tagged, draw the tag dots */
 			if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
 				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					cairo_set_source_rgb (cr, 0.125490196, 0.290196078, 0.529411765); /* Tango's darkest "sky blue" */
+					cairo_set_source_rgba (cr, 0.447058824, 0.623529412, 0.811764706, PAINTED_ALPHA); /* Tango's lightest "sky blue" */
 				else
 					cairo_set_source_rgb (cr, 0.447058824, 0.623529412, 0.811764706); /* Tango's lightest "sky blue" */
 
@@ -169,7 +170,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 			if (hitori->board[iter.x][iter.y].status & CELL_TAG2) {
 				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					cairo_set_source_rgb (cr, 0.305882353, 0.603921569, 0.023529412); /* Tango's darkest "chameleon" */
+					cairo_set_source_rgba (cr, 0.541176471, 0.88627451, 0.203921569, PAINTED_ALPHA); /* Tango's lightest "chameleon" */
 				else
 					cairo_set_source_rgb (cr, 0.541176471, 0.88627451, 0.203921569); /* Tango's lightest "chameleon" */
 
