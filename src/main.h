@@ -86,6 +86,7 @@ typedef struct {
 
 	guint hint_status;
 	HitoriVector hint_position;
+	guint hint_timeout_id;
 
 	guint timer_value; /* seconds into the game */
 	GtkLabel *timer_label;

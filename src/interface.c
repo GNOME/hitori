@@ -34,7 +34,10 @@
 #define TAG_OFFSET 0.75
 #define TAG_RADIUS 0.25
 #define HINT_FLASHES 6
+#define HINT_DISABLED 0
 #define HINT_INTERVAL 500
+
+static void hitori_cancel_hinting (Hitori *hitori);
 
 /* Declarations for GtkBuilder */
 gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
@@ -284,10 +287,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	gtk_action_set_sensitive (hitori->undo_action, TRUE);
 
 	/* Stop any current hints */
-	hitori->hint_status = HINT_FLASHES;
-
-	if (hitori->debug)
-		g_debug ("Stopping all current hints.");
+	hitori_cancel_hinting (hitori);
 
 	/* Redraw */
 	gtk_widget_queue_draw (hitori->drawing_area);
@@ -328,6 +328,18 @@ hitori_new_game_cb (GtkAction *action, Hitori *hitori)
 	hitori_new_game (hitori, hitori->board_size);
 }
 
+static void
+hitori_cancel_hinting (Hitori *hitori)
+{
+	if (hitori->debug)
+		g_debug ("Stopping all current hints.");
+
+	hitori->hint_status = HINT_DISABLED;
+	if (hitori->hint_timeout_id != 0)
+		g_source_remove (hitori->hint_timeout_id);
+	hitori->hint_timeout_id = 0;
+}
+
 static gboolean
 hitori_update_hint (Hitori *hitori)
 {
@@ -337,10 +349,10 @@ hitori_update_hint (Hitori *hitori)
 	gfloat cell_size;
 
 	/* Check to see if hinting's been stopped by a cell being changed (race condition) */
-	if (hitori->hint_status >= HINT_FLASHES)
+	if (hitori->hint_status == HINT_DISABLED)
 		return FALSE;
 
-	hitori->hint_status++;
+	hitori->hint_status--;
 
 	if (hitori->debug)
 		g_debug ("Updating hint status to %u.", hitori->hint_status);
@@ -372,7 +384,12 @@ hitori_update_hint (Hitori *hitori)
 	gtk_widget_queue_draw_area (hitori->drawing_area, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size,
 	                            cell_size, cell_size);
 
-	return (hitori->hint_status < HINT_FLASHES) ? TRUE : FALSE;
+	if (hitori->hint_status == HINT_DISABLED) {
+		hitori_cancel_hinting (hitori);
+		return FALSE;
+	}
+
+	return TRUE;
 }
 
 void
@@ -381,7 +398,7 @@ hitori_hint_cb (GtkAction *action, Hitori *hitori)
 	HitoriVector iter;
 
 	/* Bail if we're already hinting */
-	if (hitori->hint_status > 0 && hitori->hint_status < HINT_FLASHES)
+	if (hitori->hint_status != HINT_DISABLED)
 		return;
 
 	/* Find the first cell which should be painted, but isn't (or vice-versa) */
@@ -395,9 +412,9 @@ hitori_hint_cb (GtkAction *action, Hitori *hitori)
 					g_debug ("Beginning hinting in cell (%u,%u).", iter.x, iter.y);
 
 				/* Set up the cell for hinting */
-				hitori->hint_status = 0;
+				hitori->hint_status = HINT_FLASHES;
 				hitori->hint_position = iter;
-				g_timeout_add (HINT_INTERVAL, (GSourceFunc) hitori_update_hint, hitori);
+				hitori->hint_timeout_id = g_timeout_add (HINT_INTERVAL, (GSourceFunc) hitori_update_hint, hitori);
 				hitori_update_hint ((gpointer) hitori);
 
 				return;
