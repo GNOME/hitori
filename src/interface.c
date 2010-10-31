@@ -27,7 +27,8 @@
 #include "interface.h"
 #include "rules.h"
 
-#define FONT_SCALE 0.9
+#define NORMAL_FONT_SCALE 0.9
+#define PAINTED_FONT_SCALE 0.6
 #define TAG_OFFSET 0.75
 #define TAG_RADIUS 0.25
 #define HINT_FLASHES 6
@@ -51,6 +52,7 @@ hitori_create_interface (Hitori *hitori)
 {
 	GError *error = NULL;
 	GtkBuilder *builder;
+	GtkStyle *style;
 
 	builder = gtk_builder_new ();
 
@@ -86,6 +88,11 @@ hitori_create_interface (Hitori *hitori)
 
 	g_object_unref (builder);
 
+	/* Set up font descriptions for the drawing area */
+	style = gtk_widget_get_style (hitori->drawing_area);
+	hitori->normal_font_desc = pango_font_description_copy (style->font_desc);
+	hitori->painted_font_desc = pango_font_description_copy (style->font_desc);
+
 	/* Reset the timer */
 	hitori_reset_timer (hitori);
 
@@ -117,7 +124,8 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 	/* Work out the cell size and scale all text accordingly */
 	cell_size = board_width / hitori->board_size;
-	pango_font_description_set_absolute_size (style->font_desc, cell_size * FONT_SCALE * 0.8 * PANGO_SCALE);
+	pango_font_description_set_absolute_size (hitori->normal_font_desc, cell_size * NORMAL_FONT_SCALE * 0.8 * PANGO_SCALE);
+	pango_font_description_set_absolute_size (hitori->painted_font_desc, cell_size * PAINTED_FONT_SCALE * 0.8 * PANGO_SCALE);
 
 	/* Centre the board */
 	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
@@ -183,7 +191,10 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			layout = pango_cairo_create_layout (cr);
 
 			pango_layout_set_text (layout, text, -1);
-			pango_layout_set_font_description (layout, style->font_desc);
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
+				pango_layout_set_font_description (layout, hitori->painted_font_desc);
+			else
+				pango_layout_set_font_description (layout, hitori->normal_font_desc);
 
 			pango_layout_get_pixel_size (layout, &text_width, &text_height);
 			cairo_move_to (cr,

@@ -73,6 +73,9 @@ typedef struct {
 	guint drawing_area_x_offset;
 	guint drawing_area_y_offset;
 
+	PangoFontDescription *normal_font_desc;
+	PangoFontDescription *painted_font_desc;
+
 	guchar board_size;
 	HitoriCell **board;
 

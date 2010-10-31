@@ -201,6 +201,11 @@ hitori_quit (Hitori *hitori)
 	if (hitori->window != NULL)
 		gtk_widget_destroy (hitori->window);
 
+	if (hitori->normal_font_desc != NULL)
+		pango_font_description_free (hitori->normal_font_desc);
+	if (hitori->painted_font_desc != NULL)
+		pango_font_description_free (hitori->painted_font_desc);
+
 	if (gtk_main_level () > 0)
 		gtk_main_quit ();
 
