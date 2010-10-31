@@ -142,6 +142,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			gint text_width, text_height;
 			GtkStateType state = GTK_STATE_NORMAL;
 			gboolean painted = FALSE;
+			PangoFontDescription *font_desc;
 
 			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
 				painted = TRUE;
@@ -149,10 +150,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			}
 
 			/* Draw the fill */
-			if (hitori->board[iter.x][iter.y].status & CELL_ERROR)
-				cairo_set_source_rgb (cr, 0.678431373, 0.498039216, 0.658823529); /* Tango's lightest "plum" */
-			else
-				gdk_cairo_set_source_color (cr, &style->bg[state]);
+			gdk_cairo_set_source_color (cr, &style->bg[state]);
 			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 			cairo_fill (cr);
 
@@ -190,14 +188,24 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			layout = pango_cairo_create_layout (cr);
 
 			pango_layout_set_text (layout, text, -1);
-			pango_layout_set_font_description (layout, (painted == TRUE) ? hitori->painted_font_desc : hitori->normal_font_desc);
+
+			font_desc = (painted == TRUE) ? hitori->painted_font_desc : hitori->normal_font_desc;
+
+			if (hitori->board[iter.x][iter.y].status & CELL_ERROR) {
+				cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
+				pango_font_description_set_weight (font_desc, PANGO_WEIGHT_BOLD);
+			} else {
+				gdk_cairo_set_source_color (cr, &style->text[state]);
+				pango_font_description_set_weight (font_desc, PANGO_WEIGHT_NORMAL);
+			}
+
+			pango_layout_set_font_description (layout, font_desc);
 
 			pango_layout_get_pixel_size (layout, &text_width, &text_height);
 			cairo_move_to (cr,
 				       x_pos + (cell_size - text_width) / 2,
 				       y_pos + (cell_size - text_height) / 2);
 
-			gdk_cairo_set_source_color (cr, &style->text[state]);
 			pango_cairo_show_layout (cr, layout);
 
 			g_free (text);
