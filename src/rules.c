@@ -215,10 +215,23 @@ hitori_check_rule3 (Hitori *hitori)
 
 	/* Check if there's an unpainted cell we haven't reached */
 	success = TRUE;
-	for (iter.x = 0; success && iter.x < hitori->board_size; iter.x++)
-		for (iter.y = 0; success && iter.y < hitori->board_size; iter.y++)
-			if (reached[iter.x][iter.y] == FALSE && (hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE)
+	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
+		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
+			if (reached[iter.x][iter.y] == FALSE && (hitori->board[iter.x][iter.y].status & CELL_PAINTED) == FALSE) {
 				success = FALSE;
+
+				/* Highlight its neighbours as erroneous */
+				if (iter.x > 0 && hitori->board[iter.x - 1][iter.y].status & CELL_PAINTED)
+					hitori->board[iter.x - 1][iter.y].status |= CELL_ERROR;
+				if (iter.y > 0 && hitori->board[iter.x][iter.y - 1].status & CELL_PAINTED)
+					hitori->board[iter.x][iter.y - 1].status |= CELL_ERROR;
+				if (iter.x < hitori->board_size - 1 && hitori->board[iter.x + 1][iter.y].status & CELL_PAINTED)
+					hitori->board[iter.x + 1][iter.y].status |= CELL_ERROR;
+				if (iter.y < hitori->board_size - 1 && hitori->board[iter.x][iter.y + 1].status & CELL_PAINTED)
+					hitori->board[iter.x][iter.y + 1].status |= CELL_ERROR;
+			}
+		}
+	}
 
 	/* Free everything */
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++)
@@ -235,10 +248,12 @@ gboolean
 hitori_check_win (Hitori *hitori)
 {
 	/* Check to see if all three rules are satisfied yet. If they are, we've won.
-	 * NOTE: We check rule 1 last, as it's the only rule which won't set an error position. */
-	if (hitori_check_rule2 (hitori) &&
-	    hitori_check_rule3 (hitori) &&
-	    hitori_check_rule1 (hitori)) {
+	 * NOTE: We check rule 1 last, as it's the only rule which won't set an error position.
+	 * We check rules 2 and 3 unconditionally because they both set errors. */
+	gboolean rule2 = hitori_check_rule2 (hitori);
+	gboolean rule3 = hitori_check_rule3 (hitori);
+
+	if (rule2 && rule3 && hitori_check_rule1 (hitori)) {
 		/* Win! */
 		GtkWidget *dialog;
 
