@@ -30,6 +30,7 @@
 #define NORMAL_FONT_SCALE 0.9
 #define PAINTED_FONT_SCALE 0.6
 #define PAINTED_ALPHA 0.7
+#define NORMAL_ALPHA 1.0
 #define TAG_OFFSET 0.75
 #define TAG_RADIUS 0.25
 #define HINT_FLASHES 6
@@ -134,17 +135,18 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
 
 	/* Draw the cells */
-	x_pos = 0;
-	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) { /* columns (X) */
-		y_pos = 0;
-		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) { /* rows (Y) */
+	for (iter.x = 0, x_pos = 0; iter.x < hitori->board_size; iter.x++, x_pos += cell_size) { /* columns (X) */
+		for (iter.y = 0, y_pos = 0; iter.y < hitori->board_size; iter.y++, y_pos += cell_size) { /* rows (Y) */
 			gchar *text;
 			PangoLayout *layout;
 			gint text_width, text_height;
 			GtkStateType state = GTK_STATE_NORMAL;
+			gboolean painted = FALSE;
 
-			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
+			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
+				painted = TRUE;
 				state = GTK_STATE_INSENSITIVE;
+			}
 
 			/* Draw the fill */
 			if (hitori->board[iter.x][iter.y].status & CELL_ERROR)
@@ -156,10 +158,8 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 			/* If the cell is tagged, draw the tag dots */
 			if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
-				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					cairo_set_source_rgba (cr, 0.447058824, 0.623529412, 0.811764706, PAINTED_ALPHA); /* Tango's lightest "sky blue" */
-				else
-					cairo_set_source_rgb (cr, 0.447058824, 0.623529412, 0.811764706); /* Tango's lightest "sky blue" */
+				/* Tango's lightest "sky blue" */
+				cairo_set_source_rgba (cr, 0.447058824, 0.623529412, 0.811764706, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
 
 				cairo_move_to (cr, x_pos, y_pos + TAG_OFFSET);
 				cairo_line_to (cr, x_pos, y_pos);
@@ -169,10 +169,8 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			}
 
 			if (hitori->board[iter.x][iter.y].status & CELL_TAG2) {
-				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					cairo_set_source_rgba (cr, 0.541176471, 0.88627451, 0.203921569, PAINTED_ALPHA); /* Tango's lightest "chameleon" */
-				else
-					cairo_set_source_rgb (cr, 0.541176471, 0.88627451, 0.203921569); /* Tango's lightest "chameleon" */
+				/* Tango's lightest "chameleon" */
+				cairo_set_source_rgba (cr, 0.541176471, 0.88627451, 0.203921569, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
 
 				cairo_move_to (cr, x_pos + cell_size - TAG_OFFSET, y_pos);
 				cairo_line_to (cr, x_pos + cell_size, y_pos);
@@ -192,10 +190,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			layout = pango_cairo_create_layout (cr);
 
 			pango_layout_set_text (layout, text, -1);
-			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-				pango_layout_set_font_description (layout, hitori->painted_font_desc);
-			else
-				pango_layout_set_font_description (layout, hitori->normal_font_desc);
+			pango_layout_set_font_description (layout, (painted == TRUE) ? hitori->painted_font_desc : hitori->normal_font_desc);
 
 			pango_layout_get_pixel_size (layout, &text_width, &text_height);
 			cairo_move_to (cr,
@@ -207,11 +202,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 			g_free (text);
 			g_object_unref (layout);
-
-			y_pos += cell_size;
 		}
-
-		x_pos += cell_size;
 	}
 
 	/* Draw a hint if applicable */
