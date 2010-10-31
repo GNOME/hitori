@@ -185,6 +185,13 @@
 						<signal name="button-release-event" handler="hitori_button_release_cb"/>
 					</object>
 				</child>
+				<child>
+					<object class="GtkStatusbar" id="hitori_statusbar">
+						<child>
+							<object class="GtkLabel" id="hitori_timer"/>
+						</child>
+					</object>
+				</child>
 			</object>
 		</child>
 	</object>

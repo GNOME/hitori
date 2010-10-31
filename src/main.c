@@ -36,6 +36,9 @@ hitori_new_game (Hitori *hitori, guint board_size)
 	hitori_generate_board (hitori, board_size, -1);
 	hitori_clear_undo_stack (hitori);
 	gtk_widget_queue_draw (hitori->drawing_area);
+
+	hitori_reset_timer (hitori);
+	hitori_start_timer (hitori);
 }
 
 void
@@ -125,6 +128,8 @@ hitori_enable_events (Hitori *hitori)
 	if (hitori->undo_stack->undo != NULL)
 		gtk_action_set_sensitive (hitori->redo_action, TRUE);
 	gtk_action_set_sensitive (hitori->hint_action, TRUE);
+
+	hitori_start_timer (hitori);
 }
 
 void
@@ -134,6 +139,51 @@ hitori_disable_events (Hitori *hitori)
 	gtk_action_set_sensitive (hitori->redo_action, FALSE);
 	gtk_action_set_sensitive (hitori->undo_action, FALSE);
 	gtk_action_set_sensitive (hitori->hint_action, FALSE);
+
+	hitori_pause_timer (hitori);
+}
+
+static void
+set_timer_label (Hitori *hitori)
+{
+	/* Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
+	 * game; the second parameter is the number of seconds. */
+	gchar *text = g_strdup_printf (_("Time: %02u:%02u"), hitori->timer_value / 60, hitori->timer_value % 60);
+	gtk_label_set_text (hitori->timer_label, text);
+	g_free (text);
+}
+
+static gboolean
+update_timer_cb (Hitori *hitori)
+{
+	hitori->timer_value++;
+	set_timer_label (hitori);
+
+	return TRUE;
+}
+
+void
+hitori_start_timer (Hitori *hitori)
+{
+	// Remove any old timeout
+	hitori_pause_timer (hitori);
+
+	set_timer_label (hitori);
+	hitori->timeout_id = g_timeout_add_seconds (1, (GSourceFunc) update_timer_cb, hitori);
+}
+
+void
+hitori_pause_timer (Hitori *hitori)
+{
+	if (hitori->timeout_id > 0)
+		g_source_remove (hitori->timeout_id);
+}
+
+void
+hitori_reset_timer (Hitori *hitori)
+{
+	hitori->timer_value = 0;
+	set_timer_label (hitori);
 }
 
 void

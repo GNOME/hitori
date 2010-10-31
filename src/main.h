@@ -85,6 +85,10 @@ typedef struct {
 
 	gboolean display_error;
 	HitoriVector error_position;
+
+	guint timer_value; /* seconds into the game */
+	GtkLabel *timer_label;
+	guint timeout_id;
 } Hitori;
 
 void hitori_new_game (Hitori *hitori, guint board_size);
@@ -94,6 +98,9 @@ void hitori_print_board (Hitori *hitori);
 void hitori_free_board (Hitori *hitori);
 void hitori_enable_events (Hitori *hitori);
 void hitori_disable_events (Hitori *hitori);
+void hitori_start_timer (Hitori *hitori);
+void hitori_pause_timer (Hitori *hitori);
+void hitori_reset_timer (Hitori *hitori);
 void hitori_set_error_position (Hitori *hitori, HitoriVector position);
 void hitori_quit (Hitori *hitori);
 

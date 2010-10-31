@@ -82,8 +82,12 @@ hitori_create_interface (Hitori *hitori)
 	hitori->undo_action = GTK_ACTION (gtk_builder_get_object (builder, "undo_menu"));
 	hitori->redo_action = GTK_ACTION (gtk_builder_get_object (builder, "redo_menu"));
 	hitori->hint_action = GTK_ACTION (gtk_builder_get_object (builder, "hint_menu"));
+	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
 
 	g_object_unref (builder);
+
+	/* Reset the timer */
+	hitori_reset_timer (hitori);
 
 	return hitori->window;
 }
