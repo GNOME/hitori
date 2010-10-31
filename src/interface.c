@@ -148,9 +148,9 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			/* If the cell is tagged, draw the tag dots */
 			if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
 				if (hitori->board[iter.x][iter.y].status & CELL_PAINTED)
-					cairo_set_source_rgb (cr, 0.643137255, 0, 0); /* Tango's darkest "scarlet red" */				
+					cairo_set_source_rgb (cr, 0.125490196, 0.290196078, 0.529411765); /* Tango's darkest "sky blue" */
 				else
-					cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
+					cairo_set_source_rgb (cr, 0.447058824, 0.623529412, 0.811764706); /* Tango's lightest "sky blue" */
 
 				cairo_move_to (cr, x_pos, y_pos + TAG_OFFSET);
 				cairo_line_to (cr, x_pos, y_pos);
