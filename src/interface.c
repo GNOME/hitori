@@ -352,6 +352,10 @@ hitori_hint_cb (GtkAction *action, Hitori *hitori)
 {
 	HitoriVector iter;
 
+	/* Bail if we're already hinting */
+	if (hitori->hint_status > 0 && hitori->hint_status < HINT_FLASHES)
+		return;
+
 	/* Find the first cell which should be painted, but isn't (or vice-versa) */
 	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
 		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
