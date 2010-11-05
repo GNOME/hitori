@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
-"POT-Creation-Date: 2010-10-29 19:01+0000\n"
-"PO-Revision-Date: 2010-10-30 08:05+0100\n"
+"POT-Creation-Date: 2010-10-31 20:53+0000\n"
+"PO-Revision-Date: 2010-11-05 10:02+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../data/hitori.desktop.in.h:1
 #: ../data/hitori.ui.h:8
-#: ../src/main.c:196
+#: ../src/main.c:240
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -75,62 +75,69 @@ msgstr "N_amig"
 msgid "_Settings"
 msgstr "_Nastavitve"
 
-#: ../src/interface.c:64
+#: ../src/interface.c:72
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Datoteke uporabniškega vmesnika “%s” ni bilo mogoče naložiti."
 
-#: ../src/interface.c:454
+#: ../src/interface.c:514
 msgid "The help contents could not be displayed"
 msgstr "Vsebine pomoči ni mogoče prikazati"
 
-#: ../src/interface.c:475
+#: ../src/interface.c:535
 msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
 msgstr "Hitori je prosta programska oprema; program lahko razširjate in/ali spreminjate pod pogoji Splošnega dovoljenja GNU (GNU General PublicLicense), kot ga je objavila ustanova Free Software Foundation; bodisi različice 2 ali (po vaši izbiri) katerekoli poznejše različice."
 
-#: ../src/interface.c:479
+#: ../src/interface.c:539
 msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "Hitori se razširja v upanju, da bo uporaben, vendar BREZ VSAKRŠNEGA JAMSTVA; tudi brez posredne zagotovitve CENOVNE VREDNOSTI ali PRIMERNOSTI ZA DOLOČEN NAMEN.  Za podrobnosti glejte besedilo GNU General Public License."
 
-#: ../src/interface.c:483
+#: ../src/interface.c:543
 msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
 msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošnega javnega dovoljenja. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:495
+#: ../src/interface.c:555
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Avtorske pravice © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:496
+#: ../src/interface.c:556
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Miselna igra, ki jo je zasnoval Nikoli. "
 
-#: ../src/interface.c:498
+#: ../src/interface.c:558
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič, <andrej.znidarsic@gmail.com>"
 
-#: ../src/interface.c:502
+#: ../src/interface.c:562
 msgid "Hitori Website"
 msgstr "Spletišče Hitori"
 
-#: ../src/main.c:74
+#: ../src/main.c:76
 msgid "Do you want to stop the current game?"
 msgstr "Ali želite končati trenutno igro?"
 
-#: ../src/main.c:182
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
+#. * game; the second parameter is the number of seconds.
+#: ../src/main.c:150
+#, c-format
+msgid "Time: %02u:%02u"
+msgstr "Čas: %02u:%02u"
+
+#: ../src/main.c:226
 msgid "Enable debug mode"
 msgstr "Omogoči razhroščevalni način"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:184
+#: ../src/main.c:228
 msgid "Seed the board generation"
 msgstr "Seme za ustvarjanje plošče"
 
 #. Options
-#: ../src/main.c:200
+#: ../src/main.c:244
 msgid "- Play a game of Hitori"
 msgstr "- Igrajte igro Hitori"
 
-#: ../src/main.c:210
+#: ../src/main.c:254
 msgid "Command line options could not be parsed"
 msgstr "Možnosti ukazne vrstice ni bilo mogoče razčleniti"
 
