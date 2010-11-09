@@ -4,3 +4,4 @@ data/hitori.desktop.in
 [type: gettext/glade]data/hitori.ui
 src/interface.c
 src/main.c
+src/rules.c
