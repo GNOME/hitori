@@ -69,7 +69,7 @@ hitori_set_board_size (Hitori *hitori, guint board_size)
 {
 	/* Ask the user if they want to stop the current game, if they're playing at the moment */
 	if (hitori->processing_events == TRUE && hitori->made_a_move == TRUE) {
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
+		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window),
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_QUESTION,
 				GTK_BUTTONS_YES_NO,
