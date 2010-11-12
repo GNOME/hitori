@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-10-31 13:02+0000\n"
+"POT-Creation-Date: 2010-11-12 00:26+0000\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: British English <en@li.org>\n"
@@ -69,16 +69,16 @@ msgstr "_Hint"
 msgid "_Settings"
 msgstr "_Settings"
 
-#: ../src/interface.c:69
+#: ../src/interface.c:72
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "UI file “%s” could not be loaded"
 
-#: ../src/interface.c:497
+#: ../src/interface.c:527
 msgid "The help contents could not be displayed"
 msgstr "The help contents could not be displayed"
 
-#: ../src/interface.c:518
+#: ../src/interface.c:548
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -90,7 +90,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:522
+#: ../src/interface.c:552
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -102,7 +102,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:526
+#: ../src/interface.c:556
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -110,19 +110,19 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:538
+#: ../src/interface.c:568
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:539
+#: ../src/interface.c:569
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:541
+#: ../src/interface.c:571
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:545
+#: ../src/interface.c:575
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
@@ -154,6 +154,13 @@ msgstr "- Play a game of Hitori"
 #: ../src/main.c:254
 msgid "Command line options could not be parsed"
 msgstr "Command line options could not be parsed"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:266
+#, c-format
+msgid "You've won in a time of %02u:%02u!"
+msgstr "You've won in a time of %02u:%02u!"
 
 #~ msgid "You've won!"
 #~ msgstr "You've won!"
