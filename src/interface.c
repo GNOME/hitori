@@ -264,7 +264,12 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	undo->undo = hitori->undo_stack;
 	undo->redo = NULL;
 
-	if (event->state & GDK_SHIFT_MASK) {
+	if (event->state & GDK_SHIFT_MASK && event->state & GDK_CONTROL_MASK) {
+		/* Update both tags' state */
+		hitori->board[pos.x][pos.y].status ^= CELL_TAG1;
+		hitori->board[pos.x][pos.y].status ^= CELL_TAG2;
+		undo->type = UNDO_TAGS;
+	} else if (event->state & GDK_SHIFT_MASK) {
 		/* Update tag 1's state */
 		hitori->board[pos.x][pos.y].status ^= CELL_TAG1;
 		undo->type = UNDO_TAG1;
@@ -439,6 +444,10 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 		case UNDO_TAG2:
 			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
+		case UNDO_TAGS:
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			break;
 		case UNDO_NEW_GAME:
 		default:
 			/* This is just here to stop the compiler warning */
@@ -475,6 +484,10 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
 			break;
 		case UNDO_TAG2:
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			break;
+		case UNDO_TAGS:
+			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
 			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:

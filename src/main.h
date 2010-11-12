@@ -36,7 +36,8 @@ typedef enum {
 	UNDO_NEW_GAME,
 	UNDO_PAINT,
 	UNDO_TAG1,
-	UNDO_TAG2
+	UNDO_TAG2,
+	UNDO_TAGS /* = UNDO_TAG1 and UNDO_TAG2 */
 } HitoriUndoType;
 
 typedef struct _HitoriUndo HitoriUndo;
