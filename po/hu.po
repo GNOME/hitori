@@ -2,23 +2,23 @@
 # Copyright (C) 2009 Free Software Foundation, inc.
 # This file is distributed under the same license as the Hitori package.
 #
-# Németh Tamás <ntomasz@uhuklub.hu>, 2009.
-# Gabor Kelemen <kelemeng@gnome.hu>, 2009.
+# Németh Tamás <ntomasz at uhuklub dot hu>, 2009.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2009, 2010.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hitori-master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
-"POT-Creation-Date: 2009-04-26 15:19+0000\n"
-"PO-Revision-Date: 2009-05-09 00:58+0200\n"
-"Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
-"Language-Team: Hungarian <gnome@fsf.hu>\n"
+"Project-Id-Version: Hitori master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-14 22:31+0100\n"
+"PO-Revision-Date: 2010-11-14 22:30+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <gnome at fsf dot hu>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -70,76 +70,96 @@ msgstr "_Tipp"
 msgid "_Settings"
 msgstr "_Beállítások"
 
-#: ../src/interface.c:64
+#: ../src/interface.c:72
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "A(z) „%s/hitori/hitori.ui” felületfájl nem tölthető be."
+msgid "UI file “%s” could not be loaded"
+msgstr "A(z) „%s” felületfájl nem tölthető be"
 
-#: ../src/interface.c:220
-msgid "You've won!"
-msgstr "Ön nyert!"
+#: ../src/interface.c:527
+msgid "The help contents could not be displayed"
+msgstr "A súgó tartalma nem jeleníthető meg"
 
-#: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "A súgó tartalma nem jeleníthető meg."
-
-#: ../src/interface.c:536
+#: ../src/interface.c:548
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
 "Foundation, either version 3 of the License, or (at your option) any later "
 "version."
-msgstr "A Hitori szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software Foundation által kiadott GNU General Public License második (vagy bármely későbbi) változatában foglaltak alapján"
+msgstr ""
+"A Hitori szabad szoftver, terjesztheti és/vagy módosíthatja a Free Software "
+"Foundation által kiadott GNU General Public License második (vagy bármely "
+"későbbi) változatában foglaltak alapján"
 
-#: ../src/interface.c:540
+#: ../src/interface.c:552
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
 "details."
-msgstr "A Hitori programot abban a reményben terjesztjük, hogy hasznos lesz, de nem vállalunk SEMMIFÉLE GARANCIÁT, még olyan értelemben sem, hogy a program alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE. További részletekért tanulmányozza a GNU GPL licencet."
+msgstr ""
+"A Hitori programot abban a reményben terjesztjük, hogy hasznos lesz, de nem "
+"vállalunk SEMMIFÉLE GARANCIÁT, még olyan értelemben sem, hogy a program "
+"alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE. További "
+"részletekért tanulmányozza a GNU GPL licencet."
 
-#: ../src/interface.c:544
+#: ../src/interface.c:556
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr "A Hitori programhoz a GNU General Public License egy példánya is jár, ha nem kapta meg, itt elolvashatja: <http://www.gnu.org/licenses/>."
+msgstr ""
+"A Hitori programhoz a GNU General Public License egy példánya is jár, ha nem "
+"kapta meg, itt elolvashatja: <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:556
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Copyright © 2007–2009 Philip Withnall"
+#: ../src/interface.c:568
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:557
+#: ../src/interface.c:569
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Nikoli által megalkotott logikai játék."
 
-#: ../src/interface.c:560
+#: ../src/interface.c:571
 msgid "translator-credits"
-msgstr "Németh Tamás <ntomasz@uhuklub.hu>"
+msgstr ""
+"Kelemen Gábor <kelemeng at gnome dot hu>\n"
+"Németh Tamás <ntomasz at uhuklub dot hu>"
 
-#: ../src/interface.c:564
+#: ../src/interface.c:575
 msgid "Hitori Website"
 msgstr "A Hitori honlapja"
 
-#: ../src/main.c:74
+#: ../src/main.c:76
 msgid "Do you want to stop the current game?"
 msgstr "Meg akarja állítani az aktuális játékot?"
 
-#: ../src/main.c:182
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
+#. * game; the second parameter is the number of seconds.
+#: ../src/main.c:150
+#, c-format
+msgid "Time: %02u:%02u"
+msgstr "Idő: %02u:%02u"
+
+#: ../src/main.c:226
 msgid "Enable debug mode"
 msgstr "Hibakereső üzemmód bekapcsolása"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:184
+#: ../src/main.c:228
 msgid "Seed the board generation"
 msgstr "Táblagenerálás kezdőértéke"
 
 #. Options
-#: ../src/main.c:200
+#: ../src/main.c:244
 msgid "- Play a game of Hitori"
 msgstr " - Játsszon egyet a Hitorival"
 
-#: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "A parancssori kapcsolók nem értelmezhetők."
+#: ../src/main.c:254
+msgid "Command line options could not be parsed"
+msgstr "A parancssori kapcsolók nem értelmezhetők"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:266
+#, c-format
+msgid "You've won in a time of %02u:%02u!"
+msgstr "Ön nyert, %02u:%02u idő alatt!"
