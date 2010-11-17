@@ -2,21 +2,23 @@
 # Copyright (C) 2009 THE HITORI'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the HITORI package.
 # Og Maciel <ogmaciel@gnome.org>, 2009.
+# Flamarion Jorge <jorge.flamarion@gmai.com>, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-02 08:58-0500\n"
-"PO-Revision-Date: 2009-03-01 19:55-0500\n"
-"Last-Translator: Og Maciel <ogmaciel@gnome.org>\n"
-"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&component=general\n"
+"POT-Creation-Date: 2010-11-14 21:31+0000\n"
+"PO-Revision-Date: 2010-11-15 00:24-0200\n"
+"Last-Translator: Flamarion Jorge <jorge.flamarion@gmai.com>\n"
+"Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.com>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -68,20 +70,16 @@ msgstr "_Dica"
 msgid "_Settings"
 msgstr "_Configurações"
 
-#: ../src/interface.c:51
+#: ../src/interface.c:72
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "Não foi possível carregar o arquivo de ui \"%s/hitori/hitori.ui\"."
+msgid "UI file “%s” could not be loaded"
+msgstr "Arquivo UI \"%s\" não pode ser carregado"
 
-#: ../src/interface.c:208
-msgid "You've won!"
-msgstr "Você ganhou!"
+#: ../src/interface.c:527
+msgid "The help contents could not be displayed"
+msgstr "O conteúdo de ajuda não pode ser exibido"
 
-#: ../src/interface.c:486
-msgid "The help contents could not be displayed."
-msgstr "Não foi possível carregar o conteúdo de ajuda."
-
-#: ../src/interface.c:507
+#: ../src/interface.c:548
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -92,7 +90,7 @@ msgstr ""
 "termos da Licença Pública Geral GNU publicada pela Free Software Foundation; "
 "qualquer versão 2 da licença, ou (à sua escolha) qualquer versão posterior."
 
-#: ../src/interface.c:511
+#: ../src/interface.c:552
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -104,7 +102,7 @@ msgstr ""
 "PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter "
 "mais detalhes."
 
-#: ../src/interface.c:515
+#: ../src/interface.c:556
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -113,40 +111,59 @@ msgstr ""
 "Public License) junto com o Hitori. Caso contrário, veja <http://www.gnu.org/"
 "licenses/>."
 
-#: ../src/interface.c:527
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Copyright © 2007–2009 Philip Withnall"
+#: ../src/interface.c:568
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:528
+#: ../src/interface.c:569
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Um quebra-cabeça de lógica criado por Nikoli."
 
-#: ../src/interface.c:530
+#: ../src/interface.c:571
 msgid "translator-credits"
-msgstr "Og Maciel <ogmaciel@gnome.org>"
+msgstr ""
+"Og Maciel <ogmaciel@gnome.org>\n"
+"Flamarion Jorge <jorge.flamarion@gmail.com>"
 
-#: ../src/interface.c:534
+#: ../src/interface.c:575
 msgid "Hitori Website"
 msgstr "Website do Hitori"
 
-#: ../src/main.c:74
+#: ../src/main.c:76
 msgid "Do you want to stop the current game?"
-msgstr "Você deseja para o jogo atual?"
+msgstr "Você deseja parar o jogo atual?"
 
-#: ../src/main.c:182
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
+#. * game; the second parameter is the number of seconds.
+#: ../src/main.c:150
+#, c-format
+msgid "Time: %02u:%02u"
+msgstr "Tempo: %02u:%02u"
+
+#: ../src/main.c:226
 msgid "Enable debug mode"
 msgstr "Habilitar o modo de depuração"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:184
+#: ../src/main.c:228
 msgid "Seed the board generation"
-msgstr "Escolha um númro para gerar o tabuleiro"
+msgstr "Escolha um número para gerar o tabuleiro"
 
 #. Options
-#: ../src/main.c:200
+#: ../src/main.c:244
 msgid "- Play a game of Hitori"
 msgstr "- Jogar uma partida de Hitori"
 
-#: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "Não foi possível analisar as opções da linha de comando."
+#: ../src/main.c:254
+msgid "Command line options could not be parsed"
+msgstr "Linha de comando não pode ser analisada"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:266
+#, c-format
+msgid "You've won in a time of %02u:%02u!"
+msgstr "Você ganhou em um tempo de %02u:%02u!"
+
+#~ msgid "You've won!"
+#~ msgstr "Você ganhou!"
