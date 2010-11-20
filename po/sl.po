@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
-"POT-Creation-Date: 2010-10-31 20:53+0000\n"
-"PO-Revision-Date: 2010-11-05 10:02+0100\n"
+"POT-Creation-Date: 2010-11-18 18:48+0000\n"
+"PO-Revision-Date: 2010-11-19 10:12+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -80,35 +80,35 @@ msgstr "_Nastavitve"
 msgid "UI file “%s” could not be loaded"
 msgstr "Datoteke uporabniškega vmesnika “%s” ni bilo mogoče naložiti."
 
-#: ../src/interface.c:514
+#: ../src/interface.c:527
 msgid "The help contents could not be displayed"
 msgstr "Vsebine pomoči ni mogoče prikazati"
 
-#: ../src/interface.c:535
+#: ../src/interface.c:548
 msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
 msgstr "Hitori je prosta programska oprema; program lahko razširjate in/ali spreminjate pod pogoji Splošnega dovoljenja GNU (GNU General PublicLicense), kot ga je objavila ustanova Free Software Foundation; bodisi različice 2 ali (po vaši izbiri) katerekoli poznejše različice."
 
-#: ../src/interface.c:539
+#: ../src/interface.c:552
 msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "Hitori se razširja v upanju, da bo uporaben, vendar BREZ VSAKRŠNEGA JAMSTVA; tudi brez posredne zagotovitve CENOVNE VREDNOSTI ali PRIMERNOSTI ZA DOLOČEN NAMEN.  Za podrobnosti glejte besedilo GNU General Public License."
 
-#: ../src/interface.c:543
+#: ../src/interface.c:556
 msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
 msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošnega javnega dovoljenja. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:555
+#: ../src/interface.c:568
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Avtorske pravice © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:556
+#: ../src/interface.c:569
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Miselna igra, ki jo je zasnoval Nikoli. "
 
-#: ../src/interface.c:558
+#: ../src/interface.c:571
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič, <andrej.znidarsic@gmail.com>"
 
-#: ../src/interface.c:562
+#: ../src/interface.c:575
 msgid "Hitori Website"
 msgstr "Spletišče Hitori"
 
@@ -140,6 +140,13 @@ msgstr "- Igrajte igro Hitori"
 #: ../src/main.c:254
 msgid "Command line options could not be parsed"
 msgstr "Možnosti ukazne vrstice ni bilo mogoče razčleniti"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:266
+#, c-format
+msgid "You've won in a time of %02u:%02u!"
+msgstr "Zmagali ste s časom %02u:%02u!"
 
 #~ msgid "You've won!"
 #~ msgstr "Zmaga!"
