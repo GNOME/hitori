@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori help master\n"
 "POT-Creation-Date: 2010-11-14 21:31+0000\n"
-"PO-Revision-Date: 2010-11-16 16:04+0100\n"
+"PO-Revision-Date: 2010-11-22 11:32+0100\n"
 "Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
@@ -90,11 +90,11 @@ msgstr "Lahko:"
 
 #: C/license.page:25(em)
 msgid "To share"
-msgstr "Reproducirate, distribuirate, date v najem in priobčujete javnosti"
+msgstr "Delite"
 
 #: C/license.page:26(p)
 msgid "To copy, distribute and transmit the work."
-msgstr "Kopirati, distribuirati dati v najem in priobčevati javnosti."
+msgstr "Kopirate, distribuirate, date v najem in priobčujete javnosti."
 
 #: C/license.page:29(em)
 msgid "To remix"
