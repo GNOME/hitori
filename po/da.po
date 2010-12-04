@@ -1,14 +1,14 @@
 # Danish translation for hitori.
-# Copyright (C) 2009 hitori's COPYRIGHT HOLDER.
+# Copyright (C) 2010 hitori & nedenstående oversættere.
 # This file is distributed under the same license as the hitori package.
-# Joe Hansen (joedalton2@yahoo.dk), 2009.
+# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-10-02 00:24+0200\n"
-"PO-Revision-Date: 2009-09-30 22:31+0200\n"
+"POT-Creation-Date: 2010-12-04 12:31+0100\n"
+"PO-Revision-Date: 2010-11-16 22:31+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -68,20 +68,16 @@ msgstr "_Fif"
 msgid "_Settings"
 msgstr "_Opsætning"
 
-#: ../src/interface.c:64
+#: ../src/interface.c:72
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "UI-fil \"%s/hitori/hitori.ui\" kunne ikke indlæses."
+msgid "UI file “%s” could not be loaded"
+msgstr "UI-fil \"%s\" kunne ikke indlæses"
 
-#: ../src/interface.c:220
-msgid "You've won!"
-msgstr "Du har vundet!"
+#: ../src/interface.c:527
+msgid "The help contents could not be displayed"
+msgstr "Hjælpeindholdet kunne ikke vises"
 
-#: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "Hjælpeindholdet kunne ikke vises."
-
-#: ../src/interface.c:536
+#: ../src/interface.c:548
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -93,7 +89,7 @@ msgstr ""
 "Foundation; enten version 3 af licensen eller, efter eget valg, enhver nyere "
 "version."
 
-#: ../src/interface.c:540
+#: ../src/interface.c:552
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -105,7 +101,7 @@ msgstr ""
 "ET BESTEMT FORMÅL, idet der henvises til GNU General Public License for "
 "detaljer."
 
-#: ../src/interface.c:544
+#: ../src/interface.c:556
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -113,44 +109,58 @@ msgstr ""
 "Du bør have modtaget en kopi af GNU General Public License sammen med "
 "Hitori.  Er dette ikke tilfældet, så se <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:556
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Ophavsret © 2007-2009 Philip Withnall"
+#: ../src/interface.c:568
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:557
+#: ../src/interface.c:569
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Et logisk puslespil designet af Nikoli."
 
-#: ../src/interface.c:560
+#: ../src/interface.c:571
 msgid "translator-credits"
 msgstr ""
-"Joe Hansen <joedalton2@yahoo.dk>, 2009.\n"
+"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010.\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/interface.c:564
+#: ../src/interface.c:575
 msgid "Hitori Website"
 msgstr "Hitoris hjemmeside"
 
-#: ../src/main.c:74
+#: ../src/main.c:76
 msgid "Do you want to stop the current game?"
 msgstr "Ønsker du at stoppe det aktuelle spil?"
 
-#: ../src/main.c:182
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
+#. * game; the second parameter is the number of seconds.
+#: ../src/main.c:150
+#, c-format
+msgid "Time: %02u:%02u"
+msgstr "Tid: %02u:%02u"
+
+#: ../src/main.c:226
 msgid "Enable debug mode"
 msgstr "Slå fejlsøgningstilstand til"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:184
+#: ../src/main.c:228
 msgid "Seed the board generation"
 msgstr "Grundlagstal for brætoprettelsen"
 
 #. Options
-#: ../src/main.c:200
+#: ../src/main.c:244
 msgid "- Play a game of Hitori"
 msgstr "- Spil Hitori"
 
-#: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "Kommandolinjeindstillinger kunne ikke fortolkes."
+#: ../src/main.c:254
+msgid "Command line options could not be parsed"
+msgstr "Kommandolinjeindstillinger kunne ikke fortolkes"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:266
+#, c-format
+msgid "You've won in a time of %02u:%02u!"
+msgstr "Du har vundet i tiden %02u:%02u!"
