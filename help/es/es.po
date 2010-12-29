@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.help.master\n"
-"POT-Creation-Date: 2010-07-14 21:22+0000\n"
-"PO-Revision-Date: 2010-10-13 12:20+0200\n"
+"POT-Creation-Date: 2010-10-31 13:09+0000\n"
+"PO-Revision-Date: 2010-12-29 23:01+0100\n"
 "Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "MIME-Version: 1.0\n"
@@ -55,16 +55,24 @@ msgstr ""
 "<link xref=\"game\">primera regla de Hitori</link>."
 
 #: C/strategy.page:15(p)
+#| msgid ""
+#| "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+#| "can't both be painted. <app>Hitori</app> will highlight in red the "
+#| "leftmost cell which violates rule 2."
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the leftmost "
-"cell which violates rule 2."
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
 msgstr ""
 "Tenga siempre en mente la segunda regla de Hitori, dos celdas adyacentes no "
 "pueden estar ambas pintadas. <app>Hitori</app> resaltará en rojo la celda "
-"más a la izquierda que viole la regla número dos."
+"más a la izquierda que viole la regla número dos. De igual forma, se "
+"resaltarán en rojo grupos de celtas que violen la tercera regla separando "
+"uno o más celdas sin pintar de las otras celdas sin pintar."
 
-#: C/strategy.page:18(p)
+#: C/strategy.page:19(p)
 msgid ""
 "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
 "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
@@ -85,12 +93,6 @@ msgid "Playing a Game"
 msgstr "Jugar una partida"
 
 #: C/playing.page:9(p)
-#| msgid ""
-#| "To start a new game, choose <menuchoice><shortcut><keycombo><keycap>Ctrl</"
-#| "keycap><keycap>N</keycap></keycombo></shortcut><guimenu>Game</"
-#| "guimenu><guimenuitem>New Game</guimenuitem></menuchoice>. If you are "
-#| "already playing a game, <application>Hitori</application> will ask if you "
-#| "want to stop the current game."
 msgid ""
 "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
 "\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
@@ -113,14 +115,6 @@ msgstr ""
 "podrá manipular el tablero."
 
 #: C/playing.page:13(p)
-#| msgid ""
-#| "<application>Hitori</application> also allows you to highlight cells for "
-#| "your own reference when solving a board. This can be achieved by holding "
-#| "<keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. "
-#| "They both highlight cells differently, and cells can be highlighted in "
-#| "both manners at the same time. Highlighted cells can be de-highlighted by "
-#| "clicking on them again while holding either <keycap>Ctrl</keycap> or "
-#| "<keycap>Shift</keycap>."
 msgid ""
 "<app>Hitori</app> also allows you to highlight cells for your own reference "
 "when solving a board. This can be achieved by holding <key>Ctrl</key> or "
@@ -138,15 +132,6 @@ msgstr ""
 "<key>Mayús</key>."
 
 #: C/playing.page:17(p)
-#| msgid ""
-#| "To undo or redo a move, choose "
-#| "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>Z</keycap></"
-#| "keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Undo</"
-#| "guimenuitem></menuchoice> or "
-#| "<menuchoice><shortcut><keycombo><keycap>Shift</keycap><keycap>Ctrl</"
-#| "keycap><keycap>Z</keycap></keycombo></shortcut><guimenu>Game</"
-#| "guimenu><guimenuitem>Redo</guimenuitem></menuchoice>. You may undo or "
-#| "redo as many moves as you like without restriction."
 msgid ""
 "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
 "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
@@ -159,13 +144,6 @@ msgstr ""
 "Puede deshacer y rehacer tantos movimientos como quiera, sin restricción."
 
 #: C/playing.page:20(p)
-#| msgid ""
-#| "To get a hint on which cells to paint out, choose "
-#| "<menuchoice><shortcut><keycombo><keycap>Ctrl</keycap><keycap>H</keycap></"
-#| "keycombo></shortcut><guimenu>Game</guimenu><guimenuitem>Hint</"
-#| "guimenuitem></menuchoice>. A cell will be highlighted with a flashing red "
-#| "outline. This shows that the current status of the cell (painted or "
-#| "unpainted) is incorrect, and should be changed for the game to be won."
 msgid ""
 "To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
@@ -220,7 +198,6 @@ msgid "Under the following conditions:"
 msgstr "Bajo las siguientes condiciones:"
 
 #: C/license.page:38(em)
-#| msgid "Introduction"
 msgid "Attribution"
 msgstr "Atribución"
 
@@ -268,7 +245,6 @@ msgid "philip@tecnocode.co.uk"
 msgstr "philip@tecnocode.co.uk"
 
 #: C/index.page:8(years)
-#| msgid "2008–2009"
 msgid "2008–2010"
 msgstr "2008–2010"
 
@@ -283,7 +259,6 @@ msgstr ""
 "compartir igual 3.0 sin soporte</link>."
 
 #: C/index.page:15(title)
-#| msgid "Hitori"
 msgid "Hitori Help"
 msgstr "Ayuda de Hitori"
 
@@ -298,12 +273,15 @@ msgstr "Sugerencias y trucos"
 #. When image changes, this message will be marked fuzzy or untranslated for you.
 #. It doesn't matter what you translate it to: it's not used at all.
 #: C/game.page:21(None)
+#| msgid ""
+#| "@@image: 'figures/hitori_main_window.png'; "
+#| "md5=7d84786ca244435340ecd6c7cb98dfd1"
 msgid ""
 "@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
+"md5=b6ea3ee1ff73311d002cfdb4463032be"
 msgstr ""
 "@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
+"md5=b6ea3ee1ff73311d002cfdb4463032be"
 
 #: C/game.page:5(desc)
 msgid "Introduction to the game of Hitori."
@@ -314,11 +292,6 @@ msgid "Hitori the Game"
 msgstr "El juego de Hitori"
 
 #: C/game.page:9(p)
-#| msgid ""
-#| "Hitori is a small logic puzzle in a similar vein to the more popular "
-#| "Sudoku. In the game, the player starts with a square board of numbers, "
-#| "and has to <quote>paint out</quote> cells until there are no duplicate "
-#| "numbers in each row and column. The following rules apply:"
 msgid ""
 "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
 "In the game, the player starts with a square board of numbers, and has to "
@@ -365,12 +338,10 @@ msgid "Main game window"
 msgstr "Ventana principal del juego"
 
 #: C/game.page:20(desc)
-#| msgid "<application>Hitori</application> Main Window"
 msgid "<app>Hitori</app> main window"
 msgstr "Ventana principal de <application>Hitori</application>"
 
 #: C/game.page:22(p)
-#| msgid "<application>Hitori</application> Main Window"
 msgid "<app>Hitori</app> main window."
 msgstr "Ventana principal de <application>Hitori</application>."
 
@@ -391,12 +362,6 @@ msgstr ""
 "tableros cuadrados de 5-10 celdas."
 
 #: C/customization.page:10(p)
-#| msgid ""
-#| "To change the board size, choose an option from "
-#| "<menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></"
-#| "menuchoice>. <application>Hitori</application> will ask if you want to "
-#| "stop the current game if you're in the middle of one, then start a new "
-#| "game with the requested board size."
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
