@@ -235,7 +235,6 @@ main (int argc, char *argv[])
 	textdomain (GETTEXT_PACKAGE);
 #endif
 
-	gtk_set_locale ();
 	gtk_init (&argc, &argv);
 	g_set_application_name (_("Hitori"));
 	gtk_window_set_default_icon_name ("hitori");
