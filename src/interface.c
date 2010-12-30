@@ -388,7 +388,7 @@ hitori_update_hint (Hitori *hitori)
 	cell_size = board_width / hitori->board_size;
 
 	/* Centre the board */
-	cr = gdk_cairo_create (GDK_DRAWABLE (gtk_widget_get_window (hitori->drawing_area)));
+	cr = gdk_cairo_create (gtk_widget_get_window (hitori->drawing_area));
 	cairo_save (cr);
 
 	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
