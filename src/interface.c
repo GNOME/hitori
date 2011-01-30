@@ -552,7 +552,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 
 	gtk_show_about_dialog (GTK_WINDOW (hitori->window),
 				"version", VERSION,
-				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232010 Philip Withnall"),
+				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232011 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
 				"authors", authors,
 				"translator-credits", _("translator-credits"),

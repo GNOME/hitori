@@ -1,5 +1,10 @@
 Major new features in version...
 
+0.2.6:
+* Update COPYING-DOCS to give the CC license rather than the GFDL
+  (with the documentation rewrite in 0.2.5, the documentation was relicensed to a
+   Creative Commons Attribution-ShareAlike 3.0 Unported license)
+
 0.2.5:
 * Convert documentation to Mallard format
 * Expand the documentation
