@@ -1,12 +1,12 @@
 # German translation of the Hitori manual.
-# Mario Blättermann <mariobl@gnome.org>, 2009, 2010.
+# Mario Blättermann <mariobl@freenet.de>, 2009-2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori help\n"
-"POT-Creation-Date: 2010-07-14 21:22+0000\n"
+"POT-Creation-Date: 2010-10-31 13:09+0000\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,15 +55,19 @@ msgstr ""
 #: C/strategy.page:15(p)
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells can't "
-"both be painted. <app>Hitori</app> will highlight in red the leftmost cell "
-"which violates rule 2."
+"both be painted. <app>Hitori</app> will highlight in red the cells which "
+"violate rule 2. Similarly, groups of cells which violate rule 3 by separating "
+"one or more unpainted cells from the other unpainted cells will be "
+"highlighted in red."
 msgstr ""
 "Denken Sie immer an die zweite Hitori-Regel, welche besagt, dass zwei "
 "benachbarte Zellen nicht zugleich eingefärbt sein können. <app>Hitori</app> "
 "hebt die jeweils äußerst linke Zelle hervor, welche die zweite Regel "
-"übertritt."
+"übertritt. Analog werden Zellengruppen in Rot hervorgehoben, die die dritte "
+"Regel brechen, weil eine oder mehrere nicht eingefärbte Zellen von den "
+"anderen nicht eingefärbten Zellen getrennt werden."
 
-#: C/strategy.page:18(p)
+#: C/strategy.page:19(p)
 msgid ""
 "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
 "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to flag "
@@ -272,7 +276,7 @@ msgstr "Tipps und Tricks"
 #: C/game.page:21(None)
 msgid ""
 "@@image: 'figures/hitori_main_window.png'; "
-"md5=7d84786ca244435340ecd6c7cb98dfd1"
+"md5=b6ea3ee1ff73311d002cfdb4463032be"
 msgstr "translated"
 
 #: C/game.page:5(desc)
@@ -370,5 +374,4 @@ msgstr ""
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
 #: C/index.page:0(None)
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@gnome.org>, 2009, 2010"
-
+msgstr "Mario Blättermann <mariobl@freenet.de>, 2009, 2010, 2011"
