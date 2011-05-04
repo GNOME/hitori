@@ -1,14 +1,15 @@
 # German translation of Hitori
-# Mario Blättermann <mariobl@gnome.org>, 2009.
+# Mario Blättermann <mariobl@freenet.de>, 2009, 2011.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-03-10 19:18+0100\n"
-"PO-Revision-Date: 2009-03-10 19:53+0100\n"
-"Last-Translator: Mario Blättermann <mariobl@gnome.org>\n"
+"POT-Creation-Date: 2011-05-04 21:52+0200\n"
+"PO-Revision-Date: 2011-05-04 21:53+0100\n"
+"Last-Translator: Mario Blättermann <mariobl@freenet.de>\n"
 "Language-Team: German <gnome-de@gnome.org>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,19 +70,18 @@ msgstr "_Einstellungen"
 
 #: ../src/interface.c:64
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr ""
-"Benutzerschnittstellen-Datei »%s/hitori/hitori.ui« konnte nicht geladen werden."
+msgid "UI file “%s” could not be loaded"
+msgstr "Benutzerschnittstellen-Datei »%s« konnte nicht geladen werden"
 
 #: ../src/interface.c:220
 msgid "You've won!"
 msgstr "Glückwunsch, Sie haben gewonnen!"
 
 #: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "Die Hilfe konnte nicht angezeigt werden."
+msgid "The help contents could not be displayed"
+msgstr "Die Hilfe konnte nicht angezeigt werden"
 
-#: ../src/interface.c:536
+#: ../src/interface.c:535
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -93,7 +93,7 @@ msgstr ""
 "sie von der Free Software Foundation festgelegt wurden; entweder in Version 3 "
 "der Lizenz oder (nach Ihrem Ermessen) in jeder folgenden Lizenz"
 
-#: ../src/interface.c:540
+#: ../src/interface.c:539
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR "
@@ -104,7 +104,7 @@ msgstr ""
 "oder der NUTZBARKEIT FÜR EINEN SPEZIELLEN ZWECK. Schauen Sie für weitere "
 "Informationen bitte in der GNU General Public License (GNU GPL) nach."
 
-#: ../src/interface.c:544
+#: ../src/interface.c:543
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -113,19 +113,19 @@ msgstr ""
 "License erhalten haben. Wenn dem nicht so ist, siehe <http://www.gnu.org/"
 "licenses/>."
 
-#: ../src/interface.c:556
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Copyright © 2007–2009 Philip Withnall"
+#: ../src/interface.c:555
+msgid "Copyright © 2007–2011 Philip Withnall"
+msgstr "Copyright © 2007–2011 Philip Withnall"
 
-#: ../src/interface.c:557
+#: ../src/interface.c:556
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Ein von Nikoli entworfenes Logikspiel."
 
-#: ../src/interface.c:560
+#: ../src/interface.c:558
 msgid "translator-credits"
-msgstr "Mario Blättermann <mariobl@gnome.org>, 2009"
+msgstr "Mario Blättermann <mariobl@freenet.de>"
 
-#: ../src/interface.c:564
+#: ../src/interface.c:562
 msgid "Hitori Website"
 msgstr "Hitori-Webseite"
 
@@ -148,5 +148,5 @@ msgid "- Play a game of Hitori"
 msgstr "- ein Hitori-Puzzle spielen"
 
 #: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "Befehlszeilenoptionen konnten nicht ausgewertet werden."
+msgid "Command line options could not be parsed"
+msgstr "Befehlszeilenoptionen konnten nicht ausgewertet werden"
