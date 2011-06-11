@@ -1,5 +1,25 @@
 Major new features in version...
 
+0.3.0:
+* Port to GTK+ 3
+* Add timing support (bgo#575897)
+* Improve the appearance of the game considerably
+* Update the documentation and relicence it to cc-by-sa 3.0 (from GFDL 1.2)
+* Translations:
+** cs (Marek Černocký)
+** da (Joe Hansen)
+** de (Mario Blättermann)
+** en_GB (Philip Withnall)
+** es (Jorge González)
+** fr (Gérard Baylard, Bruno Brouard)
+** hu (Gabor Kelemen)
+** lv (Rūdofls Mazurs)
+** pt_BR (Flamarion Jorge)
+** ru (Yuri Myasoedov)
+** sl (Andrej Žnidaršič)
+** sv (Daniel Nylander)
+** vi (Lê Trường An)
+
 0.2.5:
 * Convert documentation to Mallard format
 * Expand the documentation
