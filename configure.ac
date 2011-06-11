@@ -1,4 +1,4 @@
-AC_INIT([Hitori],[0.3.0],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[http://live.gnome.org/Hitori])
+AC_INIT([Hitori],[0.4.0],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[http://live.gnome.org/Hitori])
 
 AM_INIT_AUTOMAKE([check-news dist-bzip2 subdir-objects])
 AC_CONFIG_HEADERS([config.h])
