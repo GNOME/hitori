@@ -361,9 +361,8 @@ hitori_cancel_hinting (Hitori *hitori)
 static gboolean
 hitori_update_hint (Hitori *hitori)
 {
-	cairo_t *cr;
 	gint area_width, area_height;
-	guint board_width, board_height;
+	guint board_width, board_height, drawing_area_x_offset, drawing_area_y_offset;
 	gfloat cell_size;
 
 	/* Check to see if hinting's been stopped by a cell being changed (race condition) */
@@ -390,17 +389,12 @@ hitori_update_hint (Hitori *hitori)
 
 	cell_size = board_width / hitori->board_size;
 
-	/* Centre the board */
-	cr = gdk_cairo_create (gtk_widget_get_window (hitori->drawing_area));
-	cairo_save (cr);
-
-	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
-	hitori->drawing_area_y_offset = (area_height - board_height) / 2;
-	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
+	drawing_area_x_offset = (area_width - board_width) / 2;
+	drawing_area_y_offset = (area_height - board_height) / 2;
 
 	/* Redraw the cell */
-	gtk_widget_queue_draw_area (hitori->drawing_area, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size,
-	                            cell_size, cell_size);
+	gtk_widget_queue_draw_area (hitori->drawing_area, drawing_area_x_offset + hitori->hint_position.x * cell_size,
+	                            drawing_area_y_offset + hitori->hint_position.y * cell_size, cell_size, cell_size);
 
 	if (hitori->hint_status == HINT_DISABLED) {
 		hitori_cancel_hinting (hitori);
