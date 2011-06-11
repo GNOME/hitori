@@ -160,7 +160,10 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 			border.left = 2.0; /* Hack! */
 
 			/* Draw the fill */
-			g_message ("State: %u", state);
+			if (hitori->debug == TRUE) {
+				g_debug ("State: %u", state);
+			}
+
 			gtk_style_context_get_background_color (style_context, state, &colour);
 			gdk_cairo_set_source_rgba (cr, &colour);
 			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
