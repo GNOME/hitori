@@ -1,5 +1,9 @@
 Major new features in version...
 
+0.3.1:
+* Fix internationalisation (bgo#652399)
+* Fix some drawing artifacts with hints (bgo#652684)
+
 0.3.0:
 * Port to GTK+ 3
 * Add timing support (bgo#575897)
