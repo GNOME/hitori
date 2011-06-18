@@ -232,9 +232,14 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
+		gfloat line_width = border.left * 2.5;
 		cairo_set_source_rgb (cr, 1, 0, 0); /* red */
-		cairo_set_line_width (cr, border.left * 5.0);
-		cairo_rectangle (cr, hitori->hint_position.x * cell_size, hitori->hint_position.y * cell_size, cell_size, cell_size);
+		cairo_set_line_width (cr, line_width);
+		cairo_rectangle (cr,
+				 hitori->hint_position.x * cell_size + line_width / 2,
+				 hitori->hint_position.y * cell_size + line_width / 2,
+				 cell_size - line_width,
+				 cell_size - line_width);
 		cairo_stroke (cr);
 	}
 
