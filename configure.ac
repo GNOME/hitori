@@ -2,7 +2,7 @@ AC_INIT([Hitori],[0.3.0],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitor
 
 AM_INIT_AUTOMAKE([check-news dist-bzip2 subdir-objects])
 AC_CONFIG_HEADERS([config.h])
-AM_MAINTAINER_MODE
+AM_MAINTAINER_MODE([enable])
 
 AC_PROG_CC
 AM_PROG_CC_C_O
