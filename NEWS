@@ -1,5 +1,16 @@
 Major new features in version...
 
+0.3.2:
+* Remove implicit dependency on libm
+* Fix some drawing artifacts with cell borders
+* Translations:
+** de (Mario Blättermann)
+** fr (Gérard Baylard)
+** gl (Fran Diéguez)
+** pl (Piotr Drąg)
+** ro (Cristian Buzdugă, Daniel Șerbănescu)
+** sl (Мирослав Николић)
+
 0.3.1:
 * Fix internationalisation (bgo#652399)
 * Fix some drawing artifacts with hints (bgo#652684)
