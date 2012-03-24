@@ -270,8 +270,8 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	cell_size = width / hitori->board_size;
 
 	/* Determine the cell in which the button was released */
-	pos.x = floor ((event->x - hitori->drawing_area_x_offset) / cell_size);
-	pos.y = floor ((event->y - hitori->drawing_area_y_offset) / cell_size);
+	pos.x = (guchar) ((event->x - hitori->drawing_area_x_offset) / cell_size);
+	pos.y = (guchar) ((event->y - hitori->drawing_area_y_offset) / cell_size);
 
 	if (pos.x >= hitori->board_size || pos.y >= hitori->board_size)
 		return FALSE;

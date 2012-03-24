@@ -28,7 +28,6 @@ IT_PROG_INTLTOOL([0.35.0])
 GNOME_DOC_INIT
 
 # Dependencies
-AC_CHECK_FUNCS([floor])
 PKG_CHECK_MODULES([GENERAL],[glib-2.0 gtk+-3.0 gmodule-2.0 cairo >= 1.4])
 
 # Output!
