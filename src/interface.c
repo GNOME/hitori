@@ -105,6 +105,100 @@ hitori_create_interface (Hitori *hitori)
 	return hitori->window;
 }
 
+#define BORDER_LEFT 2.0
+
+static void
+draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat cell_size, gdouble x_pos, gdouble y_pos,
+           HitoriVector iter)
+{
+	gchar *text;
+	PangoLayout *layout;
+	gint text_width, text_height;
+	GtkStateFlags state = 0;
+	gboolean painted = FALSE;
+	PangoFontDescription *font_desc;
+	GdkRGBA colour;
+	GtkBorder border;
+
+	if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
+		painted = TRUE;
+		state = GTK_STATE_FLAG_INSENSITIVE;
+	}
+
+	/* Set up the border */
+	gtk_style_context_get_border (style_context, state, &border);
+	border.left = BORDER_LEFT; /* Hack! */
+
+	/* Draw the fill */
+	if (hitori->debug == TRUE) {
+		g_debug ("State: %u", state);
+	}
+
+	gtk_style_context_get_background_color (style_context, state, &colour);
+	gdk_cairo_set_source_rgba (cr, &colour);
+	cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
+	cairo_fill (cr);
+
+	/* If the cell is tagged, draw the tag dots */
+	if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
+		/* Tango's lightest "sky blue" */
+		cairo_set_source_rgba (cr, 0.447058824, 0.623529412, 0.811764706, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
+
+		cairo_move_to (cr, x_pos, y_pos + TAG_OFFSET);
+		cairo_line_to (cr, x_pos, y_pos);
+		cairo_line_to (cr, x_pos + TAG_OFFSET, y_pos);
+		cairo_arc (cr, x_pos + TAG_OFFSET, y_pos + TAG_OFFSET, TAG_RADIUS * cell_size, 0.0, 0.5 * M_PI);
+		cairo_fill (cr);
+	}
+
+	if (hitori->board[iter.x][iter.y].status & CELL_TAG2) {
+		/* Tango's lightest "chameleon" */
+		cairo_set_source_rgba (cr, 0.541176471, 0.88627451, 0.203921569, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
+
+		cairo_move_to (cr, x_pos + cell_size - TAG_OFFSET, y_pos);
+		cairo_line_to (cr, x_pos + cell_size, y_pos);
+		cairo_line_to (cr, x_pos + cell_size, y_pos + TAG_OFFSET);
+		cairo_arc (cr, x_pos + cell_size - TAG_OFFSET, y_pos + TAG_OFFSET, TAG_RADIUS * cell_size, 0.5 * M_PI, 1.0 * M_PI);
+		cairo_fill (cr);
+	}
+
+	/* Draw the border */
+	gtk_style_context_get_border_color (style_context, state, &colour);
+	gdk_cairo_set_source_rgba (cr, &colour);
+	cairo_set_line_width (cr, border.left);
+	cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
+	cairo_stroke (cr);
+
+	/* Draw the text */
+	text = g_strdup_printf ("%u", hitori->board[iter.x][iter.y].num);
+	layout = pango_cairo_create_layout (cr);
+
+	pango_layout_set_text (layout, text, -1);
+
+	font_desc = (painted == TRUE) ? hitori->painted_font_desc : hitori->normal_font_desc;
+
+	if (hitori->board[iter.x][iter.y].status & CELL_ERROR) {
+		cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
+		pango_font_description_set_weight (font_desc, PANGO_WEIGHT_BOLD);
+	} else {
+		gtk_style_context_get_color (style_context, state, &colour);
+		gdk_cairo_set_source_rgba (cr, &colour);
+		pango_font_description_set_weight (font_desc, PANGO_WEIGHT_NORMAL);
+	}
+
+	pango_layout_set_font_description (layout, font_desc);
+
+	pango_layout_get_pixel_size (layout, &text_width, &text_height);
+	cairo_move_to (cr,
+	               x_pos + (cell_size - text_width) / 2,
+	               y_pos + (cell_size - text_height) / 2);
+
+	pango_cairo_show_layout (cr, layout);
+
+	g_free (text);
+	g_object_unref (layout);
+}
+
 gboolean
 hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 {
@@ -114,7 +208,6 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 	gfloat cell_size;
 	gdouble x_pos, y_pos;
 	GtkStyleContext *style_context;
-	GtkBorder border;
 
 	area_width = gdk_window_get_width (gtk_widget_get_window (hitori->drawing_area));
 	area_height = gdk_window_get_height (gtk_widget_get_window (hitori->drawing_area));
@@ -139,100 +232,27 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 	hitori->drawing_area_y_offset = (area_height - board_height) / 2;
 	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
 
-	/* Draw the cells */
+	/* Draw the unpainted cells first. */
 	for (iter.x = 0, x_pos = 0; iter.x < hitori->board_size; iter.x++, x_pos += cell_size) { /* columns (X) */
 		for (iter.y = 0, y_pos = 0; iter.y < hitori->board_size; iter.y++, y_pos += cell_size) { /* rows (Y) */
-			gchar *text;
-			PangoLayout *layout;
-			gint text_width, text_height;
-			GtkStateFlags state = 0;
-			gboolean painted = FALSE;
-			PangoFontDescription *font_desc;
-			GdkRGBA colour;
+			if (!(hitori->board[iter.x][iter.y].status & CELL_PAINTED)) {
+				draw_cell (hitori, style_context, cr, cell_size, x_pos, y_pos, iter);
+			}
+		}
+	}
 
+	/* Next draw the painted cells (so that their borders are painted over those of the unpainted cells).. */
+	for (iter.x = 0, x_pos = 0; iter.x < hitori->board_size; iter.x++, x_pos += cell_size) { /* columns (X) */
+		for (iter.y = 0, y_pos = 0; iter.y < hitori->board_size; iter.y++, y_pos += cell_size) { /* rows (Y) */
 			if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
-				painted = TRUE;
-				state = GTK_STATE_FLAG_INSENSITIVE;
+				draw_cell (hitori, style_context, cr, cell_size, x_pos, y_pos, iter);
 			}
-
-			/* Set up the border */
-			gtk_style_context_get_border (style_context, state, &border);
-			border.left = 2.0; /* Hack! */
-
-			/* Draw the fill */
-			if (hitori->debug == TRUE) {
-				g_debug ("State: %u", state);
-			}
-
-			gtk_style_context_get_background_color (style_context, state, &colour);
-			gdk_cairo_set_source_rgba (cr, &colour);
-			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
-			cairo_fill (cr);
-
-			/* If the cell is tagged, draw the tag dots */
-			if (hitori->board[iter.x][iter.y].status & CELL_TAG1) {
-				/* Tango's lightest "sky blue" */
-				cairo_set_source_rgba (cr, 0.447058824, 0.623529412, 0.811764706, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
-
-				cairo_move_to (cr, x_pos, y_pos + TAG_OFFSET);
-				cairo_line_to (cr, x_pos, y_pos);
-				cairo_line_to (cr, x_pos + TAG_OFFSET, y_pos);
-				cairo_arc (cr, x_pos + TAG_OFFSET, y_pos + TAG_OFFSET, TAG_RADIUS * cell_size, 0.0, 0.5 * M_PI);
-				cairo_fill (cr);
-			}
-
-			if (hitori->board[iter.x][iter.y].status & CELL_TAG2) {
-				/* Tango's lightest "chameleon" */
-				cairo_set_source_rgba (cr, 0.541176471, 0.88627451, 0.203921569, (painted == TRUE) ? PAINTED_ALPHA : NORMAL_ALPHA);
-
-				cairo_move_to (cr, x_pos + cell_size - TAG_OFFSET, y_pos);
-				cairo_line_to (cr, x_pos + cell_size, y_pos);
-				cairo_line_to (cr, x_pos + cell_size, y_pos + TAG_OFFSET);
-				cairo_arc (cr, x_pos + cell_size - TAG_OFFSET, y_pos + TAG_OFFSET, TAG_RADIUS * cell_size, 0.5 * M_PI, 1.0 * M_PI);
-				cairo_fill (cr);
-			}
-
-			/* Draw the border */
-			gtk_style_context_get_border_color (style_context, state, &colour);
-			gdk_cairo_set_source_rgba (cr, &colour);
-			cairo_set_line_width (cr, border.left);
-			cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
-			cairo_stroke (cr);
-
-			/* Draw the text */
-			text = g_strdup_printf ("%u", hitori->board[iter.x][iter.y].num);
-			layout = pango_cairo_create_layout (cr);
-
-			pango_layout_set_text (layout, text, -1);
-
-			font_desc = (painted == TRUE) ? hitori->painted_font_desc : hitori->normal_font_desc;
-
-			if (hitori->board[iter.x][iter.y].status & CELL_ERROR) {
-				cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
-				pango_font_description_set_weight (font_desc, PANGO_WEIGHT_BOLD);
-			} else {
-				gtk_style_context_get_color (style_context, state, &colour);
-				gdk_cairo_set_source_rgba (cr, &colour);
-				pango_font_description_set_weight (font_desc, PANGO_WEIGHT_NORMAL);
-			}
-
-			pango_layout_set_font_description (layout, font_desc);
-
-			pango_layout_get_pixel_size (layout, &text_width, &text_height);
-			cairo_move_to (cr,
-				       x_pos + (cell_size - text_width) / 2,
-				       y_pos + (cell_size - text_height) / 2);
-
-			pango_cairo_show_layout (cr, layout);
-
-			g_free (text);
-			g_object_unref (layout);
 		}
 	}
 
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
-		gfloat line_width = border.left * 2.5;
+		gfloat line_width = BORDER_LEFT * 2.5;
 		cairo_set_source_rgb (cr, 1, 0, 0); /* red */
 		cairo_set_line_width (cr, line_width);
 		cairo_rectangle (cr,
