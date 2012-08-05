@@ -2,7 +2,7 @@ include $(top_srcdir)/gnome-doc-utils.make
 dist-hook: doc-dist-hook
 
 DOC_ID = hitori
-DOC_LINGUAS = cs da de en_GB es fr sl sv zh_CN
+DOC_LINGUAS = cs da de en_GB es fr ro sl sv zh_CN
 DOC_FIGURES = figures/hitori_main_window.png
 DOC_PAGES = \
 	customization.page \
