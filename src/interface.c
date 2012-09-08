@@ -551,7 +551,7 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 {
 	GError *error = NULL;
 
-	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "ghelp:hitori", gtk_get_current_event_time (), &error) == FALSE) {
+	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "help:hitori", gtk_get_current_event_time (), &error) == FALSE) {
 		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window),
 							    GTK_DIALOG_MODAL,
 							    GTK_MESSAGE_ERROR,

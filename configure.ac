@@ -25,7 +25,7 @@ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],["$GETTEXT_PACKAGE"],[gettext package name]
 IT_PROG_INTLTOOL([0.35.0])
 
 # Documentation
-GNOME_DOC_INIT
+YELP_HELP_INIT
 
 # Dependencies
 PKG_CHECK_MODULES([GENERAL],[glib-2.0 gtk+-3.0 gmodule-2.0 cairo >= 1.4])

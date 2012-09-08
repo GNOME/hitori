@@ -1,10 +1,9 @@
-include $(top_srcdir)/gnome-doc-utils.make
-dist-hook: doc-dist-hook
+@YELP_HELP_RULES@
 
-DOC_ID = hitori
-DOC_LINGUAS = cs da de en_GB es fr ro sl sv zh_CN
-DOC_FIGURES = figures/hitori_main_window.png
-DOC_PAGES = \
+HELP_ID = hitori
+HELP_LINGUAS = cs da de en_GB es fr ro sl sv zh_CN
+HELP_MEDIA = figures/hitori_main_window.png
+HELP_FILES = \
 	customization.page \
 	game.page \
 	index.page \
@@ -13,10 +12,5 @@ DOC_PAGES = \
 	strategy.page
 
 EXTRA_DIST = ChangeLog.pre-0-2-2
-
-GITIGNOREFILES = \
-	$(_DOC_LC_PAGES) \
-	$(_DOC_MOFILES) \
-	$(NULL)
 
 -include $(top_srcdir)/git.mk

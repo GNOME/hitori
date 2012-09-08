@@ -1,9 +1,0 @@
-<?xml version="1.0" standalone="no"?>
-<omf>
-	<resource>
-		<subject category="Applications|Games|Puzzles"/>
-		<type>user's guide</type>
-		<relation seriesid="fb047f58-45d4-46d8-a8c4-16cfb8f322c2"/>
-		<rights type="cc-by-sa" license.version="3.0" holder="Philip Withnall"/>
-	</resource>
-</omf>

@@ -94,7 +94,6 @@ EXTRA_DIST += \
 	intltool-extract.in \
 	intltool-merge.in \
 	intltool-update.in \
-	gnome-doc-utils.make \
 	README \
 	COPYING \
 	COPYING-DOCS \
@@ -131,7 +130,6 @@ MAINTAINERCLEANFILES = \
 	`find "m4" -type f -name "*.m4" -print` \
 	missing \
 	mkinstalldirs \
-	gnome-doc-utils.make \
 	ChangeLog \
 	`find "$(srcdir)" -type f -name Makefile.in -print` \
 	po/Makevars.template \

@@ -145,7 +145,7 @@ msgid "<application>Hitori</application> was written by Philip Withnall (<email>
 msgstr "<application>Hitori</application> skrevs av Philip Withnall (<email>philip@tecnocode.co.uk</email>). För att hitta mer information om <application>Hitori</application>, rapportera ett fel eller föreslå någonting angående detta program eller denna handbok så besök <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
 
 #: C/hitori.xml:138(para)
-msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"ghelp:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
+msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"help:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
 msgstr ""
 
 #. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
