@@ -27,6 +27,227 @@
 #include "interface.h"
 #include "generator.h"
 
+static void constructed (GObject *object);
+static void get_property (GObject *object, guint property_id, GValue *value, GParamSpec *pspec);
+static void set_property (GObject *object, guint property_id, const GValue *value, GParamSpec *pspec);
+
+static void startup (GApplication *application);
+static void activate (GApplication *application);
+static gint handle_command_line (GApplication *application, GApplicationCommandLine *command_line);
+
+struct _HitoriApplicationPrivate {
+	/* Command line parameters. */
+	gboolean debug;
+	gint seed;
+};
+
+typedef enum {
+	PROP_DEBUG = 1,
+	PROP_SEED
+} HitoriProperty;
+
+G_DEFINE_TYPE (HitoriApplication, hitori_application, GTK_TYPE_APPLICATION)
+
+static void
+hitori_application_class_init (HitoriApplicationClass *klass)
+{
+	GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
+	GApplicationClass *gapplication_class = G_APPLICATION_CLASS (klass);
+
+	g_type_class_add_private (klass, sizeof (HitoriApplicationPrivate));
+
+	gobject_class->constructed = constructed;
+	gobject_class->get_property = get_property;
+	gobject_class->set_property = set_property;
+
+	gapplication_class->startup = startup;
+	gapplication_class->activate = activate;
+	gapplication_class->command_line = handle_command_line;
+
+	g_object_class_install_property (gobject_class, PROP_DEBUG,
+	                                 g_param_spec_boolean ("debug",
+	                                                       "Debugging Mode", "Whether debugging mode is active.",
+	                                                       FALSE,
+	                                                       G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));
+
+	g_object_class_install_property (gobject_class, PROP_SEED,
+	                                 g_param_spec_int ("seed",
+	                                                   "Generation Seed", "Seed controlling generation of the board.",
+	                                                   G_MININT, G_MAXINT, -1,
+	                                                   G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));
+}
+
+static void
+hitori_application_init (HitoriApplication *self)
+{
+	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, HITORI_TYPE_APPLICATION, HitoriApplicationPrivate);
+
+	self->priv->debug = FALSE;
+	self->priv->seed = -1;
+}
+
+static void
+constructed (GObject *object)
+{
+	/* Set various properties up */
+	g_application_set_application_id (G_APPLICATION (object), "org.gnome.Hitori");
+	g_application_set_flags (G_APPLICATION (object), G_APPLICATION_HANDLES_COMMAND_LINE);
+
+	/* Localisation */
+	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+	textdomain (GETTEXT_PACKAGE);
+
+	g_set_application_name (_("Hitori"));
+	gtk_window_set_default_icon_name ("hitori");
+
+	/* Chain up to the parent class */
+	G_OBJECT_CLASS (hitori_application_parent_class)->constructed (object);
+}
+
+static void
+get_property (GObject *object, guint property_id, GValue *value, GParamSpec *pspec)
+{
+	HitoriApplicationPrivate *priv = HITORI_APPLICATION (object)->priv;
+
+	switch (property_id) {
+		case PROP_DEBUG:
+			g_value_set_boolean (value, priv->debug);
+			break;
+		case PROP_SEED:
+			g_value_set_int (value, priv->seed);
+			break;
+		default:
+			/* We don't have any other property... */
+			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
+			break;
+	}
+}
+
+static void
+set_property (GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
+{
+	HitoriApplicationPrivate *priv = HITORI_APPLICATION (object)->priv;
+
+	switch (property_id) {
+		case PROP_DEBUG:
+			priv->debug = g_value_get_boolean (value);
+			break;
+		case PROP_SEED:
+			priv->seed = g_value_get_int (value);
+			break;
+		default:
+			/* We don't have any other property... */
+			G_OBJECT_WARN_INVALID_PROPERTY_ID (object, property_id, pspec);
+			break;
+	}
+}
+
+static void
+debug_handler (const char *log_domain, GLogLevelFlags log_level, const char *message, HitoriApplication *self)
+{
+	/* Only display debug messages if we've been run with --debug */
+	if (self->priv->debug == TRUE) {
+		g_log_default_handler (log_domain, log_level, message, NULL);
+	}
+}
+
+static void
+startup (GApplication *application)
+{
+	/* Chain up. */
+	G_APPLICATION_CLASS (hitori_application_parent_class)->startup (application);
+
+	/* Debug log handling */
+	g_log_set_handler (G_LOG_DOMAIN, G_LOG_LEVEL_DEBUG, (GLogFunc) debug_handler, application);
+}
+
+static void
+activate (GApplication *application)
+{
+	HitoriApplication *self = HITORI_APPLICATION (application);
+	HitoriApplicationPrivate *priv = self->priv;
+
+	/* Create the interface. */
+	if (self->window == NULL) {
+		HitoriUndo *undo;
+
+		/* Setup */
+		self->debug = priv->debug;
+		self->board_size = DEFAULT_BOARD_SIZE;
+
+		undo = g_new0 (HitoriUndo, 1);
+		undo->type = UNDO_NEW_GAME;
+		self->undo_stack = undo;
+
+		/* Showtime! */
+		hitori_create_interface (self);
+		hitori_generate_board (self, self->board_size, priv->seed);
+
+		gtk_window_set_application (GTK_WINDOW (self->window), GTK_APPLICATION (self));
+		gtk_widget_show_all (self->window);
+	}
+
+	/* Bring it to the foreground */
+	gtk_window_present (GTK_WINDOW (self->window));
+}
+
+static gint
+handle_command_line (GApplication *application, GApplicationCommandLine *command_line)
+{
+	HitoriApplicationPrivate *priv = HITORI_APPLICATION (application)->priv;
+	GOptionContext *context;
+	GError *error = NULL;
+	gchar **args, **argv;
+	gint argc, i, status = 0;
+
+	const GOptionEntry options[] = {
+		{ "debug", 0, 0, G_OPTION_ARG_NONE, &(priv->debug), N_("Enable debug mode"), NULL },
+		/* Translators: This means to choose a number as the "seed" for random number generation used when creating a board */
+		{ "seed", 0, 0, G_OPTION_ARG_INT, &(priv->seed), N_("Seed the board generation"), NULL },
+		{ NULL }
+	};
+
+	args = g_application_command_line_get_arguments (command_line, &argc);
+
+	/* We have to make an extra copy of the array, since g_option_context_parse() assumes that it can remove strings from the array without
+	 * freeing them. */
+	argv = g_new (gchar*, argc + 1);
+	for (i = 0; i <= argc; i++) {
+		argv[i] = args[i];
+	}
+
+	/* Options */
+	context = g_option_context_new (_("- Play a game of Hitori"));
+	g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
+	g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
+
+	if (g_option_context_parse (context, &argc, &argv, &error) == TRUE) {
+		/* Activate the remote instance */
+		g_application_activate (application);
+		status = 0;
+	} else {
+		/* Print an error */
+		g_application_command_line_printerr (command_line, _("Command line options could not be parsed: %s\n"), error->message);
+		g_error_free (error);
+
+		status = 1;
+	}
+
+	g_option_context_free (context);
+
+	g_free (argv);
+	g_strfreev (args);
+
+	return status;
+}
+
+HitoriApplication *
+hitori_application_new (void)
+{
+	return HITORI_APPLICATION (g_object_new (HITORI_TYPE_APPLICATION, NULL));
+}
+
 void
 hitori_new_game (Hitori *hitori, guint board_size)
 {
@@ -206,73 +427,20 @@ hitori_quit (Hitori *hitori)
 	if (hitori->painted_font_desc != NULL)
 		pango_font_description_free (hitori->painted_font_desc);
 
-	if (gtk_main_level () > 0)
-		gtk_main_quit ();
-
-	exit (0);
+	g_application_quit (G_APPLICATION (hitori));
 }
 
 int
 main (int argc, char *argv[])
 {
-	Hitori *hitori;
-	HitoriUndo *undo;
-	GOptionContext *context;
-	GError *error = NULL;
-	gboolean debug = FALSE;
-	gint seed = -1;
+	HitoriApplication *app;
+	int status;
 
-	const GOptionEntry options[] = {
-	        { "debug", 0, 0, G_OPTION_ARG_NONE, &debug, N_("Enable debug mode"), NULL },
-	        /* Translators: This means to choose a number as the "seed" for random number generation used when creating a board */
-	        { "seed", 0, 0, G_OPTION_ARG_INT, &seed, N_("Seed the board generation"), NULL },
-	        { NULL }
-	};
+	g_type_init ();
 
-	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
+	app = hitori_application_new ();
+	status = g_application_run (G_APPLICATION (app), argc, argv);
+	g_object_unref (app);
 
-	gtk_init (&argc, &argv);
-	g_set_application_name (_("Hitori"));
-	gtk_window_set_default_icon_name ("hitori");
-
-	/* Options */
-	context = g_option_context_new (_("- Play a game of Hitori"));
-	g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
-	g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
-
-	if (g_option_context_parse (context, &argc, &argv, &error) == FALSE) {
-		/* Show an error */
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_ERROR,
-				GTK_BUTTONS_OK,
-				_("Command line options could not be parsed"));
-		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
-
-		g_error_free (error);
-		exit (1);
-	}
-
-	/* Setup */
-	hitori = g_new0 (Hitori, 1);
-	hitori->debug = debug;
-	hitori->board_size = DEFAULT_BOARD_SIZE;
-
-	undo = g_new0 (HitoriUndo, 1);
-	undo->type = UNDO_NEW_GAME;
-	hitori->undo_stack = undo;
-
-	/* Showtime! */
-	hitori_create_interface (hitori);
-	hitori_generate_board (hitori, hitori->board_size, seed);
-	gtk_widget_show_all (hitori->window);
-
-	g_option_context_free (context);
-
-	gtk_main ();
-	return 0;
+	return status;
 }
