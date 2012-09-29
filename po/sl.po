@@ -7,10 +7,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&component=general\n"
-"POT-Creation-Date: 2010-11-18 18:48+0000\n"
-"PO-Revision-Date: 2010-11-19 10:12+0100\n"
-"Last-Translator: Andrej Žnidaršič <andrej.znidarsic@gmail.com>\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-29 08:39+0000\n"
+"PO-Revision-Date: 2012-09-29 15:54+0100\n"
+"Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -22,8 +22,8 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 
 #: ../data/hitori.desktop.in.h:1
-#: ../data/hitori.ui.h:8
-#: ../src/main.c:240
+#: ../data/hitori.ui.h:16
+#: ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -32,114 +32,132 @@ msgid "Play the Hitori puzzle game"
 msgstr "Igraj miselno igro Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+msgid "_New Game"
+msgstr "_Nova Igra"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
+msgid "_About Hitori"
+msgstr "_O programu"
 
 #: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
-msgid "Board _Size"
-msgstr "_Velikost plošče"
-
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Igra"
-
-#: ../data/hitori.ui.h:10
 msgid "_Help"
 msgstr "Pomo_č"
 
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Končaj"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Igra"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "_Velikost plošče"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
 #: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
 msgid "_Hint"
 msgstr "N_amig"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Nastavitve"
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Razveljavi"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "_Ponovno uveljavi"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Datoteke uporabniškega vmesnika “%s” ni bilo mogoče naložiti."
 
-#: ../src/interface.c:527
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "Vsebine pomoči ni mogoče prikazati"
 
-#: ../src/interface.c:548
+#: ../src/interface.c:620
 msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
 msgstr "Hitori je prosta programska oprema; program lahko razširjate in/ali spreminjate pod pogoji Splošnega dovoljenja GNU (GNU General PublicLicense), kot ga je objavila ustanova Free Software Foundation; bodisi različice 2 ali (po vaši izbiri) katerekoli poznejše različice."
 
-#: ../src/interface.c:552
+#: ../src/interface.c:624
 msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "Hitori se razširja v upanju, da bo uporaben, vendar BREZ VSAKRŠNEGA JAMSTVA; tudi brez posredne zagotovitve CENOVNE VREDNOSTI ali PRIMERNOSTI ZA DOLOČEN NAMEN.  Za podrobnosti glejte besedilo GNU General Public License."
 
-#: ../src/interface.c:556
+#: ../src/interface.c:628
 msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
 msgstr "Skupaj s programom bi morali dobiti tudi kopijo GNU splošnega javnega dovoljenja. V primeru, da je niste, si oglejte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:568
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Avtorske pravice © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:569
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Miselna igra, ki jo je zasnoval Nikoli. "
 
-#: ../src/interface.c:571
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr "Andrej Žnidaršič, <andrej.znidarsic@gmail.com>"
 
-#: ../src/interface.c:575
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Spletišče Hitori"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Omogoči razhroščevalni način"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Seme za ustvarjanje plošče"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "- Igrajte igro Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Možnosti ukazne vrstice ni mogoče razčleniti: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "Ali želite končati trenutno igro?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Čas: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Omogoči razhroščevalni način"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Seme za ustvarjanje plošče"
-
-#. Options
-#: ../src/main.c:244
-msgid "- Play a game of Hitori"
-msgstr "- Igrajte igro Hitori"
-
-#: ../src/main.c:254
-msgid "Command line options could not be parsed"
-msgstr "Možnosti ukazne vrstice ni bilo mogoče razčleniti"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -148,6 +166,8 @@ msgstr "Možnosti ukazne vrstice ni bilo mogoče razčleniti"
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Zmagali ste s časom %02u:%02u!"
 
+#~ msgid "_Settings"
+#~ msgstr "_Nastavitve"
+
 #~ msgid "You've won!"
 #~ msgstr "Zmaga!"
-
