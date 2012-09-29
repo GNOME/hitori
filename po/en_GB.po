@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-11-12 00:26+0000\n"
+"POT-Creation-Date: 2012-09-29 02:44+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: British English <en@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -26,59 +26,75 @@ msgid "Play the Hitori puzzle game"
 msgstr "Play the Hitori puzzle game"
 
 #: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+msgid "_New Game"
+msgstr "_New Game"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
+msgid "_About Hitori"
+msgstr "_About Hitori"
 
 #: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
-msgid "Board _Size"
-msgstr "Board _Size"
-
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Game"
-
-#: ../data/hitori.ui.h:10
 msgid "_Help"
 msgstr "_Help"
 
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Quit"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Game"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "Board _Size"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
 #: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
 msgid "_Hint"
 msgstr "_Hint"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Settings"
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Undo"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "_Redo"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "UI file “%s” could not be loaded"
 
-#: ../src/interface.c:527
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "The help contents could not be displayed"
 
-#: ../src/interface.c:548
+#: ../src/interface.c:620
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -90,7 +106,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:552
+#: ../src/interface.c:624
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -102,7 +118,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:556
+#: ../src/interface.c:628
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -110,50 +126,52 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:568
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:569
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:571
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:575
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Enable debug mode"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Seed the board generation"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "- Play a game of Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Command line options could not be parsed: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "Do you want to stop the current game?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Time: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Enable debug mode"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Seed the board generation"
-
-#. Options
-#: ../src/main.c:244
-msgid "- Play a game of Hitori"
-msgstr "- Play a game of Hitori"
-
-#: ../src/main.c:254
-msgid "Command line options could not be parsed"
-msgstr "Command line options could not be parsed"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -161,6 +179,9 @@ msgstr "Command line options could not be parsed"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "You've won in a time of %02u:%02u!"
+
+#~ msgid "_Settings"
+#~ msgstr "_Settings"
 
 #~ msgid "You've won!"
 #~ msgstr "You've won!"
