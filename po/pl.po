@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-29 02:29+0200\n"
-"PO-Revision-Date: 2012-09-29 02:30+0200\n"
+"POT-Creation-Date: 2012-09-29 05:15+0200\n"
+"PO-Revision-Date: 2012-09-29 05:17+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Poedit-Language: Polish\n"
 "X-Poedit-Country: Poland\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -32,59 +32,75 @@ msgid "Play the Hitori puzzle game"
 msgstr "Gra logiczna Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "_Game"
-msgstr "_Gra"
+msgid "_New Game"
+msgstr "_Nowa gra"
 
 #: ../data/hitori.ui.h:2
-msgid "Board _Size"
-msgstr "_Rozmiar planszy"
+msgid "_About Hitori"
+msgstr "_O grze Hitori"
 
 #: ../data/hitori.ui.h:3
-msgid "5×5"
-msgstr "5×5"
-
-#: ../data/hitori.ui.h:4
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:5
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:6
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:7
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:8
-msgid "10×10"
-msgstr "10×10"
-
-#: ../data/hitori.ui.h:9
-msgid "_Hint"
-msgstr "_Podpowiedź"
-
-#: ../data/hitori.ui.h:10
-msgid "_Settings"
-msgstr "_Ustawienia"
-
-#: ../data/hitori.ui.h:11
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "Za_kończ"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Gra"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "_Rozmiar planszy"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
+msgid "_Hint"
+msgstr "_Podpowiedź"
+
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "Cof_nij"
+
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "P_onów"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Nie można wczytać pliku interfejsu użytkownika \"%s\""
 
-#: ../src/interface.c:559
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "Nie można wyświetlić treści pomocy"
 
-#: ../src/interface.c:580
+#: ../src/interface.c:620
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -96,7 +112,7 @@ msgstr ""
 "przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według "
 "wersji trzeciej tej Licencji lub którejś z późniejszych wersji."
 
-#: ../src/interface.c:584
+#: ../src/interface.c:624
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -108,7 +124,7 @@ msgstr ""
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
 "bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
-#: ../src/interface.c:588
+#: ../src/interface.c:628
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -117,27 +133,27 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
 "- proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:600
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:601
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logiczna układanka zaprojektowana przez firmę Nikoli."
 
-#: ../src/interface.c:603
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr ""
 "Piotr Drąg <piotrdrag@gmail.com>, 2012\n"
 "Aviary.pl <gnomepl@aviary.pl>, 2012"
 
-#: ../src/interface.c:607
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Witryna gry Hitori"
 
 #: ../src/main.c:205
 msgid "Enable debug mode"
-msgstr "Włączenie trybu debugowania"
+msgstr "Włącza tryb debugowania"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: ../src/main.c:207
