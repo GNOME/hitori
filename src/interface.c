@@ -44,14 +44,29 @@ gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
 gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
 void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
 void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
-void hitori_new_game_cb (GtkAction *action, Hitori *hitori);
-void hitori_hint_cb (GtkAction *action, Hitori *hitori);
-void hitori_undo_cb (GtkAction *action, Hitori *hitori);
-void hitori_redo_cb (GtkAction *action, Hitori *hitori);
-void hitori_quit_cb (GtkAction *action, Hitori *hitori);
-void hitori_contents_cb (GtkAction *action, Hitori *hitori);
-void hitori_about_cb (GtkAction *action, Hitori *hitori);
-void hitori_board_size_cb (GtkRadioAction *action, GtkRadioAction *current, Hitori *hitori);
+static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void undo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void quit_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void help_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void about_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void board_size_activate_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void board_size_change_cb (GSimpleAction *action, GVariant *state, gpointer user_data);
+
+static GActionEntry app_entries[] = {
+	{ "new-game", new_game_cb, NULL, NULL, NULL },
+	{ "about", about_cb, NULL, NULL, NULL },
+	{ "help", help_cb, NULL, NULL, NULL },
+	{ "quit", quit_cb, NULL, NULL, NULL },
+};
+
+static GActionEntry win_entries[] = {
+	{ "board-size", board_size_activate_cb, "s", "'5'", board_size_change_cb },
+	{ "hint", hint_cb, NULL, NULL, NULL },
+	{ "undo", undo_cb, NULL, NULL, NULL },
+	{ "redo", redo_cb, NULL, NULL, NULL },
+};
 
 GtkWidget *
 hitori_create_interface (Hitori *hitori)
@@ -87,10 +102,18 @@ hitori_create_interface (Hitori *hitori)
 	/* Setup the main window */
 	hitori->window = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_main_window"));
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
-	hitori->undo_action = GTK_ACTION (gtk_builder_get_object (builder, "undo_menu"));
-	hitori->redo_action = GTK_ACTION (gtk_builder_get_object (builder, "redo_menu"));
-	hitori->hint_action = GTK_ACTION (gtk_builder_get_object (builder, "hint_menu"));
 	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
+
+	/* Set up the menus (application and window). */
+	g_action_map_add_action_entries (G_ACTION_MAP (hitori), app_entries, G_N_ELEMENTS (app_entries), hitori);
+	gtk_application_set_app_menu (GTK_APPLICATION (hitori), G_MENU_MODEL (gtk_builder_get_object (builder, "app_menu")));
+
+	g_action_map_add_action_entries (G_ACTION_MAP (hitori->window), win_entries, G_N_ELEMENTS (win_entries), hitori);
+	gtk_application_set_menubar (GTK_APPLICATION (hitori), G_MENU_MODEL (gtk_builder_get_object (builder, "win_menu")));
+
+	hitori->undo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "undo"));
+	hitori->redo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "redo"));
+	hitori->hint_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "hint"));
 
 	g_object_unref (builder);
 
@@ -101,6 +124,13 @@ hitori_create_interface (Hitori *hitori)
 
 	/* Reset the timer */
 	hitori_reset_timer (hitori);
+
+	/* Disable undo/redo until a cell has been clicked. */
+	g_simple_action_set_enabled (hitori->undo_action, FALSE);
+	g_simple_action_set_enabled (hitori->redo_action, FALSE);
+
+	/* Set the initial board size. */
+	g_simple_action_set_state (G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "board-size")), g_variant_new_string ("5"));
 
 	return hitori->window;
 }
@@ -327,7 +357,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (hitori->undo_stack != NULL)
 		hitori->undo_stack->redo = undo;
 	hitori->undo_stack = undo;
-	gtk_action_set_sensitive (hitori->undo_action, TRUE);
+	g_simple_action_set_enabled (hitori->undo_action, TRUE);
 
 	/* Stop any current hints */
 	hitori_cancel_hinting (hitori);
@@ -365,10 +395,11 @@ hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hit
 	}
 }
 
-void
-hitori_new_game_cb (GtkAction *action, Hitori *hitori)
+static void
+new_game_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
-	hitori_new_game (hitori, hitori->board_size);
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+	hitori_new_game (self, self->board_size);
 }
 
 static void
@@ -429,30 +460,31 @@ hitori_update_hint (Hitori *hitori)
 	return TRUE;
 }
 
-void
-hitori_hint_cb (GtkAction *action, Hitori *hitori)
+static void
+hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
 	HitoriVector iter;
 
 	/* Bail if we're already hinting */
-	if (hitori->hint_status != HINT_DISABLED)
+	if (self->hint_status != HINT_DISABLED)
 		return;
 
 	/* Find the first cell which should be painted, but isn't (or vice-versa) */
-	for (iter.x = 0; iter.x < hitori->board_size; iter.x++) {
-		for (iter.y = 0; iter.y < hitori->board_size; iter.y++) {
-			guchar status = hitori->board[iter.x][iter.y].status & (CELL_PAINTED | CELL_SHOULD_BE_PAINTED);
+	for (iter.x = 0; iter.x < self->board_size; iter.x++) {
+		for (iter.y = 0; iter.y < self->board_size; iter.y++) {
+			guchar status = self->board[iter.x][iter.y].status & (CELL_PAINTED | CELL_SHOULD_BE_PAINTED);
 
 			if (status <= MAX (CELL_SHOULD_BE_PAINTED, CELL_PAINTED) &&
 			    status > 0) {
-				if (hitori->debug)
+				if (self->debug)
 					g_debug ("Beginning hinting in cell (%u,%u).", iter.x, iter.y);
 
 				/* Set up the cell for hinting */
-				hitori->hint_status = HINT_FLASHES;
-				hitori->hint_position = iter;
-				hitori->hint_timeout_id = g_timeout_add (HINT_INTERVAL, (GSourceFunc) hitori_update_hint, hitori);
-				hitori_update_hint ((gpointer) hitori);
+				self->hint_status = HINT_FLASHES;
+				self->hint_position = iter;
+				self->hint_timeout_id = g_timeout_add (HINT_INTERVAL, (GSourceFunc) hitori_update_hint, self);
+				hitori_update_hint ((gpointer) self);
 
 				return;
 			}
@@ -460,25 +492,27 @@ hitori_hint_cb (GtkAction *action, Hitori *hitori)
 	}
 }
 
-void
-hitori_undo_cb (GtkAction *action, Hitori *hitori)
+static void
+undo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
-	if (hitori->undo_stack->undo == NULL)
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+
+	if (self->undo_stack->undo == NULL)
 		return;
 
-	switch (hitori->undo_stack->type) {
+	switch (self->undo_stack->type) {
 		case UNDO_PAINT:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_PAINTED;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_PAINTED;
 			break;
 		case UNDO_TAG1:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG1;
 			break;
 		case UNDO_TAG2:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_TAGS:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG1;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
 		default:
@@ -487,40 +521,42 @@ hitori_undo_cb (GtkAction *action, Hitori *hitori)
 			break;
 	}
 
-	hitori->undo_stack = hitori->undo_stack->undo;
+	self->undo_stack = self->undo_stack->undo;
 
-	gtk_action_set_sensitive (hitori->redo_action, TRUE);
-	if (hitori->undo_stack->undo == NULL || hitori->undo_stack->type == UNDO_NEW_GAME)
-		gtk_action_set_sensitive (hitori->undo_action, FALSE);
+	g_simple_action_set_enabled (self->redo_action, TRUE);
+	if (self->undo_stack->undo == NULL || self->undo_stack->type == UNDO_NEW_GAME)
+		g_simple_action_set_enabled (self->undo_action, FALSE);
 
 	/* The player can't possibly have won, but we need to update the error highlighting */
-	hitori_check_win (hitori);
+	hitori_check_win (self);
 
 	/* Redraw */
-	gtk_widget_queue_draw (hitori->drawing_area);
+	gtk_widget_queue_draw (self->drawing_area);
 }
 
-void
-hitori_redo_cb (GtkAction *action, Hitori *hitori)
+static void
+redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
-	if (hitori->undo_stack->redo == NULL)
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+
+	if (self->undo_stack->redo == NULL)
 		return;
 
-	hitori->undo_stack = hitori->undo_stack->redo;
+	self->undo_stack = self->undo_stack->redo;
 
-	switch (hitori->undo_stack->type) {
+	switch (self->undo_stack->type) {
 		case UNDO_PAINT:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_PAINTED;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_PAINTED;
 			break;
 		case UNDO_TAG1:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG1;
 			break;
 		case UNDO_TAG2:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_TAGS:
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG1;
-			hitori->board[hitori->undo_stack->cell.x][hitori->undo_stack->cell.y].status ^= CELL_TAG2;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG1;
+			self->board[self->undo_stack->cell.x][self->undo_stack->cell.y].status ^= CELL_TAG2;
 			break;
 		case UNDO_NEW_GAME:
 		default:
@@ -529,30 +565,32 @@ hitori_redo_cb (GtkAction *action, Hitori *hitori)
 			break;
 	}
 
-	gtk_action_set_sensitive (hitori->undo_action, TRUE);
-	if (hitori->undo_stack->redo == NULL)
-		gtk_action_set_sensitive (hitori->redo_action, FALSE);
+	g_simple_action_set_enabled (self->undo_action, TRUE);
+	if (self->undo_stack->redo == NULL)
+		g_simple_action_set_enabled (self->redo_action, FALSE);
 
 	/* The player can't possibly have won, but we need to update the error highlighting */
-	hitori_check_win (hitori);
+	hitori_check_win (self);
 
 	/* Redraw */
-	gtk_widget_queue_draw (hitori->drawing_area);
+	gtk_widget_queue_draw (self->drawing_area);
 }
 
-void
-hitori_quit_cb (GtkAction *action, Hitori *hitori)
+static void
+quit_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
-	hitori_quit (hitori);
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+	hitori_quit (self);
 }
 
-void
-hitori_contents_cb (GtkAction *action, Hitori *hitori)
+static void
+help_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
 	GError *error = NULL;
 
-	if (gtk_show_uri (gtk_widget_get_screen (hitori->window), "help:hitori", gtk_get_current_event_time (), &error) == FALSE) {
-		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window),
+	if (gtk_show_uri (gtk_widget_get_screen (self->window), "help:hitori", gtk_get_current_event_time (), &error) == FALSE) {
+		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (self->window),
 							    GTK_DIALOG_MODAL,
 							    GTK_MESSAGE_ERROR,
 							    GTK_BUTTONS_OK,
@@ -566,10 +604,12 @@ hitori_contents_cb (GtkAction *action, Hitori *hitori)
 	}
 }
 
-void
-hitori_about_cb (GtkAction *action, Hitori *hitori)
+static void
+about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
 	gchar *license;
+
 	const gchar *authors[] =
 	{
 		"Philip Withnall <philip@tecnocode.co.uk>",
@@ -595,7 +635,7 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 			  _(license_parts[2]),
 			  NULL);
 
-	gtk_show_about_dialog (GTK_WINDOW (hitori->window),
+	gtk_show_about_dialog (GTK_WINDOW (self->window),
 				"version", VERSION,
 				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232010 Philip Withnall"),
 				"comments", _("A logic puzzle designed by Nikoli."),
@@ -611,8 +651,22 @@ hitori_about_cb (GtkAction *action, Hitori *hitori)
 	g_free (license);
 }
 
-void
-hitori_board_size_cb (GtkRadioAction *action, GtkRadioAction *current, Hitori *hitori)
+static void
+board_size_activate_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 {
-	hitori_set_board_size (hitori, gtk_radio_action_get_current_value (current));
+	g_action_change_state (G_ACTION (action), parameter);
+}
+
+static void
+board_size_change_cb (GSimpleAction *action, GVariant *state, gpointer user_data)
+{
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+	const gchar *size_str;
+	guint64 size;
+
+	size_str = g_variant_get_string (state, NULL);
+	size = g_ascii_strtoull (size_str, NULL, 10);
+	hitori_set_board_size (self, size);
+
+	g_simple_action_set_state (action, state);
 }

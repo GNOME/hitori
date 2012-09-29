@@ -77,9 +77,9 @@ typedef struct {
 	/* FIXME: This should all be merged into priv. */
 	GtkWidget *window;
 	GtkWidget *drawing_area;
-	GtkAction *undo_action;
-	GtkAction *redo_action;
-	GtkAction *hint_action;
+	GSimpleAction *undo_action;
+	GSimpleAction *redo_action;
+	GSimpleAction *hint_action;
 
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;

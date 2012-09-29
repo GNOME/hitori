@@ -281,8 +281,8 @@ hitori_clear_undo_stack (Hitori *hitori)
 	hitori->undo_stack->undo = NULL;
 	hitori->undo_stack->redo = NULL;
 
-	gtk_action_set_sensitive (hitori->undo_action, FALSE);
-	gtk_action_set_sensitive (hitori->redo_action, FALSE);
+	g_simple_action_set_enabled (hitori->undo_action, FALSE);
+	g_simple_action_set_enabled (hitori->redo_action, FALSE);
 }
 
 void
@@ -344,10 +344,10 @@ hitori_enable_events (Hitori *hitori)
 	hitori->processing_events = TRUE;
 
 	if (hitori->undo_stack->redo != NULL)
-		gtk_action_set_sensitive (hitori->redo_action, TRUE);
+		g_simple_action_set_enabled (hitori->redo_action, TRUE);
 	if (hitori->undo_stack->undo != NULL)
-		gtk_action_set_sensitive (hitori->redo_action, TRUE);
-	gtk_action_set_sensitive (hitori->hint_action, TRUE);
+		g_simple_action_set_enabled (hitori->redo_action, TRUE);
+	g_simple_action_set_enabled (hitori->hint_action, TRUE);
 
 	hitori_start_timer (hitori);
 }
@@ -356,9 +356,9 @@ void
 hitori_disable_events (Hitori *hitori)
 {
 	hitori->processing_events = FALSE;
-	gtk_action_set_sensitive (hitori->redo_action, FALSE);
-	gtk_action_set_sensitive (hitori->undo_action, FALSE);
-	gtk_action_set_sensitive (hitori->hint_action, FALSE);
+	g_simple_action_set_enabled (hitori->redo_action, FALSE);
+	g_simple_action_set_enabled (hitori->undo_action, FALSE);
+	g_simple_action_set_enabled (hitori->hint_action, FALSE);
 
 	hitori_pause_timer (hitori);
 }
