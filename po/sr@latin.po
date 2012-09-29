@@ -7,8 +7,8 @@ msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori"
 "&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-02-18 18:13+0000\n"
-"PO-Revision-Date: 2012-03-17 11:36+0200\n"
+"POT-Creation-Date: 2012-09-29 01:48+0000\n"
+"PO-Revision-Date: 2012-09-29 10:37+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:237
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -28,59 +28,77 @@ msgid "Play the Hitori puzzle game"
 msgstr "Igrajte igru slagalica Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "_Game"
-msgstr "_Igra"
+#| msgid "_Game"
+msgid "_New Game"
+msgstr "_Nova igra"
 
 #: ../data/hitori.ui.h:2
-msgid "Board _Size"
-msgstr "Veličina _table"
+#| msgid "Hitori"
+msgid "_About Hitori"
+msgstr "_O Hitoriju"
 
 #: ../data/hitori.ui.h:3
-msgid "5×5"
-msgstr "5x5"
-
-#: ../data/hitori.ui.h:4
-msgid "6×6"
-msgstr "6x6"
-
-#: ../data/hitori.ui.h:5
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:6
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:7
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:8
-msgid "10×10"
-msgstr "10×10"
-
-#: ../data/hitori.ui.h:9
-msgid "_Hint"
-msgstr "_Savet"
-
-#: ../data/hitori.ui.h:10
-msgid "_Settings"
-msgstr "_Podešavanja"
-
-#: ../data/hitori.ui.h:11
 msgid "_Help"
 msgstr "Po_moć"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Izađi"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Igra"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "Veličina _table"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5x5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6x6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
+msgid "_Hint"
+msgstr "_Savet"
+
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Opozovi"
+
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "_Ponovi"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Ne mogu da učitam datoteku KS „%s“"
 
-#: ../src/interface.c:539
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "Ne mogu da prikažem sadržaj pomoći"
 
-#: ../src/interface.c:560
+#: ../src/interface.c:620
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -91,7 +109,7 @@ msgstr ""
 "Gnuove opšte javne licence koju je objavila Zadužbina slobodnog softvera, "
 "bilo verzije 3 licence, ili (po vašem izboru) bilo koje novije verzije."
 
-#: ../src/interface.c:564
+#: ../src/interface.c:624
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -102,7 +120,7 @@ msgstr ""
 "čak i bez primenjene garancije TRŽIŠNE VREDNOSTI ili PRILAGOĐENOSTI ODREĐENOJ "
 "NAMENI. Pogledajte GNU Opštu javnu licencu za više detalja."
 
-#: ../src/interface.c:568
+#: ../src/interface.c:628
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -110,53 +128,56 @@ msgstr ""
 "Treba da ste primili primerak Gnuove opšte javne licence uz Hitori. Ako "
 "niste, pogledajte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:580
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autorska prava © 2007–2010 Filip Vitnal"
 
-#: ../src/interface.c:581
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logička slagalica koju je osmislio Nikoli."
 
-#: ../src/interface.c:583
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr ""
 "  Miroslav Nikolić <miroslavnikolic@rocketmail.com>  \n"
 "\n"
 "http://prevod.org — prevod na srpski jezik"
 
-#: ../src/interface.c:587
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Veb stranica Hitorija"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Uključuje kod za traženje grešaka"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Seje generaciju table"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "— Igrajte igru Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+#| msgid "Command line options could not be parsed"
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Mogućnosti linije naredbi ne mogu biti obrađene: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "Da li želite da zaustavite tekuću igru?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Vreme: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Uključuje kod za traženje grešaka"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Seje generaciju table"
-
-#. Options
-#: ../src/main.c:241
-msgid "- Play a game of Hitori"
-msgstr "— Igrajte igru Hitori"
-
-#: ../src/main.c:251
-msgid "Command line options could not be parsed"
-msgstr "Mogućnosti linije naredbi ne mogu biti obrađene"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -164,3 +185,6 @@ msgstr "Mogućnosti linije naredbi ne mogu biti obrađene"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Pobedili ste u vremenu od %02u:%02u!"
+
+#~ msgid "_Settings"
+#~ msgstr "_Podešavanja"
