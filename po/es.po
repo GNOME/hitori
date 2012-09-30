@@ -2,23 +2,25 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&component=general\n"
-"POT-Creation-Date: 2010-11-12 00:27+0000\n"
-"PO-Revision-Date: 2010-11-30 23:37+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"product=hitori&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-29 01:48+0000\n"
+"PO-Revision-Date: 2012-09-30 12:22+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Gtranslator 2.91.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -27,59 +29,77 @@ msgid "Play the Hitori puzzle game"
 msgstr "Jugar al juego de puzle Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+#| msgid "_Game"
+msgid "_New Game"
+msgstr "Juego _nuevo"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5x5"
+#| msgid "Hitori"
+msgid "_About Hitori"
+msgstr "Acerca _de Hitori"
 
 #: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6x6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
-msgid "Board _Size"
-msgstr "_Tamaño del tablero"
-
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Juego"
-
-#: ../data/hitori.ui.h:10
 msgid "_Help"
 msgstr "Ay_uda"
 
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Salir"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Juego"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "_Tamaño del tablero"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5x5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6x6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
 #: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
 msgid "_Hint"
 msgstr "_Pista"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Opciones"
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Deshacer"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "_Rehacer"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "No se pudo cargar el archivo de interfaz de usuario «%s»"
 
-#: ../src/interface.c:527
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "No se pudo mostrar el contenido de la ayuda"
 
-#: ../src/interface.c:548
+#: ../src/interface.c:620
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -91,7 +111,7 @@ msgstr ""
 "Software Foundation; tanto en la versión 3 de la Licencia como (a su "
 "elección) cualquier versión posterior."
 
-#: ../src/interface.c:552
+#: ../src/interface.c:624
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -103,7 +123,7 @@ msgstr ""
 "PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Publica General para más "
 "detalles."
 
-#: ../src/interface.c:556
+#: ../src/interface.c:628
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -111,50 +131,53 @@ msgstr ""
 "Debería haber recibido una copia de la Licencia Pública General GNU junto "
 "con Hitori. Si no la recibió, consulte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:568
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:569
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Un puzle de lógica diseñado por Nikoli."
 
-#: ../src/interface.c:571
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008"
 
-#: ../src/interface.c:575
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Página web de Hitori"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Activar modo de depuración"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Alimentar la generación de tableros"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "- Jugar una partida de Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+#| msgid "Command line options could not be parsed"
+msgid "Command line options could not be parsed: %s\n"
+msgstr "No se pudieron analizar las opciones de la línea de comandos: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "¿Quiere parar la partida actual?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Tiempo: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Activar modo de depuración"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Alimentar la generación de tableros"
-
-#. Options
-#: ../src/main.c:244
-msgid "- Play a game of Hitori"
-msgstr "- Jugar una partida de Hitori"
-
-#: ../src/main.c:254
-msgid "Command line options could not be parsed"
-msgstr "No se pudieron analizar las opciones de la línea de comandos"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -162,6 +185,9 @@ msgstr "No se pudieron analizar las opciones de la línea de comandos"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Ganó con un tiempo de %02u:%02u."
+
+#~ msgid "_Settings"
+#~ msgstr "_Opciones"
 
 #~ msgid "You've won!"
 #~ msgstr "Ha ganado"
