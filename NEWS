@@ -1,5 +1,23 @@
 Major new features in version...
 
+0.4.0:
+* Remove implicit dependency on libm
+* Fix l10n (bgo#652399)
+* Rendering improvements (bgo#652684)
+* Port to GtkApplication and GMenu (bgo#676601, bgo#676602)
+* Use yelp-tools instead of gnome-doc-utils (Oliver Propst, bgo#683623)
+* Translations:
+** de (Mario Blättermann)
+** el (Tom Tryfonidis)
+** en_GB (Philip Withnall)
+** fr (Gérard Baylard)
+** gl (Fran Dieguez)
+** id (Andika Triwidada)
+** pl (Piotr Drąg, Aviary.pl)
+** ro (Cristian Buzdugă, Master, Daniel Șerbănescu)
+** sl (Matej Urbančič)
+** sr (Мирослав Николић)
+
 0.3.0:
 * Port to GTK+ 3
 * Add timing support (bgo#575897)
