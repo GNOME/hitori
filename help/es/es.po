@@ -3,96 +3,259 @@
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.help.master\n"
-"POT-Creation-Date: 2010-10-31 13:09+0000\n"
-"PO-Revision-Date: 2010-12-29 23:01+0100\n"
-"Last-Translator: Jorge González <jorgegonz@svn.gnome.org>\n"
-"Language-Team: Español <gnome-es-list@gnome.org>\n"
+"POT-Creation-Date: 2012-09-28 23:05+0000\n"
+"PO-Revision-Date: 2012-09-30 12:51+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.11.4\n"
+"X-Generator: Gtranslator 2.91.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: C/strategy.page:5(desc)
-msgid "Strategies for playing Hitori."
-msgstr "Estrategias para jugar Hitori."
-
-#: C/strategy.page:7(title)
-msgid "Gameplay Strategies"
-msgstr "Estrategias de juego"
-
-#: C/strategy.page:9(p)
-msgid ""
-"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
-"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
 msgstr ""
-"Hitori es bastante similar al Sudoku, de hecho usa parte de su deducción "
-"lógica para averiguar qué celdas se deben pintar. Una estrategia es usar "
-"<key>Mayús</key>-ratón para resaltar todos los números repetidos en cada "
-"<em>columna</em>, después usar <key>Ctrl</key>-ratón para resaltar todos los "
-"números repetidos en cada <em>fila</em>."
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012\n"
+"Jorge González <jorgegonz@svn.gnome.org>, 2007-2010"
 
-#: C/strategy.page:12(p)
+#: C/index.page:6(credit/name)
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#: C/index.page:8(credit/years)
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#: C/index.page:11(license/p)
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 msgstr ""
-"Una vez que esto está echo para el tablero entero, las celdas que se han "
-"resaltado de ambas maneras, son buenas candidatas para ser pintadas, aunque "
-"no siempre. Al pintar una celda, quite el resaltado del resto de celdas con "
-"el mismo número en la misma fila y columna, ya que esa celda se convierte en "
-"una buena forma de mantener el seguimiento de qué celdas todavía violan la "
-"<link xref=\"game\">primera regla de Hitori</link>."
+"Este trabajo está licenciado bajo una <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/us/\">Licencia Creative Commons atribución - "
+"compartir igual 3.0 sin soporte</link>."
 
-#: C/strategy.page:15(p)
+#: C/index.page:15(page/title)
+msgid "Hitori Help"
+msgstr "Ayuda de Hitori"
+
+#: C/index.page:18(section/title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Uso básico del juego"
+
+#: C/index.page:22(section/title)
+msgid "Tips &amp; Tricks"
+msgstr "Sugerencias y trucos"
+
+#: C/customization.page:5(info/desc)
+msgid "Changing how the game appears and plays."
+msgstr "Cambiar la apariencia del juego y la jugabilidad."
+
+#: C/customization.page:7(page/title)
+msgid "Customizing the Game"
+msgstr "Personalizar el juego"
+
+#: C/customization.page:9(page/p)
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"El juego se puede personalizar cambiando el tamaño del tablero: se permiten "
+"tableros cuadrados de 5-10 celdas."
+
+#: C/customization.page:10(page/p)
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
+msgstr ""
+"Para cambiar el tamaño del tablero elija una opción de <guiseq><gui style="
+"\"menu\">Juego</gui><gui style=\"menuitem\">Tamaño del tablero</gui></"
+"guiseq>. <app>Hitori</app> le preguntará si quiere parar la partida actual "
+"si está en medio de una, después se iniciará una partida nueva con el tamaño "
+"de tablero solicitado."
+
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:21(media)
 #| msgid ""
-#| "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-#| "can't both be painted. <app>Hitori</app> will highlight in red the "
-#| "leftmost cell which violates rule 2."
+#| "@@image: 'figures/hitori_main_window.png'; "
+#| "md5=b6ea3ee1ff73311d002cfdb4463032be"
+msgctxt "_"
 msgid ""
-"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
-"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
-"separating one or more unpainted cells from the other unpainted cells will "
-"be highlighted in red."
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgstr ""
-"Tenga siempre en mente la segunda regla de Hitori, dos celdas adyacentes no "
-"pueden estar ambas pintadas. <app>Hitori</app> resaltará en rojo la celda "
-"más a la izquierda que viole la regla número dos. De igual forma, se "
-"resaltarán en rojo grupos de celtas que violen la tercera regla separando "
-"uno o más celdas sin pintar de las otras celdas sin pintar."
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
-#: C/strategy.page:19(p)
+#: C/game.page:5(info/desc)
+msgid "Introduction to the game of Hitori."
+msgstr "Introducción al juego Hitori."
+
+#: C/game.page:7(page/title)
+msgid "Hitori the Game"
+msgstr "El juego de Hitori"
+
+#: C/game.page:9(page/p)
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
 msgstr ""
-"Si se queda parado en cualquier punto, elija <guiseq><gui style=\"menu"
-"\">Juego</gui><gui style=\"menuitem\">Sugerencias</gui></guiseq> para que "
-"<app>Hitori</app> marque una casilla que se debería pintar o limpiar y así "
-"acercarse a la solución."
+"Hitori es un pequeño juego de puzle lógico del mismo tipo que el popular "
+"Sudoku. En la partida, el jugador comienza en un tablero cuadrado de números "
+"y tiene que <em>escribir</em> en las celdas hasta que no haya números "
+"duplicados en cada fila y columna. Se aplican las siguientes reglas:"
 
-#: C/playing.page:5(desc)
+#: C/game.page:12(item/p)
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Sólo debe existir un número de cada tipo en las celdas vacías en cada fila y "
+"columna."
+
+#: C/game.page:13(item/p)
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Ninguna celda escrita debe estar adyacente a otra, vertical u "
+"horizontalmente."
+
+#: C/game.page:14(item/p)
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Todas las celdas vacías deben unirse juntas vertical y horizontalmente en un "
+"grupo."
+
+#: C/game.page:16(page/p)
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Estas son las tres únicas reglas del juego y por ello puede haber múltiples "
+"soluciones de un tablero de puzle Hitori."
+
+#: C/game.page:19(figure/title)
+msgid "Main game window"
+msgstr "Ventana principal del juego"
+
+#: C/game.page:20(figure/desc)
+msgid "<app>Hitori</app> main window"
+msgstr "Ventana principal de <application>Hitori</application>"
+
+#: C/game.page:22(media/p)
+msgid "<app>Hitori</app> main window."
+msgstr "Ventana principal de <application>Hitori</application>."
+
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Información legal."
+
+#: C/license.page:11(page/title)
+msgid "License"
+msgstr "Licencia"
+
+#: C/license.page:12(page/p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Este trabajo está licenciado bajo una Licencia Creative Commons Atribución - "
+"Compartir igual 3.0 sin soporte."
+
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Es libre de:"
+
+#: C/license.page:25(item/title)
+#| msgid "To share"
+msgid "<em>To share</em>"
+msgstr "<em>Compartir</em>"
+
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Copiar, distribuir y comunicar públicamente la obra"
+
+#: C/license.page:29(item/title)
+#| msgid "To remix"
+msgid "<em>To remix</em>"
+msgstr "<em>Hacer obras derivadas</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "Adaptar el trabajo."
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "Bajo las siguientes condiciones:"
+
+#: C/license.page:38(item/title)
+#| msgid "Attribution"
+msgid "<em>Attribution</em>"
+msgstr "<em>Atribución</em>"
+
+#: C/license.page:39(item/p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Debe reconocer los créditos de la obra de la manera especificada por el "
+"autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo "
+"o apoyan el uso que hace de su obra)."
+
+#: C/license.page:46(item/title)
+#| msgid "Share Alike"
+msgid "<em>Share Alike</em>"
+msgstr "<em>Compartir igual</em>"
+
+#: C/license.page:47(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Si transforma o modifica esta obra para crear una obra derivada, sólo puede "
+"distribuir la obra resultante bajo la misma licencia, una de similar o una "
+"de compatible."
+
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Para ver el texto completo de la licencia consulte la <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode/\">página web de Creative "
+"Commons</link> o lea el<link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Escrito de Commons</link>."
+
+#: C/playing.page:5(info/desc)
 msgid "Using <app>Hitori</app> to play a game."
 msgstr "Usando <app>Hitori</app> para jugar una partida."
 
-#: C/playing.page:7(title)
+#: C/playing.page:7(page/title)
 msgid "Playing a Game"
 msgstr "Jugar una partida"
 
-#: C/playing.page:9(p)
+#: C/playing.page:9(page/p)
 msgid ""
 "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
 "\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
@@ -103,7 +266,7 @@ msgstr ""
 "una partida <app>Hitori</app> le preguntará si quiere parar la partida "
 "actual."
 
-#: C/playing.page:11(p)
+#: C/playing.page:11(page/p)
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -114,7 +277,7 @@ msgstr ""
 "ninguna de las tres reglas se ha roto, entonces el juego finalizará y no se "
 "podrá manipular el tablero."
 
-#: C/playing.page:13(p)
+#: C/playing.page:13(page/p)
 msgid ""
 "<app>Hitori</app> also allows you to highlight cells for your own reference "
 "when solving a board. This can be achieved by holding <key>Ctrl</key> or "
@@ -131,7 +294,7 @@ msgstr ""
 "quitar el resaltado pulsando sobre ellas de nuevo con <key>Ctrl</key> o "
 "<key>Mayús</key>."
 
-#: C/playing.page:17(p)
+#: C/playing.page:17(page/p)
 msgid ""
 "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
 "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
@@ -143,7 +306,7 @@ msgstr ""
 "style=\"menu\">Juego</gui><gui style=\"menuitem\">Reahcer</gui></guiseq>. "
 "Puede deshacer y rehacer tantos movimientos como quiera, sin restricción."
 
-#: C/playing.page:20(p)
+#: C/playing.page:20(page/p)
 msgid ""
 "To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
@@ -157,227 +320,71 @@ msgstr ""
 "estado actual de la celda (escrita o vacía) es incorrecto y se debería "
 "cambiar para ganar la partida."
 
-#: C/license.page:8(desc)
-msgid "Legal information."
-msgstr "Información legal."
+#: C/strategy.page:5(info/desc)
+msgid "Strategies for playing Hitori."
+msgstr "Estrategias para jugar Hitori."
 
-#: C/license.page:11(title)
-msgid "License"
-msgstr "Licencia"
+#: C/strategy.page:7(page/title)
+msgid "Gameplay Strategies"
+msgstr "Estrategias de juego"
 
-#: C/license.page:12(p)
+#: C/strategy.page:9(page/p)
 msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
-"Unported license."
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
 msgstr ""
-"Este trabajo está licenciado bajo una Licencia Creative Commons Atribución - "
-"Compartir igual 3.0 sin soporte."
+"Hitori es bastante similar al Sudoku, de hecho usa parte de su deducción "
+"lógica para averiguar qué celdas se deben pintar. Una estrategia es usar "
+"<key>Mayús</key>-ratón para resaltar todos los números repetidos en cada "
+"<em>columna</em>, después usar <key>Ctrl</key>-ratón para resaltar todos los "
+"números repetidos en cada <em>fila</em>."
 
-#: C/license.page:20(p)
-msgid "You are free:"
-msgstr "Es libre de:"
-
-#: C/license.page:25(em)
-msgid "To share"
-msgstr "Compartir"
-
-#: C/license.page:26(p)
-msgid "To copy, distribute and transmit the work."
-msgstr "Copiar, distribuir y comunicar públicamente la obra"
-
-#: C/license.page:29(em)
-msgid "To remix"
-msgstr "Hacer obras derivadas"
-
-#: C/license.page:30(p)
-msgid "To adapt the work."
-msgstr "Adaptar el trabajo."
-
-#: C/license.page:33(p)
-msgid "Under the following conditions:"
-msgstr "Bajo las siguientes condiciones:"
-
-#: C/license.page:38(em)
-msgid "Attribution"
-msgstr "Atribución"
-
-#: C/license.page:39(p)
+#: C/strategy.page:12(page/p)
 msgid ""
-"You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Debe reconocer los créditos de la obra de la manera especificada por el "
-"autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo "
-"o apoyan el uso que hace de su obra)."
+"Una vez que esto está echo para el tablero entero, las celdas que se han "
+"resaltado de ambas maneras, son buenas candidatas para ser pintadas, aunque "
+"no siempre. Al pintar una celda, quite el resaltado del resto de celdas con "
+"el mismo número en la misma fila y columna, ya que esa celda se convierte en "
+"una buena forma de mantener el seguimiento de qué celdas todavía violan la "
+"<link xref=\"game\">primera regla de Hitori</link>."
 
-#: C/license.page:46(em)
-msgid "Share Alike"
-msgstr "Compartir igual"
-
-#: C/license.page:47(p)
+#: C/strategy.page:15(page/p)
 msgid ""
-"If you alter, transform, or build upon this work, you may distribute the "
-"resulting work only under the same, similar or a compatible license."
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
 msgstr ""
-"Si transforma o modifica esta obra para crear una obra derivada, sólo puede "
-"distribuir la obra resultante bajo la misma licencia, una de similar o una "
-"de compatible."
+"Tenga siempre en mente la segunda regla de Hitori, dos celdas adyacentes no "
+"pueden estar ambas pintadas. <app>Hitori</app> resaltará en rojo la celda "
+"más a la izquierda que viole la regla número dos. De igual forma, se "
+"resaltarán en rojo grupos de celtas que violen la tercera regla separando "
+"uno o más celdas sin pintar de las otras celdas sin pintar."
 
-#: C/license.page:53(p)
+#: C/strategy.page:19(page/p)
 msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
 msgstr ""
-"Para ver el texto completo de la licencia consulte la <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode/\">página web de Creative "
-"Commons</link> o lea el<link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Escrito de Commons</link>."
+"Si se queda parado en cualquier punto, elija <guiseq><gui style=\"menu"
+"\">Juego</gui><gui style=\"menuitem\">Sugerencias</gui></guiseq> para que "
+"<app>Hitori</app> marque una casilla que se debería pintar o limpiar y así "
+"acercarse a la solución."
 
-#: C/index.page:6(name)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: C/index.page:7(email)
-msgid "philip@tecnocode.co.uk"
-msgstr "philip@tecnocode.co.uk"
-
-#: C/index.page:8(years)
-msgid "2008–2010"
-msgstr "2008–2010"
-
-#: C/index.page:11(p)
-msgid ""
-"This work is licensed under a <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
-"License</link>."
-msgstr ""
-"Este trabajo está licenciado bajo una <link href=\"http://creativecommons."
-"org/licenses/by-sa/3.0/us/\">Licencia Creative Commons atribución - "
-"compartir igual 3.0 sin soporte</link>."
-
-#: C/index.page:15(title)
-msgid "Hitori Help"
-msgstr "Ayuda de Hitori"
-
-#: C/index.page:18(title)
-msgid "Basic Gameplay &amp; Usage"
-msgstr "Uso básico del juego"
-
-#: C/index.page:22(title)
-msgid "Tips &amp; Tricks"
-msgstr "Sugerencias y trucos"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/game.page:21(None)
-#| msgid ""
-#| "@@image: 'figures/hitori_main_window.png'; "
-#| "md5=7d84786ca244435340ecd6c7cb98dfd1"
-msgid ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=b6ea3ee1ff73311d002cfdb4463032be"
-msgstr ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=b6ea3ee1ff73311d002cfdb4463032be"
-
-#: C/game.page:5(desc)
-msgid "Introduction to the game of Hitori."
-msgstr "Introducción al juego Hitori."
-
-#: C/game.page:7(title)
-msgid "Hitori the Game"
-msgstr "El juego de Hitori"
-
-#: C/game.page:9(p)
-msgid ""
-"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
-"In the game, the player starts with a square board of numbers, and has to "
-"<em>paint out</em> cells until there are no duplicate numbers in each row "
-"and column. The following rules apply:"
-msgstr ""
-"Hitori es un pequeño juego de puzle lógico del mismo tipo que el popular "
-"Sudoku. En la partida, el jugador comienza en un tablero cuadrado de números "
-"y tiene que <em>escribir</em> en las celdas hasta que no haya números "
-"duplicados en cada fila y columna. Se aplican las siguientes reglas:"
-
-#: C/game.page:12(p)
-msgid ""
-"There must only be one of each number in the unpainted cells in each row and "
-"column."
-msgstr ""
-"Sólo debe existir un número de cada tipo en las celdas vacías en cada fila y "
-"columna."
-
-#: C/game.page:13(p)
-msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr ""
-"Ninguna celda escrita debe estar adyacente a otra, vertical u "
-"horizontalmente."
-
-#: C/game.page:14(p)
-msgid ""
-"All the unpainted cells must be joined together vertically and horizontally "
-"in one group."
-msgstr ""
-"Todas las celdas vacías deben unirse juntas vertical y horizontalmente en un "
-"grupo."
-
-#: C/game.page:16(p)
-msgid ""
-"These are the only three rules of the game, and so there may well be "
-"multiple solutions to a Hitori puzzle board."
-msgstr ""
-"Estas son las tres únicas reglas del juego y por ello puede haber múltiples "
-"soluciones de un tablero de puzle Hitori."
-
-#: C/game.page:19(title)
-msgid "Main game window"
-msgstr "Ventana principal del juego"
-
-#: C/game.page:20(desc)
-msgid "<app>Hitori</app> main window"
-msgstr "Ventana principal de <application>Hitori</application>"
-
-#: C/game.page:22(p)
-msgid "<app>Hitori</app> main window."
-msgstr "Ventana principal de <application>Hitori</application>."
-
-#: C/customization.page:5(desc)
-msgid "Changing how the game appears and plays."
-msgstr "Cambiar la apariencia del juego y la jugabilidad."
-
-#: C/customization.page:7(title)
-msgid "Customizing the Game"
-msgstr "Personalizar el juego"
-
-#: C/customization.page:9(p)
-msgid ""
-"The game can be customized by changing the board size — boards from 5–10 "
-"cells square are allowed."
-msgstr ""
-"El juego se puede personalizar cambiando el tamaño del tablero: se permiten "
-"tableros cuadrados de 5-10 celdas."
-
-#: C/customization.page:10(p)
-msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
-"of one, then start a new game with the requested board size."
-msgstr ""
-"Para cambiar el tamaño del tablero elija una opción de <guiseq><gui style="
-"\"menu\">Juego</gui><gui style=\"menuitem\">Tamaño del tablero</gui></"
-"guiseq>. <app>Hitori</app> le preguntará si quiere parar la partida actual "
-"si está en medio de una, después se iniciará una partida nueva con el tamaño "
-"de tablero solicitado."
-
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/index.page:0(None)
-msgid "translator-credits"
-msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010"
+#~ msgid "philip@tecnocode.co.uk"
+#~ msgstr "philip@tecnocode.co.uk"
 
 #~ msgid ""
 #~ "Permission is granted to copy, distribute and/or modify this document "
@@ -557,7 +564,7 @@ msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010"
 #~ "Este programa se distribuye bajo los términos de la Licencia Pública "
 #~ "General GNU tal como la publica la Free Software Foundation; tanto en la "
 #~ "versión 3 de la Licencia, o (a su opción) cualquier otra versión "
-#~ "posterior. Se incluye <ulink url=\"help:gpl\" type=\"help\"> una copia "
-#~ "de esta licencia</ulink> en esta documentación, otra copia se puede "
+#~ "posterior. Se incluye <ulink url=\"help:gpl\" type=\"help\"> una copia de "
+#~ "esta licencia</ulink> en esta documentación, otra copia se puede "
 #~ "encontrar en el archivo COPYING incluido con el código fuente de este "
 #~ "programa."
