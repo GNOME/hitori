@@ -8,18 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&component=general\n"
-"POT-Creation-Date: 2010-11-12 00:27+0000\n"
-"PO-Revision-Date: 2012-09-09 01:54+0700\n"
+"product=hitori&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2012-09-29 01:48+0000\n"
+"PO-Revision-Date: 2012-10-04 10:51+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: INDONESIA <gnome@i15n.org>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:240
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -28,61 +29,77 @@ msgid "Play the Hitori puzzle game"
 msgstr "Mainkan permainan menyusun gambar Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+#| msgid "_Game"
+msgid "_New Game"
+msgstr "Permaina_n Baru"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
+#| msgid "Hitori"
+msgid "_About Hitori"
+msgstr "Tent_ang Hitori"
 
 #: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
-msgid "Board _Size"
-msgstr "_Ukuran Papan"
-
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Permainan"
-
-#: ../data/hitori.ui.h:10
 msgid "_Help"
 msgstr "_Bantuan"
 
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Keluar"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Permainan"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "_Ukuran Papan"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
 #: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
 msgid "_Hint"
 msgstr "_Petunjuk"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Setelan"
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Tak jadi"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "_Jadi lagi"
+
+#: ../src/interface.c:87
 #, c-format
-#| msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
 msgid "UI file “%s” could not be loaded"
 msgstr "Berkas UI \"%s\" tidak dapat dimuat"
 
-#: ../src/interface.c:527
-#| msgid "The help contents could not be displayed."
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "Isi bantuan tidak dapat ditampilkan"
 
-#: ../src/interface.c:548
+#: ../src/interface.c:620
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -94,7 +111,7 @@ msgstr ""
 "License yang dipublikasikan oleh Free Software Foundation, baik itu versi 3 "
 "dari Lisensi tersebut, ataupun (sesuai pilihan Anda) versi yang lebih baru."
 
-#: ../src/interface.c:552
+#: ../src/interface.c:624
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -106,7 +123,7 @@ msgstr ""
 "DAYA JUAL atau KESESUAIAN UNTUK TUJUAN TERTENTU.  Lihat GNU General Public "
 "License untuk rincian lebih lanjut."
 
-#: ../src/interface.c:556
+#: ../src/interface.c:628
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -114,54 +131,55 @@ msgstr ""
 "Anda seharusnya sudah menerima salinan GNU General Public License yang "
 "disertakan bersama Hitori.  Jika tidak, lihat <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:568
-#| msgid "Copyright © 2007–2009 Philip Withnall"
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Hak Cipta © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:569
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Permainan menyusun gambar logis yang dirancang oleh Nikoli."
 
-#: ../src/interface.c:571
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr ""
 "Imam Musthaqim <userindesign@gmail.com>, 2009\n"
 "Andika Triwidada <andika@gmail.com>, 2012"
 
-#: ../src/interface.c:575
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Situs Web Hitori"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Aktifkan mode perunutan"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Tentukan sumber untuk pembuatan papan"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "- Mainkan Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+#| msgid "Command line options could not be parsed"
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Opsi baris-perintah tidak dapat diurai: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "Anda ingin menghentikan permainan saat ini?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Waktu: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Aktifkan mode perunutan"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Tentukan sumber untuk pembuatan papan"
-
-#. Options
-#: ../src/main.c:244
-msgid "- Play a game of Hitori"
-msgstr "- Mainkan Hitori"
-
-#: ../src/main.c:254
-#| msgid "Command-line options could not be parsed."
-msgid "Command line options could not be parsed"
-msgstr "Opsi baris-perintah tidak dapat diurai"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -169,3 +187,4 @@ msgstr "Opsi baris-perintah tidak dapat diurai"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Anda menang dalam waktu %02u:%02u!"
+
