@@ -7,18 +7,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-05-05 13:56+0000\n"
-"PO-Revision-Date: 2011-06-05 00:36+0300\n"
+"POT-Creation-Date: 2012-11-01 21:26+0000\n"
+"PO-Revision-Date: 2012-12-25 23:29+0300\n"
 "Last-Translator: Yuri Myasoedov <omerta13@yandex.ru>\n"
 "Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: ../data/hitori.desktop.in.h:1
-#: ../data/hitori.ui.h:8
-#: ../src/main.c:239
+#: ../data/hitori.ui.h:16
+#: ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -27,114 +29,132 @@ msgid "Play the Hitori puzzle game"
 msgstr "Игра-головоломка Hitori"
 
 #: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+msgid "_New Game"
+msgstr "_Новая игра"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
+msgid "_About Hitori"
+msgstr "_О программе"
 
 #: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
-msgid "Board _Size"
-msgstr "_Размер поля"
-
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Игра"
-
-#: ../data/hitori.ui.h:10
 msgid "_Help"
 msgstr "_Справка"
 
+#: ../data/hitori.ui.h:4
+msgid "_Quit"
+msgstr "_Закончить"
+
+#: ../data/hitori.ui.h:5
+msgid "_Game"
+msgstr "_Игра"
+
+#: ../data/hitori.ui.h:6
+msgid "Board _Size"
+msgstr "_Размер поля"
+
+#: ../data/hitori.ui.h:7
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:8
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:9
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:10
+msgid "8×8"
+msgstr "8×8"
+
 #: ../data/hitori.ui.h:11
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:12
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:13
 msgid "_Hint"
 msgstr "_Подсказка"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Параметры"
+#: ../data/hitori.ui.h:14
+msgid "_Undo"
+msgstr "_Отменить"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:15
+msgid "_Redo"
+msgstr "В_ернуть"
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Не удалось загрузить файл графического интерфейса «%s» "
 
-#: ../src/interface.c:537
+#: ../src/interface.c:597
 msgid "The help contents could not be displayed"
 msgstr "Не удалось показать содержимое справки"
 
-#: ../src/interface.c:558
+#: ../src/interface.c:620
 msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
 msgstr "Hitori ― свободное программное обеспечение. Вы можете распространять или изменять его на условиях GNU General Public License, опубликованной Free Software Foundation; либо лицензии версии 3, либо (на ваше усмотрение) любой более поздней версии."
 
-#: ../src/interface.c:562
+#: ../src/interface.c:624
 msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
 msgstr "Это приложение распространяется в надежде на то, что приложение будет полезно, но БЕЗ ВСЯКИХ ГАРАНТИЙ; не гарантируется даже ПРИГОДНОСТЬ или СООТВЕТСТВИЕ КАКИМ-ЛИБО ТРЕБОВАНИЯМ."
 
-#: ../src/interface.c:566
+#: ../src/interface.c:628
 msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
 msgstr "Вы должны получить копию GNU General Public License вместе с приложением. Если этого не произошло, см. <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:578
+#: ../src/interface.c:640
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Авторские права © 2007–2010 Филип Уизнэл"
 
-#: ../src/interface.c:579
+#: ../src/interface.c:641
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Логическая головоломка, созданная Николи."
 
-#: ../src/interface.c:581
+#: ../src/interface.c:643
 msgid "translator-credits"
 msgstr "Юрий Мясоедов <omerta13@yandex.ru>, 2011"
 
-#: ../src/interface.c:585
+#: ../src/interface.c:647
 msgid "Hitori Website"
 msgstr "Веб-сайт Hitori"
 
-#: ../src/main.c:76
+#: ../src/main.c:205
+msgid "Enable debug mode"
+msgstr "Включить режим отладки"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:207
+msgid "Seed the board generation"
+msgstr "Засеять генерацию поля"
+
+#. Options
+#: ../src/main.c:221
+msgid "- Play a game of Hitori"
+msgstr "- играть в Hitori"
+
+#. Print an error
+#: ../src/main.c:231
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Не удалось разобрать параметры командной строки: %s\n"
+
+#: ../src/main.c:297
 msgid "Do you want to stop the current game?"
 msgstr "Хотите остановить текущую игру?"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
+#: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Время: %02u:%02u"
-
-#: ../src/main.c:226
-msgid "Enable debug mode"
-msgstr "Включить режим отладки"
-
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
-msgid "Seed the board generation"
-msgstr "Засеять генерацию поля"
-
-#. Options
-#: ../src/main.c:243
-msgid "- Play a game of Hitori"
-msgstr "- играть в Hitori"
-
-#: ../src/main.c:253
-msgid "Command line options could not be parsed"
-msgstr "Не удалось разобрать аргументы командной строки"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -143,3 +163,5 @@ msgstr "Не удалось разобрать аргументы командн
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Вы одержали победу за %02u:%02u!"
 
+#~ msgid "_Settings"
+#~ msgstr "_Параметры"
