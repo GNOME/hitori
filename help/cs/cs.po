@@ -2,93 +2,253 @@
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori help.
 #
-# Marek Černocký <marek@manet.cz>, 2009, 2011.
+# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2010-10-31 13:09+0000\n"
-"PO-Revision-Date: 2011-02-07 19:06+0100\n"
+"POT-Creation-Date: 2012-09-28 23:05+0000\n"
+"PO-Revision-Date: 2012-12-27 20:15+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
-"Language-Team: Czech <gnome-cs-list@gnome.org>\n"
+"Language-Team: čeština <gnome-cs-list@gnome.org>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Poedit-Language: Czech\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Generator: Gtranslator 2.91.5\n"
 
-#: C/strategy.page:5(desc)
-msgid "Strategies for playing Hitori."
-msgstr "Strategie pro hraní Hitori."
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+#| msgid "translator-credits"
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Marek Černocký <marek@manet.cz>"
 
-#: C/strategy.page:7(title)
-msgid "Gameplay Strategies"
-msgstr "Herní strategie"
+#: C/index.page:6(credit/name)
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
-#: C/strategy.page:9(p)
+#: C/index.page:8(credit/years)
+msgid "2008–2010"
+msgstr "2008 – 2010"
+
+#: C/index.page:11(license/p)
 msgid ""
-"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
-"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 msgstr ""
-"Hra Hitori je trochu podobná Sudoku, také vyžaduje logickou dedukci k "
-"určení, která políčka zatřít. Jednou ze strategií je použít klikání spolu s "
-"klávesou <key>Shift</key> k označení všech čísel, která se v jednotlivých "
-"<em>sloupcích</em> opakují, a s klávesou <key>Ctrl</key> k označení těch, "
-"která se opakují v jednotlivých <em>řádcích</em>."
+"Práce je licencována pod licencí <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 
-#: C/strategy.page:12(p)
+#: C/index.page:15(page/title)
+msgid "Hitori Help"
+msgstr "Nápověda ke hře Hitori"
+
+#: C/index.page:18(section/title)
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Základy hraní a použití"
+
+#: C/index.page:22(section/title)
+msgid "Tips &amp; Tricks"
+msgstr "Tipy a triky"
+
+#: C/customization.page:5(info/desc)
+msgid "Changing how the game appears and plays."
+msgstr "Změna vzhledu a způsobu hraní."
+
+#: C/customization.page:7(page/title)
+msgid "Customizing the Game"
+msgstr "Přizpůsobení hry"
+
+#: C/customization.page:9(page/p)
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
 msgstr ""
-"Až to uděláte na celé desce, budou některá políčka označena oběma způsoby a "
-"ty jsou horkými kandidáty na zatření, ale naplatí to vždy. Když políčko "
-"zatíráte, zrušte označení všech políček se stejným číslem v příslušném řádku "
-"a sloupci, tak si udržíte přehled, které buňky stále porušují <link xref="
-"\"game\">pravidlo 1 hry Hitori</link>."
+"Hru si lze přizpůsobit změnou velikosti hrací desky — dovolené jsou "
+"čtvercové hrací desky o rozměrech 5 až 10 políček."
 
-#: C/strategy.page:15(p)
+#: C/customization.page:10(page/p)
 msgid ""
-"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
-"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
-"separating one or more unpainted cells from the other unpainted cells will "
-"be highlighted in red."
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
 msgstr ""
-"Stále mějte na paměti také pravidlo 2 hry Hitori, že nesmí být zatřeny naráz "
-"sousedící políčka. Políčka, která druhé pravidlo poruší, budou zvýrazněna "
-"červeně. Stejně tak budou červeně zvýrazněny skupiny políček, které porušují "
-"pravidlo číslo 3 oddělením jednoho nebo více nezatřených políček od jiných "
-"nezatřených políček."
+"Pokud chcete změnit velikost hrací desky, vyberte některou z voleb v "
+"<guiseq><gui style=\"menu\">Hra</gui><gui style=\"menuitem\">Velikost hrací "
+"desky</gui></guiseq>. V případě, že máte rozehranou hru, dotáže se "
+"<app>Hitori</app>, jestli ji má ukončit a po té spustí novou hru s "
+"požadovanými rozměry hrací desky."
 
-#: C/strategy.page:19(p)
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:21(media)
+#| msgid ""
+#| "@@image: 'figures/hitori_main_window.png'; "
+#| "md5=b6ea3ee1ff73311d002cfdb4463032be"
+msgctxt "_"
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgstr ""
-"Jestli se v nějakém bodě zaseknete, zvolte <guiseq><gui style=\"menu\">Hra</"
-"gui><gui style=\"menuitem\">Rada</gui></guiseq>, aby vám aplikace "
-"<app>Hitori</app> označila políčko, které by se mělo zatřít nebo očistit, a "
-"tím vás přiblížila k řešení."
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
-#: C/playing.page:5(desc)
+#: C/game.page:5(info/desc)
+msgid "Introduction to the game of Hitori."
+msgstr "Úvod do hry Hitori."
+
+#: C/game.page:7(page/title)
+msgid "Hitori the Game"
+msgstr "Hra Hitori"
+
+#: C/game.page:9(page/p)
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori je malý logický hlavolam podobné povahy jako populárnější Sudoku. "
+"Hráč začíná hru s čtvercovou hrací deskou s čísly a musí <quote>zatřít</"
+"quote> políčka tak, aby se v žádném řádku ani sloupci žádné číslo "
+"neopakovalo. Platí přitom následující pravidla:"
+
+#: C/game.page:12(item/p)
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"V každém řádku i sloupci se musí v nezatřených políčkách vyskytovat každé "
+"číslo jen jednou."
+
+#: C/game.page:13(item/p)
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr "Žádná zatřená políčka nesmí navzájem svisle nebo vodorovně sousedit."
+
+#: C/game.page:14(item/p)
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Všechna nezatřená políčka musí být spolu svisle nebo vodorovně propojená do "
+"jedné skupiny."
+
+#: C/game.page:16(page/p)
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Musí se dodržovat pouhá tři pravidla, a tak je dost dobře možné, že může mít "
+"dané rozložení hrací desky Hitori více řešení."
+
+#: C/game.page:19(figure/title)
+msgid "Main game window"
+msgstr "Hlavní okno hry"
+
+#: C/game.page:20(figure/desc)
+msgid "<app>Hitori</app> main window"
+msgstr "Hlavní okno hry <app>Hitori</app>"
+
+#: C/game.page:22(media/p)
+msgid "<app>Hitori</app> main window."
+msgstr "Hlavní okno hry <app>Hitori</app>."
+
+#: C/license.page:8(info/desc)
+msgid "Legal information."
+msgstr "Právní informace."
+
+#: C/license.page:11(page/title)
+msgid "License"
+msgstr "Licence"
+
+#: C/license.page:12(page/p)
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Tato práce je šířena pod licencí CreativeCommons Attribution-Share Alike 3.0 "
+"Unported Licence."
+
+#: C/license.page:20(page/p)
+msgid "You are free:"
+msgstr "Můžete volně:"
+
+#: C/license.page:25(item/title)
+#| msgid "To share"
+msgid "<em>To share</em>"
+msgstr "<em>Sdílet</em>"
+
+#: C/license.page:26(item/p)
+msgid "To copy, distribute and transmit the work."
+msgstr "Kopírovat, šířit a rozesílat dílo."
+
+#: C/license.page:29(item/title)
+#| msgid "To remix"
+msgid "<em>To remix</em>"
+msgstr "<em>Měnit</em>"
+
+#: C/license.page:30(item/p)
+msgid "To adapt the work."
+msgstr "Přizpůsobovat dílo."
+
+#: C/license.page:33(page/p)
+msgid "Under the following conditions:"
+msgstr "Za následujících podmínek:"
+
+#: C/license.page:38(item/title)
+#| msgid "Attribution"
+msgid "<em>Attribution</em>"
+msgstr "<em>Označení</em>"
+
+#: C/license.page:39(item/p)
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Musíte dílo označit v souladu s požadavky autora nebo licence (ale ne žádným "
+"způsobem, který předpokládá, že schvalují vás nebo vaše použití díla)."
+
+#: C/license.page:46(item/title)
+#| msgid "Share Alike"
+msgid "<em>Share Alike</em>"
+msgstr "<em>Sdílení stejně</em>"
+
+#: C/license.page:47(item/p)
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Pokud dílo změníte, převedete nebo na něm založíte jiné, můžete výsledek "
+"této práce šířit pouze pod stejnou, podobnou nebo kompatibilní licencí."
+
+#: C/license.page:53(page/p)
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Text licence v plném znění najdete na <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/legalcode\">webových stránkách CreativeCommons</link> "
+"nebo si přečtěte <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">výtah dokumentu pro neprávníky</link>."
+
+#: C/playing.page:5(info/desc)
 msgid "Using <app>Hitori</app> to play a game."
 msgstr "Použití <app>Hitori</app> k hraní hry."
 
-#: C/playing.page:7(title)
+#: C/playing.page:7(page/title)
 msgid "Playing a Game"
 msgstr "Jak hrát"
 
-#: C/playing.page:9(p)
+#: C/playing.page:9(page/p)
 msgid ""
 "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
 "\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
@@ -98,7 +258,7 @@ msgstr ""
 "\"menuitem\">Nová hra</gui></guiseq>. Pokud už máte rozehranou hru, "
 "<app>Hitori</app> se vás dotáže, jestli chcete současnou hru ukončit."
 
-#: C/playing.page:11(p)
+#: C/playing.page:11(page/p)
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -108,7 +268,7 @@ msgstr ""
 "kliknutím na něj. Až jsou políčka zatřená tak, že neporušují žádné ze tří "
 "pravidel, hra končí a na hrací desce nelze nadále dělat žádné změny."
 
-#: C/playing.page:13(p)
+#: C/playing.page:13(page/p)
 msgid ""
 "<app>Hitori</app> also allows you to highlight cells for your own reference "
 "when solving a board. This can be achieved by holding <key>Ctrl</key> or "
@@ -123,7 +283,7 @@ msgstr ""
 "políčka použita i naráz. Označení zrušíte opětovným kliknutím za současného "
 "přidržení <key>Ctrl</key> nebo <key>Shift</key>."
 
-#: C/playing.page:17(p)
+#: C/playing.page:17(page/p)
 msgid ""
 "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
 "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
@@ -136,7 +296,7 @@ msgstr ""
 "guiseq>. Vracet zpět a znovu provádět můžete libovolný počet tahů bez "
 "omezení."
 
-#: C/playing.page:20(p)
+#: C/playing.page:20(page/p)
 msgid ""
 "To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
@@ -149,221 +309,64 @@ msgstr ""
 "blikajícím červeným obrysem. To naznačuje, že současný stav políčka (zatřené "
 "nebo nezatřené) je nesprávný a pro vítězné dokončení hry by měl být změněn."
 
-#: C/license.page:8(desc)
-msgid "Legal information."
-msgstr "Právní informace."
+#: C/strategy.page:5(info/desc)
+msgid "Strategies for playing Hitori."
+msgstr "Strategie pro hraní Hitori."
 
-#: C/license.page:11(title)
-msgid "License"
-msgstr "Licence"
+#: C/strategy.page:7(page/title)
+msgid "Gameplay Strategies"
+msgstr "Herní strategie"
 
-#: C/license.page:12(p)
+#: C/strategy.page:9(page/p)
 msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
-"Unported license."
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
 msgstr ""
-"Tato práce je šířena pod licencí CreativeCommons Attribution-Share Alike 3.0 "
-"Unported Licence."
+"Hra Hitori je trochu podobná Sudoku, také vyžaduje logickou dedukci k "
+"určení, která políčka zatřít. Jednou ze strategií je použít klikání spolu s "
+"klávesou <key>Shift</key> k označení všech čísel, která se v jednotlivých "
+"<em>sloupcích</em> opakují, a s klávesou <key>Ctrl</key> k označení těch, "
+"která se opakují v jednotlivých <em>řádcích</em>."
 
-#: C/license.page:20(p)
-msgid "You are free:"
-msgstr "Můžete volně:"
-
-#: C/license.page:25(em)
-msgid "To share"
-msgstr "Sdílet"
-
-#: C/license.page:26(p)
-msgid "To copy, distribute and transmit the work."
-msgstr "Kopírovat, šířit a rozesílat dílo."
-
-#: C/license.page:29(em)
-msgid "To remix"
-msgstr "Měnit"
-
-#: C/license.page:30(p)
-msgid "To adapt the work."
-msgstr "Přizpůsobovat dílo."
-
-#: C/license.page:33(p)
-msgid "Under the following conditions:"
-msgstr "Za následujících podmínek:"
-
-#: C/license.page:38(em)
-#| msgid "Introduction"
-msgid "Attribution"
-msgstr "Označení"
-
-#: C/license.page:39(p)
+#: C/strategy.page:12(page/p)
 msgid ""
-"You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Musíte dílo označit v souladu s požadavky autora nebo licence (ale ne žádným "
-"způsobem, který předpokládá, že schvalují vás nebo vaše použití díla)."
+"Až to uděláte na celé desce, budou některá políčka označena oběma způsoby a "
+"ty jsou horkými kandidáty na zatření, ale naplatí to vždy. Když políčko "
+"zatíráte, zrušte označení všech políček se stejným číslem v příslušném řádku "
+"a sloupci, tak si udržíte přehled, které buňky stále porušují <link xref="
+"\"game\">pravidlo 1 hry Hitori</link>."
 
-#: C/license.page:46(em)
-msgid "Share Alike"
-msgstr "Sdílení stejně"
-
-#: C/license.page:47(p)
+#: C/strategy.page:15(page/p)
 msgid ""
-"If you alter, transform, or build upon this work, you may distribute the "
-"resulting work only under the same, similar or a compatible license."
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
 msgstr ""
-"Pokud dílo změníte, převedete nebo na něm založíte jiné, můžete výsledek "
-"této práce šířit pouze pod stejnou, podobnou nebo kompatibilní licencí."
+"Stále mějte na paměti také pravidlo 2 hry Hitori, že nesmí být zatřeny naráz "
+"sousedící políčka. Políčka, která druhé pravidlo poruší, budou zvýrazněna "
+"červeně. Stejně tak budou červeně zvýrazněny skupiny políček, které porušují "
+"pravidlo číslo 3 oddělením jednoho nebo více nezatřených políček od jiných "
+"nezatřených políček."
 
-#: C/license.page:53(p)
+#: C/strategy.page:19(page/p)
 msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
 msgstr ""
-"Text licence v plném znění najdete na <link href=\"http://creativecommons."
-"org/licenses/by-sa/3.0/legalcode\">webových stránkách CreativeCommons</link> "
-"nebo si přečtěte <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
-"\">výtah dokumentu pro neprávníky</link>."
-
-#: C/index.page:6(name)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: C/index.page:7(email)
-msgid "philip@tecnocode.co.uk"
-msgstr "philip@tecnocode.co.uk"
-
-#: C/index.page:8(years)
-#| msgid "2008–2009"
-msgid "2008–2010"
-msgstr "2008 – 2010"
-
-#: C/index.page:11(p)
-msgid ""
-"This work is licensed under a <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
-"License</link>."
-msgstr ""
-"Práce je licencována pod licencí <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
-"License</link>."
-
-#: C/index.page:15(title)
-#| msgid "Hitori"
-msgid "Hitori Help"
-msgstr "Nápověda ke hře Hitori"
-
-#: C/index.page:18(title)
-msgid "Basic Gameplay &amp; Usage"
-msgstr "Základy hraní a použití"
-
-#: C/index.page:22(title)
-msgid "Tips &amp; Tricks"
-msgstr "Tipy a triky"
-
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/game.page:21(None)
-msgid ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=b6ea3ee1ff73311d002cfdb4463032be"
-msgstr ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=b6ea3ee1ff73311d002cfdb4463032be"
-
-#: C/game.page:5(desc)
-msgid "Introduction to the game of Hitori."
-msgstr "Úvod do hry Hitori."
-
-#: C/game.page:7(title)
-msgid "Hitori the Game"
-msgstr "Hra Hitori"
-
-#: C/game.page:9(p)
-msgid ""
-"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
-"In the game, the player starts with a square board of numbers, and has to "
-"<em>paint out</em> cells until there are no duplicate numbers in each row "
-"and column. The following rules apply:"
-msgstr ""
-"Hitori je malý logický hlavolam podobné povahy jako populárnější Sudoku. "
-"Hráč začíná hru s čtvercovou hrací deskou s čísly a musí <quote>zatřít</"
-"quote> políčka tak, aby se v žádném řádku ani sloupci žádné číslo "
-"neopakovalo. Platí přitom následující pravidla:"
-
-#: C/game.page:12(p)
-msgid ""
-"There must only be one of each number in the unpainted cells in each row and "
-"column."
-msgstr ""
-"V každém řádku i sloupci se musí v nezatřených políčkách vyskytovat každé "
-"číslo jen jednou."
-
-#: C/game.page:13(p)
-msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr "Žádná zatřená políčka nesmí navzájem svisle nebo vodorovně sousedit."
-
-#: C/game.page:14(p)
-msgid ""
-"All the unpainted cells must be joined together vertically and horizontally "
-"in one group."
-msgstr ""
-"Všechna nezatřená políčka musí být spolu svisle nebo vodorovně propojená do "
-"jedné skupiny."
-
-#: C/game.page:16(p)
-msgid ""
-"These are the only three rules of the game, and so there may well be "
-"multiple solutions to a Hitori puzzle board."
-msgstr ""
-"Musí se dodržovat pouhá tři pravidla, a tak je dost dobře možné, že může mít "
-"dané rozložení hrací desky Hitori více řešení."
-
-#: C/game.page:19(title)
-msgid "Main game window"
-msgstr "Hlavní okno hry"
-
-#: C/game.page:20(desc)
-msgid "<app>Hitori</app> main window"
-msgstr "Hlavní okno hry <app>Hitori</app>"
-
-#: C/game.page:22(p)
-msgid "<app>Hitori</app> main window."
-msgstr "Hlavní okno hry <app>Hitori</app>."
-
-#: C/customization.page:5(desc)
-msgid "Changing how the game appears and plays."
-msgstr "Změna vzhledu a způsobu hraní."
-
-#: C/customization.page:7(title)
-msgid "Customizing the Game"
-msgstr "Přizpůsobení hry"
-
-#: C/customization.page:9(p)
-msgid ""
-"The game can be customized by changing the board size — boards from 5–10 "
-"cells square are allowed."
-msgstr ""
-"Hru si lze přizpůsobit změnou velikosti hrací desky — dovolené jsou "
-"čtvercové hrací desky o rozměrech 5 až 10 políček."
-
-#: C/customization.page:10(p)
-msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
-"of one, then start a new game with the requested board size."
-msgstr ""
-"Pokud chcete změnit velikost hrací desky, vyberte některou z voleb v "
-"<guiseq><gui style=\"menu\">Hra</gui><gui style=\"menuitem\">Velikost hrací "
-"desky</gui></guiseq>. V případě, že máte rozehranou hru, dotáže se "
-"<app>Hitori</app>, jestli ji má ukončit a po té spustí novou hru s "
-"požadovanými rozměry hrací desky."
-
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2
-#: C/index.page:0(None)
-msgid "translator-credits"
-msgstr "Marek Černocký <marek@manet.cz>"
-
+"Jestli se v nějakém bodě zaseknete, zvolte <guiseq><gui style=\"menu\">Hra</"
+"gui><gui style=\"menuitem\">Rada</gui></guiseq>, aby vám aplikace "
+"<app>Hitori</app> označila políčko, které by se mělo zatřít nebo očistit, a "
+"tím vás přiblížila k řešení."
