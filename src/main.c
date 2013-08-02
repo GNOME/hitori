@@ -438,7 +438,9 @@ main (int argc, char *argv[])
 	HitoriApplication *app;
 	int status;
 
+#if !GLIB_CHECK_VERSION (2, 35, 0)
 	g_type_init ();
+#endif
 
 	app = hitori_application_new ();
 	status = g_application_run (G_APPLICATION (app), argc, argv);
