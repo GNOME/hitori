@@ -381,15 +381,21 @@ hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 void
 hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori)
 {
+	gboolean timer_was_running = FALSE;
+
 	if (hitori->debug)
 		g_debug ("Got window state event: %u (changed: %u)", event->new_window_state, event->changed_mask);
 
-	if (event->new_window_state & GDK_WINDOW_STATE_WITHDRAWN ||
-	    event->new_window_state & GDK_WINDOW_STATE_ICONIFIED ||
-	    event->new_window_state & GDK_WINDOW_STATE_BELOW) {
+	timer_was_running = (GPOINTER_TO_UINT (g_object_get_data (G_OBJECT (window), "hitori-timer-was-running")) > 0) ? TRUE : FALSE;
+
+	if (!(event->new_window_state & GDK_WINDOW_STATE_FOCUSED)) {
 		/* Pause the timer */
+		if (hitori->timeout_id > 0) {
+			g_object_set_data (G_OBJECT (window), "hitori-timer-was-running", GUINT_TO_POINTER ((hitori->timeout_id > 0) ? TRUE : FALSE));
+		}
+
 		hitori_pause_timer (hitori);
-	} else {
+	} else if (timer_was_running == TRUE) {
 		/* Re-start the timer */
 		hitori_start_timer (hitori);
 	}

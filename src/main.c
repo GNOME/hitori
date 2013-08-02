@@ -395,8 +395,10 @@ hitori_start_timer (Hitori *hitori)
 void
 hitori_pause_timer (Hitori *hitori)
 {
-	if (hitori->timeout_id > 0)
+	if (hitori->timeout_id > 0) {
 		g_source_remove (hitori->timeout_id);
+		hitori->timeout_id = 0;
+	}
 }
 
 void
