@@ -1,5 +1,19 @@
 Major new features in version...
 
+0.4.1:
+* Fix timer pausing on winning a game
+* Translations:
+** cs (Marek Černocký)
+** de (Mario Blättermann)
+** es (Daniel Musteles)
+** gl (Fran Dieguez)
+** he (Yaron Shahrabani)
+** hu (Balázs Úr)
+** id (Andika Triwidada)
+** lv (Rūdofls Mazurs)
+** pt_BR (Enrico Nicoletto)
+** ru (Yuri Myasoedov)
+
 0.4.0:
 * Remove implicit dependency on libm
 * Fix l10n (bgo#652399)
