@@ -74,6 +74,7 @@ hitori_create_interface (Hitori *hitori)
 	GError *error = NULL;
 	GtkBuilder *builder;
 	GtkStyleContext *style_context;
+	const PangoFontDescription *font;
 
 	builder = gtk_builder_new ();
 
@@ -119,8 +120,9 @@ hitori_create_interface (Hitori *hitori)
 
 	/* Set up font descriptions for the drawing area */
 	style_context = gtk_widget_get_style_context (hitori->drawing_area);
-	hitori->normal_font_desc = pango_font_description_copy (gtk_style_context_get_font (style_context, 0));
-	hitori->painted_font_desc = pango_font_description_copy (gtk_style_context_get_font (style_context, 0));
+	gtk_style_context_get (style_context, 0, GTK_STYLE_PROPERTY_FONT, &font, NULL);
+	hitori->normal_font_desc = pango_font_description_copy (font);
+	hitori->painted_font_desc = pango_font_description_copy (font);
 
 	/* Reset the timer */
 	hitori_reset_timer (hitori);
