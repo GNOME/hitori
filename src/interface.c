@@ -653,7 +653,7 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 				"license", license,
 				"wrap-license", TRUE,
 				"website-label", _("Hitori Website"),
-				"website", "http://live.gnome.org/Hitori",
+				"website", PACKAGE_URL,
 				NULL);
 
 	g_free (license);
