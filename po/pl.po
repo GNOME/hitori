@@ -4,14 +4,14 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Piotr Drąg <piotrdrag@gmail.com>, 2012.
-# Aviary.pl <gnomepl@aviary.pl>, 2012.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2013.
+# Aviary.pl <gnomepl@aviary.pl>, 2012-2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-29 05:15+0200\n"
-"PO-Revision-Date: 2012-09-29 05:17+0200\n"
+"POT-Creation-Date: 2013-09-12 00:27+0200\n"
+"PO-Revision-Date: 2013-09-12 00:28+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -30,6 +30,32 @@ msgstr "Hitori"
 #: ../data/hitori.desktop.in.h:2
 msgid "Play the Hitori puzzle game"
 msgstr "Gra logiczna Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to Sudoku."
+msgstr "Hitori to gra logiczna, podobna do Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Należy jak najszybciej wyeliminować podwójne liczby w każdym rzędzie i "
+"kolumnie przed upływem określonego czasu. Obsługiwane są różne rozmiary "
+"planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
+"rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
+
+#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+msgstr ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -91,16 +117,16 @@ msgstr "Cof_nij"
 msgid "_Redo"
 msgstr "P_onów"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Nie można wczytać pliku interfejsu użytkownika \"%s\""
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "Nie można wyświetlić treści pomocy"
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -112,7 +138,7 @@ msgstr ""
 "przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według "
 "wersji trzeciej tej Licencji lub którejś z późniejszych wersji."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -124,7 +150,7 @@ msgstr ""
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
 "bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -133,21 +159,21 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
 "- proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logiczna układanka zaprojektowana przez firmę Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2012"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2013\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2012-2013"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Witryna gry Hitori"
 
