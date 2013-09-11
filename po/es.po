@@ -2,23 +2,23 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-29 01:48+0000\n"
-"PO-Revision-Date: 2012-09-30 12:22+0200\n"
+"POT-Creation-Date: 2013-09-11 03:11+0000\n"
+"PO-Revision-Date: 2013-09-11 17:54+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
+"Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Gtranslator 2.91.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
 #: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
@@ -28,13 +28,37 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Jugar al juego de puzle Hitori"
 
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to Sudoku."
+msgstr "Hitori es un juego de lógica similar al Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Puede jugar contra el reloj, intentando eliminar todos los números "
+"duplicados en cada fila y columna lo más rápido posible. Se soportan varios "
+"tamaños de tablero y puede colocar marcadores en las celdas para ayudarle a "
+"encontrar la solución. Si tiene problemas, el juego puede darle una pista."
+
+#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+msgstr ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+
 #: ../data/hitori.ui.h:1
-#| msgid "_Game"
 msgid "_New Game"
 msgstr "Juego _nuevo"
 
 #: ../data/hitori.ui.h:2
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "Acerca _de Hitori"
 
@@ -90,16 +114,16 @@ msgstr "_Deshacer"
 msgid "_Redo"
 msgstr "_Rehacer"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "No se pudo cargar el archivo de interfaz de usuario «%s»"
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "No se pudo mostrar el contenido de la ayuda"
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -111,7 +135,7 @@ msgstr ""
 "Software Foundation; tanto en la versión 3 de la Licencia como (a su "
 "elección) cualquier versión posterior."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -123,7 +147,7 @@ msgstr ""
 "PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Publica General para más "
 "detalles."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -131,19 +155,19 @@ msgstr ""
 "Debería haber recibido una copia de la Licencia Pública General GNU junto "
 "con Hitori. Si no la recibió, consulte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Un puzle de lógica diseñado por Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Página web de Hitori"
 
@@ -164,7 +188,6 @@ msgstr "- Jugar una partida de Hitori"
 #. Print an error
 #: ../src/main.c:231
 #, c-format
-#| msgid "Command line options could not be parsed"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "No se pudieron analizar las opciones de la línea de comandos: %s\n"
 
