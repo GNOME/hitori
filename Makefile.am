@@ -88,6 +88,16 @@ EXTRA_DIST += \
 	$(NULL)
 CLEANFILES = $(desktop_DATA)
 
+# AppData
+@INTLTOOL_XML_RULE@
+
+appdatadir = $(datadir)/appdata
+appdata_in_files = data/hitori.appdata.xml.in
+appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+
+EXTRA_DIST += $(appdata_in_files)
+CLEANFILES += $(appdata_DATA)
+
 # Gubbins
 EXTRA_DIST += \
 	autogen.sh \

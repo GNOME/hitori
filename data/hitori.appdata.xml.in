@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+	<id type="desktop">hitori.desktop</id>
+	<licence>CC BY-SA</licence>
+	<description>
+		<!-- Translators: These are the application description paragraphs in the AppData file. -->
+		<_p>Hitori is a logic game similar to Sudoku.</_p>
+		<_p>You play the game against the clock, aiming to eliminate all
+		    the duplicate numbers in each row and column in the fastest
+		    time. Multiple sizes of game board are supported, and you
+		    can place markers on cells to help work out the solution.
+		    If you get stuck, the game can give you a hint.</_p>
+	</description>
+	<screenshots>
+		<!-- Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot. -->
+		<_screenshot type="default" width="402" height="493">https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;target=screenshot-hitori.png</_screenshot>
+	</screenshots>
+	<url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
+	<updatecontact>philip_at_tecnocode.co.uk</updatecontact>
+</application>
