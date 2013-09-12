@@ -2,13 +2,13 @@
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
-# Fran Dieguez <frandieguez@gnome.org>, 2012.
+# Fran Dieguez <frandieguez@gnome.org>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-12 01:22+0200\n"
-"PO-Revision-Date: 2012-10-12 01:23+0200\n"
+"POT-Creation-Date: 2013-09-12 19:29+0200\n"
+"PO-Revision-Date: 2013-09-12 19:30+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -25,6 +25,32 @@ msgstr "Hitori"
 #: ../data/hitori.desktop.in.h:2
 msgid "Play the Hitori puzzle game"
 msgstr "Xogue ao xogo de crebacabezas Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to Sudoku."
+msgstr "Hitori é un xogo de lóxica similar ao Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Vostede xoga contra o reloxo co fin de eliminar todos os números duplicados "
+"en cada fila e columna no mellor tempo posíbel. Conta con taboleiros de xogo "
+"de varios tamaños e pode dispor marcadores nas celas que lle axuden a "
+"acadar unha solución. Se se atasca, o xogo daralle un consello."
+
+#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+msgstr ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;target"
+"=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -86,16 +112,16 @@ msgstr "_Desfacer"
 msgid "_Redo"
 msgstr "_Refacer"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Non é posíbel cargar o ficheiro de IU \"%s\"."
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "Non foi posíbel mostrar os contidos da axuda."
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -106,7 +132,7 @@ msgstr ""
 "termos da Licenza pública xeral de GNU publicada pola Free Software "
 "Foundation, na versión 3 ou suuperior da licenza."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -117,7 +143,7 @@ msgstr ""
 "ALGUNHA, incluso sen a garantía de MERCANTIBILIDADE ou AXUSTE A UN PROPÓSITO "
 "EN PARTICULAR. Olle a Licenza pública xeral de GNU para ter máis información."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -125,19 +151,19 @@ msgstr ""
 "Vostede debeu de recibir unha copia da Licenza pública xeral con Hitori. Se "
 "non é así olle <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Un crebacabezas lóxico deseñado por Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr "Fran Diéguez <fran.dieguez@glug.es>"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Páxina web de Hitori"
 
