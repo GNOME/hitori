@@ -3,22 +3,23 @@
 # This file is distributed under the same license as the HITORI package.
 # Og Maciel <ogmaciel@gnome.org>, 2009.
 # Flamarion Jorge <jorge.flamarion@gmai.com>, 2010.
-# Enrico Nicoletto <liverig@gmail.com>,2013.
+# Enrico Nicoletto <liverig@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-12-28 12:53+0000\n"
-"PO-Revision-Date: 2013-02-04 10:54-0300\n"
+"POT-Creation-Date: 2013-09-11 15:54+0000\n"
+"PO-Revision-Date: 2013-09-11 14:33-0300\n"
 "Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
@@ -27,6 +28,34 @@ msgstr "Hitori"
 #: ../data/hitori.desktop.in.h:2
 msgid "Play the Hitori puzzle game"
 msgstr "Jogue o quebra-cabeça Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to Sudoku."
+msgstr "Hitori é um jogo de lógica parecido com o Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Você começa o jogo contra o relógio, com o objetivo de eliminar todos os "
+"números duplicados de cada linha e coluna no tempo mais rápido. Há suporte a "
+"vários tamanhos de tabuleiros de jogo, e você pode posicionar marcadores nas "
+"células para ajudar a resolver a solução. Se você ficar preso, o jogo poderá "
+"oferecer-lhe uma dica."
+
+# Captura de tela acrescentada na página Wiki!!
+#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+msgstr ""
+"https://wiki.gnome.org/Apps/Hitori?"
+"action=AttachFile&do=get&target=screenshot-hitori-pt_BR.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -88,16 +117,16 @@ msgstr "_Desfazer"
 msgid "_Redo"
 msgstr "R_efazer"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Arquivo UI \"%s\" não pode ser carregado"
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "O conteúdo de ajuda não pode ser exibido"
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -108,7 +137,7 @@ msgstr ""
 "termos da Licença Pública Geral GNU publicada pela Free Software Foundation; "
 "qualquer versão 2 da licença, ou (à sua escolha) qualquer versão posterior."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -120,7 +149,7 @@ msgstr ""
 "PROPÓSITO EM PARTICULAR. Consulte a Licença Pública Geral GNU para obter "
 "mais detalhes."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -129,21 +158,21 @@ msgstr ""
 "Public License) junto com o Hitori. Caso contrário, veja <http://www.gnu.org/"
 "licenses/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Um quebra-cabeça de lógica criado por Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr ""
 "Og Maciel <ogmaciel@gnome.org>\n"
 "Flamarion Jorge <jorge.flamarion@gmail.com>"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Website do Hitori"
 
