@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori"
 "&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-29 01:48+0000\n"
-"PO-Revision-Date: 2012-09-29 10:37+0200\n"
+"POT-Creation-Date: 2013-09-11 03:11+0000\n"
+"PO-Revision-Date: 2013-10-15 22:55+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -27,13 +27,38 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Igrajte igru slagalica Hitori"
 
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to Sudoku."
+msgstr "Hitori je logička igra slična Sudokuu."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Vi igrate igru protiv sata, s ciljem da poništite sve udvostručene brojeve u "
+"svakom redu i stupcu u što kraćem vremenskom roku. Podržano je nekoliko "
+"veličina igračke table, a možete da postavljate označavače na poljima da vam "
+"pomognu u pronalaženju rešenja. Ako li vam negde zapne, igra može da vam "
+"došapne savet."
+
+#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+"target=screenshot-hitori.png"
+msgstr ""
+"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;target"
+"=screenshot-hitori.png"
+
 #: ../data/hitori.ui.h:1
-#| msgid "_Game"
 msgid "_New Game"
 msgstr "_Nova igra"
 
 #: ../data/hitori.ui.h:2
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "_O Hitoriju"
 
@@ -89,16 +114,16 @@ msgstr "_Opozovi"
 msgid "_Redo"
 msgstr "_Ponovi"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Ne mogu da učitam datoteku KS „%s“"
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "Ne mogu da prikažem sadržaj pomoći"
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -109,7 +134,7 @@ msgstr ""
 "Gnuove opšte javne licence koju je objavila Zadužbina slobodnog softvera, "
 "bilo verzije 3 licence, ili (po vašem izboru) bilo koje novije verzije."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -120,7 +145,7 @@ msgstr ""
 "čak i bez primenjene garancije TRŽIŠNE VREDNOSTI ili PRILAGOĐENOSTI ODREĐENOJ "
 "NAMENI. Pogledajte GNU Opštu javnu licencu za više detalja."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -128,22 +153,22 @@ msgstr ""
 "Treba da ste primili primerak Gnuove opšte javne licence uz Hitori. Ako "
 "niste, pogledajte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autorska prava © 2007–2010 Filip Vitnal"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logička slagalica koju je osmislio Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr ""
 "  Miroslav Nikolić <miroslavnikolic@rocketmail.com>  \n"
 "\n"
 "http://prevod.org — prevod na srpski jezik"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Veb stranica Hitorija"
 
@@ -164,7 +189,6 @@ msgstr "— Igrajte igru Hitori"
 #. Print an error
 #: ../src/main.c:231
 #, c-format
-#| msgid "Command line options could not be parsed"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Mogućnosti linije naredbi ne mogu biti obrađene: %s\n"
 
@@ -185,6 +209,3 @@ msgstr "Vreme: %02u:%02u"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Pobedili ste u vremenu od %02u:%02u!"
-
-#~ msgid "_Settings"
-#~ msgstr "_Podešavanja"
