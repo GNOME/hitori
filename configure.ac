@@ -1,6 +1,6 @@
 AC_INIT([Hitori],[0.4.1],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[https://wiki.gnome.org/Apps/Hitori])
 
-AM_INIT_AUTOMAKE([check-news dist-bzip2 subdir-objects])
+AM_INIT_AUTOMAKE([check-news dist-xz no-dist-gzip subdir-objects])
 AC_CONFIG_HEADERS([config.h])
 AM_MAINTAINER_MODE([enable])
 
