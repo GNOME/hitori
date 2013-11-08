@@ -1,5 +1,19 @@
 Major new features in version...
 
+0.4.2:
+* Add an AppData file
+* Translations:
+** cs (Marek Černocký)
+** en_GB (Philip Withnall)
+** es (Daniel Mustieles)
+** fi (Jiri Grönroos)
+** gl (Fran Dieguez)
+** lv (Rūdofls Mazurs)
+** pl (Piotr Drąg, Aviary.pl)
+** pt_BR (Enrico Nicoletto)
+** sl (Matej Urbančič)
+** sr (Мирослав Николић)
+
 0.4.1:
 * Fix timer pausing on winning a game
 * Translations:
