@@ -1,11 +1,28 @@
 <Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-	 xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	 xmlns:gnome="http://api.gnome.org/doap-extensions#"
-	 xmlns="http://usefulinc.com/ns/doap#">
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
 	<name xml:lang="en">hitori</name>
 	<shortdesc xml:lang="en">GTK+ application to generate and let you play games of Hitori</shortdesc>
+	<description xml:lang="en">
+		Hitori is a small logic puzzle in a similar vein to the more
+		popular Sudoku. In the game, the player starts with a square
+		board of numbers, and has to paint out cells until there are no
+		duplicate numbers in each row and column. The following rules
+		apply:
+		 • There must only be one of each number in the unpainted cells
+		   in each row and column.
+		 • No painted cell may be adjacent to another, vertically or
+		   horizontally.
+		 • All the unpainted cells must be joined together vertically
+		   and horizontally in one group.
+		These are the only three rules of the game, and so there may
+		well be multiple solutions to a Hitori puzzle board.
+	</description>
 	<homepage rdf:resource="https://wiki.gnome.org/Apps/Hitori" />
+	<download-page rdf:resource="http://download.gnome.org/sources/hitori/" />
+	<bug-database rdf:resource="https://bugzilla.gnome.org/browse.cgi?product=hitori" />
 	<maintainer>
 		<foaf:Person>
 			<foaf:name>Philip Withnall</foaf:name>
