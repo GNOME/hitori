@@ -123,25 +123,18 @@ DISTCLEANFILES = \
 	$(NULL)
 
 MAINTAINERCLEANFILES = \
+	$(GITIGNORE_MAINTAINERCLEANFILES_TOPLEVEL) \
+	$(GITIGNORE_MAINTAINERCLEANFILES_MAKEFILE_IN) \
 	ABOUT-NLS \
 	INSTALL \
-	aclocal.m4 \
 	compile \
-	config.guess \
 	config.h.in \
 	config.rpath \
-	config.sub \
-	depcomp \
-	install-sh \
 	intltool-extract.in \
 	intltool-merge.in \
 	intltool-update.in \
-	ltmain.sh \
 	`find "m4" -type f -name "*.m4" -print` \
-	missing \
-	mkinstalldirs \
 	ChangeLog \
-	`find "$(srcdir)" -type f -name Makefile.in -print` \
 	po/Makevars.template \
 	po/Rules-quot \
 	po/boldquot.sed \
@@ -151,8 +144,6 @@ MAINTAINERCLEANFILES = \
 	po/quot.sed \
 	po/remove-potcdate.sin \
 	$(NULL)
-
-GITIGNOREFILES = src/.dirstamp
 
 DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appdata-validate
 
