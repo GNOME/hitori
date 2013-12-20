@@ -27,6 +27,9 @@ IT_PROG_INTLTOOL([0.35.0])
 # Documentation
 YELP_HELP_INIT
 
+# AppData
+APPDATA_XML
+
 # Dependencies
 PKG_CHECK_MODULES([GENERAL],[glib-2.0 gtk+-3.0 gmodule-2.0 cairo >= 1.4])
 

@@ -89,14 +89,14 @@ EXTRA_DIST += \
 CLEANFILES = $(desktop_DATA)
 
 # AppData
+@APPDATA_XML_RULES@
 @INTLTOOL_XML_RULE@
 
-appdatadir = $(datadir)/appdata
 appdata_in_files = data/hitori.appdata.xml.in
-appdata_DATA = $(appdata_in_files:.xml.in=.xml)
+appdata_XML = $(appdata_in_files:.appdata.xml.in=.appdata.xml)
 
 EXTRA_DIST += $(appdata_in_files)
-CLEANFILES += $(appdata_DATA)
+CLEANFILES += $(appdata_XML)
 
 # Gubbins
 EXTRA_DIST += \
@@ -154,7 +154,7 @@ MAINTAINERCLEANFILES = \
 
 GITIGNOREFILES = src/.dirstamp
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper
+DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appdata-validate
 
 # Copy all the spec files. Of course, only one is actually used.
 dist-hook:
