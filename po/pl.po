@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-12 00:27+0200\n"
-"PO-Revision-Date: 2013-09-12 00:28+0200\n"
+"POT-Creation-Date: 2013-12-22 20:39+0100\n"
+"PO-Revision-Date: 2013-12-22 20:40+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -33,8 +33,8 @@ msgstr "Gra logiczna Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori to gra logiczna, podobna do Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori to gra logiczna, podobna do popularnej gry Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:3
 msgid ""
@@ -47,15 +47,6 @@ msgstr ""
 "kolumnie przed upływem określonego czasu. Obsługiwane są różne rozmiary "
 "planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
 "rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
-
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -206,11 +197,11 @@ msgstr "Zatrzymać bieżącą grę?"
 #: ../src/main.c:371
 #, c-format
 msgid "Time: %02u:%02u"
-msgstr "Czas: %02u:%02u"
+msgstr "Czas: %02u∶%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:266
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
-msgstr "Wygrano w czasie %02u:%02u!"
+msgstr "Wygrano w czasie %02u∶%02u!"
