@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 03:11+0000\n"
-"PO-Revision-Date: 2013-09-11 11:21+0200\n"
+"POT-Creation-Date: 2013-12-20 23:13+0000\n"
+"PO-Revision-Date: 2013-12-24 17:02+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -31,8 +31,8 @@ msgstr "Hrát logickou hru Hitori."
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori je logická hra podobná Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori je logická hra podobná populárnímu Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:3
 msgid ""
@@ -45,15 +45,6 @@ msgstr ""
 "čísla v každém řádku a sloupci. Je podporováno více velikostí hrací desky a "
 "při hledání řešení si můžete pomáhat umísťováním značek do políček. Když se "
 "zaseknete, umí vám hra nabídnout radu."
-
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
