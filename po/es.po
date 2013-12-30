@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 03:11+0000\n"
-"PO-Revision-Date: 2013-09-11 17:54+0200\n"
+"POT-Creation-Date: 2013-12-20 23:13+0000\n"
+"PO-Revision-Date: 2013-12-30 11:45+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -30,7 +30,8 @@ msgstr "Jugar al juego de puzle Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
+#| msgid "Hitori is a logic game similar to Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori es un juego de lógica similar al Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:3
@@ -44,15 +45,6 @@ msgstr ""
 "duplicados en cada fila y columna lo más rápido posible. Se soportan varios "
 "tamaños de tablero y puede colocar marcadores en las celdas para ayudarle a "
 "encontrar la solución. Si tiene problemas, el juego puede darle una pista."
-
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -208,6 +200,13 @@ msgstr "Tiempo: %02u:%02u"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Ganó con un tiempo de %02u:%02u."
+
+#~ msgid ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+#~ msgstr ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
 
 #~ msgid "_Settings"
 #~ msgstr "_Opciones"
