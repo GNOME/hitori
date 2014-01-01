@@ -1,18 +1,19 @@
-# Portuguese translations for HITORI package.
+# Portuguese translations for hitori package.
 # Copyright (C) 2013 THE HITORI'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the HITORI package.
+# This file is distributed under the same license as the hitori package.
 # Og Maciel <ogmaciel@gnome.org>, 2009.
 # Flamarion Jorge <jorge.flamarion@gmai.com>, 2010.
 # Enrico Nicoletto <liverig@gmail.com>, 2013.
+# Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 15:54+0000\n"
-"PO-Revision-Date: 2013-09-11 14:33-0300\n"
-"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
+"POT-Creation-Date: 2013-12-24 16:04+0000\n"
+"PO-Revision-Date: 2013-12-26 02:19-0300\n"
+"Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -31,8 +32,8 @@ msgstr "Jogue o quebra-cabeça Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori é um jogo de lógica parecido com o Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori é um jogo de lógica parecido com o popular Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:3
 msgid ""
@@ -46,16 +47,6 @@ msgstr ""
 "vários tamanhos de tabuleiros de jogo, e você pode posicionar marcadores nas "
 "células para ajudar a resolver a solução. Se você ficar preso, o jogo poderá "
 "oferecer-lhe uma dica."
-
-# Captura de tela acrescentada na página Wiki!!
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?"
-"action=AttachFile&do=get&target=screenshot-hitori-pt_BR.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -213,9 +204,3 @@ msgstr "Tempo: %02u:%02u"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Você ganhou em um tempo de %02u:%02u!"
-
-#~ msgid "_Settings"
-#~ msgstr "_Configurações"
-
-#~ msgid "You've won!"
-#~ msgstr "Você ganhou!"
