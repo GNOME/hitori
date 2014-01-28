@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2012, 2013.
+# Мирослав Николић <miroslavnikolic@rocketmail.com>, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori"
 "&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 03:11+0000\n"
-"PO-Revision-Date: 2013-10-15 22:55+0200\n"
+"POT-Creation-Date: 2013-12-20 23:13+0000\n"
+"PO-Revision-Date: 2014-01-27 22:41+0200\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -29,7 +29,8 @@ msgstr "Играјте игру слагалица Хитори"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
+#| msgid "Hitori is a logic game similar to Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Хитори је логичка игра слична Судокуу."
 
 #: ../data/hitori.appdata.xml.in.h:3
@@ -39,20 +40,11 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Ви играте игру против сата, с циљем да поништите све удвостручене бројеве у "
-"сваком реду и ступцу у што краћем временском року. Подржано је неколико "
+"Ви играте игру против времена, с циљем да поништите све удвостручене бројеве "
+"у сваком реду и ступцу у што краћем временском року. Подржано је неколико "
 "величина играчке табле, а можете да постављате означаваче на пољима да вам "
 "помогну у проналажењу решења. Ако ли вам негде запне, игра може да вам "
 "дошапне савет."
-
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;target"
-"=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
