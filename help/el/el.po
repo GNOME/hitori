@@ -1,0 +1,425 @@
+# Greek translation for hitori.
+# Copyright (C) 2014 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Dimitris Spingos <dmtrs32@gmail.com>, 2014.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2014-03-16 10:15+0000\n"
+"PO-Revision-Date: 2014-03-16 19:29+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: team@lists.gnome.gr\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.0\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Ελληνική μεταφραστική ομάδα του GNOME\n"
+" Δημήτρης Σπίγγος <dmtrs32@gmail.com>, 2014\n"
+"Για περισσότερα δείτε: http://gnome.gr"
+
+#. (itstool) path: info/desc
+#: C/customization.page:5
+msgid "Changing how the game appears and plays."
+msgstr "Αλλαγή της εμφάνισης και εκτέλεσης του παιχνιδιού."
+
+#. (itstool) path: page/title
+#: C/customization.page:7
+msgid "Customizing the Game"
+msgstr "Προσαρμογή του παιχνιδιού"
+
+#. (itstool) path: page/p
+#: C/customization.page:9
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Το παιχνίδι μπορεί να προσαρμοστεί αλλάζοντας το μέγεθος πίνακα - "
+"επιτρέπονται πίνακες από 5–10 τετράγωνα κελιά."
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
+msgstr ""
+"Για να αλλάξετε το μέγεθος του πίνακα, επιλέξτε από το <guiseq><gui style="
+"\"menu\">Παιχνίδι</gui><gui style=\"menuitem\">Μέγεθος πίνακα</gui></"
+"guiseq>. Το <app>Hitori</app> θα σας ρωτήσει αν θέλετε να σταματήσετε το "
+"τρέχον παιχνίδι αν είσαστε στο μέσο ενός παιχνιδιού, έπειτα αρχίστε με ένα "
+"νέο παιχνίδι με το ζητούμενο μέγεθος πίνακα."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:21
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+
+#. (itstool) path: info/desc
+#: C/game.page:5
+msgid "Introduction to the game of Hitori."
+msgstr "Εισαγωγή στο παιχνίδι του Hitori."
+
+#. (itstool) path: page/title
+#: C/game.page:7
+msgid "Hitori the Game"
+msgstr "Το παιχνίδι Hitori"
+
+#. (itstool) path: page/p
+#: C/game.page:9
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Το Hitori είναι ένας μικρός γρίφος λογικής σε παρόμοιο ύφος με το πιο "
+"δημοφιλές Σουντόκου. Στο παιχνίδι, ο παίκτης ξεκινά με έναν τετράγωνο πίνακα "
+"αριθμών και πρέπει να <em>ξεβάψει</em> κελιά μέχρι να μην υπάρχουν διπλοί "
+"αριθμοί σε κάθε γραμμή και στήλη. Οι παρακάτω κανόνες εφαρμόζονται:"
+
+#. (itstool) path: item/p
+#: C/game.page:12
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Πρέπει να υπάρχει μόνο ένας από κάθε αριθμό στα άβαφα κελιά σε κάθε γραμμή "
+"και στήλη."
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Κανένα βαμμένο κελί δεν μπορεί να είναι γειτονικό με ένα άλλο κάθετα ή "
+"οριζόντια."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Όλα τα άβαφα κελιά πρέπει να ενώνονται μαζί κάθετα και οριζόντια σε μια "
+"ομάδα."
+
+#. (itstool) path: page/p
+#: C/game.page:16
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Αυτοί είναι οι μόνοι τρεις κανόνες του παιχνιδιού και έτσι μπορεί να "
+"υπάρξουν πολλές λύσεις σε ένα πίνακα γρίφου Hitori."
+
+#. (itstool) path: figure/title
+#: C/game.page:19
+msgid "Main game window"
+msgstr "Το κυρίως παράθυρο του παιχνιδιού"
+
+#. (itstool) path: figure/desc
+#: C/game.page:20
+msgid "<app>Hitori</app> main window"
+msgstr "Το κυρίως παράθυρο του <app>Hitori</app>"
+
+#. (itstool) path: media/p
+#: C/game.page:22
+msgid "<app>Hitori</app> main window."
+msgstr "Το κυρίως παράθυρο του <app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#. (itstool) path: license/p
+#: C/index.page:11
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Αυτό το έργο αδειοδοτείται με <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Άδεια Creative Commons Attribution-Share Alike 3.0 "
+"Unported</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Βοήθεια του Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Βασικό παιχνίδι και χρήση"
+
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Συμβουλές και κόλπα"
+
+#. (itstool) path: info/desc
+#: C/license.page:8
+msgid "Legal information."
+msgstr "Νομικές πληροφορίες."
+
+#. (itstool) path: page/title
+#: C/license.page:11
+msgid "License"
+msgstr "Άδεια"
+
+#. (itstool) path: page/p
+#: C/license.page:12
+msgid ""
+"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
+"Unported license."
+msgstr ""
+"Αυτή η εργασία διανέμεται κάτω από την άδεια της CreativeCommons Attribution-"
+"Share Alike 3.0 Unported."
+
+#. (itstool) path: page/p
+#: C/license.page:20
+msgid "You are free:"
+msgstr "Είσαστε ελεύθεροι:"
+
+#. (itstool) path: item/title
+#: C/license.page:25
+msgid "<em>To share</em>"
+msgstr "<em>Να μοιραστείτε</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:26
+msgid "To copy, distribute and transmit the work."
+msgstr "Να αντιγράψετε, διανέμετε και να μεταδώσετε το έργο."
+
+#. (itstool) path: item/title
+#: C/license.page:29
+msgid "<em>To remix</em>"
+msgstr "<em>Να αναμείξετε</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:30
+msgid "To adapt the work."
+msgstr "Να προσαρμόσετε την εργασία."
+
+#. (itstool) path: page/p
+#: C/license.page:33
+msgid "Under the following conditions:"
+msgstr "Κάτω από τους ακόλουθους όρους:"
+
+#. (itstool) path: item/title
+#: C/license.page:38
+msgid "<em>Attribution</em>"
+msgstr "<em>Απόδοση</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:39
+msgid ""
+"You must attribute the work in the manner specified by the author or "
+"licensor (but not in any way that suggests that they endorse you or your use "
+"of the work)."
+msgstr ""
+"Θα πρέπει να αποδώσετε το έργο με τρόπο που έχει οριστεί από το δημιουργό ή "
+"τον χορηγό της άδειας (αλλά όχι με τρόπο που δείχνει ότι επιδοκιμάζουν εσάς "
+"ή την χρήση του έργου από εσάς)."
+
+#. (itstool) path: item/title
+#: C/license.page:46
+msgid "<em>Share Alike</em>"
+msgstr "<em>Παρόμοια διανομή</em>"
+
+#. (itstool) path: item/p
+#: C/license.page:47
+msgid ""
+"If you alter, transform, or build upon this work, you may distribute the "
+"resulting work only under the same, similar or a compatible license."
+msgstr ""
+"Αν αλλάξετε, μετασχηματίσετε ή δομήσετε αυτήν την εργασία, μπορείτε να "
+"διανείμετε την τελική εργασία μόνο κάτω από την ίδια, παρόμοια ή συμβατή "
+"άδεια."
+
+#. (itstool) path: page/p
+#: C/license.page:53
+msgid ""
+"For the full text of the license, see the <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
+"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Commons Deed</link>."
+msgstr ""
+"Για το πλήρες κείμενο της άδειας, δείτε την <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/legalcode\">ιστοσελίδα "
+"CreativeCommons</link>, ή διαβάστε το πλήρες <link href=\"http://"
+"creativecommons.org/licenses/by-sa/3.0/\">συμβόλαιο Commons</link>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:5
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Χρήση του <app>Hitori</app> για να παίξετε ένα παιχνίδι."
+
+#. (itstool) path: page/title
+#: C/playing.page:7
+msgid "Playing a Game"
+msgstr "Παίζοντας ένα παιχνίδι"
+
+#. (itstool) path: page/p
+#: C/playing.page:9
+msgid ""
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
+msgstr ""
+"Για να ξεκινήσετε ένα νέο παιχνίδι, επιλέξτε <guiseq><gui style=\"menu"
+"\">Παιχνίδι</gui><gui style=\"menuitem\">Νέο παιχνίδι</gui></guiseq>. Αν "
+"παίζετε ήδη ένα παιχνίδι, το <app>Hitori</app> θα σας ρωτήσει αν θέλετε να "
+"σταματήσετε το τρέχον παιχνίδι."
+
+#. (itstool) path: page/p
+#: C/playing.page:11
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Για να βάψετε ένα κελί, πατήστε πάνω του· για να το ξεβάψετε πάλι, πατήστε "
+"το ξανά. Όταν τα κελιά είναι βαμμένα έτσι ώστε κανένας από τους τρεις "
+"κανόνες να μην παραβιάζεται, το παιχνίδι θα τερματίσει και ο πίνακας δεν "
+"μπορεί πια να επεξεργαστεί."
+
+#. (itstool) path: page/p
+#: C/playing.page:13
+msgid ""
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
+msgstr ""
+"Το <app>Hitori</app> σας επιτρέπει επίσης να επισημάνετε κελιά για τη δική "
+"σας αναφορά όταν λύνετε έναν πίνακα. Αυτό μπορεί να επιτευχθεί κρατώντας "
+"πατημένο το <key>Ctrl</key> ή <key>Shift</key> και πατώντας ένα κελί. Και τα "
+"δυο επισημαίνουν τα κελιά διαφορετικά και τα κελιά μπορούν να επισημανθούν "
+"και με τους δύο τρόπους ταυτόχρονα. Τα επισημασμένα κελιά μπορούν να "
+"αποεπισημανθούν πατώντας πάνω τους ξανά με πατημένο ή το <key>Ctrl</key> ή "
+"το <key>Shift</key>."
+
+#. (itstool) path: page/p
+#: C/playing.page:17
+msgid ""
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
+msgstr ""
+"Για να αναιρέσετε ή να ακυρώσετε την αναίρεση μιας κίνησης, επιλέξτε "
+"<guiseq><gui style=\"menu\">Παιχνίδι</gui><gui style=\"menuitem\">Αναίρεση</"
+"gui></guiseq> ή <guiseq><gui style=\"menu\">Παιχνίδι</gui><gui style="
+"\"menuitem\">Ακύρωση αναίρεσης</gui></guiseq>. Μπορεί να αναιρέσετε ή να "
+"ακυρώσετε την αναίρεση όσων κινήσεων θέλετε χωρίς περιορισμό."
+
+#. (itstool) path: page/p
+#: C/playing.page:20
+msgid ""
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"Για να πάρετε μια συμβουλή ποια κελιά να ξεβάψετε, επιλέξτε <guiseq><gui "
+"style=\"menu\">Παιχνίδι</gui><gui style=\"menuitem\">Συμβουλή</gui></"
+"guiseq>. Ένα κελί θα επισημανθεί με ένα αναλάμπον κόκκινο περίγραμμα. Αυτό "
+"εμφανίζει ότι η τρέχουσα κατάσταση του κελιού (βαμμένο ή άβαφο) είναι "
+"εσφαλμένη και πρέπει να αλλαχθεί για να κερδηθεί το παιχνίδι."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:5
+msgid "Strategies for playing Hitori."
+msgstr "Στρατηγικές για να παίξετε το Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:7
+msgid "Gameplay Strategies"
+msgstr "Στρατηγικές αναπαραγωγής παιχνιδιού"
+
+#. (itstool) path: page/p
+#: C/strategy.page:9
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
+msgstr ""
+"Το Hitori είναι αρκετά παρόμοιο με το Σουντόκου, στο ότι παίρνει λογική "
+"επαγωγή για να υπολογίσει ποια κελιά θα ξεβαφτούν. Μια στρατηγική είναι να "
+"χρησιμοποιήσετε το πάτημα του <key>Shift</key> για επισήμανση όλων των "
+"επαναλαμβανόμενων αριθμών σε κάθε <em>στήλη</em>, έπειτα να χρησιμοποιήσετε "
+"το πάτημα του <key>Ctrl</key> για να επισημάνετε όλους τους "
+"επαναλαμβανόμενους αριθμούς σε κάθε <em>γραμμή</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:12
+msgid ""
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Αφού γίνει αυτό για όλον τον πίνακα, τα κελιά που έχουν επισημανθεί και με "
+"τους δύο τρόπους είναι καλοί υποψήφιοι για βαφή, αν και όχι πάντα. Όταν "
+"βάφετε ένα κελί, η αποεπισήμανση των άλλων κελιών με τον ίδιο αριθμό στην "
+"ίδια γραμμή και στήλη με αυτό το κελί είναι ένας καλός τρόπος να "
+"παρακολουθήσετε ποια κελιά παραβιάζουν ακόμα τον <link xref=\"game\">κανόνα "
+"1 του Hitori</link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:15
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Να έχετε κατά νου πάντα ότι ο κανόνας 2 του Hitori σημαίνει ότι δύο "
+"γειτονικά κελιά δεν μπορούν να βαφτούν και τα δύο. Το <app>Hitori</app> θα "
+"επισημάνει με κόκκινο τα κελιά που παραβιάζουν τον κανόνα 2. Παρόμοια, οι "
+"ομάδες των κελιών που παραβιάζουν τον κανόνα 3 χωρίζοντας ένα ή περισσότερα "
+"άβαφα κελιά από τα άλλα βαμμένα κελιά θα επισημανθούν με κόκκινο."
+
+#. (itstool) path: page/p
+#: C/strategy.page:19
+msgid ""
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
+msgstr ""
+"Αν κολλήσετε οπουδήποτε, επιλέξτε <guiseq><gui style=\"menu\">Παιχνίδι</"
+"gui><gui style=\"menuitem\">Συμβουλή</gui></guiseq> για να βάλει το "
+"<app>Hitori</app> μια σημαία σε ένα κελί που πρέπει να βαφτεί ή να ξεβαφτεί "
+"για να πλησιάσετε μια λύση."
