@@ -2,15 +2,15 @@
 # Copyright (C) 2009 THE hitori'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Imam Musthaqim <userindesign@gmail.com>, 2009.
-# Andika Triwidada <andika@gmail.com>, 2012.
+# Andika Triwidada <andika@gmail.com>, 2012, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2012-09-29 01:48+0000\n"
-"PO-Revision-Date: 2012-10-04 10:51+0700\n"
+"POT-Creation-Date: 2013-12-20 23:13+0000\n"
+"PO-Revision-Date: 2014-03-30 19:36+0700\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: INDONESIA <gnome@i15n.org>\n"
 "Language: id\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.3\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
 msgid "Hitori"
@@ -28,13 +28,29 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Mainkan permainan menyusun gambar Hitori"
 
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori adalah suatu permainan logika mirip permainan populer Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:3
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Anda bermain melawan jam, bertujuan mengeliminasi semua angka duplikat dalam "
+"setiap baris dan kolom secepat mungkin. Papan permainan dalam berbagai "
+"ukuran didukung, dan Anda dapat menempatkan penanda pada sel untuk membantu "
+"mencari solusi. Bila Anda menemui jalan buntu, permainan bisa memberi Anda "
+"petunjuk."
+
 #: ../data/hitori.ui.h:1
-#| msgid "_Game"
 msgid "_New Game"
 msgstr "Permaina_n Baru"
 
 #: ../data/hitori.ui.h:2
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "Tent_ang Hitori"
 
@@ -90,16 +106,16 @@ msgstr "_Tak jadi"
 msgid "_Redo"
 msgstr "_Jadi lagi"
 
-#: ../src/interface.c:87
+#: ../src/interface.c:88
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Berkas UI \"%s\" tidak dapat dimuat"
 
-#: ../src/interface.c:597
+#: ../src/interface.c:605
 msgid "The help contents could not be displayed"
 msgstr "Isi bantuan tidak dapat ditampilkan"
 
-#: ../src/interface.c:620
+#: ../src/interface.c:628
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -111,7 +127,7 @@ msgstr ""
 "License yang dipublikasikan oleh Free Software Foundation, baik itu versi 3 "
 "dari Lisensi tersebut, ataupun (sesuai pilihan Anda) versi yang lebih baru."
 
-#: ../src/interface.c:624
+#: ../src/interface.c:632
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -123,7 +139,7 @@ msgstr ""
 "DAYA JUAL atau KESESUAIAN UNTUK TUJUAN TERTENTU.  Lihat GNU General Public "
 "License untuk rincian lebih lanjut."
 
-#: ../src/interface.c:628
+#: ../src/interface.c:636
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -131,21 +147,21 @@ msgstr ""
 "Anda seharusnya sudah menerima salinan GNU General Public License yang "
 "disertakan bersama Hitori.  Jika tidak, lihat <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:640
+#: ../src/interface.c:648
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Hak Cipta © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:649
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Permainan menyusun gambar logis yang dirancang oleh Nikoli."
 
-#: ../src/interface.c:643
+#: ../src/interface.c:651
 msgid "translator-credits"
 msgstr ""
 "Imam Musthaqim <userindesign@gmail.com>, 2009\n"
-"Andika Triwidada <andika@gmail.com>, 2012"
+"Andika Triwidada <andika@gmail.com>, 2012, 2014"
 
-#: ../src/interface.c:647
+#: ../src/interface.c:655
 msgid "Hitori Website"
 msgstr "Situs Web Hitori"
 
@@ -166,7 +182,6 @@ msgstr "- Mainkan Hitori"
 #. Print an error
 #: ../src/main.c:231
 #, c-format
-#| msgid "Command line options could not be parsed"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Opsi baris-perintah tidak dapat diurai: %s\n"
 
@@ -187,4 +202,3 @@ msgstr "Waktu: %02u:%02u"
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Anda menang dalam waktu %02u:%02u!"
-
