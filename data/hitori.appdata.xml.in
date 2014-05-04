@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2014 Philip Withnall <philip@tecnocode.co.uk> -->
 <application>
 	<id type="desktop">hitori.desktop</id>
-	<licence>CC-BY-SA</licence>
+	<metadata_license>CC-BY-SA-3.0</metadata_license>
+	<project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
 	<description>
 		<!-- Translators: These are the application description paragraphs in the AppData file. -->
 		<_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
