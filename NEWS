@@ -1,5 +1,17 @@
 Major new features in version...
 
+0.4.3:
+* Translations:
+** cs (Marek Černocký)
+** el (Dimitris Spingos, Tom Tryfonidis)
+** es (Daniel Mustieles)
+** gl (Fran Dieguez)
+** id (Andika Triwidada)
+** pl (Piotr Drąg)
+** pt_BR (Rafael Ferreira, Enrico Nicoletto)
+** sl (Matej Urbančič)
+** sr (Мирослав Николић)
+
 0.4.2:
 * Add an AppData file
 * Translations:
