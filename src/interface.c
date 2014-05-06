@@ -316,8 +316,6 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	/* Clamp the width/height to the minimum */
 	if (height < width)
 		width = height;
-	else if (width < height)
-		height = width;
 
 	cell_size = width / hitori->board_size;
 
