@@ -275,11 +275,11 @@ hitori_clear_undo_stack (Hitori *hitori)
 			if (hitori->undo_stack->type == UNDO_NEW_GAME)
 				break;
 		}
-	}
 
-	/* Reset the "new game" item */
-	hitori->undo_stack->undo = NULL;
-	hitori->undo_stack->redo = NULL;
+		/* Reset the "new game" item */
+		hitori->undo_stack->undo = NULL;
+		hitori->undo_stack->redo = NULL;
+	}
 
 	g_simple_action_set_enabled (hitori->undo_action, FALSE);
 	g_simple_action_set_enabled (hitori->redo_action, FALSE);
