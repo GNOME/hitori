@@ -56,13 +56,13 @@ static void board_size_change_cb (GSimpleAction *action, GVariant *state, gpoint
 
 static GActionEntry app_entries[] = {
 	{ "new-game", new_game_cb, NULL, NULL, NULL },
+	{ "board-size", board_size_activate_cb, "s", "'5'", board_size_change_cb },
 	{ "about", about_cb, NULL, NULL, NULL },
 	{ "help", help_cb, NULL, NULL, NULL },
 	{ "quit", quit_cb, NULL, NULL, NULL },
 };
 
 static GActionEntry win_entries[] = {
-	{ "board-size", board_size_activate_cb, "s", "'5'", board_size_change_cb },
 	{ "hint", hint_cb, NULL, NULL, NULL },
 	{ "undo", undo_cb, NULL, NULL, NULL },
 	{ "redo", redo_cb, NULL, NULL, NULL },
@@ -137,7 +137,7 @@ hitori_create_interface (Hitori *hitori)
 	g_simple_action_set_enabled (hitori->redo_action, FALSE);
 
 	/* Set the initial board size. */
-	g_simple_action_set_state (G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "board-size")), g_variant_new_string ("5"));
+	g_simple_action_set_state (G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori), "board-size")), g_variant_new_string ("5"));
 
 	return hitori->window;
 }
