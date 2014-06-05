@@ -75,7 +75,7 @@ hitori_create_interface (Hitori *hitori)
 	GtkBuilder *builder;
 	GtkStyleContext *style_context;
 	const PangoFontDescription *font;
-	GMenuModel *app_menu, *win_menu;  /* owned */
+	GMenuModel *app_menu;  /* owned */
 
 	builder = gtk_builder_new ();
 
@@ -106,22 +106,20 @@ hitori_create_interface (Hitori *hitori)
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
 	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
 
-	/* Set up the menus (application and window). */
+	/* Set up the app menu */
 	app_menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app_menu"));
-	g_action_map_add_action_entries (G_ACTION_MAP (hitori), app_entries, G_N_ELEMENTS (app_entries), hitori);
 	gtk_application_set_app_menu (GTK_APPLICATION (hitori), app_menu);
 	g_object_unref (app_menu);
 
-	win_menu = G_MENU_MODEL (gtk_builder_get_object (builder, "win_menu"));
+	g_object_unref (builder);
+
+	/* Set up actions */
+	g_action_map_add_action_entries (G_ACTION_MAP (hitori), app_entries, G_N_ELEMENTS (app_entries), hitori);
 	g_action_map_add_action_entries (G_ACTION_MAP (hitori->window), win_entries, G_N_ELEMENTS (win_entries), hitori);
-	gtk_application_set_menubar (GTK_APPLICATION (hitori), win_menu);
-	g_object_unref (win_menu);
 
 	hitori->undo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "undo"));
 	hitori->redo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "redo"));
 	hitori->hint_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "hint"));
-
-	g_object_unref (builder);
 
 	/* Set up font descriptions for the drawing area */
 	style_context = gtk_widget_get_style_context (hitori->drawing_area);
