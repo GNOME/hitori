@@ -257,6 +257,7 @@ hitori_check_win (Hitori *hitori)
 		/* Win! */
 		GtkWidget *dialog;
 		gchar *message;
+		gint ret;
 
 		/* Tell the user they've won */
 		hitori_disable_events (hitori);
@@ -264,11 +265,21 @@ hitori_check_win (Hitori *hitori)
 		/* Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 		 * the number of seconds. */
 		message = g_strdup_printf (_("You've won in a time of %02u:%02u!"), hitori->timer_value / 60, hitori->timer_value % 60);
-		dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window), GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_OK, "%s", message);
+		dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window), GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_NONE, "%s", message);
 		g_free (message);
 
-		gtk_dialog_run (GTK_DIALOG (dialog));
+		gtk_dialog_add_buttons (GTK_DIALOG (dialog),
+					_("_Quit"), GTK_RESPONSE_REJECT,
+					_("_Play Again"), GTK_RESPONSE_ACCEPT,
+					NULL);
+
+		ret = gtk_dialog_run (GTK_DIALOG (dialog));
 		gtk_widget_destroy (dialog);
+
+		if (ret == GTK_RESPONSE_REJECT)
+			hitori_quit (hitori);
+		else if (ret == GTK_RESPONSE_ACCEPT)
+			hitori_new_game (hitori, hitori->board_size);
 
 		return TRUE;
 	}
