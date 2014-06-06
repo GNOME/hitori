@@ -293,9 +293,15 @@ hitori_set_board_size (Hitori *hitori, guint board_size)
 		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window),
 				GTK_DIALOG_MODAL,
 				GTK_MESSAGE_QUESTION,
-				GTK_BUTTONS_YES_NO,
+				GTK_BUTTONS_NONE,
 				_("Do you want to stop the current game?"));
-		if (gtk_dialog_run (GTK_DIALOG (dialog)) != GTK_RESPONSE_YES) {
+
+		gtk_dialog_add_buttons (GTK_DIALOG (dialog),
+					_("Keep _Playing"), GTK_RESPONSE_REJECT,
+					_("_New Game"), GTK_RESPONSE_ACCEPT,
+					NULL);
+
+		if (gtk_dialog_run (GTK_DIALOG (dialog)) != GTK_RESPONSE_ACCEPT) {
 			gtk_widget_destroy (dialog);
 			return;
 		}
