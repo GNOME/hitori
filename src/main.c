@@ -372,9 +372,10 @@ hitori_disable_events (Hitori *hitori)
 static void
 set_timer_label (Hitori *hitori)
 {
-	/* Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-	 * game; the second parameter is the number of seconds. */
-	gchar *text = g_strdup_printf (_("Time: %02u:%02u"), hitori->timer_value / 60, hitori->timer_value % 60);
+	/* Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+         * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+         * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged. */
+	gchar *text = g_strdup_printf (_("%02u\xE2\x88\xB6\xE2\x80\x8E%02u"), hitori->timer_value / 60, hitori->timer_value % 60);
 	gtk_label_set_text (hitori->timer_label, text);
 	g_free (text);
 }

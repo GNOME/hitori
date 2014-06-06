@@ -146,7 +146,9 @@
 							</object>
 						</child>
 					</object>
-
+					<packing>
+						<property name="pack_type">end</property>
+					</packing>
 				</child>
 			</object>
 		</child>
@@ -163,13 +165,27 @@
 					</object>
 				</child>
 				<child>
-					<object class="GtkStatusbar" id="hitori_statusbar">
+					<object class="GtkBox">
+						<property name="orientation">horizontal</property>
+						<property name="halign">center</property>
+						<property name="spacing">6</property>
 						<child>
-							<object class="GtkLabel" id="hitori_timer"/>
+							<object class="GtkImage" id="timer_image">
+								<property name="icon_name">preferences-system-time-symbolic</property>
+								<property name="icon_size">1</property>
+								<property name="valign">center</property>
+								<property name="visible">True</property>
+							</object>
+						</child>
+						<child>
+							<object class="GtkLabel" id="hitori_timer">
+								<property name="valign">center</property>
+								<property name="visible">True</property>
+							</object>
 						</child>
 					</object>
 					<packing>
-						<property name="expand">False</property>
+						<property name="padding">6</property>
 					</packing>
 				</child>
 			</object>
