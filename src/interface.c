@@ -359,8 +359,17 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 
 	hitori->made_a_move = TRUE;
 
-	if (hitori->undo_stack != NULL)
+	if (hitori->undo_stack != NULL) {
+		HitoriUndo *i, *next = NULL;
+
+		/* Free the redo stack after this point. */
+		for (i = hitori->undo_stack->redo; i != NULL; i = next) {
+			next = i->redo;
+			g_free (i);
+		}
+
 		hitori->undo_stack->redo = undo;
+	}
 	hitori->undo_stack = undo;
 	g_simple_action_set_enabled (hitori->undo_action, TRUE);
 	g_simple_action_set_enabled (hitori->redo_action, FALSE);
