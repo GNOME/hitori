@@ -358,6 +358,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 		hitori->undo_stack->redo = undo;
 	hitori->undo_stack = undo;
 	g_simple_action_set_enabled (hitori->undo_action, TRUE);
+	g_simple_action_set_enabled (hitori->redo_action, FALSE);
 
 	/* Stop any current hints */
 	hitori_cancel_hinting (hitori);
