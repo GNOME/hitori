@@ -4,14 +4,14 @@
 # pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
 # gnomepl@aviary.pl
 # -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2013.
-# Aviary.pl <gnomepl@aviary.pl>, 2012-2013.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2014.
+# Aviary.pl <gnomepl@aviary.pl>, 2012-2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-22 20:39+0100\n"
-"PO-Revision-Date: 2013-12-22 20:40+0100\n"
+"POT-Creation-Date: 2014-06-17 19:37+0200\n"
+"PO-Revision-Date: 2014-06-17 19:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -31,12 +31,17 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Gra logiczna Hitori"
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori to gra logiczna, podobna do popularnej gry Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:3
+#: ../data/hitori.appdata.xml.in.h:5
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -48,7 +53,7 @@ msgstr ""
 "planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
 "rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
 
-#: ../data/hitori.ui.h:1
+#: ../data/hitori.ui.h:1 ../src/main.c:301
 msgid "_New Game"
 msgstr "_Nowa gra"
 
@@ -60,7 +65,7 @@ msgstr "_O grze Hitori"
 msgid "_Help"
 msgstr "Pomo_c"
 
-#: ../data/hitori.ui.h:4
+#: ../data/hitori.ui.h:4 ../src/rules.c:272
 msgid "_Quit"
 msgstr "Za_kończ"
 
@@ -108,16 +113,16 @@ msgstr "Cof_nij"
 msgid "_Redo"
 msgstr "P_onów"
 
-#: ../src/interface.c:88
+#: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Nie można wczytać pliku interfejsu użytkownika \"%s\""
 
-#: ../src/interface.c:605
+#: ../src/interface.c:618
 msgid "The help contents could not be displayed"
 msgstr "Nie można wyświetlić treści pomocy"
 
-#: ../src/interface.c:628
+#: ../src/interface.c:641
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -129,7 +134,7 @@ msgstr ""
 "przez Fundację Wolnego Oprogramowania (Free Software Foundation) - według "
 "wersji trzeciej tej Licencji lub którejś z późniejszych wersji."
 
-#: ../src/interface.c:632
+#: ../src/interface.c:645
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -141,7 +146,7 @@ msgstr ""
 "HANDLOWEJ albo PRZYDATNOŚCI DO OKREŚLONYCH ZASTOSOWAŃ. W celu uzyskania "
 "bliższych informacji należy zapoznać się z Powszechną Licencją Publiczną GNU."
 
-#: ../src/interface.c:636
+#: ../src/interface.c:649
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -150,21 +155,21 @@ msgstr ""
 "Powszechnej Licencji Publicznej GNU (GNU General Public License); jeśli nie "
 "- proszę odwiedzić stronę internetową <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:648
+#: ../src/interface.c:661
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
+#: ../src/interface.c:662
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logiczna układanka zaprojektowana przez firmę Nikoli."
 
-#: ../src/interface.c:651
+#: ../src/interface.c:664
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2013\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2012-2013"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2014\n"
+"Aviary.pl <gnomepl@aviary.pl>, 2012-2014"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:668
 msgid "Hitori Website"
 msgstr "Witryna gry Hitori"
 
@@ -192,16 +197,24 @@ msgstr "Nie można przetworzyć opcji wiersza poleceń: %s\n"
 msgid "Do you want to stop the current game?"
 msgstr "Zatrzymać bieżącą grę?"
 
+#: ../src/main.c:300
+msgid "Keep _Playing"
+msgstr "_Graj dalej"
+
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:371
+#: ../src/main.c:377
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Czas: %02u∶%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
+#: ../src/rules.c:267
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Wygrano w czasie %02u∶%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "_Zagraj jeszcze raz"
