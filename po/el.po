@@ -6,18 +6,18 @@ msgstr ""
 "Project-Id-Version: hitori.master.el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-20 23:13+0000\n"
-"PO-Revision-Date: 2014-04-24 18:59+0200\n"
+"POT-Creation-Date: 2014-06-18 01:05+0000\n"
+"PO-Revision-Date: 2014-06-18 13:43+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.4\n"
+"X-Generator: Poedit 1.6.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -25,14 +25,20 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Παίξτε το παιχνίδι παζλ Hitori"
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
+#| msgid "Hitori"
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr ""
 "Το Hitori είναι ένα παιχνίδι λογικής παρόμοιο με το δημοφιλές παιχνίδι "
 "Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:3
+#: ../data/hitori.appdata.xml.in.h:5
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -45,78 +51,73 @@ msgstr ""
 "δείκτες στα κελιά για να βοηθηθείτε με τη λύση. Αν κολλήσετε, το παιχνίδι "
 "μπορεί να σας δώσει και μια υπόδειξη."
 
-#: ../data/hitori.ui.h:1
-#| msgid "_Game"
+#: ../data/hitori.ui.h:1 ../src/main.c:301
 msgid "_New Game"
 msgstr "_Νέο παιχνίδι"
 
 #: ../data/hitori.ui.h:2
-#| msgid "Hitori"
-msgid "_About Hitori"
-msgstr "_Περί Hitori"
-
-#: ../data/hitori.ui.h:3
-msgid "_Help"
-msgstr "_Βοήθεια"
-
-#: ../data/hitori.ui.h:4
-msgid "_Quit"
-msgstr "Έ_ξοδος"
-
-#: ../data/hitori.ui.h:5
-msgid "_Game"
-msgstr "_Παιχνίδι"
-
-#: ../data/hitori.ui.h:6
 msgid "Board _Size"
 msgstr "_Μέγεθος πίνακα"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:11
+#: ../data/hitori.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:12
+#: ../data/hitori.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: ../data/hitori.ui.h:10
+#| msgid "_About Hitori"
+msgid "_About"
+msgstr "_Περί"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "Έ_ξοδος"
+
 #: ../data/hitori.ui.h:13
-msgid "_Hint"
-msgstr "_Υπόδειξη"
+msgid "Undo your last move"
+msgstr "Αναίρεση της τελευταίας σας κίνησης"
 
 #: ../data/hitori.ui.h:14
-msgid "_Undo"
-msgstr "Αναί_ρεση"
+msgid "Redo a move"
+msgstr "Επανάληψη κίνησης"
 
 #: ../data/hitori.ui.h:15
-msgid "_Redo"
-msgstr "_Επανάληψη"
+msgid "Get a hint for your next move"
+msgstr "Λήψη υπόδειξης για την επόμενη κίνησή σας"
 
-#: ../src/interface.c:88
+#: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Το αρχείο UI “%s” δεν μπόρεσε να φορτωθεί"
 
-#: ../src/interface.c:605
+#: ../src/interface.c:616
 msgid "The help contents could not be displayed"
 msgstr "Τα περιεχόμενα βοήθειας δε μπορούν να εμφανιστούν"
 
-#: ../src/interface.c:628
+#: ../src/interface.c:639
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -128,7 +129,7 @@ msgstr ""
 "από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 3 της Άδειας, είτε "
 "(κατ' επιλογήν σας) σε άλλη νεότερη έκδοση."
 
-#: ../src/interface.c:632
+#: ../src/interface.c:643
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -140,7 +141,7 @@ msgstr ""
 "ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε τη Γενική Δημόσια Άδεια GNU για "
 "περισσότερες λεπτομέρειες."
 
-#: ../src/interface.c:636
+#: ../src/interface.c:647
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -148,21 +149,21 @@ msgstr ""
 "Θα πρέπει να λάβατε ένα αντίγραφο της Γενικής Δημόσιας Άδειας GNU μαζί με το "
 "Hitori. Σε αντίθετη περίπτωση, δείτε το <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:648
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Πνευματικά δικαιώματα © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
+#: ../src/interface.c:660
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Ένα παζλ λογικής σχεδιασμένο από τον Nikoli."
 
-#: ../src/interface.c:651
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>\n"
 "Παύλος Tουρνάρης <p.tournaris@gmail.com>, 2009"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Ιστότοπος του Hitori"
 
@@ -183,7 +184,6 @@ msgstr "- Παίξτε ένα παιχνίδι Hitori"
 #. Print an error
 #: ../src/main.c:231
 #, c-format
-#| msgid "Command line options could not be parsed"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Οι επιλογές της γραμμής εντολών δεν μπόρεσαν να αναλυθούν: %s\n"
 
@@ -191,19 +191,39 @@ msgstr "Οι επιλογές της γραμμής εντολών δεν μπό
 msgid "Do you want to stop the current game?"
 msgstr "Θέλετε να διακόψετε το τρέχον παιχνίδι;"
 
+#: ../src/main.c:300
+msgid "Keep _Playing"
+msgstr "Ε_ξακολούθηση παιχνιδιού"
+
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
 #. * game; the second parameter is the number of seconds.
-#: ../src/main.c:371
+#: ../src/main.c:377
 #, c-format
 msgid "Time: %02u:%02u"
 msgstr "Χρόνος: %02u:%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
+#: ../src/rules.c:267
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Κερδίσαμε με χρόνο %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "Παίξτε _ξανά"
+
+#~ msgid "_Game"
+#~ msgstr "_Παιχνίδι"
+
+#~ msgid "_Hint"
+#~ msgstr "_Υπόδειξη"
+
+#~ msgid "_Undo"
+#~ msgstr "Αναί_ρεση"
+
+#~ msgid "_Redo"
+#~ msgstr "_Επανάληψη"
 
 #~ msgid "_Settings"
 #~ msgstr "_Ρυθμίσεις"
