@@ -1,5 +1,11 @@
 Major new features in version...
 
+0.4.4:
+* Fix various small memory leaks
+* Fix behaviour of the redo stack
+* Translations:
+** ca (Jordi Mas)
+
 0.4.3:
 * Translations:
 ** cs (Marek Černocký)
