@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-18 01:05+0000\n"
-"PO-Revision-Date: 2014-06-17 22:19-0300\n"
+"POT-Creation-Date: 2014-06-19 14:35+0000\n"
+"PO-Revision-Date: 2014-06-19 15:43-0300\n"
 "Last-Translator: Rafael Ferreira <rafael.f.f1@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.com>\n"
 "Language: pt_BR\n"
@@ -32,7 +32,6 @@ msgstr "Jogue o quebra-cabeça Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-#| msgid "Hitori"
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
@@ -91,7 +90,6 @@ msgid "_Help"
 msgstr "A_juda"
 
 #: ../data/hitori.ui.h:10
-#| msgid "_About Hitori"
 msgid "_About"
 msgstr "_Sobre"
 
@@ -198,12 +196,13 @@ msgstr "Você deseja parar o jogo atual?"
 msgid "Keep _Playing"
 msgstr "Continuar jo_gando"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:377
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:378
 #, c-format
-msgid "Time: %02u:%02u"
-msgstr "Tempo: %02u:%02u"
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -215,6 +214,9 @@ msgstr "Você ganhou em um tempo de %02u:%02u!"
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Jogar novamente"
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Tempo: %02u:%02u"
 
 #~ msgid "_Game"
 #~ msgstr "_Jogo"
