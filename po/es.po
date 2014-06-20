@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-17 14:03+0000\n"
-"PO-Revision-Date: 2014-06-17 19:05+0200\n"
+"POT-Creation-Date: 2014-06-19 14:35+0000\n"
+"PO-Revision-Date: 2014-06-20 12:12+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
 "Language: \n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Generator: Gtranslator 2.91.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -30,7 +30,6 @@ msgstr "Jugar al juego de puzle Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-#| msgid "Hitori"
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
@@ -56,71 +55,68 @@ msgid "_New Game"
 msgstr "Juego _nuevo"
 
 #: ../data/hitori.ui.h:2
-msgid "_About Hitori"
-msgstr "Acerca _de Hitori"
-
-#: ../data/hitori.ui.h:3
-msgid "_Help"
-msgstr "Ay_uda"
-
-#: ../data/hitori.ui.h:4 ../src/rules.c:272
-msgid "_Quit"
-msgstr "_Salir"
-
-#: ../data/hitori.ui.h:5
-msgid "_Game"
-msgstr "_Juego"
-
-#: ../data/hitori.ui.h:6
 msgid "Board _Size"
 msgstr "_Tamaño del tablero"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori.ui.h:3
 msgid "5×5"
 msgstr "5x5"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori.ui.h:4
 msgid "6×6"
 msgstr "6x6"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:11
+#: ../data/hitori.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:12
+#: ../data/hitori.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "Ay_uda"
+
+#: ../data/hitori.ui.h:10
+#| msgid "_About Hitori"
+msgid "_About"
+msgstr "A_cerca de"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Salir"
+
 #: ../data/hitori.ui.h:13
-msgid "_Hint"
-msgstr "_Pista"
+msgid "Undo your last move"
+msgstr "Deshacer el último movimiento"
 
 #: ../data/hitori.ui.h:14
-msgid "_Undo"
-msgstr "_Deshacer"
+msgid "Redo a move"
+msgstr "Rehacer un movimiento"
 
 #: ../data/hitori.ui.h:15
-msgid "_Redo"
-msgstr "_Rehacer"
+msgid "Get a hint for your next move"
+msgstr "Obtener una pista para el siguiente movimiento"
 
 #: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "No se pudo cargar el archivo de interfaz de usuario «%s»"
 
-#: ../src/interface.c:618
+#: ../src/interface.c:616
 msgid "The help contents could not be displayed"
 msgstr "No se pudo mostrar el contenido de la ayuda"
 
-#: ../src/interface.c:641
+#: ../src/interface.c:639
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -132,7 +128,7 @@ msgstr ""
 "Software Foundation; tanto en la versión 3 de la Licencia como (a su "
 "elección) cualquier versión posterior."
 
-#: ../src/interface.c:645
+#: ../src/interface.c:643
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -144,7 +140,7 @@ msgstr ""
 "PARA UN PROPÓSITO PARTICULAR. Vea la Licencia Publica General para más "
 "detalles."
 
-#: ../src/interface.c:649
+#: ../src/interface.c:647
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -152,19 +148,19 @@ msgstr ""
 "Debería haber recibido una copia de la Licencia Pública General GNU junto "
 "con Hitori. Si no la recibió, consulte <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:661
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:662
+#: ../src/interface.c:660
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Un puzle de lógica diseñado por Nikoli."
 
-#: ../src/interface.c:664
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr "Jorge González <jorgegonz@svn.gnome.org>, 2007-2008"
 
-#: ../src/interface.c:668
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Página web de Hitori"
 
@@ -196,12 +192,13 @@ msgstr "¿Quiere parar la partida actual?"
 msgid "Keep _Playing"
 msgstr "Seguir _jugando"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:377
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:378
 #, c-format
-msgid "Time: %02u:%02u"
-msgstr "Tiempo: %02u:%02u"
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
@@ -213,6 +210,21 @@ msgstr "Ganó con un tiempo de %02u:%02u."
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "Jugar _otra vez"
+
+#~ msgid "_Game"
+#~ msgstr "_Juego"
+
+#~ msgid "_Hint"
+#~ msgstr "_Pista"
+
+#~ msgid "_Undo"
+#~ msgstr "_Deshacer"
+
+#~ msgid "_Redo"
+#~ msgstr "_Rehacer"
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Tiempo: %02u:%02u"
 
 #~ msgid ""
 #~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
