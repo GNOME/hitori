@@ -32,6 +32,10 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	HitoriVector iter;
 	gboolean *accum, **horiz_accum;
 
+	g_return_if_fail (hitori != NULL);
+	g_return_if_fail (new_board_size > 0);
+	g_return_if_fail (seed >= -1);
+
 	/* Seed the random number generator */
 	if (seed == -1) {
 		GTimeVal time_;
