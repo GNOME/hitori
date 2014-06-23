@@ -266,7 +266,8 @@ $(srcdir)/.gitignore: Makefile.am $(top_srcdir)/git.mk
 			$(TEST_LOGS) \
 			$(TEST_LOGS:.log=.trs) \
 			$(TEST_SUITE_LOG) \
-			"*.$(OBJEXT)" \
+			"*.gcda" \
+			"*.gcno" \
 			$(DISTCLEANFILES) \
 			$(am__CONFIG_DISTCLEAN_FILES) \
 			$(CONFIG_CLEAN_FILES) \
@@ -274,11 +275,10 @@ $(srcdir)/.gitignore: Makefile.am $(top_srcdir)/git.mk
 			"*.tab.c" \
 			$(MAINTAINERCLEANFILES) \
 			$(BUILT_SOURCES) \
-			$(DEPDIR) \
 			$(patsubst %.vala,%.c,$(filter %.vala,$(SOURCES))) \
 			$(filter %_vala.stamp,$(DIST_COMMON)) \
 			$(filter %.vapi,$(DIST_COMMON)) \
-			$(filter %$(patsubst %.vapi,%.h,$(filter %.vapi,$(DIST_COMMON))),$(DIST_COMMON)) \
+			$(filter $(addprefix %,$(notdir $(patsubst %.vapi,%.h,$(filter %.vapi,$(DIST_COMMON))))),$(DIST_COMMON)) \
 			Makefile \
 			Makefile.in \
 			"*.orig" \
@@ -288,6 +288,10 @@ $(srcdir)/.gitignore: Makefile.am $(top_srcdir)/git.mk
 			".*.sw[nop]" \
 			".dirstamp" \
 		; do echo "/$$x"; done; \
+		for x in \
+			"*.$(OBJEXT)" \
+			$(DEPDIR) \
+		; do echo "$$x"; done; \
 	} | \
 	sed "s@^/`echo "$(srcdir)" | sed 's/\(.\)/[\1]/g'`/@/@" | \
 	sed 's@/[.]/@/@g' | \
