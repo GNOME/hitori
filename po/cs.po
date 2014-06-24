@@ -1,15 +1,15 @@
 # Czech translation for hitori.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori package.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-12-20 23:13+0000\n"
-"PO-Revision-Date: 2013-12-24 17:02+0100\n"
+"POT-Creation-Date: 2014-06-19 14:35+0000\n"
+"PO-Revision-Date: 2014-06-24 08:09+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Gtranslator 2.91.6\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -29,12 +29,17 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Hrát logickou hru Hitori."
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "Hitori GNOME"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori je logická hra podobná populárnímu Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:3
+#: ../data/hitori.appdata.xml.in.h:5
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -46,76 +51,72 @@ msgstr ""
 "při hledání řešení si můžete pomáhat umísťováním značek do políček. Když se "
 "zaseknete, umí vám hra nabídnout radu."
 
-#: ../data/hitori.ui.h:1
+#: ../data/hitori.ui.h:1 ../src/main.c:301
 msgid "_New Game"
 msgstr "_Nová hra"
 
 #: ../data/hitori.ui.h:2
-msgid "_About Hitori"
-msgstr "O _aplikaci Hitori"
-
-#: ../data/hitori.ui.h:3
-msgid "_Help"
-msgstr "_Nápověda"
-
-#: ../data/hitori.ui.h:4
-msgid "_Quit"
-msgstr "U_končit"
-
-#: ../data/hitori.ui.h:5
-msgid "_Game"
-msgstr "_Hra"
-
-#: ../data/hitori.ui.h:6
 msgid "Board _Size"
 msgstr "_Velikost hrací desky"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:11
+#: ../data/hitori.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:12
+#: ../data/hitori.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "_Nápověda"
+
+#: ../data/hitori.ui.h:10
+msgid "_About"
+msgstr "O _aplikaci"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "U_končit"
+
 #: ../data/hitori.ui.h:13
-msgid "_Hint"
-msgstr "_Rada"
+msgid "Undo your last move"
+msgstr "Vrátit zpět poslední tah"
 
 #: ../data/hitori.ui.h:14
-msgid "_Undo"
-msgstr "_Zpět"
+msgid "Redo a move"
+msgstr "Znovu provést poslední vrácený tah"
 
 #: ../data/hitori.ui.h:15
-msgid "_Redo"
-msgstr "Zn_ovu"
+msgid "Get a hint for your next move"
+msgstr "Získat radu k příštímu tahu"
 
-#: ../src/interface.c:88
+#: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Nelze načíst soubor „%s“ s uživatelským rozhraním."
 
-#: ../src/interface.c:605
+#: ../src/interface.c:616
 msgid "The help contents could not be displayed"
 msgstr "Nelze zobrazit obsah nápovědy"
 
-#: ../src/interface.c:628
+#: ../src/interface.c:639
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -127,7 +128,7 @@ msgstr ""
 "Software Foundation, a to buď ve verzi 3 této licence nebo (dle vaší volby) "
 "v libovolné novější verzi."
 
-#: ../src/interface.c:632
+#: ../src/interface.c:643
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -138,7 +139,7 @@ msgstr ""
 "bez předpokládané záruky na PRODEJNOST nebo VHODNOST PRO KONKRÉTNÍ ÚČEL. "
 "Více podrobností najdete přímo v licenci GNU General Public License."
 
-#: ../src/interface.c:636
+#: ../src/interface.c:647
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -146,19 +147,19 @@ msgstr ""
 "Spolu s Hitori byste měli obdržet kopii licence GNU General Public License. "
 "Pokud se tak nestalo, podívejte se na <http://www.gnu.org/licenses/>."
 
-#: ../src/interface.c:648
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
+#: ../src/interface.c:660
 msgid "A logic puzzle designed by Nikoli."
 msgstr "Logický hlavolam navržený Nikoli."
 
-#: ../src/interface.c:651
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
@@ -186,16 +187,25 @@ msgstr "Nelze zpracovat přepínače příkazové řádky: %s\n"
 msgid "Do you want to stop the current game?"
 msgstr "Opravdu chcete zastavit současnou hru?"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:371
+#: ../src/main.c:300
+msgid "Keep _Playing"
+msgstr "_Pokračovat ve hře"
+
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:378
 #, c-format
-msgid "Time: %02u:%02u"
-msgstr "Čas: %02u:%02u"
+msgid "%02u∶‎%02u"
+msgstr "%u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
+#: ../src/rules.c:267
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "Vyhráli jste v čase %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "H_rát znovu"
