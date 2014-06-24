@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-10 21:02-0600\n"
+"POT-Creation-Date: 2014-06-24 12:30+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: British English <en@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -25,102 +25,94 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Play the Hitori puzzle game"
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori is a logic game similar to Sudoku."
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
 
-#: ../data/hitori.appdata.xml.in.h:3
-msgid ""
-"You play the game against the clock, aiming to eliminate all the duplicate "
-"numbers in each row and column in the fastest time. Multiple sizes of game "
-"board are supported, and you can place markers on cells to help work out the "
-"solution. If you get stuck, the game can give you a hint."
-msgstr ""
-"You play the game against the clock, aiming to eliminate all the duplicate "
-"numbers in each row and column in the fastest time. Multiple sizes of game "
-"board are supported, and you can place markers on cells to help work out the "
-"solution. If you get stuck, the game can give you a hint."
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori is a logic game similar to the popular game of Sudoku."
 
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
 #: ../data/hitori.appdata.xml.in.h:5
 msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
 
-#: ../data/hitori.ui.h:1
+#: ../data/hitori.ui.h:1 ../src/main.c:301
 msgid "_New Game"
 msgstr "_New Game"
 
 #: ../data/hitori.ui.h:2
-msgid "_About Hitori"
-msgstr "_About Hitori"
-
-#: ../data/hitori.ui.h:3
-msgid "_Help"
-msgstr "_Help"
-
-#: ../data/hitori.ui.h:4
-msgid "_Quit"
-msgstr "_Quit"
-
-#: ../data/hitori.ui.h:5
-msgid "_Game"
-msgstr "_Game"
-
-#: ../data/hitori.ui.h:6
 msgid "Board _Size"
 msgstr "Board _Size"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:11
+#: ../data/hitori.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:12
+#: ../data/hitori.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "_Help"
+
+#: ../data/hitori.ui.h:10
+msgid "_About"
+msgstr "_About"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Quit"
+
 #: ../data/hitori.ui.h:13
-msgid "_Hint"
-msgstr "_Hint"
+msgid "Undo your last move"
+msgstr "Undo your last move"
 
 #: ../data/hitori.ui.h:14
-msgid "_Undo"
-msgstr "_Undo"
+msgid "Redo a move"
+msgstr "Redo a move"
 
 #: ../data/hitori.ui.h:15
-msgid "_Redo"
-msgstr "_Redo"
+msgid "Get a hint for your next move"
+msgstr "Get a hint for your next move"
 
-#: ../src/interface.c:88
+#: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "UI file “%s” could not be loaded"
 
-#: ../src/interface.c:605
+#: ../src/interface.c:616
 msgid "The help contents could not be displayed"
 msgstr "The help contents could not be displayed"
 
-#: ../src/interface.c:628
+#: ../src/interface.c:639
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -132,7 +124,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:632
+#: ../src/interface.c:643
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -144,7 +136,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:636
+#: ../src/interface.c:647
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -152,19 +144,19 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:648
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
+#: ../src/interface.c:660
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:651
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
@@ -192,19 +184,50 @@ msgstr "Command line options could not be parsed: %s\n"
 msgid "Do you want to stop the current game?"
 msgstr "Do you want to stop the current game?"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:371
+#: ../src/main.c:300
+msgid "Keep _Playing"
+msgstr "Keep _Playing"
+
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:378
 #, c-format
-msgid "Time: %02u:%02u"
-msgstr "Time: %02u:%02u"
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
+#: ../src/rules.c:267
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
 msgstr "You've won in a time of %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "_Play Again"
+
+#~ msgid ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+#~ msgstr ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+
+#~ msgid "_Game"
+#~ msgstr "_Game"
+
+#~ msgid "_Hint"
+#~ msgstr "_Hint"
+
+#~ msgid "_Undo"
+#~ msgstr "_Undo"
+
+#~ msgid "_Redo"
+#~ msgstr "_Redo"
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Time: %02u:%02u"
 
 #~ msgid "_Settings"
 #~ msgstr "_Settings"
