@@ -69,6 +69,11 @@ EXTRA_DIST = \
 	$(icon48_DATA) \
 	$(NULL)
 
+# CSS
+
+cssdir = $(datadir)/hitori
+css_DATA = data/hitori.css
+
 # UI file
 uidir = $(datadir)/hitori
 ui_DATA = data/hitori.ui
@@ -83,6 +88,7 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 EXTRA_DIST += \
+	$(css_DATA) \
 	$(ui_DATA) \
 	$(desktop_in_files) \
 	$(NULL)

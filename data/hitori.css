@@ -1,0 +1,24 @@
+/* Cell background color */
+
+@define-color unpainted-bg-color #ededed;
+@define-color painted-bg-color #f4f4f4;	/* Adwaita's insensitive-bg-color */
+
+/* Cell border color */
+
+@define-color unpainted-border-color #2e3436; /* Nearly black */
+@define-color painted-border-color #babcb8;
+@define-color hint-border-color red;
+
+/* Colors of numbers within cells */
+
+@define-color unpainted-number-color @unpainted-border-color;
+@define-color painted-number-color #a7aba7; /* Dark gray */
+@define-color mistaken-number-color #ef2929; /* Tango's lightest "scarlet red" */
+
+/* Shift-click a cell for tag1, ctrl-click for tag2 */
+
+@define-color tag1-unpainted-color #729fcf; /* Tango's lightest "sky blue" */
+@define-color tag1-painted-color alpha(@tag1-unpainted-color, 0.7);
+
+@define-color tag2-unpainted-color #8ae234; /* Tango's lightest "chameleon" */
+@define-color tag2-painted-color alpha(@tag2-unpainted-color, 0.7);
