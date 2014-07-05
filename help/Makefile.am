@@ -7,7 +7,7 @@ HELP_FILES = \
 	customization.page \
 	game.page \
 	index.page \
-	license.page \
+	legal.xml \
 	playing.page \
 	strategy.page
 

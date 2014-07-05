@@ -2,6 +2,7 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" id="strategy">
 	<info>
 		<link type="guide" xref="index#tips"/>
+		<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 		<desc>Strategies for playing Hitori.</desc>
 	</info>
 	<title>Gameplay Strategies</title>

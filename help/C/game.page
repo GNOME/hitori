@@ -2,6 +2,7 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" id="game">
 	<info>
 		<link type="guide" xref="index#play"/>
+		<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 		<desc>Introduction to the game of Hitori.</desc>
 	</info>
 	<title>Hitori the Game</title>

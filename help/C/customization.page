@@ -2,6 +2,7 @@
 <page xmlns="http://projectmallard.org/1.0/" type="topic" id="customization">
 	<info>
 		<link type="guide" xref="index#play"/>
+		<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
 		<desc>Changing how the game appears and plays.</desc>
 	</info>
 	<title>Customizing the Game</title>
