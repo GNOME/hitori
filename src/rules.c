@@ -264,7 +264,7 @@ hitori_check_win (Hitori *hitori)
 
 		/* Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 		 * the number of seconds. */
-		message = g_strdup_printf (_("You've won in a time of %02u:%02u!"), hitori->timer_value / 60, hitori->timer_value % 60);
+		message = g_strdup_printf (_("You’ve won in a time of %02u:%02u!"), hitori->timer_value / 60, hitori->timer_value % 60);
 		dialog = gtk_message_dialog_new (GTK_WINDOW (hitori->window), GTK_DIALOG_MODAL, GTK_MESSAGE_INFO, GTK_BUTTONS_NONE, "%s", message);
 		g_free (message);
 
