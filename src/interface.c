@@ -638,7 +638,7 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 	gtk_show_about_dialog (GTK_WINDOW (self->window),
 				"version", VERSION,
 				"copyright", _("Copyright \xc2\xa9 2007\342\200\2232010 Philip Withnall"),
-				"comments", _("A logic puzzle designed by Nikoli."),
+				"comments", _("A logic puzzle originally designed by Nikoli"),
 				"authors", authors,
 				"translator-credits", _("translator-credits"),
 				"logo-icon-name", "hitori",
