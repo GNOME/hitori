@@ -171,10 +171,14 @@ activate (GApplication *application)
 	/* Create the interface. */
 	if (self->window == NULL) {
 		HitoriUndo *undo;
+		gchar *size_str;
 
 		/* Setup */
 		self->debug = priv->debug;
-		self->board_size = DEFAULT_BOARD_SIZE;
+		self->settings = g_settings_new ("org.gnome.hitori");
+		size_str = g_settings_get_string (self->settings, "board-size");
+		self->board_size = g_ascii_strtoull (size_str, NULL, 10);
+		g_free (size_str);
 
 		undo = g_new0 (HitoriUndo, 1);
 		undo->type = UNDO_NEW_GAME;
@@ -435,6 +439,8 @@ hitori_quit (Hitori *hitori)
 		pango_font_description_free (hitori->normal_font_desc);
 	if (hitori->painted_font_desc != NULL)
 		pango_font_description_free (hitori->painted_font_desc);
+
+	g_object_unref (hitori->settings);
 
 	g_application_quit (G_APPLICATION (hitori));
 }

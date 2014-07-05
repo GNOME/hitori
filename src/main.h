@@ -105,6 +105,8 @@ typedef struct {
 	guint timer_value; /* seconds into the game */
 	GtkLabel *timer_label;
 	guint timeout_id;
+
+	GSettings *settings;
 } HitoriApplication;
 
 typedef struct {

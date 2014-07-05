@@ -78,6 +78,10 @@ css_DATA = data/hitori.css
 uidir = $(datadir)/hitori
 ui_DATA = data/hitori.ui
 
+# GSettings
+gsettings_SCHEMAS = data/org.gnome.hitori.gschema.xml
+@GSETTINGS_RULES@
+
 # Desktop file
 # We can't use INTLTOOL_DESKTOP_RULE here due to lp#605826
 %.desktop: %.desktop.in
@@ -89,6 +93,7 @@ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 EXTRA_DIST += \
 	$(css_DATA) \
+	$(gsettings_SCHEMAS) \
 	$(ui_DATA) \
 	$(desktop_in_files) \
 	$(NULL)

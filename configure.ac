@@ -22,7 +22,10 @@ AM_CONDITIONAL([DEBUG],[test "$debug" = "yes"])
 GETTEXT_PACKAGE=hitori
 AC_SUBST([GETTEXT_PACKAGE])
 AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],["$GETTEXT_PACKAGE"],[gettext package name])
-IT_PROG_INTLTOOL([0.35.0])
+IT_PROG_INTLTOOL([0.50.2])
+
+# GSettings
+GLIB_GSETTINGS
 
 # Documentation
 YELP_HELP_INIT
@@ -31,7 +34,7 @@ YELP_HELP_INIT
 APPDATA_XML
 
 # Dependencies
-PKG_CHECK_MODULES([GENERAL],[glib-2.0 gtk+-3.0 >= 3.13.2 gmodule-2.0 cairo >= 1.4])
+PKG_CHECK_MODULES([GENERAL],[glib-2.0 gio-2.0 >= 2.32 gtk+-3.0 >= 3.13.2 gmodule-2.0 cairo >= 1.4])
 
 # Output!
 AC_CONFIG_FILES([

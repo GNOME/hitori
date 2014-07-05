@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema id="org.gnome.hitori" path="/org/gnome/hitori/" gettext-domain="hitori">
+		<key name="board-size" type="s">
+			<default>"5"</default>
+			<summary>Board size</summary>
+			<description>The size of the board, in cells.</description>
+		</key>
+	</schema>
+</schemalist>

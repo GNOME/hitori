@@ -49,12 +49,10 @@ static void redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_d
 static void quit_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void help_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void about_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
-static void board_size_activate_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
-static void board_size_change_cb (GSimpleAction *action, GVariant *state, gpointer user_data);
+static void board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data);
 
 static GActionEntry app_entries[] = {
 	{ "new-game", new_game_cb, NULL, NULL, NULL },
-	{ "board-size", board_size_activate_cb, "s", "'5'", board_size_change_cb },
 	{ "about", about_cb, NULL, NULL, NULL },
 	{ "help", help_cb, NULL, NULL, NULL },
 	{ "quit", quit_cb, NULL, NULL, NULL },
@@ -75,6 +73,7 @@ hitori_create_interface (Hitori *hitori)
 	GtkCssProvider *css_provider;
 	const PangoFontDescription *font;
 	GMenuModel *app_menu;  /* owned */
+	GAction *action;
 
 	builder = gtk_builder_new ();
 
@@ -116,6 +115,11 @@ hitori_create_interface (Hitori *hitori)
 	g_action_map_add_action_entries (G_ACTION_MAP (hitori), app_entries, G_N_ELEMENTS (app_entries), hitori);
 	g_action_map_add_action_entries (G_ACTION_MAP (hitori->window), win_entries, G_N_ELEMENTS (win_entries), hitori);
 
+	action = g_settings_create_action (hitori->settings, "board-size");
+	g_action_map_add_action (G_ACTION_MAP (hitori), action);
+	g_signal_connect (G_OBJECT (action), "notify::state", (GCallback) board_size_change_cb, hitori);
+	g_object_unref (action);
+
 	hitori->undo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "undo"));
 	hitori->redo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "redo"));
 	hitori->hint_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "hint"));
@@ -144,9 +148,6 @@ hitori_create_interface (Hitori *hitori)
 	/* Disable undo/redo until a cell has been clicked. */
 	g_simple_action_set_enabled (hitori->undo_action, FALSE);
 	g_simple_action_set_enabled (hitori->redo_action, FALSE);
-
-	/* Set the initial board size. */
-	g_simple_action_set_state (G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori), "board-size")), g_variant_new_string ("5"));
 
 	return hitori->window;
 }
@@ -694,21 +695,15 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 }
 
 static void
-board_size_activate_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
-{
-	g_action_change_state (G_ACTION (action), parameter);
-}
-
-static void
-board_size_change_cb (GSimpleAction *action, GVariant *state, gpointer user_data)
+board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data)
 {
 	HitoriApplication *self = HITORI_APPLICATION (user_data);
-	const gchar *size_str;
+	gchar *size_str;
 	guint64 size;
 
-	size_str = g_variant_get_string (state, NULL);
+	size_str = g_settings_get_string (self->settings, "board-size");
 	size = g_ascii_strtoull (size_str, NULL, 10);
 	hitori_set_board_size (self, size);
 
-	g_simple_action_set_state (action, state);
+	g_free (size_str);
 }
