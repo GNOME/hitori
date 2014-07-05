@@ -627,7 +627,6 @@ static void
 about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
 	HitoriApplication *self = HITORI_APPLICATION (user_data);
-	gchar *license;
 
 	const gchar *authors[] =
 	{
@@ -635,24 +634,6 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 		"Ben Windsor <benjw_823@hotmail.com>",
 		NULL
 	};
-	const gchar *license_parts[] = {
-		N_("Hitori is free software: you can redistribute it and/or modify "
-		   "it under the terms of the GNU General Public License as published by "
-		   "the Free Software Foundation, either version 3 of the License, or "
-		   "(at your option) any later version."),
-		N_("Hitori is distributed in the hope that it will be useful, "
-		   "but WITHOUT ANY WARRANTY; without even the implied warranty of "
-		   "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
-		   "GNU General Public License for more details."),
-		N_("You should have received a copy of the GNU General Public License "
-		   "along with Hitori.  If not, see <http://www.gnu.org/licenses/>.")
-	};
-
-	license = g_strjoin ("\n\n",
-			  _(license_parts[0]),
-			  _(license_parts[1]),
-			  _(license_parts[2]),
-			  NULL);
 
 	gtk_show_about_dialog (GTK_WINDOW (self->window),
 				"version", VERSION,
@@ -661,13 +642,11 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 				"authors", authors,
 				"translator-credits", _("translator-credits"),
 				"logo-icon-name", "hitori",
-				"license", license,
+				"license-type", GTK_LICENSE_GPL_3_0,
 				"wrap-license", TRUE,
 				"website-label", _("Hitori Website"),
 				"website", PACKAGE_URL,
 				NULL);
-
-	g_free (license);
 }
 
 static void
