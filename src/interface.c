@@ -154,7 +154,6 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat c
 	GtkStateFlags state = 0;
 	gboolean painted = FALSE;
 	PangoFontDescription *font_desc;
-	GdkRGBA colour;
 	GtkBorder border;
 
 	if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
@@ -171,8 +170,12 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat c
 		g_debug ("State: %u", state);
 	}
 
-	gtk_style_context_get_background_color (style_context, state, &colour);
-	gdk_cairo_set_source_rgba (cr, &colour);
+	/* Adwaita’s background colour. */
+	if (painted) {
+		cairo_set_source_rgb (cr, 0.956862745, 0.956862745, 0.956862745);
+	} else {
+		cairo_set_source_rgb (cr, 0.929411765, 0.929411765 ,0.929411765);
+	}
 	cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 	cairo_fill (cr);
 
@@ -200,8 +203,11 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat c
 	}
 
 	/* Draw the border */
-	gtk_style_context_get_border_color (style_context, state, &colour);
-	gdk_cairo_set_source_rgba (cr, &colour);
+	if (painted) {
+		cairo_set_source_rgb (cr, 0.729411765, 0.737254902, 0.721568627);
+	} else {
+		cairo_set_source_rgb (cr, 0.180392157, 0.203921569, 0.211764706);
+	}
 	cairo_set_line_width (cr, border.left);
 	cairo_rectangle (cr, x_pos, y_pos, cell_size, cell_size);
 	cairo_stroke (cr);
@@ -218,8 +224,11 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat c
 		cairo_set_source_rgb (cr, 0.937254902, 0.160784314, 0.160784314); /* Tango's lightest "scarlet red" */
 		pango_font_description_set_weight (font_desc, PANGO_WEIGHT_BOLD);
 	} else {
-		gtk_style_context_get_color (style_context, state, &colour);
-		gdk_cairo_set_source_rgba (cr, &colour);
+		if (painted) {
+			cairo_set_source_rgb (cr, 0.654901961, 0.670588235, 0.654901961);
+		} else {
+			cairo_set_source_rgb (cr, 0.180392157, 0.203921569, 0.211764706);
+		}
 		pango_font_description_set_weight (font_desc, PANGO_WEIGHT_NORMAL);
 	}
 
