@@ -453,7 +453,7 @@ hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hit
 		}
 
 		hitori_pause_timer (hitori);
-	} else if (timer_was_running == TRUE) {
+	} else if (timer_was_running && hitori->processing_events) {
 		/* Re-start the timer */
 		hitori_start_timer (hitori);
 	}
