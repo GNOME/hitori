@@ -1,5 +1,10 @@
 Major new features in version...
 
+0.4.5:
+* Minor fixes to the board rendering and timer
+* Translations:
+** en_GB (Philip Withnall)
+
 0.4.4:
 * Fix various small memory leaks
 * Fix behaviour of the redo stack
