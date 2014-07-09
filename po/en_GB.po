@@ -1,14 +1,14 @@
 # British English translation of Hitori.
 # Copyright (C) 2007-2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Hitori package.
-# Philip Withnall <philip@tecnocode.co.uk>, 2007, 2008, 2010, 2013.
+# Philip Withnall <philip@tecnocode.co.uk>, 2007, 2008, 2010, 2013, 2014.
 #
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-09-10 21:02-0600\n"
+"POT-Creation-Date: 2014-07-09 08:23+0100\n"
 "PO-Revision-Date: 2007-09-03 16:09+0100\n"
 "Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
 "Language-Team: British English <en@li.org>\n"
@@ -27,8 +27,8 @@ msgstr "Play the Hitori puzzle game"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori is a logic game similar to Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori is a logic game similar to the popular game of Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:3
 msgid ""
@@ -41,15 +41,6 @@ msgstr ""
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
 
 #: ../data/hitori.ui.h:1
 msgid "_New Game"
@@ -111,16 +102,16 @@ msgstr "_Undo"
 msgid "_Redo"
 msgstr "_Redo"
 
-#: ../src/interface.c:88
+#: ../src/interface.c:89
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "UI file “%s” could not be loaded"
 
-#: ../src/interface.c:605
+#: ../src/interface.c:627
 msgid "The help contents could not be displayed"
 msgstr "The help contents could not be displayed"
 
-#: ../src/interface.c:628
+#: ../src/interface.c:650
 msgid ""
 "Hitori is free software: you can redistribute it and/or modify it under the "
 "terms of the GNU General Public License as published by the Free Software "
@@ -132,7 +123,7 @@ msgstr ""
 "Foundation, either version 3 of the Licence, or (at your option) any later "
 "version."
 
-#: ../src/interface.c:632
+#: ../src/interface.c:654
 msgid ""
 "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
 "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
@@ -144,7 +135,7 @@ msgstr ""
 "FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more "
 "details."
 
-#: ../src/interface.c:636
+#: ../src/interface.c:658
 msgid ""
 "You should have received a copy of the GNU General Public License along with "
 "Hitori.  If not, see <http://www.gnu.org/licenses/>."
@@ -152,19 +143,19 @@ msgstr ""
 "You should have received a copy of the GNU General Public Licence along with "
 "Hitori.  If not, see <http://www.gnu.org/licences/>."
 
-#: ../src/interface.c:648
+#: ../src/interface.c:670
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
+#: ../src/interface.c:671
 msgid "A logic puzzle designed by Nikoli."
 msgstr "A logic puzzle designed by Nikoli."
 
-#: ../src/interface.c:651
+#: ../src/interface.c:673
 msgid "translator-credits"
 msgstr "Philip Withnall <philip@tecnocode.co.uk>"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:677
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
@@ -204,7 +195,14 @@ msgstr "Time: %02u:%02u"
 #: ../src/rules.c:266
 #, c-format
 msgid "You've won in a time of %02u:%02u!"
-msgstr "You've won in a time of %02u:%02u!"
+msgstr "You’ve won in a time of %02u:%02u!"
+
+#~ msgid ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+#~ msgstr ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
 
 #~ msgid "_Settings"
 #~ msgstr "_Settings"
