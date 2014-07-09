@@ -5,9 +5,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master.el\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2014-06-18 01:05+0000\n"
-"PO-Revision-Date: 2014-06-18 13:43+0200\n"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-07-07 18:28+0000\n"
+"PO-Revision-Date: 2014-07-10 02:41+0200\n"
 "Last-Translator: Tom Tryfonidis <tomtryf@gmail.com>\n"
 "Language-Team: Greek <team@gnome.gr>\n"
 "Language: el\n"
@@ -27,7 +27,6 @@ msgstr "Παίξτε το παιχνίδι παζλ Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-#| msgid "Hitori"
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
@@ -51,7 +50,7 @@ msgstr ""
 "δείκτες στα κελιά για να βοηθηθείτε με τη λύση. Αν κολλήσετε, το παιχνίδι "
 "μπορεί να σας δώσει και μια υπόδειξη."
 
-#: ../data/hitori.ui.h:1 ../src/main.c:301
+#: ../data/hitori.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "_Νέο παιχνίδι"
 
@@ -88,7 +87,6 @@ msgid "_Help"
 msgstr "_Βοήθεια"
 
 #: ../data/hitori.ui.h:10
-#| msgid "_About Hitori"
 msgid "_About"
 msgstr "_Περί"
 
@@ -108,110 +106,124 @@ msgstr "Επανάληψη κίνησης"
 msgid "Get a hint for your next move"
 msgstr "Λήψη υπόδειξης για την επόμενη κίνησή σας"
 
-#: ../src/interface.c:89
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+#| msgid "Board _Size"
+msgid "Board size"
+msgstr "Μέγεθος πίνακα"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "Το μέγεθος του πίνακα, σε κελιά."
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Το αρχείο UI “%s” δεν μπόρεσε να φορτωθεί"
 
-#: ../src/interface.c:616
+#: ../src/interface.c:661
 msgid "The help contents could not be displayed"
 msgstr "Τα περιεχόμενα βοήθειας δε μπορούν να εμφανιστούν"
 
-#: ../src/interface.c:639
-msgid ""
-"Hitori is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Το Hitori είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/και να το "
-"τροποποιήσετε υπό τους όρους της Γενικής Δημόσιας Άδειας GNU όπως εκδόθηκε "
-"από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 3 της Άδειας, είτε "
-"(κατ' επιλογήν σας) σε άλλη νεότερη έκδοση."
-
-#: ../src/interface.c:643
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Το Hitori διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ "
-"ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ. Χωρίς καν την νοούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
-"ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε τη Γενική Δημόσια Άδεια GNU για "
-"περισσότερες λεπτομέρειες."
-
-#: ../src/interface.c:647
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"Θα πρέπει να λάβατε ένα αντίγραφο της Γενικής Δημόσιας Άδειας GNU μαζί με το "
-"Hitori. Σε αντίθετη περίπτωση, δείτε το <http://www.gnu.org/licenses/>."
-
-#: ../src/interface.c:659
+#: ../src/interface.c:685
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Πνευματικά δικαιώματα © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:660
-msgid "A logic puzzle designed by Nikoli."
-msgstr "Ένα παζλ λογικής σχεδιασμένο από τον Nikoli."
+#: ../src/interface.c:686
+#| msgid "A logic puzzle designed by Nikoli."
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Ένα παιχνίδι λογικής σχεδιασμένο από τον Nikoli"
 
-#: ../src/interface.c:662
+#: ../src/interface.c:688
 msgid "translator-credits"
 msgstr ""
-"Ελληνική μεταφραστική ομάδα GNOME <team@gnome.gr>\n"
-"Παύλος Tουρνάρης <p.tournaris@gmail.com>, 2009"
+"Ελληνική μεταφραστική ομάδα GNOME\n"
+"Παύλος Tουρνάρης <p.tournaris@gmail.com>nΜαρία Μαυρίδου <mavridou@gmail."
+"com>\n"
+"Για περισσότερα δείτε http://gnome.gr/"
 
-#: ../src/interface.c:666
+#: ../src/interface.c:692
 msgid "Hitori Website"
 msgstr "Ιστότοπος του Hitori"
 
-#: ../src/main.c:205
+#: ../src/main.c:209
 msgid "Enable debug mode"
 msgstr "Ενεργοποίηση κατάστασης αποσφαλμάτωσης"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:207
+#: ../src/main.c:211
 msgid "Seed the board generation"
 msgstr "Αριθμός seed για τη δημιουργία του πίνακα."
 
 #. Options
-#: ../src/main.c:221
+#: ../src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Παίξτε ένα παιχνίδι Hitori"
 
 #. Print an error
-#: ../src/main.c:231
+#: ../src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Οι επιλογές της γραμμής εντολών δεν μπόρεσαν να αναλυθούν: %s\n"
 
-#: ../src/main.c:297
+#: ../src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "Θέλετε να διακόψετε το τρέχον παιχνίδι;"
 
-#: ../src/main.c:300
+#: ../src/main.c:304
 msgid "Keep _Playing"
 msgstr "Ε_ξακολούθηση παιχνιδιού"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:377
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:382
 #, c-format
-msgid "Time: %02u:%02u"
-msgstr "Χρόνος: %02u:%02u"
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
 #, c-format
-msgid "You've won in a time of %02u:%02u!"
+#| msgid "You've won in a time of %02u:%02u!"
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Κερδίσαμε με χρόνο %02u:%02u!"
 
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "Παίξτε _ξανά"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Το Hitori είναι ελεύθερο λογισμικό: μπορείτε να το αναδιανείμετε ή/και να "
+#~ "το τροποποιήσετε υπό τους όρους της Γενικής Δημόσιας Άδειας GNU όπως "
+#~ "εκδόθηκε από το Ίδρυμα Ελεύθερου Λογισμικού, είτε στην έκδοση 3 της "
+#~ "Άδειας, είτε (κατ' επιλογήν σας) σε άλλη νεότερη έκδοση."
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Το Hitori διανέμεται με την ελπίδα ότι θα είναι χρήσιμο, αλλά ΧΩΡΙΣ ΚΑΜΙΑ "
+#~ "ΑΠΟΛΥΤΩΣ ΕΓΓΥΗΣΗ. Χωρίς καν την νοούμενη εγγύηση ΕΜΠΟΡΕΥΣΙΜΟΤΗΤΑΣ ή "
+#~ "ΚΑΤΑΛΛΗΛΟΤΗΤΑΣ ΓΙΑ ΣΥΓΚΕΚΡΙΜΕΝΟ ΣΚΟΠΟ. Δείτε τη Γενική Δημόσια Άδεια GNU "
+#~ "για περισσότερες λεπτομέρειες."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Θα πρέπει να λάβατε ένα αντίγραφο της Γενικής Δημόσιας Άδειας GNU μαζί με "
+#~ "το Hitori. Σε αντίθετη περίπτωση, δείτε το <http://www.gnu.org/licenses/>."
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Χρόνος: %02u:%02u"
 
 #~ msgid "_Game"
 #~ msgstr "_Παιχνίδι"
