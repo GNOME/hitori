@@ -1,5 +1,27 @@
 Major new features in version...
 
+3.13.4:
+
+* Modernize UI, removing menu bar and status bar
+* On game over, prompt the user to play again
+* Use CSS provider to control colors used in UI
+* Store board size in gsettings
+* Fix a potential NULL pointer dereference
+* Disable redo when making a move
+* Fix two memory leaks
+* Disable the game play timer after winning
+* Translations:
+** ca (Jordi Mas)
+** cs (Marek Černocký)
+** el (MarMav, Tom Tryfonidis)
+** en_GB (Philip Withnall)
+** es (Daniel Mustieles)
+** gl (Fran Diéguez)
+** he (Yosef Or Boczko)
+** pl (Piotr Drąg)
+** pt_BR (Rafael Ferreira)
+** ru (Yuri Myasoedov)
+
 0.4.3:
 * Translations:
 ** cs (Marek Černocký)
