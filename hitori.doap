@@ -5,6 +5,7 @@
          xmlns="http://usefulinc.com/ns/doap#">
 	<name xml:lang="en">hitori</name>
 	<shortdesc xml:lang="en">GTK+ application to generate and let you play games of Hitori</shortdesc>
+	<category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
 	<description xml:lang="en">
 		Hitori is a small logic puzzle in a similar vein to the more
 		popular Sudoku. In the game, the player starts with a square
