@@ -1,5 +1,15 @@
 Major new features in version...
 
+3.13.90:
+
+* Follow guidelines for including license info in help
+* Translations:
+** es (Daniel Mustieles)
+** lt (Aurimas Černius)
+** nb (Kjartan Maraas)
+** sv (Anders Jonsson)
+** uk (Daniel Korostil)
+
 3.13.4:
 
 * Modernize UI, removing menu bar and status bar
