@@ -1,0 +1,181 @@
+# Chinese (Hong Kong) translation for hitori.
+# Copyright (C) 2014 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-08-18 23:10+0000\n"
+"PO-Revision-Date: 2014-08-19 20:26+0800\n"
+"Last-Translator: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>\n"
+"Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+msgid "Hitori"
+msgstr "Hitori"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "玩 Hitori 解謎遊戲"
+
+#. Translators: the name of the application as it appears in a software center
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori 是一種類似數獨的邏輯遨遊戲。"
+
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr "你要在時限內完成遊戲，目標是在最短時間內清除每一欄、每一列中重複的數字。遊戲盤支援多種尺寸，你可以在格子裏放上標記來協助找出解答。如果你卡關了，遊戲可以給你提示。"
+
+#: ../data/hitori.ui.h:1 ../src/main.c:305
+msgid "_New Game"
+msgstr "開新局(_N)"
+
+#: ../data/hitori.ui.h:2
+msgid "Board _Size"
+msgstr "遊戲盤大小(_S)"
+
+#: ../data/hitori.ui.h:3
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori.ui.h:4
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:5
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:6
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:7
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:8
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "求助(_H)"
+
+#: ../data/hitori.ui.h:10
+msgid "_About"
+msgstr "關於(_A)"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "離開(_Q)"
+
+#: ../data/hitori.ui.h:13
+msgid "Undo your last move"
+msgstr "還原上一步"
+
+#: ../data/hitori.ui.h:14
+msgid "Redo a move"
+msgstr "取消復原移動"
+
+#: ../data/hitori.ui.h:15
+msgid "Get a hint for your next move"
+msgstr "給下一步的提示"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+msgid "Board size"
+msgstr "遊戲盤大小"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "遊戲盤大小，以格子計"
+
+#: ../src/interface.c:87
+#, c-format
+msgid "UI file “%s” could not be loaded"
+msgstr "無法載入 UI 檔案「%s」"
+
+#: ../src/interface.c:661
+msgid "The help contents could not be displayed"
+msgstr "無法顯示求助內容"
+
+#: ../src/interface.c:685
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "版權所有 © 2007–2010 Philip Withnall"
+
+#: ../src/interface.c:686
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "原始由 Nikoli 設計的邏輯解謎遊戲"
+
+#: ../src/interface.c:688
+msgid "translator-credits"
+msgstr "Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>, 2014"
+
+#: ../src/interface.c:692
+msgid "Hitori Website"
+msgstr "Hitori 網站"
+
+#: ../src/main.c:209
+msgid "Enable debug mode"
+msgstr "啟用除錯模式"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:211
+msgid "Seed the board generation"
+msgstr "遊戲盤產生亂數種子"
+
+#. Options
+#: ../src/main.c:225
+msgid "- Play a game of Hitori"
+msgstr "- 玩 Hitri 遊戲"
+
+#. Print an error
+#: ../src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "無法分析命令列選項：%s\n"
+
+#: ../src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "你是否要停止目前的遊戲？"
+
+#: ../src/main.c:304
+msgid "Keep _Playing"
+msgstr "繼續玩(_P)"
+
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:382
+#, c-format
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "你已於 %02u:%02u 獲勝！"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "再玩一次(_P)"
