@@ -155,8 +155,10 @@
 		<child>
 			<object class="GtkBox" id="vbox1">
 				<property name="orientation">vertical</property>
+				<property name="valign">center</property>
 				<child>
 					<object class="GtkDrawingArea" id="hitori_drawing_area">
+						<property name="valign">fill</property>
 						<property name="width-request">400</property>
 						<property name="height-request">400</property>
 						<property name="events">GDK_BUTTON_PRESS_MASK | GDK_BUTTON_RELEASE_MASK</property>
