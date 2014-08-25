@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-01 22:21+0200\n"
-"PO-Revision-Date: 2014-07-01 22:22+0200\n"
+"POT-Creation-Date: 2014-08-25 22:35+0200\n"
+"PO-Revision-Date: 2014-08-25 22:35+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -48,7 +48,7 @@ msgstr ""
 "de varios tamaños e pode dispor marcadores nas celas que lle axuden a acadar "
 "unha solución. Se se atasca, o xogo daralle un consello."
 
-#: ../data/hitori.ui.h:1 ../src/main.c:301
+#: ../data/hitori.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "_Novo xogo"
 
@@ -104,93 +104,71 @@ msgstr "Refacer un movemento"
 msgid "Get a hint for your next move"
 msgstr "Obter unha suxestión para o seu novo movemento"
 
-#: ../src/interface.c:89
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+msgid "Board size"
+msgstr "Tamaño do taboleiro"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "O tamaño do taboleiro, en celas."
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Non é posíbel cargar o ficheiro de IU \"%s\"."
 
-#: ../src/interface.c:616
+#: ../src/interface.c:661
 msgid "The help contents could not be displayed"
 msgstr "Non foi posíbel mostrar os contidos da axuda."
 
-#: ../src/interface.c:639
-msgid ""
-"Hitori is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Hitori é software libre. Vostede pode redistribuílo e/ou modificar baixo os "
-"termos da Licenza pública xeral de GNU publicada pola Free Software "
-"Foundation, na versión 3 ou suuperior da licenza."
-
-#: ../src/interface.c:643
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Hitorio distribúese coa esperanz de que sexa útil, pero SEN GARANTÍA "
-"ALGUNHA, incluso sen a garantía de MERCANTIBILIDADE ou AXUSTE A UN PROPÓSITO "
-"EN PARTICULAR. Olle a Licenza pública xeral de GNU para ter máis información."
-
-#: ../src/interface.c:647
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"Vostede debeu de recibir unha copia da Licenza pública xeral con Hitori. Se "
-"non é así olle <http://www.gnu.org/licences/>."
-
-#: ../src/interface.c:659
+#: ../src/interface.c:685
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:660
-msgid "A logic puzzle designed by Nikoli."
-msgstr "Un crebacabezas lóxico deseñado por Nikoli."
+#: ../src/interface.c:686
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Un crebacabezas lóxico orixinalmente deseñado por Nikoli."
 
-#: ../src/interface.c:662
+#: ../src/interface.c:688
 msgid "translator-credits"
 msgstr "Fran Diéguez <fran.dieguez@glug.es>"
 
-#: ../src/interface.c:666
+#: ../src/interface.c:692
 msgid "Hitori Website"
 msgstr "Páxina web de Hitori"
 
-#: ../src/main.c:205
+#: ../src/main.c:209
 msgid "Enable debug mode"
 msgstr "Activar modo de depuración"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:207
+#: ../src/main.c:211
 msgid "Seed the board generation"
 msgstr "Alimentar a xeración de taboleiros"
 
 #. Options
-#: ../src/main.c:221
+#: ../src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Xogar un xogo de Hitori"
 
 #. Print an error
-#: ../src/main.c:231
+#: ../src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Non se puideron analizar as opcións de liña de ordes: %s\n"
 
-#: ../src/main.c:297
+#: ../src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "Quere deter o xogo actual?"
 
-#: ../src/main.c:300
+#: ../src/main.c:304
 msgid "Keep _Playing"
 msgstr "Seguir _xogando"
 
 #. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
 #. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
 #. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:378
+#: ../src/main.c:382
 #, c-format
 msgid "%02u∶‎%02u"
 msgstr "%02u∶‎%02u"
@@ -199,12 +177,40 @@ msgstr "%02u∶‎%02u"
 #. * the number of seconds.
 #: ../src/rules.c:267
 #, c-format
-msgid "You've won in a time of %02u:%02u!"
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Gañou cun tempo de %02u:%02u!"
 
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Xogar de novo"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Hitori é software libre. Vostede pode redistribuílo e/ou modificar baixo "
+#~ "os termos da Licenza pública xeral de GNU publicada pola Free Software "
+#~ "Foundation, na versión 3 ou suuperior da licenza."
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Hitorio distribúese coa esperanz de que sexa útil, pero SEN GARANTÍA "
+#~ "ALGUNHA, incluso sen a garantía de MERCANTIBILIDADE ou AXUSTE A UN "
+#~ "PROPÓSITO EN PARTICULAR. Olle a Licenza pública xeral de GNU para ter "
+#~ "máis información."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Vostede debeu de recibir unha copia da Licenza pública xeral con Hitori. "
+#~ "Se non é así olle <http://www.gnu.org/licences/>."
 
 #~ msgid "_Game"
 #~ msgstr "_Xogo"
