@@ -190,3 +190,6 @@ msgstr "Wygrano w czasie %02u∶%02u!"
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Zagraj jeszcze raz"
+
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
