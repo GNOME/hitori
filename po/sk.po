@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
 "POT-Creation-Date: 2014-09-09 11:08+0000\n"
-"PO-Revision-Date: 2014-09-09 21:50+0100\n"
+"PO-Revision-Date: 2014-09-09 21:53+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -30,7 +30,7 @@ msgstr "Hrajte hru Hitori"
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
 msgid "GNOME Hitori"
-msgstr "Hitori prostredia GNOME"
+msgstr "Hitori pre prostredie GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:4
