@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-07 04:34+0200\n"
-"PO-Revision-Date: 2014-09-07 04:35+0200\n"
+"POT-Creation-Date: 2014-09-10 03:00+0200\n"
+"PO-Revision-Date: 2014-09-10 03:01+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -178,7 +178,7 @@ msgstr "_Graj dalej"
 #: ../src/main.c:382
 #, c-format
 msgid "%02u∶‎%02u"
-msgstr "%02u∶‎%02u"
+msgstr "%02u∶%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
