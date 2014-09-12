@@ -31,7 +31,7 @@ GLIB_GSETTINGS
 YELP_HELP_INIT
 
 # AppData
-APPDATA_XML
+APPSTREAM_XML
 
 # Dependencies
 PKG_CHECK_MODULES([GENERAL],[glib-2.0 gio-2.0 >= 2.32 gtk+-3.0 >= 3.13.2 gmodule-2.0 cairo >= 1.4])

@@ -100,14 +100,14 @@ EXTRA_DIST += \
 CLEANFILES = $(desktop_DATA)
 
 # AppData
-@APPDATA_XML_RULES@
+@APPSTREAM_XML_RULES@
 @INTLTOOL_XML_RULE@
 
-appdata_in_files = data/hitori.appdata.xml.in
-appdata_XML = $(appdata_in_files:.appdata.xml.in=.appdata.xml)
+appstream_in_files = data/hitori.appdata.xml.in
+appstream_XML = $(appstream_in_files:.appdata.xml.in=.appdata.xml)
 
-EXTRA_DIST += $(appdata_in_files)
-CLEANFILES += $(appdata_XML)
+EXTRA_DIST += $(appstream_in_files)
+CLEANFILES += $(appstream_XML)
 
 # Gubbins
 EXTRA_DIST += \
@@ -156,7 +156,7 @@ MAINTAINERCLEANFILES = \
 	po/remove-potcdate.sin \
 	$(NULL)
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appdata-validate
+DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appstream-util
 
 # Copy all the spec files. Of course, only one is actually used.
 dist-hook:
