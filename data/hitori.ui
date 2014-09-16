@@ -66,6 +66,7 @@
 	</menu>
 
 	<object class="GtkApplicationWindow" id="hitori_main_window">
+		<property name="resizable">False</property>
 		<signal name="destroy" handler="hitori_destroy_cb"/>
 		<signal name="window-state-event" handler="hitori_window_state_event_cb"/>
 		<child type="titlebar">
