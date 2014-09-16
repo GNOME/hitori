@@ -1,5 +1,28 @@
 Major new features in version...
 
+3.13.92:
+
+* Minor UI and translation updates
+* Minor build system updates
+* Translations:
+** as (Nilamdyuti Goswami)
+** ca (Gil Forcada)
+** cs (Marek Černocký)
+** el (Tom Tryfonidis)
+** fi (Jiri Grönroos)
+** fr (Gérard Baylard, Erwan GEORGET)
+** gl (Fran Dieguez)
+** he (Yosef Or Boczko)
+** id (Andika Triwidada)
+** ko (Changwoo Ryu)
+** nb (Kjartan Maraas)
+** pl (Piotr Drąg)
+** pt_BR (Ricardo Barbosa)
+** ru (Yuri Myasoedov)
+** sk (Dušan Kazik)
+** zh_HK (Chao-Hsiung Liao)
+** zh_TW (Chao-Hsiung Liao)
+
 3.13.90:
 
 * Follow guidelines for including license info in help
