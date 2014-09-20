@@ -16,7 +16,7 @@
 		    If you get stuck, the game can give you a hint.</_p>
 	</description>
 	<screenshots>
-		<screenshot type="default" width="402" height="493">https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;target=screenshot-hitori.png</screenshot>
+		<screenshot type="default" width="400" height="480">https://people.gnome.org/~mcatanzaro/hitori.png</screenshot>
 	</screenshots>
 	<url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
 	<updatecontact>philip_at_tecnocode.co.uk</updatecontact>
