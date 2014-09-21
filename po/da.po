@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-21 09:47+0200\n"
-"PO-Revision-Date: 2014-09-21 09:45+0200\n"
+"POT-Creation-Date: 2014-09-21 10:09+0200\n"
+"PO-Revision-Date: 2014-09-21 10:08+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -27,15 +27,13 @@ msgstr "Læg puslespillet Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-#, fuzzy
 msgid "GNOME Hitori"
-msgstr "Hitori"
+msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: ../data/hitori.appdata.xml.in.h:4
-#, fuzzy
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori er et logisk spil i stil med Sudoku."
+msgstr "Hitori er et logisk spil i stil med det populære spil Sudoku."
 
 #: ../data/hitori.appdata.xml.in.h:5
 msgid ""
@@ -86,9 +84,8 @@ msgid "_Help"
 msgstr "_Hjælp"
 
 #: ../data/hitori.ui.h:10
-#, fuzzy
 msgid "_About"
-msgstr "_Om Hitori"
+msgstr "_Om"
 
 #: ../data/hitori.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
@@ -96,24 +93,23 @@ msgstr "_Afslut"
 
 #: ../data/hitori.ui.h:13
 msgid "Undo your last move"
-msgstr ""
+msgstr "Fortryd dit sidste træk"
 
 #: ../data/hitori.ui.h:14
 msgid "Redo a move"
-msgstr ""
+msgstr "Omgør et træk"
 
 #: ../data/hitori.ui.h:15
 msgid "Get a hint for your next move"
-msgstr ""
+msgstr "Få et fif til dit næste træk"
 
 #: ../data/org.gnome.hitori.gschema.xml.h:1
-#, fuzzy
 msgid "Board size"
-msgstr "Bræt_størrelse"
+msgstr "Brætstørrelse"
 
 #: ../data/org.gnome.hitori.gschema.xml.h:2
 msgid "The size of the board, in cells."
-msgstr ""
+msgstr "Størrelsen på brættet i celler."
 
 #: ../src/interface.c:87
 #, c-format
@@ -129,9 +125,8 @@ msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
 #: ../src/interface.c:686
-#, fuzzy
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Et logisk puslespil designet af Nikoli."
+msgstr "Et logisk puslespil oprindeligt designet af Nikoli"
 
 #: ../src/interface.c:688
 msgid "translator-credits"
@@ -171,18 +166,18 @@ msgstr "Ønsker du at stoppe det aktuelle spil?"
 
 #: ../src/main.c:304
 msgid "Keep _Playing"
-msgstr ""
+msgstr "Fortsæt med at _spille"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
-#, fuzzy, c-format
+#, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Du har vundet. Din tid blev %02u:%02u!"
 
 #: ../src/rules.c:273
 msgid "_Play Again"
-msgstr ""
+msgstr "_Nyt spil"
 
 #~ msgid ""
 #~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
