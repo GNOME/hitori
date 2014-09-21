@@ -1,14 +1,14 @@
 # Danish translation for hitori.
-# Copyright (C) 2010 hitori & nedenstående oversættere.
+# Copyright (C) 2013 hitori & nedenstående oversættere.
 # This file is distributed under the same license as the hitori package.
-# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010, 2011.
+# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010, 2011, 2013.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2011-01-16 15:01+0100\n"
-"PO-Revision-Date: 2011-01-09 22:31+0200\n"
+"POT-Creation-Date: 2014-09-21 09:47+0200\n"
+"PO-Revision-Date: 2014-09-21 09:45+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:239
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -25,143 +25,212 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Læg puslespillet Hitori"
 
-#: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+#. Translators: the name of the application as it appears in a software center
+#: ../data/hitori.appdata.xml.in.h:2
+#, fuzzy
+msgid "GNOME Hitori"
+msgstr "Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+#, fuzzy
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori er et logisk spil i stil med Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Du spiller mod uret, mens du forsøger at eliminere alle de ens tal i hver "
+"række og kolonne på hurtigst mulig tid. Der understøttes flere "
+"brætstørrelser, og du kan placere markører på cellerne for at hjælpe med at "
+"finde løsningen. Hvis du sidder fast, kan du få fif."
+
+#: ../data/hitori.ui.h:1 ../src/main.c:305
+msgid "_New Game"
+msgstr "_Nyt spil"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
-
-#: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
 msgid "Board _Size"
 msgstr "Bræt_størrelse"
 
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Spil"
+#: ../data/hitori.ui.h:3
+msgid "5×5"
+msgstr "5×5"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:4
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:5
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:6
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:7
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:8
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:9
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: ../data/hitori.ui.h:11
-msgid "_Hint"
-msgstr "_Fif"
+#: ../data/hitori.ui.h:10
+#, fuzzy
+msgid "_About"
+msgstr "_Om Hitori"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Opsætning"
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Afslut"
 
-#: ../src/interface.c:72
+#: ../data/hitori.ui.h:13
+msgid "Undo your last move"
+msgstr ""
+
+#: ../data/hitori.ui.h:14
+msgid "Redo a move"
+msgstr ""
+
+#: ../data/hitori.ui.h:15
+msgid "Get a hint for your next move"
+msgstr ""
+
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+#, fuzzy
+msgid "Board size"
+msgstr "Bræt_størrelse"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr ""
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "UI-fil \"%s\" kunne ikke indlæses"
 
-#: ../src/interface.c:537
+#: ../src/interface.c:661
 msgid "The help contents could not be displayed"
 msgstr "Hjælpeindholdet kunne ikke vises"
 
-#: ../src/interface.c:558
-msgid ""
-"Hitori is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Hitori er fri software; det kan distribueres og/eller modificeres som "
-"betinget af GNU General Public License, udarbejdet af Free Software "
-"Foundation; enten version 3 af licensen eller, efter eget valg, enhver nyere "
-"version."
-
-#: ../src/interface.c:562
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Histori distribueres i håb om at det viser sig nyttigt, men UDEN NOGEN "
-"GARANTI; selv uden de underforståede garantier SALGBARHED eller EGNETHED TIL "
-"ET BESTEMT FORMÅL, idet der henvises til GNU General Public License for "
-"detaljer."
-
-#: ../src/interface.c:566
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"Du bør have modtaget en kopi af GNU General Public License sammen med "
-"Hitori.  Er dette ikke tilfældet, så se <http://www.gnu.org/licenses/>."
-
-#: ../src/interface.c:578
+#: ../src/interface.c:685
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:579
-msgid "A logic puzzle designed by Nikoli."
+#: ../src/interface.c:686
+#, fuzzy
+msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Et logisk puslespil designet af Nikoli."
 
-#: ../src/interface.c:581
+#: ../src/interface.c:688
 msgid "translator-credits"
 msgstr ""
-"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010.\n"
+"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013.\n"
 "\n"
 "Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
 "Mere info: http://www.dansk-gruppen.dk"
 
-#: ../src/interface.c:585
+#: ../src/interface.c:692
 msgid "Hitori Website"
 msgstr "Hitoris hjemmeside"
 
-#: ../src/main.c:76
-msgid "Do you want to stop the current game?"
-msgstr "Ønsker du at stoppe det aktuelle spil?"
-
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
-#, c-format
-msgid "Time: %02u:%02u"
-msgstr "Tid: %02u:%02u"
-
-#: ../src/main.c:226
+#: ../src/main.c:209
 msgid "Enable debug mode"
 msgstr "Slå fejlsøgningstilstand til"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
+#: ../src/main.c:211
 msgid "Seed the board generation"
 msgstr "Grundlagstal for brætoprettelsen"
 
 #. Options
-#: ../src/main.c:243
+#: ../src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Spil Hitori"
 
-#: ../src/main.c:253
-msgid "Command line options could not be parsed"
-msgstr "Indstillinger for kommandolinje kunne ikke fortolkes"
+#. Print an error
+#: ../src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Indstillinger for kommandolinje kunne ikke fortolkes: %s\n"
+
+#: ../src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "Ønsker du at stoppe det aktuelle spil?"
+
+#: ../src/main.c:304
+msgid "Keep _Playing"
+msgstr ""
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
-#, c-format
-msgid "You've won in a time of %02u:%02u!"
+#: ../src/rules.c:267
+#, fuzzy, c-format
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Du har vundet. Din tid blev %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr ""
+
+#~ msgid ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+#~ msgstr ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+
+#~ msgid "_Game"
+#~ msgstr "_Spil"
+
+#~ msgid "_Hint"
+#~ msgstr "_Fif"
+
+#~ msgid "_Undo"
+#~ msgstr "_Fortryd"
+
+#~ msgid "_Redo"
+#~ msgstr "_Gendan"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Hitori er fri software; det kan distribueres og/eller modificeres som "
+#~ "betinget af GNU General Public License, udarbejdet af Free Software "
+#~ "Foundation; enten version 3 af licensen eller, efter eget valg, enhver "
+#~ "nyere version."
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Histori distribueres i håb om at det viser sig nyttigt, men UDEN NOGEN "
+#~ "GARANTI; selv uden de underforståede garantier SALGBARHED eller EGNETHED "
+#~ "TIL ET BESTEMT FORMÅL, idet der henvises til GNU General Public License "
+#~ "for detaljer."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Du bør have modtaget en kopi af GNU General Public License sammen med "
+#~ "Hitori.  Er dette ikke tilfældet, så se <http://www.gnu.org/licenses/>."
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Tid: %02u:%02u"
