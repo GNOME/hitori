@@ -3,70 +3,45 @@
 # This file is distributed under the same license as the hitori package.
 #
 # Balázs Úr <urbalazs at gmail dot com>, 2013.
+# Balázs Úr <urbalazs@gmail.com>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2013-03-17 10:17+0000\n"
-"PO-Revision-Date: 2013-03-17 11:27+0100\n"
-"Last-Translator: Balázs Úr <urbalazs at gmail dot com>\n"
+"POT-Creation-Date: 2014-08-03 14:26+0000\n"
+"PO-Revision-Date: 2014-09-21 01:22+0200\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
 "Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 1.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Úr Balázs <urbalazs at gmail dot com>"
+msgstr "Úr Balázs <urbalazs@gmail.com>, 2014."
 
-#: C/index.page:6(credit/name)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: C/index.page:8(credit/years)
-msgid "2008–2010"
-msgstr "2008–2010"
-
-#: C/index.page:11(license/p)
-msgid ""
-"This work is licensed under a <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
-"License</link>."
-msgstr ""
-"Ez a munka a <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">"
-"Creative Commons Nevezd meg!-Így add tovább! 3.0 Ne változtasd! licenc</link> "
-"alatt érhető el."
-
-#: C/index.page:15(page/title)
-msgid "Hitori Help"
-msgstr "Hitori súgó"
-
-#: C/index.page:18(section/title)
-msgid "Basic Gameplay &amp; Usage"
-msgstr "Alapvető játékmenet és használat"
-
-#: C/index.page:22(section/title)
-msgid "Tips &amp; Tricks"
-msgstr "Tippek és trükkök"
-
-#: C/customization.page:5(info/desc)
+#. (itstool) path: info/desc
+#: C/customization.page:6
 msgid "Changing how the game appears and plays."
 msgstr ""
 
-#: C/customization.page:7(page/title)
+#. (itstool) path: page/title
+#: C/customization.page:8
 msgid "Customizing the Game"
 msgstr "A játék személyre szabása"
 
-#: C/customization.page:9(page/p)
+#. (itstool) path: page/p
+#: C/customization.page:10
 msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
 msgstr ""
 
-#: C/customization.page:10(page/p)
+#. (itstool) path: page/p
+#: C/customization.page:11
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
@@ -74,26 +49,32 @@ msgid ""
 "of one, then start a new game with the requested board size."
 msgstr ""
 
+#. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/game.page:21(media)
+#: C/game.page:22
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
 "md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
-#: C/game.page:5(info/desc)
+#. (itstool) path: info/desc
+#: C/game.page:6
 msgid "Introduction to the game of Hitori."
 msgstr "Bevezetés a Hitori játékba."
 
-#: C/game.page:7(page/title)
+#. (itstool) path: page/title
+#: C/game.page:8
 msgid "Hitori the Game"
 msgstr "Hitori, a játék"
 
-#: C/game.page:9(page/p)
+#. (itstool) path: page/p
+#: C/game.page:10
 msgid ""
 "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
 "In the game, the player starts with a square board of numbers, and has to "
@@ -101,140 +82,124 @@ msgid ""
 "and column. The following rules apply:"
 msgstr ""
 
-#: C/game.page:12(item/p)
+#. (itstool) path: item/p
+#: C/game.page:13
 msgid ""
 "There must only be one of each number in the unpainted cells in each row and "
 "column."
 msgstr ""
 
-#: C/game.page:13(item/p)
+#. (itstool) path: item/p
+#: C/game.page:14
 msgid "No painted cell may be adjacent to another, vertically or horizontally."
 msgstr ""
 
-#: C/game.page:14(item/p)
+#. (itstool) path: item/p
+#: C/game.page:15
 msgid ""
 "All the unpainted cells must be joined together vertically and horizontally "
 "in one group."
 msgstr ""
 
-#: C/game.page:16(page/p)
+#. (itstool) path: page/p
+#: C/game.page:17
 msgid ""
 "These are the only three rules of the game, and so there may well be "
 "multiple solutions to a Hitori puzzle board."
 msgstr ""
 
-#: C/game.page:19(figure/title)
+#. (itstool) path: figure/title
+#: C/game.page:20
 msgid "Main game window"
 msgstr "Fő játék ablak"
 
-#: C/game.page:20(figure/desc)
+#. (itstool) path: figure/desc
+#: C/game.page:21
 msgid "<app>Hitori</app> main window"
 msgstr "<app>Hitori</app> főablak"
 
-#: C/game.page:22(media/p)
+#. (itstool) path: media/p
+#: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "<app>Hitori</app> főablak."
 
-#: C/license.page:8(info/desc)
-msgid "Legal information."
-msgstr "Jogi információk."
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
-#: C/license.page:11(page/title)
-msgid "License"
-msgstr "Licenc"
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008–2010"
 
-#: C/license.page:12(page/p)
+#. (itstool) path: license/p
+#: C/index.page:11
 msgid ""
-"This work is distributed under a CreativeCommons Attribution-Share Alike 3.0 "
-"Unported license."
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 msgstr ""
-"Ez a mű a CreativeCommons Attribution-Share Alike 3.0 Unported licenc "
-"feltételei szerint terjeszthető."
+"Ez a munka a <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">Creative Commons Nevezd meg!-Így add tovább! 3.0 Ne változtasd! licenc</"
+"link> alatt érhető el."
 
-#: C/license.page:20(page/p)
-msgid "You are free:"
-msgstr "Jogában áll:"
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Hitori súgó"
 
-#: C/license.page:25(item/title)
-msgid "<em>To share</em>"
-msgstr "<em>Megosztani</em>"
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Alapvető játékmenet és használat"
 
-#: C/license.page:26(item/p)
-msgid "To copy, distribute and transmit the work."
-msgstr "Másolni, terjeszteni és továbbítani a művet."
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Tippek és trükkök"
 
-#: C/license.page:29(item/title)
-msgid "<em>To remix</em>"
-msgstr "<em>Feldolgozni</em>"
+#. (itstool) path: p/link
+#: C/legal.xml:5
+#| msgid ""
+#| "This work is distributed under a CreativeCommons Attribution-Share Alike "
+#| "3.0 Unported license."
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Nevezd meg!-Így add tovább! 3.0 átíratlan licenc"
 
-#: C/license.page:30(item/p)
-msgid "To adapt the work."
-msgstr "Módosítani a művet."
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Ez a mű a <_:link-1/> feltételei szerint terjeszthető."
 
-#: C/license.page:33(page/p)
-msgid "Under the following conditions:"
-msgstr "A következő feltételek szerint:"
-
-#: C/license.page:38(item/title)
-msgid "<em>Attribution</em>"
-msgstr "<em>Nevezd meg!</em>"
-
-#: C/license.page:39(item/p)
-msgid ""
-"You must attribute the work in the manner specified by the author or "
-"licensor (but not in any way that suggests that they endorse you or your use "
-"of the work)."
-msgstr ""
-"A szerző vagy a jogosult által meghatározott módon fel kell tüntetnie a "
-"műhöz kapcsolódó információkat (pl. a szerző nevét vagy álnevét, a Mű címét)."
-
-#: C/license.page:46(item/title)
-msgid "<em>Share Alike</em>"
-msgstr "<em>Így add tovább!</em>"
-
-#: C/license.page:47(item/p)
-msgid ""
-"If you alter, transform, or build upon this work, you may distribute the "
-"resulting work only under the same, similar or a compatible license."
-msgstr ""
-"Ha megváltoztatja, átalakítja, feldolgozza ezt a művet, az így létrejött "
-"alkotást csak a jelenlegivel megegyező licenc alatt terjesztheti."
-
-#: C/license.page:53(page/p)
-msgid ""
-"For the full text of the license, see the <link href=\"http://"
-"creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons website</"
-"link>, or read the full <link href=\"http://creativecommons.org/licenses/by-"
-"sa/3.0/\">Commons Deed</link>."
-msgstr ""
-"A licenc teljes szövegéért lásd a <link href=\"http://creativecommons.org/"
-"licenses/by-sa/3.0/legalcode\">CreativeCommons weboldalát</link>, vagy a "
-"teljes <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Commons "
-"összefoglalót</link>."
-
-#: C/playing.page:5(info/desc)
+#. (itstool) path: info/desc
+#: C/playing.page:6
 msgid "Using <app>Hitori</app> to play a game."
 msgstr ""
 
-#: C/playing.page:7(page/title)
+#. (itstool) path: page/title
+#: C/playing.page:8
 msgid "Playing a Game"
 msgstr ""
 
-#: C/playing.page:9(page/p)
+#. (itstool) path: page/p
+#: C/playing.page:10
 msgid ""
 "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
 "\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
 "<app>Hitori</app> will ask if you want to stop the current game."
 msgstr ""
 
-#: C/playing.page:11(page/p)
+#. (itstool) path: page/p
+#: C/playing.page:12
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
 "will end and the board may no longer be manipulated."
 msgstr ""
 
-#: C/playing.page:13(page/p)
+#. (itstool) path: page/p
+#: C/playing.page:14
 msgid ""
 "<app>Hitori</app> also allows you to highlight cells for your own reference "
 "when solving a board. This can be achieved by holding <key>Ctrl</key> or "
@@ -244,7 +209,8 @@ msgid ""
 "holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgstr ""
 
-#: C/playing.page:17(page/p)
+#. (itstool) path: page/p
+#: C/playing.page:18
 msgid ""
 "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
 "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
@@ -252,7 +218,8 @@ msgid ""
 "many moves as you like without restriction."
 msgstr ""
 
-#: C/playing.page:20(page/p)
+#. (itstool) path: page/p
+#: C/playing.page:21
 msgid ""
 "To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
@@ -261,15 +228,18 @@ msgid ""
 "the game to be won."
 msgstr ""
 
-#: C/strategy.page:5(info/desc)
+#. (itstool) path: info/desc
+#: C/strategy.page:6
 msgid "Strategies for playing Hitori."
 msgstr ""
 
-#: C/strategy.page:7(page/title)
+#. (itstool) path: page/title
+#: C/strategy.page:8
 msgid "Gameplay Strategies"
 msgstr "Játékmenet stratégiák"
 
-#: C/strategy.page:9(page/p)
+#. (itstool) path: page/p
+#: C/strategy.page:10
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
@@ -278,7 +248,8 @@ msgid ""
 "<em>row</em>."
 msgstr ""
 
-#: C/strategy.page:12(page/p)
+#. (itstool) path: page/p
+#: C/strategy.page:13
 msgid ""
 "Once this is done for the entire board, the cells which have been "
 "highlighted both ways are good candidates for painting, although not always. "
@@ -287,7 +258,8 @@ msgid ""
 "cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
 
-#: C/strategy.page:15(page/p)
+#. (itstool) path: page/p
+#: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
 "can't both be painted. <app>Hitori</app> will highlight in red the cells "
@@ -296,7 +268,8 @@ msgid ""
 "be highlighted in red."
 msgstr ""
 
-#: C/strategy.page:19(page/p)
+#. (itstool) path: page/p
+#: C/strategy.page:20
 msgid ""
 "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
 "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
@@ -304,3 +277,59 @@ msgid ""
 "solution."
 msgstr ""
 
+#~ msgid "Legal information."
+#~ msgstr "Jogi információk."
+
+#~ msgid "License"
+#~ msgstr "Licenc"
+
+#~ msgid "You are free:"
+#~ msgstr "Jogában áll:"
+
+#~ msgid "<em>To share</em>"
+#~ msgstr "<em>Megosztani</em>"
+
+#~ msgid "To copy, distribute and transmit the work."
+#~ msgstr "Másolni, terjeszteni és továbbítani a művet."
+
+#~ msgid "<em>To remix</em>"
+#~ msgstr "<em>Feldolgozni</em>"
+
+#~ msgid "To adapt the work."
+#~ msgstr "Módosítani a művet."
+
+#~ msgid "Under the following conditions:"
+#~ msgstr "A következő feltételek szerint:"
+
+#~ msgid "<em>Attribution</em>"
+#~ msgstr "<em>Nevezd meg!</em>"
+
+#~ msgid ""
+#~ "You must attribute the work in the manner specified by the author or "
+#~ "licensor (but not in any way that suggests that they endorse you or your "
+#~ "use of the work)."
+#~ msgstr ""
+#~ "A szerző vagy a jogosult által meghatározott módon fel kell tüntetnie a "
+#~ "műhöz kapcsolódó információkat (pl. a szerző nevét vagy álnevét, a Mű "
+#~ "címét)."
+
+#~ msgid "<em>Share Alike</em>"
+#~ msgstr "<em>Így add tovább!</em>"
+
+#~ msgid ""
+#~ "If you alter, transform, or build upon this work, you may distribute the "
+#~ "resulting work only under the same, similar or a compatible license."
+#~ msgstr ""
+#~ "Ha megváltoztatja, átalakítja, feldolgozza ezt a művet, az így létrejött "
+#~ "alkotást csak a jelenlegivel megegyező licenc alatt terjesztheti."
+
+#~ msgid ""
+#~ "For the full text of the license, see the <link href=\"http://"
+#~ "creativecommons.org/licenses/by-sa/3.0/legalcode\">CreativeCommons "
+#~ "website</link>, or read the full <link href=\"http://creativecommons.org/"
+#~ "licenses/by-sa/3.0/\">Commons Deed</link>."
+#~ msgstr ""
+#~ "A licenc teljes szövegéért lásd a <link href=\"http://creativecommons.org/"
+#~ "licenses/by-sa/3.0/legalcode\">CreativeCommons weboldalát</link>, vagy a "
+#~ "teljes <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+#~ "\">Commons összefoglalót</link>."
