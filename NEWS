@@ -1,5 +1,9 @@
 Major new features in version...
 
+3.14.0.1:
+* autoreconf with up-to-date appstream-glib;
+  fixes install location for hitori.appdata.xml
+
 3.14.0:
 * Translations:
 ** da (Joe Hansen)
