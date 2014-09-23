@@ -7,142 +7,215 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&component=general\n"
-"POT-Creation-Date: 2009-04-06 18:42+0000\n"
-"PO-Revision-Date: \n"
-"Last-Translator: Zhang Miao <mymzhang@gmail.com>\n"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-08-02 09:17+0000\n"
+"PO-Revision-Date: 2014-09-23 18:29+0800\n"
+"Last-Translator: Yunqiang Su <wzssyqa@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.9\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:8 ../src/main.c:196
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
 #: ../data/hitori.desktop.in.h:2
 msgid "Play the Hitori puzzle game"
-msgstr "进行 Hitori 益智游戏"
+msgstr "玩 Hitori 益智游戏"
 
-#: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+#. Translators: the name of the application as it appears in a software center
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "GNOMR Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori 是一款类似数独(Sudoku)的逻辑类益智游戏。"
+
+#: ../data/hitori.appdata.xml.in.h:5
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"在游戏中你要与时间赛跑，目标是以最快的速度，消除每行每列数字中所有重复项。这"
+"个游戏还支持多种面板尺寸，你也可以在每一格里做一些方便解决问题的标注。如果你"
+"一时无法解决，游戏还可以给你一些提示。"
+
+#: ../data/hitori.ui.h:1 ../src/main.c:305
+msgid "_New Game"
+msgstr "新游戏(_N)"
 
 #: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
-
-#: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
-
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
-
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
-
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
-
-#: ../data/hitori.ui.h:7
 msgid "Board _Size"
 msgstr "面板大小(_S)"
 
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "游戏(_G)"
+#: ../data/hitori.ui.h:3
+msgid "5×5"
+msgstr "5×5"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:4
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori.ui.h:5
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori.ui.h:6
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori.ui.h:7
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori.ui.h:8
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori.ui.h:9
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: ../data/hitori.ui.h:11
-msgid "_Hint"
-msgstr "提示(_H)"
+#: ../data/hitori.ui.h:10
+msgid "_About"
+msgstr "关于(_A)"
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "设置(_S)"
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "退出(_Q)"
 
-#: ../src/interface.c:64
+#: ../data/hitori.ui.h:13
+msgid "Undo your last move"
+msgstr "撤销你前一次的移动"
+
+#: ../data/hitori.ui.h:14
+msgid "Redo a move"
+msgstr "重做移动"
+
+#: ../data/hitori.ui.h:15
+msgid "Get a hint for your next move"
+msgstr "获得一次游戏提示"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+msgid "Board size"
+msgstr "面板大小"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "面板大小，也就是格数。"
+
+#: ../src/interface.c:87
 #, c-format
-msgid "UI file \"%s/hitori/hitori.ui\" could not be loaded."
-msgstr "UI 文件“%s/hitori/hitori.ui”无法载入。"
+msgid "UI file “%s” could not be loaded"
+msgstr "UI 文件“%s”无法载入"
 
-#: ../src/interface.c:220
-msgid "You've won!"
-msgstr "你赢了！"
+#: ../src/interface.c:661
+msgid "The help contents could not be displayed"
+msgstr "帮助内容无法显示"
 
-#: ../src/interface.c:514
-msgid "The help contents could not be displayed."
-msgstr "帮助内容无法显示。"
+#: ../src/interface.c:685
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:536
-msgid ""
-"Hitori is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Hitori 是自由软件：您可以按照自由软件基金会所发表的 GNU GPL 协议自由发放和/或"
-"修改它，GPL 协议应该采用第3版或以后的任何版本(您可以自己选择)。"
+#: ../src/interface.c:686
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "原先由 Nikoli 所作的一个逻辑益智游戏"
 
-#: ../src/interface.c:540
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Hitori 发布的目的是希望它能够对您有用，但我们没有任何保证；对于以任何用途使用"
-"它所造成的任何直接或间接后果都不承担任何责任。请参看 GNU GPL 协议中的细节。"
-
-#: ../src/interface.c:544
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"您应该在收到  Hitori 的同时收到了 GNU GPL 协议的副本。如果没有，参见<http://"
-"www.gnu.org/licenses/>。"
-
-#: ../src/interface.c:556
-msgid "Copyright © 2007–2009 Philip Withnall"
-msgstr "Copyright © 2007–2009 Philip Withnall"
-
-#: ../src/interface.c:557
-msgid "A logic puzzle designed by Nikoli."
-msgstr "Nikoli 所作的一个逻辑益智游戏。"
-
-#: ../src/interface.c:560
+#: ../src/interface.c:688
 msgid "translator-credits"
-msgstr "Zhang Miao <mymzhang@gmail.com>, 2009."
+msgstr ""
+"Zhang Miao <mymzhang@gmail.com>, 2009.\n"
+"Tong Hui <tonghuix@gmail.com>, 2014."
 
-#: ../src/interface.c:564
+#: ../src/interface.c:692
 msgid "Hitori Website"
 msgstr "Hitori 网站"
 
-#: ../src/main.c:74
-msgid "Do you want to stop the current game?"
-msgstr "您要停止当前游戏么？"
-
-#: ../src/main.c:182
+#: ../src/main.c:209
 msgid "Enable debug mode"
 msgstr "启用调试模式"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:184
+#: ../src/main.c:211
 msgid "Seed the board generation"
 msgstr "设置面板生成所用的种子"
 
 #. Options
-#: ../src/main.c:200
+#: ../src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- 进行一次 Hitori 游戏"
 
-#: ../src/main.c:210
-msgid "Command-line options could not be parsed."
-msgstr "命令行选项无法被解析。"
+#. Print an error
+#: ../src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "命令行选项无法被解析：%s\n"
+
+#: ../src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "您要停止当前游戏么？"
+
+#: ../src/main.c:304
+msgid "Keep _Playing"
+msgstr "继续(_P)"
+
+#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
+#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
+#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
+#: ../src/main.c:382
+#, c-format
+msgid "%02u∶‎%02u"
+msgstr "%02u∶‎%02u"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "你在 %02u:%02u 时间内赢得比赛！ "
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "再玩一遍(_P)"
+
+#~ msgid "_Hint"
+#~ msgstr "提示(_H)"
+
+#~ msgid "_Settings"
+#~ msgstr "设置(_S)"
+
+#~ msgid "You've won!"
+#~ msgstr "你赢了！"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Hitori 是自由软件：您可以按照自由软件基金会所发表的 GNU GPL 协议自由发放"
+#~ "和/或修改它，GPL 协议应该采用第3版或以后的任何版本(您可以自己选择)。"
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Hitori 发布的目的是希望它能够对您有用，但我们没有任何保证；对于以任何用途"
+#~ "使用它所造成的任何直接或间接后果都不承担任何责任。请参看 GNU GPL 协议中的"
+#~ "细节。"
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "您应该在收到  Hitori 的同时收到了 GNU GPL 协议的副本。如果没有，参见"
+#~ "<http://www.gnu.org/licenses/>。"
