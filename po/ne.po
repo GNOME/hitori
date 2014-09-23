@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-09-18 09:26+0000\n"
+"PO-Revision-Date: 2014-09-23 21:56+0400\n"
+"Last-Translator: Pawan Chitrakar <chautari@gmail.com>\n"
+"Language-Team: Nepali Translation Team <chautari@gmail.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: plurals=2;nplural=n!=1\n"
+"X-Poedit-Language: Nepali\n"
+"X-Poedit-Country: NEPAL\n"
+
+#: ../data/hitori.desktop.in.h:1
+#: ../data/hitori.ui.h:12
+#: ../src/main.c:101
+msgid "Hitori"
+msgstr "हिटोरि"
+
+#: ../data/hitori.desktop.in.h:2
+msgid "Play the Hitori puzzle game"
+msgstr "हिटोरि खेल खेल्नुहोस्"
+
+#. Translators: the name of the application as it appears in a software center
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "जिनोम हिटोरि"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr ""
+
+#: ../data/hitori.appdata.xml.in.h:5
+msgid "You play the game against the clock, aiming to eliminate all the duplicate numbers in each row and column in the fastest time. Multiple sizes of game board are supported, and you can place markers on cells to help work out the solution. If you get stuck, the game can give you a hint."
+msgstr ""
+
+#: ../data/hitori.ui.h:1
+#: ../src/main.c:305
+msgid "_New Game"
+msgstr "नयाँ खेल"
+
+#: ../data/hitori.ui.h:2
+msgid "Board _Size"
+msgstr "बोर्डको आकार"
+
+#: ../data/hitori.ui.h:3
+msgid "5×5"
+msgstr "५×५"
+
+#: ../data/hitori.ui.h:4
+msgid "6×6"
+msgstr "६×६"
+
+#: ../data/hitori.ui.h:5
+msgid "7×7"
+msgstr "७x७"
+
+#: ../data/hitori.ui.h:6
+msgid "8×8"
+msgstr "८×८"
+
+#: ../data/hitori.ui.h:7
+msgid "9×9"
+msgstr "९×९"
+
+#: ../data/hitori.ui.h:8
+msgid "10×10"
+msgstr "१०×१०"
+
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "मद्दत"
+
+#: ../data/hitori.ui.h:10
+msgid "_About"
+msgstr "बारेमा"
+
+#: ../data/hitori.ui.h:11
+#: ../src/rules.c:272
+msgid "_Quit"
+msgstr "अन्त्य गर्नुहोस्"
+
+#: ../data/hitori.ui.h:13
+#, fuzzy
+msgid "Undo your last move"
+msgstr "तपाईँको चाल हो ।"
+
+#: ../data/hitori.ui.h:14
+msgid "Redo a move"
+msgstr "चाल रिडू गर्नुहोस्"
+
+#: ../data/hitori.ui.h:15
+#, fuzzy
+msgid "Get a hint for your next move"
+msgstr "तपाईँको पछिल्लो चालका लागि एउटा इशारा प्राप्त गर्नुहोस्"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+msgid "Board size"
+msgstr "बोर्डको आकार"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+#, fuzzy
+msgid "The size of the board, in cells."
+msgstr "बिन्दुहरुमा वर्णको आकार"
+
+#: ../src/interface.c:87
+#, fuzzy, c-format
+msgid "UI file “%s” could not be loaded"
+msgstr "“%s” को रुपमा फाइल बचत गर्न सकेन ।"
+
+#: ../src/interface.c:661
+#, fuzzy
+msgid "The help contents could not be displayed"
+msgstr "फोल्डर सामग्रीहरू प्रदर्शन गर्न सकिएन ।"
+
+#: ../src/interface.c:685
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © २००७–२०१० फिलिप ह्विथनल"
+
+#: ../src/interface.c:686
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr ""
+
+#: ../src/interface.c:688
+msgid "translator-credits"
+msgstr "Pawan Chitrakar < chautari@gmail.com >"
+
+#: ../src/interface.c:692
+msgid "Hitori Website"
+msgstr "हिटोरि वेबसाइट"
+
+#: ../src/main.c:209
+#, fuzzy
+msgid "Enable debug mode"
+msgstr "डिबग शैली खुल्ला"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:211
+#, fuzzy
+msgid "Seed the board generation"
+msgstr " ~a लाई बोर्ड बाहिर सार्नुहोस्"
+
+#. Options
+#: ../src/main.c:225
+msgid "- Play a game of Hitori"
+msgstr "हिटोरि खेल खेल्नुहोस्"
+
+#. Print an error
+#: ../src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "आदेश-रेखा विकल्प पद वर्णन गर्न सकेन%s\n"
+
+#: ../src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "हालको खेल रोक्नुहोस्?"
+
+#: ../src/main.c:304
+#, fuzzy
+msgid "Keep _Playing"
+msgstr "प्ले भएको छैन"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr ""
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "फेरि खेल्नुहोस"
+
