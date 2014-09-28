@@ -6,9 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori 3.13.x\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-23 12:22+0200\n"
-"PO-Revision-Date: 2014-07-23 14:25+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-09-14 01:41+0000\n"
+"PO-Revision-Date: 2014-09-28 10:58+0200\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -41,7 +42,7 @@ msgid ""
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr ""
+msgstr "Du spiller spillet mot klokken og målet er å eliminere alle dupliserte tall i hver rad og kolonne så fort som mulig. Du kan bruke flere størrelser på brettet, og du kan plassere markører på celler som hjelper med å løse problemet. Hvis du står fast kan spillet gi deg et hint."
 
 #: ../data/hitori.ui.h:1 ../src/main.c:305
 msgid "_New Game"
@@ -117,8 +118,8 @@ msgid "The help contents could not be displayed"
 msgstr "Klarte ikke å vise hjelpinnholdet"
 
 #: ../src/interface.c:685
-msgid "Copyright © 2007ے2010 Philip Withnall"
-msgstr "Opphavsrett © 20072010ے Philip Withnall"
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Opphavsrett © 2007–2010 Philip Withnall"
 
 #: ../src/interface.c:686
 msgid "A logic puzzle originally designed by Nikoli"
@@ -161,14 +162,6 @@ msgstr "Vil du stoppe dette spillet?"
 #: ../src/main.c:304
 msgid "Keep _Playing"
 msgstr "Fortsett s_pillet"
-
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%02u:%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
