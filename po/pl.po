@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-10 03:00+0200\n"
-"PO-Revision-Date: 2014-09-10 03:01+0200\n"
+"POT-Creation-Date: 2014-09-29 16:29+0200\n"
+"PO-Revision-Date: 2014-09-29 16:30+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <gnomepl@aviary.pl>\n"
 "Language: pl\n"
@@ -128,7 +128,7 @@ msgstr "Nie można wyświetlić treści pomocy"
 
 #: ../src/interface.c:685
 msgid "Copyright © 2007ے2010 Philip Withnall"
-msgstr "Copyright © 2007ے2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
 
 #: ../src/interface.c:686
 msgid "A logic puzzle originally designed by Nikoli"
