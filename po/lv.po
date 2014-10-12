@@ -1,14 +1,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013.
+# Rūdofls Mazurs <rudolfs.mazurs@gmail.com>, 2011, 2012, 2013, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2013-09-11 03:11+0000\n"
-"PO-Revision-Date: 2013-10-05 14:28+0300\n"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-09-14 01:41+0000\n"
+"PO-Revision-Date: 2014-10-12 17:00+0300\n"
 "Last-Translator: Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>\n"
 "Language-Team: Latvian <lata-l10n@googlegroups.com>\n"
 "Language: lv\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:16 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -27,12 +27,19 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Spēlēt Hitori prāta spēli"
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-msgid "Hitori is a logic game similar to Sudoku."
-msgstr "Hitori ir loģikas spēle, kas ir līdzīga Sudoku."
+#| msgid "Hitori"
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
 
-#: ../data/hitori.appdata.xml.in.h:3
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:4
+#| msgid "Hitori is a logic game similar to Sudoku."
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori ir loģikas spēle, kas ir līdzīga populārajai spēlei Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:5
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -44,167 +51,187 @@ msgstr ""
 "spēlēs galdiņa izmēri un uz šūnām varat novietot marķierus, lai palīdzētu "
 "atrast atrisinājumu. Ja iestrēgsiet, spēle jums var dot padomu."
 
-#. Translators: This should be the URI of a 402×493 pixel screenshot of Hitori in your language. You may attach new screenshots to the existing wiki page. If you can't take a screenshot, leave the string as the English screenshot.
-#: ../data/hitori.appdata.xml.in.h:5
-msgid ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-msgstr ""
-"https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
-"target=screenshot-hitori.png"
-
-#: ../data/hitori.ui.h:1
+#: ../data/hitori.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "Jau_na spēle"
 
 #: ../data/hitori.ui.h:2
-msgid "_About Hitori"
-msgstr "P_ar Hitori"
-
-#: ../data/hitori.ui.h:3
-msgid "_Help"
-msgstr "_Palīdzība"
-
-#: ../data/hitori.ui.h:4
-msgid "_Quit"
-msgstr "_Iziet"
-
-#: ../data/hitori.ui.h:5
-msgid "_Game"
-msgstr "_Spēle"
-
-#: ../data/hitori.ui.h:6
 msgid "Board _Size"
 msgstr "Galdiņa izmēr_s"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:11
+#: ../data/hitori.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:12
+#: ../data/hitori.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
+#: ../data/hitori.ui.h:9
+msgid "_Help"
+msgstr "_Palīdzība"
+
+#: ../data/hitori.ui.h:10
+#| msgid "_About Hitori"
+msgid "_About"
+msgstr "P_ar"
+
+#: ../data/hitori.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Iziet"
+
 #: ../data/hitori.ui.h:13
-msgid "_Hint"
-msgstr "_Padoms"
+msgid "Undo your last move"
+msgstr "Atsaukt savu pēdējo gājienu"
 
 #: ../data/hitori.ui.h:14
-msgid "_Undo"
-msgstr "_Atsaukt"
+msgid "Redo a move"
+msgstr "Atsaukt gājiena atsaukšanu"
 
 #: ../data/hitori.ui.h:15
-msgid "_Redo"
-msgstr "Ata_tsaukt"
+msgid "Get a hint for your next move"
+msgstr "Saņemt padomu par nākamo gājienu"
 
-#: ../src/interface.c:88
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+#| msgid "Board _Size"
+msgid "Board size"
+msgstr "Galdiņa izmērs"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "Spēles galdiņa izmērs, šūnās."
+
+#: ../src/interface.c:87
 #, c-format
 msgid "UI file “%s” could not be loaded"
 msgstr "Nevarēja ielādēt “%s” UI datni"
 
-#: ../src/interface.c:605
+#: ../src/interface.c:661
 msgid "The help contents could not be displayed"
 msgstr "Neizdevās parādīt palīdzības saturu"
 
-#: ../src/interface.c:628
-msgid ""
-"Hitori is free software: you can redistribute it and/or modify it under the "
-"terms of the GNU General Public License as published by the Free Software "
-"Foundation, either version 3 of the License, or (at your option) any later "
-"version."
-msgstr ""
-"Hitori ir brīvā programmatūra: jūs varat izplatīt un/vai modificēt to "
-"saskaņā ar GNU Vispārējās Publiskās Licences 3. vai kādas vēlākas versijas "
-"noteikumiem."
-
-#: ../src/interface.c:632
-msgid ""
-"Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-"WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-"FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-"details."
-msgstr ""
-"Hitori tiek izplatīts ar cerību, ka tas būs noderīgs. Tas tiek izplatīts BEZ "
-"jebkādas garantijas vai iekļautas ražotāja atbildības par šo produktu. "
-"Sīkāku informāciju meklējiet GNU Vispārējās Publiskās Licences tekstā."
-
-#: ../src/interface.c:636
-msgid ""
-"You should have received a copy of the GNU General Public License along with "
-"Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr ""
-"Jums vajadzēja saņemt GNU Vispārējo Publisko Licenci ar Hitori. Ja nē, "
-"skatiet <http://www.gnu.org/licenses/>."
-
-#: ../src/interface.c:648
+#: ../src/interface.c:685
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autortiesības © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:649
-msgid "A logic puzzle designed by Nikoli."
-msgstr "Prāta spēle, ko veidojis Nikoli."
+#: ../src/interface.c:686
+#| msgid "A logic puzzle designed by Nikoli."
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Prāta spēle, ko sākotnēji veidojis Nikoli"
 
-#: ../src/interface.c:651
+#: ../src/interface.c:688
 msgid "translator-credits"
 msgstr "Rūdolfs Mazurs <rudolfs.mazurs@gmail.com>"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:692
 msgid "Hitori Website"
 msgstr "Hitori tīmekļa vietne"
 
-#: ../src/main.c:205
+#: ../src/main.c:209
 msgid "Enable debug mode"
 msgstr "Aktivēt atkļūdošanas režīmu"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:207
+#: ../src/main.c:211
 msgid "Seed the board generation"
 msgstr "'Sēkla' galdiņa ģenerēšanai"
 
 #. Options
-#: ../src/main.c:221
+#: ../src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Spēlēt Hitori spēli"
 
 #. Print an error
-#: ../src/main.c:231
+#: ../src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Neizdevās parsēt komandrindas opcijas — %s\n"
 
-#: ../src/main.c:297
+#: ../src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "Vai vēlaties beigt šo spēli?"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:371
-#, c-format
-msgid "Time: %02u:%02u"
-msgstr "Laiks: %02u:%02u"
+#: ../src/main.c:304
+msgid "Keep _Playing"
+msgstr "Tur_pināt spēlēt"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:266
+#: ../src/rules.c:267
 #, c-format
-msgid "You've won in a time of %02u:%02u!"
+#| msgid "You've won in a time of %02u:%02u!"
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Jūs uzvarējāt ar laiku %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "S_pēlēt vēlreiz:"
+
+#~ msgid ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+#~ msgstr ""
+#~ "https://wiki.gnome.org/Apps/Hitori?action=AttachFile&amp;do=get&amp;"
+#~ "target=screenshot-hitori.png"
+
+#~ msgid "_Game"
+#~ msgstr "_Spēle"
+
+#~ msgid "_Hint"
+#~ msgstr "_Padoms"
+
+#~ msgid "_Undo"
+#~ msgstr "_Atsaukt"
+
+#~ msgid "_Redo"
+#~ msgstr "Ata_tsaukt"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Hitori ir brīvā programmatūra: jūs varat izplatīt un/vai modificēt to "
+#~ "saskaņā ar GNU Vispārējās Publiskās Licences 3. vai kādas vēlākas "
+#~ "versijas noteikumiem."
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Hitori tiek izplatīts ar cerību, ka tas būs noderīgs. Tas tiek izplatīts "
+#~ "BEZ jebkādas garantijas vai iekļautas ražotāja atbildības par šo "
+#~ "produktu. Sīkāku informāciju meklējiet GNU Vispārējās Publiskās Licences "
+#~ "tekstā."
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Jums vajadzēja saņemt GNU Vispārējo Publisko Licenci ar Hitori. Ja nē, "
+#~ "skatiet <http://www.gnu.org/licenses/>."
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Laiks: %02u:%02u"
 
 #~ msgid "_Settings"
 #~ msgstr "Ie_statījumi"
