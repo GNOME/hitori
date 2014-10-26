@@ -1,5 +1,16 @@
 Major new features in version...
 
+3.14.1:
+* Translations:
+** hu (Balázs Úr)
+** it (Milo Casagrande)
+** lv (Rūdofls Mazurs)
+** nb (Kjartan Maraas)
+** ne (Pawan Chitrakar)
+** pl (Piotr Drąg)
+** sr (Мирослав Николић)
+** zh_CN (Yunqiang Su)
+
 3.14.0.1:
 * autoreconf with up-to-date appstream-glib;
   fixes install location for hitori.appdata.xml
