@@ -4,29 +4,32 @@
 #
 # Balázs Úr <urbalazs at gmail dot com>, 2013.
 # Balázs Úr <urbalazs@gmail.com>, 2014.
+# Gabor Kelemen <kelemeng at gnome dot hu>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2014-08-03 14:26+0000\n"
-"PO-Revision-Date: 2014-09-21 01:22+0200\n"
-"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
-"Language-Team: Hungarian <gnome-hu-list@gnome.org>\n"
+"POT-Creation-Date: 2014-09-22 16:36+0000\n"
+"PO-Revision-Date: 2014-12-07 14:39+0100\n"
+"Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
+"Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 1.2\n"
+"X-Generator: Lokalize 1.4\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Úr Balázs <urbalazs@gmail.com>, 2014."
+msgstr ""
+"Kelemen Gábor <kelemeng at gnome dot hu>, 2014.\n"
+"Úr Balázs <urbalazs at gmail dot com>, 2014."
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
 msgid "Changing how the game appears and plays."
-msgstr ""
+msgstr "A játék megjelenésének és menetének megváltoztatása"
 
 #. (itstool) path: page/title
 #: C/customization.page:8
@@ -39,6 +42,8 @@ msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
 msgstr ""
+"A játék a tábla méretének módosításával szabható személyre - 5-10 cellás "
+"négyzet táblák használhatók."
 
 #. (itstool) path: page/p
 #: C/customization.page:11
@@ -48,6 +53,11 @@ msgid ""
 "app> will ask if you want to stop the current game if you're in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
+"A tábla méretének módosításához válasszon egy lehetőséget a <guiseq><gui "
+"style=\"menu\">Játék</gui><gui style=\"menuitem\">Táblaméret</gui></guiseq> "
+"menüpont alatt. Ha éppen játék közben van, a <app>Hitori</app> meg fogja "
+"kérdezni, hogy leállítja-e az aktuális játékot és újat indít a kért "
+"táblamérettel."
 
 #. (itstool) path: media
 #. This is a reference to an external file such as an image or video. When
@@ -81,6 +91,10 @@ msgid ""
 "<em>paint out</em> cells until there are no duplicate numbers in each row "
 "and column. The following rules apply:"
 msgstr ""
+"A Hitori egy kis logikai fejtörő a népszerűbb Sudokuhoz hasonlóan. A játékban "
+"a játékos egy négyzet alakú számtáblával indul, és <em>ki kell festenie</em> "
+"a cellákat, amíg nem maradnak többször szereplő számok az egyes sorokban és "
+"oszlopokban. A következők a szabályok:"
 
 #. (itstool) path: item/p
 #: C/game.page:13
@@ -88,11 +102,13 @@ msgid ""
 "There must only be one of each number in the unpainted cells in each row and "
 "column."
 msgstr ""
+"A sorokban és oszlopokban kifestetlen cellákban minden számból csak egy lehet."
 
 #. (itstool) path: item/p
 #: C/game.page:14
 msgid "No painted cell may be adjacent to another, vertically or horizontally."
 msgstr ""
+"A kifestett cellák nem lehetnek vízszintesen vagy függőlegesen szomszédosak."
 
 #. (itstool) path: item/p
 #: C/game.page:15
@@ -100,6 +116,8 @@ msgid ""
 "All the unpainted cells must be joined together vertically and horizontally "
 "in one group."
 msgstr ""
+"Minden kifestetlen cellának össze kell kapcsolódnia vízszintesen és "
+"függőlegesen egy csoportba."
 
 #. (itstool) path: page/p
 #: C/game.page:17
@@ -107,6 +125,8 @@ msgid ""
 "These are the only three rules of the game, and so there may well be "
 "multiple solutions to a Hitori puzzle board."
 msgstr ""
+"A játéknak csak ez a három szabálya van, így több megoldása is lehet egy-egy "
+"Hitori fejtörőtáblának."
 
 #. (itstool) path: figure/title
 #: C/game.page:20
@@ -161,9 +181,6 @@ msgstr "Tippek és trükkök"
 
 #. (itstool) path: p/link
 #: C/legal.xml:5
-#| msgid ""
-#| "This work is distributed under a CreativeCommons Attribution-Share Alike "
-#| "3.0 Unported license."
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons Nevezd meg!-Így add tovább! 3.0 átíratlan licenc"
 
@@ -175,12 +192,12 @@ msgstr "Ez a mű a <_:link-1/> feltételei szerint terjeszthető."
 #. (itstool) path: info/desc
 #: C/playing.page:6
 msgid "Using <app>Hitori</app> to play a game."
-msgstr ""
+msgstr "A <app>Hitori</app> játék használata."
 
 #. (itstool) path: page/title
 #: C/playing.page:8
 msgid "Playing a Game"
-msgstr ""
+msgstr "Játékmenet"
 
 #. (itstool) path: page/p
 #: C/playing.page:10
@@ -189,6 +206,9 @@ msgid ""
 "\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
 "<app>Hitori</app> will ask if you want to stop the current game."
 msgstr ""
+"Új játék indításához válassza a <guiseq><gui style=\"menu\">Játék</gui><gui "
+"style=\"menuitem\">Új játék</gui></guiseq> menüpontot. Ha már játszik, a <app>"
+"Hitori</app> meg fogja kérdezni, hogy leállítja-e az aktuális játékot."
 
 #. (itstool) path: page/p
 #: C/playing.page:12
@@ -197,6 +217,9 @@ msgid ""
 "cells are painted such that none of the three rules are broken, the game "
 "will end and the board may no longer be manipulated."
 msgstr ""
+"Egy cella kifestéséhez kattintson rá. A kifestés megszüntetéséhez kattintson "
+"rá újra. Amikor a cellák úgy vannak kifestve, hogy a három szabály egyike sem "
+"sérül, a játék befejeződik és a tábla már nem lesz módosítható."
 
 #. (itstool) path: page/p
 #: C/playing.page:14
@@ -208,6 +231,12 @@ msgid ""
 "Highlighted cells can be de-highlighted by clicking on them again while "
 "holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgstr ""
+"A <app>Hitori</app> lehetővé teszi a tábla megoldása közbe a cellák "
+"kiemelését saját jegyzetként. Ez a <key>Ctrl</key> vagy <key>Shift</key> "
+"billentyű lenyomva tartása közbeni cellára kattintással érhető el. A két "
+"billentyű eltérően emeli ki a cellákat, és a cellák egyszerre mindkét módon "
+"kiemelhetők. A cellák kiemelése megszüntethető, ha a <key>Ctrl</key> vagy <"
+"key>Shift</key> nyomva tartása közben újra rájuk kattint."
 
 #. (itstool) path: page/p
 #: C/playing.page:18
@@ -217,6 +246,11 @@ msgid ""
 "gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
 "many moves as you like without restriction."
 msgstr ""
+"Egy lépés visszavonásához vagy mégis végrehajtásához válassza a <guiseq><gui "
+"style=\"menu\">Játék</gui><gui style=\"menuitem\">Visszavonás</gui></guiseq> "
+"vagy a <guiseq><gui style=\"menu\">Játék</gui><gui style=\"menuitem\">Mégis<"
+"/gui></guiseq> menüpontot. Korlátlan számú lépést vonhat vissza vagy hajthat "
+"végre mégis."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
@@ -227,11 +261,16 @@ msgid ""
 "of the cell (painted or unpainted) is incorrect, and should be changed for "
 "the game to be won."
 msgstr ""
+"A kifestendő cellákkal kapcsolatos tippért válassza a <guiseq><gui "
+"style=\"menu\">Játék</gui><gui style=\"menuitem\">Tipp</gui></guiseq> "
+"menüpontot. Egy cella villogó vörös körvonallal kerül kiemelésre. Ez jelzi, "
+"hogy a cella aktuális állapota (kifestett vagy sem) helytelen, és meg kell "
+"változtatni a játék megnyeréséhez."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
 msgid "Strategies for playing Hitori."
-msgstr ""
+msgstr "Stratégiák a Hitori játékhoz."
 
 #. (itstool) path: page/title
 #: C/strategy.page:8
@@ -247,6 +286,11 @@ msgid ""
 "use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
 "<em>row</em>."
 msgstr ""
+"A Hitori meglehetősen hasonló a Sudokuhoz, amennyiben logikai "
+"következtetéssel lehet meghatározni a kifestendő cellákat. Az egyik stratégia "
+"szerint a <key>Shift</key> használatával kiemeljük az ismétlődő számokat az "
+"egyes <em>oszlopokban</em>, majd a <key>Ctrl</key> használatával kiemeljük az "
+"ismétlődő számokat az egyes <em>sorokban</em>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
@@ -257,6 +301,11 @@ msgid ""
 "the same row and column as that cell is a good way to keep track of which "
 "cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
+"Miután ez megvan a teljes táblán, a mindkét módon kiemelt cellák jó jelöltek "
+"a kifestéshez, noha nem mindig. Egy cella kifestésekor az ugyanabban a sorban "
+"és oszlopban azonos számot tartalmazó cellák kiemelésének megszüntetése jó "
+"módszer azon cellák nyilvántartására, amelyek még mindig megsértik a <link "
+"xref=\"game\">Hitori 1. szabályát</link>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:16
@@ -267,6 +316,11 @@ msgid ""
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
 msgstr ""
+"Mindig tartsa szem előtt a Hitori 2. szabályát, miszerint két szomszédos "
+"cella nem lehet egyszerre kifestve. A <app>Hitori</app> vörössel emeli ki a "
+"2. szabályt megsértő cellákat. Hasonlóan a 3. szabályt a kifestetlen cellák "
+"többi kifestetlen cellától való elválasztásával megsértő cellák is vörössel "
+"lesznek kiemelve."
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
@@ -276,6 +330,10 @@ msgid ""
 "flag a cell which should be painted or unpainted to move closer to a "
 "solution."
 msgstr ""
+"Ha bármikor elakad, válassza a <guiseq><gui style=\"menu\">Játék</gui> <gui "
+"style=\"menuitem\">Tipp</gui></guiseq> menüpontot, hogy a <app>Hitori</app> "
+"kiemeljen egy cellát, amelynek kifestésével vagy kifestésének törlésével "
+"közelebb lehet jutni a megoldáshoz."
 
 #~ msgid "Legal information."
 #~ msgstr "Jogi információk."
