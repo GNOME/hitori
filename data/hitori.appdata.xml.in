@@ -6,7 +6,8 @@
 	<project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
 	<!-- Translators: the name of the application as it appears in a software center -->
 	<_name>GNOME Hitori</_name>
-	<_summary>Play a quick logic game</_summary>
+	<!-- Translators: the brief summary of the application as it appears in a software center. -->
+	<_summary>Play the Hitori puzzle game</_summary>
 	<description>
 		<!-- Translators: These are the application description paragraphs in the AppData file. -->
 		<_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
