@@ -1,15 +1,15 @@
 # Czech translation for hitori.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori package.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-07-07 18:28+0000\n"
-"PO-Revision-Date: 2014-08-22 08:14+0200\n"
+"POT-Creation-Date: 2014-12-21 15:25+0000\n"
+"PO-Revision-Date: 2015-01-06 23:36+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -25,9 +25,15 @@ msgstr ""
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Hrát logickou hru Hitori."
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "hlavolam;hra;logická;mřížka;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -35,11 +41,11 @@ msgid "GNOME Hitori"
 msgstr "Hitori GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori je logická hra podobná populárnímu Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -167,14 +173,6 @@ msgstr "Opravdu chcete zastavit současnou hru?"
 #: ../src/main.c:304
 msgid "Keep _Playing"
 msgstr "_Pokračovat ve hře"
-
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
