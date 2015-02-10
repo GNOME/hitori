@@ -1,15 +1,14 @@
 # Norwegian bokmål translation of the hitori module.
 # Copyright © 1998-2002 Free Software Foundation, Inc.
-# Kjartan Maraas <kmaraas@gnome.org>, 1998-2014.
+# Kjartan Maraas <kmaraas@gnome.org>, 1998-2015.
 # Terance Edward Sola <terance@lyse.net>, 2005.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hitori 3.13.x\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-09-14 01:41+0000\n"
-"PO-Revision-Date: 2014-09-28 10:58+0200\n"
+"Project-Id-Version: hitori 3.15.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-02-10 17:54+0100\n"
+"PO-Revision-Date: 2015-02-10 17:55+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
 "Language: nb\n"
@@ -22,9 +21,15 @@ msgstr ""
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Spill det populære puslespillet Hitori"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "puslespill;spill;logikk;rutenett;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -32,17 +37,21 @@ msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori er et logikkspill som ligner på det populære spillet Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr "Du spiller spillet mot klokken og målet er å eliminere alle dupliserte tall i hver rad og kolonne så fort som mulig. Du kan bruke flere størrelser på brettet, og du kan plassere markører på celler som hjelper med å løse problemet. Hvis du står fast kan spillet gi deg et hint."
+msgstr ""
+"Du spiller spillet mot klokken og målet er å eliminere alle dupliserte tall "
+"i hver rad og kolonne så fort som mulig. Du kan bruke flere størrelser på "
+"brettet, og du kan plassere markører på celler som hjelper med å løse "
+"problemet. Hvis du står fast kan spillet gi deg et hint."
 
 #: ../data/hitori.ui.h:1 ../src/main.c:305
 msgid "_New Game"
