@@ -3,15 +3,15 @@
 # This file is distributed under the same license as the hitori package.
 #
 # Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2009-2010.
-# Matej Urbančič <mateju@svn.gnome.org>, 2013.
+# Matej Urbančič <mateju@svn.gnome.org>, 2013-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-12-26 10:22+0000\n"
-"PO-Revision-Date: 2014-12-26 18:37+0100\n"
+"POT-Creation-Date: 2015-02-15 10:30+0000\n"
+"PO-Revision-Date: 2015-02-15 21:17+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -31,6 +31,11 @@ msgstr "Hitori"
 #: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Igraj miselno igro Hitori"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "sestavljanka;igra;logika;polja;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
