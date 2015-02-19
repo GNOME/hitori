@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-19 10:46+0100\n"
-"PO-Revision-Date: 2015-02-19 10:47+0200\n"
+"POT-Creation-Date: 2015-02-19 11:22+0100\n"
+"PO-Revision-Date: 2015-02-19 11:23+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -137,7 +137,7 @@ msgstr "Un crebacabezas lóxico orixinalmente deseñado por Nikoli."
 
 #: ../src/interface.c:688
 msgid "translator-credits"
-msgstr "Fran Dieguez <frandieguez@gnome.org>"
+msgstr "Fran Dieguez <frandieguez@gnome.org>, 2014-2015."
 
 #: ../src/interface.c:692
 msgid "Hitori Website"
