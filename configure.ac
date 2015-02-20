@@ -2,6 +2,7 @@ AC_INIT([Hitori],[3.14.2.1],[https://bugzilla.gnome.org/enter_bug.cgi?product=hi
 
 AM_INIT_AUTOMAKE([check-news dist-xz no-dist-gzip subdir-objects])
 AC_CONFIG_HEADERS([config.h])
+AC_CONFIG_MACRO_DIR([m4])
 AM_MAINTAINER_MODE([enable])
 
 AC_PROG_CC
