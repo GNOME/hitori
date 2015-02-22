@@ -8,8 +8,6 @@
 				<attribute name="label" translatable="yes">_New Game</attribute>
 				<attribute name="accel">&lt;Primary&gt;n</attribute>
 			</item>
-		</section>
-		<section>
 			<submenu id="board_size_menu">
 				<attribute name="label" translatable="yes">Board _Size</attribute>
 				<section>
