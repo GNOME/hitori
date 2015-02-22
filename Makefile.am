@@ -162,7 +162,6 @@ MAINTAINERCLEANFILES = \
 	intltool-merge.in \
 	intltool-update.in \
 	`find "m4" -type f -name "*.m4" -print` \
-	ChangeLog \
 	po/Makevars.template \
 	po/Rules-quot \
 	po/boldquot.sed \
@@ -185,23 +184,8 @@ dist-hook:
 
 # ChangeLog generation
 CHANGELOG_START = V_0_2_2^
-
-ChangeLog: $(srcdir)/ChangeLog
-$(srcdir)/ChangeLog:
-	@echo Creating $@
-	@if test -d "$(srcdir)/.git"; then \
-	  (GIT_DIR=$(top_srcdir)/.git ./missing --run \
-	   git log $(CHANGELOG_START).. --stat) | fmt --split-only > $@.tmp \
-	  && mv -f $@.tmp $@ \
-	  || ($(RM) $@.tmp; \
-	      echo Failed to generate ChangeLog, your ChangeLog may be outdated >&2; \
-	      (test -f $@ || echo git-log is required to generate this file >> $@)); \
-	else \
-	  test -f $@ || \
-	  (echo A git checkout and git-log is required to generate ChangeLog >&2 && \
-	  echo A git checkout and git-log is required to generate this file >> $@); \
-	fi
-.PHONY: $(srcdir)/ChangeLog
+@GENERATE_CHANGELOG_RULES@
+dist-hook: dist-ChangeLog
 
 # xdg-app bundle
 org.gnome.Hitori.bundle:
