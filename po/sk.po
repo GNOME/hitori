@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-09-09 11:08+0000\n"
-"PO-Revision-Date: 2014-09-09 21:53+0100\n"
+"POT-Creation-Date: 2014-12-21 15:25+0000\n"
+"PO-Revision-Date: 2015-02-22 16:53+0100\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -17,15 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.7.4\n"
 
 #: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Hrajte hru Hitori"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "hlavolam;hra;logická;logika;mriežka;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -33,11 +39,11 @@ msgid "GNOME Hitori"
 msgstr "Hitori pre prostredie GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori je logická hra podobná populárnej hre Sudoku"
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -171,14 +177,6 @@ msgstr "Chcete prerušiť aktuálnu hru?"
 msgid "Keep _Playing"
 msgstr "Pokračovať v _hre"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%02u∶‎%02u"
-
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
@@ -189,3 +187,6 @@ msgstr "Vyhrali ste s časom %02u:%02u!"
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Hrať znovu"
+
+#~ msgid "%02u∶‎%02u"
+#~ msgstr "%02u∶‎%02u"
