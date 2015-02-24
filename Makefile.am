@@ -72,10 +72,6 @@ EXTRA_DIST = \
 	$(icon48_DATA) \
 	$(NULL)
 
-# CSS
-cssdir = $(datadir)/hitori
-css_DATA = data/hitori.css
-
 # GResources
 src/hitori-resources.c: $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir=$(top_srcdir) $(top_srcdir)/src/hitori.gresource.xml)
 	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(top_srcdir) --generate-source $(top_srcdir)/src/hitori.gresource.xml
@@ -83,12 +79,11 @@ src/hitori-resources.c: $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencie
 CLEANFILES = src/hitori-resources.c
 EXTRA_DIST += src/hitori.gresource.xml
 
-# UI file
+# UI & CSS files
 dist_noinst_DATA = \
-	data/hitori-menus.ui
-
-uidir = $(datadir)/hitori
-ui_DATA = data/hitori.ui
+	data/hitori-menus.ui \
+	data/hitori.ui \
+	data/hitori.css
 
 # GSettings
 gsettings_SCHEMAS = data/org.gnome.hitori.gschema.xml
@@ -104,9 +99,7 @@ desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
 EXTRA_DIST += \
-	$(css_DATA) \
 	$(gsettings_SCHEMAS) \
-	$(ui_DATA) \
 	$(desktop_in_files) \
 	$(NULL)
 CLEANFILES += $(desktop_DATA)

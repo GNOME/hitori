@@ -67,33 +67,13 @@ static GActionEntry win_entries[] = {
 GtkWidget *
 hitori_create_interface (Hitori *hitori)
 {
-	GError *error = NULL;
 	GtkBuilder *builder;
 	GtkStyleContext *style_context;
 	GtkCssProvider *css_provider;
 	const PangoFontDescription *font;
 	GAction *action;
 
-	builder = gtk_builder_new ();
-
-	if (gtk_builder_add_from_file (builder, PACKAGE_DATA_DIR"/hitori/hitori.ui", &error) == FALSE &&
-	    gtk_builder_add_from_file (builder, "./data/hitori.ui", NULL) == FALSE) {
-		/* Show an error */
-		GtkWidget *dialog = gtk_message_dialog_new (NULL,
-				GTK_DIALOG_MODAL,
-				GTK_MESSAGE_ERROR,
-				GTK_BUTTONS_OK,
-				_("UI file “%s” could not be loaded"), PACKAGE_DATA_DIR"/hitori/hitori.ui");
-		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
-
-		g_error_free (error);
-		g_object_unref (builder);
-		hitori_quit (hitori);
-
-		return NULL;
-	}
+	builder = gtk_builder_new_from_resource ("/org/gnome/Hitori/ui/hitori.ui");
 
 	gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);
 	gtk_builder_connect_signals (builder, hitori);
@@ -126,14 +106,9 @@ hitori_create_interface (Hitori *hitori)
 
 	/* Load CSS for the drawing area */
 	css_provider = gtk_css_provider_new ();
-	gtk_css_provider_load_from_path (css_provider, PACKAGE_DATA_DIR"/hitori/hitori.css", &error);
-	if (error) {
-		g_warning ("Unable to load CSS: %s", error->message);
-		g_error_free (error);
-	} else {
-		gtk_style_context_add_provider (style_context, GTK_STYLE_PROVIDER (css_provider),
-                                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
-	}
+	gtk_css_provider_load_from_resource (css_provider, "/org/gnome/Hitori/ui/hitori.css");
+	gtk_style_context_add_provider (style_context, GTK_STYLE_PROVIDER (css_provider),
+                                            GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 	g_object_unref (css_provider);
 
 	/* Reset the timer */
