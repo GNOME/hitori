@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-08-28 09:23+0000\n"
-"PO-Revision-Date: 2014-08-29 00:50+0200\n"
+"POT-Creation-Date: 2014-12-21 15:25+0000\n"
+"PO-Revision-Date: 2015-02-24 01:49+0100\n"
 "Last-Translator: Erwan GEORGET <egeorget@openmailbox.org>\n"
 "Language-Team: Français <GNOME French Team <gnomefr@traduc.org>>\n"
 "Language: fr \n"
@@ -26,9 +26,15 @@ msgstr ""
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Jouer au casse-tête Hitori"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "casse-tête;jeu;logique;grille;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -36,11 +42,11 @@ msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori est un jeu de logique similaire au populaire jeu de Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -173,14 +179,6 @@ msgstr "Voulez-vous arrêter cette partie ?"
 msgid "Keep _Playing"
 msgstr "Continuer à _jouer"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%02u∶‎%02u"
-
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
@@ -192,6 +190,9 @@ msgstr "Vous avez résolu le puzzle en %02u:%02u !"
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Rejouer"
+
+#~ msgid "%02u∶‎%02u"
+#~ msgstr "%02u∶‎%02u"
 
 #~ msgid ""
 #~ "Hitori is free software: you can redistribute it and/or modify it under "
