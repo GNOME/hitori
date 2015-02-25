@@ -72,7 +72,6 @@ hitori_create_interface (Hitori *hitori)
 	GtkStyleContext *style_context;
 	GtkCssProvider *css_provider;
 	const PangoFontDescription *font;
-	GMenuModel *app_menu;  /* owned */
 	GAction *action;
 
 	builder = gtk_builder_new ();
@@ -103,11 +102,6 @@ hitori_create_interface (Hitori *hitori)
 	hitori->window = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_main_window"));
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
 	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
-
-	/* Set up the app menu */
-	app_menu = G_MENU_MODEL (gtk_builder_get_object (builder, "app_menu"));
-	gtk_application_set_app_menu (GTK_APPLICATION (hitori), app_menu);
-	g_object_unref (app_menu);
 
 	g_object_unref (builder);
 

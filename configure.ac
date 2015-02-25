@@ -19,6 +19,9 @@ GNOME_MAINTAINER_MODE_DEFINES
 AC_ARG_ENABLE([debug],AS_HELP_STRING([--enable-debug],[Enable debugging]),[debug=$enableval],[debug=no])
 AM_CONDITIONAL([DEBUG],[test "$debug" = "yes"])
 
+# GResources
+AC_PATH_PROG([GLIB_COMPILE_RESOURCES],[glib-compile-resources])
+
 # Internationalisation
 GETTEXT_PACKAGE=hitori
 AC_SUBST([GETTEXT_PACKAGE])
@@ -35,7 +38,7 @@ YELP_HELP_INIT
 APPSTREAM_XML
 
 # Dependencies
-PKG_CHECK_MODULES([GENERAL],[glib-2.0 gio-2.0 >= 2.32 gtk+-3.0 >= 3.13.2 gmodule-2.0 cairo >= 1.4])
+PKG_CHECK_MODULES([GENERAL],[glib-2.0 gio-2.0 >= 2.32 gtk+-3.0 >= 3.15.0 gmodule-2.0 cairo >= 1.4])
 
 # Output!
 AC_CONFIG_FILES([

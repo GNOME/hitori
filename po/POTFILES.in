@@ -2,6 +2,7 @@
 [encoding: UTF-8]
 data/hitori.desktop.in
 data/hitori.appdata.xml.in
+[type: gettext/glade]data/hitori-menus.ui
 [type: gettext/glade]data/hitori.ui
 data/org.gnome.hitori.gschema.xml
 src/interface.c

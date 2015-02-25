@@ -13,6 +13,9 @@ src_hitori_SOURCES = \
 	src/rules.c \
 	src/rules.h \
 	$(NULL)
+nodist_src_hitori_SOURCES = \
+	src/hitori-resources.c \
+	$(NULL)
 
 src_hitori_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""$(prefix)/$(DATADIRNAME)/locale"\" \
@@ -70,11 +73,20 @@ EXTRA_DIST = \
 	$(NULL)
 
 # CSS
-
 cssdir = $(datadir)/hitori
 css_DATA = data/hitori.css
 
+# GResources
+src/hitori-resources.c: $(shell $(GLIB_COMPILE_RESOURCES) --generate-dependencies --sourcedir=$(top_srcdir) $(top_srcdir)/src/hitori.gresource.xml)
+	$(AM_V_GEN) $(GLIB_COMPILE_RESOURCES) --target=$@ --sourcedir=$(top_srcdir) --generate-source $(top_srcdir)/src/hitori.gresource.xml
+
+CLEANFILES = src/hitori-resources.c
+EXTRA_DIST += src/hitori.gresource.xml
+
 # UI file
+dist_noinst_DATA = \
+	data/hitori-menus.ui
+
 uidir = $(datadir)/hitori
 ui_DATA = data/hitori.ui
 
@@ -97,7 +109,7 @@ EXTRA_DIST += \
 	$(ui_DATA) \
 	$(desktop_in_files) \
 	$(NULL)
-CLEANFILES = $(desktop_DATA)
+CLEANFILES += $(desktop_DATA)
 
 # AppData
 @APPSTREAM_XML_RULES@
