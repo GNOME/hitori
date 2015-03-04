@@ -1,14 +1,14 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012—2014.
+# Serbian translation of hitori.
+# Courtesy of Prevod.org team (http://prevod.org/) -- 2012—2015.
+# This file is distributed under the same license as the hitori package.
+# Miroslav Nikolić <miroslavnikolic@rocketmail.com>, 2012—2015.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori"
-"&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-09-14 01:41+0000\n"
-"PO-Revision-Date: 2014-09-23 12:19+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&"
+"keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2014-12-21 15:25+0000\n"
+"PO-Revision-Date: 2015-03-04 20:47+0200\n"
 "Last-Translator: Miroslav Nikolić <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <gnom@prevod.org>\n"
 "Language: sr\n"
@@ -23,22 +23,27 @@ msgstr ""
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Igrajte igru slagalica Hitori"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "slagalica;igra;logika;mreža;"
+
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
-#| msgid "Hitori"
 msgid "GNOME Hitori"
 msgstr "Gnom Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori je logička igra slična Sudokuu."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -88,7 +93,6 @@ msgid "_Help"
 msgstr "Po_moć"
 
 #: ../data/hitori.ui.h:10
-#| msgid "_About Hitori"
 msgid "_About"
 msgstr "_O programu"
 
@@ -109,7 +113,6 @@ msgid "Get a hint for your next move"
 msgstr "Potražite savet za sledeći potez"
 
 #: ../data/org.gnome.hitori.gschema.xml.h:1
-#| msgid "Board _Size"
 msgid "Board size"
 msgstr "Veličina table"
 
@@ -131,7 +134,6 @@ msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autorska prava © 2007–2010 Filip Vitnal"
 
 #: ../src/interface.c:686
-#| msgid "A logic puzzle designed by Nikoli."
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logička slagalica koju je prvobitno osmislio Nikoli"
 
@@ -178,7 +180,6 @@ msgstr "_Nastavi igru"
 #. * the number of seconds.
 #: ../src/rules.c:267
 #, c-format
-#| msgid "You've won in a time of %02u:%02u!"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Pobedili ste u vremenu od %02u:%02u!"
 
