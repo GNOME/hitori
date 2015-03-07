@@ -1,14 +1,17 @@
+# -*- compile-command: "ko-po-check ko.po" -*-
+#
 # Korean translation for hitori.
 # This file is distributed under the same license as the hitori package.
 #
-# Changwoo Ryu <cwryu@debian.org>, 2014.
+# Changwoo Ryu <cwryu@debian.org>, 2014-2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-09-06 09:20+0000\n"
-"PO-Revision-Date: 2014-09-06 20:47+0900\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2015-03-05 10:30+0000\n"
+"PO-Revision-Date: 2015-03-08 04:51+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -17,13 +20,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
 msgid "Hitori"
 msgstr "히토리"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "히토리 퍼즐 게임을 플레이합니다"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;퍼즐;game;게임;logic;로직;논리;grid;그리드;격자;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -31,71 +40,74 @@ msgid "GNOME Hitori"
 msgstr "그놈 히토리"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "히토리는 유명한 스도쿠와 비슷한 논리 게임입니다."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr "가능한한 빨리 각 행과 열의 중복된 숫자를 제거하는 게임입니다. 여러가지 크기의 게임판 크기를 지원하고, 해법을 알아내는데 도움이 되도록 칸에 표시를 할 수도 있습니다. 막힐 경우, 게임에서 힌트를 줄 수도 있습니다."
+msgstr ""
+"가능한한 빨리 각 행과 열의 중복된 숫자를 제거하는 게임입니다. 여러가지 크기"
+"의 게임판 크기를 지원하고, 해법을 알아내는데 도움이 되도록 칸에 표시를 할 수"
+"도 있습니다. 막힐 경우, 게임에서 힌트를 줄 수도 있습니다."
 
-#: ../data/hitori.ui.h:1 ../src/main.c:305
+#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "새 게임(_N)"
 
-#: ../data/hitori.ui.h:2
+#: ../data/hitori-menus.ui.h:2
 msgid "Board _Size"
 msgstr "게임판 크기(_S)"
 
-#: ../data/hitori.ui.h:3
+#: ../data/hitori-menus.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:4
+#: ../data/hitori-menus.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:5
+#: ../data/hitori-menus.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:6
+#: ../data/hitori-menus.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori-menus.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori-menus.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori-menus.ui.h:9
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori-menus.ui.h:10
 msgid "_About"
 msgstr "정보(_A)"
 
-#: ../data/hitori.ui.h:11 ../src/rules.c:272
+#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
 msgstr "끝내기(_Q)"
 
-#: ../data/hitori.ui.h:13
+#: ../data/hitori.ui.h:2
 msgid "Undo your last move"
 msgstr "마지막 움직임을 취소합니다"
 
-#: ../data/hitori.ui.h:14
+#: ../data/hitori.ui.h:3
 msgid "Redo a move"
 msgstr "움직임을 다시 실행합니다"
 
-#: ../data/hitori.ui.h:15
+#: ../data/hitori.ui.h:4
 msgid "Get a hint for your next move"
 msgstr "다음 움직임에 대한 힌트를 봅니다"
 
@@ -107,29 +119,24 @@ msgstr "게임판 크기"
 msgid "The size of the board, in cells."
 msgstr "게임판의 크기, 칸 수 단위."
 
-#: ../src/interface.c:87
-#, c-format
-msgid "UI file “%s” could not be loaded"
-msgstr "“%s” UI 파일을 읽어들일 수 없습니다"
-
-#: ../src/interface.c:661
+#: ../src/interface.c:630
 msgid "The help contents could not be displayed"
 msgstr "도움말 내용을 표시할 수 없습니다"
 
-#: ../src/interface.c:685
+#: ../src/interface.c:654
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
 # 니콜리 - 일본의 게임 회사
-#: ../src/interface.c:686
+#: ../src/interface.c:655
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "니콜리에서 처음에 만든 논리 퍼즐"
 
-#: ../src/interface.c:688
+#: ../src/interface.c:657
 msgid "translator-credits"
 msgstr "류창우 <cwryu@debian.org>"
 
-#: ../src/interface.c:692
+#: ../src/interface.c:661
 msgid "Hitori Website"
 msgstr "히토리 홈페이지"
 
@@ -160,14 +167,6 @@ msgstr "현재 게임을 중지하시겠습니까?"
 #: ../src/main.c:304
 msgid "Keep _Playing"
 msgstr "계속 플레이(_P)"
-
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%02u∶‎%02u"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
