@@ -33,6 +33,7 @@ src_hitori_CFLAGS = \
 	$(WARN_CFLAGS) \
 	$(NULL)
 src_hitori_LDFLAGS = \
+	$(WARN_LDFLAGS) \
 	$(CODE_COVERAGE_LDFLAGS) \
 	$(NULL)
 
