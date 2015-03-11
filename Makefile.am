@@ -29,15 +29,15 @@ src_hitori_CPPFLAGS = \
 src_hitori_LDADD = $(GENERAL_LIBS)
 src_hitori_CFLAGS = \
 	$(GENERAL_CFLAGS) \
+	$(CODE_COVERAGE_CFLAGS) \
 	$(WARN_CFLAGS) \
 	$(NULL)
-
-if DEBUG
-src_hitori_CFLAGS += \
-	-fprofile-arcs \
-	-ftest-coverage \
+src_hitori_LDFLAGS = \
+	$(CODE_COVERAGE_LDFLAGS) \
 	$(NULL)
-endif
+
+# Code coverage
+@CODE_COVERAGE_RULES@
 
 # Icons
 icon_dir = $(datadir)/icons/hicolor

@@ -19,6 +19,9 @@ GNOME_MAINTAINER_MODE_DEFINES
 AC_ARG_ENABLE([debug],AS_HELP_STRING([--enable-debug],[Enable debugging]),[debug=$enableval],[debug=no])
 AM_CONDITIONAL([DEBUG],[test "$debug" = "yes"])
 
+# Code coverage
+AX_CODE_COVERAGE()
+
 # GResources
 AC_PATH_PROG([GLIB_COMPILE_RESOURCES],[glib-compile-resources])
 
