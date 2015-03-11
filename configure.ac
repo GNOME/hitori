@@ -6,6 +6,9 @@ AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
 AM_MAINTAINER_MODE([enable])
 
+# Options
+AX_CHECK_ENABLE_DEBUG([yes],[DEBUG])
+
 AC_PROG_CC
 AM_PROG_CC_C_O
 AC_PROG_CPP
@@ -15,10 +18,6 @@ m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
 
 GNOME_COMPILE_WARNINGS([maximum])
 GNOME_MAINTAINER_MODE_DEFINES
-
-# Options
-AC_ARG_ENABLE([debug],AS_HELP_STRING([--enable-debug],[Enable debugging]),[debug=$enableval],[debug=no])
-AM_CONDITIONAL([DEBUG],[test "$debug" = "yes"])
 
 # Code coverage
 AX_CODE_COVERAGE()
