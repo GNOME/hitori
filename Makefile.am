@@ -1,5 +1,7 @@
 SUBDIRS = help po
 
+ACLOCAL_AMFLAGS = --install -I m4 ${ACLOCAL_FLAGS}
+
 # Executable
 bin_PROGRAMS = src/hitori
 
