@@ -6,9 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-19 11:22+0100\n"
-"PO-Revision-Date: 2015-02-19 11:23+0200\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&"
+"keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2015-03-17 22:29+0000\n"
+"PO-Revision-Date: 2015-03-18 01:03+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: gnome-l10n-gl@gnome.org\n"
 "Language: gl\n"
@@ -17,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -54,59 +56,59 @@ msgstr ""
 "de varios tamaños e pode dispor marcadores nas celas que lle axuden a acadar "
 "unha solución. Se se atasca, o xogo daralle un consello."
 
-#: ../data/hitori.ui.h:1 ../src/main.c:305
+#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "_Novo xogo"
 
-#: ../data/hitori.ui.h:2
+#: ../data/hitori-menus.ui.h:2
 msgid "Board _Size"
 msgstr "_Tamaño do taboleiro"
 
-#: ../data/hitori.ui.h:3
+#: ../data/hitori-menus.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:4
+#: ../data/hitori-menus.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:5
+#: ../data/hitori-menus.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:6
+#: ../data/hitori-menus.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori-menus.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori-menus.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori-menus.ui.h:9
 msgid "_Help"
 msgstr "_Axuda"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori-menus.ui.h:10
 msgid "_About"
 msgstr "_Sobre"
 
-#: ../data/hitori.ui.h:11 ../src/rules.c:272
+#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
 msgstr "_Saír"
 
-#: ../data/hitori.ui.h:13
+#: ../data/hitori.ui.h:2
 msgid "Undo your last move"
 msgstr "Desfacer o último movemento"
 
-#: ../data/hitori.ui.h:14
+#: ../data/hitori.ui.h:3
 msgid "Redo a move"
 msgstr "Refacer un movemento"
 
-#: ../data/hitori.ui.h:15
+#: ../data/hitori.ui.h:4
 msgid "Get a hint for your next move"
 msgstr "Obter unha suxestión para o seu novo movemento"
 
@@ -118,28 +120,24 @@ msgstr "Tamaño do taboleiro"
 msgid "The size of the board, in cells."
 msgstr "O tamaño do taboleiro, en celas."
 
-#: ../src/interface.c:87
-#, c-format
-msgid "UI file “%s” could not be loaded"
-msgstr "Non é posíbel cargar o ficheiro de IU \"%s\"."
-
-#: ../src/interface.c:661
+#: ../src/interface.c:630
 msgid "The help contents could not be displayed"
 msgstr "Non foi posíbel mostrar os contidos da axuda."
 
-#: ../src/interface.c:685
-msgid "Copyright © 2007ے2010 Philip Withnall"
+#: ../src/interface.c:654
+#| msgid "Copyright © 2007ے2010 Philip Withnall"
+msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:686
+#: ../src/interface.c:655
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un crebacabezas lóxico orixinalmente deseñado por Nikoli."
 
-#: ../src/interface.c:688
+#: ../src/interface.c:657
 msgid "translator-credits"
 msgstr "Fran Dieguez <frandieguez@gnome.org>, 2014-2015."
 
-#: ../src/interface.c:692
+#: ../src/interface.c:661
 msgid "Hitori Website"
 msgstr "Páxina web de Hitori"
 
@@ -181,6 +179,9 @@ msgstr "Gañou cun tempo de %02u:%02u!"
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Xogar de novo"
+
+#~ msgid "UI file “%s” could not be loaded"
+#~ msgstr "Non é posíbel cargar o ficheiro de IU \"%s\"."
 
 #~ msgid "%02u∶‎%02u"
 #~ msgstr "%02u∶‎%02u"
