@@ -60,6 +60,8 @@ icon32dir = $(icon_dir)/32x32/apps
 icon32_DATA = data/icons/32x32/hitori.png
 icon48dir = $(icon_dir)/48x48/apps
 icon48_DATA = data/icons/48x48/hitori.png
+iconsymbolicdir = $(icon_dir)/symbolic/apps
+iconsymbolic_DATA = data/icons/symbolic/hitori-symbolic.svg
 
 EXTRA_DIST = \
 	data/icons/16x16/hitori.svg \
