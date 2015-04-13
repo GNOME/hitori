@@ -1,5 +1,23 @@
 Major new features in version...
 
+3.16.0:
+* Port to GResource for UI and CSS
+* Minor menu tweaks
+* Translations:
+** bs (Samir Ribic)
+** da (Joe Hansen)
+** fi (Jiri Grönroos)
+** fur (Fabio Tomat)
+** gl (Fran Dieguez)
+** it (Milo Casagrande)
+** ko (Changwoo Ryu)
+** lt (Aurimas Černius)
+** lv (Rūdofls Mazurs)
+** pt_BR (Enrico Nicoletto)
+** sr (Мирослав Николић)
+** tr (Muhammet Kara)
+** uk (Daniel Korostil)
+
 3.14.3:
 * Translations:
 ** cs (Marek Černocký)
