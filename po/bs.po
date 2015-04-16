@@ -31,7 +31,7 @@ msgstr "Igraj Hitori logičku igru"
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: ../data/hitori.desktop.in.h:4
 msgid "puzzle;game;logic;grid;"
-msgstr "puzzle;game;logic;grid;igra;zagonetka;logika;mreža"
+msgstr "puzzle;game;logic;grid;igra;zagonetka;logika;mreža;"
 
 #. Translators: the nami of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
