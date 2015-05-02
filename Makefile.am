@@ -72,6 +72,7 @@ EXTRA_DIST = \
 	$(icon32_DATA) \
 	data/icons/48x48/hitori.svg \
 	$(icon48_DATA) \
+	$(iconsymbolic_DATA) \
 	$(NULL)
 
 # GResources
