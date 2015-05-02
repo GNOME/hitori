@@ -1,5 +1,8 @@
 Major new features in version...
 
+3.16.1:
+* Updated symbolic icon
+
 3.16.0:
 * Port to GResource for UI and CSS
 * Minor menu tweaks
