@@ -92,7 +92,8 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 			g_slice_free1 (sizeof (gboolean) * (hitori->board_size + 2), horiz_accum[iter.x]);
 		g_free (horiz_accum);
 
-		return hitori_generate_board (hitori, hitori->board_size, seed + 1);
+		hitori_generate_board (hitori, hitori->board_size, seed + 1);
+		return;
 	}
 
 	/* Fill in the squares, leaving the painted ones blank,
@@ -119,7 +120,8 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 							g_slice_free1 (sizeof (gboolean) * (hitori->board_size + 2), horiz_accum[iter.x]);
 						g_free (horiz_accum);
 
-						return hitori_generate_board (hitori, hitori->board_size, seed + 1); /* We're buggered */
+						hitori_generate_board (hitori, hitori->board_size, seed + 1); /* We're buggered */
+						return;
 					}
 
 					i = rand () % (hitori->board_size + 1) + 1;
