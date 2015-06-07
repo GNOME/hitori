@@ -1,155 +1,334 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: hitori VERSION\n"
-"POT-Creation-Date: 2008-06-08 15:44+0100\n"
-"PO-Revision-Date: 2009-03-02 01:13+0100\n"
-"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
-"Language-Team: English/GB <en@li.org>\n"
+"Project-Id-Version: Hitori-Doc\n"
+"POT-Creation-Date: 2015-05-31 10:06+0000\n"
+"PO-Revision-Date: 2015-05-31 18:44+0100\n"
+"Last-Translator: Erik Sköldås <erik.skoldas@tele2.se>\n"
+"Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.7.5\n"
 
-#. When image changes, this message will be marked fuzzy or untranslated for you.
-#. It doesn't matter what you translate it to: it's not used at all.
-#: C/hitori.xml:107(None)
-msgid "@@image: 'figures/hitori_main_window.png'; md5=df6d1e0cdc412bca7ea8b435891c1642"
-msgstr "@@image: 'figures/hitori_main_window.png'; md5=df6d1e0cdc412bca7ea8b435891c1642"
-
-#: C/hitori.xml:26(title)
-msgid "<application>Hitori</application> Manual"
-msgstr "Handbok för <application>Hitori</application>"
-
-#: C/hitori.xml:27(para)
-msgid "<application>Hitori</application> is a simple puzzle game."
-msgstr "<application>Hitori</application> är ett enkelt pusselspel."
-
-#: C/hitori.xml:29(year)
-msgid "2008"
-msgstr "2008"
-
-#: C/hitori.xml:30(holder)
-#: C/hitori.xml:33(publishername)
-msgid "Philip Withnall"
-msgstr "Philip Withnall"
-
-#: C/hitori.xml:43(firstname)
-msgid "Philip"
-msgstr "Philip"
-
-#: C/hitori.xml:44(surname)
-msgid "Withnall"
-msgstr "Withnall"
-
-#: C/hitori.xml:46(email)
-msgid "philip@tecnocode.co.uk"
-msgstr "philip@tecnocode.co.uk"
-
-#: C/hitori.xml:64(revnumber)
-msgid "Hitori Manual V0.1"
-msgstr "Handbok för Hitori v0.1"
-
-#: C/hitori.xml:66(para)
-msgid "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-msgstr "Philip Withnall <email>philip@tecnocode.co.uk</email>"
-
-#: C/hitori.xml:70(releaseinfo)
-msgid "This manual describes version 0.2 of Hitori."
-msgstr "Denna handbok beskriver version 0.2 av Hitori."
-
-#: C/hitori.xml:72(title)
-msgid "Feedback"
-msgstr "Återkoppling"
-
-#: C/hitori.xml:73(para)
-msgid "To report a bug or make a suggestion regarding the <application>Hitori</application> application or this manual, follow the directions on the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "För att rapportera ett fel eller föreslå någonting angående programmet <application>Hitori</application> eller denna handbok, följ anvisningarna på <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
-
-#: C/hitori.xml:80(primary)
-msgid "Hitori"
-msgstr "Hitori"
-
-#: C/hitori.xml:83(primary)
-msgid "hitori"
-msgstr "hitori"
-
-#: C/hitori.xml:88(title)
-msgid "Introduction"
-msgstr "Introduktion"
-
-#: C/hitori.xml:90(title)
-msgid "Hitori the Game"
-msgstr "Spelet Hitori"
-
-#: C/hitori.xml:91(para)
-msgid "Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. In the game, the player starts with a square board of numbers, and has to \"paint out\" cells until there are no duplicate numbers in each row and column. The following rules apply:"
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
 msgstr ""
+"Daniel Nylander <po@danielnylander.se>, 2009\n"
+"Erik Sköldås <erik.skoldas@tele2.se>, 2015\n"
+"\n"
+"Skicka synpunkter på översättningen till\n"
+"<tp-sv@listor.tp-sv.se>"
 
-#: C/hitori.xml:94(para)
-msgid "There must only be one of each number in the unpainted cells in each row and column."
-msgstr ""
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Ändra utseende och beteende på spelet."
 
-#: C/hitori.xml:95(para)
-msgid "No painted cell may be adjacent to another, vertically or horizontally."
-msgstr ""
-
-#: C/hitori.xml:96(para)
-msgid "All the unpainted cells must be joined together vertically and horizontally in one group."
-msgstr ""
-
-#: C/hitori.xml:98(para)
-msgid "These are the only three rules of the game, and so there may be multiple solutions to a Hitori puzzle board, although it's unlikely."
-msgstr ""
-
-#: C/hitori.xml:101(title)
-msgid "Interface"
-msgstr "Gränssnitt"
-
-#: C/hitori.xml:102(para)
-msgid "<application>Hitori</application> has only one window; the main window, which consists of the menubar and number board, shown below."
-msgstr ""
-
-#: C/hitori.xml:104(title)
-msgid "<application>Hitori</application> Main Window"
-msgstr "Huvudfönstret i <application>Hitori</application>"
-
-#: C/hitori.xml:109(phrase)
-msgid "Shows <application>Hitori</application> main window, containing the number board, Game and Help menus."
-msgstr ""
-
-#: C/hitori.xml:114(para)
-msgid "To paint a cell, left-click on it; to unpaint it again, left-click on it again. When cells are painted such that none of the three rules are broken, the game will end and the board may no longer be manipulated."
-msgstr ""
-
-#: C/hitori.xml:116(para)
-msgid "<application>Hitori</application> also allows you to highlight cells for your own reference when solving a board. This can be achieved by holding <keycap>Ctrl</keycap> or <keycap>Shift</keycap> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <keycap>Ctrl</keycap> or <keycap>Shift</keycap>."
-msgstr ""
-
-#: C/hitori.xml:122(title)
+#. (itstool) path: page/title
+#: C/customization.page:8
 msgid "Customizing the Game"
 msgstr "Anpassa spelet"
 
-#: C/hitori.xml:123(para)
-msgid "The game can be customized by changing the board size — boards from 5–10 cells square are allowed."
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
 msgstr ""
+"Spelet kan anpassas genom att ändra brädstorleken — bräden med 5–10 celler "
+"per sida är möjligt."
 
-#: C/hitori.xml:124(para)
-msgid "To change the board size, choose an option from <menuchoice><guimenu>Game</guimenu><guimenuitem>Board Size</guimenuitem></menuchoice>. <application>Hitori</application> will ask if you want to stop the current game if you're in the middle of one, then start a new game with the requested board size."
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
 msgstr ""
+"För att ändra brädstorleken, välj ett alternativ från <guiseq><gui style="
+"\"menu\">Spel</gui><gui style=\"menuitem\">Brädstorlek</gui></guiseq>. "
+"<app>Hitori</app> kommer att fråga om du vill avbryta det pågående spelet, "
+"för att sedan starta ett nytt spel med den begärda brädstorleken."
 
-#: C/hitori.xml:134(title)
-msgid "About <application>Hitori</application>"
-msgstr "Om <application>Hitori</application>"
-
-#: C/hitori.xml:135(para)
-msgid "<application>Hitori</application> was written by Philip Withnall (<email>philip@tecnocode.co.uk</email>). To find more information about <application>Hitori</application>, report a bug or make a suggestion about the application or this manual, please visit the <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitori</application> Web page</ulink>."
-msgstr "<application>Hitori</application> skrevs av Philip Withnall (<email>philip@tecnocode.co.uk</email>). För att hitta mer information om <application>Hitori</application>, rapportera ett fel eller föreslå någonting angående detta program eller denna handbok så besök <ulink url=\"http://live.gnome.org/Hitori\" type=\"http\"><application>Hitoris</application> webbsida</ulink>."
-
-#: C/hitori.xml:138(para)
-msgid "This program is distributed under the terms of the GNU General Public license as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version. A <ulink url=\"help:gpl\" type=\"help\">copy of this license</ulink> is included with this documentation; another can be found in the file COPYING included with the source code of this program."
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
-#. Put one translator per line, in the form of NAME <EMAIL>, YEAR1, YEAR2.
-#: C/hitori.xml:0(None)
-msgid "translator-credits"
-msgstr "Daniel Nylander <po@danielnylander.se>, 2009"
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Introduktion till spelet Hitori."
 
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Spelet Hitori"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori är ett litet logikpussel i liknande stil som det mer populära spelet "
+"Sudoku. I det här spelet startar spelaren med ett kvadratiskt bräde av "
+"siffror, och måste <em>tona ner</em> celler tills det inte finns några "
+"dubbletter i någon rad eller kolumn. Följande regler gäller:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Det får bara finnas ett av varje nummer i de icke-nedtonade cellerna i varje "
+"rad och kolumn."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Inga nedtonade celler kan ligga intill varandra, vertikalt eller "
+"horisontellt."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Alla de icke-nedtonade cellerna måste fogas samman vertikalt och "
+"horisontellt i en grupp."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Dessa är de enda tre spelreglerna, så det kan mycket väl finnas flera "
+"lösningar på ett Hitoripussel."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Huvudspelsfönster"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Huvudfönster för <app>Hitori</app>"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Huvudfönster för <app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#. (itstool) path: license/p
+#: C/index.page:11
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Det här programmet är licensierat under <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 "
+"Unported License</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Hjälp för Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Grundläggande idé &amp; användning"
+
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Tips &amp; tricks"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attributen-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Det här programmet är licensierat under <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Att använda <app>Hitori</app> för att spela."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Spela ett spel"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
+msgstr ""
+"För att starta ett nytt spel, välj <guiseq><gui style=\"menu\">Spel</"
+"gui><gui style=\"menuitem\">Nytt spel</gui></guiseq>. Om du redan spelar ett "
+"spel, kommer <app>Hitori</app> att fråga om du vill avbryta det pågående "
+"spelet."
+
+#. (itstool) path: page/p
+#: C/playing.page:12
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"För att tona ner en cell, klickar du på den; för att ta bort nedtoningen, "
+"klicka på den igen. När cellerna är nedtonade så att ingen av de tre "
+"reglerna bryts, är spelet slut och brädet kan inte längre manipuleras."
+
+#. (itstool) path: page/p
+#: C/playing.page:14
+msgid ""
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
+msgstr ""
+"<app>Hitori</app> låter dig också markera celler för egen referens när du "
+"löser pusslet. Detta kan åstadkommas genom att trycka <key>Ctrl</key> eller "
+"<key>Skift</key> och klicka på en cell. De markerar celler på olika sätt, "
+"celler kan markeras på båda sätt samtidigt. Markerade celler kan avmarkeras "
+"genom att klicka på dem igen samtidigt som du trycker antingen <key>Ctrl</"
+"key> eller <key>Shift</key> återigen."
+
+#. (itstool) path: page/p
+#: C/playing.page:18
+msgid ""
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
+msgstr ""
+"För att ångra eller göra om ett drag, välj <guiseq><gui style=\"menu\">Spel</"
+"gui><gui style=\"menuitem\">Ångra</gui></guiseq> eller <guiseq><gui style="
+"\"menu\">Spel</gui><gui style=\"menuitem\">Gör om</gui></guiseq>. Du kan "
+"ångra eller göra om så många drag som du vill utan begränsningar."
+
+#. (itstool) path: page/p
+#: C/playing.page:21
+msgid ""
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"För att få ett tips om vilken cell man kan tona ner , välj <guiseq><gui "
+"style=\"menu\">Spel</gui><gui style=\"menuitem\">Tips</gui></guiseq>. En "
+"cell kommer att markeras med blinkande röd kontur. Detta visar att den "
+"aktuella statusen för cellen (nedtonad eller icke-nedtonad) är felaktig, och "
+"bör ändras för att pusslet ska gå ut."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Strategier för att spela Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Spelstrategier"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
+msgstr ""
+"Hitori är ganska likt spelet Sudoku, genom att det krävs logisk slutledning "
+"för att räkna ut vilka celler att tona ner. En strategi är att använda "
+"<key>Skift</key>-klickning för att markera alla de upprepade siffrorna i "
+"varje <em>kolumn</em>, och sedan använda <key>Ctrl</key>-klickning för att "
+"markera alla de upprepade siffrorna i varje <em>rad</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"När detta är gjort för hela brädet, är de celler som har blivit markerade i "
+"båda riktningarna goda kandidater för att tonas ned, men inte alltid. När "
+"man tonar ned en cell, avmarkeras de andra cellerna med samma nummer i samma "
+"rad och kolumn som den cellen, vilket är ett bra sätt att hålla reda på de "
+"celler som fortfarande bryter mot <link xref=\"game\">regel 1 i Hitori</"
+"link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Ha alltid i beaktande att regel 2 i Hitori innebär att två angränsande "
+"celler inte båda kan tonas ned. <app>Hitori</app> kommer markera de cellerna "
+"som bryter mot regel 2 med rött. På samma sätt kommer grupper av celler som "
+"bryter mot regel 3 genom att de separerar en eller flera icke-nedtonade "
+"celler från andra icke-nedtonade celler att markeras i rött."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
+msgstr ""
+"Om du fastnar på något ställe, välj <guiseq><gui style=\"menu\">Spel</"
+"gui><gui style=\"menuitem\">Tips</gui></guiseq> för att <app>Hitori</app> "
+"ska flagga en cell som ska tonas ned eller ta bort en nedtoning för att "
+"komma närmare en lösning."
