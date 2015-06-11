@@ -102,9 +102,10 @@ gsettings_SCHEMAS = data/org.gnome.hitori.gschema.xml
 @GSETTINGS_RULES@
 
 # Desktop file
-# We can't use INTLTOOL_DESKTOP_RULE here due to lp#605826
 %.desktop: %.desktop.in
-	$(MKDIR_P) $(dir $@); LC_ALL=C $(INTLTOOL_MERGE) -d -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< $@
+	@$(MKDIR_P) $(dir $@)
+	$(AM_V_GEN) $(MSGFMT) --desktop --template $< -o $@-t \
+	  -d $(top_srcdir)/po && mv $@-t $@
 
 desktop_in_files = data/org.gnome.Hitori.desktop.in
 desktopdir = $(datadir)/applications
@@ -118,7 +119,6 @@ CLEANFILES += $(desktop_DATA)
 
 # AppData
 @APPSTREAM_XML_RULES@
-@INTLTOOL_XML_RULE@
 
 appstream_in_files = data/org.gnome.Hitori.appdata.xml.in
 appstream_XML = $(appstream_in_files:.appdata.xml.in=.appdata.xml)
@@ -126,12 +126,14 @@ appstream_XML = $(appstream_in_files:.appdata.xml.in=.appdata.xml)
 EXTRA_DIST += $(appstream_in_files)
 CLEANFILES += $(appstream_XML)
 
+%.appdata.xml: %.appdata.xml.in
+	@$(MKDIR_P) $(dir $@)
+	$(AM_V_GEN) $(MSGFMT) --xml --template $< -o $@-t \
+	  -d $(top_srcdir)/po && mv $@-t $@
+
 # Gubbins
 EXTRA_DIST += \
 	autogen.sh \
-	intltool-extract.in \
-	intltool-merge.in \
-	intltool-update.in \
 	README \
 	COPYING \
 	COPYING-DOCS \
@@ -144,12 +146,6 @@ EXTRA_DIST += \
 	hitori.doap \
 	$(NULL)
 
-DISTCLEANFILES = \
-	intltool-extract \
-	intltool-merge \
-	intltool-update \
-	$(NULL)
-
 MAINTAINERCLEANFILES = \
 	$(GITIGNORE_MAINTAINERCLEANFILES_TOPLEVEL) \
 	$(GITIGNORE_MAINTAINERCLEANFILES_MAKEFILE_IN) \
@@ -158,9 +154,6 @@ MAINTAINERCLEANFILES = \
 	compile \
 	config.h.in \
 	config.rpath \
-	intltool-extract.in \
-	intltool-merge.in \
-	intltool-update.in \
 	`find "m4" -type f -name "*.m4" -print` \
 	po/Makevars.template \
 	po/Rules-quot \

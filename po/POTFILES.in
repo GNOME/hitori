@@ -1,9 +1,8 @@
 # List of source files containing translatable strings.
-[encoding: UTF-8]
 data/org.gnome.Hitori.desktop.in
 data/org.gnome.Hitori.appdata.xml.in
-[type: gettext/glade]data/hitori-menus.ui
-[type: gettext/glade]data/hitori.ui
+data/hitori-menus.ui
+data/hitori.ui
 data/org.gnome.hitori.gschema.xml
 src/interface.c
 src/main.c

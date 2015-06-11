@@ -6,21 +6,21 @@
   <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
 
   <!-- Translators: the name of the application as it appears in a software center -->
-  <_name>GNOME Hitori</_name>
+  <name>GNOME Hitori</name>
 
   <!-- Translators: the brief summary of the application as it appears in a software center. -->
-  <_summary>Play the Hitori puzzle game</_summary>
+  <summary>Play the Hitori puzzle game</summary>
   <description>
 
     <!-- Translators: These are the application description paragraphs in the AppData file. -->
-    <_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
-    <_p>
+    <p>Hitori is a logic game similar to the popular game of Sudoku.</p>
+    <p>
       You play the game against the clock, aiming to eliminate all the duplicate
       numbers in each row and column in the fastest time.
       Multiple sizes of game board are supported, and you can place markers on
       cells to help work out the solution.
       If you get stuck, the game can give you a hint.
-    </_p>
+    </p>
   </description>
   <screenshots>
     <screenshot type="default" width="400" height="480">

@@ -94,9 +94,9 @@ constructed (GObject *object)
 	g_application_set_flags (G_APPLICATION (object), G_APPLICATION_HANDLES_COMMAND_LINE);
 
 	/* Localisation */
-	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-	textdomain (GETTEXT_PACKAGE);
+	bindtextdomain (PACKAGE, PACKAGE_LOCALE_DIR);
+	bind_textdomain_codeset (PACKAGE, "UTF-8");
+	textdomain (PACKAGE);
 
 	g_set_application_name (_("Hitori"));
 	gtk_window_set_default_icon_name ("org.gnome.Hitori");
@@ -223,8 +223,8 @@ handle_command_line (GApplication *application, GApplicationCommandLine *command
 
 	/* Options */
 	context = g_option_context_new (_("- Play a game of Hitori"));
-	g_option_context_set_translation_domain (context, GETTEXT_PACKAGE);
-	g_option_context_add_main_entries (context, options, GETTEXT_PACKAGE);
+	g_option_context_set_translation_domain (context, PACKAGE);
+	g_option_context_add_main_entries (context, options, PACKAGE);
 
 	if (g_option_context_parse (context, &argc, &argv, &error) == TRUE) {
 		/* Activate the remote instance */

@@ -75,7 +75,7 @@ hitori_create_interface (Hitori *hitori)
 
 	builder = gtk_builder_new_from_resource ("/org/gnome/Hitori/ui/hitori.ui");
 
-	gtk_builder_set_translation_domain (builder, GETTEXT_PACKAGE);
+	gtk_builder_set_translation_domain (builder, PACKAGE);
 	gtk_builder_connect_signals (builder, hitori);
 
 	/* Setup the main window */
