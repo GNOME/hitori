@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Pedro Albuquerque <palbuquerque73@openmailbox.com>, 2015.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Hitori\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2015-06-07 22:08+0000\n"
+"PO-Revision-Date: 2015-06-27 08:38+0100\n"
+"Last-Translator: Pedro Albuquerque <palbuquerque73@openmailbox.com>\n"
+"Language-Team: Português <palbuquerque73@openmailbox.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"X-Project-Style: gnome\n"
+
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
+msgid "Hitori"
+msgstr "Hitori"
+
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
+msgid "Play the Hitori puzzle game"
+msgstr "Jogue os puzzles Hitori"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;jogo;lógica;grelha;"
+
+#. Translators: the name of the application as it appears in a software center
+#: ../data/hitori.appdata.xml.in.h:2
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: ../data/hitori.appdata.xml.in.h:6
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "O Hitori é um jogo de lógica similar ao popular Sudoku."
+
+#: ../data/hitori.appdata.xml.in.h:7
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Joga-se a contrarrelógio, tentando eliminar todos os números duplicados em "
+"cada linha e coluna no mínimo de tempo. São suportados vários tamanhos de "
+"tabuleiro e pode colocar marcadores em células para o ajudar a descobrir a "
+"solução. Se ficar encravado, o jogo dá-lhe uma dica."
+
+#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
+msgid "_New Game"
+msgstr "_Novo jogo"
+
+#: ../data/hitori-menus.ui.h:2
+msgid "Board _Size"
+msgstr "_Tamanho do tabuleiro"
+
+#: ../data/hitori-menus.ui.h:3
+msgid "5×5"
+msgstr "5×5"
+
+#: ../data/hitori-menus.ui.h:4
+msgid "6×6"
+msgstr "6×6"
+
+#: ../data/hitori-menus.ui.h:5
+msgid "7×7"
+msgstr "7×7"
+
+#: ../data/hitori-menus.ui.h:6
+msgid "8×8"
+msgstr "8×8"
+
+#: ../data/hitori-menus.ui.h:7
+msgid "9×9"
+msgstr "9×9"
+
+#: ../data/hitori-menus.ui.h:8
+msgid "10×10"
+msgstr "10×10"
+
+#: ../data/hitori-menus.ui.h:9
+msgid "_Help"
+msgstr "A_Juda"
+
+#: ../data/hitori-menus.ui.h:10
+msgid "_About"
+msgstr "_Sobre"
+
+#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Sair"
+
+#: ../data/hitori.ui.h:2
+msgid "Undo your last move"
+msgstr "Desfazer a última jogada"
+
+#: ../data/hitori.ui.h:3
+msgid "Redo a move"
+msgstr "Refazer uma jogada"
+
+#: ../data/hitori.ui.h:4
+msgid "Get a hint for your next move"
+msgstr "Obter um dica para a jogada seguinte"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:1
+msgid "Board size"
+msgstr "Tamanho do tabuleiro"
+
+#: ../data/org.gnome.hitori.gschema.xml.h:2
+msgid "The size of the board, in cells."
+msgstr "O tamanho do tabuleiro, em células."
+
+#: ../src/interface.c:630
+msgid "The help contents could not be displayed"
+msgstr "Impossível mostrar o conteúdo da ajuda"
+
+#: ../src/interface.c:654
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
+
+#: ../src/interface.c:655
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Um jogo de lógica originalmente desenhado por Nikoli"
+
+#: ../src/interface.c:657
+msgid "translator-credits"
+msgstr "Pedro Albuquerque <palbuquerque73@gmail.com>"
+
+#: ../src/interface.c:661
+msgid "Hitori Website"
+msgstr "Página Web do Hitori"
+
+#: ../src/main.c:209
+msgid "Enable debug mode"
+msgstr "Ativar modo de depuração"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: ../src/main.c:211
+msgid "Seed the board generation"
+msgstr "Semente de geração do tabuleiro"
+
+#. Options
+#: ../src/main.c:225
+msgid "- Play a game of Hitori"
+msgstr "- jogar um jogo de Hitori"
+
+#. Print an error
+#: ../src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Impossível processar as opções da linha de comando: %s\n"
+
+#: ../src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "Quer parar o jogo atual?"
+
+#: ../src/main.c:304
+msgid "Keep _Playing"
+msgstr "_Continuar a jogar"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: ../src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "Ganhou em %02u:%02u!"
+
+#: ../src/rules.c:273
+msgid "_Play Again"
+msgstr "_Jogar novamente"
