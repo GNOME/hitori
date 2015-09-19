@@ -1,28 +1,36 @@
 # German translation of Hitori.
 # Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2012.
+# Bernd Homuth <dev@hmt.im>, 2015.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-09-20 21:22+0000\n"
-"PO-Revision-Date: 2014-09-21 22:47+0100\n"
-"Last-Translator: Christian Kirbach <christian.kirbach@gmail.com>\n"
-"Language-Team: German <gnome-de@gnome.org>\n"
+"POT-Creation-Date: 2015-03-05 10:30+0000\n"
+"PO-Revision-Date: 2015-09-18 20:32+0200\n"
+"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
+"Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Gtranslator 2.91.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Das Hitori-Puzzle spielen"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;spiel;logik,gitter;"
 
 #. Translators: the name of the application as it appears in a software center
 #: ../data/hitori.appdata.xml.in.h:2
@@ -30,11 +38,11 @@ msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori ist ein Logikspiel, ähnlich dem bekannten Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -47,59 +55,59 @@ msgstr ""
 "Markierungen verwenden, die Ihnen bei der Lösung der Aufgabe helfen. Falls "
 "Sie mal nicht weiterkommen, kann Ihnen das Spiel einen Tipp geben."
 
-#: ../data/hitori.ui.h:1 ../src/main.c:305
+#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "_Neues Spiel"
 
-#: ../data/hitori.ui.h:2
+#: ../data/hitori-menus.ui.h:2
 msgid "Board _Size"
 msgstr "Spielfeld_größe"
 
-#: ../data/hitori.ui.h:3
+#: ../data/hitori-menus.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:4
+#: ../data/hitori-menus.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:5
+#: ../data/hitori-menus.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:6
+#: ../data/hitori-menus.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori-menus.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori-menus.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori-menus.ui.h:9
 msgid "_Help"
 msgstr "_Hilfe"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori-menus.ui.h:10
 msgid "_About"
 msgstr "_Info"
 
-#: ../data/hitori.ui.h:11 ../src/rules.c:272
+#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
 msgstr "_Beenden"
 
-#: ../data/hitori.ui.h:13
+#: ../data/hitori.ui.h:2
 msgid "Undo your last move"
 msgstr "Den letzten Zug rückgängig machen"
 
-#: ../data/hitori.ui.h:14
+#: ../data/hitori.ui.h:3
 msgid "Redo a move"
 msgstr "Den letzten Zug wiederholen"
 
-#: ../data/hitori.ui.h:15
+#: ../data/hitori.ui.h:4
 msgid "Get a hint for your next move"
 msgstr "Für den nächsten Zug einen Tipp bekommen"
 
@@ -111,30 +119,26 @@ msgstr "Spielfeldgröße"
 msgid "The size of the board, in cells."
 msgstr "Die Größe des Spielfelds in Zellen."
 
-#: ../src/interface.c:87
-#, c-format
-msgid "UI file “%s” could not be loaded"
-msgstr "Benutzerschnittstellen-Datei »%s« konnte nicht geladen werden."
-
-#: ../src/interface.c:661
+#: ../src/interface.c:630
 msgid "The help contents could not be displayed"
 msgstr "Die Hilfe konnte nicht angezeigt werden."
 
-#: ../src/interface.c:685
+#: ../src/interface.c:654
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2012 Philip Withnall"
 
-#: ../src/interface.c:686
+#: ../src/interface.c:655
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Ein von Nikoli entworfenes Logikspiel"
 
-#: ../src/interface.c:688
+#: ../src/interface.c:657
 msgid "translator-credits"
 msgstr ""
-"Mario Blättermann <mario.blaettermann@gmail.com>Christian Kirbach <christian."
-"kirbach@gmail.com>"
+"Mario Blättermann <mario.blaettermann@gmail.com>\n"
+"Christian Kirbach <christian.kirbach@gmail.com>\n"
+"Bernd Homuth <dev@hmt.im>"
 
-#: ../src/interface.c:692
+#: ../src/interface.c:661
 msgid "Hitori Website"
 msgstr "Hitori-Webseite"
 
@@ -170,13 +174,15 @@ msgstr "_Weiterspielen"
 #. * the number of seconds.
 #: ../src/rules.c:267
 #, c-format
-#| msgid "You've won in a time of %02u:%02u!"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Sie haben in einer Zeit von %02u:%02u gewonnen!"
 
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "Nochmal _spielen"
+
+#~ msgid "UI file “%s” could not be loaded"
+#~ msgstr "Benutzerschnittstellen-Datei »%s« konnte nicht geladen werden."
 
 #~ msgid "_Game"
 #~ msgstr "_Spiel"
