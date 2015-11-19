@@ -56,24 +56,24 @@ update-icon-cache:
 	fi
 
 icon16dir = $(icon_dir)/16x16/apps
-icon16_DATA = data/icons/16x16/hitori.png
+icon16_DATA = data/icons/16x16/org.gnome.Hitori.png
 icon22dir = $(icon_dir)/22x22/apps
-icon22_DATA = data/icons/22x22/hitori.png
+icon22_DATA = data/icons/22x22/org.gnome.Hitori.png
 icon32dir = $(icon_dir)/32x32/apps
-icon32_DATA = data/icons/32x32/hitori.png
+icon32_DATA = data/icons/32x32/org.gnome.Hitori.png
 icon48dir = $(icon_dir)/48x48/apps
-icon48_DATA = data/icons/48x48/hitori.png
+icon48_DATA = data/icons/48x48/org.gnome.Hitori.png
 iconsymbolicdir = $(icon_dir)/symbolic/apps
-iconsymbolic_DATA = data/icons/symbolic/hitori-symbolic.svg
+iconsymbolic_DATA = data/icons/symbolic/org.gnome.Hitori-symbolic.svg
 
 EXTRA_DIST = \
-	data/icons/16x16/hitori.svg \
+	data/icons/16x16/org.gnome.Hitori.svg \
 	$(icon16_DATA) \
-	data/icons/22x22/hitori.svg \
+	data/icons/22x22/org.gnome.Hitori.svg \
 	$(icon22_DATA) \
-	data/icons/32x32/hitori.svg \
+	data/icons/32x32/org.gnome.Hitori.svg \
 	$(icon32_DATA) \
-	data/icons/48x48/hitori.svg \
+	data/icons/48x48/org.gnome.Hitori.svg \
 	$(icon48_DATA) \
 	$(iconsymbolic_DATA) \
 	$(NULL)
@@ -100,7 +100,7 @@ gsettings_SCHEMAS = data/org.gnome.hitori.gschema.xml
 %.desktop: %.desktop.in
 	$(MKDIR_P) $(dir $@); LC_ALL=C $(INTLTOOL_MERGE) -d -u -c $(top_builddir)/po/.intltool-merge-cache $(top_srcdir)/po $< $@
 
-desktop_in_files = data/hitori.desktop.in
+desktop_in_files = data/org.gnome.Hitori.desktop.in
 desktopdir = $(datadir)/applications
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 
@@ -114,7 +114,7 @@ CLEANFILES += $(desktop_DATA)
 @APPSTREAM_XML_RULES@
 @INTLTOOL_XML_RULE@
 
-appstream_in_files = data/hitori.appdata.xml.in
+appstream_in_files = data/org.gnome.Hitori.appdata.xml.in
 appstream_XML = $(appstream_in_files:.appdata.xml.in=.appdata.xml)
 
 EXTRA_DIST += $(appstream_in_files)
