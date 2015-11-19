@@ -197,4 +197,19 @@ $(srcdir)/ChangeLog:
 	fi
 .PHONY: $(srcdir)/ChangeLog
 
+# xdg-app bundle
+org.gnome.Hitori.bundle:
+	$(MKDIR_P) $(abs_top_builddir)/xdg-app-build/hitori
+	$(MKDIR_P) $(abs_top_builddir)/xdg-app-repos/hitori
+	(cd $(top_srcdir) && \
+	 xdg-app build-init $(abs_top_builddir)/xdg-app-build/hitori org.gnome.Hitori org.gnome.Sdk org.gnome.Platform 3.18 && \
+	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori ./configure --prefix=/app && \
+	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori make && \
+	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori make install && \
+	 xdg-app build-finish --command=hitori --socket=x11 --socket=session-bus --talk-name=ca.desrt.dconf $(abs_top_builddir)/xdg-app-build/hitori)
+	xdg-app build-export $(abs_top_builddir)/xdg-app-repos/hitori $(abs_top_builddir)/xdg-app-build/hitori
+	xdg-app repo-update $(abs_top_builddir)/xdg-app-repos/hitori
+
+.PHONY: org.gnome.Hitori.bundle
+
 -include $(top_srcdir)/git.mk
