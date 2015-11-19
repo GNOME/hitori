@@ -206,7 +206,7 @@ org.gnome.Hitori.bundle:
 	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori ./configure --prefix=/app && \
 	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori make && \
 	 xdg-app build $(abs_top_builddir)/xdg-app-build/hitori make install && \
-	 xdg-app build-finish --command=hitori --socket=x11 --socket=session-bus --talk-name=ca.desrt.dconf $(abs_top_builddir)/xdg-app-build/hitori)
+	 xdg-app build-finish --command=hitori --socket=x11 --socket=session-bus --talk-name=ca.desrt.dconf --filesystem=home $(abs_top_builddir)/xdg-app-build/hitori)
 	xdg-app build-export $(abs_top_builddir)/xdg-app-repos/hitori $(abs_top_builddir)/xdg-app-build/hitori
 	xdg-app repo-update $(abs_top_builddir)/xdg-app-repos/hitori
 
