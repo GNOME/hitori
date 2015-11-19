@@ -1,5 +1,15 @@
 Major new features in version...
 
+3.16.2:
+* Fix build error with Clang
+* Translations:
+** an (Daniel Martinez)
+** ar (Abderrahim Kitouni, Safa Alfulaij, yassine birig)
+** de (Bernd Homuth, Christian Kirbach)
+** oc (Cédric Valmary)
+** pl (Piotr Drąg)
+** sv (Erik Sköldås)
+
 3.16.1:
 * Updated symbolic icon
 
