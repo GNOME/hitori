@@ -1,5 +1,9 @@
 Major new features in version...
 
+3.19.1:
+* Rename icon, desktop and appdata files to use ‘org.gnome.Hitori’ prefix
+* Remove dependency on gnome-common in favour of autoconf-archive (or m4-common)
+
 3.16.1:
 * Updated symbolic icon
 
