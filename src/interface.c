@@ -655,7 +655,7 @@ about_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 				"comments", _("A logic puzzle originally designed by Nikoli"),
 				"authors", authors,
 				"translator-credits", _("translator-credits"),
-				"logo-icon-name", "hitori",
+				"logo-icon-name", "org.gnome.Hitori",
 				"license-type", GTK_LICENSE_GPL_3_0,
 				"wrap-license", TRUE,
 				"website-label", _("Hitori Website"),
