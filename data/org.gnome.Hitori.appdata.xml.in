@@ -23,4 +23,10 @@
 	<url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
 	<updatecontact>philip_at_tecnocode.co.uk</updatecontact>
 	<project_group>GNOME</project_group>
+	<kudos>
+		<kudo>AppMenu</kudo>
+		<kudo>HighContrast</kudo>
+		<kudo>ModernToolkit</kudo>
+		<kudo>UserDocs</kudo>
+	</kudos>
 </application>
