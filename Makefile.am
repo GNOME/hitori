@@ -167,7 +167,7 @@ MAINTAINERCLEANFILES = \
 	po/remove-potcdate.sin \
 	$(NULL)
 
-DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appstream-util
+AM_DISTCHECK_CONFIGURE_FLAGS = --disable-scrollkeeper --enable-appstream-util
 
 # Copy all the spec files. Of course, only one is actually used.
 dist-hook:
