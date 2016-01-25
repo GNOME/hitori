@@ -1,5 +1,5 @@
 # German translation of Hitori.
-# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2012.
+# Mario Blättermann <mario.blaettermann@gmail.com>, 2009-2012, 2016.
 # Bernd Homuth <dev@hmt.im>, 2015.
 #
 msgid ""
@@ -7,44 +7,46 @@ msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2015-03-05 10:30+0000\n"
-"PO-Revision-Date: 2015-09-18 20:32+0200\n"
-"Last-Translator: Bernd Homuth <dev@hmt.im>\n"
+"POT-Creation-Date: 2016-01-25 15:19+0000\n"
+"PO-Revision-Date: 2016-01-25 21:09+0100\n"
+"Last-Translator: Mario Blättermann <mario.blaettermann@gmail.com>\n"
 "Language-Team: Deutsch <gnome-de@gnome.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Poedit 1.8.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
+#: ../data/org.gnome.Hitori.desktop.in.h:1 ../data/hitori.ui.h:1
+#: ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
+#: ../data/org.gnome.Hitori.desktop.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Das Hitori-Puzzle spielen"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/hitori.desktop.in.h:4
+#: ../data/org.gnome.Hitori.desktop.in.h:4
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;spiel;logik,gitter;"
 
 #. Translators: the name of the application as it appears in a software center
-#: ../data/hitori.appdata.xml.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:2
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:6
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori ist ein Logikspiel, ähnlich dem bekannten Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:7
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:7
 msgid ""
-"You play the game against the clock, aiming to eliminate all the duplicate "
+"You play the game against the clock, aiming to eliminate all the duplicat "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
