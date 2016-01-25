@@ -1,32 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014 Philip Withnall <philip@tecnocode.co.uk> -->
-<application>
-	<id type="desktop">hitori.desktop</id>
-	<metadata_license>CC-BY-SA-3.0</metadata_license>
-	<project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
-	<!-- Translators: the name of the application as it appears in a software center -->
-	<_name>GNOME Hitori</_name>
-	<!-- Translators: the brief summary of the application as it appears in a software center. -->
-	<_summary>Play the Hitori puzzle game</_summary>
-	<description>
-		<!-- Translators: These are the application description paragraphs in the AppData file. -->
-		<_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
-		<_p>You play the game against the clock, aiming to eliminate all
-		    the duplicate numbers in each row and column in the fastest
-		    time. Multiple sizes of game board are supported, and you
-		    can place markers on cells to help work out the solution.
-		    If you get stuck, the game can give you a hint.</_p>
-	</description>
-	<screenshots>
-		<screenshot type="default" width="400" height="480">https://people.gnome.org/~mcatanzaro/hitori.png</screenshot>
-	</screenshots>
-	<url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
-	<updatecontact>philip_at_tecnocode.co.uk</updatecontact>
-	<project_group>GNOME</project_group>
-	<kudos>
-		<kudo>AppMenu</kudo>
-		<kudo>HighContrast</kudo>
-		<kudo>ModernToolkit</kudo>
-		<kudo>UserDocs</kudo>
-	</kudos>
-</application>
+<component type="desktop">
+  <id>hitori.desktop</id>
+  <metadata_license>CC-BY-SA-3.0</metadata_license>
+  <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
+
+  <!-- Translators: the name of the application as it appears in a software center -->
+  <_name>GNOME Hitori</_name>
+
+  <!-- Translators: the brief summary of the application as it appears in a software center. -->
+  <_summary>Play the Hitori puzzle game</_summary>
+  <description>
+
+    <!-- Translators: These are the application description paragraphs in the AppData file. -->
+    <_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
+    <_p>
+      You play the game against the clock, aiming to eliminate all the duplicat
+      numbers in each row and column in the fastest time.
+      Multiple sizes of game board are supported, and you can place markers on
+      cells to help work out the solution.
+      If you get stuck, the game can give you a hint.
+    </_p>
+  </description>
+  <screenshots>
+    <screenshot type="default" width="400" height="480">
+      <image>https://people.gnome.org/~mcatanzaro/hitori.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=hitori</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="help">https://help.gnome.org/users/hitori/stable/</url>
+  <update_contact>philip_at_tecnocode.co.uk</update_contact>
+  <project_group>GNOME</project_group>
+  <kudos>
+    <kudo>AppMenu</kudo>
+    <kudo>HighContrast</kudo>
+    <kudo>ModernToolkit</kudo>
+    <kudo>UserDocs</kudo>
+  </kudos>
+  <translation type="gettext">hitori</translation>
+</component>
