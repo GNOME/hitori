@@ -15,7 +15,7 @@
     <!-- Translators: These are the application description paragraphs in the AppData file. -->
     <_p>Hitori is a logic game similar to the popular game of Sudoku.</_p>
     <_p>
-      You play the game against the clock, aiming to eliminate all the duplicat
+      You play the game against the clock, aiming to eliminate all the duplicate
       numbers in each row and column in the fastest time.
       Multiple sizes of game board are supported, and you can place markers on
       cells to help work out the solution.
