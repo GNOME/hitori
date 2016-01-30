@@ -41,7 +41,12 @@ APPSTREAM_XML
 
 # Dependencies
 AC_CHECK_FUNCS([atexit])
-PKG_CHECK_MODULES([GENERAL],[glib-2.0 gio-2.0 >= 2.32 gtk+-3.0 >= 3.15.0 gmodule-2.0 cairo >= 1.4])
+PKG_CHECK_MODULES([GENERAL],[
+  glib-2.0
+  gio-2.0 >= 2.32
+  gtk+-3.0 >= 3.15.0
+  gmodule-2.0 cairo >= 1.4
+])
 
 # Output!
 AC_CONFIG_FILES([
