@@ -21,8 +21,6 @@ nodist_src_hitori_SOURCES = \
 
 src_hitori_CPPFLAGS = \
 	-DPACKAGE_LOCALE_DIR=\""$(datadir)/locale"\" \
-	-DPACKAGE_SRC_DIR=\""$(srcdir)"\" \
-	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
 	$(DISABLE_DEPRECATED) \
 	$(NULL)
 
