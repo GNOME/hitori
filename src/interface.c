@@ -100,7 +100,9 @@ hitori_create_interface (Hitori *hitori)
 
 	/* Set up font descriptions for the drawing area */
 	style_context = gtk_widget_get_style_context (hitori->drawing_area);
-	gtk_style_context_get (style_context, 0, GTK_STYLE_PROPERTY_FONT, &font, NULL);
+	gtk_style_context_get (style_context,
+	                       gtk_style_context_get_state (style_context),
+	                       GTK_STYLE_PROPERTY_FONT, &font, NULL);
 	hitori->normal_font_desc = pango_font_description_copy (font);
 	hitori->painted_font_desc = pango_font_description_copy (font);
 
@@ -138,15 +140,18 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat c
 	gchar *text;
 	PangoLayout *layout;
 	gint text_width, text_height;
-	GtkStateFlags state = 0;
+	GtkStateFlags state;
 	gboolean painted = FALSE;
 	PangoFontDescription *font_desc;
 	GtkBorder border;
 	GdkRGBA colour = {0.0, 0.0, 0.0, 0.0};
 
+	state = gtk_style_context_get_state (style_context);
+
 	if (hitori->board[iter.x][iter.y].status & CELL_PAINTED) {
 		painted = TRUE;
 		state = GTK_STATE_FLAG_INSENSITIVE;
+		gtk_style_context_set_state (style_context, state);
 	}
 
 	/* Set up the border */
