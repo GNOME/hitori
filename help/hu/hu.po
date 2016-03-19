@@ -1,15 +1,14 @@
 # Hungarian translation for hitori.
-# Copyright (C) 2013 hitori's COPYRIGHT HOLDER
+# Copyright (C) 2013, 2014, 2016. Free Software Foundation, Inc.
 # This file is distributed under the same license as the hitori package.
 #
-# Balázs Úr <urbalazs at gmail dot com>, 2013.
-# Balázs Úr <urbalazs@gmail.com>, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2014.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "POT-Creation-Date: 2014-09-22 16:36+0000\n"
-"PO-Revision-Date: 2014-12-07 14:39+0100\n"
+"PO-Revision-Date: 2016-03-19 10:39+0100\n"
 "Last-Translator: Gabor Kelemen <kelemeng at gnome dot hu>\n"
 "Language-Team: Hungarian <openscope at googlegroups dot com>\n"
 "Language: hu\n"
@@ -24,7 +23,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng at gnome dot hu>, 2014.\n"
-"Úr Balázs <urbalazs at gmail dot com>, 2014."
+"Úr Balázs <urbalazs at gmail dot com>, 2013, 2014."
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
@@ -70,8 +69,7 @@ msgid ""
 "external ref='figures/hitori_main_window.png' "
 "md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgstr ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+"LEFORDÍTVA"
 
 #. (itstool) path: info/desc
 #: C/game.page:6
