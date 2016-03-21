@@ -1,5 +1,15 @@
 Major new features in version...
 
+3.20.0:
+* Various AppData fixes
+* Fix a GTK+ warning about styling with newer GTK+ versions
+* Translations:
+** bg (Alexander Shopov)
+** de (Mario Blättermann)
+** hu (Gabor Kelemen)
+** lt (Aurimas Černius)
+** oc (Cédric Valmary)
+
 3.19.1:
 * Rename icon, desktop and appdata files to use ‘org.gnome.Hitori’ prefix
 * Remove dependency on gnome-common in favour of autoconf-archive (or m4-common)

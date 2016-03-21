@@ -1,4 +1,4 @@
-AC_INIT([Hitori],[3.19.1],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[https://wiki.gnome.org/Apps/Hitori])
+AC_INIT([Hitori],[3.20.0],[https://bugzilla.gnome.org/enter_bug.cgi?product=hitori],[hitori],[https://wiki.gnome.org/Apps/Hitori])
 AX_IS_RELEASE([git-directory])
 
 AM_INIT_AUTOMAKE([check-news dist-xz no-dist-gzip subdir-objects])
