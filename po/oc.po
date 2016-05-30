@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&"
-"keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-03-04 15:42+0000\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2016-05-05 19:54+0000\n"
 "PO-Revision-Date: 2016-05-05 21:46+0200\n"
 "Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot En Òc\n"
@@ -124,23 +124,23 @@ msgstr "Talha del platèu"
 msgid "The size of the board, in cells."
 msgstr "Talha del platèu, en cellulas"
 
-#: ../src/interface.c:630
+#: ../src/interface.c:635
 msgid "The help contents could not be displayed"
 msgstr "Impossible d'afichar lo contengut de l'ajuda"
 
-#: ../src/interface.c:654
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:660
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un copacap de logica concebut a l'origina per Nikoli."
 
-#: ../src/interface.c:657
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr "Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016"
 
-#: ../src/interface.c:661
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Site Web de Hitori"
 
@@ -217,5 +217,5 @@ msgstr "_Rejogar"
 #~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
 #~ msgstr ""
 #~ "Vos cal aver recebut una còpia de la Licéncia Publica Generala GNU en "
-#~ "meteis temps que Hitori. Siquenon, consultatz <http://www.gnu.org/licenses/"
-#~ ">."
+#~ "meteis temps que Hitori. Siquenon, consultatz <http://www.gnu.org/"
+#~ "licenses/>."
