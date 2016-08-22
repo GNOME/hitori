@@ -1,63 +1,61 @@
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Aviary.pl
-# Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
-# pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
-# gnomepl@aviary.pl
-# -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2015.
-# Aviary.pl <gnomepl@aviary.pl>, 2012-2015.
+# Polish translation for hitori.
+# Copyright © 2012-2016 the hitori authors.
+# This file is distributed under the same license as the hitori package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2016.
+# Aviary.pl <community-poland@mozilla.org>, 2012-2016.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-25 14:30+0200\n"
-"PO-Revision-Date: 2015-08-25 14:31+0200\n"
+"POT-Creation-Date: 2016-08-22 21:12+0200\n"
+"PO-Revision-Date: 2016-08-22 21:13+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <gnomepl@aviary.pl>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
-"X-Poedit-Language: Polish\n"
-"X-Poedit-Country: Poland\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
+#: ../data/org.gnome.Hitori.desktop.in.h:1 ../data/hitori.ui.h:1
+#: ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
+#: ../data/org.gnome.Hitori.desktop.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "Gra logiczna Hitori"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/hitori.desktop.in.h:4
+#: ../data/org.gnome.Hitori.desktop.in.h:4
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;puzle;gra;logiczna;siatka;"
 
 #. Translators: the name of the application as it appears in a software center
-#: ../data/hitori.appdata.xml.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:2
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:6
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori to gra logiczna, podobna do popularnej gry Sudoku."
 
-#: ../data/hitori.appdata.xml.in.h:7
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Należy jak najszybciej wyeliminować podwójne liczby w każdym rzędzie i "
-"kolumnie przed upływem określonego czasu. Obsługiwane są różne rozmiary "
-"planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
-"rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
+"Należy jak najszybciej wyeliminować podwójne liczby w każdym rzędzie "
+"i kolumnie przed upływem określonego czasu. Obsługiwane są różne rozmiary "
+"planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
+"rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
 
 #: ../data/hitori-menus.ui.h:1 ../src/main.c:305
 msgid "_New Game"
@@ -97,7 +95,7 @@ msgstr "Pomo_c"
 
 #: ../data/hitori-menus.ui.h:10
 msgid "_About"
-msgstr "_O grze"
+msgstr "_O grze"
 
 #: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
@@ -121,27 +119,27 @@ msgstr "Rozmiar planszy"
 
 #: ../data/org.gnome.hitori.gschema.xml.h:2
 msgid "The size of the board, in cells."
-msgstr "Rozmiar planszy w komórkach."
+msgstr "Rozmiar planszy w komórkach."
 
-#: ../src/interface.c:630
+#: ../src/interface.c:635
 msgid "The help contents could not be displayed"
 msgstr "Nie można wyświetlić treści pomocy"
 
-#: ../src/interface.c:654
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
-msgstr "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007-2010 Philip Withnall"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:660
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logiczna układanka oryginalnie zaprojektowana przez firmę Nikoli."
 
-#: ../src/interface.c:657
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2015\n"
-"Aviary.pl <gnomepl@aviary.pl>, 2012-2015"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2016\n"
+"Aviary.pl <community-poland@mozilla.org>, 2012-2016"
 
-#: ../src/interface.c:661
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Witryna gry Hitori"
 
@@ -178,7 +176,7 @@ msgstr "_Graj dalej"
 #: ../src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Wygrano w czasie %02u∶%02u!"
+msgstr "Wygrano w czasie %02u∶%02u!"
 
 #: ../src/rules.c:273
 msgid "_Play Again"
