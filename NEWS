@@ -1,5 +1,15 @@
 Major new features in version...
 
+3.22.0:
+* Various AppData fixes
+* Translations:
+** fa (Arash Mousavi)
+** fur (Fabio Tomat)
+** oc (Cédric Valmary)
+** pl (Piotr Drąg)
+** pt (Sérgio Cardeira)
+** sv (Anders Jonsson)
+
 3.20.0:
 * Various AppData fixes
 * Fix a GTK+ warning about styling with newer GTK+ versions
