@@ -8,35 +8,43 @@ msgstr ""
 "Project-Id-Version: GNOME\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2014-08-02 09:17+0000\n"
-"PO-Revision-Date: 2014-09-23 18:29+0800\n"
-"Last-Translator: Yunqiang Su <wzssyqa@gmail.com>\n"
+"POT-Creation-Date: 2016-03-09 00:23+0000\n"
+"PO-Revision-Date: 2015-11-11 09:18+0800\n"
+"Last-Translator: liushuyu <liushuyu_011@126.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.9\n"
+"X-Generator: Poedit 1.8.6\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:12 ../src/main.c:101
+#: ../data/org.gnome.Hitori.desktop.in.h:1 ../data/hitori.ui.h:1
+#: ../src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: ../data/org.gnome.Hitori.desktop.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:4
 msgid "Play the Hitori puzzle game"
 msgstr "玩 Hitori 益智游戏"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: ../data/org.gnome.Hitori.desktop.in.h:4
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;game;logic;grid;解谜;游戏;逻辑;网格;"
+
 #. Translators: the name of the application as it appears in a software center
-#: ../data/hitori.appdata.xml.in.h:2
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:2
 msgid "GNOME Hitori"
 msgstr "GNOMR Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:4
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:6
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori 是一款类似数独(Sudoku)的逻辑类益智游戏。"
 
-#: ../data/hitori.appdata.xml.in.h:5
+#: ../data/org.gnome.Hitori.appdata.xml.in.h:7
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -47,59 +55,59 @@ msgstr ""
 "个游戏还支持多种面板尺寸，你也可以在每一格里做一些方便解决问题的标注。如果你"
 "一时无法解决，游戏还可以给你一些提示。"
 
-#: ../data/hitori.ui.h:1 ../src/main.c:305
+#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
 msgid "_New Game"
 msgstr "新游戏(_N)"
 
-#: ../data/hitori.ui.h:2
+#: ../data/hitori-menus.ui.h:2
 msgid "Board _Size"
 msgstr "面板大小(_S)"
 
-#: ../data/hitori.ui.h:3
+#: ../data/hitori-menus.ui.h:3
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori.ui.h:4
+#: ../data/hitori-menus.ui.h:4
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori.ui.h:5
+#: ../data/hitori-menus.ui.h:5
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori.ui.h:6
+#: ../data/hitori-menus.ui.h:6
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori.ui.h:7
+#: ../data/hitori-menus.ui.h:7
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori.ui.h:8
+#: ../data/hitori-menus.ui.h:8
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori.ui.h:9
+#: ../data/hitori-menus.ui.h:9
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: ../data/hitori.ui.h:10
+#: ../data/hitori-menus.ui.h:10
 msgid "_About"
 msgstr "关于(_A)"
 
-#: ../data/hitori.ui.h:11 ../src/rules.c:272
+#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
 msgid "_Quit"
 msgstr "退出(_Q)"
 
-#: ../data/hitori.ui.h:13
+#: ../data/hitori.ui.h:2
 msgid "Undo your last move"
 msgstr "撤销你前一次的移动"
 
-#: ../data/hitori.ui.h:14
+#: ../data/hitori.ui.h:3
 msgid "Redo a move"
 msgstr "重做移动"
 
-#: ../data/hitori.ui.h:15
+#: ../data/hitori.ui.h:4
 msgid "Get a hint for your next move"
 msgstr "获得一次游戏提示"
 
@@ -111,30 +119,25 @@ msgstr "面板大小"
 msgid "The size of the board, in cells."
 msgstr "面板大小，也就是格数。"
 
-#: ../src/interface.c:87
-#, c-format
-msgid "UI file “%s” could not be loaded"
-msgstr "UI 文件“%s”无法载入"
-
-#: ../src/interface.c:661
+#: ../src/interface.c:635
 msgid "The help contents could not be displayed"
 msgstr "帮助内容无法显示"
 
-#: ../src/interface.c:685
+#: ../src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:686
+#: ../src/interface.c:660
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "原先由 Nikoli 所作的一个逻辑益智游戏"
 
-#: ../src/interface.c:688
+#: ../src/interface.c:662
 msgid "translator-credits"
 msgstr ""
 "Zhang Miao <mymzhang@gmail.com>, 2009.\n"
 "Tong Hui <tonghuix@gmail.com>, 2014."
 
-#: ../src/interface.c:692
+#: ../src/interface.c:666
 msgid "Hitori Website"
 msgstr "Hitori 网站"
 
@@ -166,14 +169,6 @@ msgstr "您要停止当前游戏么？"
 msgid "Keep _Playing"
 msgstr "继续(_P)"
 
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have
-#. * elapsed since the start of the game; the second parameter is the number of seconds. In between is the ratio
-#. * character and a LTR mark to force minutes on the left in RTL locales. You can probably leave this unchanged.
-#: ../src/main.c:382
-#, c-format
-msgid "%02u∶‎%02u"
-msgstr "%02u∶‎%02u"
-
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
@@ -184,6 +179,12 @@ msgstr "你在 %02u:%02u 时间内赢得比赛！ "
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "再玩一遍(_P)"
+
+#~ msgid "UI file “%s” could not be loaded"
+#~ msgstr "UI 文件“%s”无法载入"
+
+#~ msgid "%02u∶‎%02u"
+#~ msgstr "%02u∶‎%02u"
 
 #~ msgid "_Hint"
 #~ msgstr "提示(_H)"
