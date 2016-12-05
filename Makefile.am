@@ -89,6 +89,10 @@ dist_noinst_DATA = \
 	data/hitori.ui \
 	data/hitori.css
 
+check-builder: $(ui_DATA)
+	xmllint --nonet --noblanks --noout --relaxng /opt/gnome3/source/gtk+/gtk/gtkbuilder.rng $^
+check-local: check-builder
+
 # GSettings
 gsettings_SCHEMAS = data/org.gnome.hitori.gschema.xml
 @GSETTINGS_RULES@
