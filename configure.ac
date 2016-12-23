@@ -48,6 +48,10 @@ PKG_CHECK_MODULES([GENERAL],[
   gmodule-2.0 cairo >= 1.4
 ])
 
+# GTK+ prefix for gtkbuilder.rng
+PKG_CHECK_VAR([GTK_PREFIX],[gtk+-3.0],[prefix])
+AC_PATH_PROG([XMLLINT],[xmllint])
+
 # Output!
 AC_CONFIG_FILES([
 Makefile

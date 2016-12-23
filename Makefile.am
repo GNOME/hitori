@@ -84,13 +84,17 @@ CLEANFILES = src/hitori-resources.c
 EXTRA_DIST += src/hitori.gresource.xml
 
 # UI & CSS files
-dist_noinst_DATA = \
+ui_data = \
 	data/hitori-menus.ui \
 	data/hitori.ui \
+	$(NULL)
+dist_noinst_DATA = \
+	$(ui_data) \
 	data/hitori.css
 
-check-builder: $(ui_DATA)
-	xmllint --nonet --noblanks --noout --relaxng /opt/gnome3/source/gtk+/gtk/gtkbuilder.rng $^
+check-builder: $(ui_data)
+	[ "$(XMLLINT)" == "" ] || \
+	$(XMLLINT) --nonet --noblanks --noout --relaxng $(GTK_PREFIX)/share/gtk-3.0/gtkbuilder.rng $^
 check-local: check-builder
 
 # GSettings
