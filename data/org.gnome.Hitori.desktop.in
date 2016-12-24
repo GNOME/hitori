@@ -4,6 +4,7 @@ Comment=Play the Hitori puzzle game
 # Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 Keywords=puzzle;game;logic;grid;
 Exec=hitori
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=org.gnome.Hitori
 Terminal=false
 Type=Application
