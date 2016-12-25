@@ -2,15 +2,15 @@
 # Copyright (C) 2013 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2013, 2014, 2015.
+# Jiri Grönroos <jiri.gronroos+l10n@iki.fi>, 2013, 2014, 2015, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2015-03-05 10:30+0000\n"
-"PO-Revision-Date: 2015-03-09 17:32+0200\n"
+"POT-Creation-Date: 2016-12-24 18:33+0000\n"
+"PO-Revision-Date: 2016-12-25 14:54+0200\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -18,33 +18,38 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 2.91.7\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "Pelaa Hitori-pulmapeliä"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/hitori.desktop.in.h:4
+#: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;pulma;peli;logiikka;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr "org.gnome.Hitori"
+
 #. Translators: the name of the application as it appears in a software center
-#: ../data/hitori.appdata.xml.in.h:2
+#: data/org.gnome.Hitori.appdata.xml.in:9
 msgid "GNOME Hitori"
 msgstr "Gnomen Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:6
+#: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori on sudokun kaltainen logiikkapeli."
 
-#: ../data/hitori.appdata.xml.in.h:7
+#: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -56,126 +61,126 @@ msgstr ""
 "Peli tukee useita eri laudan kokoja, halutessasi voit asettaa merkkejä "
 "soluihin ratkaisun selvittämiseksi. Jos olet jumissa, peli voi antaa vihjeen."
 
-#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
+#: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
 msgstr "_Uusi peli"
 
-#: ../data/hitori-menus.ui.h:2
+#: data/hitori-menus.ui:12
 msgid "Board _Size"
 msgstr "Lau_dan koko"
 
-#: ../data/hitori-menus.ui.h:3
+#: data/hitori-menus.ui:16
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori-menus.ui.h:4
+#: data/hitori-menus.ui:21
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori-menus.ui.h:5
+#: data/hitori-menus.ui:26
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori-menus.ui.h:6
+#: data/hitori-menus.ui:31
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori-menus.ui.h:7
+#: data/hitori-menus.ui:36
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori-menus.ui.h:8
+#: data/hitori-menus.ui:41
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori-menus.ui.h:9
+#: data/hitori-menus.ui:50
 msgid "_Help"
 msgstr "_Ohje"
 
-#: ../data/hitori-menus.ui.h:10
+#: data/hitori-menus.ui:55
 msgid "_About"
 msgstr "_Tietoja"
 
-#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
+#: data/hitori-menus.ui:59 src/rules.c:272
 msgid "_Quit"
 msgstr "_Lopeta"
 
-#: ../data/hitori.ui.h:2
+#: data/hitori.ui:29
 msgid "Undo your last move"
 msgstr "Kumoa viimeisin siirto"
 
-#: ../data/hitori.ui.h:3
+#: data/hitori.ui:51
 msgid "Redo a move"
 msgstr "Tee uudelleen siirto"
 
-#: ../data/hitori.ui.h:4
+#: data/hitori.ui:75
 msgid "Get a hint for your next move"
 msgstr "Pyydä vihje seuraavaa siirtoa varten"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:1
+#: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
 msgstr "Laudan koko"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:2
+#: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
 msgstr "Laudan koko soluissa."
 
-#: ../src/interface.c:630
+#: src/interface.c:635
 msgid "The help contents could not be displayed"
 msgstr "Ohjeen sisällön näyttäminen epäonnistui"
 
-#: ../src/interface.c:654
+#: src/interface.c:659
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Tekijänoikeus © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:655
+#: src/interface.c:660
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Alkujaan Nikolin suunnittelema logiikkapeli."
 
-#: ../src/interface.c:657
+#: src/interface.c:662
 msgid "translator-credits"
 msgstr "Jiri Grönroos"
 
-#: ../src/interface.c:661
+#: src/interface.c:666
 msgid "Hitori Website"
 msgstr "Hitorin verkkosivusto"
 
-#: ../src/main.c:209
+#: src/main.c:209
 msgid "Enable debug mode"
 msgstr "Käytä vianetsintätilaa"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:211
+#: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Esiasteuta laudan luonti"
 
 #. Options
-#: ../src/main.c:225
+#: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Pelaa Hitori-peliä"
 
 #. Print an error
-#: ../src/main.c:235
+#: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Komentorivivalintojen jäsentäminen ei onnistunut: %s\n"
 
-#: ../src/main.c:301
+#: src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "Haluatko lopettaa nykyisen pelin?"
 
-#: ../src/main.c:304
+#: src/main.c:304
 msgid "Keep _Playing"
 msgstr "Jatka _pelaamista"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
-#: ../src/rules.c:267
+#: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Sinulta kului aikaa voittamiseen %02u:%02u!"
 
-#: ../src/rules.c:273
+#: src/rules.c:273
 msgid "_Play Again"
 msgstr "Pelaa _uudelleen"
 
