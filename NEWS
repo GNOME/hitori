@@ -1,5 +1,27 @@
 Major new features in version...
 
+3.22.1:
+* Port from intltool to gettext (this drops the intltool dependency)
+* Add various build-time checks (this adds an optional build-time dependency on xmllint)
+* Translations:
+** cs (Marek Černocký)
+** da (scootergrisen)
+** de (Mario Blättermann)
+** es (Daniel Mustieles)
+** fi (Jiri Grönroos)
+** fr (Alexandre Franke)
+** fur (Fabio Tomat)
+** hu (Balázs Meskó)
+** id (Kukuh Syafaat)
+** it (Gianvito Cavasoli)
+** lt (Aurimas Černius)
+** pl (Piotr Drąg)
+** pt (Tiago Santos)
+** pt_BR (Rafael Fontenelle)
+** sk (Dušan Kazik)
+** sv (Anders Jonsson)
+** zh_CN (liushuyu, Mandy Wang)
+
 3.22.0:
 * Various AppData fixes
 * Translations:
