@@ -25,6 +25,9 @@ XGETTEXT_OPTIONS = \
   --flag=g_scanner_error:2:c-format \
   --flag=g_scanner_warn:2:c-format
 
+# Don’t rebuild .po files all the time
+PO_DEPENDS_ON_POT = no
+
 # This is the copyright holder that gets inserted into the header of the
 # $(DOMAIN).pot file.  Set this to the copyright holder of the surrounding
 # package.  (Note that the msgstr strings, extracted from the package's
