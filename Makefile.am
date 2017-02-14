@@ -93,7 +93,7 @@ dist_noinst_DATA = \
 	data/hitori.css
 
 check-builder: $(ui_data)
-	[ "$(XMLLINT)" == "" ] || \
+	[ "$(XMLLINT)" = "" ] || \
 	$(XMLLINT) --nonet --noblanks --noout --relaxng $(GTK_PREFIX)/share/gtk-3.0/gtkbuilder.rng $^
 check-local: check-builder
 
