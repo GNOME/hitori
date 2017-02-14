@@ -52,6 +52,9 @@ PKG_CHECK_MODULES([GENERAL],[
 PKG_CHECK_VAR([GTK_PREFIX],[gtk+-3.0],[prefix])
 AC_PATH_PROG([XMLLINT],[xmllint])
 
+# Desktop file validation
+AC_PATH_PROG([DESKTOP_FILE_VALIDATE],[desktop-file-validate])
+
 # Output!
 AC_CONFIG_FILES([
 Makefile

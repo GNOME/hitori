@@ -117,6 +117,11 @@ EXTRA_DIST += \
 	$(NULL)
 CLEANFILES += $(desktop_DATA)
 
+check-desktop: $(desktop_DATA)
+	[ "$(DESKTOP_FILE_VALIDATE)" = "" ] || \
+	$(DESKTOP_FILE_VALIDATE) $^
+check-local: check-desktop
+
 # AppData
 @APPSTREAM_XML_RULES@
 
