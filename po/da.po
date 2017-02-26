@@ -1,5 +1,5 @@
 # Danish translation for hitori.
-# Copyright (C) 2013 hitori & nedenst??ende overs??ttere.
+# Copyright (C) 2013 hitori & nedenstående oversættere.
 # This file is distributed under the same license as the hitori package.
 # Joe Hansen (joedalton2@yahoo.dk), 2009, 2010, 2011, 2013, 2017.
 #
@@ -25,12 +25,12 @@ msgstr "Hitori"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "L??g puslespillet Hitori"
+msgstr "Læg puslespillet Hitori"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "t??nkespil;puslespil;spil;logik;gitter;"
+msgstr "tænkespil;puslespil;spil;logik;gitter;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
@@ -45,7 +45,7 @@ msgstr "GNOME Hitori"
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori er et logisk spil i stil med det popul??re spil Sudoku."
+msgstr "Hitori er et logisk spil i stil med det populære spil Sudoku."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -54,10 +54,10 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Du spiller mod uret, mens du fors??ger at eliminere alle de ens tal i hver "
-"r??kke og kolonne p?? hurtigst mulig tid. Der underst??ttes flere "
-"br??tst??rrelser, og du kan placere mark??rer p?? cellerne for at hj??lpe med at "
-"finde l??sningen. Hvis du sidder fast, kan du f?? fif."
+"Du spiller mod uret, mens du forsøger at eliminere alle de ens tal i hver "
+"række og kolonne på hurtigst mulig tid. Der understøttes flere "
+"brætstørrelser, og du kan placere markører på cellerne for at hjælpe med at "
+"finde løsningen. Hvis du sidder fast, kan du få fif."
 
 #: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
@@ -65,35 +65,35 @@ msgstr "_Nyt spil"
 
 #: data/hitori-menus.ui:12
 msgid "Board _Size"
-msgstr "Br??t_st??rrelse"
+msgstr "Bræt_størrelse"
 
 #: data/hitori-menus.ui:16
-msgid "5??5"
-msgstr "5??5"
+msgid "5×5"
+msgstr "5×5"
 
 #: data/hitori-menus.ui:21
-msgid "6??6"
-msgstr "6??6"
+msgid "6×6"
+msgstr "6×6"
 
 #: data/hitori-menus.ui:26
-msgid "7??7"
-msgstr "7??7"
+msgid "7×7"
+msgstr "7×7"
 
 #: data/hitori-menus.ui:31
-msgid "8??8"
-msgstr "8??8"
+msgid "8×8"
+msgstr "8×8"
 
 #: data/hitori-menus.ui:36
-msgid "9??9"
-msgstr "9??9"
+msgid "9×9"
+msgstr "9×9"
 
 #: data/hitori-menus.ui:41
-msgid "10??10"
-msgstr "10??10"
+msgid "10×10"
+msgstr "10×10"
 
 #: data/hitori-menus.ui:50
 msgid "_Help"
-msgstr "_Hj??lp"
+msgstr "_Hjælp"
 
 #: data/hitori-menus.ui:55
 msgid "_About"
@@ -105,31 +105,31 @@ msgstr "_Afslut"
 
 #: data/hitori.ui:29
 msgid "Undo your last move"
-msgstr "Fortryd dit sidste tr??k"
+msgstr "Fortryd dit sidste træk"
 
 #: data/hitori.ui:51
 msgid "Redo a move"
-msgstr "Omg??r et tr??k"
+msgstr "Omgør et træk"
 
 #: data/hitori.ui:75
 msgid "Get a hint for your next move"
-msgstr "F?? et fif til dit n??ste tr??k"
+msgstr "Få et fif til dit næste træk"
 
 #: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
-msgstr "Br??tst??rrelse"
+msgstr "Brætstørrelse"
 
 #: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
-msgstr "St??rrelsen p?? br??ttet i celler."
+msgstr "Størrelsen på brættet i celler."
 
 #: src/interface.c:635
 msgid "The help contents could not be displayed"
-msgstr "Hj??lpeindholdet kunne ikke vises"
+msgstr "Hjælpeindholdet kunne ikke vises"
 
 #: src/interface.c:659
-msgid "Copyright ?? 2007???2010 Philip Withnall"
-msgstr "Ophavsret ?? 2007-2010 Philip Withnall"
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
 #: src/interface.c:660
 msgid "A logic puzzle originally designed by Nikoli"
@@ -149,12 +149,12 @@ msgstr "Hitoris hjemmeside"
 
 #: src/main.c:209
 msgid "Enable debug mode"
-msgstr "Sl?? fejls??gningstilstand til"
+msgstr "Slå fejlsøgningstilstand til"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
-msgstr "Grundlagstal for br??toprettelsen"
+msgstr "Grundlagstal for brætoprettelsen"
 
 #. Options
 #: src/main.c:225
@@ -169,17 +169,17 @@ msgstr "Indstillinger for kommandolinje kunne ikke fortolkes: %s\n"
 
 #: src/main.c:301
 msgid "Do you want to stop the current game?"
-msgstr "??nsker du at stoppe det aktuelle spil?"
+msgstr "Ønsker du at stoppe det aktuelle spil?"
 
 #: src/main.c:304
 msgid "Keep _Playing"
-msgstr "Forts??t med at _spille"
+msgstr "Fortsæt med at _spille"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: src/rules.c:267
 #, c-format
-msgid "You???ve won in a time of %02u:%02u!"
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Du har vundet. Din tid blev %02u:%02u!"
 
 #: src/rules.c:273
