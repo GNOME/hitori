@@ -1,5 +1,16 @@
 Major new features in version...
 
+3.22.2:
+* Add more build-time checks (this adds an optional build-time dependency on desktop-file-validate)
+* Translations:
+** da (Joe Hansen)
+** eu (Inaki Larranaga Murgoitio)
+** gl (Fran Dieguez)
+** nb (Kjartan Maraas)
+** sl (Matej Urbančič)
+** sr (Мирослав Николић)
+** zh_TW (Chao-Hsiung Liao)
+
 3.22.1:
 * Port from intltool to gettext (this drops the intltool dependency)
 * Add various build-time checks (this adds an optional build-time dependency on xmllint)
