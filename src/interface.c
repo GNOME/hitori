@@ -257,7 +257,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 	gint area_width, area_height;
 	HitoriVector iter;
 	guint board_width, board_height;
-	gfloat cell_size;
+	gdouble cell_size;
 	gdouble x_pos, y_pos;
 	GtkStyleContext *style_context;
 
@@ -274,14 +274,17 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 		board_height = area_width;
 	}
 
+	board_width -= BORDER_LEFT;
+	board_height -= BORDER_LEFT;
+
 	/* Work out the cell size and scale all text accordingly */
-	cell_size = board_width / hitori->board_size;
+	cell_size = (gdouble) board_width / (gdouble) hitori->board_size;
 	pango_font_description_set_absolute_size (hitori->normal_font_desc, cell_size * NORMAL_FONT_SCALE * 0.8 * PANGO_SCALE);
 	pango_font_description_set_absolute_size (hitori->painted_font_desc, cell_size * PAINTED_FONT_SCALE * 0.8 * PANGO_SCALE);
 
 	/* Centre the board */
-	hitori->drawing_area_x_offset = (area_width - board_width) / 2;
-	hitori->drawing_area_y_offset = (area_height - board_height) / 2;
+	hitori->drawing_area_x_offset = (area_width - board_width) / 2.0;
+	hitori->drawing_area_y_offset = (area_height - board_height) / 2.0;
 	cairo_translate (cr, hitori->drawing_area_x_offset, hitori->drawing_area_y_offset);
 
 	/* Draw the unpainted cells first. */
@@ -324,7 +327,7 @@ gboolean
 hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori)
 {
 	gint width, height;
-	gfloat cell_size;
+	gdouble cell_size;
 	HitoriVector pos;
 	HitoriUndo *undo;
 	gboolean recheck = FALSE;
@@ -339,7 +342,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (height < width)
 		width = height;
 
-	cell_size = width / hitori->board_size;
+	cell_size = (gdouble) width / (gdouble) hitori->board_size;
 
 	/* Determine the cell in which the button was released */
 	pos.x = (guchar) ((event->x - hitori->drawing_area_x_offset) / cell_size);
@@ -456,8 +459,9 @@ static gboolean
 hitori_update_hint (Hitori *hitori)
 {
 	gint area_width, area_height;
-	guint board_width, board_height, drawing_area_x_offset, drawing_area_y_offset;
-	gfloat cell_size;
+	guint board_width, board_height;
+	gdouble drawing_area_x_offset, drawing_area_y_offset;
+	gdouble cell_size;
 
 	/* Check to see if hinting's been stopped by a cell being changed (race condition) */
 	if (hitori->hint_status == HINT_DISABLED)
@@ -481,10 +485,13 @@ hitori_update_hint (Hitori *hitori)
 		board_height = area_width;
 	}
 
-	cell_size = board_width / hitori->board_size;
+	board_width -= BORDER_LEFT;
+	board_height -= BORDER_LEFT;
 
-	drawing_area_x_offset = (area_width - board_width) / 2;
-	drawing_area_y_offset = (area_height - board_height) / 2;
+	cell_size = (gdouble) board_width / (gdouble) hitori->board_size;
+
+	drawing_area_x_offset = (area_width - board_width) / 2.0;
+	drawing_area_y_offset = (area_height - board_height) / 2.0;
 
 	/* Redraw the cell */
 	gtk_widget_queue_draw_area (hitori->drawing_area, drawing_area_x_offset + hitori->hint_position.x * cell_size,

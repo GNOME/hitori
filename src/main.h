@@ -84,8 +84,8 @@ typedef struct {
 	gdouble drawing_area_width;
 	gdouble drawing_area_height;
 
-	guint drawing_area_x_offset;
-	guint drawing_area_y_offset;
+	gdouble drawing_area_x_offset;
+	gdouble drawing_area_y_offset;
 
 	PangoFontDescription *normal_font_desc;
 	PangoFontDescription *painted_font_desc;
