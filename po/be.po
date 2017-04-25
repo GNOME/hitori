@@ -1,24 +1,24 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Belarusian translation for hitori.
+# Copyright (C) 2017 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
 # Jim <vlma@tut.by>, 2017.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-04-06 10:03+0000\n"
-"PO-Revision-Date: 2017-04-25 11:08+0300\n"
-"Last-Translator: Uladzimir Manulenka <vlma@tut.by>\n"
+"POT-Creation-Date: 2017-04-25 08:11+0000\n"
+"PO-Revision-Date: 2017-04-25 11:32+0300\n"
+"Last-Translator: Jim <vlma@tut.by>, 2017\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
-"Language: be_BY\n"
+"Language: be\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 1.8.11\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
@@ -27,12 +27,12 @@ msgstr "Гісторыя"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "Гуляць у гульню Пазлы Hitori "
+msgstr "Гуляць у гульню Пазлы Hitori"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "пазл; гульня; логіка; сетка;"
+msgstr "пазл;гульня;логіка;сетка;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
