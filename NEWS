@@ -1,5 +1,18 @@
 Major new features in version...
 
+3.22.3:
+* Minor rendering improvements (bug #732776)
+* Add flatpak manifests for nightly builds
+* Drop use of deprecated GTK+ API (no dependency change)
+* Translations:
+** be (Yuras Shumovich)
+** ca (Jordi Mas)
+** el (Tom Tryfonidis)
+** gl (Fran Dieguez)
+** lv (Rūdolfs Mazurs)
+** ru (Yuri Myasoedov)
+** uk (Daniel Korostil)
+
 3.22.2:
 * Add more build-time checks (this adds an optional build-time dependency on desktop-file-validate)
 * Translations:
