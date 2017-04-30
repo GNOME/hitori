@@ -633,8 +633,15 @@ help_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
 {
 	HitoriApplication *self = HITORI_APPLICATION (user_data);
 	GError *error = NULL;
+	gboolean retval;
 
-	if (gtk_show_uri_on_window (GTK_WINDOW (self->window), "help:hitori", gtk_get_current_event_time (), &error) == FALSE) {
+#if GTK_CHECK_VERSION(3, 22, 0)
+	retval = gtk_show_uri_on_window (GTK_WINDOW (self->window), "help:hitori", gtk_get_current_event_time (), &error);
+#else
+	retval = gtk_show_uri (gtk_widget_get_screen (self->window), "help:hitori", gtk_get_current_event_time (), &error);
+#endif
+
+	if (retval == FALSE) {
 		GtkWidget *dialog = gtk_message_dialog_new (GTK_WINDOW (self->window),
 							    GTK_DIALOG_MODAL,
 							    GTK_MESSAGE_ERROR,
