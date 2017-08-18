@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-01-15 21:36+0200\n"
+"POT-Creation-Date: 2017-09-02 08:59+0300\n"
 "PO-Revision-Date: 2016-01-15 21:35+0200\n"
 "Last-Translator:  Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -17,102 +17,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../data/org.gnome.Hitori.desktop.in.h:1 ../data/hitori.ui.h:1
-#: ../src/main.c:101
-msgid "Hitori"
-msgstr "Хитори"
-
-#. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/org.gnome.Hitori.desktop.in.h:2
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:4
-msgid "Play the Hitori puzzle game"
-msgstr "Абстрактна главоблъсканица с числа"
-
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/org.gnome.Hitori.desktop.in.h:4
-msgid "puzzle;game;logic;grid;"
-msgstr ""
-"логическа;загадка;главоблъсканица;пъзел;цифри;числа;дъска;puzzle;game;logic;"
-"grid;"
-
-#. Translators: the name of the application as it appears in a software center
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:2
-msgid "GNOME Hitori"
-msgstr "Хитори"
-
-#. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:6
-msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Хитори е логическа игра подобна на Судоку"
-
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:7
-msgid ""
-"You play the game against the clock, aiming to eliminate all the duplicate "
-"numbers in each row and column in the fastest time. Multiple sizes of game "
-"board are supported, and you can place markers on cells to help work out the "
-"solution. If you get stuck, the game can give you a hint."
-msgstr ""
-"Играете за по-малко време, целта да махнете повтарящите се числа във всеки "
-"ред и колона. Поддържат се много размери на дъската, а по нея може да "
-"поставяте маркери, за да си помагате за решението. Може да поискате "
-"подсказка, когато не може да продължите."
-
-#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
-msgid "_New Game"
-msgstr "_Нова игра"
-
-#: ../data/hitori-menus.ui.h:2
-msgid "Board _Size"
-msgstr "_Размер на дъската"
-
-#: ../data/hitori-menus.ui.h:3
-msgid "5×5"
-msgstr "5 × 5"
-
-#: ../data/hitori-menus.ui.h:4
-msgid "6×6"
-msgstr "6 × 6"
-
-#: ../data/hitori-menus.ui.h:5
-msgid "7×7"
-msgstr "7 × 7"
-
-#: ../data/hitori-menus.ui.h:6
-msgid "8×8"
-msgstr "8 × 8"
-
-#: ../data/hitori-menus.ui.h:7
-msgid "9×9"
-msgstr "9 × 9"
-
-#: ../data/hitori-menus.ui.h:8
-msgid "10×10"
-msgstr "10 × 10"
-
-#: ../data/hitori-menus.ui.h:9
-msgid "_Help"
-msgstr "Помо_щ"
-
-#: ../data/hitori-menus.ui.h:10
-msgid "_About"
-msgstr "_Относно"
-
-#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
-msgid "_Quit"
-msgstr "_Спиране на програмата"
-
-#: ../data/hitori.ui.h:2
-msgid "Undo your last move"
-msgstr "Отмяна на последния ход"
-
-#: ../data/hitori.ui.h:3
-msgid "Redo a move"
-msgstr "Повтаряне на последния ход"
-
-#: ../data/hitori.ui.h:4
-msgid "Get a hint for your next move"
-msgstr "Подсказка за ход"
-
 #: ../data/org.gnome.hitori.gschema.xml.h:1
 msgid "Board size"
 msgstr "Размер на дъската"
@@ -121,19 +25,19 @@ msgstr "Размер на дъската"
 msgid "The size of the board, in cells."
 msgstr "Размер на квадратната дъска в клетки"
 
-#: ../src/interface.c:630
+#: ../src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Помощта не може да бъде показана"
 
-#: ../src/interface.c:654
+#: ../src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Авторски права: © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:655
+#: ../src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Логическа игра, проектирана от японската фирма Николи"
 
-#: ../src/interface.c:657
+#: ../src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "Александър Шопов <ash@kambanaria.org>\n"
@@ -144,9 +48,13 @@ msgstr ""
 "Докладвайте за грешки на <a href=\"http://gnome.cult.bg/bugs\">http://gnome."
 "cult.bg/bugs</a>"
 
-#: ../src/interface.c:661
+#: ../src/interface.c:680
 msgid "Hitori Website"
 msgstr "Страница на Хитори"
+
+#: ../src/main.c:101
+msgid "Hitori"
+msgstr "Хитори"
 
 #: ../src/main.c:209
 msgid "Enable debug mode"
@@ -176,6 +84,10 @@ msgstr "Искате ли да приключите текущата игра?"
 msgid "Keep _Playing"
 msgstr "_Продължаване на играта"
 
+#: ../src/main.c:305
+msgid "_New Game"
+msgstr "_Нова игра"
+
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: ../src/rules.c:267
@@ -183,6 +95,72 @@ msgstr "_Продължаване на играта"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Спечелихте с време от %02u мин. %02u сек.!"
 
+#: ../src/rules.c:272
+msgid "_Quit"
+msgstr "_Спиране на програмата"
+
 #: ../src/rules.c:273
 msgid "_Play Again"
 msgstr "_Нова игра"
+
+#~ msgid "Play the Hitori puzzle game"
+#~ msgstr "Абстрактна главоблъсканица с числа"
+
+#~ msgid "puzzle;game;logic;grid;"
+#~ msgstr ""
+#~ "логическа;загадка;главоблъсканица;пъзел;цифри;числа;дъска;puzzle;game;"
+#~ "logic;grid;"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "Хитори"
+
+#~ msgid "Hitori is a logic game similar to the popular game of Sudoku."
+#~ msgstr "Хитори е логическа игра подобна на Судоку"
+
+#~ msgid ""
+#~ "You play the game against the clock, aiming to eliminate all the "
+#~ "duplicate numbers in each row and column in the fastest time. Multiple "
+#~ "sizes of game board are supported, and you can place markers on cells to "
+#~ "help work out the solution. If you get stuck, the game can give you a "
+#~ "hint."
+#~ msgstr ""
+#~ "Играете за по-малко време, целта да махнете повтарящите се числа във "
+#~ "всеки ред и колона. Поддържат се много размери на дъската, а по нея може "
+#~ "да поставяте маркери, за да си помагате за решението. Може да поискате "
+#~ "подсказка, когато не може да продължите."
+
+#~ msgid "Board _Size"
+#~ msgstr "_Размер на дъската"
+
+#~ msgid "5×5"
+#~ msgstr "5 × 5"
+
+#~ msgid "6×6"
+#~ msgstr "6 × 6"
+
+#~ msgid "7×7"
+#~ msgstr "7 × 7"
+
+#~ msgid "8×8"
+#~ msgstr "8 × 8"
+
+#~ msgid "9×9"
+#~ msgstr "9 × 9"
+
+#~ msgid "10×10"
+#~ msgstr "10 × 10"
+
+#~ msgid "_Help"
+#~ msgstr "Помо_щ"
+
+#~ msgid "_About"
+#~ msgstr "_Относно"
+
+#~ msgid "Undo your last move"
+#~ msgstr "Отмяна на последния ход"
+
+#~ msgid "Redo a move"
+#~ msgstr "Повтаряне на последния ход"
+
+#~ msgid "Get a hint for your next move"
+#~ msgstr "Подсказка за ход"
