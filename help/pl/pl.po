@@ -1,0 +1,331 @@
+# Polish translation for hitori help.
+# Copyright © 2017 the hitori authors.
+# This file is distributed under the same license as the hitori package.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017.
+# Aviary.pl <community-poland@mozilla.org>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori-help\n"
+"POT-Creation-Date: 2017-08-13 15:57+0000\n"
+"PO-Revision-Date: 2017-08-31 02:12+0200\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: Polish <community-poland@mozilla.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Piotr Drąg <piotrdrag@gmail.com>, 2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2017"
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Zmiana wyglądu i rozgrywki."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Dostosowanie gry"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Można dostosować grę zmieniając rozmiar planszy. Można ustawić od 5 do 10 "
+"komórek."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
+msgstr ""
+"Aby zmienić rozmiar planszy, wybierz opcję z menu <guiseq><gui style=\"menu"
+"\">Gra</gui><gui style=\"menuitem\">Rozmiar planszy</gui></guiseq>. "
+"<app>Hitori</app> zapyta, czy zatrzymać bieżącą grę, jeśli jakaś jest "
+"rozgrywana, a następnie rozpocznie nową z ustawionym rozmiarem planszy."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Wprowadzenie do gry Hitori."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Gra Hitori"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori to mała łamigłówka podobna do popularniejszej gry Sudoku. W tej grze "
+"gracz zaczyna na kwadratowej planszy z liczbami, z której musi "
+"<em>wymazywać</em> komórki, dopóki w każdym wierszu i kolumnie nie będzie "
+"podwójnych liczb. Reguły gry:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"W niewymazanych komórkach w każdym wierszu i kolumnie może być tylko jedno "
+"wystąpienie każdej liczby."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr "Żadna wymazana komórka nie może dotykać drugiej, pionowo lub poziomo."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Wszystkie niewymazane komórki muszą być połączone pionowo i poziomo w jednej "
+"grupie."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Istnieją tylko te trzy reguły, więc każda plansza Hitori może mieć więcej "
+"niż jedno rozwiązanie."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Główne okno gry"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Główne okno gry <app>Hitori</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Główne okno gry <app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008-2010"
+
+#. (itstool) path: license/p
+#: C/index.page:11
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Na warunkach licencji <link href=\"http://creativecommons.org/licenses/by-"
+"sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Podstawy gry"
+
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Wskazówki i porady"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Na warunkach licencji <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Gra <app>Hitori</app>."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Gra"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
+msgstr ""
+"Aby rozpocząć nową grę, wybierz <guiseq><gui style=\"menu\">Gra</gui><gui "
+"style=\"menuitem\">Nowa gra</gui></guiseq>. Jeśli jakaś gra jest już "
+"rozgrywana, to <app>Hitori</app> zapyta, czy ją przerwać."
+
+#. (itstool) path: page/p
+#: C/playing.page:12
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Kliknij komórkę, aby ją wymazać. Kliknij ją drugi raz, aby cofnąć. Kiedy "
+"komórki będą wymazane w sposób, który nie łamie żadnej z trzech reguł, gra "
+"się skończy i plansza stanie się nieaktywna."
+
+#. (itstool) path: page/p
+#: C/playing.page:14
+msgid ""
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
+msgstr ""
+"<app>Hitori</app> umożliwia także wyróżnianie komórek jako pomoc "
+"przy rozwiązywaniu planszy. Można to zrobić przytrzymując klawisz <key>Ctrl</"
+"key> lub <key>Shift</key> i klikając komórkę. Każdy klawisz wyróżnia komórkę "
+"w inny sposób, i można wyróżniać komórkę na oba sposoby jednocześnie. "
+"Wyróżnienie komórki można usunąć klikając ją drugi raz, także przytrzymując "
+"klawisz <key>Ctrl</key> lub <key>Shift</key>."
+
+#. (itstool) path: page/p
+#: C/playing.page:18
+msgid ""
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
+msgstr ""
+"Aby cofnąć lub ponowić ruch, wybierz <guiseq><gui style=\"menu\">Gra</"
+"gui><gui style=\"menuitem\">Cofnij</gui></guiseq> lub <guiseq><gui style="
+"\"menu\">Gra</gui><gui style=\"menuitem\">Ponów</gui></guiseq>. Można cofać "
+"i ponawiać ruchy bez ograniczeń."
+
+#. (itstool) path: page/p
+#: C/playing.page:21
+msgid ""
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"Aby uzyskać podpowiedź, wybierz <guiseq><gui style=\"menu\">Gra</gui><gui "
+"style=\"menuitem\">Podpowiedź</gui></guiseq>. Jedna z komórek zostanie "
+"wyróżniona czerwoną obwódką, co pokazuje, że jej obecny stan (wymazana lub "
+"niewymazana) jest niewłaściwy, i powinien zostać zmieniony, aby wygrać."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Strategie gry w Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Strategie gry"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
+msgstr ""
+"Gra Hitori jest całkiem podobna do Sudoku w tym, że wymaga logicznej "
+"dedukcji do rozgryzienia, które komórki wymazać. Jedną ze strategii jest "
+"używanie wyróżniania klawiszem <key>Shift</key> dla wszystkich "
+"powtarzających się liczb w każdej <em>kolumnie</em> oraz klawiszem "
+"<key>Ctrl</key> dla wszystkich powtarzających się liczb w każdym "
+"<em>wierszu</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Po skończeniu dla całej planszy komórki wyróżnione na oba sposoby są dobrymi "
+"kandydatami do wymazania, chociaż nie pewniakami. Usuwanie wyróżnienia "
+"z pozostałych komórek z tą samą liczbą w tym samym rzędzie i kolumnie "
+"podczas wymazywania jest dobrym pomysłem na pilnowanie, które komórki nadal "
+"łamią <link xref=\"game\">pierwszą regułę</link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Należy zawsze pamiętać, że druga reguła oznacza, że dwie sąsiednie komórki "
+"nie mogą być wymazane. <app>Hitori</app> wyróżni na czerwono komórki łamiące "
+"tę regułę, a także grupy komórek łamiące trzecią regułę, niepozwalającą na "
+"rozdzielanie jednej lub więcej niewymazanych komórek od pozostałych."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
+msgstr ""
+"W razie problemów można wybrać <guiseq><gui style=\"menu\">Gra</gui><gui "
+"style=\"menuitem\">Podpowiedź</gui></guiseq>, a <app>Hitori</app> oznaczy "
+"komórkę do wymazania lub cofnięcia wymazania, przybliżając do znalezienia "
+"rozwiązania."

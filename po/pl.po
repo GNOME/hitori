@@ -1,16 +1,16 @@
 # Polish translation for hitori.
-# Copyright © 2012-2016 the hitori authors.
+# Copyright © 2012-2017 the hitori authors.
 # This file is distributed under the same license as the hitori package.
-# Piotr Drąg <piotrdrag@gmail.com>, 2012-2016.
-# Aviary.pl <community-poland@mozilla.org>, 2012-2016.
+# Piotr Drąg <piotrdrag@gmail.com>, 2012-2017.
+# Aviary.pl <community-poland@mozilla.org>, 2012-2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-12-24 18:33+0000\n"
-"PO-Revision-Date: 2016-12-25 21:22+0100\n"
+"POT-Creation-Date: 2017-06-27 20:39+0000\n"
+"PO-Revision-Date: 2017-08-31 01:21+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -56,7 +56,7 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Należy jak najszybciej wyeliminować podwójne liczby w każdym rzędzie "
+"Należy jak najszybciej wyeliminować podwójne liczby w każdym wierszu "
 "i kolumnie przed upływem określonego czasu. Obsługiwane są różne rozmiary "
 "planszy, a na komórkach można umieszczać znaczniki ułatwiające znalezienie "
 "rozwiązania. Gra może wyświetlić podpowiedź w razie utknięcia."
@@ -125,25 +125,25 @@ msgstr "Rozmiar planszy"
 msgid "The size of the board, in cells."
 msgstr "Rozmiar planszy w komórkach."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Nie można wyświetlić treści pomocy"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007-2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logiczna układanka oryginalnie zaprojektowana przez firmę Nikoli."
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
-"Piotr Drąg <piotrdrag@gmail.com>, 2012-2016\n"
-"Aviary.pl <community-poland@mozilla.org>, 2012-2016"
+"Piotr Drąg <piotrdrag@gmail.com>, 2012-2017\n"
+"Aviary.pl <community-poland@mozilla.org>, 2012-2017"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Witryna gry Hitori"
 
