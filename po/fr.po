@@ -9,10 +9,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-12-24 18:33+0000\n"
-"PO-Revision-Date: 2016-12-25 15:43+0100\n"
+"POT-Creation-Date: 2017-06-27 20:39+0000\n"
+"PO-Revision-Date: 2017-09-08 15:43+0100\n"
 "Last-Translator: Charles Monzat <superboa@hotmail.fr>\n"
 "Language-Team: Français <GNOME French Team <gnomefr@traduc.org>>\n"
 "Language: fr\n"
@@ -44,7 +44,7 @@ msgstr "org.gnome.Hitori"
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
 msgid "GNOME Hitori"
-msgstr "GNOME Hitori"
+msgstr "Hitori de GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -58,10 +58,10 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Vous jouez contre la montre, l'objectif étant d'éliminer tout les nombres en "
+"Vous jouez contre la montre, l’objectif étant d’éliminer tout les nombres en "
 "double dans chaque ligne et colonne le plus rapidement possible. Plusieurs "
 "tailles de plateau sont proposées et vous pouvez placer des marqueurs sur "
-"des cellules afin d'aider à trouver une solution. Si vous êtes bloqué, le "
+"des cellules afin d’aider à trouver une solution. Si vous êtes bloqué, le "
 "jeu peut vous donner un indice."
 
 #: data/hitori-menus.ui:8 src/main.c:305
@@ -128,26 +128,26 @@ msgstr "Taille du plateau"
 msgid "The size of the board, in cells."
 msgstr "Taille du plateau, en cellules"
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
-msgstr "Impossible d'afficher le contenu de l'aide"
+msgstr "Impossible d’afficher le contenu de l’aide"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Un casse-tête de logique conçu à l'origine par Nikoli."
+msgstr "Un casse-tête de logique conçu à l’origine par Nikoli."
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "Laurent Coudeur <laurentc@iol.ie>, 2009\n"
 "Bruno Brouard <annoa.b@gmail.com>, 2009\n"
 "Géode<Géodebay@gmail.com>,2010"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Site Web de Hitori"
 
@@ -169,7 +169,7 @@ msgstr "- Jouer à une partie de Hitori"
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Impossible d'analyser les options de la ligne de commande : %s\n"
+msgstr "Impossible d’analyser les options de la ligne de commande : %s\n"
 
 #: src/main.c:301
 msgid "Do you want to stop the current game?"
@@ -186,7 +186,7 @@ msgstr "Continuer à _jouer"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Vous avez résolu le puzzle en %02u:%02u !"
 
-# ... ou Jouer à Nouveau, c'est à voir.
+# ... ou Jouer à Nouveau, c’est à voir.
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Rejouer"
