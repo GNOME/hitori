@@ -2,13 +2,14 @@
 #
 # Jordi Mas i Hernàndez <jmas@softcatala.org>, 2014, 2017
 # Gil Forcada <gilforcada@guifi.net>, 2014.
+# Jordi Serratosa <jordis@softcatala.cat>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-26 08:18+0000\n"
+"POT-Creation-Date: 2017-06-27 20:39+0000\n"
 "PO-Revision-Date: 2014-09-05 00:21+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -57,7 +58,7 @@ msgstr ""
 "Jugueu contra rellotge, amb l'objectiu d'eliminar tots els nombres duplicats "
 "a cada fila i columna en el menor temps possible. Es pot jugar a taulers de "
 "diferent mida, i podeu posar els marcadors a les celes per ajudar-vos a "
-"trobar la solució. Si us quedeu bloquejats, el joc us pot donar una pista."
+"trobar la solució. Si us quedeu bloquejat, el joc us pot donar una pista."
 
 #: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
@@ -123,23 +124,23 @@ msgstr "Mida del tauler"
 msgid "The size of the board, in cells."
 msgstr "La mida del tauler, en cel·les."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "No s'han pogut mostrar els continguts de l'ajuda"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un trencaclosques lògic dissenyat originalment per Nikoli."
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr "Jordi Mas i Hernandez <jmas@softcatala.org>"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Lloc web del Hitori"
 
