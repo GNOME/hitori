@@ -9,7 +9,7 @@ top_builddir = ..
 
 # These options get passed to xgettext.
 XGETTEXT_OPTIONS = \
-  --from-code=UTF-8 \
+  --from-code=UTF-8 --add-comments \
   --keyword=_ --flag=_:1:pass-c-format \
   --keyword=N_ --flag=N_:1:pass-c-format \
   --flag=g_log:3:c-format --flag=g_logv:3:c-format \
