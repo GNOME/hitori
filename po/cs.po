@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-12-24 18:33+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2016-12-25 17:45+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
@@ -30,12 +30,10 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Hrát logickou hru Hitori."
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "hlavolam;hra;logická;mřížka;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -126,23 +124,23 @@ msgstr "Velikost hrací desky"
 msgid "The size of the board, in cells."
 msgstr "Velikost hrací desky udaná v počtu políček."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Nelze zobrazit obsah nápovědy"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logický hlavolam původně pocházející od Nikoli."
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
@@ -150,17 +148,14 @@ msgstr "Webové stránky Hitori"
 msgid "Enable debug mode"
 msgstr "Povolit režim ladění"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Počáteční číslo pro generování hrací desky"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "– hrát hru Hitori"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -174,8 +169,6 @@ msgstr "Opravdu chcete zastavit současnou hru?"
 msgid "Keep _Playing"
 msgstr "_Pokračovat ve hře"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori 3.23.x\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-01-18 22:09+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-02-19 17:52+0100\n"
 "Last-Translator: Kjartan Maraas <kmaraas@gnome.org>\n"
 "Language-Team: Norwegian bokmål <i18n-nb@lister.ping.uio.no>\n"
@@ -26,12 +27,10 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Spill det populære puslespillet Hitori"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puslespill;spill;logikk;rutenett;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -122,25 +121,25 @@ msgstr "Størrelse på brett"
 msgid "The size of the board, in cells."
 msgstr "Størrelse på brettet i celler."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Klarte ikke å vise hjelpinnholdet"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Opphavsrett © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logisk puslespill som opprinnelig ble laget av Nikoli"
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "Kjartan Maraas <kmaraas@gnome.org>\n"
 "Espen Stefansen <espens@svn.gnome.org>"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Hitori nettsted"
 
@@ -148,17 +147,14 @@ msgstr "Hitori nettsted"
 msgid "Enable debug mode"
 msgstr "Slå på feilsøkingsmodus"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Sett utgangstall for generering av brett"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Spill en runde med Hitori"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -172,8 +168,6 @@ msgstr "Vil du stoppe dette spillet?"
 msgid "Keep _Playing"
 msgstr "Fortsett s_pillet"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-02-26 08:18+0000\n"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-03-14 21:06+0400\n"
 "Last-Translator: Yuri Myasoedov <ymyasoedov@yandex.ru>\n"
 "Language-Team: русский <gnome-cyr@gnome.org>\n"
@@ -30,12 +30,10 @@ msgstr "Хитори"
 msgid "Play the Hitori puzzle game"
 msgstr "Игра-головоломка Хитори"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "головоломка;игра;логическая;таблица;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -127,23 +125,23 @@ msgstr "Размер поля"
 msgid "The size of the board, in cells."
 msgstr "Размер поля в клетках."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Не удалось показать содержимое справки"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Авторские права © 2007–2010 Филип Уизнэл"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Логическая головоломка, созданная Николи"
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr "Юрий Мясоедов <ymyasoedov@yandex.ru>, 2011-2015"
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Веб-сайт Хитори"
 
@@ -151,17 +149,14 @@ msgstr "Веб-сайт Хитори"
 msgid "Enable debug mode"
 msgstr "Включить режим отладки"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Засеять генерацию поля"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "— играть в Хитори"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -175,8 +170,6 @@ msgstr "Хотите остановить текущую игру?"
 msgid "Keep _Playing"
 msgstr "_Продолжить игру"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

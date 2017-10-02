@@ -6,8 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=general\n"
-"POT-Creation-Date: 2011-04-10 10:36+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2011-05-05 20:53+0700\n"
 "Last-Translator: Lê Trường An <xinemdungkhoc1@gmail.com>\n"
 "Language-Team: Vietnamese <gnomevi-list@lists.sourceforge.net>\n"
@@ -17,130 +18,197 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ../data/hitori.desktop.in.h:1
-#: ../data/hitori.ui.h:8
-#: ../src/main.c:239
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
-#: ../data/hitori.desktop.in.h:2
+#. Translators: the brief summary of the application as it appears in a software center.
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "Chơi trò chơi giải đố Hitori"
 
-#: ../data/hitori.ui.h:1
-msgid "10×10"
-msgstr "10×10"
+#: data/org.gnome.Hitori.desktop.in:6
+msgid "puzzle;game;logic;grid;"
+msgstr ""
 
-#: ../data/hitori.ui.h:2
-msgid "5×5"
-msgstr "5×5"
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr ""
 
-#: ../data/hitori.ui.h:3
-msgid "6×6"
-msgstr "6×6"
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.appdata.xml.in:9
+#, fuzzy
+msgid "GNOME Hitori"
+msgstr "Hitori"
 
-#: ../data/hitori.ui.h:4
-msgid "7×7"
-msgstr "7×7"
+#. Translators: These are the application description paragraphs in the AppData file.
+#: data/org.gnome.Hitori.appdata.xml.in:16
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr ""
 
-#: ../data/hitori.ui.h:5
-msgid "8×8"
-msgstr "8×8"
+#: data/org.gnome.Hitori.appdata.xml.in:17
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
 
-#: ../data/hitori.ui.h:6
-msgid "9×9"
-msgstr "9×9"
+#: data/hitori-menus.ui:8 src/main.c:305
+#, fuzzy
+msgid "_New Game"
+msgstr "_Trò chơi"
 
-#: ../data/hitori.ui.h:7
+#: data/hitori-menus.ui:12
 msgid "Board _Size"
 msgstr "_Cỡ bàn cờ"
 
-#: ../data/hitori.ui.h:9
-msgid "_Game"
-msgstr "_Trò chơi"
+#: data/hitori-menus.ui:16
+msgid "5×5"
+msgstr "5×5"
 
-#: ../data/hitori.ui.h:10
+#: data/hitori-menus.ui:21
+msgid "6×6"
+msgstr "6×6"
+
+#: data/hitori-menus.ui:26
+msgid "7×7"
+msgstr "7×7"
+
+#: data/hitori-menus.ui:31
+msgid "8×8"
+msgstr "8×8"
+
+#: data/hitori-menus.ui:36
+msgid "9×9"
+msgstr "9×9"
+
+#: data/hitori-menus.ui:41
+msgid "10×10"
+msgstr "10×10"
+
+#: data/hitori-menus.ui:50
 msgid "_Help"
 msgstr "Trợ _giúp"
 
-#: ../data/hitori.ui.h:11
-msgid "_Hint"
-msgstr "Gợ_i ý"
+#: data/hitori-menus.ui:55
+msgid "_About"
+msgstr ""
 
-#: ../data/hitori.ui.h:12
-msgid "_Settings"
-msgstr "_Thiết lập"
+#: data/hitori-menus.ui:59 src/rules.c:272
+msgid "_Quit"
+msgstr ""
 
-#: ../src/interface.c:72
-#, c-format
-msgid "UI file “%s” could not be loaded"
-msgstr "Không thể nạp tập tin UI “%s”"
+#: data/hitori.ui:29
+msgid "Undo your last move"
+msgstr ""
 
-#: ../src/interface.c:537
+#: data/hitori.ui:51
+msgid "Redo a move"
+msgstr ""
+
+#: data/hitori.ui:75
+msgid "Get a hint for your next move"
+msgstr ""
+
+#: data/org.gnome.hitori.gschema.xml:6
+#, fuzzy
+msgid "Board size"
+msgstr "_Cỡ bàn cờ"
+
+#: data/org.gnome.hitori.gschema.xml:7
+msgid "The size of the board, in cells."
+msgstr ""
+
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Không thể hiện nội dung trợ giúp"
 
-#: ../src/interface.c:558
-msgid "Hitori is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."
-msgstr "Hitori là phần mềm tự do: bạn có thể phân phối lại nó và/hoặc chỉnh sửa nó dưới cái điều kiện của Giấy phép Công cộng chung GNU được phát hành bởi Tổ chức Phần mềm Tự do, giấy phép phiên bản 3 hoặc mới hơn."
-
-#: ../src/interface.c:562
-msgid "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details."
-msgstr "Hitori được phân phối với hy vọng nó sẽ có ích, nhưng KHÔNG CÓ SỰ BẢO ĐẢM NÀO; "
-
-#: ../src/interface.c:566
-msgid "You should have received a copy of the GNU General Public License along with Hitori.  If not, see <http://www.gnu.org/licenses/>."
-msgstr "Bạn phải nhận được một bản sao của Giấy phép Công cộng chung GNU cùng với Hitory. Nếu không, xem tại <http://www.gnu.org/licenses/>."
-
-#: ../src/interface.c:578
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Bản quyền © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:579
-msgid "A logic puzzle designed by Nikoli."
+#: src/interface.c:674
+#, fuzzy
+msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Một trò chơi logic được thiết kế bởi Nikoli."
 
-#: ../src/interface.c:581
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr "Lê Trường An <xinemdungkhoc1@gmail.com>"
 
-#: ../src/interface.c:585
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Trang web của Hitori"
 
-#: ../src/main.c:76
-msgid "Do you want to stop the current game?"
-msgstr "Bạn có muốn dừng trò chơi?"
-
-#. Translators: this is the format for the timer label. The first parameter is the number of minutes which have elapsed since the start of the
-#. * game; the second parameter is the number of seconds.
-#: ../src/main.c:150
-#, c-format
-msgid "Time: %02u:%02u"
-msgstr "Thời gian: %02u:%02u"
-
-#: ../src/main.c:226
+#: src/main.c:209
 msgid "Enable debug mode"
 msgstr "Bật chế độ gỡ lỗi"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:228
+#: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Mầm phát sinh bàn cờ"
 
-#. Options
-#: ../src/main.c:243
+#: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Chơi một trò trong Hitory"
 
-#: ../src/main.c:253
-msgid "Command line options could not be parsed"
+#: src/main.c:235
+#, fuzzy, c-format
+msgid "Command line options could not be parsed: %s\n"
 msgstr "Không thể phân tích cú pháp tùy chỉnh bằng dòng lệnh"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
-#: ../src/rules.c:266
-#, c-format
-msgid "You've won in a time of %02u:%02u!"
+#: src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "Bạn có muốn dừng trò chơi?"
+
+#: src/main.c:304
+msgid "Keep _Playing"
+msgstr ""
+
+#: src/rules.c:267
+#, fuzzy, c-format
+msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Bạn đã thắng trong %02u phút %02u giây!"
 
+#: src/rules.c:273
+msgid "_Play Again"
+msgstr ""
+
+#~ msgid "_Hint"
+#~ msgstr "Gợ_i ý"
+
+#~ msgid "_Settings"
+#~ msgstr "_Thiết lập"
+
+#~ msgid "UI file “%s” could not be loaded"
+#~ msgstr "Không thể nạp tập tin UI “%s”"
+
+#~ msgid ""
+#~ "Hitori is free software: you can redistribute it and/or modify it under "
+#~ "the terms of the GNU General Public License as published by the Free "
+#~ "Software Foundation, either version 3 of the License, or (at your option) "
+#~ "any later version."
+#~ msgstr ""
+#~ "Hitori là phần mềm tự do: bạn có thể phân phối lại nó và/hoặc chỉnh sửa "
+#~ "nó dưới cái điều kiện của Giấy phép Công cộng chung GNU được phát hành "
+#~ "bởi Tổ chức Phần mềm Tự do, giấy phép phiên bản 3 hoặc mới hơn."
+
+#~ msgid ""
+#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
+#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
+#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
+#~ "details."
+#~ msgstr ""
+#~ "Hitori được phân phối với hy vọng nó sẽ có ích, nhưng KHÔNG CÓ SỰ BẢO ĐẢM "
+#~ "NÀO; "
+
+#~ msgid ""
+#~ "You should have received a copy of the GNU General Public License along "
+#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
+#~ msgstr ""
+#~ "Bạn phải nhận được một bản sao của Giấy phép Công cộng chung GNU cùng với "
+#~ "Hitory. Nếu không, xem tại <http://www.gnu.org/licenses/>."
+
+#~ msgid "Time: %02u:%02u"
+#~ msgstr "Thời gian: %02u:%02u"

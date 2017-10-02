@@ -11,9 +11,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?product=hitori"
-"&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-04-30 22:22+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-08-06 11:30+0530\n"
 "Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
 "Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
@@ -34,12 +34,10 @@ msgstr "ഹിറ്റോറി"
 msgid "Play the Hitori puzzle game"
 msgstr "ഹിറ്റോറി പസില്‍ കളിക്കുക"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -61,9 +59,9 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"കഴിയുന്നത്ര വേഗത്തില്‍ ഓരോ വരിയിലെയും നിരയിലെയും ഡ്യൂപ്ലിക്കേറ്റ് സംഖ്യകള്‍ "
-"നീക്കം ചെയ്യുകയാണ് ലക്ഷ്യം. പ്രശ്നപരിഹാരത്തിനായി ഓരോ സെല്ലിലും അടയാളങ്ങള്‍ "
-"സ്ഥാപിക്കാവുന്നതാണ്. കളിയില്‍ തടസമുണ്ടായാല്‍ സൂചനകള്‍ ലഭ്യമാണ്."
+"കഴിയുന്നത്ര വേഗത്തില്‍ ഓരോ വരിയിലെയും നിരയിലെയും ഡ്യൂപ്ലിക്കേറ്റ് സംഖ്യകള്‍ നീക്കം ചെയ്യുകയാണ് "
+"ലക്ഷ്യം. പ്രശ്നപരിഹാരത്തിനായി ഓരോ സെല്ലിലും അടയാളങ്ങള്‍ സ്ഥാപിക്കാവുന്നതാണ്. കളിയില്‍ "
+"തടസമുണ്ടായാല്‍ സൂചനകള്‍ ലഭ്യമാണ്."
 
 #: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
@@ -155,17 +153,14 @@ msgstr "ഹിറ്റോറി വെബ്സൈറ്റ്"
 msgid "Enable debug mode"
 msgstr "ഡീബഗ് മോഡ് പ്രവര്‍ത്തിപ്പിക്കുക"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "ബോര്‍ഡ് ഉണ്ടാക്കാനുള്ള സംഖ്യ"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- ഹിറ്റോറി -കളിക്കുക"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -179,8 +174,6 @@ msgstr "ഇപ്പോഴത്തെ കളി അവസാനിപ്പി�
 msgid "Keep _Playing"
 msgstr "കളിച്ചുകൊണ്ടേയിരിക്കുക (_P)"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

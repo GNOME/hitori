@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNOME\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-01-07 11:57+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-01-09 00:13+0800\n"
 "Last-Translator: Mandy Wang <wangmychn@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
@@ -27,12 +27,10 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "玩 Hitori 益智游戏"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;解谜;游戏;逻辑;网格;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -122,25 +120,25 @@ msgstr "面板大小"
 msgid "The size of the board, in cells."
 msgstr "面板大小，也就是格数。"
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "帮助内容无法显示"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "原先由 Nikoli 所作的一个逻辑益智游戏"
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "Zhang Miao <mymzhang@gmail.com>, 2009.\n"
 "Tong Hui <tonghuix@gmail.com>, 2014."
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Hitori 网站"
 
@@ -148,17 +146,14 @@ msgstr "Hitori 网站"
 msgid "Enable debug mode"
 msgstr "启用调试模式"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "设置面板生成所用的种子"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- 进行一次 Hitori 游戏"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -172,8 +167,6 @@ msgstr "您要停止当前游戏么？"
 msgid "Keep _Playing"
 msgstr "继续(_P)"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2017-09-02 12:57+0000\n"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-09-03 10:12+0300\n"
 "Last-Translator:  Alexander Shopov <ash@kambanaria.org>\n"
 "Language-Team: Bulgarian <dict@fsa-bg.org>\n"
@@ -27,14 +27,12 @@ msgstr "Хитори"
 msgid "Play the Hitori puzzle game"
 msgstr "Абстрактна главоблъсканица с числа"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr ""
 "логическа;загадка;главоблъсканица;пъзел;цифри;числа;дъска;puzzle;game;logic;"
 "grid;"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -156,17 +154,14 @@ msgstr "Страница на Хитори"
 msgid "Enable debug mode"
 msgstr "Изчистване на грешки"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Генератор за позицията на дъската"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "— играта Хитори"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -180,8 +175,6 @@ msgstr "Искате ли да приключите текущата игра?"
 msgid "Keep _Playing"
 msgstr "_Продължаване на играта"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
