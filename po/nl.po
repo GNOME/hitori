@@ -1,7 +1,8 @@
-# Slovak translation for hitori.
-# Copyright (C) 2014 hitori's COPYRIGHT HOLDER
+# Dutch translation for hitori.
+# Copyright (C) 2015 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
-# Dušan Kazik <prescott66@gmail.com>, 2014.
+# Nathan Follens <nathan@anche.no>, 2015, 2017.
+# Justin van Steijn <jvs@fsfe.org>, 2016.
 #
 msgid ""
 msgstr ""
@@ -9,15 +10,15 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
 "product=hitori\n"
 "POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-01-22 15:12+0100\n"
-"Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
-"Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2017-09-11 18:47+0200\n"
+"Last-Translator: Nathan Follens <nthn@unseen.is>\n"
+"Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.3\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
@@ -26,11 +27,11 @@ msgstr "Hitori"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "Hrajte hru Hitori"
+msgstr "Speel het Hitori-puzzelspel"
 
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "hlavolam;hra;logická;logika;mriežka;"
+msgstr "puzzle;game;logic;grid;puzzel;spel;logica;grid;rooster;raster;"
 
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
@@ -39,12 +40,12 @@ msgstr "org.gnome.Hitori"
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
 msgid "GNOME Hitori"
-msgstr "Hitori pre prostredie GNOME"
+msgstr "Gnome Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori je logická hra podobná populárnej hre Sudoku"
+msgstr "Hitori is een logisch spel, vergelijkbaar met het populaire Sudoku."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -53,18 +54,19 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Cieľom hrania hry je eliminovať všetky zdvojené čísla v každom riadku a "
-"stĺpci v čo najkratšom čase. Je podporovaných viacero veľkostí hracej plochy "
-"a môžete si umiestniť značky na bunky a pomôcť si tak nájsť riešenie. Ak "
-"nebudete vedieť čo ďalej, hra vám môže poskytnúť radu."
+"U speelt het spel tegen de klok en probeert alle dubbele nummers in elke rij "
+"en kolom zo snel mogelijk te elimineren. Meerdere groottes van het spelbord "
+"worden ondersteund, en u kunt aanduidingen plaatsen op cellen om die u "
+"kunnen helpen bij het zoeken naar de oplossing. Als u vast raakt te zitten, "
+"kan het spel een hint geven."
 
 #: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
-msgstr "_Nová hra"
+msgstr "_Nieuw spel"
 
 #: data/hitori-menus.ui:12
 msgid "Board _Size"
-msgstr "Veľkosť _hracej plochy"
+msgstr "Bord_grootte"
 
 #: data/hitori-menus.ui:16
 msgid "5×5"
@@ -92,97 +94,90 @@ msgstr "10×10"
 
 #: data/hitori-menus.ui:50
 msgid "_Help"
-msgstr "_Pomocník"
+msgstr "_Hulp"
 
 #: data/hitori-menus.ui:55
 msgid "_About"
-msgstr "_O programe"
+msgstr "_Over"
 
 #: data/hitori-menus.ui:59 src/rules.c:272
 msgid "_Quit"
-msgstr "_Ukončiť"
+msgstr "_Afsluiten"
 
-# tooltip
 #: data/hitori.ui:29
 msgid "Undo your last move"
-msgstr "Vráti váš posledný ťah"
+msgstr "Maak je laatste zet ongedaan"
 
-# tooltip
 #: data/hitori.ui:51
 msgid "Redo a move"
-msgstr "Zopakuje ťah"
+msgstr "Doe een zet opnieuw"
 
 #: data/hitori.ui:75
 msgid "Get a hint for your next move"
-msgstr "Poskytne radu pre váš ďalší ťah"
+msgstr "Krijg een hint voor je volgende zet"
 
 #: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
-msgstr "Veľkosť hracej plochy"
+msgstr "Bordgrootte"
 
 #: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
-msgstr "Počet buniek hracej plochy."
+msgstr "De grootte van het bord in cellen."
 
 #: src/interface.c:649
 msgid "The help contents could not be displayed"
-msgstr "Obsah pomocníka sa nepodarilo zobraziť"
+msgstr "De hulpinhoud kon niet worden weergegeven"
 
 #: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
-msgstr "Autorské práva © 2007–2010 Philip Withnall"
+msgstr "Auteursrecht © 2007–2010 Philip Withnall"
 
 #: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Hlavolam pôvodne vytvorený Nikolim"
+msgstr "Een logische puzzel oorspronkelijk bedacht door Nikoli"
 
 #: src/interface.c:676
 msgid "translator-credits"
-msgstr "Dušan Kazik <prescott66@gmail.com>"
+msgstr ""
+"Nathan Follens\n"
+"Justin van Steijn\n"
+"\n"
+"Meer info over Gnome-NL http://nl.gnome.org/"
 
 #: src/interface.c:680
 msgid "Hitori Website"
-msgstr "Webová stránka aplikácie Hitori"
+msgstr "Hitori-website"
 
-# cmd desc
 #: src/main.c:209
 msgid "Enable debug mode"
-msgstr "Povolí režim ladenia"
+msgstr "Debugmodus inschakelen"
 
-# cmd desc
 #: src/main.c:211
 msgid "Seed the board generation"
-msgstr "Náhodné generovanie hracej plochy"
+msgstr "Seed voor bordaanmaak"
 
 #: src/main.c:225
 msgid "- Play a game of Hitori"
-msgstr "- Play a game of Hitori"
+msgstr "- Speel een spel Hitori"
 
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Nedajú sa analyzovať voľby príkazového riadku: %s\n"
+msgstr "Commandoregelopties konden niet geparset worden: %s\n"
 
 #: src/main.c:301
 msgid "Do you want to stop the current game?"
-msgstr "Chcete prerušiť aktuálnu hru?"
+msgstr "Wilt u het huidige spel beëindigen?"
 
-# button
 #: src/main.c:304
 msgid "Keep _Playing"
-msgstr "Pokračovať v _hre"
+msgstr "Blijven s_pelen"
 
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Vyhrali ste s časom %02u:%02u!"
+msgstr "U heeft gewonnen binnen %02u:%02u!"
 
 #: src/rules.c:273
 msgid "_Play Again"
-msgstr "_Hrať znovu"
-
-#~ msgid "UI file “%s” could not be loaded"
-#~ msgstr "Nepodarilo sa načítať súbor používateľského rozhrania „%s“"
-
-#~ msgid "%02u∶‎%02u"
-#~ msgstr "%02u∶‎%02u"
+msgstr "O_pnieuw spelen"

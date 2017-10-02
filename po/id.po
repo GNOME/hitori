@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-12-24 18:31+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2017-01-15 17:46+0700\n"
 "Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: INDONESIA <gnome@i15n.org>\n"
@@ -29,12 +29,11 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Mainkan permainan menyusun gambar Hitori"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "teka teki;permainan;logic;grid;"
 
-#: data/org.gnome.Hitori.desktop.in:8
+#: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
 
@@ -125,26 +124,26 @@ msgstr "Ukuran papan"
 msgid "The size of the board, in cells."
 msgstr "Ukuran papan, dalam sel."
 
-#: src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Isi bantuan tidak dapat ditampilkan"
 
-#: src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Hak Cipta © 2007–2010 Philip Withnall"
 
-#: src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Teka-teki logika yang dirancang oleh Nikoli"
 
-#: src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "Imam Musthaqim <userindesign@gmail.com>, 2009\n"
 "Andika Triwidada <andika@gmail.com>, 2012, 2014\n"
 "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
 
-#: src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Situs Web Hitori"
 
@@ -152,17 +151,14 @@ msgstr "Situs Web Hitori"
 msgid "Enable debug mode"
 msgstr "Aktifkan mode perunutan"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Tentukan sumber untuk pembuatan papan"
 
-#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Mainkan Hitori"
 
-#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -176,8 +172,6 @@ msgstr "Anda ingin menghentikan permainan saat ini?"
 msgid "Keep _Playing"
 msgstr "Tetap _Bermain"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"

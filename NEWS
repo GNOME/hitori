@@ -1,5 +1,17 @@
 Major new features in version...
 
+3.22.4:
+* Translations:
+** bg (Alexander Shopov)
+** ca (Jordi Mas)
+** fa (Arash Mousavi)
+** fr (Alain Lojewski)
+** ko (Junyoul Lim)
+** ml (Ani Peter)
+** nl (Nathan Follens)
+** pl (Piotr Drąg)
+** tr (Muhammet Kara)
+
 3.22.3:
 * Minor rendering improvements (bug #732776)
 * Add flatpak manifests for nightly builds

@@ -1,0 +1,184 @@
+# Malayalam translation for hitori.
+# Copyright (C) 2017 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Ani Peter <peter.ani@gmail.com>, 2017.
+# Indulekshmi.B <lekshmi.indu@gmail.com>, 2017.
+# Athira N.S <nsathira1991@gmail.com>, 2017.
+# Sarath S.Karippalkizhakkathil <sarathskarippal@gmail.com>, 2017.
+# Ponnamma K<k.ponnamma2013@gmail.com>, 2017.
+# Rachana R <rachanarmnr@gmail.com>, 2017.
+# Anish Sheela <aneesh.nl@gmail.com>, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
+"PO-Revision-Date: 2017-08-06 11:30+0530\n"
+"Last-Translator: Anish Sheela <aneesh.nl@gmail.com>\n"
+"Language-Team: Swatantra Malayalam Computing <discuss@lists.smc.org.in>\n"
+"Language: ml\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+msgid "Hitori"
+msgstr "ഹിറ്റോറി"
+
+#. Translators: the brief summary of the application as it appears in a software center.
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
+msgid "Play the Hitori puzzle game"
+msgstr "ഹിറ്റോറി പസില്‍ കളിക്കുക"
+
+#: data/org.gnome.Hitori.desktop.in:6
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;game;logic;grid;"
+
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr "org.gnome.Hitori"
+
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.appdata.xml.in:9
+msgid "GNOME Hitori"
+msgstr "ഗ്നോം ഹിറ്റോറി"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: data/org.gnome.Hitori.appdata.xml.in:16
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "ജനപ്രിയമായ സുഡോക്കു പോലെ ബുദ്ധിപരമായ കളിയാണ് ഹിറ്റോറി."
+
+#: data/org.gnome.Hitori.appdata.xml.in:17
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"കഴിയുന്നത്ര വേഗത്തില്‍ ഓരോ വരിയിലെയും നിരയിലെയും ഡ്യൂപ്ലിക്കേറ്റ് സംഖ്യകള്‍ നീക്കം ചെയ്യുകയാണ് "
+"ലക്ഷ്യം. പ്രശ്നപരിഹാരത്തിനായി ഓരോ സെല്ലിലും അടയാളങ്ങള്‍ സ്ഥാപിക്കാവുന്നതാണ്. കളിയില്‍ "
+"തടസമുണ്ടായാല്‍ സൂചനകള്‍ ലഭ്യമാണ്."
+
+#: data/hitori-menus.ui:8 src/main.c:305
+msgid "_New Game"
+msgstr "പുതിയ കളി (_N)"
+
+#: data/hitori-menus.ui:12
+msgid "Board _Size"
+msgstr "ബോര്‍ഡിന്‍െറ വലിപ്പം (_S)"
+
+#: data/hitori-menus.ui:16
+msgid "5×5"
+msgstr "5×5"
+
+#: data/hitori-menus.ui:21
+msgid "6×6"
+msgstr "6×6"
+
+#: data/hitori-menus.ui:26
+msgid "7×7"
+msgstr "7×7"
+
+#: data/hitori-menus.ui:31
+msgid "8×8"
+msgstr "8×8"
+
+#: data/hitori-menus.ui:36
+msgid "9×9"
+msgstr "9×9"
+
+#: data/hitori-menus.ui:41
+msgid "10×10"
+msgstr "10×10"
+
+#: data/hitori-menus.ui:50
+msgid "_Help"
+msgstr "സഹായം (_H)"
+
+#: data/hitori-menus.ui:55
+msgid "_About"
+msgstr "സംബന്ധിച്ച് (_A)"
+
+#: data/hitori-menus.ui:59 src/rules.c:272
+msgid "_Quit"
+msgstr "പുറത്തുപോകുക (_Q)"
+
+#: data/hitori.ui:29
+msgid "Undo your last move"
+msgstr "അവസാന നീക്കം കളയുക"
+
+#: data/hitori.ui:51
+msgid "Redo a move"
+msgstr "ഒരു നീക്കം ആവര്‍ത്തിക്കുക"
+
+#: data/hitori.ui:75
+msgid "Get a hint for your next move"
+msgstr "അടുത്ത നീക്കത്തിനുളള സൂചന "
+
+#: data/org.gnome.hitori.gschema.xml:6
+msgid "Board size"
+msgstr "ബോര്‍ഡിന്റെ വലിപ്പം"
+
+#: data/org.gnome.hitori.gschema.xml:7
+msgid "The size of the board, in cells."
+msgstr "സെല്ലുകളില്‍ ബോര്‍ഡിന്റെ വലിപ്പം"
+
+#: src/interface.c:649
+msgid "The help contents could not be displayed"
+msgstr "സഹായിക്കാനുളള വിശദാംശങ്ങള്‍ പ്രദര്‍ശിപ്പിക്കാന്‍ സാധ്യമല്ല"
+
+#: src/interface.c:673
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "പകര്‍പ്പവകാശം © 2007–2010 ഫിലിപ്പ് വിതാള്‍"
+
+#: src/interface.c:674
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "നികോളി രൂപകല്‍പ്പന ചെയ്ത ലോജിക് പസില്‍"
+
+#: src/interface.c:676
+msgid "translator-credits"
+msgstr ""
+"അനീഷ് ഷീല <aneesh.nl@gmail.com>,\n"
+"അനി പീറ്റര്‍ <peter.ani@gmail.com>"
+
+#: src/interface.c:680
+msgid "Hitori Website"
+msgstr "ഹിറ്റോറി വെബ്സൈറ്റ്"
+
+#: src/main.c:209
+msgid "Enable debug mode"
+msgstr "ഡീബഗ് മോഡ് പ്രവര്‍ത്തിപ്പിക്കുക"
+
+#: src/main.c:211
+msgid "Seed the board generation"
+msgstr "ബോര്‍ഡ് ഉണ്ടാക്കാനുള്ള സംഖ്യ"
+
+#: src/main.c:225
+msgid "- Play a game of Hitori"
+msgstr "- ഹിറ്റോറി -കളിക്കുക"
+
+#: src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "%s : കമാന്ററ് ലൈനില്‍ കൂടി വന്ന ഒപ്ഷനുകള്‍ തിരിച്ചറിയാന്‍ പറ്റിയില്ല\n"
+
+#: src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "ഇപ്പോഴത്തെ കളി അവസാനിപ്പിക്കണോ?"
+
+#: src/main.c:304
+msgid "Keep _Playing"
+msgstr "കളിച്ചുകൊണ്ടേയിരിക്കുക (_P)"
+
+#: src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "%02u:%02u സമയത്തില്‍ നിങ്ങള്‍ ജയിച്ചു"
+
+#: src/rules.c:273
+msgid "_Play Again"
+msgstr "വീണ്ടും കളിക്കുക (_P)"

@@ -8,8 +8,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2015-04-17 10:16+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2015-08-27 16:07+0100\n"
 "Last-Translator: Abderrahim Kitouni <a.kitouni@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -19,162 +20,164 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.5\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: ../data/hitori.desktop.in.h:1 ../data/hitori.ui.h:1 ../src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
 msgstr "هيتوري"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/hitori.desktop.in.h:2 ../data/hitori.appdata.xml.in.h:4
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "العب لعبة أحجية هيتوري"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/hitori.desktop.in.h:4
+#: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "أحجية;لعبة;منطق;شبكة;puzzle;game;logic;grid;"
 
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr ""
+
 #. Translators: the name of the application as it appears in a software center
-#: ../data/hitori.appdata.xml.in.h:2
+#: data/org.gnome.Hitori.appdata.xml.in:9
 msgid "GNOME Hitori"
 msgstr "جنوم هيتوري"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/hitori.appdata.xml.in.h:6
+#: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "هيتوري لعبة منطق شبيهة باللّعبة الشّعبيّة سودوكو."
 
-#: ../data/hitori.appdata.xml.in.h:7
+#: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr "ستلعب ضدّ الوقت محاولا إزالة كلّ الأرقام المتكرّرة في كلّ صفّ وعمود بأسرع ما يمكن. عدّة مقاسات للوحة مدعومة، ويمكنك وضع العلامات على الخلايا لمساعدتك في فكّ الأحجية. إن علقت يمكن للّعبة إعطائك تلميحا ما."
+msgstr ""
+"ستلعب ضدّ الوقت محاولا إزالة كلّ الأرقام المتكرّرة في كلّ صفّ وعمود بأسرع ما "
+"يمكن. عدّة مقاسات للوحة مدعومة، ويمكنك وضع العلامات على الخلايا لمساعدتك في "
+"فكّ الأحجية. إن علقت يمكن للّعبة إعطائك تلميحا ما."
 
-#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
+#: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
 msgstr "لعبة _جديدة"
 
-#: ../data/hitori-menus.ui.h:2
+#: data/hitori-menus.ui:12
 msgid "Board _Size"
 msgstr "م_قاس اللوحة"
 
-#: ../data/hitori-menus.ui.h:3
+#: data/hitori-menus.ui:16
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori-menus.ui.h:4
+#: data/hitori-menus.ui:21
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori-menus.ui.h:5
+#: data/hitori-menus.ui:26
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori-menus.ui.h:6
+#: data/hitori-menus.ui:31
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori-menus.ui.h:7
+#: data/hitori-menus.ui:36
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori-menus.ui.h:8
+#: data/hitori-menus.ui:41
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori-menus.ui.h:9
+#: data/hitori-menus.ui:50
 msgid "_Help"
 msgstr "م_ساعدة"
 
-#: ../data/hitori-menus.ui.h:10
+#: data/hitori-menus.ui:55
 msgid "_About"
 msgstr "_عن"
 
-#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
+#: data/hitori-menus.ui:59 src/rules.c:272
 msgid "_Quit"
 msgstr "أ_نهِ"
 
-#: ../data/hitori.ui.h:2
+#: data/hitori.ui:29
 msgid "Undo your last move"
 msgstr "تراجع عن آخر حركة"
 
-#: ../data/hitori.ui.h:3
+#: data/hitori.ui:51
 msgid "Redo a move"
 msgstr "أعد حركة"
 
-#: ../data/hitori.ui.h:4
+#: data/hitori.ui:75
 msgid "Get a hint for your next move"
 msgstr "احصل على مساعدة للحركة التّالية"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:1
+#: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
 msgstr "مقاس اللّوحة"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:2
+#: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
 msgstr "مقاس اللّوحة (بالخلايا)."
 
-#: ../src/interface.c:630
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "تعذّر عرض محتويات المساعدة"
 
-#: ../src/interface.c:654
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "حقوق النّسخ © 2007–2010 لِـ Philip Withnall"
 
-#: ../src/interface.c:655
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "أحجية منطق مصمّمها الأساسيّ هو نيكولي"
 
-#: ../src/interface.c:657
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
 "فريق عربآيز للترجمة http://www.arabeyes.org:\n"
 "صفا الفليج\t<safa1996alfulaij@gmail.com>\n"
 "yassine birig\t<birigy@gmail.com>"
 
-#: ../src/interface.c:661
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "موقع وِب هيتوري"
 
-#: ../src/main.c:209
+#: src/main.c:209
 msgid "Enable debug mode"
 msgstr "مكّن وضع التنقيح"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:211
+#: src/main.c:211
 msgid "Seed the board generation"
 msgstr "غذّ مولد اللوحة"
 
-#. Options
-#: ../src/main.c:225
+#: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- العب لعبة هيتوري"
 
-#. Print an error
-#: ../src/main.c:235
+#: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "تعذّر تحليل خيارات سطر الأوامر: %s\n"
 
-#: ../src/main.c:301
+#: src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "أتريد إيقاف اللّعبة الحالية؟"
 
-#: ../src/main.c:304
+#: src/main.c:304
 msgid "Keep _Playing"
 msgstr "تابع اللّع_ب"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
-#: ../src/rules.c:267
+#: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "لقد ربحت في زمن %02u:%02u!"
 
-#: ../src/rules.c:273
+#: src/rules.c:273
 msgid "_Play Again"
 msgstr "العب م_جدّدًا"

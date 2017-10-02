@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
-"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori&keywords=I18N+L10N&component=General\n"
-"POT-Creation-Date: 2016-05-05 19:54+0000\n"
+"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
+"product=hitori\n"
+"POT-Creation-Date: 2017-10-02 09:08+0100\n"
 "PO-Revision-Date: 2016-05-05 21:46+0200\n"
 "Last-Translator: Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot En Òc\n"
@@ -21,33 +21,34 @@ msgstr ""
 "X-Generator: Virtaal 0.7.1\n"
 "X-Project-Style: gnome\n"
 
-#: ../data/org.gnome.Hitori.desktop.in.h:1 ../data/hitori.ui.h:1
-#: ../src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: ../data/org.gnome.Hitori.desktop.in.h:2
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:4
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "Jogar al copacap Hitori"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: ../data/org.gnome.Hitori.desktop.in.h:4
+#: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "copacap;jòc;logica;grasilha;"
 
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr ""
+
 #. Translators: the name of the application as it appears in a software center
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:2
+#: data/org.gnome.Hitori.appdata.xml.in:9
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:6
+#: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "Hitori es un jòc de logica similar al popular jòc de Sudoku."
 
-#: ../data/org.gnome.Hitori.appdata.xml.in.h:7
+#: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
@@ -60,127 +61,122 @@ msgstr ""
 "d'ajudar a trobar una solucion. Se sètz blocat, lo jòc vos pòt donar un "
 "indici."
 
-#: ../data/hitori-menus.ui.h:1 ../src/main.c:305
+#: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
 msgstr "_Novèla partida"
 
-#: ../data/hitori-menus.ui.h:2
+#: data/hitori-menus.ui:12
 msgid "Board _Size"
 msgstr "_Talha del platèu"
 
-#: ../data/hitori-menus.ui.h:3
+#: data/hitori-menus.ui:16
 msgid "5×5"
 msgstr "5×5"
 
-#: ../data/hitori-menus.ui.h:4
+#: data/hitori-menus.ui:21
 msgid "6×6"
 msgstr "6×6"
 
-#: ../data/hitori-menus.ui.h:5
+#: data/hitori-menus.ui:26
 msgid "7×7"
 msgstr "7×7"
 
-#: ../data/hitori-menus.ui.h:6
+#: data/hitori-menus.ui:31
 msgid "8×8"
 msgstr "8×8"
 
-#: ../data/hitori-menus.ui.h:7
+#: data/hitori-menus.ui:36
 msgid "9×9"
 msgstr "9×9"
 
-#: ../data/hitori-menus.ui.h:8
+#: data/hitori-menus.ui:41
 msgid "10×10"
 msgstr "10×10"
 
-#: ../data/hitori-menus.ui.h:9
+#: data/hitori-menus.ui:50
 msgid "_Help"
 msgstr "Ajud_a"
 
-#: ../data/hitori-menus.ui.h:10
+#: data/hitori-menus.ui:55
 msgid "_About"
 msgstr "_A prepaus"
 
-#: ../data/hitori-menus.ui.h:11 ../src/rules.c:272
+#: data/hitori-menus.ui:59 src/rules.c:272
 msgid "_Quit"
 msgstr "_Quitar"
 
-#: ../data/hitori.ui.h:2
+#: data/hitori.ui:29
 msgid "Undo your last move"
 msgstr "Anullar vòstre darrièr movement"
 
-#: ../data/hitori.ui.h:3
+#: data/hitori.ui:51
 msgid "Redo a move"
 msgstr "Refar un movement"
 
-#: ../data/hitori.ui.h:4
+#: data/hitori.ui:75
 msgid "Get a hint for your next move"
 msgstr "Obténer un indici per vòstre movement que ven"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:1
+#: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
 msgstr "Talha del platèu"
 
-#: ../data/org.gnome.hitori.gschema.xml.h:2
+#: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
 msgstr "Talha del platèu, en cellulas"
 
-#: ../src/interface.c:635
+#: src/interface.c:649
 msgid "The help contents could not be displayed"
 msgstr "Impossible d'afichar lo contengut de l'ajuda"
 
-#: ../src/interface.c:659
+#: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: ../src/interface.c:660
+#: src/interface.c:674
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un copacap de logica concebut a l'origina per Nikoli."
 
-#: ../src/interface.c:662
+#: src/interface.c:676
 msgid "translator-credits"
 msgstr "Cédric Valmary (totenoc.eu) <cvalmary@yahoo.fr>, 2016"
 
-#: ../src/interface.c:666
+#: src/interface.c:680
 msgid "Hitori Website"
 msgstr "Site Web de Hitori"
 
-#: ../src/main.c:209
+#: src/main.c:209
 msgid "Enable debug mode"
 msgstr "Activar lo mòde desbugatge"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: ../src/main.c:211
+#: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Gèrme de nombre aleatòri per la generacion del platèu"
 
-#. Options
-#: ../src/main.c:225
+#: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Jogar a una partida de Hitori"
 
-#. Print an error
-#: ../src/main.c:235
+#: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Impossible d'analisar las opcions de la linha de comanda : %s\n"
 
-#: ../src/main.c:301
+#: src/main.c:301
 msgid "Do you want to stop the current game?"
 msgstr "Volètz arrestar aquesta partida ?"
 
-#: ../src/main.c:304
+#: src/main.c:304
 msgid "Keep _Playing"
 msgstr "Contunhar de _jogar"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
-#. * the number of seconds.
-#: ../src/rules.c:267
+#: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Avètz resolgut lo puzzle en %02u:%02u !"
 
 # ... o Jogar a Novèl, c'est a voir.
-#: ../src/rules.c:273
+#: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Rejogar"
 
