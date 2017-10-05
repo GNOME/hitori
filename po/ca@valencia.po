@@ -1,18 +1,19 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
-# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2014
+# Jordi Mas i Hernàndez <jmas@softcatala.org>, 2014, 2017
 # Gil Forcada <gilforcada@guifi.net>, 2014.
+# Jordi Serratosa <jordis@softcatala.cat>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori\n"
 "Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
+"product=hitori&keywords=I18N+L10N&component=General\n"
+"POT-Creation-Date: 2017-10-02 08:24+0000\n"
 "PO-Revision-Date: 2014-09-05 00:21+0200\n"
-"Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
+"Last-Translator: Xavi Ivars <xavi.ivars@gmail.com>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
-"Language: ca@valencia\n"
+"Language: ca-valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bits\n"
@@ -27,13 +28,15 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Jugueu al trencaclosques Hitori"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr ""
+msgstr "trencaclosques;puzle;joc;lògica;graella;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
-msgstr ""
+msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -55,7 +58,7 @@ msgstr ""
 "Jugueu contra rellotge, amb l'objectiu d'eliminar tots els nombres duplicats "
 "a cada fila i columna en el menor temps possible. Es pot jugar a taulers de "
 "diferent mida, i podeu posar els marcadors a les celes per ajudar-vos a "
-"trobar la solució. Si vos quedeu bloquejats, el joc vos pot donar una pista."
+"trobar la solució. Si vos quedeu bloquejat, el joc vos pot donar una pista."
 
 #: data/hitori-menus.ui:8 src/main.c:305
 msgid "_New Game"
@@ -145,14 +148,17 @@ msgstr "Lloc web del Hitori"
 msgid "Enable debug mode"
 msgstr "Habilita mode de depuració"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Llavor pel generador de taulers"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Jugueu una partida del Hitori"
 
+#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -160,12 +166,14 @@ msgstr "No s'han pogut analitzar les opcions de la línia d'ordes: «%s»\n"
 
 #: src/main.c:301
 msgid "Do you want to stop the current game?"
-msgstr "Voleu parar la partida actual?"
+msgstr "Voleu aturar la partida actual?"
 
 #: src/main.c:304
 msgid "Keep _Playing"
 msgstr "_Continua jugant"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
