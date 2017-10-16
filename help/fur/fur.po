@@ -1,0 +1,336 @@
+# Friulian translation for hitori.
+# Copyright (C) 2017 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Fabio Tomat <f.t.public@gmail.com>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2017-09-22 19:46+0000\n"
+"PO-Revision-Date: 2017-10-12 09:55+0200\n"
+"Language-Team: Friulian <fur@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fur\n"
+"Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
+"X-Generator: Poedit 2.0.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Fabio Tomat <f.t.public at gmail.com>, 2017"
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Cambiant l'aspiet e il mût di zuiâ."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Personalizant il zûc"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Il zûc al pues jessi personalizât cambiant la dimension de taule — a son "
+"permetudis lis taulis di 5 a 10 caselis."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
+msgstr ""
+"Par cambiâ la dimension de taule, sielç une opzion di <guiseq><gui style="
+"\"menu\">Zûc</gui><gui style=\"menuitem\">Dimension taule</gui></guiseq>. Se "
+"o sês tal mieç di une partide <app>Hitori</app> us domandarà se o desiderais "
+"fermâ il zûc in vore e tacâ une gnove partide cun la dimension de taule "
+"domandade."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Introduzion al zûc di Hitori."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Hitori il zûc"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori al è un piçul berdei logjic de stesse risme dal plui famôs Sudoku. "
+"Intal zûc il zuiadôr al tache cuntune taule cuadrade di numars e al à di "
+"<em>scrivi</em> tes caselis fintremai che no son numars compagns in ogni rie "
+"e colone. Si aplichin lis regulis chi daurman:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Al scugne jessi dome un di ogni numar tes caselis vueidis in ogni rie e "
+"colone."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Nissune casele scrite e pues stâ in bande a une altre, sedi verticâl che "
+"orizontâl."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Dutis lis caselis vueidis a scugnin jessi unidis in verticâl o orizontâl "
+"intun grup."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Indi son dome trê regulis dal zûc e cusì si pues vê plui soluzions aes "
+"taulis dal berdei Hitori."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Barcon principâl dal zûc"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Barcon principâl di <app>Hitori</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Barcon principâl di <app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#. (itstool) path: license/p
+#: C/index.page:11
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Chest lavôr al è in licence sot di une <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/\">Licence Creative Commons Atribuzion-condivision "
+"compagne 3.0 Unported</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Jutori di Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Ûs di fonde dal zûc"
+
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Dretis e trucs"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Licence Creative Commons Atribuzion-condivision compagne 3.0 Unported"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Chest lavôr al è in licence sot de <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Doprant <app>Hitori</app> par zuiâ une partide."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Zuiâ une partide"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
+msgstr ""
+"Par tacâ une gnove partide, sielç <guiseq><gui style=\"menu\">Zûc</gui><gui "
+"style=\"menuitem\">Gnove partide</gui></guiseq>. Se si sta za zuiant a une "
+"partide, <app>Hitori</app> al domandarà se si desidere fermâ la partide in "
+"cors."
+
+#. (itstool) path: page/p
+#: C/playing.page:12
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Par scrivi une casele, fâs clic parsore di une; par scancelâle, fâs clic "
+"parsore di chê di gnûf. Cuant che lis caselis a vegnin scritis siche nissune "
+"des trê regulis a vegnin violadis, il zûc al finìs e la taule no pues jessi "
+"plui modificade."
+
+#. (itstool) path: page/p
+#: C/playing.page:14
+msgid ""
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
+msgstr ""
+"<app>Hitori</app> al permet ancje di evidenziâ caselis par fâ in mût di vê "
+"riferiments cuant che si risolf une taule. Chest si pues fâ tignint fracât "
+"<key>Ctrl</key> o <key>Maiusc</key> e fasint clic suntune casele. I doi "
+"tascj a evidenzin lis caselis in manieris diferentis e si pues evidenziâ la "
+"stesse casele in dutis dôs lis manieris. Si pues gjavâ la evidenziazion "
+"fasint di gnûf clic su lis caselis intant che si ten fracât di gnûf o "
+"<key>Ctrl</key> o <key>Maiusc</key>."
+
+#. (itstool) path: page/p
+#: C/playing.page:18
+msgid ""
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
+msgstr ""
+"Par disfâ o tornâ a fâ une mosse, sielzeit <guiseq><gui style=\"menu\">Zûc</"
+"gui><gui style=\"menuitem\">Disfe</gui></guiseq> o <guiseq><gui style=\"menu"
+"\">Zûc</gui><gui style=\"menuitem\">Torne fâs</gui></guiseq>. Si pues disfâ "
+"o tornâ a fâ dutis lis mossis che si vûl cence restrizions."
+
+#. (itstool) path: page/p
+#: C/playing.page:21
+msgid ""
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"Par vê un sugjeriment su cuale casele scrivi, sielç <guiseq><gui style=\"menu"
+"\">Zûc</gui><gui style=\"menuitem\">Sugjeriment</gui></guiseq>. Une casele e "
+"si evidenziarà cuntun contor lampant di ros. Chest al indiche che il stât "
+"atuâl de casele (scrite o no) nol è just e che al varès di jessi cambiât par "
+"podê vinci."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Strategjiis par zuiâ a Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Strategjiis di zûc"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
+msgstr ""
+"Hitori al è une vore simil a Sudoku, parcè che i covente deduzion logjiche "
+"par capî cualis caselis scrivi. Une strategjie e je chê di fâ <key>Shift</"
+"key>-clic par evidenziâ ducj i numars ripetûts in ogni <em>colone</em>, dopo "
+"fâ <key>Ctrl</key>-clic par evidenziâ ducj i numars ripetûts in ogni "
+"<em>rie</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Une volte fat pe taule interie, lis caselis che a son stadis evidenziadis in "
+"dutis dôs lis manieris a son buinis pe scriture, ma no simpri. Cuant che si "
+"scrîf une casele, il gjavâ la evidenziazion des altris caselis, cul stes "
+"numar inte stesse rie e colone di chê casele, al è une buine maniere par "
+"tignî cont di cualis caselis a stan violant la <link xref=\"game\">regule 1 "
+"di Hitori</link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Ten iniments che la regule 2 di Hitori al significhe che dôs caselis vicinis "
+"no puedin jessi dutis dôs scritis. <app>Hitori</app> al evidenziarà in ros "
+"lis caselis che a violin la regule 2. Te stesse maniere, i grups di caselis "
+"che a violin la regule 3 separant une o plui caselis vueidis des altris "
+"caselis vueidis a vignaran evidenziadis in ros."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
+msgstr ""
+"Se si reste impantanâts intun pont, sielzeit <guiseq><gui style=\"menu"
+"\">Zûc</gui><gui style=\"menuitem\">Sugjeriment</gui></guiseq> par fâ in mût "
+"che <app>Hitori</app> al segni une casele di scrivi o scancelâ par rivâ plui "
+"dongje ae soluzion."
