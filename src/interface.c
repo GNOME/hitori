@@ -134,7 +134,7 @@ lookup_color (GtkStyleContext *style_context, const gchar *name, GdkRGBA *result
 }
 
 static void
-draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gfloat cell_size, gdouble x_pos, gdouble y_pos,
+draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gdouble cell_size, gdouble x_pos, gdouble y_pos,
            HitoriVector iter)
 {
 	gchar *text;
@@ -307,7 +307,7 @@ hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori)
 
 	/* Draw a hint if applicable */
 	if (hitori->hint_status % 2 == 1) {
-		gfloat line_width = BORDER_LEFT * 2.5;
+		gdouble line_width = BORDER_LEFT * 2.5;
 		GdkRGBA colour;
 		lookup_color (style_context, "hint-border-color", &colour);
 		gdk_cairo_set_source_rgba (cr, &colour);
