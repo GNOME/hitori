@@ -40,7 +40,7 @@
           [
             {
               "type": "git",
-              "url": "https://git.gnome.org/browse/hitori"
+              "url": "https://gitlab.gnome.org/GNOME/hitori.git"
             }
           ]
       }

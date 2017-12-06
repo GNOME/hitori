@@ -44,8 +44,8 @@ Icon by Jakub Szypulka <cube@szypulka.com>
 BUGS
 ====
 
-Bugs should be entered in GNOME Bugzilla:
-http://bugzilla.gnome.org/enter_bug.cgi?product=hitori
+Bugs should be entered in GNOME GitLab:
+https://gitlab.gnome.org/GNOME/hitori/issues
 
 To get a better debug output, run:
 # hitori --debug
