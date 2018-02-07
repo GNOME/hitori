@@ -1,13 +1,13 @@
 # Polish translation for hitori help.
 # Copyright © 2017 the hitori authors.
-# This file is distributed under the same license as the hitori package.
+# This file is distributed under the same license as the hitori help.
 # Piotr Drąg <piotrdrag@gmail.com>, 2017.
 # Aviary.pl <community-poland@mozilla.org>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori-help\n"
-"POT-Creation-Date: 2017-08-13 15:57+0000\n"
+"POT-Creation-Date: 2017-12-06 17:27+0000\n"
 "PO-Revision-Date: 2017-08-31 02:12+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
