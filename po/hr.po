@@ -1,0 +1,202 @@
+# Croatian translation for hitori.
+# Copyright (C) 2018 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2018-02-07 23:56+0000\n"
+"PO-Revision-Date: 2018-03-14 00:42+0100\n"
+"Language-Team: Croatian <hr@li.org>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: \n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+msgid "Hitori"
+msgstr "Hitori"
+
+#. Translators: the brief summary of the application as it appears in a software center.
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
+msgid "Play the Hitori puzzle game"
+msgstr "Igrajte Hitori igru slagalice"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Hitori.desktop.in:6
+msgid "puzzle;game;logic;grid;"
+msgstr "Slagalica;igra;logika;mreža;"
+
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+#: data/org.gnome.Hitori.desktop.in:9
+msgid "org.gnome.Hitori"
+msgstr "org.gnome.Hitori"
+
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.appdata.xml.in:9
+msgid "GNOME Hitori"
+msgstr "GNOME Hitori"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: data/org.gnome.Hitori.appdata.xml.in:16
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Hitori je logička igra slična popularnoj igri Sudoku."
+
+#: data/org.gnome.Hitori.appdata.xml.in:17
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Igrate igru protiv vremena, s ciljem eliminacije svih duplih brojeva u "
+"svakom redku i stupcu u što mogućem kraćem vremenu. Više veličina igrače "
+"ploče je podržana a možete i smjestiti oznake na ćelije za pomoć pronalaska "
+"rješenja. Ako zapnete, igra vam može dati savjet."
+
+#: data/hitori-menus.ui:8 src/main.c:305
+msgid "_New Game"
+msgstr "_Nova igra"
+
+#: data/hitori-menus.ui:12
+msgid "Board _Size"
+msgstr "Veličina _ploče"
+
+#: data/hitori-menus.ui:16
+msgid "5×5"
+msgstr "5×5"
+
+#: data/hitori-menus.ui:21
+msgid "6×6"
+msgstr "6×6"
+
+#: data/hitori-menus.ui:26
+msgid "7×7"
+msgstr "7×7"
+
+#: data/hitori-menus.ui:31
+msgid "8×8"
+msgstr "8×8"
+
+#: data/hitori-menus.ui:36
+msgid "9×9"
+msgstr "9×9"
+
+#: data/hitori-menus.ui:41
+msgid "10×10"
+msgstr "10×10"
+
+#: data/hitori-menus.ui:50
+msgid "_Help"
+msgstr "_Priručnik"
+
+#: data/hitori-menus.ui:55
+msgid "_About"
+msgstr "_O programu"
+
+#: data/hitori-menus.ui:59 src/rules.c:272
+msgid "_Quit"
+msgstr "_Zatvori"
+
+#: data/hitori.ui:29
+msgid "Undo your last move"
+msgstr "Poništi posljednji potez"
+
+#: data/hitori.ui:51
+msgid "Redo a move"
+msgstr "Ponovi posljednji potez"
+
+#: data/hitori.ui:75
+msgid "Get a hint for your next move"
+msgstr "Dobijte savjet za svoj sljedeći potez"
+
+#: data/org.gnome.hitori.gschema.xml:6
+msgid "Board size"
+msgstr "Veličina ploče"
+
+#: data/org.gnome.hitori.gschema.xml:7
+msgid "The size of the board, in cells."
+msgstr "Veličina ploče, u ćelijama."
+
+#: src/interface.c:649
+msgid "The help contents could not be displayed"
+msgstr "Sadržaj pomoći se ne može prikazati"
+
+#: src/interface.c:673
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Autorsko pravo © 2007–2010 Philip Withnall"
+
+#: src/interface.c:674
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Logička slagalica izvorno dizajnirana od strane Nikoli"
+
+#: src/interface.c:676
+msgid "translator-credits"
+msgstr ""
+"lokalizacija@linux.hr\n"
+"\n"
+"Launchpad Contributions:\n"
+"  Ante Karamatić https://launchpad.net/~ivoks\n"
+"  Danijel Šnajder https://launchpad.net/~phantomlord-deactivatedaccount\n"
+"  Domagoj Peck https://launchpad.net/~domagojpeck\n"
+"  Filip https://launchpad.net/~f1novkoski\n"
+"  Igor Švarc https://launchpad.net/~igor-svarc\n"
+"  Ivica Petrinic https://launchpad.net/~ivicap\n"
+"  Josip Lazic https://launchpad.net/~josip\n"
+"  Josip Lazic https://launchpad.net/~svakak\n"
+"  Krešo Kunjas https://launchpad.net/~deresh\n"
+"  Mario Splivalo https://launchpad.net/~mariosplivalo\n"
+"  Miroslav Matejaš https://launchpad.net/~silverspace+amd64\n"
+"  Saša Teković https://launchpad.net/~hseagle2015\n"
+"  antisa https://launchpad.net/~antisa\n"
+"  gogo https://launchpad.net/~trebelnik-stefina\n"
+"  zvacet https://launchpad.net/~ivicakolic"
+
+#: src/interface.c:680
+msgid "Hitori Website"
+msgstr "Hitori web stranica"
+
+#: src/main.c:209
+msgid "Enable debug mode"
+msgstr "Omogući način otklanjanja greške"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:211
+msgid "Seed the board generation"
+msgstr "Odaberi broj stvaranja ploče"
+
+#. Options
+#: src/main.c:225
+msgid "- Play a game of Hitori"
+msgstr "- Zaigrajte igru Hitori"
+
+#. Print an error
+#: src/main.c:235
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Mogućnosti naredbenog redka se ne mogu obraditi: %s\n"
+
+#: src/main.c:301
+msgid "Do you want to stop the current game?"
+msgstr "Želite li prekinuti trenutnu igru?"
+
+#: src/main.c:304
+msgid "Keep _Playing"
+msgstr "Nastavi _igrati"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "Pobijedili ste u vremenu %02u:%02u!"
+
+#: src/rules.c:273
+msgid "_Play Again"
+msgstr "_Igraj ponovno"
