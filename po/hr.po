@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
 "POT-Creation-Date: 2018-02-07 23:56+0000\n"
-"PO-Revision-Date: 2018-03-14 00:42+0100\n"
+"PO-Revision-Date: 2018-03-14 14:06+0100\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr "Igrajte Hitori igru slagalice"
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "Slagalica;igra;logika;mreža;"
+msgstr "slagalica;igra;logika;mreža;"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
@@ -139,24 +139,8 @@ msgstr "Logička slagalica izvorno dizajnirana od strane Nikoli"
 #: src/interface.c:676
 msgid "translator-credits"
 msgstr ""
-"lokalizacija@linux.hr\n"
-"\n"
 "Launchpad Contributions:\n"
-"  Ante Karamatić https://launchpad.net/~ivoks\n"
-"  Danijel Šnajder https://launchpad.net/~phantomlord-deactivatedaccount\n"
-"  Domagoj Peck https://launchpad.net/~domagojpeck\n"
-"  Filip https://launchpad.net/~f1novkoski\n"
-"  Igor Švarc https://launchpad.net/~igor-svarc\n"
-"  Ivica Petrinic https://launchpad.net/~ivicap\n"
-"  Josip Lazic https://launchpad.net/~josip\n"
-"  Josip Lazic https://launchpad.net/~svakak\n"
-"  Krešo Kunjas https://launchpad.net/~deresh\n"
-"  Mario Splivalo https://launchpad.net/~mariosplivalo\n"
-"  Miroslav Matejaš https://launchpad.net/~silverspace+amd64\n"
-"  Saša Teković https://launchpad.net/~hseagle2015\n"
-"  antisa https://launchpad.net/~antisa\n"
-"  gogo https://launchpad.net/~trebelnik-stefina\n"
-"  zvacet https://launchpad.net/~ivicakolic"
+"  gogo https://launchpad.net/~trebelnik-stefina"
 
 #: src/interface.c:680
 msgid "Hitori Website"
