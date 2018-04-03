@@ -6,11 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2012-02-11 22:02+0200\n"
-"Last-Translator: Daniel Șerbănescu <daniel@serbanescu.tk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2017-12-06 17:27+0000\n"
+"PO-Revision-Date: 2018-04-01 16:59+0300\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
 "Language-Team: Echipa de traducere în limba română Gnome România <gnomero-"
 "list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -19,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Virtaal 0.7.0\n"
+"X-Generator: Poedit 2.0.6\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
@@ -29,26 +28,27 @@ msgstr "Hitori"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "Joacă puzzle-ul Hitori"
+msgstr "Joacă jocul de puzzle Hitori"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr ""
+msgstr "puzzle;game;logic;grid;joc;logică;grilă;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
-msgstr ""
+msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
-#, fuzzy
 msgid "GNOME Hitori"
-msgstr "Hitori"
+msgstr "Hitori GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr ""
+msgstr "Hitori este un joc de logică similar cu jocul popular Sudoku."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -57,11 +57,15 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
+"Jucați jocul contra-timp, țintind spre eliminarea tuturor numerelor "
+"duplicate pe fiecare linie și coloană în cel mai rapid timp. Sunt suportate "
+"dimensiuni multiple ale tablei de joc, și puteți să plasați marcaje pe "
+"celule pentru a ajuta în descoperirea soluției. Dacă vă blocați, jocul poate "
+"să ofere un indiciu."
 
 #: data/hitori-menus.ui:8 src/main.c:305
-#, fuzzy
 msgid "_New Game"
-msgstr "_Joc"
+msgstr "Joc _nou"
 
 #: data/hitori-menus.ui:12
 msgid "Board _Size"
@@ -97,49 +101,49 @@ msgstr "_Ajutor"
 
 #: data/hitori-menus.ui:55
 msgid "_About"
-msgstr ""
+msgstr "_Despre"
 
 #: data/hitori-menus.ui:59 src/rules.c:272
 msgid "_Quit"
-msgstr ""
+msgstr "_Ieșire"
 
 #: data/hitori.ui:29
 msgid "Undo your last move"
-msgstr ""
+msgstr "Anulează ultima mutare"
 
 #: data/hitori.ui:51
 msgid "Redo a move"
-msgstr ""
+msgstr "Refă o mutare"
 
 #: data/hitori.ui:75
 msgid "Get a hint for your next move"
-msgstr ""
+msgstr "Obțineți un indiciu pentru mutarea următoare"
 
 #: data/org.gnome.hitori.gschema.xml:6
-#, fuzzy
 msgid "Board size"
-msgstr "_Dimensiunea tablei"
+msgstr "Dimensiunea tablei"
 
 #: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
-msgstr ""
+msgstr "Dimensiunea tablei, în celule."
 
 #: src/interface.c:649
 msgid "The help contents could not be displayed"
-msgstr "Textul de ajutor nu a putut fi afișat"
+msgstr "Conținutul ajutorului nu a putut fi afișat"
 
 #: src/interface.c:673
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Drepturi de autor © 2007–2010 Philip Withnall"
 
 #: src/interface.c:674
-#, fuzzy
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Un puzzle de logică conceput de Nikoli."
+msgstr "Un puzzle de logică proiectat de Nikoli"
 
 #: src/interface.c:676
 msgid "translator-credits"
-msgstr "Cristian Buzdugă <cristianbzdg@gmail.com>"
+msgstr ""
+"Cristian Buzdugă <cristianbzdg@gmail.com>\n"
+"Florentina Mușat <florentina.musat.28@gmail.com>"
 
 #: src/interface.c:680
 msgid "Hitori Website"
@@ -149,18 +153,21 @@ msgstr "Pagina de internet Hitori"
 msgid "Enable debug mode"
 msgstr "Activează modul de depanare"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Cod de generare a tablei"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- Porniți un joc de Hitori"
 
+#. Print an error
 #: src/main.c:235
-#, fuzzy, c-format
+#, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Opțiunile din linia de comandă nu au putut fi procesate"
+msgstr "Opțiunile din linia de comandă nu au putut fi parsate: %s\n"
 
 #: src/main.c:301
 msgid "Do you want to stop the current game?"
@@ -168,16 +175,18 @@ msgstr "Doriți să opriți jocul curent?"
 
 #: src/main.c:304
 msgid "Keep _Playing"
-msgstr ""
+msgstr "Continuați să _jucați"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
-#, fuzzy, c-format
+#, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Ați câștigat cu timpul de %02u:%02u!"
+msgstr "Ați câștigat într-un timp de %02u:%02u!"
 
 #: src/rules.c:273
 msgid "_Play Again"
-msgstr ""
+msgstr "_Jucați din nou"
 
 #~ msgid "_Hint"
 #~ msgstr "_Indiciu"
