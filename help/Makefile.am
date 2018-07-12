@@ -1,7 +1,7 @@
 @YELP_HELP_RULES@
 
 HELP_ID = hitori
-HELP_LINGUAS = cs da de el en_GB es fr fur hu pl ro sl sv zh_CN
+HELP_LINGUAS = cs da de el en_GB es fr fur hu pl pt_BR ro sl sv zh_CN
 HELP_MEDIA = figures/hitori_main_window.png
 HELP_FILES = \
 	customization.page \
