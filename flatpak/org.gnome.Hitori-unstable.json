@@ -36,6 +36,9 @@
     [
       {
         "name": "hitori",
+        "config-opts": [
+            "--disable-Werror"
+        ],
         "sources":
           [
             {
