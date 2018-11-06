@@ -2,7 +2,7 @@
 /*
  * Hitori
  * Copyright (C) Philip Withnall 2007-2009 <philip@tecnocode.co.uk>
- * 
+ *
  * Hitori is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -46,7 +46,6 @@ static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer us
 static void hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void undo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
-static void quit_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void help_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void about_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data);
@@ -55,7 +54,6 @@ static GActionEntry app_entries[] = {
 	{ "new-game", new_game_cb, NULL, NULL, NULL },
 	{ "about", about_cb, NULL, NULL, NULL },
 	{ "help", help_cb, NULL, NULL, NULL },
-	{ "quit", quit_cb, NULL, NULL, NULL },
 };
 
 static GActionEntry win_entries[] = {
@@ -619,13 +617,6 @@ redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data)
 
 	/* Redraw */
 	gtk_widget_queue_draw (self->drawing_area);
-}
-
-static void
-quit_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
-{
-	HitoriApplication *self = HITORI_APPLICATION (user_data);
-	hitori_quit (self);
 }
 
 static void
