@@ -85,7 +85,6 @@ EXTRA_DIST += src/hitori.gresource.xml
 
 # UI & CSS files
 ui_data = \
-	data/hitori-menus.ui \
 	data/hitori.ui \
 	$(NULL)
 dist_noinst_DATA = \
