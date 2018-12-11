@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014 Philip Withnall <philip@tecnocode.co.uk> -->
 <component type="desktop">
-  <id>org.gnome.Hitori.desktop</id>
+  <id>org.gnome.Hitori</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
 
@@ -27,6 +27,10 @@
       <image>https://people.gnome.org/~mcatanzaro/hitori.png</image>
     </screenshot>
   </screenshots>
+  <provides>
+    <binary>hitori</binary>
+  </provides>
+  <launchable type="desktop-id">org.gnome.Hitori.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/hitori/issues</url>
   <url type="donation">http://www.gnome.org/friends/</url>
@@ -34,6 +38,7 @@
   <url type="translate">https://wiki.gnome.org/TranslationProject/LocalisationGuide</url>
   <update_contact>philip_at_tecnocode.co.uk</update_contact>
   <project_group>GNOME</project_group>
+  <developer_name>The GNOME Project</developer_name>
   <kudos>
     <kudo>AppMenu</kudo>
     <kudo>HighContrast</kudo>
@@ -41,6 +46,10 @@
     <kudo>UserDocs</kudo>
   </kudos>
   <translation type="gettext">hitori</translation>
+  <releases>
+    <release version="3.22.4" date="2017-10-02" />
+    <release version="3.22.3" date="2017-04-30" />
+  </releases>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
     <content_attribute id="violence-fantasy">none</content_attribute>
