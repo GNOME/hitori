@@ -35,26 +35,24 @@ static void startup (GApplication *application);
 static void activate (GApplication *application);
 static gint handle_command_line (GApplication *application, GApplicationCommandLine *command_line);
 
-struct _HitoriApplicationPrivate {
+typedef struct {
 	/* Command line parameters. */
 	gboolean debug;
 	gint seed;
-};
+} HitoriApplicationPrivate;
 
 typedef enum {
 	PROP_DEBUG = 1,
 	PROP_SEED
 } HitoriProperty;
 
-G_DEFINE_TYPE (HitoriApplication, hitori_application, GTK_TYPE_APPLICATION)
+G_DEFINE_TYPE_WITH_PRIVATE (HitoriApplication, hitori_application, GTK_TYPE_APPLICATION)
 
 static void
 hitori_application_class_init (HitoriApplicationClass *klass)
 {
 	GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
 	GApplicationClass *gapplication_class = G_APPLICATION_CLASS (klass);
-
-	g_type_class_add_private (klass, sizeof (HitoriApplicationPrivate));
 
 	gobject_class->constructed = constructed;
 	gobject_class->get_property = get_property;
@@ -80,10 +78,12 @@ hitori_application_class_init (HitoriApplicationClass *klass)
 static void
 hitori_application_init (HitoriApplication *self)
 {
-	self->priv = G_TYPE_INSTANCE_GET_PRIVATE (self, HITORI_TYPE_APPLICATION, HitoriApplicationPrivate);
+	HitoriApplicationPrivate *priv;
 
-	self->priv->debug = FALSE;
-	self->priv->seed = -1;
+	priv = hitori_application_get_instance_private (self);
+
+	priv->debug = FALSE;
+	priv->seed = -1;
 }
 
 static void
@@ -108,7 +108,9 @@ constructed (GObject *object)
 static void
 get_property (GObject *object, guint property_id, GValue *value, GParamSpec *pspec)
 {
-	HitoriApplicationPrivate *priv = HITORI_APPLICATION (object)->priv;
+	HitoriApplicationPrivate *priv;
+
+	priv = hitori_application_get_instance_private (HITORI_APPLICATION (object));
 
 	switch (property_id) {
 		case PROP_DEBUG:
@@ -127,7 +129,9 @@ get_property (GObject *object, guint property_id, GValue *value, GParamSpec *psp
 static void
 set_property (GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
-	HitoriApplicationPrivate *priv = HITORI_APPLICATION (object)->priv;
+	HitoriApplicationPrivate *priv;
+
+	priv = hitori_application_get_instance_private (HITORI_APPLICATION (object));
 
 	switch (property_id) {
 		case PROP_DEBUG:
@@ -146,8 +150,12 @@ set_property (GObject *object, guint property_id, const GValue *value, GParamSpe
 static void
 debug_handler (const char *log_domain, GLogLevelFlags log_level, const char *message, HitoriApplication *self)
 {
+	HitoriApplicationPrivate *priv;
+
+	priv = hitori_application_get_instance_private (self);
+
 	/* Only display debug messages if we've been run with --debug */
-	if (self->priv->debug == TRUE) {
+	if (priv->debug == TRUE) {
 		g_log_default_handler (log_domain, log_level, message, NULL);
 	}
 }
@@ -166,7 +174,9 @@ static void
 activate (GApplication *application)
 {
 	HitoriApplication *self = HITORI_APPLICATION (application);
-	HitoriApplicationPrivate *priv = self->priv;
+	HitoriApplicationPrivate *priv;
+
+	priv = hitori_application_get_instance_private (self);
 
 	/* Create the interface. */
 	if (self->window == NULL) {
@@ -199,7 +209,7 @@ activate (GApplication *application)
 static gint
 handle_command_line (GApplication *application, GApplicationCommandLine *command_line)
 {
-	HitoriApplicationPrivate *priv = HITORI_APPLICATION (application)->priv;
+	HitoriApplicationPrivate *priv = hitori_application_get_instance_private (HITORI_APPLICATION (application));
 	GOptionContext *context;
 	GError *error = NULL;
 	gchar **args, **argv;
