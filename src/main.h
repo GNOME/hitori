@@ -2,7 +2,7 @@
 /*
  * Hitori
  * Copyright (C) Philip Withnall 2007-2009 <philip@tecnocode.co.uk>
- * 
+ *
  * Hitori is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -61,18 +61,11 @@ typedef struct {
 	guchar status;
 } HitoriCell;
 
-#define HITORI_TYPE_APPLICATION			(hitori_application_get_type ())
-#define HITORI_APPLICATION(o)			(G_TYPE_CHECK_INSTANCE_CAST ((o), HITORI_TYPE_APPLICATION, HitoriApplication))
-#define HITORI_APPLICATION_CLASS(k)		(G_TYPE_CHECK_CLASS_CAST((k), HITORI_TYPE_APPLICATION, HitoriApplicationClass))
-#define HITORI_IS_APPLICATION(o)		(G_TYPE_CHECK_INSTANCE_TYPE ((o), HITORI_TYPE_APPLICATION))
-#define HITORI_IS_APPLICATION_CLASS(k)		(G_TYPE_CHECK_CLASS_TYPE ((k), HITORI_TYPE_APPLICATION))
-#define HITORI_APPLICATION_GET_CLASS(o)		(G_TYPE_INSTANCE_GET_CLASS ((o), HITORI_TYPE_APPLICATION, HitoriApplicationClass))
+#define HITORI_TYPE_APPLICATION (hitori_application_get_type ())
+G_DECLARE_FINAL_TYPE (HitoriApplication, hitori_application, HITORI, APPLICATION, GtkApplication)
 
-typedef struct _HitoriApplicationPrivate	HitoriApplicationPrivate;
-
-typedef struct {
+struct _HitoriApplication {
 	GtkApplication parent;
-	HitoriApplicationPrivate *priv;
 
 	/* FIXME: This should all be merged into priv. */
 	GtkWidget *window;
@@ -107,13 +100,7 @@ typedef struct {
 	guint timeout_id;
 
 	GSettings *settings;
-} HitoriApplication;
-
-typedef struct {
-	GtkApplicationClass parent;
-} HitoriApplicationClass;
-
-GType hitori_application_get_type (void) G_GNUC_CONST;
+};
 
 HitoriApplication *hitori_application_new (void) G_GNUC_WARN_UNUSED_RESULT G_GNUC_MALLOC;
 
