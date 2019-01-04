@@ -2,14 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014, 2017, 2018.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2013, 2014, 2017, 2018, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-12-02 17:20+0000\n"
-"PO-Revision-Date: 2018-12-04 15:56+0100\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-01-04 13:05+0100\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
@@ -60,6 +60,10 @@ msgstr ""
 "tamaños de tablero y puede colocar marcadores en las celdas para ayudarle a "
 "encontrar la solución. Si tiene problemas, el juego puede darle una pista."
 
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "El Proyecto GNOME"
+
 #: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "Juego _nuevo"
@@ -97,7 +101,6 @@ msgid "_Help"
 msgstr "Ay_uda"
 
 #: data/hitori.ui:56
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "_Acerca de Hitori"
 
