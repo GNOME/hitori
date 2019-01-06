@@ -58,7 +58,9 @@
 		</section>
 	</menu>
 	<object class="GtkApplicationWindow" id="hitori_main_window">
+    <signal name="configure-event" handler="hitori_window_configure_event_cb"/>
 		<signal name="destroy" handler="hitori_destroy_cb"/>
+    <signal name="unmap" handler="hitori_window_unmap_cb"/>
 		<signal name="window-state-event" handler="hitori_window_state_event_cb"/>
 		<child type="titlebar">
 			<object class="GtkHeaderBar">
