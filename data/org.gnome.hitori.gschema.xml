@@ -6,5 +6,20 @@
 			<summary>Board size</summary>
 			<description>The size of the board, in cells.</description>
 		</key>
+		<key name="window-maximized" type="b">
+			<default>false</default>
+			<summary>Window maximized state</summary>
+			<description>Whether the window is maximized.</description>
+		</key>
+		<key name="window-position" type="(ii)">
+			<default>(-1, -1)</default>
+			<summary>Window position</summary>
+			<description>Window position (x and y).</description>
+		</key>
+		<key name="window-size" type="(ii)">
+			<default>(-1, -1)</default>
+			<summary>Window size</summary>
+			<description>Window size (width and height).</description>
+		</key>
 	</schema>
 </schemalist>
