@@ -58,7 +58,6 @@
 		</section>
 	</menu>
 	<object class="GtkApplicationWindow" id="hitori_main_window">
-		<property name="resizable">False</property>
 		<signal name="destroy" handler="hitori_destroy_cb"/>
 		<signal name="window-state-event" handler="hitori_window_state_event_cb"/>
 		<child type="titlebar">
@@ -170,9 +169,9 @@
 		<child>
 			<object class="GtkBox" id="vbox1">
 				<property name="orientation">vertical</property>
-				<property name="valign">center</property>
 				<child>
 					<object class="GtkDrawingArea" id="hitori_drawing_area">
+						<property name="expand">True</property>
 						<property name="valign">fill</property>
 						<property name="width-request">400</property>
 						<property name="height-request">400</property>
