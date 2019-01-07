@@ -100,6 +100,9 @@ struct _HitoriApplication {
 	GtkLabel *timer_label;
 	guint timeout_id;
 
+	gboolean window_maximized;
+	GdkRectangle geometry;
+
 	GSettings *settings;
 };
 
