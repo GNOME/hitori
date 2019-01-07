@@ -14,7 +14,7 @@
 		<key name="window-position" type="(ii)">
 			<default>(-1, -1)</default>
 			<summary>Window position</summary>
-			<description>Window position(x and y).</description>
+			<description>Window position (x and y).</description>
 		</key>
 		<key name="window-size" type="(ii)">
 			<default>(-1, -1)</default>
