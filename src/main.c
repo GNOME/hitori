@@ -181,9 +181,7 @@ activate (GApplication *application)
 	/* Create the interface. */
 	if (self->window == NULL) {
 		HitoriUndo *undo;
-		gboolean maximized;
 		gchar *size_str;
-		GdkRectangle geometry;
 
 		/* Setup */
 		self->debug = priv->debug;
@@ -201,20 +199,22 @@ activate (GApplication *application)
 		hitori_generate_board (self, self->board_size, priv->seed);
 
 		/* Restore window position and size */
-		maximized = g_settings_get_boolean (self->settings, "window-maximized");
+		self->window_maximized = g_settings_get_boolean (self->settings,
+								 "window-maximized");
 		g_settings_get (self->settings,
 				"window-position", "(ii)",
-				&geometry.x, &geometry.y);
+				&self->geometry.x, &self->geometry.y);
 		g_settings_get (self->settings,
 				"window-size", "(ii)",
-				&geometry.width, &geometry.height);
+				&self->geometry.width, &self->geometry.height);
 
 		gtk_window_set_default_size (GTK_WINDOW (self->window),
-					     geometry.width, geometry.height);
-		if (geometry.y > -1)
+					     self->geometry.width, self->geometry.height);
+
+		if (self->geometry.y > -1)
 			gtk_window_move (GTK_WINDOW (self->window),
-					 geometry.x, geometry.y);
-		if (maximized)
+					 self->geometry.x, self->geometry.y);
+		if (self->window_maximized)
 			gtk_window_maximize (GTK_WINDOW (self->window));
 
 		gtk_window_set_application (GTK_WINDOW (self->window), GTK_APPLICATION (self));

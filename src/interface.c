@@ -41,8 +41,7 @@ static void hitori_cancel_hinting (Hitori *hitori);
 gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
 gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
 void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
-void hitori_window_unmap_cb (GtkWidget *window, gpointer user_data);
-gboolean hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event);
+gboolean hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event, Hitori *hitori);
 void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
 static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
@@ -51,9 +50,6 @@ static void redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_d
 static void help_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void about_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data);
-
-static gboolean window_maximized = FALSE;
-static GdkRectangle geometry;
 
 static GActionEntry app_entries[] = {
 	{ "new-game", new_game_cb, NULL, NULL, NULL },
@@ -67,23 +63,24 @@ static GActionEntry win_entries[] = {
 	{ "redo", redo_cb, NULL, NULL, NULL },
 };
 
-void
+static void
 hitori_window_unmap_cb (GtkWidget *window,
 			gpointer user_data)
 {
-	GSettings *settings;
+	HitoriApplication *hitori;
 
-	settings = g_settings_new ("org.gnome.hitori");
+	hitori = HITORI_APPLICATION (user_data);
 
-	g_settings_set_boolean (settings, "window-maximized", window_maximized);
+	g_settings_set_boolean (hitori->settings,
+				"window-maximized", hitori->window_maximized);
 
-	if (window_maximized)
+	if (hitori->window_maximized)
 		return;
 
-	g_settings_set (settings, "window-position", "(ii)",
-			geometry.x, geometry.y);
-	g_settings_set (settings, "window-size", "(ii)",
-			geometry.width, geometry.height);
+	g_settings_set (hitori->settings, "window-position", "(ii)",
+			hitori->geometry.x, hitori->geometry.y);
+	g_settings_set (hitori->settings, "window-size", "(ii)",
+			hitori->geometry.width, hitori->geometry.height);
 }
 
 GtkWidget *
@@ -104,6 +101,9 @@ hitori_create_interface (Hitori *hitori)
 	hitori->window = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_main_window"));
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
 	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
+
+	g_signal_connect (hitori->window, "unmap",
+			  G_CALLBACK (hitori_window_unmap_cb), hitori);
 
 	g_object_unref (builder);
 
@@ -421,6 +421,7 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 
 	/* Redraw */
 	gtk_widget_queue_draw (hitori->drawing_area);
+
 	/* Check to see if the player's won */
 	if (recheck == TRUE)
 		hitori_check_win (hitori);
@@ -435,11 +436,11 @@ hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 }
 
 gboolean
-hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event)
+hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event, Hitori *hitori)
 {
-	if (!window_maximized) {
-		gtk_window_get_position (window, &geometry.x, &geometry.y);
-		gtk_window_get_size (window, &geometry.width, &geometry.height);
+	if (!hitori->window_maximized) {
+		gtk_window_get_position (window, &hitori->geometry.x, &hitori->geometry.y);
+		gtk_window_get_size (window, &hitori->geometry.width, &hitori->geometry.height);
 	}
 
 	/* We've handled the configure event, no need for further processing. */
@@ -469,7 +470,7 @@ hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hit
 	}
 
 	if (event->changed_mask & GDK_WINDOW_STATE_MAXIMIZED) {
-		window_maximized = event->new_window_state & GDK_WINDOW_STATE_MAXIMIZED;
+		hitori->window_maximized = event->new_window_state & GDK_WINDOW_STATE_MAXIMIZED;
 	}
 }
 
