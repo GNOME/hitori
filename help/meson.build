@@ -1,5 +1,5 @@
 help_media = [
-	'figures/hitori-main_window.png'
+	'figures/hitori_main_window.png'
 ]
 help_files = [
     'customization.page',
