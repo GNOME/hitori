@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the hitori package.
 #
 # Andrej Žnidaršič <andrej.znidarsic@gmail.com>, 2009–2010.
-# Matej Urbančič <mateju@svn.gnome.org>, 2013–2018.
+# Matej Urbančič <mateju@svn.gnome.org>, 2013–2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-11-07 10:53+0000\n"
-"PO-Revision-Date: 2018-12-01 21:54+0100\n"
+"POT-Creation-Date: 2019-01-04 12:14+0000\n"
+"PO-Revision-Date: 2019-01-25 18:26+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -63,7 +63,11 @@ msgstr ""
 "ravneh, program pa omogoča tudi označevanje celic za hitrejše reševanje. "
 "Podprti so tudi namigi za najtežje trenutke."
 
-#: data/hitori.ui:9 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#: data/hitori.ui:9 src/main.c:315
 msgid "_New Game"
 msgstr "_Nova Igra"
 
@@ -145,31 +149,31 @@ msgstr ""
 msgid "Hitori Website"
 msgstr "Spletišče Hitori"
 
-#: src/main.c:209
+#: src/main.c:219
 msgid "Enable debug mode"
 msgstr "Omogoči razhroščevalni način"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:211
+#: src/main.c:221
 msgid "Seed the board generation"
 msgstr "Seme za ustvarjanje plošče"
 
 #. Options
-#: src/main.c:225
+#: src/main.c:235
 msgid "- Play a game of Hitori"
 msgstr "- Igrajte igro Hitori"
 
 #. Print an error
-#: src/main.c:235
+#: src/main.c:245
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Možnosti ukazne vrstice ni mogoče razčleniti: %s\n"
 
-#: src/main.c:301
+#: src/main.c:311
 msgid "Do you want to stop the current game?"
 msgstr "Ali želite končati trenutno igro?"
 
-#: src/main.c:304
+#: src/main.c:314
 msgid "Keep _Playing"
 msgstr "Nadaljuj _igranje"
 
