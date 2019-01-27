@@ -1,27 +1,26 @@
-# Hungarian translation of Hitori.
-# Copyright (C) 2009 Free Software Foundation, inc.
-# This file is distributed under the same license as the Hitori package.
+# Hungarian translation for hitori.
+# Copyright (C) 2009, 2010, 2014, 2019 Free Software Foundation, inc.
+# This file is distributed under the same license as the hitori package.
 #
 # Németh Tamás <ntomasz at uhuklub dot hu>, 2009.
 # Gabor Kelemen <kelemeng at gnome dot hu>, 2009, 2010, 2014.
-# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014.
+# Balázs Úr <urbalazs at gmail dot com>, 2013, 2014, 2019.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hitori master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2016-12-29 11:08+0100\n"
-"Last-Translator: Meskó Balázs <meskobalazs@gmail.com>\n"
-"Language-Team: Hungarian <openscope at gmail dot com>\n"
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-01-27 16:40+0100\n"
+"Last-Translator: Balázs Úr <urbalazs@gmail.com>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Lokalize 1.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -30,10 +29,12 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Japán eredetű logikai játék a számokkal"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "fejtörő;puzzle;játék;logika;rács;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -60,59 +61,59 @@ msgstr ""
 "elhelyezett jelölők segítségével pedig könnyíthető a megoldás. Ha elakad, a "
 "játék tud tippet is adni."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "A GNOME projekt"
+
+#: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "Ú_j játék"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "Tábla_méret"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5×5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6×6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "_Súgó"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_Névjegy"
+#: data/hitori.ui:56
+msgid "_About Hitori"
+msgstr "A Hitori _névjegye"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Kilépés"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Az utolsó lépés visszavonása"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Visszavont lépés végrehajtása mégis"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Javaslat a következő lépéshez"
 
@@ -124,25 +125,25 @@ msgstr "A tábla mérete"
 msgid "The size of the board, in cells."
 msgstr "A tábla mérete cellákban."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "A súgó tartalma nem jeleníthető meg"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Eredetileg Nikoli által megalkotott logikai játék"
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng at gnome dot hu>\n"
 "Németh Tamás <ntomasz at uhuklub dot hu>"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "A Hitori honlapja"
 
@@ -150,14 +151,17 @@ msgstr "A Hitori honlapja"
 msgid "Enable debug mode"
 msgstr "Hibakereső üzemmód bekapcsolása"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Táblagenerálás kezdőértéke"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr " - Játsszon egyet a Hitorival"
 
+#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -171,60 +175,18 @@ msgstr "Meg akarja állítani az aktuális játékot?"
 msgid "Keep _Playing"
 msgstr "_Játék folytatása"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Ön nyert, %02u:%02u idő alatt!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Kilépés"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "Új já_ték"
 
-#~ msgid "UI file “%s” could not be loaded"
-#~ msgstr "A(z) „%s” felületfájl nem tölthető be"
-
-#~ msgid "_Game"
-#~ msgstr "_Játék"
-
-#~ msgid "_Hint"
-#~ msgstr "_Tipp"
-
-#~ msgid "_Undo"
-#~ msgstr "_Visszavonás"
-
-#~ msgid "_Redo"
-#~ msgstr "Új_ra"
-
-#~ msgid ""
-#~ "Hitori is free software: you can redistribute it and/or modify it under "
-#~ "the terms of the GNU General Public License as published by the Free "
-#~ "Software Foundation, either version 3 of the License, or (at your option) "
-#~ "any later version."
-#~ msgstr ""
-#~ "A Hitori szabad szoftver, terjesztheti és/vagy módosíthatja a Free "
-#~ "Software Foundation által kiadott GNU General Public License második "
-#~ "(vagy bármely későbbi) változatában foglaltak alapján"
-
-#~ msgid ""
-#~ "Hitori is distributed in the hope that it will be useful, but WITHOUT ANY "
-#~ "WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS "
-#~ "FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more "
-#~ "details."
-#~ msgstr ""
-#~ "A Hitori programot abban a reményben terjesztjük, hogy hasznos lesz, de "
-#~ "nem vállalunk SEMMIFÉLE GARANCIÁT, még olyan értelemben sem, hogy a "
-#~ "program alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE. "
-#~ "További részletekért tanulmányozza a GNU GPL licencet."
-
-#~ msgid ""
-#~ "You should have received a copy of the GNU General Public License along "
-#~ "with Hitori.  If not, see <http://www.gnu.org/licenses/>."
-#~ msgstr ""
-#~ "A Hitori programhoz a GNU General Public License egy példánya is jár, ha "
-#~ "nem kapta meg, itt elolvashatja: <http://www.gnu.org/licenses/>."
-
-#~ msgid "Time: %02u:%02u"
-#~ msgstr "Idő: %02u:%02u"
-
-#~ msgid "_Settings"
-#~ msgstr "_Beállítások"
