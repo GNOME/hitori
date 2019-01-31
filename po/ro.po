@@ -7,9 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2017-12-06 17:27+0000\n"
-"PO-Revision-Date: 2018-04-01 16:59+0300\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28@gmail.com>\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-01-27 02:26+0200\n"
+"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
+"com>\n"
 "Language-Team: Echipa de traducere în limba română Gnome România <gnomero-"
 "list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -18,10 +19,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.2.1\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -63,59 +64,59 @@ msgstr ""
 "celule pentru a ajuta în descoperirea soluției. Dacă vă blocați, jocul poate "
 "să ofere un indiciu."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "Proiectul GNOME"
+
+#: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "Joc _nou"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "_Dimensiunea tablei"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5×5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6×6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10x10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "_Ajutor"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_Despre"
+#: data/hitori.ui:56
+msgid "_About Hitori"
+msgstr "_Despre Hitori"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Ieșire"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Anulează ultima mutare"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Refă o mutare"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Obțineți un indiciu pentru mutarea următoare"
 
@@ -127,25 +128,25 @@ msgstr "Dimensiunea tablei"
 msgid "The size of the board, in cells."
 msgstr "Dimensiunea tablei, în celule."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "Conținutul ajutorului nu a putut fi afișat"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Drepturi de autor © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un puzzle de logică proiectat de Nikoli"
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr ""
 "Cristian Buzdugă <cristianbzdg@gmail.com>\n"
-"Florentina Mușat <florentina.musat.28@gmail.com>"
+"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Pagina de internet Hitori"
 
@@ -184,9 +185,16 @@ msgstr "Continuați să _jucați"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Ați câștigat într-un timp de %02u:%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Ieșire"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Jucați din nou"
+
+#~ msgid "_About"
+#~ msgstr "_Despre"
 
 #~ msgid "_Hint"
 #~ msgstr "_Indiciu"
