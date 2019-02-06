@@ -1,15 +1,14 @@
 # Czech translation for hitori.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori package.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014, 2015, 2016.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014, 2015, 2016, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2016-12-25 17:45+0100\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-02-06 09:59+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -21,7 +20,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -30,10 +29,12 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Hrát logickou hru Hitori."
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "hlavolam;hra;logická;mřížka;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -60,59 +61,59 @@ msgstr ""
 "při hledání řešení si můžete pomáhat umísťováním značek do políček. Když se "
 "zaseknete, umí vám hra nabídnout radu."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "Projekt GNOME"
+
+#: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "_Velikost hrací desky"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5×5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6×6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "O _aplikaci"
+#: data/hitori.ui:56
+msgid "_About Hitori"
+msgstr "O _aplikaci Hitori"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "U_končit"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Vrátit zpět poslední tah"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Znovu provést poslední vrácený tah"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Získat radu k příštímu tahu"
 
@@ -124,23 +125,23 @@ msgstr "Velikost hrací desky"
 msgid "The size of the board, in cells."
 msgstr "Velikost hrací desky udaná v počtu políček."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "Nelze zobrazit obsah nápovědy"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logický hlavolam původně pocházející od Nikoli."
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
@@ -148,14 +149,17 @@ msgstr "Webové stránky Hitori"
 msgid "Enable debug mode"
 msgstr "Povolit režim ladění"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Počáteční číslo pro generování hrací desky"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "– hrát hru Hitori"
 
+#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -169,14 +173,23 @@ msgstr "Opravdu chcete zastavit současnou hru?"
 msgid "Keep _Playing"
 msgstr "_Pokračovat ve hře"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Vyhráli jste v čase %02u∶%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "U_končit"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "H_rát znovu"
+
+#~ msgid "_About"
+#~ msgstr "O _aplikaci"
 
 #~ msgid "UI file “%s” could not be loaded"
 #~ msgstr "Nelze načíst soubor „%s“ s uživatelským rozhraním."
