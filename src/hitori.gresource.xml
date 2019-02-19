@@ -4,4 +4,7 @@
     <file preprocess="xml-stripblanks" alias="hitori.ui">./data/hitori.ui</file>
     <file alias="hitori.css">./data/hitori.css</file>
   </gresource>
+  <gresource prefix="/org/gnome/Hitori/gtk">
+    <file preprocess="xml-stripblanks" alias="help-overlay.ui">./data/help-overlay.ui</file>
+  </gresource>
 </gresources>
