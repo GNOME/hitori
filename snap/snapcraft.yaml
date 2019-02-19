@@ -68,9 +68,9 @@ parts:
     after: [desktop-gnome-platform]
     source: https://gitlab.gnome.org/GNOME/hitori.git
     source-type: git
-    plugin: autotools
+    plugin: meson
     # workaround the issue described in https://launchpad.net/bugs/1583250
-    configflags: [--prefix=/snap/gnome-hitori/current/usr]
+    meson-parameters: [--prefix=/snap/gnome-hitori/current/usr]
     organize:
       snap/gnome-hitori/current/usr: usr
     override-build: |
@@ -78,13 +78,11 @@ parts:
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../src/data/icons/48x48/org.gnome.Hitori.png $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp data/org.gnome.Hitori.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../install/snap/gnome-hitori/current/usr/share/applications/org.gnome.Hitori.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     build-packages:
-      - appstream-util
-      - autoconf-archive
       - desktop-file-utils
       - gettext
       - gsettings-desktop-schemas-dev
+      - itstool
       - libglib2.0-dev
       - libgtk-3-dev
-      - yelp-tools
