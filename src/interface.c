@@ -44,6 +44,7 @@ void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
 void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
 static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
+static void quit_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void undo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void redo_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void help_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
@@ -54,6 +55,7 @@ static GActionEntry app_entries[] = {
 	{ "new-game", new_game_cb, NULL, NULL, NULL },
 	{ "about", about_cb, NULL, NULL, NULL },
 	{ "help", help_cb, NULL, NULL, NULL },
+	{ "quit", quit_cb, NULL, NULL, NULL },
 };
 
 static GActionEntry win_entries[] = {
@@ -95,6 +97,20 @@ hitori_create_interface (Hitori *hitori)
 	hitori->undo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "undo"));
 	hitori->redo_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "redo"));
 	hitori->hint_action = G_SIMPLE_ACTION (g_action_map_lookup_action (G_ACTION_MAP (hitori->window), "hint"));
+
+	const gchar *vaccels_help[] = {"F1", NULL};
+	const gchar *vaccels_hint[] = {"<Primary>h", NULL};
+	const gchar *vaccels_new[] = {"<Primary>n", NULL};
+	const gchar *vaccels_quit[] = {"<Primary>q", "<Primary>w", NULL};
+	const gchar *vaccels_redo[] = {"<Primary><Shift>z", NULL};
+	const gchar *vaccels_undo[] = {"<Primary>z", NULL};
+
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "app.help", vaccels_help);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "win.hint", vaccels_hint);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "app.new-game", vaccels_new);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "app.quit", vaccels_quit);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "win.redo", vaccels_redo);
+	gtk_application_set_accels_for_action (GTK_APPLICATION (hitori), "win.undo", vaccels_undo);
 
 	/* Set up font descriptions for the drawing area */
 	style_context = gtk_widget_get_style_context (hitori->drawing_area);
@@ -409,6 +425,13 @@ void
 hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 {
 	hitori_quit (hitori);
+}
+
+static void
+quit_cb (GSimpleAction *action, GVariant *parameters, gpointer user_data)
+{
+	HitoriApplication *self = HITORI_APPLICATION (user_data);
+	hitori_quit (self);
 }
 
 void
