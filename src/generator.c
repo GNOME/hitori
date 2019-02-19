@@ -44,7 +44,7 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 	}
 
 	if (hitori->debug)
-		g_debug ("Seed value: %u", seed);
+		g_debug ("Seed value: %d", seed);
 
 	srand (seed);
 
