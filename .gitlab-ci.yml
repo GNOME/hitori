@@ -1,0 +1,37 @@
+image: debian:unstable
+
+before_script:
+  - apt update -qq
+  - apt install -y -qq build-essential meson pkg-config gtk-doc-tools
+                       libxml2-utils gobject-introspection dbus
+                       libglib2.0-dev libgtk-3-dev appstream-util
+                       desktop-file-utils lcov
+  - export LANG=C.UTF-8
+
+stages:
+  - build
+  - test
+
+build-job:
+  stage: build
+  script:
+    - meson --buildtype debug --werror _build .
+    - ninja -C _build
+  except:
+    - tags
+  artifacts:
+    when: on_failure
+    name: "hitori-_${CI_COMMIT_REF_NAME}"
+    paths:
+      - "${CI_PROJECT_DIR}/_build/meson-logs"
+
+test:
+  stage: test
+  script:
+    - meson _build . -Db_coverage=true
+    - ninja -C _build test
+    - ninja -C _build coverage
+  coverage: '/^\s+lines\.+:\s+([\d.]+\%)\s+/'
+
+# FIXME: Run gtkdoc-check when we can. See:
+# https://github.com/mesonbuild/meson/issues/3580
