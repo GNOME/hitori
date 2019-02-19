@@ -1,3 +1,37 @@
+Overview of changes in Hitori 3.31.0
+====================================
+
+* Migrated to Meson. (#10)
+
+* Bugs fixed:
+ - #9 Retire app menu
+ - #10 Migrate to Meson
+ - !4 Use G_DECLARE_FINAL_TYPE() to declare type
+ - !8 snap: Add snap build configuration
+ - !10 docs: Port README to Markdown
+ - !11 docs: Reformat NEWS to be valid Markdown
+
+* Translation updates:
+ - Catalan
+ - Chinese (Taiwan)
+ - Croatian
+ - Czech
+ - Danish
+ - Finnish
+ - French
+ - Friulian
+ - Galician
+ - Greek, Modern (1453-)
+ - Hungarian
+ - Indonesian
+ - Polish
+ - Romanian
+ - Slovenian
+ - Spanish
+ - Swedish
+ - Turkish
+
+
 Overview of changes in Hitori 3.22.4
 ====================================
 
