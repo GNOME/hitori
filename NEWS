@@ -1,191 +1,239 @@
-Major new features in version...
+Overview of changes in Hitori 3.22.4
+====================================
 
-3.22.4:
 * Translations:
-** bg (Alexander Shopov)
-** ca (Jordi Mas)
-** fa (Arash Mousavi)
-** fr (Alain Lojewski)
-** ko (Junyoul Lim)
-** ml (Ani Peter)
-** nl (Nathan Follens)
-** pl (Piotr Drąg)
-** tr (Muhammet Kara)
+ - bg (Alexander Shopov)
+ -  ca (Jordi Mas)
+ - fa (Arash Mousavi)
+ - fr (Alain Lojewski)
+ - ko (Junyoul Lim)
+ - ml (Ani Peter)
+ - nl (Nathan Follens)
+ - pl (Piotr Drąg)
+ - tr (Muhammet Kara)
 
-3.22.3:
+
+Overview of changes in Hitori 3.22.3
+====================================
+
 * Minor rendering improvements (bug #732776)
 * Add flatpak manifests for nightly builds
 * Drop use of deprecated GTK+ API (no dependency change)
 * Translations:
-** be (Yuras Shumovich)
-** ca (Jordi Mas)
-** el (Tom Tryfonidis)
-** gl (Fran Dieguez)
-** lv (Rūdolfs Mazurs)
-** ru (Yuri Myasoedov)
-** uk (Daniel Korostil)
+ - be (Yuras Shumovich)
+ - ca (Jordi Mas)
+ - el (Tom Tryfonidis)
+ - gl (Fran Dieguez)
+ - lv (Rūdolfs Mazurs)
+ - ru (Yuri Myasoedov)
+ - uk (Daniel Korostil)
 
-3.22.2:
+
+Overview of changes in Hitori 3.22.2
+====================================
+
 * Add more build-time checks (this adds an optional build-time dependency on desktop-file-validate)
 * Translations:
-** da (Joe Hansen)
-** eu (Inaki Larranaga Murgoitio)
-** gl (Fran Dieguez)
-** nb (Kjartan Maraas)
-** sl (Matej Urbančič)
-** sr (Мирослав Николић)
-** zh_TW (Chao-Hsiung Liao)
+ - da (Joe Hansen)
+ - eu (Inaki Larranaga Murgoitio)
+ - gl (Fran Dieguez)
+ - nb (Kjartan Maraas)
+ - sl (Matej Urbančič)
+ - sr (Мирослав Николић)
+ - zh_TW (Chao-Hsiung Liao)
 
-3.22.1:
+
+Overview of changes in Hitori 3.22.1
+====================================
+
 * Port from intltool to gettext (this drops the intltool dependency)
 * Add various build-time checks (this adds an optional build-time dependency on xmllint)
 * Translations:
-** cs (Marek Černocký)
-** da (scootergrisen)
-** de (Mario Blättermann)
-** es (Daniel Mustieles)
-** fi (Jiri Grönroos)
-** fr (Alexandre Franke)
-** fur (Fabio Tomat)
-** hu (Balázs Meskó)
-** id (Kukuh Syafaat)
-** it (Gianvito Cavasoli)
-** lt (Aurimas Černius)
-** pl (Piotr Drąg)
-** pt (Tiago Santos)
-** pt_BR (Rafael Fontenelle)
-** sk (Dušan Kazik)
-** sv (Anders Jonsson)
-** zh_CN (liushuyu, Mandy Wang)
+ - cs (Marek Černocký)
+ - da (scootergrisen)
+ - de (Mario Blättermann)
+ - es (Daniel Mustieles)
+ - fi (Jiri Grönroos)
+ - fr (Alexandre Franke)
+ - fur (Fabio Tomat)
+ - hu (Balázs Meskó)
+ - id (Kukuh Syafaat)
+ - it (Gianvito Cavasoli)
+ - lt (Aurimas Černius)
+ - pl (Piotr Drąg)
+ - pt (Tiago Santos)
+ - pt_BR (Rafael Fontenelle)
+ - sk (Dušan Kazik)
+ - sv (Anders Jonsson)
+ - zh_CN (liushuyu, Mandy Wang)
 
-3.22.0:
+
+Overview of changes in Hitori 3.22.0
+====================================
+
 * Various AppData fixes
 * Translations:
-** fa (Arash Mousavi)
-** fur (Fabio Tomat)
-** oc (Cédric Valmary)
-** pl (Piotr Drąg)
-** pt (Sérgio Cardeira)
-** sv (Anders Jonsson)
+ - fa (Arash Mousavi)
+ - fur (Fabio Tomat)
+ - oc (Cédric Valmary)
+ - pl (Piotr Drąg)
+ - pt (Sérgio Cardeira)
+ - sv (Anders Jonsson)
 
-3.20.0:
+
+Overview of changes in Hitori 3.20.0
+====================================
+
 * Various AppData fixes
 * Fix a GTK+ warning about styling with newer GTK+ versions
 * Translations:
-** bg (Alexander Shopov)
-** de (Mario Blättermann)
-** hu (Gabor Kelemen)
-** lt (Aurimas Černius)
-** oc (Cédric Valmary)
+ - bg (Alexander Shopov)
+ - de (Mario Blättermann)
+ - hu (Gabor Kelemen)
+ - lt (Aurimas Černius)
+ - oc (Cédric Valmary)
 
-3.19.1:
+
+Overview of changes in Hitori 3.19.1
+====================================
+
 * Rename icon, desktop and appdata files to use ‘org.gnome.Hitori’ prefix
 * Remove dependency on gnome-common in favour of autoconf-archive (or m4-common)
 
-3.16.1:
+
+Overview of changes in Hitori 3.16.1
+====================================
+
 * Updated symbolic icon
 
-3.16.0:
+
+Overview of changes in Hitori 3.16.0
+====================================
+
 * Port to GResource for UI and CSS
 * Minor menu tweaks
 * Translations:
-** bs (Samir Ribic)
-** da (Joe Hansen)
-** fi (Jiri Grönroos)
-** fur (Fabio Tomat)
-** gl (Fran Dieguez)
-** it (Milo Casagrande)
-** ko (Changwoo Ryu)
-** lt (Aurimas Černius)
-** lv (Rūdofls Mazurs)
-** pt_BR (Enrico Nicoletto)
-** sr (Мирослав Николић)
-** tr (Muhammet Kara)
-** uk (Daniel Korostil)
+ - bs (Samir Ribic)
+ - da (Joe Hansen)
+ - fi (Jiri Grönroos)
+ - fur (Fabio Tomat)
+ - gl (Fran Dieguez)
+ - it (Milo Casagrande)
+ - ko (Changwoo Ryu)
+ - lt (Aurimas Černius)
+ - lv (Rūdofls Mazurs)
+ - pt_BR (Enrico Nicoletto)
+ - sr (Мирослав Николић)
+ - tr (Muhammet Kara)
+ - uk (Daniel Korostil)
 
-3.14.3:
+
+Overview of changes in Hitori 3.14.3
+====================================
+
 * Translations:
-** cs (Marek Černocký)
-** el (Efstathios Iosifidis)
-** en_GB (Philip Withnall)
-** eo (Daniel PUENTES, Kristjan SCHMIDT)
-** es (Daniel Mustieles)
-** eu (Iñaki Larrañaga Murgoitio)
-** fr (Gérard Baylard, Erwan GEORGET)
-** he (Yosef Or Boczko)
-** hu (Balázs Úr)
-** gl (Fran Dieguez)
-** nb (Kjartan Maraas)
-** pl (Piotr Drąg, Aviary.pl)
-** ru (Ivan Komaritsyn, Yuri Myasoedov)
-** sk (Dušan Kazik)
-** sl (Matej Urbančič)
-** sv (Anders Jonsson)
-** zh_TW (Chao-Hsiung Liao)
+ - cs (Marek Černocký)
+ - el (Efstathios Iosifidis)
+ - en_GB (Philip Withnall)
+ - eo (Daniel PUENTES, Kristjan SCHMIDT)
+ - es (Daniel Mustieles)
+ - eu (Iñaki Larrañaga Murgoitio)
+ - fr (Gérard Baylard, Erwan GEORGET)
+ - he (Yosef Or Boczko)
+ - hu (Balázs Úr)
+ - gl (Fran Dieguez)
+ - nb (Kjartan Maraas)
+ - pl (Piotr Drąg, Aviary.pl)
+ - ru (Ivan Komaritsyn, Yuri Myasoedov)
+ - sk (Dušan Kazik)
+ - sl (Matej Urbančič)
+ - sv (Anders Jonsson)
+ - zh_TW (Chao-Hsiung Liao)
 
-3.14.2.1:
+
+Overview of changes in Hitori 3.14.2.1
+======================================
+
 * Revert string freeze break
 
-3.14.2:
-* Translations:
-** hu (Gabor Kelemen)
-** tr (Necdet Yücel, Muhammet Kara)
 
-3.14.1:
-* Translations:
-** hu (Balázs Úr)
-** it (Milo Casagrande)
-** lv (Rūdofls Mazurs)
-** nb (Kjartan Maraas)
-** ne (Pawan Chitrakar)
-** pl (Piotr Drąg)
-** sr (Мирослав Николић)
-** zh_CN (Yunqiang Su)
+Overview of changes in Hitori 3.14.2
+====================================
 
-3.14.0.1:
+* Translations:
+ - hu (Gabor Kelemen)
+ - tr (Necdet Yücel, Muhammet Kara)
+
+
+Overview of changes in Hitori 3.14.1
+====================================
+
+* Translations:
+ - hu (Balázs Úr)
+ - it (Milo Casagrande)
+ - lv (Rūdofls Mazurs)
+ - nb (Kjartan Maraas)
+ - ne (Pawan Chitrakar)
+ - pl (Piotr Drąg)
+ - sr (Мирослав Николић)
+ - zh_CN (Yunqiang Su)
+
+
+Overview of changes in Hitori 3.14.0.1
+======================================
+
 * autoreconf with up-to-date appstream-glib;
   fixes install location for hitori.appdata.xml
 
-3.14.0:
-* Translations:
-** da (Joe Hansen)
-** de (Christian Kirbach)
-** hu (Gabor Kelemen)
 
-3.13.92:
+Overview of changes in Hitori 3.14.0
+====================================
+
+* Translations:
+ - da (Joe Hansen)
+ - de (Christian Kirbach)
+ - hu (Gabor Kelemen)
+
+
+Overview of changes in Hitori 3.13.92
+=====================================
 
 * Minor UI and translation updates
 * Minor build system updates
 * Translations:
-** as (Nilamdyuti Goswami)
-** ca (Gil Forcada)
-** cs (Marek Černocký)
-** el (Tom Tryfonidis)
-** fi (Jiri Grönroos)
-** fr (Gérard Baylard, Erwan GEORGET)
-** gl (Fran Dieguez)
-** he (Yosef Or Boczko)
-** id (Andika Triwidada)
-** ko (Changwoo Ryu)
-** nb (Kjartan Maraas)
-** pl (Piotr Drąg)
-** pt_BR (Ricardo Barbosa)
-** ru (Yuri Myasoedov)
-** sk (Dušan Kazik)
-** zh_HK (Chao-Hsiung Liao)
-** zh_TW (Chao-Hsiung Liao)
+ - as (Nilamdyuti Goswami)
+ - ca (Gil Forcada)
+ - cs (Marek Černocký)
+ - el (Tom Tryfonidis)
+ - fi (Jiri Grönroos)
+ - fr (Gérard Baylard, Erwan GEORGET)
+ - gl (Fran Dieguez)
+ - he (Yosef Or Boczko)
+ - id (Andika Triwidada)
+ - ko (Changwoo Ryu)
+ - nb (Kjartan Maraas)
+ - pl (Piotr Drąg)
+ - pt_BR (Ricardo Barbosa)
+ - ru (Yuri Myasoedov)
+ - sk (Dušan Kazik)
+ - zh_HK (Chao-Hsiung Liao)
+ - zh_TW (Chao-Hsiung Liao)
 
-3.13.90:
+
+Overview of changes in Hitori 3.13.90
+=====================================
 
 * Follow guidelines for including license info in help
 * Translations:
-** es (Daniel Mustieles)
-** lt (Aurimas Černius)
-** nb (Kjartan Maraas)
-** sv (Anders Jonsson)
-** uk (Daniel Korostil)
+ - es (Daniel Mustieles)
+ - lt (Aurimas Černius)
+ - nb (Kjartan Maraas)
+ - sv (Anders Jonsson)
+ - uk (Daniel Korostil)
 
-3.13.4:
+
+Overview of changes in Hitori 3.13.4
+====================================
 
 * Modernize UI, removing menu bar and status bar
 * On game over, prompt the user to play again
@@ -196,96 +244,114 @@ Major new features in version...
 * Fix two memory leaks
 * Disable the game play timer after winning
 * Translations:
-** ca (Jordi Mas)
-** cs (Marek Černocký)
-** el (MarMav, Tom Tryfonidis)
-** en_GB (Philip Withnall)
-** es (Daniel Mustieles)
-** gl (Fran Diéguez)
-** he (Yosef Or Boczko)
-** pl (Piotr Drąg)
-** pt_BR (Rafael Ferreira)
-** ru (Yuri Myasoedov)
+ - ca (Jordi Mas)
+ - cs (Marek Černocký)
+ - el (MarMav, Tom Tryfonidis)
+ - en_GB (Philip Withnall)
+ - es (Daniel Mustieles)
+ - gl (Fran Diéguez)
+ - he (Yosef Or Boczko)
+ - pl (Piotr Drąg)
+ - pt_BR (Rafael Ferreira)
+ - ru (Yuri Myasoedov)
 
-0.4.3:
+
+Overview of changes in Hitori 0.4.3
+===================================
+
 * Translations:
-** cs (Marek Černocký)
-** el (Dimitris Spingos, Tom Tryfonidis)
-** es (Daniel Mustieles)
-** gl (Fran Dieguez)
-** id (Andika Triwidada)
-** pl (Piotr Drąg)
-** pt_BR (Rafael Ferreira, Enrico Nicoletto)
-** sl (Matej Urbančič)
-** sr (Мирослав Николић)
+ - cs (Marek Černocký)
+ - el (Dimitris Spingos, Tom Tryfonidis)
+ - es (Daniel Mustieles)
+ - gl (Fran Dieguez)
+ - id (Andika Triwidada)
+ - pl (Piotr Drąg)
+ - pt_BR (Rafael Ferreira, Enrico Nicoletto)
+ - sl (Matej Urbančič)
+ - sr (Мирослав Николић)
 
-0.4.2:
+
+Overview of changes in Hitori 0.4.2
+===================================
+
 * Add an AppData file
 * Translations:
-** cs (Marek Černocký)
-** en_GB (Philip Withnall)
-** es (Daniel Mustieles)
-** fi (Jiri Grönroos)
-** gl (Fran Dieguez)
-** lv (Rūdofls Mazurs)
-** pl (Piotr Drąg, Aviary.pl)
-** pt_BR (Enrico Nicoletto)
-** sl (Matej Urbančič)
-** sr (Мирослав Николић)
+ - cs (Marek Černocký)
+ - en_GB (Philip Withnall)
+ - es (Daniel Mustieles)
+ - fi (Jiri Grönroos)
+ - gl (Fran Dieguez)
+ - lv (Rūdofls Mazurs)
+ - pl (Piotr Drąg, Aviary.pl)
+ - pt_BR (Enrico Nicoletto)
+ - sl (Matej Urbančič)
+ - sr (Мирослав Николић)
 
-0.4.1:
+
+Overview of changes in Hitori 0.4.1
+===================================
+
 * Fix timer pausing on winning a game
 * Translations:
-** cs (Marek Černocký)
-** de (Mario Blättermann)
-** es (Daniel Musteles)
-** gl (Fran Dieguez)
-** he (Yaron Shahrabani)
-** hu (Balázs Úr)
-** id (Andika Triwidada)
-** lv (Rūdofls Mazurs)
-** pt_BR (Enrico Nicoletto)
-** ru (Yuri Myasoedov)
+ - cs (Marek Černocký)
+ - de (Mario Blättermann)
+ - es (Daniel Musteles)
+ - gl (Fran Dieguez)
+ - he (Yaron Shahrabani)
+ - hu (Balázs Úr)
+ - id (Andika Triwidada)
+ - lv (Rūdofls Mazurs)
+ - pt_BR (Enrico Nicoletto)
+ - ru (Yuri Myasoedov)
 
-0.4.0:
+
+Overview of changes in Hitori 0.4.0
+===================================
+
 * Remove implicit dependency on libm
 * Fix l10n (bgo#652399)
 * Rendering improvements (bgo#652684)
 * Port to GtkApplication and GMenu (bgo#676601, bgo#676602)
 * Use yelp-tools instead of gnome-doc-utils (Oliver Propst, bgo#683623)
 * Translations:
-** de (Mario Blättermann)
-** el (Tom Tryfonidis)
-** en_GB (Philip Withnall)
-** fr (Gérard Baylard)
-** gl (Fran Dieguez)
-** id (Andika Triwidada)
-** pl (Piotr Drąg, Aviary.pl)
-** ro (Cristian Buzdugă, Master, Daniel Șerbănescu)
-** sl (Matej Urbančič)
-** sr (Мирослав Николић)
+ - de (Mario Blättermann)
+ - el (Tom Tryfonidis)
+ - en_GB (Philip Withnall)
+ - fr (Gérard Baylard)
+ - gl (Fran Dieguez)
+ - id (Andika Triwidada)
+ - pl (Piotr Drąg, Aviary.pl)
+ - ro (Cristian Buzdugă, Master, Daniel Șerbănescu)
+ - sl (Matej Urbančič)
+ - sr (Мирослав Николић)
 
-0.3.0:
+
+Overview of changes in Hitori 0.3.0
+===================================
+
 * Port to GTK+ 3
 * Add timing support (bgo#575897)
 * Improve the appearance of the game considerably
 * Update the documentation and relicence it to cc-by-sa 3.0 (from GFDL 1.2)
 * Translations:
-** cs (Marek Černocký)
-** da (Joe Hansen)
-** de (Mario Blättermann)
-** en_GB (Philip Withnall)
-** es (Jorge González)
-** fr (Gérard Baylard, Bruno Brouard)
-** hu (Gabor Kelemen)
-** lv (Rūdofls Mazurs)
-** pt_BR (Flamarion Jorge)
-** ru (Yuri Myasoedov)
-** sl (Andrej Žnidaršič)
-** sv (Daniel Nylander)
-** vi (Lê Trường An)
+ - cs (Marek Černocký)
+ - da (Joe Hansen)
+ - de (Mario Blättermann)
+ - en_GB (Philip Withnall)
+ - es (Jorge González)
+ - fr (Gérard Baylard, Bruno Brouard)
+ - hu (Gabor Kelemen)
+ - lv (Rūdofls Mazurs)
+ - pt_BR (Flamarion Jorge)
+ - ru (Yuri Myasoedov)
+ - sl (Andrej Žnidaršič)
+ - sv (Daniel Nylander)
+ - vi (Lê Trường An)
 
-0.2.5:
+
+Overview of changes in Hitori 0.2.5
+===================================
+
 * Convert documentation to Mallard format
 * Expand the documentation
 * Use upstream gettext instead of glib-gettext
@@ -294,53 +360,68 @@ Major new features in version...
 * Improve the board generation algorithm to allow painted cells on the board edges
 * Improve some translatable strings
 * Translations:
-** de (Mario Blättermann)
-** en_GB (Philip Withnall)
-** es (Jorge González)
-** sl (Matej Urbančič)
+ - de (Mario Blättermann)
+ - en_GB (Philip Withnall)
+ - es (Jorge González)
+ - sl (Matej Urbančič)
 
-0.2.4:
+
+Overview of changes in Hitori 0.2.4
+===================================
+
 * Translations:
-** da (Joe Hansen)
-** es (Jorge González)
-** gl (Fran Diéguez)
-** id (Imam Musthaqim)
-** nb (Kjartan Maraas, Espen Stefansen)
-** sl (Andrej Žnidaršič)
-** zh_CN (zhang ping)
+ - da (Joe Hansen)
+ - es (Jorge González)
+ - gl (Fran Diéguez)
+ - id (Imam Musthaqim)
+ - nb (Kjartan Maraas, Espen Stefansen)
+ - sl (Andrej Žnidaršič)
+ - zh_CN (zhang ping)
 
-0.2.3:
+
+Overview of changes in Hitori 0.2.3
+===================================
+
 * Move ChangeLogs to be generated from git logs
 * Fix a problem with rule 3 where it would incorrectly fail on some boards
 * Translations:
-** fr (Laurent Coudeur, Bruno Brouard)
-** zh_CN (Zhang Miao)
-** hu (Tamas Nemeth)
-** es (Jorge Gonzalez)
-** pa (A S Alam)
-** gl (Fran Dieguez)
-** el (Kostas Papadimas)
-** da (Kenneth Nielsen)
-** cz (Marek Cernocky)
+ - fr (Laurent Coudeur, Bruno Brouard)
+ - zh_CN (Zhang Miao)
+ - hu (Tamas Nemeth)
+ - es (Jorge Gonzalez)
+ - pa (A S Alam)
+ - gl (Fran Dieguez)
+ - el (Kostas Papadimas)
+ - da (Kenneth Nielsen)
+ - cz (Marek Cernocky)
 
-0.2.2:
+
+Overview of changes in Hitori 0.2.2
+===================================
+
 * Fixed how hints are drawn
 * Cleaned up some of the code
 * Fixed markup validation in the documentation
 * Migrated bug handling to GNOME Bugzilla (http://bugzilla.gnome.org/enter_bug.cgi?product=hitori)
 * Migrated website to live.gnome.org (http://live.gnome.org/Hitori)
 * Translations:
-** de (Mario Blättermann)
-** en_GB (Philip Withnall)
-** es (Jorge Gonzalez)
-** pt_BR (Og Maciel)
-** sv (Daniel Nylander)
+ - de (Mario Blättermann)
+ - en_GB (Philip Withnall)
+ - es (Jorge Gonzalez)
+ - pt_BR (Og Maciel)
+ - sv (Daniel Nylander)
 
-0.2.1:
+
+Overview of changes in Hitori 0.2.1
+===================================
+
 * Fixed some build problems
 * Fixed documentation licensing
 
-0.2:
+
+Overview of changes in Hitori 0.2
+=================================
+
 * Added --seed option
 * Added dynamic board sizing
 * Improvements to rendering, including Tangoisation and the use of GtkStyle
@@ -351,7 +432,10 @@ Major new features in version...
 * Added icon by Jakub Szypulka
 * Added desktop file
 
-0.1:
+
+Overview of changes in Hitori 0.1
+=================================
+
 * Project created
 * Board generation support
 * Rule-checking
