@@ -13,7 +13,7 @@
 	<p>Once this is done for the entire board, the cells which have been highlighted both ways are good candidates for painting, although not
 		always. When painting a cell, unhighlighting the other cells with the same number in the same row and column as that cell is a good
 		way to keep track of which cells are still violating <link xref="game">rule 1 of Hitori</link>.</p>
-	<p>Always bear in mind that rule 2 of Hitori means that two adjacent cells can't both be painted. <app>Hitori</app> will highlight in red the
+	<p>Always bear in mind that rule 2 of Hitori means that two adjacent cells can’t both be painted. <app>Hitori</app> will highlight in red the
 		cells which violate rule 2. Similarly, groups of cells which violate rule 3 by separating one or more unpainted cells from the other
 		unpainted cells will be highlighted in red.</p>
 
