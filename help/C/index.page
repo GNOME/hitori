@@ -2,10 +2,11 @@
 <page xmlns="http://projectmallard.org/1.0/" type="guide" id="index">
 	<info>
 		<revision pkgversion="0.2.4" version="0.2" date="2010-07-14" status="final"/>
+		<revision pkgversion="3.31.0" version="0.3" date="2019-02-20" status="final"/>
 		<credit type="author copyright">
 			<name>Philip Withnall</name>
 			<email>philip@tecnocode.co.uk</email>
-			<years>2008–2010</years>
+			<years>2008–2010, 2019</years>
 		</credit>
 		<license href="http://creativecommons.org/licenses/by-sa/3.0/">
 			<p>This work is licensed under a <link href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share

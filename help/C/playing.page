@@ -15,10 +15,10 @@
 		<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in
 		both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <key>Ctrl</key>
 		or <key>Shift</key> again.</p>
-	<p>To undo or redo a move, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Undo</gui></guiseq> or
-		<guiseq><gui style="menu">Game</gui><gui style="menuitem">Redo</gui></guiseq>. You may undo or redo as many moves as you like without
+	<p>To undo or redo a move, choose <gui style="button">Undo</gui> or
+		<gui style="button">Redo</gui> from the toolbar. You may undo or redo as many moves as you like without
 		restriction.</p>
-	<p>To get a hint on which cells to paint out, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">Hint</gui></guiseq>. A cell
+	<p>To get a hint on which cells to paint out, choose <gui style="button">Hint</gui> from the toolbar. A cell
 		will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect,
 		and should be changed for the game to be won.</p>
 </page>
