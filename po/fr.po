@@ -5,22 +5,22 @@
 # laurent coudeur <laurentc@iol.ie>, 2009.
 # Bruno Brouard <annoa.b@gmail.com>, 2009.
 # Gérard Baylard <Geodebay@gmail.com>, 2010.
-# Charles Monzat <charles.monzat@numericable.fr>, 2018.
+# Charles Monzat <charles.monzat@free.fr>, 2018-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-11-07 09:36+0000\n"
-"PO-Revision-Date: 2018-11-07 11:09+0100\n"
-"Last-Translator: Charles Monzat <charles.monzat@numericable.fr>\n"
-"Language-Team: français <gnomefr@traduc.org>\n"
+"POT-Creation-Date: 2019-02-19 15:46+0000\n"
+"PO-Revision-Date: 2019-02-22 14:56+0100\n"
+"Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
+"Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.30.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
@@ -64,7 +64,11 @@ msgstr ""
 "des cellules afin d’aider à trouver une solution. Si vous êtes bloqué, le "
 "jeu peut vous donner un indice."
 
-#: data/hitori.ui:9 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "Le projet GNOME"
+
+#: data/hitori.ui:9 src/main.c:315
 msgid "_New Game"
 msgstr "_Nouvelle partie"
 
@@ -101,7 +105,6 @@ msgid "_Help"
 msgstr "Aid_e"
 
 #: data/hitori.ui:56
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "À _propos de Hitori"
 
@@ -148,31 +151,31 @@ msgstr ""
 msgid "Hitori Website"
 msgstr "Site Web de Hitori"
 
-#: src/main.c:209
+#: src/main.c:219
 msgid "Enable debug mode"
 msgstr "Activer le mode débogage"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:211
+#: src/main.c:221
 msgid "Seed the board generation"
 msgstr "Germe de nombre aléatoire pour la génération du plateau"
 
 #. Options
-#: src/main.c:225
+#: src/main.c:235
 msgid "- Play a game of Hitori"
 msgstr "- Jouer à une partie de Hitori"
 
 #. Print an error
-#: src/main.c:235
+#: src/main.c:245
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Impossible d’analyser les options de la ligne de commande : %s\n"
 
-#: src/main.c:301
+#: src/main.c:311
 msgid "Do you want to stop the current game?"
 msgstr "Voulez-vous arrêter cette partie ?"
 
-#: src/main.c:304
+#: src/main.c:314
 msgid "Keep _Playing"
 msgstr "Continuer à _jouer"
 
