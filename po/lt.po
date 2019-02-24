@@ -2,15 +2,14 @@
 # Copyright (C) 2014 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # FULL NAME <EMAIL@ADDRESS>, 2014.
-# Aurimas Černius <aurisc4@gmail.com>, 2014, 2015, 2017.
+# Aurimas Černius <aurisc4@gmail.com>, 2014-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-01-07 13:56+0200\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-02-24 17:29+0200\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -18,10 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Gtranslator 2.91.7\n"
+"%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Generator: Gtranslator 3.30.1\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -30,10 +29,12 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Žaiskite Hitori galvosūkių žaidimą"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "galvosūkis;žaidimas;logika;tinklelis;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -61,59 +62,60 @@ msgstr ""
 "būtų lengviau surasti sprendimą. Jei užstrigsite, žaidimas gali pateikti "
 "patarimą."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "GNOME projektas"
+
+#: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "_Naujas žaidimas"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "Lentos _dydis"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5×5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6×6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "_Žinynas"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_Apie"
+#: data/hitori.ui:56
+#| msgid "Hitori"
+msgid "_About Hitori"
+msgstr "_Apie hitori"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Išeiti"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Atšaukti paskutinį ėjimą"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Pakartoti ėjimą"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Gauti patarimą kitam ėjimui"
 
@@ -125,25 +127,25 @@ msgstr "Lentos dydis"
 msgid "The size of the board, in cells."
 msgstr "Lentos dydis langeliais."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "Žinyno turinio nepavyko parodyti"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autorinės teisės © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Loginis galvosūkis, kurį pirmas sukūrė Nikoli"
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr ""
 "Išvertė:\n"
 "Aurimas Černius <aurisc4@gmail.com>"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Hitori tinklalapis"
 
@@ -151,14 +153,17 @@ msgstr "Hitori tinklalapis"
 msgid "Enable debug mode"
 msgstr "Įjungti derinimo veikseną"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Lentos generavimo sėkla"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "- žaisti Hitori žaidimą"
 
+#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -172,14 +177,23 @@ msgstr "Ar norite sustabdyti dabartinį žaidimą?"
 msgid "Keep _Playing"
 msgstr "Tęsti _žaidimą"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Laimėjote per %02u:%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Išeiti"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Žaisti dar kartą"
+
+#~ msgid "_About"
+#~ msgstr "_Apie"
 
 #~ msgid "UI file “%s” could not be loaded"
 #~ msgstr "Nepavyko įkelti UI failo „%s“"
