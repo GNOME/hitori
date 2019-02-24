@@ -1,8 +1,12 @@
+# Daniel Nylander <po@danielnylander.se>, 2009.
+# Erik Sköldås <erik.skoldas@tele2.se>, 2015.
+# Anders Jonsson <anders.jonsson@norsjovallen.se>, 2019.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori-Doc\n"
-"POT-Creation-Date: 2016-05-05 19:54+0000\n"
-"PO-Revision-Date: 2016-06-14 22:17+0200\n"
+"POT-Creation-Date: 2019-02-20 10:59+0000\n"
+"PO-Revision-Date: 2019-02-24 12:31+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -10,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.8.8\n"
+"X-Generator: Poedit 2.2.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -46,27 +50,13 @@ msgstr ""
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
+"app> will ask if you want to stop the current game if you’re in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
 "För att ändra brädstorleken, välj ett alternativ från <guiseq><gui style="
 "\"menu\">Spel</gui><gui style=\"menuitem\">Brädstorlek</gui></guiseq>. "
 "<app>Hitori</app> kommer att fråga om du vill avbryta det pågående spelet, "
 "för att sedan starta ett nytt spel med den begärda brädstorleken."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -135,23 +125,42 @@ msgstr "Huvudspelsfönster"
 msgid "<app>Hitori</app> main window"
 msgstr "Huvudfönster för <app>Hitori</app>"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/hitori_main_window.png' "
+#| "md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "Huvudfönster för <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:7
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:9
+#| msgid "2008–2010"
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:12
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -162,17 +171,17 @@ msgstr ""
 "DelaLika 3.0 Unported</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:16
 msgid "Hitori Help"
 msgstr "Hjälp för Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:19
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Grundläggande idé &amp; användning"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:23
 msgid "Tips &amp; Tricks"
 msgstr "Tips &amp; tricks"
 
@@ -239,30 +248,26 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/playing.page:18
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
+"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
+"moves as you like without restriction."
 msgstr ""
-"För att ångra eller göra om ett drag, välj <guiseq><gui style=\"menu\">Spel</"
-"gui><gui style=\"menuitem\">Ångra</gui></guiseq> eller <guiseq><gui style="
-"\"menu\">Spel</gui><gui style=\"menuitem\">Gör om</gui></guiseq>. Du kan "
-"ångra eller göra om så många drag som du vill utan begränsningar."
+"För att ångra eller göra om ett drag, välj <gui style=\"button\">Ångra</gui> "
+"eller <gui style=\"button\">Gör om</gui> från verktygsfältet. Du kan ångra "
+"eller göra om så många drag som du vill utan begränsningar."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, choose <gui style=\"button"
+"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
+"red outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"För att få ett tips om vilken cell man kan tona ner , välj <guiseq><gui "
-"style=\"menu\">Spel</gui><gui style=\"menuitem\">Tips</gui></guiseq>. En "
-"cell kommer att markeras med blinkande röd kontur. Detta visar att den "
-"aktuella statusen för cellen (nedtonad eller icke-nedtonad) är felaktig, och "
-"bör ändras för att pusslet ska gå ut."
+"För att få ett tips om vilken cell man kan tona ner, välj <gui style=\"button"
+"\">Tips</gui> i verktygsfältet. En cell kommer att markeras med blinkande "
+"röd kontur. Detta visar att den aktuella statusen för cellen (nedtonad eller "
+"icke-nedtonad) är felaktig, och bör ändras för att pusslet ska gå ut."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -309,7 +314,7 @@ msgstr ""
 #: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
@@ -323,12 +328,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
+"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Om du fastnar på något ställe, välj <guiseq><gui style=\"menu\">Spel</"
-"gui><gui style=\"menuitem\">Tips</gui></guiseq> för att <app>Hitori</app> "
-"ska flagga en cell som ska tonas ned eller ta bort en nedtoning för att "
-"komma närmare en lösning."
+"Om du fastnar på något ställe, välj <gui style=\"button\">Tips</gui> från "
+"verktygsfältet för att <app>Hitori</app> ska flagga en cell som ska tonas "
+"ned eller där en nedtoning behöver tas bort för att komma närmare en lösning."
