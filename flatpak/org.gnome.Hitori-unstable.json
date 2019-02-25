@@ -36,9 +36,7 @@
     [
       {
         "name": "hitori",
-        "config-opts": [
-            "--disable-Werror"
-        ],
+        "buildsystem": "meson",
         "sources":
           [
             {
