@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
 "POT-Creation-Date: 2019-01-04 12:14+0000\n"
-"PO-Revision-Date: 2019-01-25 18:26+0100\n"
+"PO-Revision-Date: 2019-02-16 20:47+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian GNOME Translation Team <gnome-si@googlegroups.com>\n"
 "Language: sl_SI\n"
@@ -49,7 +49,7 @@ msgstr "Igra Hitori"
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori je logična igra, podobna igri sudoku."
+msgstr "Hitori je logična igra, podobna igri Sudoku."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -58,10 +58,10 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Pri igri tekmujemo s časom. CIlj je čim hitreje najti vsa podvojena števila "
-"v vsaki vrstici in stolpcu. Igro je mogoče igrati na več težavnostnih "
-"ravneh, program pa omogoča tudi označevanje celic za hitrejše reševanje. "
-"Podprti so tudi namigi za najtežje trenutke."
+"Igra Hitori je tekmovanje s časom. Cilj igre je čim hitreje najti vsa "
+"podvojena števila v vsaki vrstici in stolpcu. Igro je mogoče igrati na več "
+"težavnostnih ravneh, program pa omogoča tudi označevanje celic za hitrejše "
+"reševanje. Podprti so tudi namigi za najtežje trenutke."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
 msgid "The GNOME Project"
@@ -161,7 +161,7 @@ msgstr "Seme za ustvarjanje plošče"
 #. Options
 #: src/main.c:235
 msgid "- Play a game of Hitori"
-msgstr "- Igrajte igro Hitori"
+msgstr "– Igrajte igro Hitori"
 
 #. Print an error
 #: src/main.c:245
