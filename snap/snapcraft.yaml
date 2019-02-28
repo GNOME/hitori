@@ -74,10 +74,10 @@ parts:
     organize:
       snap/gnome-hitori/current/usr: usr
     override-build: |
-      sed -i.bak -e 's|=org.gnome.Hitori$|=${SNAP}/meta/gui/org.gnome.Hitori.png|g' data/org.gnome.Hitori.desktop.in
+      sed -i.bak -e 's|=org.gnome.Hitori$|=${SNAP}/meta/gui/org.gnome.Hitori.svg|g' data/org.gnome.Hitori.desktop.in
       snapcraftctl build
       mkdir -p $SNAPCRAFT_PART_INSTALL/meta/gui/
-      cp ../src/data/icons/48x48/org.gnome.Hitori.png $SNAPCRAFT_PART_INSTALL/meta/gui/
+      cp ../src/data/icons/scalable/org.gnome.Hitori.svg $SNAPCRAFT_PART_INSTALL/meta/gui/
       cp ../install/snap/gnome-hitori/current/usr/share/applications/org.gnome.Hitori.desktop $SNAPCRAFT_PART_INSTALL/meta/gui/
     build-packages:
       - desktop-file-utils
