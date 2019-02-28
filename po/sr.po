@@ -5,11 +5,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-02-21 07:09+0200\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"PO-Revision-Date: 2019-02-28 19:55+0100\n"
+"Last-Translator: Марко М. Костић <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <(nothing)>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
@@ -18,8 +17,9 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Project-Style: gnome\n"
+"X-Generator: Poedit 2.2\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Хитори"
 
@@ -28,10 +28,12 @@ msgstr "Хитори"
 msgid "Play the Hitori puzzle game"
 msgstr "Играјте игру слагалица Хитори"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "слагалица;игра;логика;мрежа;"
+msgstr "слагалица;игра;логика;мрежа;puzzle;game;logic;grid;"
 
+#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 #: data/org.gnome.Hitori.desktop.in:9
 msgid "org.gnome.Hitori"
 msgstr "org.gnome.Hitori"
@@ -59,59 +61,59 @@ msgstr ""
 "помогну у проналажењу решења. Ако ли вам негде запне, игра може да вам "
 "дошапне савет."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "Гном пројекат"
+
+#: data/hitori.ui:9 src/main.c:305
 msgid "_New Game"
 msgstr "_Нова игра"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "Величина _табле"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5x5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6x6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "По_моћ"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_О програму"
+#: data/hitori.ui:56
+msgid "_About Hitori"
+msgstr "_О Хиторију"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Изађи"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Опозовите последњи потез"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Вратите потез"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Потражите савет за следећи потез"
 
@@ -123,26 +125,26 @@ msgstr "Величина табле"
 msgid "The size of the board, in cells."
 msgstr "Величина табле, у пољима."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "Не могу да прикажем садржај помоћи"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Ауторска права © 2007–2010 Филип Витнал"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Логичка слагалица коју је првобитно осмислио Николи"
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr ""
 "  Мирослав Николић <miroslavnikolic@rocketmail.com>  \n"
 "\n"
 "http://prevod.org — превод на српски језик"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Веб страница Хиторија"
 
@@ -150,14 +152,17 @@ msgstr "Веб страница Хиторија"
 msgid "Enable debug mode"
 msgstr "Укључује код за тражење грешака"
 
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:211
 msgid "Seed the board generation"
 msgstr "Сеје генерацију табле"
 
+#. Options
 #: src/main.c:225
 msgid "- Play a game of Hitori"
 msgstr "— Играјте игру Хитори"
 
+#. Print an error
 #: src/main.c:235
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
@@ -171,14 +176,23 @@ msgstr "Да ли желите да зауставите текућу игру?"
 msgid "Keep _Playing"
 msgstr "_Настави игру"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Победили сте у времену од %02u:%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Изађи"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Играј опет"
+
+#~ msgid "_About"
+#~ msgstr "_О програму"
 
 #~ msgid "UI file “%s” could not be loaded"
 #~ msgstr "Не могу да учитам датотеку КС „%s“"
