@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2017-02-26 08:18+0000\n"
-"PO-Revision-Date: 2019-02-14 19:52+0100\n"
+"POT-Creation-Date: 2019-02-20 10:59+0000\n"
+"PO-Revision-Date: 2019-03-02 22:09+0100\n"
 "Last-Translator: Daniel Șerbănescu <daniel@serbanescu.dk>\n"
 "Language-Team: Gnome Romanian Translation Team <gnomero-list@lists."
 "sourceforge.net>\n"
@@ -52,7 +52,7 @@ msgstr ""
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
+"app> will ask if you want to stop the current game if you’re in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
 "Pentru a modifica dimensiunea mesei alegeți o opțiune din <guiseq><gui style="
@@ -136,7 +136,7 @@ msgstr "Fereastra principală <app>Hitori</app>"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
 "md5='37d4edd9d19a19ca58d0e987257a2622'"
@@ -147,17 +147,17 @@ msgid "<app>Hitori</app> main window."
 msgstr "Fereastra principală <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:7
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:9
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:12
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -168,17 +168,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:16
 msgid "Hitori Help"
 msgstr "Ajutor Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:19
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Utilizarea și jocul rudimentar"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:23
 msgid "Tips &amp; Tricks"
 msgstr "Sfaturi și trucuri"
 
@@ -187,7 +187,7 @@ msgstr "Sfaturi și trucuri"
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
 "licență CreativeCommons Atribuire-Distribuire în condiții identice 3.0 Ne-"
-"adaptată."
+"adaptată"
 
 #. (itstool) path: license/p
 #: C/legal.xml:4
@@ -248,30 +248,27 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/playing.page:18
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
+"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
+"moves as you like without restriction."
 msgstr ""
-"Pentru a anula sau a reface o mișcare alegeți <guiseq><gui style=\"menu"
-"\">Joc</gui><gui style=\"menuitem\">Anulează</gui></guiseq> sau <guiseq><gui "
-"style=\"menu\">Joc</gui><gui style=\"menuitem\">Refă</gui></guiseq>. Puteți "
+"Pentru a anula sau a reface o mișcare alegeți <gui style=\"button"
+"\">Anulează</gui><gui style=\"button\">Refă</gui> din bara de unelte. Puteți "
 "anula sau a reface, atâtea mutări câte doriți fără nici o restricție."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, choose <gui style=\"button"
+"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
+"red outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
 "Pentru a obține un indiciu despre care celule trebuiesc pictate, selectați "
-"<guiseq><gui style=\"menu\">Joc</gui><gui style=\"menuitem\">Indiciu</gui></"
-"guiseq>. O celulă va fi evidențiată cu un contur roșu intermitent. Acest "
-"lucru arată că starea actuală a acelei celule (pictată sau nu) este "
-"incorectă și ar trebui să fie schimbată pentru ca jocul să fie câștigat."
+"<gui style=\"button\">Indiciu</gui>. O celulă va fi evidențiată cu un contur "
+"roșu intermitent. Acest lucru arată că starea actuală a acelei celule "
+"(pictată sau nu) este incorectă și ar trebui să fie schimbată pentru ca "
+"jocul să fie câștigat."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -318,7 +315,7 @@ msgstr ""
 #: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
@@ -332,15 +329,13 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
+"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Dacă rămâneți blocat în orice moment, alegeți <guiseq><gui style=\"menu"
-"\">Joc</gui><gui style=\"menuitem\">Indiciu</gui></guiseq> pentru ca "
-"<app>Hitori</app> să semnalizeze o celulă care ar trebui să fie pictată sau "
-"depictată, pentru a se apropia de o soluție."
+"Dacă rămâneți blocat în orice moment, alegeți <gui style=\"button\">Indiciu</"
+"gui> din bara de unelte ca <app>Hitori</app> să semnalizeze o celulă care ar "
+"trebui să fie pictată sau depictată, pentru a se apropia de o soluție."
 
 #~ msgid "Legal information."
 #~ msgstr "Informații legale."
