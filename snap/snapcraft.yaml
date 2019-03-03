@@ -1,6 +1,15 @@
 name: gnome-hitori
 version: git
-adopt-info: gnome-hitori
+summary: Play the Hitori puzzle game
+description: |
+  Hitori is a logic game similar to the popular game of Sudoku.
+
+  You play the game against the clock, aiming to eliminate all the duplicate
+  numbers in each row and column in the fastest time.
+  Multiple sizes of game board are supported, and you can place markers on
+  cells to help work out the solution.
+  If you get stuck, the game can give you a hint.
+
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
 base: core18
@@ -38,7 +47,7 @@ apps:
       - gsettings
       - unity7
       - wayland
-    common-id: org.gnome.Hitori.desktop
+    desktop: usr/share/applications/org.gnome.Hitori.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
 
@@ -59,7 +68,6 @@ parts:
     after: [desktop-gnome-platform]
     source: https://gitlab.gnome.org/GNOME/hitori.git
     source-type: git
-    parse-info: [usr/share/metainfo/org.gnome.Hitori.appdata.xml]
     plugin: meson
     # workaround the issue described in https://launchpad.net/bugs/1583250
     meson-parameters: [--prefix=/snap/gnome-hitori/current/usr]
