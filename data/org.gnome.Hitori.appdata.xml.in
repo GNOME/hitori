@@ -47,6 +47,7 @@
   </kudos>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="3.31.92" date="2019-03-04" />
     <release version="3.31.0" date="2019-02-19" />
     <release version="3.22.4" date="2017-10-02" />
     <release version="3.22.3" date="2017-04-30" />

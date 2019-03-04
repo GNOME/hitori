@@ -1,3 +1,26 @@
+Overview of changes in Hitori 3.31.92
+=====================================
+
+* Add high-resolution icon. (#6)
+
+* Bugs fixed:
+ - #6 [BZ#779630] Hitori is missing high resolution icon
+ - !16 Update help manual
+ - !17 help: Add missing LINGUAS
+ - !19 flatpak: Hitori now only builds with Meson
+
+* Translation updates:
+ - Dutch
+ - French
+ - German
+ - Italian
+ - Latvian
+ - Lithuanian
+ - Portuguese (Brazil)
+ - Serbian
+ - Slovenian
+
+
 Overview of changes in Hitori 3.31.0
 ====================================
 
