@@ -190,6 +190,15 @@ activate (GApplication *application)
 		self->board_size = g_ascii_strtoull (size_str, NULL, 10);
 		g_free (size_str);
 
+		if (self->board_size > MAX_BOARD_SIZE) {
+			GVariant *default_size = g_settings_get_default_value (self->settings, "board-size");
+			g_variant_get (default_size, "s", &size_str);
+			g_variant_unref (default_size);
+			self->board_size = g_ascii_strtoull (size_str, NULL, 10);
+			g_free (size_str);
+			g_assert (self->board_size <= MAX_BOARD_SIZE);
+		}
+
 		undo = g_new0 (HitoriUndo, 1);
 		undo->type = UNDO_NEW_GAME;
 		self->undo_stack = undo;

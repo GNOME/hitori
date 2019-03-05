@@ -131,11 +131,41 @@ lookup_color (GtkStyleContext *style_context, const gchar *name, GdkRGBA *result
 	}
 }
 
+/* Generate the text for a given cell, potentially localised to the current locale. */
+static const gchar *
+localise_cell_digit (Hitori             *hitori,
+                     const HitoriVector *pos)
+{
+	guchar value = hitori->board[pos->x][pos->y].num;
+
+	G_STATIC_ASSERT (MAX_BOARD_SIZE < 11);
+
+	switch (value) {
+	/* Translators: This is a digit rendered in a cell on the game board.
+	 * Translate it to your locale’s number system if you wish the game
+	 * board to be rendered in those digits. Otherwise, leave the digits as
+	 * Arabic numerals. */
+	case 1: return C_("Board cell", "1");
+	case 2: return C_("Board cell", "2");
+	case 3: return C_("Board cell", "3");
+	case 4: return C_("Board cell", "4");
+	case 5: return C_("Board cell", "5");
+	case 6: return C_("Board cell", "6");
+	case 7: return C_("Board cell", "7");
+	case 8: return C_("Board cell", "8");
+	case 9: return C_("Board cell", "9");
+	case 10: return C_("Board cell", "10");
+	case 11: return C_("Board cell", "11");
+	default:
+		g_assert_not_reached ();
+	}
+}
+
 static void
 draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gdouble cell_size, gdouble x_pos, gdouble y_pos,
            HitoriVector iter)
 {
-	gchar *text;
+	const gchar *text;
 	PangoLayout *layout;
 	gint text_width, text_height;
 	GtkStateFlags state;
@@ -214,7 +244,7 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gdouble 
 	cairo_stroke (cr);
 
 	/* Draw the text */
-	text = g_strdup_printf ("%u", hitori->board[iter.x][iter.y].num);
+	text = localise_cell_digit (hitori, &iter);
 	layout = pango_cairo_create_layout (cr);
 
 	pango_layout_set_text (layout, text, -1);
@@ -245,7 +275,6 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gdouble 
 
 	pango_cairo_show_layout (cr, layout);
 
-	g_free (text);
 	g_object_unref (layout);
 }
 
@@ -682,7 +711,16 @@ board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data)
 
 	size_str = g_settings_get_string (self->settings, "board-size");
 	size = g_ascii_strtoull (size_str, NULL, 10);
-	hitori_set_board_size (self, size);
-
 	g_free (size_str);
+
+	if (size > MAX_BOARD_SIZE) {
+		GVariant *default_size = g_settings_get_default_value (self->settings, "board-size");
+		g_variant_get (default_size, "s", &size_str);
+		g_variant_unref (default_size);
+		size = g_ascii_strtoull (size_str, NULL, 10);
+		g_free (size_str);
+		g_assert (size <= MAX_BOARD_SIZE);
+	}
+
+	hitori_set_board_size (self, size);
 }
