@@ -682,7 +682,16 @@ board_size_change_cb (GObject *object, GParamSpec *pspec, gpointer user_data)
 
 	size_str = g_settings_get_string (self->settings, "board-size");
 	size = g_ascii_strtoull (size_str, NULL, 10);
-	hitori_set_board_size (self, size);
-
 	g_free (size_str);
+
+	if (size > MAX_BOARD_SIZE) {
+		GVariant *default_size = g_settings_get_default_value (self->settings, "board-size");
+		g_variant_get (default_size, "s", &size_str);
+		g_variant_unref (default_size);
+		size = g_ascii_strtoull (size_str, NULL, 10);
+		g_free (size_str);
+		g_assert (size <= MAX_BOARD_SIZE);
+	}
+
+	hitori_set_board_size (self, size);
 }

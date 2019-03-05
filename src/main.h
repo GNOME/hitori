@@ -26,6 +26,7 @@
 G_BEGIN_DECLS
 
 #define DEFAULT_BOARD_SIZE 5
+#define MAX_BOARD_SIZE 10
 
 typedef struct {
 	guchar x;
