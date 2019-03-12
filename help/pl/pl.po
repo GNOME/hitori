@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori-help\n"
-"POT-Creation-Date: 2019-02-20 10:59+0000\n"
-"PO-Revision-Date: 2019-02-20 21:25+0100\n"
+"POT-Creation-Date: 2019-03-12 13:56+0000\n"
+"PO-Revision-Date: 2019-03-12 18:50+0100\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
 "Language: pl\n"
@@ -131,10 +131,10 @@ msgstr "Główne okno gry <app>Hitori</app>"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
-"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
-"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 
 #. (itstool) path: media/p
 #: C/game.page:23
