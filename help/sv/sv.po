@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori-Doc\n"
-"POT-Creation-Date: 2019-02-20 10:59+0000\n"
-"PO-Revision-Date: 2019-02-24 12:31+0100\n"
+"POT-Creation-Date: 2019-03-12 13:56+0000\n"
+"PO-Revision-Date: 2019-03-15 16:59+0100\n"
 "Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
@@ -134,14 +134,14 @@ msgstr "Huvudfönster för <app>Hitori</app>"
 #| msgctxt "_"
 #| msgid ""
 #| "external ref='figures/hitori_main_window.png' "
-#| "md5='b6ea3ee1ff73311d002cfdb4463032be'"
+#| "md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
-"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
-"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 
 #. (itstool) path: media/p
 #: C/game.page:23
@@ -155,7 +155,6 @@ msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
 #: C/index.page:9
-#| msgid "2008–2010"
 msgid "2008–2010, 2019"
 msgstr "2008–2010, 2019"
 
