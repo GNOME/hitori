@@ -7,8 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-02-07 23:56+0000\n"
-"PO-Revision-Date: 2018-03-14 14:06+0100\n"
+"POT-Creation-Date: 2019-03-04 12:58+0000\n"
+"PO-Revision-Date: 2019-03-26 19:26+0100\n"
+"Last-Translator: \n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -16,10 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"Last-Translator: \n"
 "X-Generator: Poedit 2.0.6\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -60,59 +60,59 @@ msgstr ""
 "ploče je podržana a možete i smjestiti oznake na ćelije za pomoć pronalaska "
 "rješenja. Ako zapnete, igra vam može dati savjet."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "GNOME projekt"
+
+#: data/hitori.ui:9 src/main.c:315
 msgid "_New Game"
 msgstr "_Nova igra"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:13
 msgid "Board _Size"
 msgstr "Veličina _ploče"
 
-#: data/hitori-menus.ui:16
+#: data/hitori.ui:17
 msgid "5×5"
 msgstr "5×5"
 
-#: data/hitori-menus.ui:21
+#: data/hitori.ui:22
 msgid "6×6"
 msgstr "6×6"
 
-#: data/hitori-menus.ui:26
+#: data/hitori.ui:27
 msgid "7×7"
 msgstr "7×7"
 
-#: data/hitori-menus.ui:31
+#: data/hitori.ui:32
 msgid "8×8"
 msgstr "8×8"
 
-#: data/hitori-menus.ui:36
+#: data/hitori.ui:37
 msgid "9×9"
 msgstr "9×9"
 
-#: data/hitori-menus.ui:41
+#: data/hitori.ui:42
 msgid "10×10"
 msgstr "10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:51
 msgid "_Help"
 msgstr "_Priručnik"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_O programu"
+#: data/hitori.ui:56
+msgid "_About Hitori"
+msgstr "_O Hitori"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Zatvori"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "Poništi posljednji potez"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:106
 msgid "Redo a move"
 msgstr "Ponovi posljednji potez"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:152
 msgid "Get a hint for your next move"
 msgstr "Dobijte savjet za svoj sljedeći potez"
 
@@ -124,53 +124,53 @@ msgstr "Veličina ploče"
 msgid "The size of the board, in cells."
 msgstr "Veličina ploče, u ćelijama."
 
-#: src/interface.c:649
+#: src/interface.c:640
 msgid "The help contents could not be displayed"
 msgstr "Sadržaj pomoći se ne može prikazati"
 
-#: src/interface.c:673
+#: src/interface.c:664
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Autorsko pravo © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:665
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logička slagalica izvorno dizajnirana od strane Nikoli"
 
-#: src/interface.c:676
+#: src/interface.c:667
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  gogo https://launchpad.net/~trebelnik-stefina"
 
-#: src/interface.c:680
+#: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Hitori web stranica"
 
-#: src/main.c:209
+#: src/main.c:219
 msgid "Enable debug mode"
 msgstr "Omogući način otklanjanja greške"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:211
+#: src/main.c:221
 msgid "Seed the board generation"
 msgstr "Odaberi broj stvaranja ploče"
 
 #. Options
-#: src/main.c:225
+#: src/main.c:235
 msgid "- Play a game of Hitori"
 msgstr "- Zaigrajte igru Hitori"
 
 #. Print an error
-#: src/main.c:235
+#: src/main.c:245
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Mogućnosti naredbenog redka se ne mogu obraditi: %s\n"
 
-#: src/main.c:301
+#: src/main.c:311
 msgid "Do you want to stop the current game?"
 msgstr "Želite li prekinuti trenutnu igru?"
 
-#: src/main.c:304
+#: src/main.c:314
 msgid "Keep _Playing"
 msgstr "Nastavi _igrati"
 
@@ -181,6 +181,13 @@ msgstr "Nastavi _igrati"
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "Pobijedili ste u vremenu %02u:%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Zatvori"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Igraj ponovno"
+
+#~ msgid "_About"
+#~ msgstr "_O programu"
