@@ -217,14 +217,19 @@ activate (GApplication *application)
 										"window-size", "(ii)",
 										&self->geometry.width, &self->geometry.height);
 
-		gtk_window_set_default_size (GTK_WINDOW (self->window),
-																 self->geometry.width, self->geometry.height);
-
-		if (self->geometry.y > -1)
-			gtk_window_move (GTK_WINDOW (self->window),
-											 self->geometry.x, self->geometry.y);
-		if (self->window_maximized)
+		if (self->window_maximized) {
 			gtk_window_maximize (GTK_WINDOW (self->window));
+		} else {
+			if (self->geometry.y > -1) {
+				gtk_window_move (GTK_WINDOW (self->window),
+												 self->geometry.x, self->geometry.y);
+			}
+
+			if (self->geometry.width >= 0 && self->geometry.height >= 0) {
+				gtk_window_resize (GTK_WINDOW (self->window),
+													 self->geometry.width, self->geometry.height);
+			}
+		}
 
 		gtk_window_set_application (GTK_WINDOW (self->window), GTK_APPLICATION (self));
 		gtk_widget_show_all (self->window);
