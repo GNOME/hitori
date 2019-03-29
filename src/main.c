@@ -209,20 +209,20 @@ activate (GApplication *application)
 
 		/* Restore window position and size */
 		self->window_maximized = g_settings_get_boolean (self->settings,
-								 "window-maximized");
+                                                     "window-maximized");
 		g_settings_get (self->settings,
-				"window-position", "(ii)",
-				&self->geometry.x, &self->geometry.y);
+										"window-position", "(ii)",
+										&self->geometry.x, &self->geometry.y);
 		g_settings_get (self->settings,
-				"window-size", "(ii)",
-				&self->geometry.width, &self->geometry.height);
+										"window-size", "(ii)",
+										&self->geometry.width, &self->geometry.height);
 
 		gtk_window_set_default_size (GTK_WINDOW (self->window),
-					     self->geometry.width, self->geometry.height);
+																 self->geometry.width, self->geometry.height);
 
 		if (self->geometry.y > -1)
 			gtk_window_move (GTK_WINDOW (self->window),
-					 self->geometry.x, self->geometry.y);
+											 self->geometry.x, self->geometry.y);
 		if (self->window_maximized)
 			gtk_window_maximize (GTK_WINDOW (self->window));
 
