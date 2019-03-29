@@ -220,7 +220,7 @@ activate (GApplication *application)
 		if (self->window_maximized) {
 			gtk_window_maximize (GTK_WINDOW (self->window));
 		} else {
-			if (self->geometry.y > -1) {
+			if (self->geometry.x > -1 && self->geometry.y > -1) {
 				gtk_window_move (GTK_WINDOW (self->window),
 												 self->geometry.x, self->geometry.y);
 			}

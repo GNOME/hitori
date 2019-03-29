@@ -41,7 +41,6 @@ static void hitori_cancel_hinting (Hitori *hitori);
 gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
 gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
 void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
-gboolean hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event, Hitori *hitori);
 void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
 static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
 static void hint_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
@@ -76,6 +75,11 @@ hitori_window_unmap_cb (GtkWidget *window,
 
 	if (hitori->window_maximized)
 		return;
+
+	gtk_window_get_position (GTK_WINDOW (window),
+				 &hitori->geometry.x, &hitori->geometry.y);
+	gtk_window_get_size (GTK_WINDOW (window),
+			     &hitori->geometry.width, &hitori->geometry.height);
 
 	g_settings_set (hitori->settings, "window-position", "(ii)",
 			hitori->geometry.x, hitori->geometry.y);
@@ -462,18 +466,6 @@ void
 hitori_destroy_cb (GtkWindow *window, Hitori *hitori)
 {
 	hitori_quit (hitori);
-}
-
-gboolean
-hitori_window_configure_event_cb (GtkWindow *window, GdkEventConfigure *event, Hitori *hitori)
-{
-	if (!hitori->window_maximized) {
-		gtk_window_get_position (window, &hitori->geometry.x, &hitori->geometry.y);
-		gtk_window_get_size (window, &hitori->geometry.width, &hitori->geometry.height);
-	}
-
-	/* We've handled the configure event, no need for further processing. */
-	return TRUE;
 }
 
 void
