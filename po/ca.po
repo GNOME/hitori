@@ -101,7 +101,7 @@ msgstr "_Ajuda"
 
 #: data/hitori.ui:56
 msgid "_About Hitori"
-msgstr "_Quan a l'Hitori"
+msgstr "_Quant a l'Hitori"
 
 #: data/hitori.ui:84
 msgid "Undo your last move"
