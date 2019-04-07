@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-12-20 15:42+0000\n"
+"POT-Creation-Date: 2019-03-26 18:27+0000\n"
 "PO-Revision-Date: 2019-02-14 15:29+0100\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -30,11 +30,6 @@ msgstr "Læg puslespillet Hitori"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "tænkespil;puslespil;spil;logik;gitter;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -62,7 +57,7 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: data/hitori.ui:9 src/main.c:305
+#: data/hitori.ui:9 src/main.c:315
 msgid "_New Game"
 msgstr "_Nyt spil"
 
@@ -139,38 +134,39 @@ msgid "translator-credits"
 msgstr ""
 "Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019.\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted <http://dansk-gruppen.dk>\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
 #: src/interface.c:671
 msgid "Hitori Website"
 msgstr "Hitoris hjemmeside"
 
-#: src/main.c:209
+#: src/main.c:219
 msgid "Enable debug mode"
 msgstr "Slå fejlsøgningstilstand til"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:211
+#: src/main.c:221
 msgid "Seed the board generation"
 msgstr "Grundlagstal for brætoprettelsen"
 
 #. Options
-#: src/main.c:225
+#: src/main.c:235
 msgid "- Play a game of Hitori"
 msgstr "- Spil Hitori"
 
 #. Print an error
-#: src/main.c:235
+#: src/main.c:245
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Indstillinger for kommandolinje kunne ikke fortolkes: %s\n"
 
-#: src/main.c:301
+#: src/main.c:311
 msgid "Do you want to stop the current game?"
 msgstr "Ønsker du at stoppe det aktuelle spil?"
 
-#: src/main.c:304
+#: src/main.c:314
 msgid "Keep _Playing"
 msgstr "Fortsæt med at _spille"
 
@@ -189,5 +185,9 @@ msgstr "_Afslut"
 msgid "_Play Again"
 msgstr "_Nyt spil"
 
+#~ msgid "org.gnome.Hitori"
+#~ msgstr "org.gnome.Hitori"
+
 #~ msgid "_About"
 #~ msgstr "_Om"
+
