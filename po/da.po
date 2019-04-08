@@ -135,7 +135,7 @@ msgstr ""
 "Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019.\n"
 "\n"
 "Dansk-gruppen\n"
-"Websted <http://dansk-gruppen.dk>\n"
+"Websted http://dansk-gruppen.dk\n"
 "E-mail <dansk@dansk-gruppen.dk>"
 
 #: src/interface.c:671
