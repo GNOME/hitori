@@ -62,6 +62,33 @@ static GActionEntry win_entries[] = {
 	{ "redo", redo_cb, NULL, NULL, NULL },
 };
 
+static void
+hitori_window_unmap_cb (GtkWidget *window,
+                        gpointer user_data)
+{
+	gboolean window_maximized;
+	GdkRectangle geometry;
+	HitoriApplication *hitori;
+
+	hitori = HITORI_APPLICATION (user_data);
+
+	window_maximized = gtk_window_is_maximized (GTK_WINDOW (window));
+	g_settings_set_boolean (hitori->settings,
+				"window-maximized", window_maximized);
+
+	if (window_maximized)
+		return;
+
+	gtk_window_get_position (GTK_WINDOW (window), &geometry.x, &geometry.y);
+	gtk_window_get_size (GTK_WINDOW (window),
+			     &geometry.width, &geometry.height);
+
+	g_settings_set (hitori->settings, "window-position", "(ii)",
+			geometry.x, geometry.y);
+	g_settings_set (hitori->settings, "window-size", "(ii)",
+			geometry.width, geometry.height);
+}
+
 GtkWidget *
 hitori_create_interface (Hitori *hitori)
 {
@@ -80,6 +107,9 @@ hitori_create_interface (Hitori *hitori)
 	hitori->window = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_main_window"));
 	hitori->drawing_area = GTK_WIDGET (gtk_builder_get_object (builder, "hitori_drawing_area"));
 	hitori->timer_label = GTK_LABEL (gtk_builder_get_object (builder, "hitori_timer"));
+
+	g_signal_connect (hitori->window, "unmap",
+			  G_CALLBACK (hitori_window_unmap_cb), hitori);
 
 	g_object_unref (builder);
 

@@ -180,7 +180,9 @@ activate (GApplication *application)
 
 	/* Create the interface. */
 	if (self->window == NULL) {
+		GdkRectangle geometry;
 		HitoriUndo *undo;
+		gboolean window_maximized;
 		gchar *size_str;
 
 		/* Setup */
@@ -206,6 +208,30 @@ activate (GApplication *application)
 		/* Showtime! */
 		hitori_create_interface (self);
 		hitori_generate_board (self, self->board_size, priv->seed);
+
+		/* Restore window position and size */
+		window_maximized = g_settings_get_boolean (self->settings,
+																							 "window-maximized");
+		g_settings_get (self->settings,
+										"window-position", "(ii)",
+										&geometry.x, &geometry.y);
+		g_settings_get (self->settings,
+										"window-size", "(ii)",
+										&geometry.width, &geometry.height);
+
+		if (window_maximized) {
+			gtk_window_maximize (GTK_WINDOW (self->window));
+		} else {
+			if (geometry.x > -1 && geometry.y > -1) {
+				gtk_window_move (GTK_WINDOW (self->window),
+												 geometry.x, geometry.y);
+			}
+
+			if (geometry.width >= 0 && geometry.height >= 0) {
+				gtk_window_resize (GTK_WINDOW (self->window),
+													 geometry.width, geometry.height);
+			}
+		}
 
 		gtk_window_set_application (GTK_WINDOW (self->window), GTK_APPLICATION (self));
 		gtk_widget_show_all (self->window);
