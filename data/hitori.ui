@@ -7,7 +7,6 @@
 			<item>
 				<attribute name="action">app.new-game</attribute>
 				<attribute name="label" translatable="yes">_New Game</attribute>
-				<attribute name="accel">&lt;Primary&gt;n</attribute>
 			</item>
 			<submenu id="board_size_menu">
 				<attribute name="label" translatable="yes">Board _Size</attribute>
@@ -49,7 +48,6 @@
 			<item>
 				<attribute name="action">app.help</attribute>
 				<attribute name="label" translatable="yes">_Help</attribute>
-				<attribute name="accel">F1</attribute>
 			</item>
 			<item>
 				<attribute name="action">app.about</attribute>
@@ -79,7 +77,6 @@
 								<property name="can_focus">True</property>
 								<property name="focus_on_click">False</property>
 								<property name="action_name">win.undo</property>
-								<accelerator key="Z" signal="activate" modifiers="GDK_CONTROL_MASK"/>
 								<property name="tooltip_text" translatable="yes">Undo your last move</property>
 								<style>
 									<class name="image-button"/>
@@ -101,7 +98,6 @@
 								<property name="can_focus">True</property>
 								<property name="focus_on_click">False</property>
 								<property name="action_name">win.redo</property>
-								<accelerator key="Z" signal="activate" modifiers="GDK_CONTROL_MASK | GDK_SHIFT_MASK"/>
 								<property name="tooltip_text" translatable="yes">Redo a move</property>
 								<style>
 									<class name="image-button"/>
@@ -147,7 +143,6 @@
 						<property name="can_focus">True</property>
 						<property name="focus_on_click">False</property>
 						<property name="action_name">win.hint</property>
-						<accelerator key="H" signal="activate" modifiers="GDK_CONTROL_MASK"/>
 						<property name="tooltip_text" translatable="yes">Get a hint for your next move</property>
 						<style>
 							<class name="image-button"/>
