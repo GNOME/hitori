@@ -9,18 +9,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-03-05 13:41+0000\n"
-"PO-Revision-Date: 2019-03-07 23:14+0100\n"
-"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"POT-Creation-Date: 2019-05-13 13:41+0000\n"
+"PO-Revision-Date: 2019-05-23 21:41+0200\n"
+"Last-Translator: Meskó Balázs <mesko.balazs@fsf.hu>\n"
 "Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Poedit 2.2.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -33,11 +33,6 @@ msgstr "Japán eredetű logikai játék a számokkal"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "fejtörő;puzzle;játék;logika;rács;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -65,43 +60,87 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "A GNOME projekt"
 
-#: data/hitori.ui:9 src/main.c:324
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Új játék indítása"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Highlight a cell"
+msgstr "Cella kiemelése"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "Az utolsó lépés visszavonása"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "Visszavont lépés végrehajtása mégis"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Javaslat a következő lépéshez"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Súgó megjelenítése"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Gyorsbillentyűk megjelenítése"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Kilépés"
+
+#: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "Ú_j játék"
 
-#: data/hitori.ui:13
+#: data/hitori.ui:12
 msgid "Board _Size"
 msgstr "Tábla_méret"
 
-#: data/hitori.ui:17
+#: data/hitori.ui:16
 msgid "_5×5"
 msgstr "_5×5"
 
-#: data/hitori.ui:22
+#: data/hitori.ui:21
 msgid "_6×6"
 msgstr "_6×6"
 
-#: data/hitori.ui:27
+#: data/hitori.ui:26
 msgid "_7×7"
 msgstr "_7×7"
 
-#: data/hitori.ui:32
+#: data/hitori.ui:31
 msgid "_8×8"
 msgstr "_8×8"
 
-#: data/hitori.ui:37
+#: data/hitori.ui:36
 msgid "_9×9"
 msgstr "_9×9"
 
-#: data/hitori.ui:42
+#: data/hitori.ui:41
 msgid "_10×10"
 msgstr "_10×10"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "_Gyorsbillentyűk"
+
+#: data/hitori.ui:54
 msgid "_Help"
 msgstr "_Súgó"
 
-#: data/hitori.ui:56
+#: data/hitori.ui:58
 msgid "_About Hitori"
 msgstr "A Hitori _névjegye"
 
@@ -109,11 +148,11 @@ msgstr "A Hitori _névjegye"
 msgid "Undo your last move"
 msgstr "Az utolsó lépés visszavonása"
 
-#: data/hitori.ui:106
+#: data/hitori.ui:105
 msgid "Redo a move"
 msgstr "Visszavont lépés végrehajtása mégis"
 
-#: data/hitori.ui:152
+#: data/hitori.ui:150
 msgid "Get a hint for your next move"
 msgstr "Javaslat a következő lépéshez"
 
@@ -125,112 +164,137 @@ msgstr "A tábla mérete"
 msgid "The size of the board, in cells."
 msgstr "A tábla mérete cellákban."
 
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Ablak teljes méretű állapota"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Az ablak teljes méretűre van-e téve."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Ablakpozíció"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Ablakpozíció (x és y)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Ablakméret"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Ablakméret (szélesség és magasság)."
+
 #. Translators: This is a digit rendered in a cell on the game board.
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:148
+#: src/interface.c:194
 msgctxt "Board cell"
 msgid "1"
 msgstr "1"
 
-#: src/interface.c:149
+#: src/interface.c:195
 msgctxt "Board cell"
 msgid "2"
 msgstr "2"
 
-#: src/interface.c:150
+#: src/interface.c:196
 msgctxt "Board cell"
 msgid "3"
 msgstr "3"
 
-#: src/interface.c:151
+#: src/interface.c:197
 msgctxt "Board cell"
 msgid "4"
 msgstr "4"
 
-#: src/interface.c:152
+#: src/interface.c:198
 msgctxt "Board cell"
 msgid "5"
 msgstr "5"
 
-#: src/interface.c:153
+#: src/interface.c:199
 msgctxt "Board cell"
 msgid "6"
 msgstr "6"
 
-#: src/interface.c:154
+#: src/interface.c:200
 msgctxt "Board cell"
 msgid "7"
 msgstr "7"
 
-#: src/interface.c:155
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "8"
 msgstr "8"
 
-#: src/interface.c:156
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "9"
 msgstr "9"
 
-#: src/interface.c:157
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "10"
 msgstr "10"
 
-#: src/interface.c:158
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "11"
 msgstr "11"
 
-#: src/interface.c:669
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "A súgó tartalma nem jeleníthető meg"
 
-#: src/interface.c:693
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:694
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Eredetileg Nikoli által megalkotott logikai játék"
 
-#: src/interface.c:696
+#: src/interface.c:749
 msgid "translator-credits"
 msgstr ""
 "Kelemen Gábor <kelemeng at gnome dot hu>\n"
+"Meskó Balázs <mesko.balazs at fsf dot hu>\n"
 "Németh Tamás <ntomasz at uhuklub dot hu>"
 
-#: src/interface.c:700
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "A Hitori honlapja"
 
-#: src/main.c:228
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "Hibakereső üzemmód bekapcsolása"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:230
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Táblagenerálás kezdőértéke"
 
 #. Options
-#: src/main.c:244
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr " - Játsszon egyet a Hitorival"
 
 #. Print an error
-#: src/main.c:254
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "A parancssori kapcsolók nem értelmezhetők: %s\n"
 
-#: src/main.c:320
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "Meg akarja állítani az aktuális játékot?"
 
-#: src/main.c:323
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "_Játék folytatása"
 
