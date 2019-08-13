@@ -2,23 +2,24 @@
 # Copyright (C) 2007-2008 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the Hitori package.
 # Philip Withnall <philip@tecnocode.co.uk>, 2007, 2008, 2010, 2013, 2014.
-#
+# Bruce Cowan <bruce@bcowan.me.uk>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2007-09-03 16:09+0100\n"
-"Last-Translator: Philip Withnall <philip@tecnocode.co.uk>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2019-05-13 11:46+0000\n"
+"PO-Revision-Date: 2019-08-13 21:46+0100\n"
+"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
 "Language-Team: British English <en@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 3.32.1\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -27,13 +28,10 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "Play the Hitori puzzle game"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;"
-
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr ""
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -57,59 +55,109 @@ msgstr ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 
-#: data/hitori-menus.ui:8 src/main.c:305
-msgid "_New Game"
-msgstr "_New Game"
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "The GNOME Project"
 
-#: data/hitori-menus.ui:12
-msgid "Board _Size"
-msgstr "Board _Size"
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Start a new game"
 
-#: data/hitori-menus.ui:16
-msgid "5×5"
-msgstr "5×5"
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Highlight a cell"
+msgstr "Highlight a cell"
 
-#: data/hitori-menus.ui:21
-msgid "6×6"
-msgstr "6×6"
-
-#: data/hitori-menus.ui:26
-msgid "7×7"
-msgstr "7×7"
-
-#: data/hitori-menus.ui:31
-msgid "8×8"
-msgstr "8×8"
-
-#: data/hitori-menus.ui:36
-msgid "9×9"
-msgstr "9×9"
-
-#: data/hitori-menus.ui:41
-msgid "10×10"
-msgstr "10×10"
-
-#: data/hitori-menus.ui:50
-msgid "_Help"
-msgstr "_Help"
-
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_About"
-
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Quit"
-
-#: data/hitori.ui:29
+#: data/help-overlay.ui:30
+#| msgid "Undo your last move"
+msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Undo your last move"
 
-#: data/hitori.ui:51
+#: data/help-overlay.ui:37
+#| msgid "Redo a move"
+msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Redo a move"
 
-#: data/hitori.ui:75
+#: data/help-overlay.ui:44
+#| msgid "Get a hint for your next move"
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Get a hint for your next move"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Show Help"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Show Keyboard Shortcuts"
+
+#: data/help-overlay.ui:65
+#| msgid "_Quit"
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quit"
+
+#: data/hitori.ui:9 src/main.c:350
+msgid "_New Game"
+msgstr "_New Game"
+
+#: data/hitori.ui:12
+msgid "Board _Size"
+msgstr "Board _Size"
+
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
+
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
+
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
+
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
+
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
+
+#: data/hitori.ui:41
+#| msgid "10×10"
+msgid "_10×10"
+msgstr "_10×10"
+
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "_Keyboard Shortcuts"
+
+#: data/hitori.ui:54
+msgid "_Help"
+msgstr "_Help"
+
+#: data/hitori.ui:58
+#| msgid "Hitori"
+msgid "_About Hitori"
+msgstr "_About Hitori"
+
+#: data/hitori.ui:84
+msgid "Undo your last move"
+msgstr "Undo your last move"
+
+#: data/hitori.ui:105
+msgid "Redo a move"
+msgstr "Redo a move"
+
+#: data/hitori.ui:150
 msgid "Get a hint for your next move"
 msgstr "Get a hint for your next move"
 
@@ -121,59 +169,171 @@ msgstr "Board size"
 msgid "The size of the board, in cells."
 msgstr "The size of the board, in cells."
 
-#: src/interface.c:649
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Window maximised state"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Whether the window is maximised."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Window position"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Window position (x and y)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Window size"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Window size (width and height)."
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr " "
+
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "The help contents could not be displayed"
 
-#: src/interface.c:673
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "A logic puzzle originally designed by Nikoli."
 
-#: src/interface.c:676
+#: src/interface.c:749
 msgid "translator-credits"
-msgstr "Philip Withnall <philip@tecnocode.co.uk>"
+msgstr ""
+"Philip Withnall <philip@tecnocode.co.uk>\n"
+"Bruce Cowan <bruce@bcowan.me.uk>"
 
-#: src/interface.c:680
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "Hitori Website"
 
-#: src/main.c:209
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "Enable debug mode"
 
-#: src/main.c:211
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Seed the board generation"
 
-#: src/main.c:225
+#. Options
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr "- Play a game of Hitori"
 
-#: src/main.c:235
+#. Print an error
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Command line options could not be parsed: %s\n"
 
-#: src/main.c:301
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "Do you want to stop the current game?"
 
-#: src/main.c:304
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "Keep _Playing"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "You’ve won in a time of %02u:%02u!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Quit"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Play Again"
+
+#~ msgid "5×5"
+#~ msgstr "5×5"
+
+#~ msgid "6×6"
+#~ msgstr "6×6"
+
+#~ msgid "7×7"
+#~ msgstr "7×7"
+
+#~ msgid "8×8"
+#~ msgstr "8×8"
+
+#~ msgid "9×9"
+#~ msgstr "9×9"
+
+#~ msgid "_About"
+#~ msgstr "_About"
 
 #~ msgid "UI file “%s” could not be loaded"
 #~ msgstr "UI file “%s” could not be loaded"
