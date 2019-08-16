@@ -1,13 +1,13 @@
 # Czech translation for hitori help.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori help.
-# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014.
+# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2014-08-03 14:26+0000\n"
-"PO-Revision-Date: 2014-08-25 23:01+0200\n"
+"POT-Creation-Date: 2019-03-12 13:52+0000\n"
+"PO-Revision-Date: 2019-08-16 19:05+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -46,7 +46,7 @@ msgstr ""
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
+"app> will ask if you want to stop the current game if you’re in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
 "Pokud chcete změnit velikost hrací desky, vyberte některou z voleb v "
@@ -54,20 +54,6 @@ msgstr ""
 "desky</gui></guiseq>. V případě, že máte rozehranou hru, dotáže se "
 "<app>Hitori</app>, jestli ji má ukončit a po té spustí novou hru s "
 "požadovanými rozměry hrací desky."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -134,23 +120,37 @@ msgstr "Hlavní okno hry"
 msgid "<app>Hitori</app> main window"
 msgstr "Hlavní okno hry <app>Hitori</app>"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "Hlavní okno hry <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:7
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008 – 2010"
+#: C/index.page:9
+msgid "2008–2010, 2019"
+msgstr "2008 - 2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:12
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -161,17 +161,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:16
 msgid "Hitori Help"
 msgstr "Nápověda ke hře Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:19
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Základy hraní a použití"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:23
 msgid "Tips &amp; Tricks"
 msgstr "Tipy a triky"
 
@@ -236,30 +236,26 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/playing.page:18
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
+"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
+"moves as you like without restriction."
 msgstr ""
-"Pokud chcete vrátit tah zpět nebo jej provést znovu, zvolte <guiseq><gui "
-"style=\"menu\">Hra</gui><gui style=\"menuitem\">Zpět</gui></guiseq> nebo "
-"<guiseq><gui style=\"menu\">Hra</gui><gui style=\"menuitem\">Znovu</gui></"
-"guiseq>. Vracet zpět a znovu provádět můžete libovolný počet tahů bez "
-"omezení."
+"Pokud chcete vrátit tah zpět nebo jej provést znovu, zvolte na nástrojové "
+"liště <gui style=\"button\">Zpět</gui> nebo <gui style=\"button\">Znovu</gui>."
+"Vracet zpět a znovu provádět můžete libovolný počet tahů bez omezení."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, choose <gui style=\"button"
+"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
+"red outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Pokud chcete radu, které políčko zatřít, zvolte <guiseq><gui style=\"menu"
-"\">Hra</gui><gui style=\"menuitem\">Rada</gui></guiseq>. Políčko se zvýrazní "
-"blikajícím červeným obrysem. To naznačuje, že současný stav políčka (zatřené "
-"nebo nezatřené) je nesprávný a pro vítězné dokončení hry by měl být změněn."
+"Pokud chcete radu, které políčko zatřít, zvolte na nástrojové liště <gui "
+"style=\"button\">Rada</gui>. Políčko se zvýrazní blikajícím červeným obrysem. "
+"To naznačuje, že současný stav políčka (zatřené nebo nezatřené) je nesprávný "
+"a pro vítězné dokončení hry by měl být změněn."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -305,26 +301,24 @@ msgstr ""
 #: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
 msgstr ""
-"Stále mějte na paměti také pravidlo 2 hry Hitori, že nesmí být zatřeny naráz "
-"sousedící políčka. Políčka, která druhé pravidlo poruší, budou zvýrazněna "
-"červeně. Stejně tak budou červeně zvýrazněny skupiny políček, které porušují "
-"pravidlo číslo 3 oddělením jednoho nebo více nezatřených políček od jiných "
-"nezatřených políček."
+"Stále mějte na paměti také pravidlo číslo 2 hry Hitori, že nesmí být zatřeny "
+"naráz sousedící políčka. Políčka, která druhé pravidlo poruší, budou "
+"zvýrazněna červeně. Stejně tak budou červeně zvýrazněny skupiny políček, "
+"které porušují pravidlo číslo 3 oddělením jednoho nebo více nezatřených "
+"políček od jiných nezatřených políček."
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
+"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Jestli se v nějakém bodě zaseknete, zvolte <guiseq><gui style=\"menu\">Hra</"
-"gui><gui style=\"menuitem\">Rada</gui></guiseq>, aby vám aplikace "
-"<app>Hitori</app> označila políčko, které by se mělo zatřít nebo očistit, a "
-"tím vás přiblížila k řešení."
+"Pokud budete v nějakém bodě v koncích, zvolte na nástrojové liště <gui "
+"style=\"button\">Rada</gui>, a aplikace <app>Hitori</app> vám označí políčko, "
+"které by se mělo zatřít nebo očistit, a tím vám pomůže přiblížit se k řešení."

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2018-12-20 15:42+0000\n"
-"PO-Revision-Date: 2019-02-06 09:59+0100\n"
+"POT-Creation-Date: 2019-05-13 11:46+0000\n"
+"PO-Revision-Date: 2019-08-16 19:04+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -33,11 +33,6 @@ msgstr "Hrát logickou hru Hitori."
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "hlavolam;hra;logická;mřížka;"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon file name)!
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -65,43 +60,87 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "Projekt GNOME"
 
-#: data/hitori.ui:9 src/main.c:305
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Začít novou hru"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Highlight a cell"
+msgstr "Zvýraznit políčko"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "Vrátit zpět poslední tah"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "Znovu provést poslední vrácený tah"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Získat radu k příštímu tahu"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Zobrazit nápovědu"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Zobrazit klávesové zkratky"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Ukončit"
+
+#: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Nová hra"
 
-#: data/hitori.ui:13
+#: data/hitori.ui:12
 msgid "Board _Size"
 msgstr "_Velikost hrací desky"
 
-#: data/hitori.ui:17
-msgid "5×5"
-msgstr "5×5"
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
 
-#: data/hitori.ui:22
-msgid "6×6"
-msgstr "6×6"
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
 
-#: data/hitori.ui:27
-msgid "7×7"
-msgstr "7×7"
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
 
-#: data/hitori.ui:32
-msgid "8×8"
-msgstr "8×8"
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
 
-#: data/hitori.ui:37
-msgid "9×9"
-msgstr "9×9"
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
 
-#: data/hitori.ui:42
-msgid "10×10"
-msgstr "10×10"
+#: data/hitori.ui:41
+msgid "_10×10"
+msgstr "_10×10"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "_Klávesové zkratky"
+
+#: data/hitori.ui:54
 msgid "_Help"
 msgstr "_Nápověda"
 
-#: data/hitori.ui:56
+#: data/hitori.ui:58
 msgid "_About Hitori"
 msgstr "O _aplikaci Hitori"
 
@@ -109,11 +148,11 @@ msgstr "O _aplikaci Hitori"
 msgid "Undo your last move"
 msgstr "Vrátit zpět poslední tah"
 
-#: data/hitori.ui:106
+#: data/hitori.ui:105
 msgid "Redo a move"
 msgstr "Znovu provést poslední vrácený tah"
 
-#: data/hitori.ui:152
+#: data/hitori.ui:150
 msgid "Get a hint for your next move"
 msgstr "Získat radu k příštímu tahu"
 
@@ -125,51 +164,134 @@ msgstr "Velikost hrací desky"
 msgid "The size of the board, in cells."
 msgstr "Velikost hrací desky udaná v počtu políček."
 
-#: src/interface.c:640
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Maximalizovaný stav okna"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Zda je okno maximalizované."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Pozice okna"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Pozice okna (x a y)"
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Velikost okna"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Velikost okna (šířka a výška)"
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "Nelze zobrazit obsah nápovědy"
 
-#: src/interface.c:664
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:665
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logický hlavolam původně pocházející od Nikoli."
 
-#: src/interface.c:667
+#: src/interface.c:749
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: src/interface.c:671
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
-#: src/main.c:209
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "Povolit režim ladění"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:211
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Počáteční číslo pro generování hrací desky"
 
 #. Options
-#: src/main.c:225
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr "– hrát hru Hitori"
 
 #. Print an error
-#: src/main.c:235
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Nelze zpracovat přepínače příkazové řádky: %s\n"
 
-#: src/main.c:301
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "Opravdu chcete zastavit současnou hru?"
 
-#: src/main.c:304
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "_Pokračovat ve hře"
 
@@ -187,6 +309,24 @@ msgstr "U_končit"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "H_rát znovu"
+
+#~ msgid "org.gnome.Hitori"
+#~ msgstr "org.gnome.Hitori"
+
+#~ msgid "5×5"
+#~ msgstr "5×5"
+
+#~ msgid "6×6"
+#~ msgstr "6×6"
+
+#~ msgid "7×7"
+#~ msgstr "7×7"
+
+#~ msgid "8×8"
+#~ msgstr "8×8"
+
+#~ msgid "9×9"
+#~ msgstr "9×9"
 
 #~ msgid "_About"
 #~ msgstr "O _aplikaci"
