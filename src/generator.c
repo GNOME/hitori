@@ -25,7 +25,7 @@
 #include "rules.h"
 
 void
-hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
+hitori_generate_board (Hitori *hitori, guint new_board_size, guint seed)
 {
 	guchar i;
 	guint total, old_total;
@@ -34,17 +34,13 @@ hitori_generate_board (Hitori *hitori, guint new_board_size, gint seed)
 
 	g_return_if_fail (hitori != NULL);
 	g_return_if_fail (new_board_size > 0);
-	g_return_if_fail (seed >= -1);
 
 	/* Seed the random number generator */
-	if (seed == -1) {
-		GTimeVal time_;
-		g_get_current_time (&time_);
-		seed = time_.tv_sec + time_.tv_usec;
-	}
+	if (seed == 0)
+		seed = g_get_real_time ();
 
 	if (hitori->debug)
-		g_debug ("Seed value: %d", seed);
+		g_debug ("Seed value: %u", seed);
 
 	srand (seed);
 
