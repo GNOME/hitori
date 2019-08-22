@@ -47,10 +47,11 @@
   </kudos>
   <translation type="gettext">hitori</translation>
   <releases>
-    <release version="3.31.92" date="2019-03-04" />
-    <release version="3.31.0" date="2019-02-19" />
-    <release version="3.22.4" date="2017-10-02" />
-    <release version="3.22.3" date="2017-04-30" />
+    <release version="3.32.0" date="2019-08-22" type="stable" />
+    <release version="3.31.92" date="2019-03-04" type="development" />
+    <release version="3.31.0" date="2019-02-19" type="development" />
+    <release version="3.22.4" date="2017-10-02" type="stable" />
+    <release version="3.22.3" date="2017-04-30" type="stable" />
   </releases>
   <content_rating type="oars-1.0">
     <content_attribute id="violence-cartoon">none</content_attribute>
