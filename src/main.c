@@ -38,7 +38,7 @@ static gint handle_command_line (GApplication *application, GApplicationCommandL
 typedef struct {
 	/* Command line parameters. */
 	gboolean debug;
-	gint seed;
+	guint seed;
 } HitoriApplicationPrivate;
 
 typedef enum {
@@ -69,10 +69,10 @@ hitori_application_class_init (HitoriApplicationClass *klass)
 	                                                       G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));
 
 	g_object_class_install_property (gobject_class, PROP_SEED,
-	                                 g_param_spec_int ("seed",
-	                                                   "Generation Seed", "Seed controlling generation of the board.",
-	                                                   G_MININT, G_MAXINT, -1,
-	                                                   G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));
+	                                 g_param_spec_uint ("seed",
+	                                                    "Generation Seed", "Seed controlling generation of the board.",
+	                                                    0, G_MAXUINT, 0,
+	                                                    G_PARAM_READABLE | G_PARAM_STATIC_STRINGS));
 }
 
 static void
@@ -83,7 +83,7 @@ hitori_application_init (HitoriApplication *self)
 	priv = hitori_application_get_instance_private (self);
 
 	priv->debug = FALSE;
-	priv->seed = -1;
+	priv->seed = 0;
 }
 
 static void
@@ -117,7 +117,7 @@ get_property (GObject *object, guint property_id, GValue *value, GParamSpec *psp
 			g_value_set_boolean (value, priv->debug);
 			break;
 		case PROP_SEED:
-			g_value_set_int (value, priv->seed);
+			g_value_set_uint (value, priv->seed);
 			break;
 		default:
 			/* We don't have any other property... */
@@ -138,7 +138,7 @@ set_property (GObject *object, guint property_id, const GValue *value, GParamSpe
 			priv->debug = g_value_get_boolean (value);
 			break;
 		case PROP_SEED:
-			priv->seed = g_value_get_int (value);
+			priv->seed = g_value_get_uint (value);
 			break;
 		default:
 			/* We don't have any other property... */
@@ -302,7 +302,7 @@ hitori_new_game (Hitori *hitori, guint board_size)
 {
 	hitori->made_a_move = FALSE;
 
-	hitori_generate_board (hitori, board_size, -1);
+	hitori_generate_board (hitori, board_size, 0);
 	hitori_clear_undo_stack (hitori);
 	gtk_widget_queue_draw (hitori->drawing_area);
 
