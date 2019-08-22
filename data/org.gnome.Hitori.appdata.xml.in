@@ -47,6 +47,15 @@
   </kudos>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="3.33.0" date="2019-08-22" type="development">
+      <description>
+        <ul>
+          <li>Remember window size and position.</li>
+          <li>Support localised (non-Arabic) digits on the game board.</li>
+          <li>Add keyboard shortcuts dialogue and improve keyboard shortcuts and mnemonics.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.32.0" date="2019-08-22" type="stable" />
     <release version="3.31.92" date="2019-03-04" type="development" />
     <release version="3.31.0" date="2019-02-19" type="development" />

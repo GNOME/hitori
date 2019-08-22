@@ -1,3 +1,46 @@
+Overview of changes in Hitori 3.33.0
+====================================
+
+* Remember window size and position (#3, #4)
+
+* Support localised (non-Arabic) digits on the game board (#13)
+
+* Add keyboard shortcuts dialogue and improve keyboard shortcuts and mnemonics (!15, !21, !22)
+
+* Bugs fixed:
+ - #3 [BZ#732788] Should better handle maximization
+ - #4 [BZ#735330] Remember window size/position
+ - #13 Support localised digits on game board
+ - !5 Rember window position/size and expand the drawing area
+ - !7 Gitlab CI: setup flatpak nightlies
+ - !15 menu: Add mnemonics for board size options
+ - !21 shortcuts: fix Ctrl+N and add Ctrl+Q and Ctrl+W as quit actions
+ - !22 Add Keyboard Shortcuts dialog
+ - !23 generator: Rework random number seeding to not use deprecated functions
+
+* Translation updates:
+ - Basque
+ - Catalan
+ - Croatian
+ - Czech
+ - Danish
+ - Dutch
+ - English (United Kingdom)
+ - Finnish
+ - Friulian
+ - German
+ - Greek, Modern (1453-)
+ - Hungarian
+ - Indonesian
+ - Lithuanian
+ - Portuguese (Brazil)
+ - Romanian
+ - Russian
+ - Slovenian
+ - Spanish
+ - Swedish
+
+
 Overview of changes in Hitori 3.31.92
 =====================================
 
