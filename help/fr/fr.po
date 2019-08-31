@@ -3,19 +3,21 @@
 # This file is distributed under the same license as the hitori package.
 # Gérard Baylard <Geodebay@gmail.com>, 2010.
 # Bruno Brouard <annoa.b@gmail.com>, 2010.
+# Charles Monzat <charles.monzat@free.fr>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2014-08-03 14:26+0000\n"
-"PO-Revision-Date: 2010-11-20 20:34+0100\n"
-"Last-Translator: Gérard Baylard <Geodebay@gmail.com>\n"
+"POT-Creation-Date: 2019-03-12 13:56+0000\n"
+"PO-Revision-Date: 2019-04-15 22:40+0200\n"
+"Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
-"Language: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8 bits\n"
-"Plural-Forms: nplurals=2; plural=n>1;\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.32.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -27,7 +29,7 @@ msgstr ""
 #. (itstool) path: info/desc
 #: C/customization.page:6
 msgid "Changing how the game appears and plays."
-msgstr "Modification de l'apparence et du comportement du jeu"
+msgstr "Modification de l’apparence et du comportement du jeu"
 
 #. (itstool) path: page/title
 #: C/customization.page:8
@@ -45,31 +47,22 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/customization.page:11
+#| msgid ""
+#| "To change the board size, choose an option from <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. "
+#| "<app>Hitori</app> will ask if you want to stop the current game if you're "
+#| "in the middle of one, then start a new game with the requested board size."
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
+"app> will ask if you want to stop the current game if you’re in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
 "Pour modifier la taille du plateau, sélectionnez une option de taille dans "
 "le sous-menu <guiseq><gui style=\"menu\">Jeu</gui><gui style=\"menuitem"
 "\">Taille du plateau</gui></guiseq>. <app>Hitori</app> vous demande si vous "
-"voulez interrompre le jeu en cours si vous êtes au milieu d'une partie, puis "
+"voulez interrompre le jeu en cours si vous êtes au milieu d’une partie, puis "
 "il initie un nouveau jeu avec la taille de plateau demandée."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr ""
-"@@image: 'figures/hitori_main_window.png'; "
-"md5=b6ea3ee1ff73311d002cfdb4463032be"
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -91,7 +84,7 @@ msgid ""
 msgstr ""
 "Hitori est un petit casse-tête logique de la même veine que le populaire "
 "Sudoku. Dans ce jeu, le joueur démarre avec un plateau carré de chiffres et "
-"doit <em>griser</em> les cases de façon à ce qu'aucun chiffre ne soit en "
+"doit <em>griser</em> les cases de façon à ce qu’aucun chiffre ne soit en "
 "double dans chaque ligne et chaque colonne. Les règles ci-après doivent être "
 "respectées :"
 
@@ -101,7 +94,7 @@ msgid ""
 "There must only be one of each number in the unpainted cells in each row and "
 "column."
 msgstr ""
-"Il ne doit y avoir qu'un seul exemplaire de chaque chiffre parmi les cases "
+"Il ne doit y avoir qu’un seul exemplaire de chaque chiffre parmi les cases "
 "non-grisées dans chaque ligne et chaque colonne."
 
 #. (itstool) path: item/p
@@ -117,8 +110,8 @@ msgid ""
 "All the unpainted cells must be joined together vertically and horizontally "
 "in one group."
 msgstr ""
-"Toutes les cases non-grisées doivent faire partie d'un groupe tant "
-"verticalement qu'horizontalement."
+"Toutes les cases non-grisées doivent faire partie d’un groupe tant "
+"verticalement qu’horizontalement."
 
 #. (itstool) path: page/p
 #: C/game.page:17
@@ -139,23 +132,42 @@ msgstr "Fenêtre principale du jeu"
 msgid "<app>Hitori</app> main window"
 msgstr "Fenêtre principale de <app>Hitori</app>"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/hitori_main_window.png' "
+#| "md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "Fenêtre principale de <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:7
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:9
+#| msgid "2008–2010"
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:12
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -163,20 +175,20 @@ msgid ""
 msgstr ""
 "Cette œuvre est sous licence <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Paternité-Partage des Conditions "
-"Initiales à l'Identique 3.0 Unported</link>."
+"Initiales à l’Identique 3.0 Unported</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:16
 msgid "Hitori Help"
 msgstr "Aide de Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:19
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Règle du jeu &amp; utilisation"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:23
 msgid "Tips &amp; Tricks"
 msgstr "Trucs &amp; astuces"
 
@@ -184,7 +196,8 @@ msgstr "Trucs &amp; astuces"
 #: C/legal.xml:5
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
-"Creative Commons Paternité-Partage des Conditions Initiales à l'Identique 3.0 Unported."
+"Creative Commons Paternité-Partage des Conditions Initiales à l’Identique "
+"3.0 Unported."
 
 #. (itstool) path: license/p
 #: C/legal.xml:4
@@ -199,7 +212,7 @@ msgstr "Utilisation de <app>Hitori</app> pour faire une partie."
 #. (itstool) path: page/title
 #: C/playing.page:8
 msgid "Playing a Game"
-msgstr "Déroulement d'une partie"
+msgstr "Déroulement d’une partie"
 
 #. (itstool) path: page/p
 #: C/playing.page:10
@@ -211,7 +224,7 @@ msgstr ""
 "Pour lancer une nouvelle partie, sélectionnez <guiseq><gui style=\"menu"
 "\">Jeu</gui><gui style=\"menuitem\">Nouvelle partie</gui></guiseq>. Si vous "
 "aviez une partie en cours, <app>Hitori</app> vous demande de confirmer "
-"l'arrêt de la partie en cours."
+"l’arrêt de la partie en cours."
 
 #. (itstool) path: page/p
 #: C/playing.page:12
@@ -222,7 +235,7 @@ msgid ""
 msgstr ""
 "Pour griser une case, faites un clic de souris dessus ; pour la libérer, "
 "cliquez dessus à nouveau. Quand les cases sont grisées de façon à ce "
-"qu'aucune des trois règles ne soit transgressée, le jeu est terminé et le "
+"qu’aucune des trois règles ne soit transgressée, le jeu est terminé et le "
 "plateau ne peut plus être modifié."
 
 #. (itstool) path: page/p
@@ -236,9 +249,9 @@ msgid ""
 "holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgstr ""
 "<app>Hitori</app> vous permet également de mettre, à votre initiative, des "
-"cases en évidence au cours de la résolution d'une partie. Cela s'opère en "
+"cases en évidence au cours de la résolution d’une partie. Cela s’opère en "
 "maintenant enfoncées les touches <key>Ctrl</key> ou <key>Maj</key> et en "
-"cliquant sur la case. L'une et l'autre manœuvre mettent en évidence les "
+"cliquant sur la case. L’une et l’autre manœuvre mettent en évidence les "
 "cases de façon différente ; les deux façons peuvent coexister sur une même "
 "case. Les cellules mises en évidence peuvent être libérées par un nouveau "
 "clic tout en maintenant pressée soit la touche <key>Ctrl</key>, soit la "
@@ -246,32 +259,40 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/playing.page:18
+#| msgid ""
+#| "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+#| "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or "
+#| "redo as many moves as you like without restriction."
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
+"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
+"moves as you like without restriction."
 msgstr ""
-"Pour annuler ou rétablir un coup, sélectionnez <guiseq><gui style=\"menu"
-"\">Jeu</gui><gui style=\"menuitem\">Annuler</gui></guiseq> ou <guiseq><gui "
-"style=\"menu\">Jeu</gui><gui style=\"menuitem\">Rétablir</gui></guiseq>. "
-"Vous pouvez annuler ou rétablir autant de coups que vous souhaitez sans "
-"restriction."
+"Pour annuler ou rétablir un coup, sélectionnez <gui style=\"button"
+"\">Annuler</gui> ou <gui style=\"button\">Rétablir</gui> dans la barre "
+"d’outils. Vous pouvez annuler ou rétablir autant de coups que vous souhaitez "
+"sans restriction."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
+#| msgid ""
+#| "To get a hint on which cells to paint out, choose <guiseq><gui style="
+#| "\"menu\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell "
+#| "will be highlighted with a flashing red outline. This shows that the "
+#| "current status of the cell (painted or unpainted) is incorrect, and "
+#| "should be changed for the game to be won."
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, choose <gui style=\"button"
+"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
+"red outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Pour obtenir une indication sur les cases à griser, sélectionnez "
-"<guiseq><gui style=\"menu\">Jeu</gui><gui style=\"menuitem\">Indice</gui></"
-"guiseq>. Une case sera mise en évidence par un encadrement rouge clignotant. "
-"Cela indique que l'état actuel de la case (grisée ou libre) est incorrect et "
-"qu'il doit être modifié pour gagner la partie."
+"Pour obtenir une indication sur les cases à griser, sélectionnez <gui style="
+"\"button\">Indice</gui> dans la barre d’outils. Une case sera mise en "
+"évidence par un encadrement rouge clignotant. Cela indique que l’état actuel "
+"de la case (grisée ou libre) est incorrect et qu’il doit être modifié pour "
+"gagner la partie."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -292,7 +313,7 @@ msgid ""
 "use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
 "<em>row</em>."
 msgstr ""
-"Hitori trouve une quasi analogie avec le Sudoku du fait qu'il exige des "
+"Hitori trouve une quasi analogie avec le Sudoku du fait qu’il exige des "
 "déductions logiques pour trouver quelles cases griser. Une tactique consiste "
 "à utiliser la touche <key>Maj</key> tout en cliquant pour mettre en évidence "
 "tous les chiffres répétés dans chaque <em>colonne</em>, puis la touche "
@@ -309,7 +330,7 @@ msgid ""
 "cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
 "Une fois ceci fait pour la totalité du plateau, les cases mises en évidence "
-"dans les deux cas sont de bonnes candidates au grisé, mais cela n'est pas "
+"dans les deux cas sont de bonnes candidates au grisé, mais cela n’est pas "
 "toujours vrai. Quand vous grisez une case, enlever la mise en évidence des "
 "autres cases portant le même chiffre dans la même colonne et dans la même "
 "ligne est un bon moyen pour détecter les cases qui contreviennent encore à "
@@ -317,9 +338,15 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:16
+#| msgid ""
+#| "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+#| "can't both be painted. <app>Hitori</app> will highlight in red the cells "
+#| "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+#| "separating one or more unpainted cells from the other unpainted cells "
+#| "will be highlighted in red."
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
@@ -333,16 +360,19 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
+#| msgid ""
+#| "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+#| "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+#| "flag a cell which should be painted or unpainted to move closer to a "
+#| "solution."
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
+"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Si vous êtes bloqué à une quelconque phase du jeu, sélectionnez <guiseq><gui "
-"style=\"menu\">Jeu</gui><gui style=\"menuitem\">Indice</gui></guiseq> : "
-"<app>Hitori</app> marque alors une cellule à griser ou à libérer pour vous "
-"approcher de la solution."
+"Si vous êtes bloqué à une quelconque phase du jeu, sélectionnez <gui style="
+"\"button\">Indice</gui> dans la barre d’outils : <app>Hitori</app> marque "
+"alors une cellule à griser ou à libérer pour vous approcher de la solution."
 
 #~ msgid "Legal information."
 #~ msgstr "Informations légales"
