@@ -4,25 +4,25 @@
 # This file is distributed under the same license as the hitori package.
 #
 # Changwoo Ryu <cwryu@debian.org>, 2014-2015.
-# Junyoul Lim <purum@postech.ac.kr>, 2017
+# Junyoul Lim <purum@postech.ac.kr>, 2017.
+# Seong-ho Cho <shcho@gnome.org>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-09-02 16:04+0900\n"
-"Last-Translator: Junyoul Lim <purum@postech.ac.kr>\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2019-05-13 11:46+0000\n"
+"PO-Revision-Date: 2019-09-02 09:58+0900\n"
+"Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2.3\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "히토리"
 
@@ -31,13 +31,10 @@ msgstr "히토리"
 msgid "Play the Hitori puzzle game"
 msgstr "히토리 퍼즐 게임을 플레이합니다"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;퍼즐;game;게임;logic;로직;논리;grid;그리드;격자;"
-
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -60,59 +57,104 @@ msgstr ""
 "의 게임판 크기를 지원하고, 해법을 알아내는데 도움이 되도록 칸에 표시를 할 수"
 "도 있습니다. 막힐 경우, 게임에서 힌트를 줄 수도 있습니다."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "그놈 프로젝트"
+
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "새 게임 시작"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Highlight a cell"
+msgstr "칸 강조 표시"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "마지막 움직임 취소"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "움직임 다시 실행"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "다음 움직임에 대한 힌트 보기"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "도움말 표시"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "키보드 바로 가기 표시"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "끝내기"
+
+#: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "새 게임(_N)"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:12
 msgid "Board _Size"
 msgstr "게임판 크기(_S)"
 
-#: data/hitori-menus.ui:16
-msgid "5×5"
-msgstr "5×5"
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
 
-#: data/hitori-menus.ui:21
-msgid "6×6"
-msgstr "6×6"
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
 
-#: data/hitori-menus.ui:26
-msgid "7×7"
-msgstr "7×7"
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
 
-#: data/hitori-menus.ui:31
-msgid "8×8"
-msgstr "8×8"
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
 
-#: data/hitori-menus.ui:36
-msgid "9×9"
-msgstr "9×9"
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
 
-#: data/hitori-menus.ui:41
-msgid "10×10"
-msgstr "10×10"
+#: data/hitori.ui:41
+#| msgid "10×10"
+msgid "_10×10"
+msgstr "_10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "키보드 바로 가기(_K)"
+
+#: data/hitori.ui:54
 msgid "_Help"
 msgstr "도움말(_H)"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "정보(_A)"
+#: data/hitori.ui:58
+msgid "_About Hitori"
+msgstr "히토리 정보(_A)"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "끝내기(_Q)"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
 msgstr "마지막 움직임을 취소합니다"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:105
 msgid "Redo a move"
 msgstr "움직임을 다시 실행합니다"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:150
 msgid "Get a hint for your next move"
 msgstr "다음 움직임에 대한 힌트를 봅니다"
 
@@ -124,59 +166,153 @@ msgstr "게임판 크기"
 msgid "The size of the board, in cells."
 msgstr "게임판의 크기, 칸 수 단위."
 
-#: src/interface.c:649
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "창 최대화"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "창 최대화 여부."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "창 위치"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "창 위치(가로 및 세로)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "창 크기"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "창 크기(너비 및 높이)."
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "도움말 내용을 표시할 수 없습니다"
 
-#: src/interface.c:673
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
 # 니콜리 - 일본의 게임 회사
-#: src/interface.c:674
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "니콜리에서 처음에 만든 논리 퍼즐"
 
-#: src/interface.c:676
+#: src/interface.c:749
 msgid "translator-credits"
 msgstr ""
 "류창우 <cwryu@debian.org>\n"
-"임준열 <purum@postech.ac.kr>"
+"임준열 <purum@postech.ac.kr>\n"
+"조성호 <shcho@gnome.org>"
 
-#: src/interface.c:680
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "히토리 홈페이지"
 
-#: src/main.c:209
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "디버깅 모드 사용"
 
-#: src/main.c:211
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "보드 생성 시드"
 
-#: src/main.c:225
+#. Options
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr "- 히토리 게임 플레이"
 
-#: src/main.c:235
+#. Print an error
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "명령행 옵션을 분석할 수 없습니다: %s\n"
 
-#: src/main.c:301
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "현재 게임을 중지하시겠습니까?"
 
-#: src/main.c:304
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "계속 플레이(_P)"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
 msgstr "%02u:%02u의 시간 만에 이겼습니다!"
 
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "끝내기(_Q)"
+
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "다시 플레이(_P)"
+
