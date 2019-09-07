@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2019-03-12 13:52+0000\n"
-"PO-Revision-Date: 2019-08-16 19:05+0200\n"
+"POT-Creation-Date: 2019-08-31 11:52+0000\n"
+"PO-Revision-Date: 2019-09-07 16:15+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -147,7 +147,7 @@ msgstr "Philip Withnall"
 #. (itstool) path: credit/years
 #: C/index.page:9
 msgid "2008–2010, 2019"
-msgstr "2008 - 2010, 2019"
+msgstr "2008 – 2010, 2019"
 
 #. (itstool) path: license/p
 #: C/index.page:12
@@ -241,8 +241,8 @@ msgid ""
 "moves as you like without restriction."
 msgstr ""
 "Pokud chcete vrátit tah zpět nebo jej provést znovu, zvolte na nástrojové "
-"liště <gui style=\"button\">Zpět</gui> nebo <gui style=\"button\">Znovu</gui>."
-"Vracet zpět a znovu provádět můžete libovolný počet tahů bez omezení."
+"liště <gui style=\"button\">Zpět</gui> nebo <gui style=\"button\">Znovu</"
+"gui>.Vracet zpět a znovu provádět můžete libovolný počet tahů bez omezení."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
@@ -253,9 +253,9 @@ msgid ""
 "unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
 "Pokud chcete radu, které políčko zatřít, zvolte na nástrojové liště <gui "
-"style=\"button\">Rada</gui>. Políčko se zvýrazní blikajícím červeným obrysem. "
-"To naznačuje, že současný stav políčka (zatřené nebo nezatřené) je nesprávný "
-"a pro vítězné dokončení hry by měl být změněn."
+"style=\"button\">Rada</gui>. Políčko se zvýrazní blikajícím červeným "
+"obrysem. To naznačuje, že současný stav políčka (zatřené nebo nezatřené) je "
+"nesprávný a pro vítězné dokončení hry by měl být změněn."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -306,11 +306,11 @@ msgid ""
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
 msgstr ""
-"Stále mějte na paměti také pravidlo číslo 2 hry Hitori, že nesmí být zatřeny "
-"naráz sousedící políčka. Políčka, která druhé pravidlo poruší, budou "
-"zvýrazněna červeně. Stejně tak budou červeně zvýrazněny skupiny políček, "
-"které porušují pravidlo číslo 3 oddělením jednoho nebo více nezatřených "
-"políček od jiných nezatřených políček."
+"Stále mějte na paměti také pravidlo číslo 2 hry <app>Hitori</app>, že nesmí "
+"být zatřeny naráz sousedící políčka. Políčka, která druhé pravidlo poruší, "
+"budou zvýrazněna červeně. Stejně tak budou červeně zvýrazněny skupiny "
+"políček, které porušují pravidlo číslo 3 oddělením jednoho nebo více "
+"nezatřených políček od jiných nezatřených políček."
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
@@ -319,6 +319,6 @@ msgid ""
 "the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
 "unpainted to move closer to a solution."
 msgstr ""
-"Pokud budete v nějakém bodě v koncích, zvolte na nástrojové liště <gui "
-"style=\"button\">Rada</gui>, a aplikace <app>Hitori</app> vám označí políčko, "
+"Pokud budete v nějakém bodě v koncích, zvolte na nástrojové liště <gui style="
+"\"button\">Rada</gui>, a aplikace <app>Hitori</app> vám označí políčko, "
 "které by se mělo zatřít nebo očistit, a tím vám pomůže přiblížit se k řešení."
