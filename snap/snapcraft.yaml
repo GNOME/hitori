@@ -14,20 +14,6 @@ grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict
 base: core18
 
-plugs:
-  gnome-3-28-1804:
-    interface: content
-    target: $SNAP/gnome-platform
-    default-provider: gnome-3-28-1804
-  gtk-3-themes:
-    interface: content
-    target: $SNAP/data-dir/themes
-    default-provider: gtk-common-themes
-  icon-themes:
-    interface: content
-    target: $SNAP/data-dir/icons
-    default-provider: gtk-common-themes
-
 slots:
   # for GtkApplication registration
   gnome-hitori:
@@ -37,35 +23,19 @@ slots:
 
 apps:
   gnome-hitori:
-    command: desktop-launch hitori
+    command: usr/bin/hitori
+    extensions: [gnome-3-28]
     common-id: org.gnome.Hitori
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
     plugs:
-      - desktop
-      - desktop-legacy
       - gsettings
-      - unity7
-      - wayland
     desktop: usr/share/applications/org.gnome.Hitori.desktop
     environment:
       GSETTINGS_SCHEMA_DIR: $SNAP/share/glib-2.0/schemas
 
 parts:
-  desktop-gnome-platform:
-    source: https://github.com/ubuntu/snapcraft-desktop-helpers.git
-    source-subdir: gtk
-    plugin: make
-    make-parameters: ["FLAVOR=gtk3"]
-    build-packages:
-      - build-essential
-      - libgtk-3-dev
-    override-build: |
-      snapcraftctl build
-      mkdir -pv $SNAPCRAFT_PART_INSTALL/gnome-platform
-
   gnome-hitori:
-    after: [desktop-gnome-platform]
     source: https://gitlab.gnome.org/GNOME/hitori.git
     source-type: git
     plugin: meson
