@@ -3,27 +3,27 @@
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012, 2014.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.help.master\n"
-"POT-Creation-Date: 2014-08-03 14:26+0000\n"
-"PO-Revision-Date: 2014-08-07 12:52+0200\n"
+"POT-Creation-Date: 2019-09-26 13:30+0000\n"
+"PO-Revision-Date: 2019-10-02 12:45+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
-"Language-Team: Español; Castellano <gnome-es-list@gnome.org>\n"
-"Language: \n"
+"Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 2.91.6\n"
+"X-Generator: Gtranslator 3.34.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2014\n"
+"Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019\n"
 "Jorge González <jorgegonz@svn.gnome.org>, 2007-2010"
 
 #. (itstool) path: info/desc
@@ -47,10 +47,15 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/customization.page:11
+#| msgid ""
+#| "To change the board size, choose an option from <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. "
+#| "<app>Hitori</app> will ask if you want to stop the current game if you're "
+#| "in the middle of one, then start a new game with the requested board size."
 msgid ""
 "To change the board size, choose an option from <guiseq><gui style=\"menu"
 "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
+"app> will ask if you want to stop the current game if you’re in the middle "
 "of one, then start a new game with the requested board size."
 msgstr ""
 "Para cambiar el tamaño del tablero elija una opción de <guiseq><gui style="
@@ -58,20 +63,6 @@ msgstr ""
 "guiseq>. <app>Hitori</app> le preguntará si quiere parar la partida actual "
 "si está en medio de una, después se iniciará una partida nueva con el tamaño "
 "de tablero solicitado."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -140,23 +131,42 @@ msgstr "Ventana principal del juego"
 msgid "<app>Hitori</app> main window"
 msgstr "Ventana principal de <application>Hitori</application>"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/hitori_main_window.png' "
+#| "md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "Ventana principal de <application>Hitori</application>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:7
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:9
+#| msgid "2008–2010"
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:12
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -167,25 +177,22 @@ msgstr ""
 "compartir igual 3.0 sin soporte</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:16
 msgid "Hitori Help"
 msgstr "Ayuda de Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:19
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Uso básico del juego"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:23
 msgid "Tips &amp; Tricks"
 msgstr "Sugerencias y trucos"
 
 #. (itstool) path: p/link
 #: C/legal.xml:5
-#| msgid ""
-#| "This work is distributed under a CreativeCommons Attribution-Share Alike "
-#| "3.0 Unported license."
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr "Creative Commons de Atribución-Compartir Igual 3.0 sin soporte"
 
@@ -248,31 +255,38 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/playing.page:18
+#| msgid ""
+#| "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+#| "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or "
+#| "redo as many moves as you like without restriction."
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
+"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
+"moves as you like without restriction."
 msgstr ""
-"Para deshacer o rehacer un movimiento elija <guiseq><gui style=\"menu"
-"\">Juego</gui><gui style=\"menuitem\">Deshacer</gui></guiseq> o <guiseq><gui "
-"style=\"menu\">Juego</gui><gui style=\"menuitem\">Reahcer</gui></guiseq>. "
+"Para deshacer o rehacer un movimiento elija <gui style=\"button\">Deshacer</"
+"gui> o <gui style=\"button\">Rehacer</gui> en la barra de herramientas. "
 "Puede deshacer y rehacer tantos movimientos como quiera, sin restricción."
 
 #. (itstool) path: page/p
 #: C/playing.page:21
+#| msgid ""
+#| "To get a hint on which cells to paint out, choose <guiseq><gui style="
+#| "\"menu\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell "
+#| "will be highlighted with a flashing red outline. This shows that the "
+#| "current status of the cell (painted or unpainted) is incorrect, and "
+#| "should be changed for the game to be won."
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, choose <gui style=\"button"
+"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
+"red outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Para obtener una sugerencia acerca de cómo rellenar las celdas elija "
-"<guiseq><gui style=\"menu\">Juego</gui><gui style=\"menuitem\">Sugerencia</"
-"gui></guiseq>. Se resaltará una celda con un marco rojo. Esto muestra que el "
-"estado actual de la celda (escrita o vacía) es incorrecto y se debería "
-"cambiar para ganar la partida."
+"Para obtener una sugerencia acerca de cómo rellenar las celdas elija <gui "
+"style=\"button\">Sugerencia</gui>. Se resaltará una celda con un marco rojo. "
+"Esto muestra que el estado actual de la celda (escrita o vacía) es "
+"incorrecto y se debería cambiar para ganar la partida."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -317,9 +331,15 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:16
+#| msgid ""
+#| "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+#| "can't both be painted. <app>Hitori</app> will highlight in red the cells "
+#| "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+#| "separating one or more unpainted cells from the other unpainted cells "
+#| "will be highlighted in red."
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
@@ -332,16 +352,19 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
+#| msgid ""
+#| "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+#| "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+#| "flag a cell which should be painted or unpainted to move closer to a "
+#| "solution."
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
+"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Si se queda parado en cualquier punto, elija <guiseq><gui style=\"menu"
-"\">Juego</gui><gui style=\"menuitem\">Sugerencias</gui></guiseq> para que "
-"<app>Hitori</app> marque una casilla que se debería pintar o limpiar y así "
-"acercarse a la solución."
+"Si se queda parado en cualquier punto, elija <gui style=\"button"
+"\">Sugerencias</gui> para que <app>Hitori</app> marque una casilla que se "
+"debería pintar o limpiar y así acercarse a la solución."
 
 #~ msgid "Legal information."
 #~ msgstr "Información legal."
