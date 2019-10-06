@@ -7,17 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-03-26 18:27+0000\n"
-"PO-Revision-Date: 2019-02-14 15:29+0100\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
+"POT-Creation-Date: 2019-09-29 13:41+0000\n"
+"PO-Revision-Date: 2019-10-06 18:52+0200\n"
+"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:67 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -57,43 +58,88 @@ msgstr ""
 msgid "The GNOME Project"
 msgstr "GNOME-projektet"
 
-#: data/hitori.ui:9 src/main.c:315
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Start et nyt spil"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Highlight a cell"
+msgstr "Fremhæv en celle"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "Fortryd dit sidste træk"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "Omgør et træk"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Få et fif til dit næste træk"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Vis hjælp"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Vis tastaturgenveje"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Afslut"
+
+#: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Nyt spil"
 
-#: data/hitori.ui:13
+#: data/hitori.ui:12
 msgid "Board _Size"
 msgstr "Bræt_størrelse"
 
-#: data/hitori.ui:17
-msgid "5×5"
-msgstr "5×5"
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
 
-#: data/hitori.ui:22
-msgid "6×6"
-msgstr "6×6"
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
 
-#: data/hitori.ui:27
-msgid "7×7"
-msgstr "7×7"
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
 
-#: data/hitori.ui:32
-msgid "8×8"
-msgstr "8×8"
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
 
-#: data/hitori.ui:37
-msgid "9×9"
-msgstr "9×9"
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
 
-#: data/hitori.ui:42
-msgid "10×10"
-msgstr "10×10"
+#: data/hitori.ui:41
+#| msgid "10×10"
+msgid "_10×10"
+msgstr "_10×10"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "_Tastaturgenveje"
+
+#: data/hitori.ui:54
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: data/hitori.ui:56
+#: data/hitori.ui:58
 msgid "_About Hitori"
 msgstr "_Om Hitori"
 
@@ -101,11 +147,11 @@ msgstr "_Om Hitori"
 msgid "Undo your last move"
 msgstr "Fortryd dit sidste træk"
 
-#: data/hitori.ui:106
+#: data/hitori.ui:105
 msgid "Redo a move"
 msgstr "Omgør et træk"
 
-#: data/hitori.ui:152
+#: data/hitori.ui:150
 msgid "Get a hint for your next move"
 msgstr "Få et fif til dit næste træk"
 
@@ -117,19 +163,102 @@ msgstr "Brætstørrelse"
 msgid "The size of the board, in cells."
 msgstr "Størrelsen på brættet i celler."
 
-#: src/interface.c:640
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Vindue i maksimeret tilstand"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Hvorvidt vinduet er maksimeret."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Vinduesplacering"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Vinduesplacering (x og y)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Vinduesstørrelse"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Vinduesstørrelse (bredde og højde)."
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "Hjælpeindholdet kunne ikke vises"
 
-#: src/interface.c:664
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
-#: src/interface.c:665
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Et logisk puslespil oprindeligt designet af Nikoli"
 
-#: src/interface.c:667
+#: src/interface.c:749
 msgid "translator-credits"
 msgstr ""
 "Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019.\n"
@@ -138,35 +267,35 @@ msgstr ""
 "Websted http://dansk-gruppen.dk\n"
 "E-mail <dansk@dansk-gruppen.dk>"
 
-#: src/interface.c:671
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "Hitoris hjemmeside"
 
-#: src/main.c:219
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "Slå fejlsøgningstilstand til"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:221
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Grundlagstal for brætoprettelsen"
 
 #. Options
-#: src/main.c:235
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr "- Spil Hitori"
 
 #. Print an error
-#: src/main.c:245
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Indstillinger for kommandolinje kunne ikke fortolkes: %s\n"
 
-#: src/main.c:311
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "Ønsker du at stoppe det aktuelle spil?"
 
-#: src/main.c:314
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "Fortsæt med at _spille"
 
@@ -185,9 +314,23 @@ msgstr "_Afslut"
 msgid "_Play Again"
 msgstr "_Nyt spil"
 
+#~ msgid "5×5"
+#~ msgstr "5×5"
+
+#~ msgid "6×6"
+#~ msgstr "6×6"
+
+#~ msgid "7×7"
+#~ msgstr "7×7"
+
+#~ msgid "8×8"
+#~ msgstr "8×8"
+
+#~ msgid "9×9"
+#~ msgstr "9×9"
+
 #~ msgid "org.gnome.Hitori"
 #~ msgstr "org.gnome.Hitori"
 
 #~ msgid "_About"
 #~ msgstr "_Om"
-
