@@ -1,0 +1,338 @@
+# Indonesian translation for hitori.
+# Copyright (C) 2017 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2017-01-07 11:57+0000\n"
+"PO-Revision-Date: 2017-01-14 17:41+0700\n"
+"Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"X-Generator: Poedit 1.8.11\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Mengubah cara permainan muncul dan memainkan."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Penyesuaian Permainan"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Permainan dapat disesuaikan dengan mengubah ukuran papan — papan dari 5-10 "
+"sel persegi diperbolehkan."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, choose an option from <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
+"app> will ask if you want to stop the current game if you're in the middle "
+"of one, then start a new game with the requested board size."
+msgstr ""
+"Untuk mengubah ukuran papan, pilih opsi dari <guiseq><gui style=\"menu"
+"\">Permainan</gui><gui style=\"menuitem\">Ukuran Papan</gui></guiseq>. "
+"<app>Hitori</app> akan menanyakan apakah Anda ingin menghentikan permainan "
+"saat ini jika Anda berada di tengah-tengah permainan, kemudian memulai "
+"permainan baru dengan ukuran papan yang diminta."
+
+#. (itstool) path: media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Pengantar permainan Hitori."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Permainan Hitori"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori adalah teka-teki logika kecil yang sama populernya dengan Sudoku. "
+"Dalam permainan, pemain memulai dengan papan persegi nomor, dan harus "
+"<em>mewarnai</em> sel sampai tidak ada nomor duplikat pada setiap baris dan "
+"kolom. Berlaku aturan berikut:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Harus ada yang menjadi salah satu dari setiap nomor dalam sel yang diwarnai "
+"pada setiap baris dan kolom."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Tidak ada sel yang diwarnai berdekatan dengan yang lain, vertikal atau "
+"horizontal."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Semua sel yang tidak diwarnai harus tergabung bersama-sama secara vertikal "
+"dan horizontal dalam satu kelompok."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Ini adalah hanya tiga aturan permainan, dan mungkin ada beberapa solusi "
+"untuk teka-teki papan Hitori."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Jendela utama permainan"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Jendela utama <app>Hitori</app>"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Jendela utama <app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:6
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:8
+msgid "2008–2010"
+msgstr "2008–2010"
+
+#. (itstool) path: license/p
+#: C/index.page:11
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Karya ini berada dibawah lisensi <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:15
+msgid "Hitori Help"
+msgstr "Bantuan Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:18
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Dasar Permainan &amp; Penggunaan"
+
+#. (itstool) path: section/title
+#: C/index.page:22
+msgid "Tips &amp; Tricks"
+msgstr "Tips &amp; Trik"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Karya ini berada dibawah lisensi <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Menggunakan <app>Hitori</app> untuk bermain permainan."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Bermain Permainan"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
+"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
+"<app>Hitori</app> will ask if you want to stop the current game."
+msgstr ""
+"Untuk memulai permainan baru, pilih <guiseq><gui style=\"menu\">Permainan</"
+"gui><gui style=\"menuitem\">Permainan Baru</gui></guiseq>. Jika Anda sudah "
+"bermain permainan, <app>Hitori</app> akan menanyakan apakah Anda ingin "
+"menghentikan permainan saat ini."
+
+#. (itstool) path: page/p
+#: C/playing.page:12
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Untuk mewarnai sel, klik di atasnya; untuk tidak mewarnai lagi, klik lagi. "
+"Ketika sel diwarnai sedemikian rupa dan tidak satupun dari tiga aturan yang "
+"ada dilanggar, permainan akan berakhir dan papan mungkin tidak lagi dapat "
+"dimanipulasi."
+
+#. (itstool) path: page/p
+#: C/playing.page:14
+msgid ""
+"<app>Hitori</app> also allows you to highlight cells for your own reference "
+"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both highlight cells "
+"differently, and cells can be highlighted in both manners at the same time. "
+"Highlighted cells can be de-highlighted by clicking on them again while "
+"holding either <key>Ctrl</key> or <key>Shift</key> again."
+msgstr ""
+"<app>Hitori</app> juga memungkinkan Anda untuk menyorot sel untuk referensi "
+"Anda sendiri ketika memecahkan papan. Hal ini dapat dicapai dengan menahan "
+"tombol <key>Ctrl</key> atau <key>Shift</key> dan klik pada sel. Keduanya "
+"menyorot sel yang berbeda, dan sel dapat disorot dengan kedua cara tersebut "
+"pada waktu yang sama. sel yang disorot bisa dilepas-sorot dengan mengklik "
+"pada sel tersebut lagi sambil menahan tombol <key>Ctrl</key> atau "
+"<key>Shift</key> lagi."
+
+#. (itstool) path: page/p
+#: C/playing.page:18
+msgid ""
+"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
+"many moves as you like without restriction."
+msgstr ""
+"Untuk membatalkan langkah terakhir atau ulangi langkah, pilih <guiseq><gui "
+"style=\"menu\">Permainan</gui><gui style=\"menuitem\">Batalkan langkah "
+"terakhir Anda</gui></guiseq> atau <guiseq><gui style=\"menu\">Permainan</"
+"gui><gui style=\"menuitem\">Ulangi langkah</gui></guiseq>. Anda dapat "
+"membatalkan langkah terakhir atau ulangi langkah sebanyak pergerakan yang "
+"Anda inginkan tanpa pembatasan."
+
+#. (itstool) path: page/p
+#: C/playing.page:21
+msgid ""
+"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
+"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
+"highlighted with a flashing red outline. This shows that the current status "
+"of the cell (painted or unpainted) is incorrect, and should be changed for "
+"the game to be won."
+msgstr ""
+"Untuk mendapatkan petujuk tentang sel mana yang akan diwarnai, pilih "
+"<guiseq><gui style=\"menu\">Permainan</gui><gui style=\"menuitem\">Petunjuk</"
+"gui></guiseq>. Sebuah sel akan disorot dengan garis merah berkedip. Hal ini "
+"menunjukkan bahwa status sel (diwarnai atau tidak diwarnai) tidak benar, dan "
+"harus diubah agar permainan bisa dimenangkan."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Strategi untuk bermain Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Strategi Bermain Permainan"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to highlight all the repeated numbers in each <em>column</em>, then "
+"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
+"<em>row</em>."
+msgstr ""
+"Hitori sangat mirip dengan Sudoku, dibutuhkan deduksi logis untuk meyusun "
+"sel yang akan mewarnai. Salah satu strategi adalah dengan menggunakan klik-"
+"<key>Shift</key> untuk menyorot semua nomor yang berulang di setiap "
+"<em>kolom</em>, kemudian gunakan klik-<key>Ctrl</key> untuk menyorot semua "
+"nomor yang berulang di setiap <em>baris</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been "
+"highlighted both ways are good candidates for painting, although not always. "
+"When painting a cell, unhighlighting the other cells with the same number in "
+"the same row and column as that cell is a good way to keep track of which "
+"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Setelah hal ini dilakukan untuk seluruh papan, sel yang telah disorot dengan "
+"kedua cara adalah kandidat yang baik untuk diwarnai, meskipun tidak selalu. "
+"Ketika mewarnai sel, tidak menyorot sel lain dengan nomor yang sama pada "
+"baris yang sama dan kolom sebagai sel adalah cara yang baik untuk melacak "
+"sel mana saja yang masih melanggar <link xref=\"game\">aturan 1 dari Hitori</"
+"link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Selalu diingat bahwa aturan 2 dari Hitori berarti bahwa dua sel yang "
+"berdekatan tidak dapat diwarnai keduanya. <app>Hitori</app> akan menyorot "
+"dengan warna merah sel yang melanggar aturan 2. Demikian pula, kelompok sel "
+"yang melanggar aturan 3 dengan memisahkan satu atau lebih sel yang tidak "
+"diwarnai dari sel yang tidak diwarnai lainnya akan disorot dalam warna merah."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+"flag a cell which should be painted or unpainted to move closer to a "
+"solution."
+msgstr ""
+"Jika Anda terjebak pada suatu titik, pilih <guiseq><gui style=\"menu"
+"\">Permainan</gui><gui style=\"menuitem\">Petunjuk</gui></guiseq> untuk "
+"<app>Hitori</app> untuk menandai sel yang harus diwarnai atau tidak diwarnai "
+"untuk bergerak lebih dekat ke solusi."
