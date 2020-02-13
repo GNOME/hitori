@@ -1,22 +1,22 @@
 # Danish translation for hitori.
 # Copyright (C) 2019 hitori & nedenstående oversættere.
 # This file is distributed under the same license as the hitori package.
-# Joe Hansen (joedalton2@yahoo.dk), 2009, 2010, 2011, 2013, 2017, 2019.
+# Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019.
+# scootergrisen, 2019-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-09-29 13:41+0000\n"
-"PO-Revision-Date: 2019-10-06 18:52+0200\n"
-"Last-Translator: Alan Mortensen <alanmortensen.am@gmail.com>\n"
+"POT-Creation-Date: 2019-11-27 14:54+0000\n"
+"PO-Revision-Date: 2020-01-05 14:01+0200\n"
+"Last-Translator: scootergrisen\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -25,12 +25,12 @@ msgstr "Hitori"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "Læg puslespillet Hitori"
+msgstr "Spil opgavespillet Hitori"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "tænkespil;puslespil;spil;logik;gitter;"
+msgstr "opgave;tænkespil;spil;logik;gitter;"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -40,7 +40,7 @@ msgstr "GNOME Hitori"
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori er et logisk spil i stil med det populære spil Sudoku."
+msgstr "Hitori er et spil om logik i stil med det populære spil Sudoku."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -127,7 +127,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -165,19 +164,19 @@ msgstr "Størrelsen på brættet i celler."
 
 #: data/org.gnome.hitori.gschema.xml:11
 msgid "Window maximized state"
-msgstr "Vindue i maksimeret tilstand"
+msgstr "Vinduets maksimeret tilstand"
 
 #: data/org.gnome.hitori.gschema.xml:12
 msgid "Whether the window is maximized."
-msgstr "Hvorvidt vinduet er maksimeret."
+msgstr "Om vinduet er maksimeret."
 
 #: data/org.gnome.hitori.gschema.xml:16
 msgid "Window position"
-msgstr "Vinduesplacering"
+msgstr "Vinduesposition"
 
 #: data/org.gnome.hitori.gschema.xml:17
 msgid "Window position (x and y)."
-msgstr "Vinduesplacering (x og y)."
+msgstr "Vinduesposition (x og y)."
 
 #: data/org.gnome.hitori.gschema.xml:21
 msgid "Window size"
@@ -256,12 +255,13 @@ msgstr "Ophavsret © 2007-2010 Philip Withnall"
 
 #: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Et logisk puslespil oprindeligt designet af Nikoli"
+msgstr "Et opgavespil om logik oprindeligt designet af Nikoli"
 
 #: src/interface.c:749
 msgid "translator-credits"
 msgstr ""
-"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019.\n"
+"Joe Hansen <joedalton2@yahoo.dk>, 2009, 2010, 2011, 2013, 2017, 2019\n"
+"scootergrisen\n"
 "\n"
 "Dansk-gruppen\n"
 "Websted http://dansk-gruppen.dk\n"
@@ -289,7 +289,7 @@ msgstr "- Spil Hitori"
 #: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Indstillinger for kommandolinje kunne ikke fortolkes: %s\n"
+msgstr "Tilvalg for kommandolinje kunne ikke fortolkes: %s\n"
 
 #: src/main.c:346
 msgid "Do you want to stop the current game?"
@@ -304,7 +304,7 @@ msgstr "Fortsæt med at _spille"
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Du har vundet. Din tid blev %02u:%02u!"
+msgstr "Du vandt i tiden %02u:%02u!"
 
 #: src/rules.c:272
 msgid "_Quit"
@@ -313,24 +313,3 @@ msgstr "_Afslut"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Nyt spil"
-
-#~ msgid "5×5"
-#~ msgstr "5×5"
-
-#~ msgid "6×6"
-#~ msgstr "6×6"
-
-#~ msgid "7×7"
-#~ msgstr "7×7"
-
-#~ msgid "8×8"
-#~ msgstr "8×8"
-
-#~ msgid "9×9"
-#~ msgstr "9×9"
-
-#~ msgid "org.gnome.Hitori"
-#~ msgstr "org.gnome.Hitori"
-
-#~ msgid "_About"
-#~ msgstr "_Om"
