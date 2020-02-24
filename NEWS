@@ -1,3 +1,20 @@
+Overview of changes in Hitori 3.35.0
+====================================
+
+* Bugs fixed:
+ - !24 snap: Update yaml to use GNOME extension
+ - !25 window: Allow reaching smaller sizes
+
+* Translation updates:
+ - Chinese (Taiwan)
+ - Danish
+ - Italian
+ - Malay
+ - Persian
+ - Serbian
+ - Slovak
+
+
 Overview of changes in Hitori 3.34.0
 ====================================
 

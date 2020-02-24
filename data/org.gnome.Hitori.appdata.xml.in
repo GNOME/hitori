@@ -47,6 +47,14 @@
   </kudos>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="3.35.0" date="2020-02-24" type="development">
+      <description>
+        <ul>
+          <li>Allow resizing the window smaller.</li>
+          <li>Translation updates.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.34.0" date="2019-09-02" type="stable">
       <description>
         <ul>
