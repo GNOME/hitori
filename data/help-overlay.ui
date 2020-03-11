@@ -20,7 +20,7 @@
               <object class="GtkShortcutsShortcut">
                 <property name="visible">1</property>
                 <property name="accelerator">&lt;Ctrl&gt; &lt;Shift&gt;</property>
-                <property name="title" translatable="yes" context="shortcut window">Highlight a cell</property>
+                <property name="title" translatable="yes" context="shortcut window">Tag a cell</property>
               </object>
             </child>
             <child>

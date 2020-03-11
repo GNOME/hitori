@@ -1,4 +1,7 @@
 help_media = [
+  'figures/dialog-question-symbolic.svg',
+  'figures/edit-redo-symbolic.svg',
+  'figures/edit-undo-symbolic.svg',
   'figures/hitori_main_window.png',
 ]
 help_files = [
