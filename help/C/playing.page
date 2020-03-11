@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" id="playing">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="playing">
 	<info>
 		<link type="guide" xref="index#play"/>
 		<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
@@ -16,10 +16,11 @@
 		<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in
 		both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <key>Ctrl</key>
 		or <key>Shift</key> again.</p>
-	<p>To undo or redo a move, press <gui style="button">Undo</gui> or
-		<gui style="button">Redo</gui> in the header bar. You may undo or redo as many moves as you like without
+	<p>To undo or redo a move, press <gui style="button"><media its:translate="no" type="image" src="figures/edit-undo-symbolic.svg"><span its:translate="yes">Undo</span></media></gui> or
+		<gui style="button"><media its:translate="no" type="image" src="figures/edit-redo-symbolic.svg"><span its:translate="yes">Redo</span></media></gui>
+		in the header bar. You may undo or redo as many moves as you like without
 		restriction.</p>
-	<p>To get a hint on which cells to paint out, press <gui style="button">Hint</gui> in the header bar. A cell
+	<p>To get a hint on which cells to paint out, press <gui style="button"><media its:translate="no" type="image" src="figures/dialog-question-symbolic.svg"><span its:translate="yes">Hint</span></media></gui> in the header bar. A cell
 		will be hinted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect,
 		and should be changed for the game to be won.</p>
 </page>

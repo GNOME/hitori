@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<page xmlns="http://projectmallard.org/1.0/" type="topic" id="customization">
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" id="customization">
 	<info>
 		<link type="guide" xref="index#play"/>
 		<include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude"/>
