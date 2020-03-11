@@ -124,6 +124,7 @@
 						<property name="can_focus">True</property>
 						<property name="focus_on_click">False</property>
 						<property name="menu_model">primary-menu</property>
+						<accelerator key="F10" signal="activate"/>
 						<style>
 							<class name="image-button" />
 						</style>
