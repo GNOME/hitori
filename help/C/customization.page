@@ -8,7 +8,7 @@
 	<title>Customizing the Game</title>
 
 	<p>The game can be customized by changing the board size — boards from 5–10 cells square are allowed.</p>
-	<p>To change the board size, choose an option from <guiseq><gui style="menu">Game</gui><gui style="menuitem">Board Size</gui></guiseq>.
+	<p>To change the board size, press the menu button in the top-right corner of the window, and select an option from <gui style="menuitem">Board Size</gui>.
 		<app>Hitori</app> will ask if you want to stop the current game if you’re in the middle of one, then start a new game with the
 		requested board size.</p>
 </page>

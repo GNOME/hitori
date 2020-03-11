@@ -7,7 +7,8 @@
 	</info>
 	<title>Playing a Game</title>
 
-	<p>To start a new game, choose <guiseq><gui style="menu">Game</gui><gui style="menuitem">New Game</gui></guiseq>. If you are already playing a
+	<p>To start a new game, press the menu button in the top-right corner of the window, and select <gui style="menuitem">New Game</gui>.
+		If you are already playing a
 		game, <app>Hitori</app> will ask if you want to stop the current game.</p>
 	<p>To paint a cell, click on it; to unpaint it again, click on it again. When cells are painted such that none
 		of the three rules are broken, the game will end and the board may no longer be manipulated.</p>
@@ -15,10 +16,10 @@
 		<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both highlight cells differently, and cells can be highlighted in
 		both manners at the same time. Highlighted cells can be de-highlighted by clicking on them again while holding either <key>Ctrl</key>
 		or <key>Shift</key> again.</p>
-	<p>To undo or redo a move, choose <gui style="button">Undo</gui> or
-		<gui style="button">Redo</gui> from the toolbar. You may undo or redo as many moves as you like without
+	<p>To undo or redo a move, press <gui style="button">Undo</gui> or
+		<gui style="button">Redo</gui> in the header bar. You may undo or redo as many moves as you like without
 		restriction.</p>
-	<p>To get a hint on which cells to paint out, choose <gui style="button">Hint</gui> from the toolbar. A cell
-		will be highlighted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect,
+	<p>To get a hint on which cells to paint out, press <gui style="button">Hint</gui> in the header bar. A cell
+		will be hinted with a flashing red outline. This shows that the current status of the cell (painted or unpainted) is incorrect,
 		and should be changed for the game to be won.</p>
 </page>

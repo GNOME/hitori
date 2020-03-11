@@ -17,6 +17,6 @@
 		cells which violate rule 2. Similarly, groups of cells which violate rule 3 by separating one or more unpainted cells from the other
 		unpainted cells will be highlighted in red.</p>
 
-	<p>If you get stuck at any point, choose <gui style="button">Hint</gui> from the toolbar for <app>Hitori</app>
-		to flag a cell which should be painted or unpainted to move closer to a solution.</p>
+	<p>If you get stuck at any point, press <gui style="button">Hint</gui> in the header bar for <app>Hitori</app>
+		to hint a cell which should be painted or unpainted to move closer to a solution.</p>
 </page>
