@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-03-11 13:26+0000\n"
-"PO-Revision-Date: 2020-03-16 21:41+0200\n"
+"POT-Creation-Date: 2020-03-16 19:44+0000\n"
+"PO-Revision-Date: 2020-04-25 10:04+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<"
 "=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 20.03.70\n"
+"X-Generator: Lokalize 20.07.70\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -67,24 +67,23 @@ msgid "Start a new game"
 msgstr "Розпочати нову гру"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Підсвітити клітинку"
+msgid "Tag a cell"
+msgstr "Позначити комірку"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Повернути останній хід"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Повторити хід"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "Отримати підказку наступного ходу"
@@ -100,10 +99,14 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Показати клавіатурні скорочення"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Вийти"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Перемкнути меню"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -134,7 +137,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -147,7 +149,6 @@ msgid "_Help"
 msgstr "_Довідка"
 
 #: data/hitori.ui:58
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "_Про «Хіторі»"
 
@@ -159,7 +160,7 @@ msgstr "Вернути останній хід"
 msgid "Redo a move"
 msgstr "Повторити хід"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Отримати підказку наступного ходу"
 
