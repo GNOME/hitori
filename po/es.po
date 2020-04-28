@@ -2,21 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Jorge González <jorgegonz@svn.gnome.org>, 2009, 2010.
-# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2019.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2012-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-05-13 15:08+0200\n"
+"POT-Creation-Date: 2020-04-25 07:06+0000\n"
+"PO-Revision-Date: 2020-04-28 12:50+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: es <gnome-es-list@gnome.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 3.32.0\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -65,24 +65,23 @@ msgid "Start a new game"
 msgstr "Iniciar un juego nuevo"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Resaltar una casilla"
+msgid "Tag a cell"
+msgstr "Etiquetar una casilla"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Deshacer el último movimiento"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Rehacer un movimiento"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "Obtener una pista para el siguiente movimiento"
@@ -98,10 +97,14 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Mostrar atajos del teclado"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salir"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Conmutar menú"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -155,7 +158,7 @@ msgstr "Deshacer el último movimiento"
 msgid "Redo a move"
 msgstr "Rehacer un movimiento"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Obtener una pista para el siguiente movimiento"
 
