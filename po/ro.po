@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-08-04 14:55+0300\n"
+"POT-Creation-Date: 2020-04-25 07:06+0000\n"
+"PO-Revision-Date: 2020-05-03 14:56+0300\n"
 "Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
 "com>\n"
 "Language-Team: Echipa de traducere în limba română Gnome România <gnomero-"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -70,8 +70,8 @@ msgstr "Începe un joc nou"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Evidențiază o celulă"
+msgid "Tag a cell"
+msgstr "Etichetează o celulă"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -102,6 +102,11 @@ msgstr "Arată scurtăturile de tastatură"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Ieșire"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Comută meniul"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -155,7 +160,7 @@ msgstr "Anulează ultima mutare"
 msgid "Redo a move"
 msgstr "Refă o mutare"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Obțineți un indiciu pentru mutarea următoare"
 
@@ -266,7 +271,7 @@ msgstr "Un puzzle de logică proiectat de Nikoli"
 msgid "translator-credits"
 msgstr ""
 "Cristian Buzdugă <cristianbzdg@gmail.com>\n"
-"Florentina Mușat <florentina.musat.28 [at] gmail [dot] com>, 2019"
+"Florentina Mușat <emryslokadottir [at] gmail [dot] com>, 2019-2020"
 
 #: src/interface.c:753
 msgid "Hitori Website"
