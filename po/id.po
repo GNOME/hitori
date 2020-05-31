@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the hitori package.
 # Imam Musthaqim <userindesign@gmail.com>, 2009.
 # Andika Triwidada <andika@gmail.com>, 2012, 2014.
-# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019.
+# Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017-2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-05-31 12:38+0700\n"
+"POT-Creation-Date: 2020-05-15 17:44+0000\n"
+"PO-Revision-Date: 2020-05-31 13:32+0700\n"
 "Last-Translator: Kukuh Syafaat <kukuhsyafaat@gnome.org>\n"
 "Language-Team: INDONESIA <gnome@i15n.org>\n"
 "Language: id\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural= n!=1;\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -67,8 +67,8 @@ msgstr "Mulai permainan baru"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Sorot sel"
+msgid "Tag a cell"
+msgstr "Tandai sel"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -99,6 +99,11 @@ msgstr "Tampilkan Pintasan Papan Tik"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Keluar"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Jungkitkan Menu"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -152,7 +157,7 @@ msgstr "Batalkan langkah terakhir Anda"
 msgid "Redo a move"
 msgstr "Ulangi langkah"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Dapatkan petunjuk untuk langkah berikutnya"
 
@@ -264,7 +269,7 @@ msgid "translator-credits"
 msgstr ""
 "Imam Musthaqim <userindesign@gmail.com>, 2009\n"
 "Andika Triwidada <andika@gmail.com>, 2012, 2014\n"
-"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017, 2018, 2019."
+"Kukuh Syafaat <kukuhsyafaat@gnome.org>, 2017-2020."
 
 #: src/interface.c:753
 msgid "Hitori Website"
