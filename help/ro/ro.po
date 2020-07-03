@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2019-02-20 10:59+0000\n"
-"PO-Revision-Date: 2019-03-02 22:09+0100\n"
+"POT-Creation-Date: 2020-02-24 13:49+0000\n"
+"PO-Revision-Date: 2020-07-03 17:31+0200\n"
 "Last-Translator: Daniel Șerbănescu <daniel@serbanescu.dk>\n"
 "Language-Team: Gnome Romanian Translation Team <gnomero-list@lists."
 "sourceforge.net>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
 "%100<=19) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.3.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -26,7 +26,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Iacobescu Cristian <cristy_hereg93@yahoo.com> 2010, 2011\n"
-"Daniel Șerbănescu <daniel [at] serbanescu [dot] dk> 2019"
+"Daniel Șerbănescu <daniel [at] serbanescu [dot] dk> 2019-2020"
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
@@ -136,10 +136,10 @@ msgstr "Fereastra principală <app>Hitori</app>"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
-"md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
-"md5='37d4edd9d19a19ca58d0e987257a2622'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 
 #. (itstool) path: media/p
 #: C/game.page:23
@@ -186,7 +186,7 @@ msgstr "Sfaturi și trucuri"
 #: C/legal.xml:5
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
 msgstr ""
-"licență CreativeCommons Atribuire-Distribuire în condiții identice 3.0 Ne-"
+"Licență CreativeCommons Atribuire-Distribuire în condiții identice 3.0 Ne-"
 "adaptată"
 
 #. (itstool) path: license/p
