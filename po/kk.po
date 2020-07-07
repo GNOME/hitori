@@ -1,0 +1,313 @@
+# Kazakh translation for hitori.
+# Copyright (C) 2020 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Baurzhan Muftakhidinov <baurthefirst@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2020-07-03 15:34+0000\n"
+"PO-Revision-Date: 2020-07-07 09:16+0500\n"
+"Language-Team: Kazakh <kk_KZ@googlegroups.com>\n"
+"Language: kk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
+"X-Generator: Poedit 2.3.1\n"
+
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+msgid "Hitori"
+msgstr "Хитори"
+
+#. Translators: the brief summary of the application as it appears in a software center.
+#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
+msgid "Play the Hitori puzzle game"
+msgstr "Хитори жұмбақ ойынын ойнату"
+
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.Hitori.desktop.in:6
+msgid "puzzle;game;logic;grid;"
+msgstr "puzzle;game;logic;grid;жұмбақ;ойын;логика;тор;"
+
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.appdata.xml.in:9
+msgid "GNOME Hitori"
+msgstr "GNOME Хитори ойыны"
+
+#. Translators: These are the application description paragraphs in the AppData file.
+#: data/org.gnome.Hitori.appdata.xml.in:16
+msgid "Hitori is a logic game similar to the popular game of Sudoku."
+msgstr "Хитори — әйгілі Судоку ойынына ұқсас логикалық ойыны."
+
+#: data/org.gnome.Hitori.appdata.xml.in:17
+msgid ""
+"You play the game against the clock, aiming to eliminate all the duplicate "
+"numbers in each row and column in the fastest time. Multiple sizes of game "
+"board are supported, and you can place markers on cells to help work out the "
+"solution. If you get stuck, the game can give you a hint."
+msgstr ""
+"Ойынды сағатқа қарсы ойнайсыз, ең аз уақытта әр жол мен бағандағы барлық "
+"қайталанатын сандарды жою керек. Ойынның тақтаның бірнеше өлшеміне қолдауы "
+"бар және шешімді пысықтауға көмектесу үшін ұяшықтарға маркерлерді "
+"орналастыруға болады. Егер тұрып қалсаңыз, ойын тұспалды бере алады."
+
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "GNOME жобасы"
+
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Жаңа ойынды бастау"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Tag a cell"
+msgstr "Ұяшықты белгілеу"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "Соңғы әрекетті болдырмау"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "Жылжытуды қайталау"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Келесі жылжыту үшін тұспал алу"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Көмекті көрсету"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Пернетақта жарлықтарын көрсету"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Шығу"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Мәзірді көрсету/жасыру"
+
+#: data/hitori.ui:9 src/main.c:350
+msgid "_New Game"
+msgstr "Ж_аңа ойын"
+
+#: data/hitori.ui:12
+msgid "Board _Size"
+msgstr "Тақта ө_лшемі"
+
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
+
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
+
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
+
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
+
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
+
+#: data/hitori.ui:41
+msgid "_10×10"
+msgstr "_10×10"
+
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "П_ернетақта жарлықтары"
+
+#: data/hitori.ui:54
+msgid "_Help"
+msgstr "_Көмек"
+
+#: data/hitori.ui:58
+msgid "_About Hitori"
+msgstr "Хитори т_уралы"
+
+#: data/hitori.ui:84
+msgid "Undo your last move"
+msgstr "Соңғы әрекетті болдырмау"
+
+#: data/hitori.ui:105
+msgid "Redo a move"
+msgstr "Жылжытуды қайталау"
+
+#: data/hitori.ui:151
+msgid "Get a hint for your next move"
+msgstr "Келесі жылжыту үшін тұспал алу"
+
+#: data/org.gnome.hitori.gschema.xml:6
+msgid "Board size"
+msgstr "Тақта өлшемі"
+
+#: data/org.gnome.hitori.gschema.xml:7
+msgid "The size of the board, in cells."
+msgstr "Тақта өлшемі, ұяшық есебімен."
+
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Терезе максималды күйі"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Терезе жазық етілген бе."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Терезе орны"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Терезе орны (x және y)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Терезе өлшемі"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Терезе өлшемі (ені мен биіктігі)."
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "6"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:722
+msgid "The help contents could not be displayed"
+msgstr "Көмек мазмұның көрсету мүмкін емес"
+
+#: src/interface.c:746
+msgid "Copyright © 2007–2010 Philip Withnall"
+msgstr "Copyright © 2007–2010 Philip Withnall"
+
+#: src/interface.c:747
+msgid "A logic puzzle originally designed by Nikoli"
+msgstr "Бастапқыда Николи жасаған логикалық жұмбақтар ойыны"
+
+#: src/interface.c:749
+msgid "translator-credits"
+msgstr "Baurzhan Muftakhidinov <baurthefirst@gmail.com>"
+
+#: src/interface.c:753
+msgid "Hitori Website"
+msgstr "Хитори веб-сайты"
+
+#: src/main.c:254
+msgid "Enable debug mode"
+msgstr "Жөндеу режімін іске қосу"
+
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:256
+msgid "Seed the board generation"
+msgstr "Тақтаны генерациялау үшін бастапқы мәні"
+
+#. Options
+#: src/main.c:270
+msgid "- Play a game of Hitori"
+msgstr "- Хитори ойынын ойнау"
+
+#. Print an error
+#: src/main.c:280
+#, c-format
+msgid "Command line options could not be parsed: %s\n"
+msgstr "Команда жол параметрлерін талдау мүмкін емес: %s\n"
+
+#: src/main.c:346
+msgid "Do you want to stop the current game?"
+msgstr "Ағымдағы ойынды тоқтатқыңыз келе ме?"
+
+#: src/main.c:349
+msgid "Keep _Playing"
+msgstr "О_йнауды жалғастыру"
+
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
+#: src/rules.c:267
+#, c-format
+msgid "You’ve won in a time of %02u:%02u!"
+msgstr "Сіз %02u:%02u уақытпен жеңдіңіз!"
+
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Шығу"
+
+#: src/rules.c:273
+msgid "_Play Again"
+msgstr "Қайта о_йнау"
