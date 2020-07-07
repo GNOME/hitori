@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2020-02-24 13:49+0000\n"
-"PO-Revision-Date: 2020-07-03 17:31+0200\n"
+"POT-Creation-Date: 2020-07-03 15:34+0000\n"
+"PO-Revision-Date: 2020-07-07 12:50+0200\n"
 "Last-Translator: Daniel Șerbănescu <daniel@serbanescu.dk>\n"
 "Language-Team: Gnome Romanian Translation Team <gnomero-list@lists."
 "sourceforge.net>\n"
@@ -44,21 +44,22 @@ msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
 msgstr ""
-"Jocul poate fi personalizat prin schimbarea dimensiunii mesei - mese din "
+"Jocul poate fi personalizat prin schimbarea dimensiunii tablei - table din "
 "5-10 celule pătrate sunt permise."
 
 #. (itstool) path: page/p
 #: C/customization.page:11
 msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you’re in the middle "
-"of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"Pentru a modifica dimensiunea mesei alegeți o opțiune din <guiseq><gui style="
-"\"menu\">Joc</gui><gui style=\"menuitem\">Mărime masă</gui></guiseq>. "
+"Pentru a modifica dimensiunea tablei, apăsați butonul meniu din dreapta sus "
+"a ferestrei, ș selectați <gui style=\"menuitem\">Mărime tablă</gui>. "
 "<app>Hitori</app> va întreba dacă doriți să opriți jocul actual, dacă vă "
-"aflați în mijlocul unuia, apoi va începe un joc nou cu dimensiunea mesei "
+"aflați în mijlocul unuia, apoi va începe un joc nou cu dimensiunea tablei "
 "solicitate."
 
 #. (itstool) path: info/desc
@@ -115,7 +116,7 @@ msgid ""
 "multiple solutions to a Hitori puzzle board."
 msgstr ""
 "Acestea sunt doar trei reguli de joc, și deci pot fi mai multe soluții "
-"pentru o masă de puzzle Hitori."
+"pentru o tablă de puzzle Hitori."
 
 #. (itstool) path: figure/title
 #: C/game.page:20
@@ -147,17 +148,17 @@ msgid "<app>Hitori</app> main window."
 msgstr "Fereastra principală <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:7
+#: C/index.page:8
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:9
+#: C/index.page:10
 msgid "2008–2010, 2019"
 msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:12
+#: C/index.page:13
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -168,17 +169,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:16
+#: C/index.page:17
 msgid "Hitori Help"
 msgstr "Ajutor Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:19
+#: C/index.page:20
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Utilizarea și jocul rudimentar"
 
 #. (itstool) path: section/title
-#: C/index.page:23
+#: C/index.page:24
 msgid "Tips &amp; Tricks"
 msgstr "Sfaturi și trucuri"
 
@@ -207,16 +208,18 @@ msgstr "Jucarea unei partide"
 #. (itstool) path: page/p
 #: C/playing.page:10
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
-"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
-"<app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"Pentru a porni un nou joc, alegeți <guiseq><gui style=\"menu\">Joc</gui><gui "
-"style=\"menuitem\">Joc nou</gui></guiseq>. Dacă jucați deja un alt joc, "
-"<app>Hitori</app> vă va întreba dacă doriți să opriți jocul curent."
+"Pentru a porni un nou joc, apăsați butonul meniu din colțul dreapta sus al "
+"ferestrei, și selectați <gui style=\"menuitem\">Joc nou</gui>. Dacă jucați "
+"deja un alt joc, <app>Hitori</app> vă va întreba dacă doriți să opriți jocul "
+"curent."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -224,49 +227,64 @@ msgid ""
 msgstr ""
 "Pentru a picta o celulă, apăsați pe ea; pentru a o depicta, apăsați pe ea "
 "din nou. Atunci când celulele sunt pictate astfel că niciuna din cele trei "
-"regulile nu sunt încălcate, jocul se va termina și masa nu mai poate fi "
+"regulile nu sunt încălcate, jocul se va termina și tabla nu mai poate fi "
 "manipulată."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
-"<app>Hitori</app> de asemenea, vă permite să evidențiați celulele de "
-"referință pentru dumneavoastră atunci când rezolvați o masă. Acest lucru "
-"poate fi realizat prin menținerea <key>Ctrl</key> sau <key>Shift</key> și "
-"făcând clic pe acea celulă. Amândouă evidențiază celulele diferit și "
-"celulele pot fi evidențiate în ambele maniere, în același timp. Celulele "
-"evidențiate pot fi de-evidențiate, apăsând pe ele din nou, în timp ce "
-"mențineți, fie <key>Ctrl</key> sau <key>Shift</key> din nou."
+"<app>Hitori</app> de asemenea, vă permite să etichetați celule pentru "
+"referința dumneavoastră atunci când rezolvați o tablă. Acest lucru poate fi "
+"realizat prin menținerea <key>Ctrl</key> sau <key>Shift</key> și apăsând "
+"clic pe acea celulă. Amândouă etichetează celulele diferit și celulele pot "
+"fi etichetate în ambele maniere, în același timp. Celulele etichetate pot fi "
+"de-etichetate, apăsând pe ele din nou, în timp ce mențineți, fie <key>Ctrl</"
+"key> sau <key>Shift</key> din nou."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Anulează"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Refă"
 
 #. (itstool) path: page/p
-#: C/playing.page:18
+#: C/playing.page:19
 msgid ""
-"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
-"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
-"moves as you like without restriction."
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
 msgstr ""
-"Pentru a anula sau a reface o mișcare alegeți <gui style=\"button"
-"\">Anulează</gui><gui style=\"button\">Refă</gui> din bara de unelte. Puteți "
-"anula sau a reface, atâtea mutări câte doriți fără nici o restricție."
+"Pentru a anula sau a reface o mișcare alegeți <gui style=\"button\"><_:"
+"media-1/></gui><gui style=\"button\"><_:media-2/></gui> din bara de unelte. "
+"Puteți anula sau a reface, atâtea mutări câte doriți fără nici o restricție."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Indiciu"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:23
 msgid ""
-"To get a hint on which cells to paint out, choose <gui style=\"button"
-"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
-"red outline. This shows that the current status of the cell (painted or "
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
 "unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
 "Pentru a obține un indiciu despre care celule trebuiesc pictate, selectați "
-"<gui style=\"button\">Indiciu</gui>. O celulă va fi evidențiată cu un contur "
-"roșu intermitent. Acest lucru arată că starea actuală a acelei celule "
+"<gui style=\"button\"><_:media-1/></gui>. O celulă va fi etichetată cu un "
+"contur roșu intermitent. Acest lucru arată că starea actuală a acelei celule "
 "(pictată sau nu) este incorectă și ar trebui să fie schimbată pentru ca "
 "jocul să fie câștigat."
 
@@ -285,28 +303,28 @@ msgstr "Strategii de joc"
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
 "Hitori este destul de similar cu Sudoku, în care este nevoie de deducție "
 "logică pentru a determina care celule trebuiesc pictate. O strategie este de "
-"a utiliza <key>Shift</key>-clic pentru a evidenția toate numerele ce se "
+"a utiliza <key>Shift</key>-clic pentru a eticheta toate numerele ce se "
 "repetă în fiecare <em>coloană</em>, apoi utilizați <key>Ctrl</key>-clic "
-"pentru a evidenția toate numerele ce se repetă în fiecare <em>rând</em>."
+"pentru a eticheta toate numerele ce se repetă în fiecare <em>rând</em>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Odată ce acest lucru se face pentru întreaga masă, celulele care au fost "
-"evidențiate în ambele sensuri sunt bune candidate pentru pictare, deși nu "
-"întotdeauna. Când o celulă este pictată, neevidențierea altor celule cu "
+"Odată ce acest lucru se face pentru întreaga tablă, celulele care au fost "
+"etichetate în ambele sensuri sunt bune candidate pentru pictare, deși nu "
+"întotdeauna. Când o celulă este pictată, neetichetarea altor celule cu "
 "același număr în același rând și coloană ca acea celula este o modalitate "
 "bună de a urmări care celulele încă încalcă <link xref=\"game\">regula 1 din "
 "Hitori</link>."
@@ -329,13 +347,13 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
-"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
 "unpainted to move closer to a solution."
 msgstr ""
-"Dacă rămâneți blocat în orice moment, alegeți <gui style=\"button\">Indiciu</"
-"gui> din bara de unelte ca <app>Hitori</app> să semnalizeze o celulă care ar "
-"trebui să fie pictată sau depictată, pentru a se apropia de o soluție."
+"Dacă rămâneți blocat în orice moment, apăsați <gui style=\"button\">Indiciu</"
+"gui> din bara de unelte ca <app>Hitori</app> să evidențieze o celulă care ar "
+"trebui să fie pictată sau depictată, pentru a vă apropia de o soluție."
 
 #~ msgid "Legal information."
 #~ msgstr "Informații legale."
