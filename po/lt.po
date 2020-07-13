@@ -2,14 +2,14 @@
 # Copyright (C) 2014 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # FULL NAME <EMAIL@ADDRESS>, 2014.
-# Aurimas Černius <aurisc4@gmail.com>, 2014-2019.
+# Aurimas Černius <aurisc4@gmail.com>, 2014-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-08-20 12:46+0300\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-07-13 16:21+0300\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lietuvių <gnome-lt@lists.akl.lt>\n"
 "Language: lt\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
 "%100<10 || n%100>=20) ? 1 : 2)\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -67,24 +67,23 @@ msgid "Start a new game"
 msgstr "Pradėti naują žaidimą"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
+msgid "Tag a cell"
 msgstr "Paryškinti langelį"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Atšaukti paskutinį ėjimą"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Pakartoti ėjimą"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "Gauti patarimą kitam ėjimui"
@@ -100,10 +99,14 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Rodyti klaviatūros trumpinius"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Išeiti"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Perjungti meniu"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -134,7 +137,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -158,7 +160,7 @@ msgstr "Atšaukti paskutinį ėjimą"
 msgid "Redo a move"
 msgstr "Pakartoti ėjimą"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Gauti patarimą kitam ėjimui"
 
