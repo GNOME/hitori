@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
 "PO-Revision-Date: 2019-08-19 07:56+0200\n"
 "Last-Translator: Gil Forcada <gilforcada@guifi.net>\n"
 "Language-Team: Catalan <tradgnome@softcatala.org>\n"
@@ -23,12 +23,14 @@ msgstr ""
 msgid "Hitori"
 msgstr "Hitori"
 
-#. Translators: the brief summary of the application as it appears in a software center.
+#. Translators: the brief summary of the application as it appears in a
+#. software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "Jugueu al trencaclosques Hitori"
 
-#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
+#. Translators: Search terms to find this application. Do NOT translate or
+#. localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "trencaclosques;puzle;joc;lògica;graella;"
@@ -38,7 +40,8 @@ msgstr "trencaclosques;puzle;joc;lògica;graella;"
 msgid "GNOME Hitori"
 msgstr "GNOME Hitori"
 
-#. Translators: These are the application description paragraphs in the AppData file.
+#. Translators: These are the application description paragraphs in the
+#. AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
 msgstr "L'Hitori és un joc de lògica similar al popular Sukodu."
@@ -47,12 +50,12 @@ msgstr "L'Hitori és un joc de lògica similar al popular Sukodu."
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
-"board are supported, and you can place markers on cells to help work out the "
-"solution. If you get stuck, the game can give you a hint."
+"board are supported, and you can place markers on cells to help work out the"
+" solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Jugueu contra rellotge, amb l'objectiu d'eliminar tots els nombres duplicats "
-"a cada fila i columna en el menor temps possible. Es pot jugar a taulers de "
-"diferent mida, i podeu posar els marcadors a les cel·les per ajudar-vos a "
+"Jugueu contra rellotge, amb l'objectiu d'eliminar tots els nombres duplicats"
+" a cada fila i columna en el menor temps possible. Es pot jugar a taulers de"
+" diferent mida, i podeu posar els marcadors a les cel·les per ajudar-vos a "
 "trobar la solució. Si us quedeu bloquejat, el joc us pot donar una pista."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
@@ -66,8 +69,8 @@ msgstr "Comença una partida nova"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Ressalta una cel·la"
+msgid "Tag a cell"
+msgstr "Etiqueta una cel·la"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -98,6 +101,11 @@ msgstr "Mostra les dreceres de teclat"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Surt"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Commuta el menú"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -151,7 +159,7 @@ msgstr "Desfés l'últim moviment"
 msgid "Redo a move"
 msgstr "Torna a fer el moviment"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Obtingueu un suggeriment per al vostre proper moviment"
 
@@ -270,7 +278,8 @@ msgstr "Lloc web de l'Hitori"
 msgid "Enable debug mode"
 msgstr "Habilita mode de depuració"
 
-#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#. Translators: This means to choose a number as the "seed" for random number
+#. generation used when creating a board
 #: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Llavor pel generador de taulers"
@@ -294,7 +303,8 @@ msgstr "Voleu aturar la partida actual?"
 msgid "Keep _Playing"
 msgstr "_Continua jugant"
 
-#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. Translators: The first parameter is the number of minutes which have
+#. elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: src/rules.c:267
 #, c-format
@@ -308,4 +318,3 @@ msgstr "_Surt"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "Jug_a de nou"
-
