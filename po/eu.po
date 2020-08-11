@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014, 2015, 2017.
-# Asier Sarasua Garmendia <asier.sarasua@gmail.com>, 2019.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2019, 2020.
 #
 msgid ""
 msgstr "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-07-14 10:00+0100\n"
-"Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-11 10:00+0100\n"
+"Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
 "MIME-Version: 1.0\n"
@@ -61,8 +61,8 @@ msgstr "Hasi joko berria"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Nabarmendu gelaxka bat"
+msgid "Tag a cell"
+msgstr "Etiketatu gelaxka bat"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -93,6 +93,11 @@ msgstr "Erakutsi lasterbideak"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Irten"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Txandakatu menua"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -146,7 +151,7 @@ msgstr "Desegin zure azken mugimendua"
 msgid "Redo a move"
 msgstr "Berregin mugimendua"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Hurrengo mugimendua iradokitzen du"
 
