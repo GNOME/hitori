@@ -1,13 +1,13 @@
 # Czech translation for hitori help.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori help.
-# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014, 2019.
+# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014, 2019, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2019-08-31 11:52+0000\n"
-"PO-Revision-Date: 2019-09-07 16:15+0200\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-13 00:45+0200\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -44,16 +44,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/customization.page:11
 msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you’re in the middle "
-"of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"Pokud chcete změnit velikost hrací desky, vyberte některou z voleb v "
-"<guiseq><gui style=\"menu\">Hra</gui><gui style=\"menuitem\">Velikost hrací "
-"desky</gui></guiseq>. V případě, že máte rozehranou hru, dotáže se "
-"<app>Hitori</app>, jestli ji má ukončit a po té spustí novou hru s "
-"požadovanými rozměry hrací desky."
+"Pokud chcete změnit velikost hrací desky, zmáčkněte tlačítko nabídky v pravém "
+"horním rohu okna a vyberte <gui style=\"menuitem\">Velikost hrací desky"
+"</gui>. V případě, že máte rozehranou hru, dotáže se <app>Hitori</app>, "
+"jestli ji má ukončit a po té spustí novou hru s požadovanými rozměry hrací "
+"desky."
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -140,17 +141,17 @@ msgid "<app>Hitori</app> main window."
 msgstr "Hlavní okno hry <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:7
+#: C/index.page:8
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:9
+#: C/index.page:10
 msgid "2008–2010, 2019"
 msgstr "2008 – 2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:12
+#: C/index.page:13
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -161,17 +162,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:16
+#: C/index.page:17
 msgid "Hitori Help"
 msgstr "Nápověda ke hře Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:19
+#: C/index.page:20
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Základy hraní a použití"
 
 #. (itstool) path: section/title
-#: C/index.page:23
+#: C/index.page:24
 msgid "Tips &amp; Tricks"
 msgstr "Tipy a triky"
 
@@ -198,16 +199,18 @@ msgstr "Jak hrát"
 #. (itstool) path: page/p
 #: C/playing.page:10
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
-"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
-"<app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"Novou hru spustíte volbou <guiseq><gui style=\"menu\">Hra</gui><gui style="
-"\"menuitem\">Nová hra</gui></guiseq>. Pokud už máte rozehranou hru, "
-"<app>Hitori</app> se vás dotáže, jestli chcete současnou hru ukončit."
+"Novou hru spustíte volbou zmáčknutím tlačítka nabídky v pravém horním rohu "
+"okna a následným vybráním <gui style=\"menuitem\">Nová hra</gui>. Pokud už "
+"máte rozehranou hru, <app>Hitori</app> se vás dotáže, jestli chcete současnou "
+"hru ukončit."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -218,14 +221,14 @@ msgstr ""
 "pravidel, hra končí a na hrací desce nelze nadále dělat žádné změny."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
 "<app>Hitori</app> vám také umožňuje si pro své potřeby při řešení políčka "
 "označovat. Dělá se to podržením klávesy <key>Ctrl</key> nebo <key>Shift</"
@@ -233,27 +236,43 @@ msgstr ""
 "políčka použita i naráz. Označení zrušíte opětovným kliknutím za současného "
 "přidržení <key>Ctrl</key> nebo <key>Shift</key>."
 
-#. (itstool) path: page/p
-#: C/playing.page:18
-msgid ""
-"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
-"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
-"moves as you like without restriction."
-msgstr ""
-"Pokud chcete vrátit tah zpět nebo jej provést znovu, zvolte na nástrojové "
-"liště <gui style=\"button\">Zpět</gui> nebo <gui style=\"button\">Znovu</"
-"gui>.Vracet zpět a znovu provádět můžete libovolný počet tahů bez omezení."
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Zpět"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Znovu"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:19
 msgid ""
-"To get a hint on which cells to paint out, choose <gui style=\"button"
-"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
-"red outline. This shows that the current status of the cell (painted or "
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
+msgstr ""
+"Pokud chcete vrátit tah zpět nebo jej provést znovu, zmáčkněte gui style="
+"\"button\"><_:media-1/></gui> nebo <gui style=\"button\"><_:media-2/></gui> v "
+"záhlavní liště.Vracet zpět a znovu provádět můžete libovolný počet tahů bez "
+"omezení."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Rada"
+
+#. (itstool) path: page/p
+#: C/playing.page:23
+msgid ""
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
 "unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Pokud chcete radu, které políčko zatřít, zvolte na nástrojové liště <gui "
-"style=\"button\">Rada</gui>. Políčko se zvýrazní blikajícím červeným "
+"Pokud chcete radu, které políčko zatřít, zmáčkněte <gui style=\"button\"><_:"
+"media-1/></gui> v záhlavní liště. Políčko se zvýrazní blikajícím červeným "
 "obrysem. To naznačuje, že současný stav políčka (zatřené nebo nezatřené) je "
 "nesprávný a pro vítězné dokončení hry by měl být změněn."
 
@@ -272,9 +291,9 @@ msgstr "Herní strategie"
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
 "Hra Hitori je trochu podobná Sudoku, také vyžaduje logickou dedukci k "
 "určení, která políčka zatřít. Jednou ze strategií je použít klikání spolu s "
@@ -285,11 +304,11 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:13
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
 "Až to uděláte na celé desce, budou některá políčka označena oběma způsoby a "
 "ty jsou horkými kandidáty na zatření, ale naplatí to vždy. Když políčko "
@@ -315,10 +334,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
-"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
 "unpainted to move closer to a solution."
 msgstr ""
-"Pokud budete v nějakém bodě v koncích, zvolte na nástrojové liště <gui style="
-"\"button\">Rada</gui>, a aplikace <app>Hitori</app> vám označí políčko, "
+"Pokud budete v nějakém bodě v koncích, zmáčkněte <gui style=\"button\">Rada"
+"</gui> v záhlavní liště a aplikace <app>Hitori</app> vám označí políčko, "
 "které by se mělo zatřít nebo očistit, a tím vám pomůže přiblížit se k řešení."
