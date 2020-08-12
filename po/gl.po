@@ -2,22 +2,22 @@
 # Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
 # Fran Diéguez <frandieguez@ubuntu.com>, 2009, 2010.
-# Fran Dieguez <frandieguez@gnome.org>, 2012-2019.
+# Fran Dieguez <frandieguez@gnome.org>, 2012-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-08-26 10:34+0200\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-13 01:00+0200\n"
 "Last-Translator: Fran Dieguez <frandieguez@gnome.org>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -66,9 +66,11 @@ msgid "Start a new game"
 msgstr "Iniciar un novo xogo"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Realzar unha cela"
+msgid "Tag a cell"
+msgstr "Etiquetar unha cela"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -100,6 +102,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Saír"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Trocar menú"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Novo xogo"
@@ -129,7 +136,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -153,7 +159,7 @@ msgstr "Desfacer o último movemento"
 msgid "Redo a move"
 msgstr "Refacer un movemento"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Obter unha suxestión para o seu novo movemento"
 
