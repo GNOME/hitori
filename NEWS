@@ -1,3 +1,27 @@
+Overview of changes in Hitori 3.37.0
+====================================
+
+* Bugs fixed:
+ - #15 In help "Paint" does not add color. "Highlight" does
+ - !26 Add F10 accelerator to primary menu
+
+* Translation updates:
+ - Basque
+ - Catalan
+ - Czech
+ - Friulian
+ - Galician
+ - Indonesian
+ - Kazakh
+ - Lithuanian
+ - Romanian
+ - Serbian
+ - Slovenian
+ - Spanish
+ - Swedish
+ - Ukrainian
+
+
 Overview of changes in Hitori 3.36.0
 ====================================
 
