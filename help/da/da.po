@@ -1,15 +1,18 @@
-# Danish translation for hitori-help.
-# Copyright (C) 2009 hitori's COPYRIGHT HOLDER.
+# Danish translation for hitori.
+# Copyright (C) 2009 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
-#
-# Joe Hansen (joedalton2@yahoo.dk), 2009.
-# scootergrisen, 2015.
+# Joe Hansen <joedalton2@yahoo.dk>, 2009.
+# scootergrisen, 2015, 2020.
 # Gennemgået (delvist) Ask Hjorth Larsen <asklarsen@gmail.com>, 2016.
+#
+# scootergrisen: "paint" ~ klik på celle
+# scootergrisen: "tag" ~ hold Ctrl og/eller Skift nede og klik på celle (bliver blå og/eller grøn i hjørnerne)
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: hitori-help master\n"
-"POT-Creation-Date: 2016-03-18 12:50+0000\n"
-"PO-Revision-Date: 2016-10-02 15:40+0200\n"
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2020-03-11 14:42+0000\n"
+"PO-Revision-Date: 2020-03-12 08:53+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
@@ -23,21 +26,21 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Joe Hansen <joedalton2@yahoo.dk>, 2009\n"
-"scootergrisen, 2015\n"
+"scootergrisen <>, 2015, 2020\n"
 "\n"
-"Dansk-gruppen <dansk@dansk-gruppen.dk>\n"
-"Mere info: http://www.dansk-gruppen.dk"
+"Dansk-gruppen\n"
+"Websted http://dansk-gruppen.dk\n"
+"E-mail <dansk@dansk-gruppen.dk>"
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
 msgid "Changing how the game appears and plays."
-msgstr "Ændre spillets udseende og hvordan det spilles."
+msgstr "Ændr spillets udseende og hvordan det spilles."
 
-# måske Tilpasning af spillet
 #. (itstool) path: page/title
 #: C/customization.page:8
 msgid "Customizing the Game"
-msgstr "Tilpasse spillet"
+msgstr "Tilpas spillet"
 
 #. (itstool) path: page/p
 #: C/customization.page:10
@@ -45,34 +48,23 @@ msgid ""
 "The game can be customized by changing the board size — boards from 5–10 "
 "cells square are allowed."
 msgstr ""
-"Spillet kan tilpasses ved at ændre brætstørrelsen - bræt med 5-10 "
-"cellefirkanter per række/kolonne er tilladt."
+"Spillet kan tilpasses ved at ændre brætstørrelsen – kvadratiske bræt med 5–10 celler "
+"er tilladt."
 
 #. (itstool) path: page/p
 #: C/customization.page:11
 msgid ""
-"To change the board size, choose an option from <guiseq><gui "
-"style=\"menu\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. "
-"<app>Hitori</app> will ask if you want to stop the current game if you're in "
-"the middle of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"Ændring af brætstørrelse foretages ved at vælge en af mulighederne fra "
-"<guiseq><gui style=\"menu\">Spil</gui><gui "
-"style=\"menuitem\">Brætstørrelse</gui></guiseq>. <app>Hitori</app> vil "
-"spørge, om du ønsker at standse det aktuelle spil, hvis du er i gang med et, "
-"og så starte et nyt spil med den ønskede brætstørrelse."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr "[Strengen bruges ikke]"
+"For at ændre brætstørrelsen trykkes på menuknappen i øverste højre hjørne af "
+"vinduet og der vælges en indstilling i <gui "
+"style=\"menuitem\">Brætstørrelse</gui>. <app>Hitori</app> spørger, om du vil "
+"stoppe det nuværende spil, hvis du er midt i et, og så starte et nyt spil "
+"med den ønskede brætstørrelse."
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -92,10 +84,10 @@ msgid ""
 "<em>paint out</em> cells until there are no duplicate numbers in each row "
 "and column. The following rules apply:"
 msgstr ""
-"Hitori er et lille logikpuslespil, der minder om det mere populære Sudoku. I "
-"spillet starter spilleren med et firkantsbræt med tal, og skal herfra "
-"<em>markere</em> celler indtil der ikke er ens tal i hver række og kolonne. "
-"Følgende regler gælder:"
+"Hitori er en lille logisk opgave, i samme stil som det mere populære Sudoku. "
+"I spillet starter spilleren med et kvadratisk bræt med tal, og skal så "
+"<em>overmale</em> cellerne indtil der ikke er nogen ens tal i hver række og "
+"kolonne. Følgende regler gælder:"
 
 #. (itstool) path: item/p
 #: C/game.page:13
@@ -103,25 +95,21 @@ msgid ""
 "There must only be one of each number in the unpainted cells in each row and "
 "column."
 msgstr ""
-"Der må kun være et af hvert tal i de umarkerede celler i hver række og "
-"kolonne."
+"Der må kun være ét af hvert tal i de umalede celler i hver række og kolonne."
 
 #. (itstool) path: item/p
 #: C/game.page:14
-msgid ""
-"No painted cell may be adjacent to another, vertically or horizontally."
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
 msgstr ""
-"Ingen markerede celle må være ved siden af en anden markeret celle, hverken "
-"vertikalt eller horisontalt."
+"Malede celler må ikke være ved siden af hinanden, hverken lodret eller "
+"vandret."
 
 #. (itstool) path: item/p
 #: C/game.page:15
 msgid ""
 "All the unpainted cells must be joined together vertically and horizontally "
 "in one group."
-msgstr ""
-"Alle de umarkerede celler skal være forbundet vertikalt og horisontalt i en "
-"gruppe."
+msgstr "Alle de umalede celler skal forbindes lodret og vandret i en gruppe."
 
 #. (itstool) path: page/p
 #: C/game.page:17
@@ -129,8 +117,8 @@ msgid ""
 "These are the only three rules of the game, and so there may well be "
 "multiple solutions to a Hitori puzzle board."
 msgstr ""
-"Dette er de eneste tre regler i spillet, og der kan derfor være flere "
-"løsninger i et Hitoripuslespil."
+"Det er de eneste tre regler i spillet, så der kan være flere løsninger "
+"til et Hitori-opgavebræt."
 
 #. (itstool) path: figure/title
 #: C/game.page:20
@@ -140,58 +128,71 @@ msgstr "Spillets hovedvindue"
 #. (itstool) path: figure/desc
 #: C/game.page:21
 msgid "<app>Hitori</app> main window"
-msgstr "<app>Hitoris</app> hovedvindue"
+msgstr "Hovedvinduet i <app>Hitori</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr "[billedet indeholder ikke noget som kan oversættes]"
 
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
-msgstr "<app>Hitoris</app> hovedvindue."
+msgstr "Hovedvinduet i <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:6
+#: C/index.page:8
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:10
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:13
 msgid ""
-"This work is licensed under a <link "
-"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
-"Attribution-Share Alike 3.0 Unported License</link>."
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
 msgstr ""
-"Dette værk er licenseret under <link "
-"href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons "
-"Attribution-Share Alike 3.0 Unported License</link>."
+"Værket er licenseret under en <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Kreditering-Deling på samme vilkår "
+"3.0 Ikke porteret-licens</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
+#: C/index.page:17
 msgid "Hitori Help"
 msgstr "Hjælp til Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:20
 msgid "Basic Gameplay &amp; Usage"
-msgstr "Grundlæggende spil &amp; brug"
+msgstr "Grundlæggende gameplay og anvendelse"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:24
 msgid "Tips &amp; Tricks"
-msgstr "Tips &amp; tricks"
+msgstr "Tips og tricks"
 
 #. (itstool) path: p/link
 #: C/legal.xml:5
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr ""
+"Creative Commons Kreditering-Deling på samme vilkår 3.0 Ikke porteret-licens"
 
 #. (itstool) path: license/p
 #: C/legal.xml:4
 msgid "This work is licensed under a <_:link-1/>."
-msgstr "Dette værk er licenseret under <_:link-1/>."
+msgstr "Værket er licenseret under en <_:link-1/>."
 
 #. (itstool) path: info/desc
 #: C/playing.page:6
@@ -201,76 +202,88 @@ msgstr "Tag et spil <app>Hitori</app>."
 #. (itstool) path: page/title
 #: C/playing.page:8
 msgid "Playing a Game"
-msgstr "Et spil"
+msgstr "Sådan spilles der"
 
 #. (itstool) path: page/p
 #: C/playing.page:10
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">New Game</gui></guiseq>. If you are already playing a "
-"game, <app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"For at starte et nyt spil vælges <guiseq><gui style=\"menu\">Spil</gui><gui "
-"style=\"menuitem\">Nyt spil</gui></guiseq>. Hvis du allerede er i gang med "
-"et spil, vil <app>Hitori</app> spørge, om du ønsker at stoppe det aktuelle "
-"spil."
+"For at starte et nyt spil trykkes på menuknappen i øverste højre hjørne af "
+"vinduet og der vælges <gui style=\"menuitem\">Nyt spil</gui>. Hvis du "
+"allerede er i gang med et spil, spørger <app>Hitori</app>, om du vil stoppe "
+"det nuværende spil."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
 "will end and the board may no longer be manipulated."
 msgstr ""
-"Klik på en celle for at markere den, fjern markeringen ved at klikke igen. "
-"Når dine markerede celler ikke bryder nogen af de tre regler vil spillet "
-"slutte, og brættet kan ikke længeres manipuleres."
+"Klik på en celle for at male den. Klik på den igen for at fjerne malingen. "
+"Når cellerne er malet, så ingen af de tre regler brydes, så slutter spillet, "
+"og brættet kan ikke længere ændres."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
-"<app>Hitori</app> giver dig mulighed for at fremhæve celler, når du forsøger "
-"at løse et bræt. Dette kan gøres ved at holde <key>Ctrl</key> eller "
-"<key>Skift</key> nede og klikke på en celle. De to metoder fremhæver "
-"cellerne på forskellig måde, og den enkelte celle kan fremhæves på begge "
-"måder. Du kan fjerne fremhævelsen på cellerne igen ved at klikke på dem "
-"igen, mens du holder enten <key>Ctrl</key> eller <key>Skift</key> nede."
+"<app>Hitori</app> giver dig også mulighed for at tilføje mærkat på cellerne for at "
+"hjælpe dig med at løse et bræt. Det kan gøres ved at holde <key>Ctrl</key> "
+"eller <key>Skift</key> nede og klikke på en celle. De sætter forskellige mærkater på "
+"cellerne, og cellerne kan få tilføjet mærkat på begge måder på samme "
+"tid. Celler som har fået tilføjet mærkat på kan få fjernet deres mærkat ved at klikke på dem "
+"igen, mens enten <key>Ctrl</key> eller <key>Skift</key> holdes nede."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Fortryd"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Omgør"
 
 #. (itstool) path: page/p
-#: C/playing.page:18
+#: C/playing.page:19
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui "
-"style=\"menu\">Game</gui><gui style=\"menuitem\">Redo</gui></guiseq>. You "
-"may undo or redo as many moves as you like without restriction."
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
 msgstr ""
-"For at fortryde eller omgøre et træk vælges <guiseq><gui "
-"style=\"menu\">Spil</gui><gui style=\"menuitem\">Fortryd</gui></guiseq> "
-"eller <guiseq><gui style=\"menu\">Spil</gui><gui "
-"style=\"menuitem\">Omgør</gui></guiseq>. Du kan fortryde eller omgøre så "
-"mange træk, du ønsker, uden begrænsning."
+"For at fortryde eller omgøre et træk trykkes på <gui "
+"style=\"button\"><_:media-1/></gui> eller <gui "
+"style=\"button\"><_:media-2/></gui> i hovedlinjen. Du kan fortryde "
+"eller omgøre så mange træk, du ønsker, uden begrænsning."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Tip"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:23
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui "
-"style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell "
-"will be highlighted with a flashing red outline. This shows that the current "
-"status of the cell (painted or unpainted) is incorrect, and should be "
-"changed for the game to be won."
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"For at se fif til hvilke celler, der skal markeres, vælges <guiseq><gui "
-"style=\"menu\">Spil</gui><gui style=\"menuitem\">Fif</gui></guiseq>. En "
-"celle vil blive fremhævet med et blinkende rødt omrids. Dette viser, at den "
-"aktuelle status på cellen (markeret eller umarkeret) er forkert, og bør "
-"ændres for at du kan vinde spillet."
+"For at få et tip til hvilke celler, der skal overmales, trykkes på <gui "
+"style=\"button\"><_:media-1/></gui> i hovedlinjen. En celle indikeres med "
+"et blinkende rødt omrids. Det viser, at cellens nuværende status (malet "
+"eller umalet) er forkert, og bør ændres for kunne vinde spillet."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -286,57 +299,55 @@ msgstr "Spilstrategier"
 #: C/strategy.page:10
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
-"work out which cells to paint out. One strategy is to use "
-"<key>Shift</key>-clicking to highlight all the repeated numbers in each "
-"<em>column</em>, then use <key>Ctrl</key>-clicking to highlight all the "
-"repeated numbers in each <em>row</em>."
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
 "Hitori ligner på mange måder Sudoku, da det kræver logisk omtanke at finde "
-"ud af hvilke celler, der skal markeres. Én strategi er at bruge "
-"<key>Skift</key>-klik til at fremhæve alle gentagne tal i hver "
-"<em>kolonne</em>, og så bruge <key>Ctrl</key>-klik til at fremhæve alle "
-"gentagne tal i hver <em>række</em>."
+"ud af hvilke celler, der skal overmales. Én strategi er at bruge "
+"<key>Skift</key>-klik for at tilføje mærkat på alle de tal som gentages i hver "
+"<em>kolonne</em>, og så bruge <key>Ctrl</key>-klik for at tilføje mærkat på alle de "
+"tal som gentages i hver <em>række</em>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Når dette er gjort på hele brættet, er de celler, der er blevet markeret på "
-"begge måder, gode kandidater til markering – men ikke altid. Når en celle "
-"markeres, og de andre celler med samme tal i den samme række eller kolonne "
-"afmarkeres, er det en god måde at holde styr på hvilke celler, der fortsat "
-"bryder <link xref=\"game\">Hitoris regel 1</link>."
+"Når det er gjort på hele brættet, så er de celler, der har fået tilføjet mærkat på begge måder, "
+"gode kandidater til at blive malet – dog ikke altid. Når en "
+"celle males, så kan du fjerne mærkaterne på de andre celler som har "
+"det samme tal i den samme række eller kolonne. Det er en god måde til at "
+"holde styr på hvilke celler, der stadigvæk bryder <link xref=\"game\">Hitoris "
+"regel nummer 1</link>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
 msgstr ""
-"Husk at Hitoris regel 2 betyder, at to tilstødende celler ikke begge kan "
-"markeres. <app>Hitori</app> fremhæver celler, der bryder regel 2, med rødt. "
-"På samme måde vil grupper af celler, der bryder regel 3 ved at adskille en "
-"eller flere umarkerede celler fra de andre umarkerede celler, blive "
-"fremhævet med rødt."
+"Husk altid på at Hitoris regel nummer 2 betyder, at du ikke kan male to "
+"celler som er ved siden af hinanden. <app>Hitori</app> fremhæver celler, der "
+"bryder regel nummer 2, med rødt. På samme måde fremhæves grupper af celler, "
+"der bryder regel nummer 3 ved at adskille en eller flere umalede celler fra "
+"de andre umalede celler, med rødt."
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui "
-"style=\"menu\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq> for "
-"<app>Hitori</app> to flag a cell which should be painted or unpainted to "
-"move closer to a solution."
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Hvis du ikke kan komme videre, så vælg <guiseq><gui "
-"style=\"menu\">Spil</gui><gui style=\"menuitem\">Fif</gui></guiseq> for at "
-"få <app>Hitori</app> til at vise en celle, der skal markeres eller "
-"afmarkeres, for at komme tættere på en løsning."
-
+"Hvis du ikke kan komme videre, så tryk på <gui style=\"button\">Tip</gui> i "
+"hovedlinjen for at få <app>Hitori</app> til at indikere en celle, der "
+"skal males eller have fjernet malingen, for at komme tættere på en løsning."
