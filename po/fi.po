@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-08-17 16:36+0300\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-23 10:09+0300\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos+l10n@iki.fi>\n"
 "Language-Team: suomi <gnome-fi-laatu@lists.sourceforge.net>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -66,8 +66,8 @@ msgstr "Aloita uusi peli"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Korosta solu"
+msgid "Tag a cell"
+msgstr "Merkitse solu"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -99,6 +99,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Lopeta"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Avaa tai sulje valikko"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Uusi peli"
@@ -128,7 +133,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -152,7 +156,7 @@ msgstr "Kumoa viimeisin siirto"
 msgid "Redo a move"
 msgstr "Tee uudelleen siirto"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Pyydä vihje seuraavaa siirtoa varten"
 
