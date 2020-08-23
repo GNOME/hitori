@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-06-22 18:18+0200\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-23 21:13+0200\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "Language: hr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -66,8 +66,8 @@ msgstr "Pokreni novu igru"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Istakni ćeliju"
+msgid "Tag a cell"
+msgstr "Označi ćeliju"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -98,6 +98,11 @@ msgstr "Prikaži prečace tipkovnice"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Zatvori"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Uklj/Isklj izbornik"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -151,7 +156,7 @@ msgstr "Poništi posljednji potez"
 msgid "Redo a move"
 msgstr "Ponovi posljednji potez"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Dobijte savjet za svoj sljedeći potez"
 
