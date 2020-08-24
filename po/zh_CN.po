@@ -6,19 +6,18 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: GNOME\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-01-09 00:13+0800\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2020-08-12 23:02+0000\n"
+"PO-Revision-Date: 2020-08-24 17:08-0400\n"
 "Last-Translator: Mandy Wang <wangmychn@gmail.com>\n"
 "Language-Team: Chinese/Simplified <i18n-translation@lists.linux.net.cn>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -27,13 +26,10 @@ msgstr "Hitori"
 msgid "Play the Hitori puzzle game"
 msgstr "玩 Hitori 益智游戏"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;解谜;游戏;逻辑;网格;"
-
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.appdata.xml.in:9
@@ -56,59 +52,108 @@ msgstr ""
 "个游戏还支持多种面板尺寸，你也可以在每一格里做一些方便解决问题的标注。如果你"
 "一时无法解决，游戏还可以给你一些提示。"
 
-#: data/hitori-menus.ui:8 src/main.c:305
-msgid "_New Game"
-msgstr "新游戏(_N)"
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "The GNOME Project"
+msgstr "GNOME 项目"
 
-#: data/hitori-menus.ui:12
-msgid "Board _Size"
-msgstr "面板大小(_S)"
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "开始新游戏"
 
-#: data/hitori-menus.ui:16
-msgid "5×5"
-msgstr "5×5"
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Tag a cell"
+msgstr "标记单元格"
 
-#: data/hitori-menus.ui:21
-msgid "6×6"
-msgstr "6×6"
-
-#: data/hitori-menus.ui:26
-msgid "7×7"
-msgstr "7×7"
-
-#: data/hitori-menus.ui:31
-msgid "8×8"
-msgstr "8×8"
-
-#: data/hitori-menus.ui:36
-msgid "9×9"
-msgstr "9×9"
-
-#: data/hitori-menus.ui:41
-msgid "10×10"
-msgstr "10×10"
-
-#: data/hitori-menus.ui:50
-msgid "_Help"
-msgstr "帮助(_H)"
-
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "关于(_A)"
-
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "退出(_Q)"
-
-#: data/hitori.ui:29
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
 msgid "Undo your last move"
-msgstr "撤销你前一次的移动"
+msgstr "撤消最后一步"
 
-#: data/hitori.ui:51
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "重做移动"
 
-#: data/hitori.ui:75
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "获得一次游戏提示"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "显示帮助"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "显示键盘快捷键"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "退出"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "切换菜单"
+
+#: data/hitori.ui:9 src/main.c:350
+msgid "_New Game"
+msgstr "新游戏(_N)"
+
+#: data/hitori.ui:12
+msgid "Board _Size"
+msgstr "面板大小(_S)"
+
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
+
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
+
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
+
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
+
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
+
+#: data/hitori.ui:41
+msgid "_10×10"
+msgstr "_10×10"
+
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "键盘快捷键(_K)"
+
+#: data/hitori.ui:54
+msgid "_Help"
+msgstr "帮助(_H)"
+
+#: data/hitori.ui:58
+msgid "_About Hitori"
+msgstr "关于 Hitori(_A)"
+
+#: data/hitori.ui:84
+msgid "Undo your last move"
+msgstr "撤销你前一次的移动"
+
+#: data/hitori.ui:105
+msgid "Redo a move"
+msgstr "重做移动"
+
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "获得一次游戏提示"
 
@@ -120,61 +165,175 @@ msgstr "面板大小"
 msgid "The size of the board, in cells."
 msgstr "面板大小，也就是格数。"
 
-#: src/interface.c:649
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "窗口最大化状态"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "窗口是否已最大化。"
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "窗口位置"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "窗口位置（水平和竖直）。"
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "窗口大小"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "窗口大小（宽度与高度）。"
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:194
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:195
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:196
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:197
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:198
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:199
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:200
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:722
 msgid "The help contents could not be displayed"
 msgstr "帮助内容无法显示"
 
-#: src/interface.c:673
+#: src/interface.c:746
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:747
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "原先由 Nikoli 所作的一个逻辑益智游戏"
 
-#: src/interface.c:676
+#: src/interface.c:749
 msgid "translator-credits"
 msgstr ""
 "Zhang Miao <mymzhang@gmail.com>, 2009.\n"
-"Tong Hui <tonghuix@gmail.com>, 2014."
+"Tong Hui <tonghuix@gmail.com>, 2014.\n"
+"Weiyi Xu <xuweiyi0923@gmail.com>, 2020."
 
-#: src/interface.c:680
+#: src/interface.c:753
 msgid "Hitori Website"
 msgstr "Hitori 网站"
 
-#: src/main.c:209
+#: src/main.c:254
 msgid "Enable debug mode"
 msgstr "启用调试模式"
 
-#: src/main.c:211
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "设置面板生成所用的种子"
 
-#: src/main.c:225
+#. Options
+#: src/main.c:270
 msgid "- Play a game of Hitori"
 msgstr "- 进行一次 Hitori 游戏"
 
-#: src/main.c:235
+#. Print an error
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
 msgstr "命令行选项无法被解析：%s\n"
 
-#: src/main.c:301
+#: src/main.c:346
 msgid "Do you want to stop the current game?"
 msgstr "您要停止当前游戏么？"
 
-#: src/main.c:304
+#: src/main.c:349
 msgid "Keep _Playing"
 msgstr "继续(_P)"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "你在 %02u:%02u 时间内赢得比赛！ "
+msgstr "你在 %02u:%02u 时间内赢得比赛！"
+
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "退出(_Q)"
 
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "再玩一遍(_P)"
+
+#~ msgid "org.gnome.Hitori"
+#~ msgstr "org.gnome.Hitori"
+
+#~ msgid "5×5"
+#~ msgstr "5×5"
+
+#~ msgid "6×6"
+#~ msgstr "6×6"
+
+#~ msgid "7×7"
+#~ msgstr "7×7"
+
+#~ msgid "8×8"
+#~ msgstr "8×8"
+
+#~ msgid "9×9"
+#~ msgstr "9×9"
+
+#~ msgid "_About"
+#~ msgstr "关于(_A)"
 
 #~ msgid "UI file “%s” could not be loaded"
 #~ msgstr "UI 文件“%s”无法载入"
