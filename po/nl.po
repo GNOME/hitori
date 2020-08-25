@@ -1,15 +1,15 @@
 # Dutch translation for hitori.
 # Copyright (C) 2015 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
-# Nathan Follens <nthn@unseen.is>, 2015, 2017, 2019.
+# Nathan Follens <nthn@unseen.is>, 2015, 2017, 2019-2020.
 # Justin van Steijn <jvs@fsfe.org>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-06-18 10:15+0200\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-25 14:46+0200\n"
 "Last-Translator: Nathan Follens <nthn@unseen.is>\n"
 "Language-Team: Dutch <gnome-nl-list@gnome.org>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -67,8 +67,8 @@ msgstr "Een nieuw spel beginnen"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Een cel markeren"
+msgid "Tag a cell"
+msgstr "Een cel labelen"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -99,6 +99,11 @@ msgstr "Sneltoetsen tonen"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Afsluiten"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Menu in-/uitschakelen"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -152,7 +157,7 @@ msgstr "Maak je laatste zet ongedaan"
 msgid "Redo a move"
 msgstr "Doe een zet opnieuw"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Krijg een hint voor je volgende zet"
 
