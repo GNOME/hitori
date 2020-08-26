@@ -10,16 +10,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-07-22 01:17-0300\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-08-26 09:20-0300\n"
+"Last-Translator: Enrico Nicoletto <liverig@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
-"X-Generator: Gtranslator 3.32.0\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Project-Style: gnome\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -70,23 +70,20 @@ msgstr "Inicia um novo jogo"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Destaca uma célula"
+msgid "Tag a cell"
+msgstr "Rotular uma célula"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Desfaz seu último movimento"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Refaz um movimento"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "Obtém uma dica para seu próximo movimento"
@@ -102,10 +99,14 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Mostra os atalhos de teclado"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Sai"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Alterar menu"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -136,7 +137,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -160,7 +160,7 @@ msgstr "Desfaz seu último movimento"
 msgid "Redo a move"
 msgstr "Refaz um movimento"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Obtém uma dica para seu próximo movimento"
 
