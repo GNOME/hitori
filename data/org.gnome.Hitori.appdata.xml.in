@@ -47,6 +47,13 @@
   </kudos>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="3.37.1" date="2020-09-03" type="development">
+      <description>
+        <ul>
+          <li>Translation updates.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.37.0" date="2020-08-19" type="development">
       <description>
         <ul>
