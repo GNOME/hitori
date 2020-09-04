@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
 "POT-Creation-Date: 2020-08-22 15:40+0000\n"
-"PO-Revision-Date: 2020-08-23 23:30+0900\n"
+"PO-Revision-Date: 2020-09-04 23:00+0900\n"
 "Last-Translator: sicklylife <translation@sicklylife.jp>\n"
 "Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
 "Language: ja\n"
@@ -25,7 +25,7 @@ msgstr "Hitori"
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "“ひとりにしてくれ”をプレイします"
+msgstr "Hitori (ひとりにしてくれ) をプレイします"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
@@ -283,7 +283,7 @@ msgstr "盤面生成のシード値を設定する"
 #. Options
 #: src/main.c:270
 msgid "- Play a game of Hitori"
-msgstr "- “ひとりにしてくれ”をプレイします"
+msgstr "- Hitori (ひとりにしてくれ) をプレイします"
 
 #. Print an error
 #: src/main.c:280
