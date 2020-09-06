@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-11-27 14:54+0000\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
 "PO-Revision-Date: 2020-01-05 14:01+0200\n"
 "Last-Translator: scootergrisen\n"
 "Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
@@ -52,7 +52,7 @@ msgstr ""
 "Du spiller mod uret, mens du forsøger at eliminere alle de ens tal i hver "
 "række og kolonne på hurtigst mulig tid. Der understøttes flere "
 "brætstørrelser, og du kan placere markører på cellerne for at hjælpe med at "
-"finde løsningen. Hvis du sidder fast, kan du få fif."
+"finde løsningen. Hvis du sidder fast, kan du få et tip."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
 msgid "The GNOME Project"
@@ -64,9 +64,11 @@ msgid "Start a new game"
 msgstr "Start et nyt spil"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Fremhæv en celle"
+msgid "Tag a cell"
+msgstr "Tilføj mærkat på en celle"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -81,7 +83,7 @@ msgstr "Omgør et træk"
 #: data/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
-msgstr "Få et fif til dit næste træk"
+msgstr "Få et tip til dit næste træk"
 
 #: data/help-overlay.ui:51
 msgctxt "shortcut window"
@@ -97,6 +99,11 @@ msgstr "Vis tastaturgenveje"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Afslut"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Menu til/fra"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -150,9 +157,9 @@ msgstr "Fortryd dit sidste træk"
 msgid "Redo a move"
 msgstr "Omgør et træk"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
-msgstr "Få et fif til dit næste træk"
+msgstr "Få et tip til dit næste træk"
 
 #: data/org.gnome.hitori.gschema.xml:6
 msgid "Board size"
@@ -312,4 +319,4 @@ msgstr "_Afslut"
 
 #: src/rules.c:273
 msgid "_Play Again"
-msgstr "_Nyt spil"
+msgstr "_Spil igen"
