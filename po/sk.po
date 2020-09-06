@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-09-29 13:41+0000\n"
-"PO-Revision-Date: 2020-01-27 11:39+0100\n"
+"POT-Creation-Date: 2020-07-03 15:34+0000\n"
+"PO-Revision-Date: 2020-09-06 17:42+0200\n"
 "Last-Translator: Dušan Kazik <prescott66@gmail.com>\n"
 "Language-Team: Slovak <gnome-sk-list@gnome.org>\n"
 "Language: sk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 1 : (n>=2 && n<=4) ? 2 : 0;\n"
-"X-Generator: Poedit 2.2.4\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -65,8 +65,8 @@ msgstr "Spustenie novej hry"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Zvýraznenie bunky"
+msgid "Tag a cell"
+msgstr "Označenie bunky"
 
 # tooltip
 #: data/help-overlay.ui:30
@@ -100,6 +100,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Ukončenie"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Prepnutie ponuky"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Nová hra"
@@ -129,7 +134,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -155,7 +159,7 @@ msgstr "Vráti váš posledný ťah"
 msgid "Redo a move"
 msgstr "Zopakuje ťah"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Poskytne radu pre váš ďalší ťah"
 
