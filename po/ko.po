@@ -5,14 +5,14 @@
 #
 # Changwoo Ryu <cwryu@debian.org>, 2014-2015.
 # Junyoul Lim <purum@postech.ac.kr>, 2017.
-# Seong-ho Cho <shcho@gnome.org>, 2019.
+# Seong-ho Cho <shcho@gnome.org>, 2019-2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-09-02 09:58+0900\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-09-07 21:08+0900\n"
 "Last-Translator: Seong-ho Cho <shcho@gnome.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
 "Language: ko\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.3.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -68,8 +68,8 @@ msgstr "새 게임 시작"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "칸 강조 표시"
+msgid "Tag a cell"
+msgstr "칸 태깅"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -101,6 +101,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "끝내기"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "메뉴 전환"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "새 게임(_N)"
@@ -130,7 +135,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -154,7 +158,7 @@ msgstr "마지막 움직임을 취소합니다"
 msgid "Redo a move"
 msgstr "움직임을 다시 실행합니다"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "다음 움직임에 대한 힌트를 봅니다"
 
@@ -315,4 +319,3 @@ msgstr "끝내기(_Q)"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "다시 플레이(_P)"
-
