@@ -1,27 +1,27 @@
 # Daniel Nylander <po@danielnylander.se>, 2009.
-# Erik Sköldås <erik.skoldas@tele2.se>, 2015.
+# Erik Sköldås <erik.skoldas@tele2.se>, 2015, 2020.
 # Anders Jonsson <anders.jonsson@norsjovallen.se>, 2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori-Doc\n"
-"POT-Creation-Date: 2019-03-12 13:56+0000\n"
-"PO-Revision-Date: 2019-03-15 16:59+0100\n"
-"Last-Translator: Anders Jonsson <anders.jonsson@norsjovallen.se>\n"
+"POT-Creation-Date: 2020-07-29 12:49+0000\n"
+"PO-Revision-Date: 2020-09-08 19:45+0200\n"
+"Last-Translator: Erik Sköldås <erik.skoldas@tele2.se>\n"
 "Language-Team: Swedish <tp-sv@listor.tp-sv.se>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Daniel Nylander <po@danielnylander.se>, 2009\n"
-"Erik Sköldås <erik.skoldas@tele2.se>, 2015\n"
+"Erik Sköldås <erik.skoldas@tele2.se>, 2015, 2020\n"
 "\n"
 "Skicka synpunkter på översättningen till\n"
 "<tp-sv@listor.tp-sv.se>"
@@ -48,15 +48,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/customization.page:11
 msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you’re in the middle "
-"of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"För att ändra brädstorleken, välj ett alternativ från <guiseq><gui style="
-"\"menu\">Spel</gui><gui style=\"menuitem\">Brädstorlek</gui></guiseq>. "
-"<app>Hitori</app> kommer att fråga om du vill avbryta det pågående spelet, "
-"för att sedan starta ett nytt spel med den begärda brädstorleken."
+"För att ändra brädstorleken, klicka på menyknappen i fönstrets övre högra "
+"hörn och välj ett av alternativen från <gui style=\"menuitem\">Brädstorlek</"
+"gui>. <app>Hitori</app> kommer att fråga om du vill avbryta det pågående "
+"spelet, om du är mitt i ett spel, för att sedan starta ett nytt spel med den "
+"begärda brädstorleken."
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -131,10 +133,6 @@ msgstr "Huvudfönster för <app>Hitori</app>"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/game.page:22
-#| msgctxt "_"
-#| msgid ""
-#| "external ref='figures/hitori_main_window.png' "
-#| "md5='6045ae3f9fb0fdcd0bad11bdd666d461'"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
@@ -149,17 +147,17 @@ msgid "<app>Hitori</app> main window."
 msgstr "Huvudfönster för <app>Hitori</app>."
 
 #. (itstool) path: credit/name
-#: C/index.page:7
+#: C/index.page:8
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:9
+#: C/index.page:10
 msgid "2008–2010, 2019"
 msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:12
+#: C/index.page:13
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -170,17 +168,17 @@ msgstr ""
 "DelaLika 3.0 Unported</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:16
+#: C/index.page:17
 msgid "Hitori Help"
 msgstr "Hjälp för Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:19
+#: C/index.page:20
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Grundläggande idé &amp; användning"
 
 #. (itstool) path: section/title
-#: C/index.page:23
+#: C/index.page:24
 msgid "Tips &amp; Tricks"
 msgstr "Tips &amp; tricks"
 
@@ -207,17 +205,18 @@ msgstr "Spela ett spel"
 #. (itstool) path: page/p
 #: C/playing.page:10
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
-"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
-"<app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"För att starta ett nytt spel, välj <guiseq><gui style=\"menu\">Spel</"
-"gui><gui style=\"menuitem\">Nytt spel</gui></guiseq>. Om du redan spelar ett "
-"spel, kommer <app>Hitori</app> att fråga om du vill avbryta det pågående "
+"För att starta ett nytt spel, klicka på menyknappen i fönstrets övre högra "
+"hörn och välj <gui style=\"menuitem\">Nytt spel</gui>. Om du redan spelar "
+"ett spel kommer <app>Hitori</app> att fråga om du vill avbryta det pågående "
 "spelet."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -228,45 +227,62 @@ msgstr ""
 "reglerna bryts, är spelet slut och brädet kan inte längre manipuleras."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
-"<app>Hitori</app> låter dig också markera celler för egen referens när du "
+"<app>Hitori</app> låter dig också tagga celler för egen referens när du "
 "löser pusslet. Detta kan åstadkommas genom att trycka <key>Ctrl</key> eller "
-"<key>Skift</key> och klicka på en cell. De markerar celler på olika sätt, "
-"celler kan markeras på båda sätt samtidigt. Markerade celler kan avmarkeras "
-"genom att klicka på dem igen samtidigt som du trycker antingen <key>Ctrl</"
-"key> eller <key>Shift</key> återigen."
+"<key>Skift</key> och klicka på en cell. De taggar båda cellen på olika sätt, "
+"och cellen kan markeras på båda sätten samtidigt. Taggade celler kan "
+"avtaggas genom att klicka på dem igen samtidigt som du återigen håller ned "
+"<key>Ctrl</key> eller <key>Skift</key>."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Ångra"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Gör om"
 
 #. (itstool) path: page/p
-#: C/playing.page:18
+#: C/playing.page:19
 msgid ""
-"To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
-"style=\"button\">Redo</gui> from the toolbar. You may undo or redo as many "
-"moves as you like without restriction."
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
 msgstr ""
-"För att ångra eller göra om ett drag, välj <gui style=\"button\">Ångra</gui> "
-"eller <gui style=\"button\">Gör om</gui> från verktygsfältet. Du kan ångra "
-"eller göra om så många drag som du vill utan begränsningar."
+"För att ångra eller göra om ett drag, klicka på <gui style=\"button\"><_:"
+"media-1/></gui> eller <gui style=\"button\"><_:media-2/></gui> i "
+"rubrikraden. Du kan ångra eller göra om så många drag som du vill utan "
+"begränsningar."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Tips"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:23
 msgid ""
-"To get a hint on which cells to paint out, choose <gui style=\"button"
-"\">Hint</gui> from the toolbar. A cell will be highlighted with a flashing "
-"red outline. This shows that the current status of the cell (painted or "
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
 "unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"För att få ett tips om vilken cell man kan tona ner, välj <gui style=\"button"
-"\">Tips</gui> i verktygsfältet. En cell kommer att markeras med blinkande "
-"röd kontur. Detta visar att den aktuella statusen för cellen (nedtonad eller "
-"icke-nedtonad) är felaktig, och bör ändras för att pusslet ska gå ut."
+"För att få ett tips om vilken cell man kan tona ner, klicka på <gui style="
+"\"button\"><_:media-1/></gui> i rubrikraden. En cell kommer att markeras med "
+"blinkande röd kontur. Detta visar att den aktuella statusen för cellen "
+"(nedtonad eller icke-nedtonad) är felaktig, och bör ändras för att pusslet "
+"ska gå ut."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -283,30 +299,30 @@ msgstr "Spelstrategier"
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
 "Hitori är ganska likt spelet Sudoku, genom att det krävs logisk slutledning "
-"för att räkna ut vilka celler att tona ner. En strategi är att använda "
-"<key>Skift</key>-klickning för att markera alla de upprepade siffrorna i "
-"varje <em>kolumn</em>, och sedan använda <key>Ctrl</key>-klickning för att "
-"markera alla de upprepade siffrorna i varje <em>rad</em>."
+"för att räkna ut vilka celler att tona ner. En strategi är att <key>Skift</"
+"key>-klicka för att tagga alla upprepade siffror i varje <em>kolumn</em> och "
+"sedan <key>Ctrl</key>-klicka för att tagga alla upprepade siffror i varje "
+"<em>rad</em>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"När detta är gjort för hela brädet, är de celler som har blivit markerade i "
+"När detta är gjort för hela brädet, är de celler som har blivit taggade i "
 "båda riktningarna goda kandidater för att tonas ned, men inte alltid. När "
-"man tonar ned en cell, avmarkeras de andra cellerna med samma nummer i samma "
-"rad och kolumn som den cellen, vilket är ett bra sätt att hålla reda på de "
-"celler som fortfarande bryter mot <link xref=\"game\">regel 1 i Hitori</"
+"man tonar ned en cell, är att ta bort taggarna från cellerna med samma "
+"nummer i samma rad och kolumn som den cellen ett bra sätt att hålla reda på "
+"de celler som fortfarande bryter mot <link xref=\"game\">regel 1 i Hitori</"
 "link>."
 
 #. (itstool) path: page/p
@@ -327,10 +343,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <gui style=\"button\">Hint</gui> from "
-"the toolbar for <app>Hitori</app> to flag a cell which should be painted or "
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
 "unpainted to move closer to a solution."
 msgstr ""
-"Om du fastnar på något ställe, välj <gui style=\"button\">Tips</gui> från "
-"verktygsfältet för att <app>Hitori</app> ska flagga en cell som ska tonas "
-"ned eller där en nedtoning behöver tas bort för att komma närmare en lösning."
+"Om du fastnar på något ställe, klicka på <gui style=\"button\">Tips</gui> i "
+"rubrikraden för att <app>Hitori</app> ska visa en cell som ska tonas ned "
+"eller där en nedtoning behöver tas bort för att komma närmare en lösning."
