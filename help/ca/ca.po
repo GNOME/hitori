@@ -1,0 +1,349 @@
+# Catalan translation for hitori.
+# Copyright (C) 2020 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Miniàngel <miquel.angel.burgos@gmail.com>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori master\n"
+"POT-Creation-Date: 2020-09-07 19:00+0000\n"
+"PO-Revision-Date: 2020-09-08 15:06+0200\n"
+"Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ca\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
+"com>\n"
+"X-Generator: Poedit 2.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail.com>, 2020"
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Canvieu l'aparença i la mecànica del joc."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Personalització del joc"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"El joc pot personalitzar-se canviant la mida del tauler —es permeten taulers "
+"entre 5x5 i 10x10 caselles."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
+msgstr ""
+"Per a canviar la mida del tauler, premeu el botó de menú de la cantonada "
+"superior dreta de la finestra i seleccioneu una opció a <gui style=\"menuitem"
+"\">Mida del tauler</gui>. L'<app>Hitori</app> us preguntarà si voleu aturar "
+"la partida actual si n'esteu jugant una i iniciarà una nova partida amb la "
+"mida de tauler sol·licitada."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Introducció al joc de l'Hitori."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "El joc de l'Hitori"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"L'Hitori és un petit trencaclosques lògic similar al Sudoku, més popular. Al "
+"joc, el jugador comença amb un tauler quadrat amb nombres i ha de "
+"<em>pintar</em> les caselles fins que no hi hagi cap nombre duplicat a cada "
+"fila i columna. Les regles són les següents:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Només n'hi ha d'haver un de cada nombre a les caselles sense pintar de cada "
+"fila i columna."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Cap casella pintada no pot ser adjacent a una altra, verticalment o "
+"horitzontal."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Totes les cel·les sense pintar s'han d'unir verticalment i horitzontal en un "
+"grup."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Aquestes són les tres úniques regles del joc, i, per tant, poden haver-hi "
+"múltiples solucions per a un tauler del trencaclosques Hitori."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Finestra principal del joc"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Finestra principal de l'<app>Hitori</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Finestra principal de l'<app>Hitori</app>."
+
+#. (itstool) path: credit/name
+#: C/index.page:8
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:10
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
+
+#. (itstool) path: license/p
+#: C/index.page:13
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Aquest treball està llicenciat sota un <link href=\"http://creativecommons."
+"org/licenses/by-sa/3.0/\">Reconeixement-CompartirIgual 3.0 No adaptada (CC "
+"BY-SA 3.0)</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:17
+msgid "Hitori Help"
+msgstr "Ajuda de l'Hitori"
+
+#. (itstool) path: section/title
+#: C/index.page:20
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Instruccions del joc i normes"
+
+#. (itstool) path: section/title
+#: C/index.page:24
+msgid "Tips &amp; Tricks"
+msgstr "Consells i trucs"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Reconeixement-CompartirIgual 3.0 No adaptada (CC BY-SA 3.0)"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Aquesta obra està llicenciada sota una <_:link-1>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Jugueu una partida a l'<app>Hitori</app>."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Jugar una partida"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
+msgstr ""
+"Per a començar una partida nova, premeu el botó de menú de la cantonada "
+"superior dreta de la finestra i seleccioneu <gui style=\"menuitem\">Joc nou</"
+"gui>. Si ja esteu jugant una partida, l'<app>Hitori</app> us demanarà si "
+"voleu aturar-la."
+
+#. (itstool) path: page/p
+#: C/playing.page:13
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Per a pintar una casella, feu-hi clic; per a restablir-la, feu-hi clic de "
+"nou. Quan es pintin les caselles de manera que no es trenqui cap de les tres "
+"regles, la partida s'acabarà i el tauler no podrà manipular-se més."
+
+#. (itstool) path: page/p
+#: C/playing.page:15
+msgid ""
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
+msgstr ""
+"L'<app>Hitori</app> també us permet d'etiquetar caselles com a referència "
+"per a resoldre un tauler. Això es pot fer prement <key>Ctrl</key> o "
+"<key>Shift</key> i fent clic en una casella alhora. Cada combinació etiqueta "
+"de manera diferent i les caselles es poden etiquetar de les dues maneres "
+"alhora. Les caselles etiquetades poden restablir-se fent-hi clic de nou "
+"mentre es prem <key>Ctrl</key> o <key>Shift</key>."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Desfer"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Refer"
+
+#. (itstool) path: page/p
+#: C/playing.page:19
+msgid ""
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
+msgstr ""
+"Per a desfer o refer un moviment, premeu <gui style=\"button\"><_:media-1/></"
+"gui> o <gui style=\"button\"><_:media-2/></gui> a la barra de capçalera. "
+"Podeu desfer o refer tants moviments com vulgueu, sense cap mena de "
+"restricció."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Consell"
+
+#. (itstool) path: page/p
+#: C/playing.page:23
+msgid ""
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
+msgstr ""
+"Per a obtenir un consell sobre quines caselles pintar, premeu <gui style="
+"\"button\"><_:media-1/></gui> a la barra de capçalera. Una casella es "
+"mostrarà amb un contorn vermell parpellejant. Això significa que l'estat "
+"actual de la casella (pintada o no) és incorrecte i s'ha de canviar per a "
+"guanyar la partida."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Estratègies per a jugar a l'Hitori."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Estratègies del joc"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
+msgstr ""
+"L'Hitori és força semblant al Sudoku, ja que requereix deducció lògica per a "
+"esbrinar quines caselles pintar. Una estratègia és utilitzar la tecla "
+"<key>Shift</key> per a etiquetar tots els nombres repetits de cada "
+"<em>columna</em> i la tecla <key>Ctrl</key> per a etiquetar tots els nombres "
+"repetits de cada <em>fila</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Una vegada fet això pertot el tauler, les caselles etiquetades de les dues "
+"maneres són bones candidates per a pintar-les, encara que no sempre. Quan es "
+"pinta una casella, restablir-ne les altres amb el mateix nombre de la "
+"mateixa fila i columna és una bona manera de fer un seguiment de les cel·les "
+"que encara estan violant <link xref=\"game\">la primera regla de l'Hitori</"
+"link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Tingueu sempre present que la segona regla de l'Hitori significa que dues "
+"caselles adjacents no es poden pintar. L'<app>Hitori</app> ressaltarà en "
+"vermell les caselles que violin la segona regla. De manera similar, els "
+"grups de caselles que violin la tercera regla separant una o més caselles no "
+"pintades de les altres es ressaltaran en vermell."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
+msgstr ""
+"Si us quedeu bloquejat en cap moment, premeu <gui style=\"button\">Obtingueu "
+"un suggeriment per al vostre proper moviment</gui> a la barra de capçalera "
+"perquè l'<app>Hitori</app> indiqui una casella que s'hauria de pintar o "
+"restablir per a apropar-vos a una solució."
