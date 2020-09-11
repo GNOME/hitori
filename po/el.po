@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master.el\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-06-12 18:17+0300\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-09-11 14:16+0300\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@gnome.org>\n"
 "Language-Team: Greek, Modern (1453-) <opensuse-translation-el@opensuse.org>\n"
 "Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 2.3\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
@@ -67,7 +67,7 @@ msgstr "Έναρξη νέου παιχνιδιού"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
+msgid "Tag a cell"
 msgstr "Επισήμανση κελιού"
 
 #: data/help-overlay.ui:30
@@ -100,6 +100,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Έξοδος"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Εναλλαγή μενού"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Νέο παιχνίδι"
@@ -129,7 +134,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -153,7 +157,7 @@ msgstr "Αναίρεση της τελευταίας σας κίνησης"
 msgid "Redo a move"
 msgstr "Επανάληψη κίνησης"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Λήψη υπόδειξης για την επόμενη κίνησή σας"
 
@@ -266,6 +270,7 @@ msgstr ""
 "Ελληνική μεταφραστική ομάδα GNOME\n"
 "Παύλος Tουρνάρης <p.tournaris@gmail.com>\n"
 "Μαρία Μαυρίδου <mavridou@gmail.com>\n"
+"Ευστάθιος Ιωσηφίδης <iosifidis@opensuse.org>\n"
 "\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε την σελίδα\n"
 "http://gnome.gr/"
@@ -281,7 +286,7 @@ msgstr "Ενεργοποίηση κατάστασης αποσφαλμάτωση
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
 #: src/main.c:256
 msgid "Seed the board generation"
-msgstr "Αριθμός seed για τη δημιουργία του πίνακα."
+msgstr "Αριθμός seed για τη δημιουργία του πίνακα"
 
 #. Options
 #: src/main.c:270
