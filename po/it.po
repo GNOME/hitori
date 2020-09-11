@@ -1,15 +1,15 @@
 # Italian translation for hitori.
-# Copyright (C) 2014, 2015, 2017, 2019 The Free Software Foundation, Inc.
+# Copyright (C) 2014, 2015, 2017, 2019, 2020 The Free Software Foundation, Inc.
 # This file is distributed under the same license as the hitori package.
-# Milo Casagrande <milo@milo.name>, 2014, 2015, 2019.
+# Milo Casagrande <milo@milo.name>, 2014, 2015, 2019, 2020.
 # Gianvito Cavasoli <gianvito@gmx.it>, 2017.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-09-13 15:00+0200\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-09-11 14:21+0200\n"
 "Last-Translator: Milo Casagrande <milo@milo.name>\n"
 "Language-Team: Italiano <gnome-it-list@gnome.org>\n"
 "Language: it\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.4.1\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -66,7 +66,7 @@ msgstr "Avvia una nuova partita"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
-msgid "Highlight a cell"
+msgid "Tag a cell"
 msgstr "Evidenzia una cella"
 
 #: data/help-overlay.ui:30
@@ -99,6 +99,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Esce"
 
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Attiva/Disattiva il menù"
+
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
 msgstr "_Nuova partita"
@@ -128,7 +133,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -152,7 +156,7 @@ msgstr "Annulla ultima mossa"
 msgid "Redo a move"
 msgstr "Ripete una mossa"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Mostra un indizio per la tua prossima mossa"
 
