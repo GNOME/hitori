@@ -12,8 +12,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
-"PO-Revision-Date: 2020-08-27 10:15+0200\n"
+"POT-Creation-Date: 2020-08-27 08:22+0000\n"
+"PO-Revision-Date: 2020-09-14 15:14+0200\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -57,8 +57,8 @@ msgstr ""
 "Vous jouez contre la montre, l’objectif étant d’éliminer tous les nombres en "
 "double dans chaque ligne et colonne le plus rapidement possible. Plusieurs "
 "tailles de plateau sont proposées et vous pouvez placer des marqueurs sur "
-"des cellules afin d’aider à trouver une solution. Si vous êtes bloqué, le "
-"jeu peut vous donner un indice."
+"des cases afin d’aider à trouver une solution. Si vous êtes bloqué, le jeu "
+"peut vous donner un indice."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
 msgid "The GNOME Project"
@@ -70,11 +70,9 @@ msgid "Start a new game"
 msgstr "Commencer une nouvelle partie"
 
 #: data/help-overlay.ui:23
-#| msgctxt "shortcut window"
-#| msgid "Highlight a cell"
 msgctxt "shortcut window"
 msgid "Tag a cell"
-msgstr "Baliser une cellule"
+msgstr "Baliser une case"
 
 #: data/help-overlay.ui:30
 msgctxt "shortcut window"
@@ -173,7 +171,7 @@ msgstr "Taille du plateau"
 
 #: data/org.gnome.hitori.gschema.xml:7
 msgid "The size of the board, in cells."
-msgstr "Taille du plateau, en cellules"
+msgstr "Taille du plateau, en cases."
 
 #: data/org.gnome.hitori.gschema.xml:11
 msgid "Window maximized state"
