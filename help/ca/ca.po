@@ -234,10 +234,10 @@ msgid ""
 msgstr ""
 "L'<app>Hitori</app> també us permet d'etiquetar caselles com a referència "
 "per a resoldre un tauler. Això es pot fer prement <key>Ctrl</key> o "
-"<key>Shift</key> i fent clic en una casella alhora. Cada combinació etiqueta "
+"<key>Maj</key> i fent clic en una casella alhora. Cada combinació etiqueta "
 "de manera diferent i les caselles es poden etiquetar de les dues maneres "
 "alhora. Les caselles etiquetades poden restablir-se fent-hi clic de nou "
-"mentre es prem <key>Ctrl</key> o <key>Shift</key>."
+"mentre es prem <key>Ctrl</key> o <key>Maj</key>."
 
 #. (itstool) path: media/span
 #: C/playing.page:19
@@ -301,7 +301,7 @@ msgid ""
 msgstr ""
 "L'Hitori és força semblant al Sudoku, ja que requereix deducció lògica per a "
 "esbrinar quines caselles pintar. Una estratègia és utilitzar la tecla "
-"<key>Shift</key> per a etiquetar tots els nombres repetits de cada "
+"<key>Maj</key> per a etiquetar tots els nombres repetits de cada "
 "<em>columna</em> i la tecla <key>Ctrl</key> per a etiquetar tots els nombres "
 "repetits de cada <em>fila</em>."
 
