@@ -3,21 +3,22 @@
 # This file is distributed under the same license as the Hitori package.
 # Philip Withnall <philip@tecnocode.co.uk>, 2007, 2008, 2010, 2013, 2014.
 # Bruce Cowan <bruce@bcowan.me.uk>, 2019.
+# Zander Brown <zbrown@gnome.org>, 2020.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori VERSION\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2019-05-13 11:46+0000\n"
-"PO-Revision-Date: 2019-08-13 21:46+0100\n"
-"Last-Translator: Bruce Cowan <bruce@bcowan.me.uk>\n"
-"Language-Team: British English <en@li.org>\n"
+"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"PO-Revision-Date: 2020-09-02 00:25+0100\n"
+"Last-Translator: Zander Brown <zbrown@gnome.org>\n"
+"Language-Team: English - United Kingdom <en_GB@li.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Gtranslator 3.32.1\n"
+"X-Generator: Gtranslator 3.36.0\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -65,24 +66,23 @@ msgid "Start a new game"
 msgstr "Start a new game"
 
 #: data/help-overlay.ui:23
+#| msgctxt "shortcut window"
+#| msgid "Highlight a cell"
 msgctxt "shortcut window"
-msgid "Highlight a cell"
-msgstr "Highlight a cell"
+msgid "Tag a cell"
+msgstr "Tag a cell"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "Undo your last move"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "Redo a move"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "Get a hint for your next move"
@@ -98,10 +98,14 @@ msgid "Show Keyboard Shortcuts"
 msgstr "Show Keyboard Shortcuts"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Quit"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Toggle Menu"
 
 #: data/hitori.ui:9 src/main.c:350
 msgid "_New Game"
@@ -132,7 +136,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -145,7 +148,6 @@ msgid "_Help"
 msgstr "_Help"
 
 #: data/hitori.ui:58
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "_About Hitori"
 
@@ -157,7 +159,7 @@ msgstr "Undo your last move"
 msgid "Redo a move"
 msgstr "Redo a move"
 
-#: data/hitori.ui:150
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Get a hint for your next move"
 
@@ -268,7 +270,8 @@ msgstr "A logic puzzle originally designed by Nikoli."
 msgid "translator-credits"
 msgstr ""
 "Philip Withnall <philip@tecnocode.co.uk>\n"
-"Bruce Cowan <bruce@bcowan.me.uk>"
+"Bruce Cowan <bruce@bcowan.me.uk>\n"
+"Zander Brown <zbrown@gnome.org>"
 
 #: src/interface.c:753
 msgid "Hitori Website"
