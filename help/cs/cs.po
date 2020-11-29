@@ -133,7 +133,7 @@ msgid ""
 "md5='7aa0ef330099fdc2b2d9b93b19393033'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
-"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+"md5='87d45985011fb154102fc63cc1e30d9d'"
 
 #. (itstool) path: media/p
 #: C/game.page:23
