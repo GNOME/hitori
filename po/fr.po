@@ -6,14 +6,14 @@
 # Bruno Brouard <annoa.b@gmail.com>, 2009.
 # Gérard Baylard <Geodebay@gmail.com>, 2010.
 # Julien Humbert <julroy67@gmail.com>, 2019.
-# Charles Monzat <charles.monzat@free.fr>, 2018-2020.
+# Charles Monzat <charles.monzat@free.fr>, 2018-2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.HEAD\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-08-27 08:22+0000\n"
-"PO-Revision-Date: 2020-09-14 15:14+0200\n"
+"POT-Creation-Date: 2020-09-14 13:21+0000\n"
+"PO-Revision-Date: 2021-03-07 21:13+0100\n"
 "Last-Translator: Charles Monzat <charles.monzat@free.fr>\n"
 "Language-Team: GNOME French Team <gnomefr@traduc.org>\n"
 "Language: fr\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 3.38.0\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -273,7 +273,7 @@ msgid "translator-credits"
 msgstr ""
 "Laurent Coudeur <laurentc@iol.ie>, 2009\n"
 "Bruno Brouard <annoa.b@gmail.com>, 2009\n"
-"Géode<Géodebay@gmail.com>,2010\n"
+"Géode <Géodebay@gmail.com>, 2010\n"
 "Julien Humbert <julroy67@gmail.com>, 2019\n"
 "Charles Monzat <charles.monzat@free.fr>, 2020"
 
