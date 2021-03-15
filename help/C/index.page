@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="guide" id="index">
 	<info>
+		<title type="link" role="trail">Hitori Help</title>
+		<title type="text">Hitori Help</title>
+		<title type="link">Hitori Help</title>
 		<revision pkgversion="0.2.4" version="0.2" date="2010-07-14" status="final"/>
 		<revision pkgversion="3.31.0" version="0.3" date="2019-02-20" status="final"/>
 		<revision pkgversion="3.36.0" version="0.4" date="2020-03-11" status="final"/>
@@ -14,7 +17,10 @@
 				Alike 3.0 Unported License</link>.</p>
 		</license>
 	</info>
-	<title>Hitori Help</title>
+	<title>
+		<media type="image" width="48px" height="48px" its:translate="no"
+			src="figures/org.gnome.Hitori.svg" /> Hitori Help
+    </title>
 
 	<section id="play" style="2column">
 		<title>Basic Gameplay &amp; Usage</title>

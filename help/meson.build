@@ -3,6 +3,7 @@ help_media = [
   'figures/edit-redo-symbolic.svg',
   'figures/edit-undo-symbolic.svg',
   'figures/hitori_main_window.png',
+  'figures/org.gnome.Hitori.svg',
 ]
 help_files = [
   'customization.page',
