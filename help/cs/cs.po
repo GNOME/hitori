@@ -1,13 +1,13 @@
 # Czech translation for hitori help.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori help.
-# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014, 2019, 2020.
+# Marek Černocký <marek@manet.cz>, 2009, 2011, 2012, 2014, 2019, 2020, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
-"PO-Revision-Date: 2020-08-13 00:45+0200\n"
+"POT-Creation-Date: 2021-03-16 11:31+0000\n"
+"PO-Revision-Date: 2021-03-16 23:34+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: Czech <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -50,9 +50,9 @@ msgid ""
 "you’re in the middle of one, then start a new game with the requested board "
 "size."
 msgstr ""
-"Pokud chcete změnit velikost hrací desky, zmáčkněte tlačítko nabídky v pravém "
-"horním rohu okna a vyberte <gui style=\"menuitem\">Velikost hrací desky"
-"</gui>. V případě, že máte rozehranou hru, dotáže se <app>Hitori</app>, "
+"Pokud chcete změnit velikost hrací desky, zmáčkněte tlačítko nabídky v "
+"pravém horním rohu okna a vyberte <gui style=\"menuitem\">Velikost hrací "
+"desky</gui>. V případě, že máte rozehranou hru, dotáže se <app>Hitori</app>, "
 "jestli ji má ukončit a po té spustí novou hru s požadovanými rozměry hrací "
 "desky."
 
@@ -140,18 +140,36 @@ msgstr ""
 msgid "<app>Hitori</app> main window."
 msgstr "Hlavní okno hry <app>Hitori</app>."
 
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Nápověda ke hře Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Nápověda ke hře Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Nápověda ke hře Hitori"
+
 #. (itstool) path: credit/name
-#: C/index.page:8
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:10
+#: C/index.page:13
 msgid "2008–2010, 2019"
 msgstr "2008 – 2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:13
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -162,17 +180,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:17
-msgid "Hitori Help"
-msgstr "Nápověda ke hře Hitori"
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Nápověda ke hře Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:20
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Základy hraní a použití"
 
 #. (itstool) path: section/title
-#: C/index.page:24
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Tipy a triky"
 
@@ -206,8 +224,8 @@ msgid ""
 msgstr ""
 "Novou hru spustíte volbou zmáčknutím tlačítka nabídky v pravém horním rohu "
 "okna a následným vybráním <gui style=\"menuitem\">Nová hra</gui>. Pokud už "
-"máte rozehranou hru, <app>Hitori</app> se vás dotáže, jestli chcete současnou "
-"hru ukončit."
+"máte rozehranou hru, <app>Hitori</app> se vás dotáže, jestli chcete "
+"současnou hru ukončit."
 
 #. (itstool) path: page/p
 #: C/playing.page:13
@@ -254,9 +272,9 @@ msgid ""
 "redo as many moves as you like without restriction."
 msgstr ""
 "Pokud chcete vrátit tah zpět nebo jej provést znovu, zmáčkněte <gui style="
-"\"button\"><_:media-1/></gui> nebo <gui style=\"button\"><_:media-2/></gui> v "
-"záhlavní liště.Vracet zpět a znovu provádět můžete libovolný počet tahů bez "
-"omezení."
+"\"button\"><_:media-1/></gui> nebo <gui style=\"button\"><_:media-2/></gui> "
+"v záhlavní liště.Vracet zpět a znovu provádět můžete libovolný počet tahů "
+"bez omezení."
 
 #. (itstool) path: media/span
 #: C/playing.page:23
@@ -338,6 +356,7 @@ msgid ""
 "header bar for <app>Hitori</app> to hint a cell which should be painted or "
 "unpainted to move closer to a solution."
 msgstr ""
-"Pokud budete v nějakém bodě v koncích, zmáčkněte <gui style=\"button\">Rada"
-"</gui> v záhlavní liště a aplikace <app>Hitori</app> vám označí políčko, "
-"které by se mělo zatřít nebo očistit, a tím vám pomůže přiblížit se k řešení."
+"Pokud budete v nějakém bodě v koncích, zmáčkněte <gui style=\"button\">Rada</"
+"gui> v záhlavní liště a aplikace <app>Hitori</app> vám označí políčko, které "
+"by se mělo zatřít nebo očistit, a tím vám pomůže přiblížit se k řešení."
+
