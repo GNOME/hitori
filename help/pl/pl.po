@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori-help\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
+"POT-Creation-Date: 2021-03-16 11:31+0000\n"
 "PO-Revision-Date: 2020-09-19 13:38+0200\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <community-poland@mozilla.org>\n"
@@ -142,18 +142,36 @@ msgstr ""
 msgid "<app>Hitori</app> main window."
 msgstr "Główne okno gry <app>Hitori</app>."
 
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Hitori"
+
 #. (itstool) path: credit/name
-#: C/index.page:8
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:10
+#: C/index.page:13
 msgid "2008–2010, 2019"
 msgstr "2008-2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:13
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -163,17 +181,17 @@ msgstr ""
 "sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:17
-msgid "Hitori Help"
-msgstr "Hitori"
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:20
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Podstawy gry"
 
 #. (itstool) path: section/title
-#: C/index.page:24
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Wskazówki i porady"
 
