@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2020-07-03 15:34+0000\n"
-"PO-Revision-Date: 2020-07-07 12:50+0200\n"
+"POT-Creation-Date: 2021-03-16 11:31+0000\n"
+"PO-Revision-Date: 2021-05-04 00:22+0200\n"
 "Last-Translator: Daniel Șerbănescu <daniel@serbanescu.dk>\n"
 "Language-Team: Gnome Romanian Translation Team <gnomero-list@lists."
 "sourceforge.net>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n==0 || (n!=1 && n%100>=1 && n"
 "%100<=19) ? 1 : 2);\n"
-"X-Generator: Poedit 2.3.1\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -26,7 +26,7 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Iacobescu Cristian <cristy_hereg93@yahoo.com> 2010, 2011\n"
-"Daniel Șerbănescu <daniel [at] serbanescu [dot] dk> 2019-2020"
+"Daniel Șerbănescu <daniel [at] serbanescu [dot] dk> 2019-2021"
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
@@ -147,18 +147,36 @@ msgstr ""
 msgid "<app>Hitori</app> main window."
 msgstr "Fereastra principală <app>Hitori</app>."
 
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Ajutor Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Ajutor Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Ajutor Hitori"
+
 #. (itstool) path: credit/name
-#: C/index.page:8
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:10
+#: C/index.page:13
 msgid "2008–2010, 2019"
 msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:13
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -169,17 +187,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:17
-msgid "Hitori Help"
-msgstr "Ajutor Hitori"
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Ajutor Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:20
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Utilizarea și jocul rudimentar"
 
 #. (itstool) path: section/title
-#: C/index.page:24
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Sfaturi și trucuri"
 
