@@ -6,15 +6,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2020-09-07 19:00+0000\n"
+"POT-Creation-Date: 2021-05-03 22:23+0000\n"
 "PO-Revision-Date: 2020-09-08 15:06+0200\n"
+"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
+"com>\n"
 "Language-Team: Catalan <gnome@llistes.softcatala.org>\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
-"Last-Translator: Miquel-Àngel Burgos i Fradeja <miquel.angel.burgos@gmail."
-"com>\n"
 "X-Generator: Poedit 2.3\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -142,18 +142,36 @@ msgstr ""
 msgid "<app>Hitori</app> main window."
 msgstr "Finestra principal de l'<app>Hitori</app>."
 
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Ajuda de l'Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Ajuda de l'Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Ajuda de l'Hitori"
+
 #. (itstool) path: credit/name
-#: C/index.page:8
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:10
+#: C/index.page:13
 msgid "2008–2010, 2019"
 msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:13
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -164,17 +182,17 @@ msgstr ""
 "BY-SA 3.0)</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:17
-msgid "Hitori Help"
-msgstr "Ajuda de l'Hitori"
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Ajuda de l'Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:20
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Instruccions del joc i normes"
 
 #. (itstool) path: section/title
-#: C/index.page:24
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Consells i trucs"
 
@@ -207,7 +225,7 @@ msgid ""
 "current game."
 msgstr ""
 "Per a començar una partida nova, premeu el botó de menú de la cantonada "
-"superior dreta de la finestra i seleccioneu <gui style=\"menuitem\">Joc nou</"
+"superior dreta de la finestra i seleccioneu <gui style=\"menuitem\">Partida nova</"
 "gui>. Si ja esteu jugant una partida, l'<app>Hitori</app> us demanarà si "
 "voleu aturar-la."
 
