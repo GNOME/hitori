@@ -3,7 +3,7 @@
 <component type="desktop">
   <id>org.gnome.Hitori</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
-  <project_license>GPL-3.0+ and CC-BY-SA-3.0</project_license>
+  <project_license>GPL-3.0+</project_license>
 
   <!-- Translators: the name of the application as it appears in a software center -->
   <name>GNOME Hitori</name>
