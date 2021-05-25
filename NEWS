@@ -1,3 +1,24 @@
+Overview of changes in Hitori 3.38.2
+====================================
+
+* Bugs fixed:
+ - !28 help: Add Hitori icon as SVG
+ - !29 appdata: Fix project license
+
+* Translation updates:
+ - Basque
+ - Catalan
+ - Czech
+ - French
+ - German
+ - Hungarian
+ - Polish
+ - Romanian
+ - Spanish
+ - Swedish
+ - Ukrainian
+
+
 Overview of changes in Hitori 3.38.1
 ====================================
 
