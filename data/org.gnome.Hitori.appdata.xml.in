@@ -45,6 +45,13 @@
     <kudo>ModernToolkit</kudo>
     <kudo>UserDocs</kudo>
   </kudos>
+  <recommends>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">small</display_length>
+  </requires>
   <translation type="gettext">hitori</translation>
   <releases>
     <release version="3.38.2" date="2021-05-25" type="stable">
