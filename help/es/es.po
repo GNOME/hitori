@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori.help.master\n"
-"POT-Creation-Date: 2021-03-16 11:31+0000\n"
+"POT-Creation-Date: 2021-05-10 11:35+0000\n"
 "PO-Revision-Date: 2021-05-10 13:04+0200\n"
 "Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
 "Language-Team: Spanish - Spain <gnome-es-list@gnome.org>\n"
@@ -47,11 +47,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/customization.page:11
-#| msgid ""
-#| "To change the board size, choose an option from <guiseq><gui style=\"menu"
-#| "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. "
-#| "<app>Hitori</app> will ask if you want to stop the current game if you’re "
-#| "in the middle of one, then start a new game with the requested board size."
 msgid ""
 "To change the board size, press the menu button in the top-right corner of "
 "the window, and select an option from <gui style=\"menuitem\">Board Size</"
@@ -153,21 +148,18 @@ msgstr "Ventana principal de <application>Hitori</application>."
 
 #. (itstool) path: info/title
 #: C/index.page:4
-#| msgid "Hitori Help"
 msgctxt "link:trail"
 msgid "Hitori Help"
 msgstr "Ayuda de Hitori"
 
 #. (itstool) path: info/title
 #: C/index.page:5
-#| msgid "Hitori Help"
 msgctxt "text"
 msgid "Hitori Help"
 msgstr "Ayuda de Hitori"
 
 #. (itstool) path: info/title
 #: C/index.page:6
-#| msgid "Hitori Help"
 msgctxt "link"
 msgid "Hitori Help"
 msgstr "Ayuda de Hitori"
@@ -191,11 +183,10 @@ msgid ""
 msgstr ""
 "Este trabajo está licenciado bajo una <link href=\"http://creativecommons."
 "org/licenses/by-sa/3.0/us/\">Licencia Creative Commons atribución - "
-"compartir igual 3.0 sin soporte</link>."
+"compartir igual 3.0 no portada</link>."
 
 #. (itstool) path: page/title
 #: C/index.page:20
-#| msgid "Hitori Help"
 msgid "<_:media-1/> Hitori Help"
 msgstr "<_:media-1/> Ayuda de Hitori"
 
@@ -212,7 +203,7 @@ msgstr "Sugerencias y trucos"
 #. (itstool) path: p/link
 #: C/legal.xml:5
 msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
-msgstr "Creative Commons de Atribución-Compartir Igual 3.0 sin soporte"
+msgstr "Creative Commons de Atribución-Compartir Igual 3.0 no portada"
 
 #. (itstool) path: license/p
 #: C/legal.xml:4
@@ -231,10 +222,6 @@ msgstr "Jugar una partida"
 
 #. (itstool) path: page/p
 #: C/playing.page:10
-#| msgid ""
-#| "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-#| "style=\"menuitem\">New Game</gui></guiseq>. If you are already playing a "
-#| "game, <app>Hitori</app> will ask if you want to stop the current game."
 msgid ""
 "To start a new game, press the menu button in the top-right corner of the "
 "window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
@@ -260,13 +247,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/playing.page:15
-#| msgid ""
-#| "<app>Hitori</app> also allows you to highlight cells for your own "
-#| "reference when solving a board. This can be achieved by holding "
-#| "<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both "
-#| "highlight cells differently, and cells can be highlighted in both manners "
-#| "at the same time. Highlighted cells can be de-highlighted by clicking on "
-#| "them again while holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgid ""
 "<app>Hitori</app> also allows you to tag cells for your own reference when "
 "solving a board. This can be achieved by holding <key>Ctrl</key> or "
@@ -295,10 +275,6 @@ msgstr "Rehacer"
 
 #. (itstool) path: page/p
 #: C/playing.page:19
-#| msgid ""
-#| "To undo or redo a move, choose <gui style=\"button\">Undo</gui> or <gui "
-#| "style=\"button\">Redo</gui> from the toolbar. You may undo or redo as "
-#| "many moves as you like without restriction."
 msgid ""
 "To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
 "<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
@@ -315,12 +291,6 @@ msgstr "Pista"
 
 #. (itstool) path: page/p
 #: C/playing.page:23
-#| msgid ""
-#| "To get a hint on which cells to paint out, choose <gui style=\"button"
-#| "\">Hint</gui> from the toolbar. A cell will be highlighted with a "
-#| "flashing red outline. This shows that the current status of the cell "
-#| "(painted or unpainted) is incorrect, and should be changed for the game "
-#| "to be won."
 msgid ""
 "To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
 "media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
@@ -344,12 +314,6 @@ msgstr "Estrategias de juego"
 
 #. (itstool) path: page/p
 #: C/strategy.page:10
-#| msgid ""
-#| "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
-#| "work out which cells to paint out. One strategy is to use <key>Shift</"
-#| "key>-clicking to highlight all the repeated numbers in each <em>column</"
-#| "em>, then use <key>Ctrl</key>-clicking to highlight all the repeated "
-#| "numbers in each <em>row</em>."
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
@@ -365,13 +329,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
-#| msgid ""
-#| "Once this is done for the entire board, the cells which have been "
-#| "highlighted both ways are good candidates for painting, although not "
-#| "always. When painting a cell, unhighlighting the other cells with the "
-#| "same number in the same row and column as that cell is a good way to keep "
-#| "track of which cells are still violating <link xref=\"game\">rule 1 of "
-#| "Hitori</link>."
 msgid ""
 "Once this is done for the entire board, the cells which have been tagged "
 "both ways are good candidates for painting, although not always. When "
@@ -403,10 +360,6 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
-#| msgid ""
-#| "If you get stuck at any point, choose <gui style=\"button\">Hint</gui> "
-#| "from the toolbar for <app>Hitori</app> to flag a cell which should be "
-#| "painted or unpainted to move closer to a solution."
 msgid ""
 "If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
 "header bar for <app>Hitori</app> to hint a cell which should be painted or "
