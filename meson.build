@@ -1,5 +1,5 @@
 project('hitori', 'c',
-  version: '3.38.2',
+  version: '3.38.3',
   meson_version : '>= 0.48.0',
   license: 'GPLv3+',
   default_options : [

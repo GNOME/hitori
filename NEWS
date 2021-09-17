@@ -1,3 +1,15 @@
+Overview of changes in Hitori 3.38.3
+====================================
+
+* Bugs fixed:
+ - !30 docs: Document renaming of master branch to main
+ - !31 appdata: Update OARS ratings from 1.0 to 1.1 and add requires/recommends data
+ - !33 Update Occitan locale
+
+* Translation updates:
+ - Occitan (post 1500)
+
+
 Overview of changes in Hitori 3.38.2
 ====================================
 
