@@ -1,20 +1,21 @@
 # Brazilian Portuguese translation for hitori.
 # Copyright (C) 2018 hitori's COPYRIGHT HOLDER
 # This file is distributed under the same license as the hitori package.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2018.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2018-2021.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2018-04-03 12:36+0000\n"
-"PO-Revision-Date: 2018-07-12 12:11-0200\n"
+"POT-Creation-Date: 2021-09-17 07:35+0000\n"
+"PO-Revision-Date: 2021-09-18 18:38-0300\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Brazilian Portuguese <gnome-pt_br-list@gnome.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Virtaal 1.0.0-beta1\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 40.0\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -42,17 +43,23 @@ msgstr ""
 
 #. (itstool) path: page/p
 #: C/customization.page:11
+#| msgid ""
+#| "To change the board size, choose an option from <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. "
+#| "<app>Hitori</app> will ask if you want to stop the current game if you're "
+#| "in the middle of one, then start a new game with the requested board size."
 msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
-"of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"Para alterar o tamanho do tabuleiro, escolha uma opção de <guiseq><gui style="
-"\"menu\">Jogo</gui><gui style=\"menuitem\">Tamanho do tabuleiro</gui></"
-"guiseq>. O <app>Hitori</app> perguntará se você desejar parar o jogo atual "
-"se estiver no meio de um, e então iniciar um novo jogo com o tamanho do "
-"tabuleiro solicitado."
+"Para alterar o tamanho do tabuleiro, pressione o botão de menu no canto "
+"superior direito da janela e selecione uma opção de <gui style=\"menuitem"
+"\">Tamanho do tabuleiro</gui>. O <app>Hitori</app> perguntará se você "
+"desejar parar o jogo atual se estiver no meio de um, e então iniciar um novo "
+"jogo com o tamanho do tabuleiro solicitado."
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -127,10 +134,14 @@ msgstr "Janela principal do <app>Hitori</app>"
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
 #: C/game.page:22
+#| msgctxt "_"
+#| msgid ""
+#| "external ref='figures/hitori_main_window.png' "
+#| "md5='b6ea3ee1ff73311d002cfdb4463032be'"
 msgctxt "_"
 msgid ""
 "external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
 msgstr ""
 "external ref='figures/hitori_main_window.png' "
 "md5='b6ea3ee1ff73311d002cfdb4463032be'"
@@ -140,18 +151,40 @@ msgstr ""
 msgid "<app>Hitori</app> main window."
 msgstr "Janela principal do <app>Hitori</app>."
 
-#. (itstool) path: credit/name
+#. (itstool) path: info/title
+#: C/index.page:4
+#| msgid "Hitori Help"
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Ajuda do Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+#| msgid "Hitori Help"
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Ajuda do Hitori"
+
+#. (itstool) path: info/title
 #: C/index.page:6
+#| msgid "Hitori Help"
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Ajuda do Hitori"
+
+#. (itstool) path: credit/name
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:13
+#| msgid "2008–2010"
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -162,17 +195,18 @@ msgstr ""
 "Atribuição-CompartilhadaIgual 3.0 Não Adaptada</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
-msgid "Hitori Help"
-msgstr "Ajuda do Hitori"
+#: C/index.page:20
+#| msgid "Hitori Help"
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Ajuda do Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Jogabilidade básica &amp; Uso"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Dicas &amp; Truques"
 
@@ -198,17 +232,23 @@ msgstr "Jogando um jogo"
 
 #. (itstool) path: page/p
 #: C/playing.page:10
+#| msgid ""
+#| "To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+#| "style=\"menuitem\">New Game</gui></guiseq>. If you are already playing a "
+#| "game, <app>Hitori</app> will ask if you want to stop the current game."
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
-"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
-"<app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"Para iniciar um novo jogo, escolha <guiseq><gui style=\"menu\">Jogo</"
-"gui><gui style=\"menuitem\">Novo jogo</gui></guiseq>. Se você já estiver "
-"jogando, o <app>Hitori</app> perguntará se você deseja parar o jogo atual."
+"Para iniciar um novo jogo, pressione o botão de menu no canto superior "
+"direito da janela e selecione <gui style=\"menuitem\">Novo jogo</gui>. Se "
+"você já estiver jogando, o <app>Hitori</app> perguntará se você deseja parar "
+"o jogo atual."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -220,50 +260,81 @@ msgstr ""
 "manipulado."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
+#| msgid ""
+#| "<app>Hitori</app> also allows you to highlight cells for your own "
+#| "reference when solving a board. This can be achieved by holding "
+#| "<key>Ctrl</key> or <key>Shift</key> and clicking on a cell. They both "
+#| "highlight cells differently, and cells can be highlighted in both manners "
+#| "at the same time. Highlighted cells can be de-highlighted by clicking on "
+#| "them again while holding either <key>Ctrl</key> or <key>Shift</key> again."
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
-"O <app>Hitori</app> também permite destacar células para sua própria "
+"O <app>Hitori</app> também permite marcar células para sua própria "
 "referência ao resolver um tabuleiro. Isso pode ser feito pressionando "
-"<key>Ctrl</key> ou <key>Shift</key> e clicando em uma célula. Ambos destacam "
-"as células de maneira diferente e as células podem ser destacadas de ambas "
-"as maneiras ao mesmo tempo. Pode-se desfazer o destaque de células "
-"destacadas clicando nelas novamente, mantendo pressionadas as teclas "
-"<key>Ctrl</key> ou <key>Shift</key>."
+"<key>Ctrl</key> ou <key>Shift</key> e clicando em uma célula. Ambos marcam "
+"as células de maneira diferente e as células podem ser marcadas de ambas as "
+"maneiras ao mesmo tempo. Células marcadas podem ser desmarcadas clicando "
+"nelas novamente, enquanto mantém pressionadas as teclas <key>Ctrl</key> ou "
+"<key>Shift</key> novamente."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Desfazer"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Refazer"
 
 #. (itstool) path: page/p
-#: C/playing.page:18
+#: C/playing.page:19
+#| msgid ""
+#| "To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
+#| "style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu"
+#| "\">Game</gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or "
+#| "redo as many moves as you like without restriction."
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
 msgstr ""
-"Para desfazer e refazer um movimento, escolha <guiseq><gui style=\"menu"
-"\">Jogo</gui><gui style=\"menuitem\">Desfazer</gui></guiseq> ou <guiseq><gui "
-"style=\"menu\">Jogo</gui><gui style=\"menuitem\">Refazer</gui></guiseq>. "
-"Você pode desfazer e refazer quantos movimentos você quiser sem restrição."
+"Para desfazer e refazer um movimento, escolha <gui style=\"button\"><_:"
+"media-1/></gui> ou <gui style=\"button\"><_:media-2/></gui> na barra de "
+"cabeçalho. Você pode desfazer e refazer quantos movimentos você quiser sem "
+"restrição."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Dica"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:23
+#| msgid ""
+#| "To get a hint on which cells to paint out, choose <guiseq><gui style="
+#| "\"menu\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell "
+#| "will be highlighted with a flashing red outline. This shows that the "
+#| "current status of the cell (painted or unpainted) is incorrect, and "
+#| "should be changed for the game to be won."
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Para obter uma dica sobre quais células pintar, escolha <guiseq><gui style="
-"\"menu\">Jogo</gui><gui style=\"menuitem\">Dica</gui></guiseq>. Uma célula "
-"será destacada com um contorno vermelho intermitente. Isso mostra que o "
-"status atual da célula (pintado ou não) está incorreto e deve ser alterado "
-"para que o jogo seja vencido."
+"Para obter uma dica sobre quais células pintar, escolha <gui style=\"button"
+"\"><_:media-1/></gui> na barra de cabeçalho. Uma célula será sugerida com um "
+"contorno vermelho intermitente. Isso mostra que o status atual da célula "
+"(pintado ou não) está incorreto e deve ser alterado para que o jogo seja "
+"vencido."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -277,58 +348,81 @@ msgstr "Estratégias de jogabilidade"
 
 #. (itstool) path: page/p
 #: C/strategy.page:10
+#| msgid ""
+#| "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+#| "work out which cells to paint out. One strategy is to use <key>Shift</"
+#| "key>-clicking to highlight all the repeated numbers in each <em>column</"
+#| "em>, then use <key>Ctrl</key>-clicking to highlight all the repeated "
+#| "numbers in each <em>row</em>."
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
 "Hitori é bastante semelhante ao Sudoku, na medida em que é preciso dedução "
 "lógica para descobrir quais células pintar. Uma estratégia é usar o clique "
-"com <key>Shift</key> para destacar todos os números repetidos em cada "
+"com <key>Shift</key> para marcar todos os números repetidos em cada "
 "<em>coluna</em>, então use clique com <key>Ctrl</key> para destacar todos os "
 "números repetidos em cada <em>linha</em>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:13
+#| msgid ""
+#| "Once this is done for the entire board, the cells which have been "
+#| "highlighted both ways are good candidates for painting, although not "
+#| "always. When painting a cell, unhighlighting the other cells with the "
+#| "same number in the same row and column as that cell is a good way to keep "
+#| "track of which cells are still violating <link xref=\"game\">rule 1 of "
+#| "Hitori</link>."
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
-"Uma vez feito isso para todo o tabuleiro, as células que foram destacadas "
-"para os dois lados são boas candidatas para a pintura, embora nem sempre. Ao "
-"pintar uma célula, retirar o destaque das outras células com o mesmo número "
-"na mesma linha e coluna, essa célula é uma boa maneira de rastrear quais "
-"células ainda estão violando a <link xref=\"game\">regra 1 do Hitori</link>."
+"Uma vez feito isso para todo o tabuleiro, as células que foram marcadas para "
+"os dois lados são boas candidatas para a pintura, embora nem sempre. Ao "
+"pintar uma célula, desmarcar o destaque das outras células com o mesmo "
+"número na mesma linha e coluna, essa célula é uma boa maneira de rastrear "
+"quais células ainda estão violando a <link xref=\"game\">regra 1 do Hitori</"
+"link>."
 
 #. (itstool) path: page/p
 #: C/strategy.page:16
+#| msgid ""
+#| "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+#| "can't both be painted. <app>Hitori</app> will highlight in red the cells "
+#| "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+#| "separating one or more unpainted cells from the other unpainted cells "
+#| "will be highlighted in red."
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
 msgstr ""
 "Tenha sempre em mente que a regra 2 de Hitori significa que duas células "
-"adjacentes não podem ser pintadas. <app>Hitori</app> destacará em vermelho "
-"as células que violam a regra 2. Da mesma forma, grupos de células que "
-"violam a regra 3 separando uma ou mais células não pintadas das outras "
-"células não pintadas serão destacadas em vermelho."
+"adjacentes não podem ser pintadas. <app>Hitori</app> marcará em vermelho as "
+"células que violam a regra 2. Da mesma forma, grupos de células que violam a "
+"regra 3 separando uma ou mais células não pintadas das outras células não "
+"pintadas serão marcadas em vermelho."
 
 #. (itstool) path: page/p
 #: C/strategy.page:20
+#| msgid ""
+#| "If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
+#| "gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
+#| "flag a cell which should be painted or unpainted to move closer to a "
+#| "solution."
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Se você ficar preso a qualquer momento, escolha <guiseq><gui style=\"menu"
-"\">Jogo</gui><gui style=\"menuitem\">Dica</gui></guiseq> para <app>Hitori</"
-"app> para sinalizar uma célula que deve ser pintada ou não pintada para se "
-"aproximar de uma solução."
+"Se você ficar preso a qualquer momento, escolha <gui style=\"button\">Dica</"
+"gui> para <app>Hitori</app> para sugerir uma célula que deve ser pintada ou "
+"não pintada para se aproximar de uma solução."
