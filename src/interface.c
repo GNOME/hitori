@@ -34,12 +34,14 @@
 #define HINT_FLASHES 6
 #define HINT_DISABLED 0
 #define HINT_INTERVAL 500
+#define CURSOR_MARGIN 3
 
 static void hitori_cancel_hinting (Hitori *hitori);
 
 /* Declarations for GtkBuilder */
 gboolean hitori_draw_cb (GtkWidget *drawing_area, cairo_t *cr, Hitori *hitori);
 gboolean hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori *hitori);
+gboolean hitori_key_press_cb (GtkWidget *drawing_area, GdkEventKey *event, Hitori *hitori);
 void hitori_destroy_cb (GtkWindow *window, Hitori *hitori);
 void hitori_window_state_event_cb (GtkWindow *window, GdkEventWindowState *event, Hitori *hitori);
 static void new_game_cb (GSimpleAction *action, GVariant *parameter, gpointer user_data);
@@ -163,6 +165,9 @@ hitori_create_interface (Hitori *hitori)
 	/* Disable undo/redo until a cell has been clicked. */
 	g_simple_action_set_enabled (hitori->undo_action, FALSE);
 	g_simple_action_set_enabled (hitori->redo_action, FALSE);
+
+	/* Cursor is initially not active as playing with the mouse is more common */
+	hitori->cursor_active = FALSE;
 
 	return hitori->window;
 }
@@ -322,6 +327,19 @@ draw_cell (Hitori *hitori, GtkStyleContext *style_context, cairo_t *cr, gdouble 
 	pango_cairo_show_layout (cr, layout);
 
 	g_object_unref (layout);
+
+	if (hitori->cursor_active &&
+	    hitori->cursor_position.x == iter.x && hitori->cursor_position.y == iter.y &&
+	    gtk_widget_is_focus (hitori->drawing_area)) {
+		/* Draw the cursor */
+		lookup_color (style_context, "cursor-color", &colour);
+		gdk_cairo_set_source_rgba (cr, &colour);
+		cairo_set_line_width (cr, border.left);
+		cairo_rectangle (cr,
+		                 x_pos + CURSOR_MARGIN, y_pos + CURSOR_MARGIN,
+		                 cell_size - (2 * CURSOR_MARGIN), cell_size - (2 * CURSOR_MARGIN));
+		cairo_stroke (cr);
+	}
 }
 
 gboolean
@@ -424,6 +442,12 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 	if (pos.x >= hitori->board_size || pos.y >= hitori->board_size)
 		return FALSE;
 
+	/* Move the cursor to the clicked cell and deactivate it
+	 * (assuming player will use the mouse for the next move) */
+	hitori->cursor_position.x = pos.x;
+	hitori->cursor_position.y = pos.y;
+	hitori->cursor_active = FALSE;
+
 	/* Update the undo stack */
 	undo = g_new (HitoriUndo, 1);
 	undo->cell = pos;
@@ -478,6 +502,68 @@ hitori_button_release_cb (GtkWidget *drawing_area, GdkEventButton *event, Hitori
 		hitori_check_win (hitori);
 
 	return FALSE;
+}
+
+gboolean
+hitori_key_press_cb (GtkWidget *drawing_area, GdkEventKey *event, Hitori *hitori)
+{
+	gboolean did_something = TRUE;
+
+	if (hitori->cursor_active) {
+		switch (event->keyval) {
+			case GDK_KEY_Left:
+			case GDK_KEY_h:
+				if (hitori->cursor_position.x > 0) {
+					hitori->cursor_position.x -= 1;
+				}
+				break;
+			case GDK_KEY_Right:
+			case GDK_KEY_l:
+				if (hitori->cursor_position.x < hitori->board_size - 1) {
+					hitori->cursor_position.x += 1;
+				}
+				break;
+			case GDK_KEY_Up:
+			case GDK_KEY_k:
+				if (hitori->cursor_position.y > 0) {
+					hitori->cursor_position.y -= 1;
+				}
+				break;
+			case GDK_KEY_Down:
+			case GDK_KEY_j:
+				if (hitori->cursor_position.y < hitori->board_size - 1) {
+					hitori->cursor_position.y += 1;
+				}
+				break;
+			default:
+				did_something = FALSE;
+		}
+	} else {
+		/* Activate the cell cursor if any of the keys related to playing with keyboard are pressed */
+		switch (event->keyval) {
+			case GDK_KEY_Left:
+			case GDK_KEY_h:
+			case GDK_KEY_Right:
+			case GDK_KEY_l:
+			case GDK_KEY_Up:
+			case GDK_KEY_k:
+			case GDK_KEY_Down:
+			case GDK_KEY_j:
+			case GDK_KEY_space:
+			case GDK_KEY_Return:
+				hitori->cursor_active = TRUE;
+				break;
+			default:
+				break;
+		}
+	}
+
+	if (did_something) {
+		/* Redraw */
+		gtk_widget_queue_draw (hitori->drawing_area);
+	}
+
+	return did_something;
 }
 
 void
