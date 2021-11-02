@@ -100,6 +100,9 @@ struct _HitoriApplication {
 	GtkLabel *timer_label;
 	guint timeout_id;
 
+	gboolean cursor_active;
+	HitoriVector cursor_position;
+	
 	GSettings *settings;
 };
 

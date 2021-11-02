@@ -308,6 +308,10 @@ hitori_new_game (Hitori *hitori, guint board_size)
 
 	hitori_reset_timer (hitori);
 	hitori_start_timer (hitori);
+
+	/* Reset the cursor position */
+	hitori->cursor_position.x = 0;
+	hitori->cursor_position.y = 0;
 }
 
 void

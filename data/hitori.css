@@ -22,3 +22,7 @@
 
 @define-color tag2-unpainted-color #8ae234; /* Tango's lightest "chameleon" */
 @define-color tag2-painted-color alpha(@tag2-unpainted-color, 0.7);
+
+/* Cursor color */
+
+@define-color cursor-color #3584e4;
