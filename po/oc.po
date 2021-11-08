@@ -291,11 +291,11 @@ msgstr "- Jogar a una partida de Hitori"
 #: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Impossible d'analisar las opcions de la linha de comanda : %s\n"
+msgstr "Impossible d'analisar las opcions de la linha de comanda : %s\n"
 
 #: src/main.c:346
 msgid "Do you want to stop the current game?"
-msgstr "Volètz arrestar aquesta partida ?"
+msgstr "Volètz arrestar aquesta partida ?"
 
 #: src/main.c:349
 msgid "Keep _Playing"
@@ -306,7 +306,7 @@ msgstr "Contunhar de _jogar"
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Avètz resolgut lo puzzle en %02u:%02u !"
+msgstr "Avètz resolgut lo puzzle en %02u:%02u !"
 
 #: src/rules.c:272
 msgid "_Quit"
@@ -336,7 +336,7 @@ msgstr "_Rejogar"
 #~ msgstr "_A prepaus"
 
 #~ msgid "UI file “%s” could not be loaded"
-#~ msgstr "Impossible de cargar lo fichièr d'interfàcia utilizaire « %s »."
+#~ msgstr "Impossible de cargar lo fichièr d'interfàcia utilizaire « %s »."
 
 #~ msgid "%02u∶‎%02u"
 #~ msgstr "%02u∶‎%02u"
@@ -347,9 +347,9 @@ msgstr "_Rejogar"
 #~ "Software Foundation, either version 3 of the License, or (at your option) "
 #~ "any later version."
 #~ msgstr ""
-#~ "Hitori es un logicial liure ; podètz lo redistribuer et/ou lo modificar "
+#~ "Hitori es un logicial liure ; podètz lo redistribuer et/ou lo modificar "
 #~ "segon los tèrmes de la Licéncia Publica Generala GNU, tala coma publicada "
-#~ "per la Free Software Foundation ; version 3 de la licéncia, o (coma "
+#~ "per la Free Software Foundation ; version 3 de la licéncia, o (coma "
 #~ "voldretz) tota version ulteriora."
 
 #~ msgid ""
@@ -359,7 +359,7 @@ msgstr "_Rejogar"
 #~ "details."
 #~ msgstr ""
 #~ "Hitori es distribuit dins l'esper que vos serà utile, mas SENS CAP DE "
-#~ "GARANTIDA ; sens la quita garantida implicita de VALOR MERCANDA o "
+#~ "GARANTIDA ; sens la quita garantida implicita de VALOR MERCANDA o "
 #~ "D'ADEQÜACION A UN BESONH PARTICULAR. Consultatz la Licéncia Publica "
 #~ "Generala GNU per mai de detalhs."
 
