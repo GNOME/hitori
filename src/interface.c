@@ -99,7 +99,7 @@ hitori_create_interface (Hitori *hitori)
 	GtkBuilder *builder;
 	GtkStyleContext *style_context;
 	GtkCssProvider *css_provider;
-	const PangoFontDescription *font;
+	PangoFontDescription *font = NULL;
 	GAction *action;
 
 	builder = gtk_builder_new_from_resource ("/org/gnome/Hitori/ui/hitori.ui");
@@ -151,6 +151,8 @@ hitori_create_interface (Hitori *hitori)
 	                       GTK_STYLE_PROPERTY_FONT, &font, NULL);
 	hitori->normal_font_desc = pango_font_description_copy (font);
 	hitori->painted_font_desc = pango_font_description_copy (font);
+
+	pango_font_description_free (font);
 
 	/* Load CSS for the drawing area */
 	css_provider = gtk_css_provider_new ();
