@@ -1,0 +1,368 @@
+# Russian translation for hitori.
+# Copyright (C) 2022 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Ser82-png <sw@atrus.ru>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori main\n"
+"POT-Creation-Date: 2021-12-24 06:51+0000\n"
+"PO-Revision-Date: 2022-01-15 13:10+1000\n"
+"Language-Team: Russian <gnome-cyr@gnome.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Last-Translator: Ser82-png\n"
+"X-Generator: Poedit 2.3\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr "Ser82-png <sw@atrus.ru>, 2022"
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Изменение внешнего вида и игрового процесса."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Настойка игры"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Игру можно настроить, изменив размер игрового поля — разрешены квадратные "
+"поля со сторонами от 5 до 10 ячеек."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
+msgstr ""
+"Чтобы изменить размер игрового поля, нажмите кнопку меню в правом верхнем "
+"углу окна и выберите один из вариантов <gui style=\"menuitem\">Размера поля</"
+"gui>. <app>Хитори</app> спросит, хотите ли вы остановить текущую игру, если "
+"вы находитесь в процессе игры, а затем начать новую игру с запрошенным "
+"размером игрового поля."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Знакомство с игрой Хитори."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Игра \"Хитори\""
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"\"Хитори\" — это небольшая логическая головоломка, похожая на более "
+"популярную \"Судоку\". Игра начинает на игровом поле с числами, игрок должен "
+"<em>закрашивать</em> ячейки, пока в каждом ряду и столбце не останется "
+"повторяющихся чисел. Применяются следующие правила:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"В каждом ряду и столбце среди незакрашенных ячеек не должно быть одинаковых "
+"цифр."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr ""
+"Закрашенные ячейки не могут соприкасаться друг с другом по вертикали и "
+"горизонтали."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Все оставшиеся незакрашенные ячейки должны быть соединены друг с другом по "
+"горизонтали или вертикали в одну группу."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Эти три правила единственные, поэтому у головоломки \"Хитори\" вполне может "
+"быть несколько решений."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Главное окно игры"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Главное окно <app>\"Хитори\"</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Главное окно <app>\"Хитори\"</app>."
+
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Справка по \"Хитори\""
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Справка по \"Хитори\""
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Справка по \"Хитори\""
+
+#. (itstool) path: credit/name
+#: C/index.page:11
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:13
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Эта работа находится под лицензией <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "Справка по \"Хитори\""
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Базовые приёмы игры &amp; Настройка"
+
+#. (itstool) path: section/title
+#: C/index.page:30
+msgid "Tips &amp; Tricks"
+msgstr "Советы &amp; Трюки"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Эта работа находится под лицензией <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Как играть в <app>\"Хитори\"</app>."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Играть в игру"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
+msgstr ""
+"Чтобы начать новую игру, нажмите кнопку меню в правом верхнем углу окна и "
+"выберите <gui style=\"menuitem\">Новая игра</gui>. Если вы уже находитесь в "
+"процессе игры, <app>Хитори</app> спросит, хотите ли вы остановить текущую "
+"игру."
+
+#. (itstool) path: page/p
+#: C/playing.page:13
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Чтобы закрасить ячейку, нажмите на неё; чтобы снова очистить, нажмите на неё "
+"ещё раз. Когда ячейки закрашены так, что ни одно из трёх правил не нарушено, "
+"игра закончится, и игровое поле будет заблокировано."
+
+#. (itstool) path: page/p
+#: C/playing.page:15
+msgid ""
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
+msgstr ""
+"<app>\"Хитори\"</app> также позволяет вам помечать ячейки для упрощения "
+"решения головоломки. Этого можно добиться, удерживая <key>Ctrl</key> или "
+"<key>Shift</key> и щёлкая на ячейку. Оба этих варианта помечают ячейки по-"
+"разному, и ячейки могут быть помечены обоими способами одновременно. Снять "
+"метки с ячейки можно щёлкнув по ней ещё раз, снова удерживая клавишу "
+"<key>Ctrl</key> или <key>Shift</key>."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Отменить"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Вернуть"
+
+#. (itstool) path: page/p
+#: C/playing.page:19
+msgid ""
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
+msgstr ""
+"Чтобы отменить или повторить ход, нажмите <gui style=\"button\"><_:media-1/"
+"></gui> или <gui style=\"button\"><_:media-2/></gui> в панели заголовка. Вы "
+"можете отменить или повторить любое количество ходов без ограничений."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Подсказка"
+
+#. (itstool) path: page/p
+#: C/playing.page:23
+msgid ""
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
+msgstr ""
+"Чтобы получить подсказку по закрашиванию ячеек, нажмите <gui style=\"button"
+"\"><_:media-1/></gui> в панели заголовка. Ячейка будет отмечена мигающим "
+"красным контуром. Это показывает, что текущий статус ячейки (закрашенный или "
+"незакрашенный) неверен и должен быть изменен для победы в игре."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Стратегии игры в \"Хитори\"."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Стратегия игры"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
+msgstr ""
+"Игра \"Хитори\" очень похожа на \"Судоку\" в том, что для определения того, "
+"какие клетки закрашивать, требуется логическая дедукция. Одна из стратегий "
+"заключается в том, чтобы пометить все повторяющиеся числа в каждом "
+"<em>столбце</em>, удерживая нажатой клавишу <key>Shift</key>, а затем, "
+"удерживая клавишу <key>Ctrl</key>, пометить все повторяющиеся числа в каждом "
+"<em>ряду</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Как только это будет сделано для всей доски, ячейки, помеченные в обоих "
+"направлениях, станут хорошими кандидатами на закрашивание, хотя и не всегда. "
+"После закрашивания ячейки, снимите маркёры с оставшихся ячеек с тем же "
+"номером в той же строке и столбце, что и закрашенная ячейка, — это хороший "
+"способ отслеживать, какие ячейки все ещё нарушают <link xref=\"game\">первое "
+"правило игры \"Хитори\"</link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Всегда помните второе правило игры \"Хитори\", которое гласит, что две "
+"соседние клетки с общими гранями не могут быть одновременно закрашены. <app>"
+"\"Хитори\"</app> выделяет красным цветом цифры в ячейках, нарушающих второе "
+"правило. Точно так же, группы ячеек, которые нарушают третье правило, будут "
+"окрашены красным, потому что одна или несколько неокрашенных ячеек "
+"отделяются от других неокрашенных ячеек."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
+msgstr ""
+"Если вы застряли на каком-либо этапе, нажмите кнопку <gui style=\"button"
+"\">Подсказка</gui> в панели заголовка, чтобы <app>\"Хитори\"</app> "
+"подсказала ячейку, которую следует закрасить или с которой нужно снять "
+"закраску, чтобы продвинуться в решении."
