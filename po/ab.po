@@ -46,7 +46,10 @@ msgid ""
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr " "
+msgstr "Ахәмарра аамҭа ԥкуп. Ахәмарра хықәкыс иамоуп- иаарцҵакны хыԥхьаӡарала еиқәшәаз  "
+"ацәаҳәақәеи аиҵагылақәеи рықәгара. Ахәмарра иаднакылоит ахәмарратә ҭыԥ ашәагаақәа ԥыҭк."
+"Шәара ишәылшоит иқәшәыргылалар ахыԥҽыга аҳасабразы ишәыцхраауа адыргақәа."
+"Ишәзымдыруазар изаҟә шьаҿоу иҟаҵатәу, шәхы иашәархәар шәылшоит аҵаҳәара."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
 msgid "The GNOME Project"
@@ -55,7 +58,7 @@ msgstr "Апроект GNOME"
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
 msgid "Start a new game"
-msgstr "Ахәмарра ҽыц алагара"
+msgstr "Ахәмарра ҿыц алагара"
 
 #: data/help-overlay.ui:23
 msgctxt "shortcut window"
@@ -276,33 +279,33 @@ msgstr "Аҭыԥ агенерациҷ "
 #. Options
 #: src/main.c:270
 msgid "- Play a game of Hitori"
-msgstr ""
+msgstr "- Хитори ахәмарра"
 
 #. Print an error
 #: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr ""
+msgstr "Адҵатә цәаҳәа ахышәарақәа реилкаара залымшахеит : %s\n"
 
 #: src/main.c:350
 msgid "Do you want to stop the current game?"
-msgstr ""
+msgstr "Шәызҭоу ахәмарра аанышәкылар шәҭахума?"
 
 #: src/main.c:353
 msgid "Keep _Playing"
-msgstr ""
+msgstr "_Ахәмарра ацҵара"
 
 #. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
 #. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr ""
+msgstr "Шәара аиааира шәгеит %02u:%02u рыла!"
 
 #: src/rules.c:272
 msgid "_Quit"
-msgstr ""
+msgstr "_Ахырқәшара"
 
 #: src/rules.c:273
 msgid "_Play Again"
-msgstr ""
+msgstr "_Еиҭа ахәмарра"
