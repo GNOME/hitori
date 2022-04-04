@@ -33,7 +33,7 @@
   <launchable type="desktop-id">org.gnome.Hitori.desktop</launchable>
   <url type="homepage">https://wiki.gnome.org/Apps/Hitori</url>
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/hitori/issues</url>
-  <url type="donation">http://www.gnome.org/friends/</url>
+  <url type="donation">https://www.gnome.org/friends/</url>
   <url type="help">https://help.gnome.org/users/hitori/stable/</url>
   <url type="translate">https://wiki.gnome.org/TranslationProject/LocalisationGuide</url>
   <update_contact>philip_at_tecnocode.co.uk</update_contact>
