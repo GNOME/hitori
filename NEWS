@@ -1,3 +1,23 @@
+Overview of changes in Hitori 3.38.4
+====================================
+
+* Initial support for playing the game with a keyboard
+
+* Bugs fixed:
+ - !34 Make game playable with keyboard (bare minimum)
+ - !35 build: Drop positional arguments from i18n.merge_file() calls
+ - !36 interface: Fix a minor leak
+ - !37 snap: Add itstool to image
+ - !38 Move appdata screenshot to git
+
+* Translation updates:
+ - Abkhazian
+ - Chinese (China)
+ - Indonesian
+ - Occitan (post 1500)
+ - Russian
+
+
 Overview of changes in Hitori 3.38.3
 ====================================
 

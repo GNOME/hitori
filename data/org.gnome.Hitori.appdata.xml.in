@@ -54,6 +54,14 @@
   </requires>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="3.38.4" date="2022-04-04" type="stable">
+      <description>
+        <ul>
+          <li>Add initial support for playing the game with a keyboard.</li>
+          <li>Translation updates.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.38.3" date="2021-09-17" type="stable">
       <description>
         <ul>
