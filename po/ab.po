@@ -1,20 +1,14 @@
-# Abkhazian translation for hitori.
-# Copyright (C) 2022 hitori's COPYRIGHT HOLDER
-# This file is distributed under the same license as the hitori package.
-# Нанба Наала <naala-nanba@rambler.ru>, 2022.
-#
 msgid ""
 msgstr ""
-"Project-Id-Version: hitori main\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2022-02-06 22:58+0000\n"
-"PO-Revision-Date: 2022-02-06 22:58+0000\n"
+"POT-Creation-Date: 2022-04-04 11:14+0000\n"
 "Last-Translator: Нанба Наала <naala-nanba@rambler.ru>\n"
 "Language-Team: Abkhazian <ab@li.org>\n"
 "Language: ab\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
@@ -46,14 +40,16 @@ msgid ""
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
-msgstr "Ахәмарра аамҭа ԥкуп. Ахәмарра хықәкыс иамоуп- иаарцҵакны хыԥхьаӡарала еиқәшәаз  "
-"ацәаҳәақәеи аиҵагылақәеи рықәгара. Ахәмарра иаднакылоит ахәмарратә ҭыԥ ашәагаақәа ԥыҭк."
-"Шәара ишәылшоит иқәшәыргылалар ахыԥҽыга аҳасабразы ишәыцхраауа адыргақәа."
-"Ишәзымдыруазар изаҟә шьаҿоу иҟаҵатәу, шәхы иашәархәар шәылшоит аҵаҳәара."
+msgstr ""
+"Ахәмарра аамҭа ԥкуп. Ахәмарра хықәкыс иамоуп- иаарцҵакны хыԥхьаӡарала "
+"еиқәшәаз  ацәаҳәақәеи аиҵагылақәеи рықәгара. Ахәмарра иаднакылоит ахәмарратә "
+"ҭыԥ ашәагаақәа ԥыҭк.Шәара ишәылшоит иқәшәыргылалар ахыԥҽыга аҳасабразы "
+"ишәыцхраауа адыргақәа.Ишәзымдыруазар изаҟә шьаҿоу иҟаҵатәу, шәхы иашәархәар "
+"шәылшоит аҵаҳәара."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
 msgid "The GNOME Project"
-msgstr "Апроект GNOME"
+msgstr "The GNOME Project"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -253,7 +249,7 @@ msgstr "Аилыркаа аҵакы аарԥшра залшахом"
 
 #: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
-msgstr "Автор изин © 2007–2010 Филип Уизнэл "
+msgstr "Аԥҵаҩцәа рзинқәа  2007–2010 Филип Уизнел"
 
 #: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
@@ -261,7 +257,7 @@ msgstr "Алогикатә хыԥҽыга, Николи иаԥиҵаз"
 
 #: src/interface.c:854
 msgid "translator-credits"
-msgstr ""
+msgstr "Нанба Наала <naala-nanba@rambler.ru>, 2022"
 
 #: src/interface.c:858
 msgid "Hitori Website"
