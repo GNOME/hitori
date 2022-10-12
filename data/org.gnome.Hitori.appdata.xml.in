@@ -6,7 +6,7 @@
   <project_license>GPL-3.0+</project_license>
 
   <!-- Translators: the name of the application as it appears in a software center -->
-  <name>GNOME Hitori</name>
+  <name>Hitori</name>
 
   <!-- Translators: the brief summary of the application as it appears in a software center. -->
   <summary>Play the Hitori puzzle game</summary>
@@ -38,7 +38,7 @@
   <url type="translate">https://wiki.gnome.org/TranslationProject/LocalisationGuide</url>
   <update_contact>philip_at_tecnocode.co.uk</update_contact>
   <project_group>GNOME</project_group>
-  <developer_name>The GNOME Project</developer_name>
+  <developer_name>Philip Withnall</developer_name>
   <kudos>
     <kudo>AppMenu</kudo>
     <kudo>HighContrast</kudo>
