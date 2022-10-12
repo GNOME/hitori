@@ -23,7 +23,6 @@
 	<homepage rdf:resource="https://wiki.gnome.org/Apps/Hitori" />
 	<download-page rdf:resource="https://download.gnome.org/sources/hitori/" />
 	<bug-database rdf:resource="https://gitlab.gnome.org/GNOME/hitori/issues" />
-	<category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
 	<programming-language>C</programming-language>
 	<maintainer>
 		<foaf:Person>
