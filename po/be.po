@@ -6,11 +6,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
-"Report-Msgid-Bugs-To: https://bugzilla.gnome.org/enter_bug.cgi?"
-"product=hitori\n"
-"POT-Creation-Date: 2017-10-02 09:08+0100\n"
-"PO-Revision-Date: 2017-04-25 11:32+0300\n"
-"Last-Translator: Jim <vlma@tut.by>, 2017\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
+"POT-Creation-Date: 2022-11-24 18:15+0000\n"
+"PO-Revision-Date: 2022-11-27 22:04+0300\n"
+"Last-Translator: Launchpad translators\n"
 "Language-Team: Belarusian <i18n-bel-gnome@googlegroups.com>\n"
 "Language: be\n"
 "MIME-Version: 1.0\n"
@@ -18,34 +17,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 3.2\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:12 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
-msgstr "Гісторыя"
+msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
 #: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
 msgid "Play the Hitori puzzle game"
-msgstr "Гуляць у гульню Пазлы Hitori"
+msgstr "Гуляць у галаваломку Hitori"
 
+#. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "пазл;гульня;логіка;сетка;"
-
-#: data/org.gnome.Hitori.desktop.in:9
-msgid "org.gnome.Hitori"
-msgstr "org.gnome.Hitori"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "GNOME Hitori"
+msgstr "лагічная;;гульня;логіка;сетка;галаваломка;"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr "Hitori гэта лагічная гульня падобная на папулярныя гульні Sudoku."
+msgstr ""
+"Hitori — гэта лагічная галаваломка падобная да папулярнай гульні судоку."
 
 #: data/org.gnome.Hitori.appdata.xml.in:17
 msgid ""
@@ -54,65 +48,113 @@ msgid ""
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
-"Вы гуляеце ў гульню з абмежаваным часам, з мэтай ліквідаваць усе паўтараюцца "
-"лічбы ў кожным радку і слупку ў самы кароткі тэрмін. Падтрымліваюцца "
-"шматлікія памеры гульнявога поля, і вы можаце змясціць маркеры на клеткі, "
-"каб дапамагчы выпрацаваць рашэнне. Калі вы спыніцеся, гульня можа даць вам "
-"падказку."
+"Гульня з абмежаваным часам, трэба як мага хутчэй прыбраць усе паўторы лічбаў "
+"у кожным радку і слупку. Клеткі можна пазначаць, каб было прасцей шукаць "
+"рашэнне. Падтрымліваецца некалькі памераў гульнявога поля. Калі цяжка "
+"зрабіць наступны ход, гульня можа даць вам падказку."
 
-#: data/hitori-menus.ui:8 src/main.c:305
+#: data/org.gnome.Hitori.appdata.xml.in:41
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#: data/help-overlay.ui:16
+msgctxt "shortcut window"
+msgid "Start a new game"
+msgstr "Пачаць новую гульню"
+
+#: data/help-overlay.ui:23
+msgctxt "shortcut window"
+msgid "Tag a cell"
+msgstr "Пазначыць клетку"
+
+#: data/help-overlay.ui:30
+msgctxt "shortcut window"
+msgid "Undo your last move"
+msgstr "Адрабіць апошні ход"
+
+#: data/help-overlay.ui:37
+msgctxt "shortcut window"
+msgid "Redo a move"
+msgstr "Паўтарыць скасаваны ход"
+
+#: data/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Get a hint for your next move"
+msgstr "Атрымаць падказку для наступнага ходу"
+
+#: data/help-overlay.ui:51
+msgctxt "shortcut window"
+msgid "Show Help"
+msgstr "Паказаць даведку"
+
+#: data/help-overlay.ui:58
+msgctxt "shortcut window"
+msgid "Show Keyboard Shortcuts"
+msgstr "Паказаць спалучэнні клавіш"
+
+#: data/help-overlay.ui:65
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Выйсці"
+
+#: data/help-overlay.ui:72
+msgctxt "shortcut window"
+msgid "Toggle Menu"
+msgstr "Раскрыць/закрыць меню"
+
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "_Новая гульня"
 
-#: data/hitori-menus.ui:12
+#: data/hitori.ui:12
 msgid "Board _Size"
 msgstr "Памер _Поля"
 
-#: data/hitori-menus.ui:16
-msgid "5×5"
-msgstr "5×5"
+#: data/hitori.ui:16
+msgid "_5×5"
+msgstr "_5×5"
 
-#: data/hitori-menus.ui:21
-msgid "6×6"
-msgstr "6×6"
+#: data/hitori.ui:21
+msgid "_6×6"
+msgstr "_6×6"
 
-#: data/hitori-menus.ui:26
-msgid "7×7"
-msgstr "7×7"
+#: data/hitori.ui:26
+msgid "_7×7"
+msgstr "_7×7"
 
-#: data/hitori-menus.ui:31
-msgid "8×8"
-msgstr "8×8"
+#: data/hitori.ui:31
+msgid "_8×8"
+msgstr "_8×8"
 
-#: data/hitori-menus.ui:36
-msgid "9×9"
-msgstr "9×9"
+#: data/hitori.ui:36
+msgid "_9×9"
+msgstr "_9×9"
 
-#: data/hitori-menus.ui:41
-msgid "10×10"
-msgstr "10×10"
+#: data/hitori.ui:41
+msgid "_10×10"
+msgstr "_10×10"
 
-#: data/hitori-menus.ui:50
+#: data/hitori.ui:49
+msgid "_Keyboard Shortcuts"
+msgstr "_Спалучэнні клавіш"
+
+#: data/hitori.ui:54
 msgid "_Help"
-msgstr "_Дапамога"
+msgstr "_Даведка"
 
-#: data/hitori-menus.ui:55
-msgid "_About"
-msgstr "_Пра гульню"
+#: data/hitori.ui:58
+msgid "_About Hitori"
+msgstr "_Пра Hitori"
 
-#: data/hitori-menus.ui:59 src/rules.c:272
-msgid "_Quit"
-msgstr "_Выхад"
-
-#: data/hitori.ui:29
+#: data/hitori.ui:84
 msgid "Undo your last move"
-msgstr "Адмяніць апошняе дзеянне"
+msgstr "Адрабіць апошні ход"
 
-#: data/hitori.ui:51
+#: data/hitori.ui:105
 msgid "Redo a move"
-msgstr "Перахадзіць"
+msgstr "Паўтарыць скасаваны ход"
 
-#: data/hitori.ui:75
+#: data/hitori.ui:151
 msgid "Get a hint for your next move"
 msgstr "Атрымаць падказку для наступнага хода"
 
@@ -124,56 +166,175 @@ msgstr "Памер поля"
 msgid "The size of the board, in cells."
 msgstr "Памер поля, у клетках."
 
-#: src/interface.c:649
+#: data/org.gnome.hitori.gschema.xml:11
+msgid "Window maximized state"
+msgstr "Стан акна – разгорнута"
+
+#: data/org.gnome.hitori.gschema.xml:12
+msgid "Whether the window is maximized."
+msgstr "Ці разгорнута акно."
+
+#: data/org.gnome.hitori.gschema.xml:16
+msgid "Window position"
+msgstr "Становішча акна"
+
+#: data/org.gnome.hitori.gschema.xml:17
+msgid "Window position (x and y)."
+msgstr "Становішча акна (x, y)."
+
+#: data/org.gnome.hitori.gschema.xml:21
+msgid "Window size"
+msgstr "Памер акна"
+
+#: data/org.gnome.hitori.gschema.xml:22
+msgid "Window size (width and height)."
+msgstr "Памер акна (шырыня і вышыня)."
+
+#. Translators: This is a digit rendered in a cell on the game board.
+#. * Translate it to your locale’s number system if you wish the game
+#. * board to be rendered in those digits. Otherwise, leave the digits as
+#. * Arabic numerals.
+#: src/interface.c:201
+msgctxt "Board cell"
+msgid "1"
+msgstr "1"
+
+#: src/interface.c:202
+msgctxt "Board cell"
+msgid "2"
+msgstr "2"
+
+#: src/interface.c:203
+msgctxt "Board cell"
+msgid "3"
+msgstr "3"
+
+#: src/interface.c:204
+msgctxt "Board cell"
+msgid "4"
+msgstr "4"
+
+#: src/interface.c:205
+msgctxt "Board cell"
+msgid "5"
+msgstr "5"
+
+#: src/interface.c:206
+msgctxt "Board cell"
+msgid "6"
+msgstr "6"
+
+#: src/interface.c:207
+msgctxt "Board cell"
+msgid "7"
+msgstr "7"
+
+#: src/interface.c:208
+msgctxt "Board cell"
+msgid "8"
+msgstr "8"
+
+#: src/interface.c:209
+msgctxt "Board cell"
+msgid "9"
+msgstr "9"
+
+#: src/interface.c:210
+msgctxt "Board cell"
+msgid "10"
+msgstr "10"
+
+#: src/interface.c:211
+msgctxt "Board cell"
+msgid "11"
+msgstr "11"
+
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
-msgstr "Дапамога недаступная"
+msgstr "Немагчыма паказаць змест даведкі"
 
-#: src/interface.c:673
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
-msgstr "Усе правы абароненыя © 2007–2010 Philip Withnall"
+msgstr "Аўтарскае права © 2007–2010 Philip Withnall"
 
-#: src/interface.c:674
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
-msgstr "Лягічны пазл створаны Nikoli"
+msgstr "Лагічная галаваломка распрацаваная Nikoli"
 
-#: src/interface.c:676
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr "Jim <vlma@tut.by>"
 
-#: src/interface.c:680
+#: src/interface.c:858
 msgid "Hitori Website"
-msgstr "Хатняя старонка Hitori"
+msgstr "Сайт Hitori"
 
-#: src/main.c:209
+#: src/main.c:254
 msgid "Enable debug mode"
-msgstr "Уключыць рэжым наладкі"
+msgstr "Уключыць рэжым адладкі"
 
-#: src/main.c:211
+#. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
+#: src/main.c:256
 msgid "Seed the board generation"
 msgstr "Пачаць стварэнне поля"
 
-#: src/main.c:225
+#. Options
+#: src/main.c:270
 msgid "- Play a game of Hitori"
-msgstr "- Гуляць у гульню Hitori"
+msgstr "- Гуляць у Hitori"
 
-#: src/main.c:235
+#. Print an error
+#: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Параметры каманднага радка ня могуць быць прааналізаваныя: %s\n"
+msgstr "Немагчыма разабраць параметры загаднага радка: %s\n"
 
-#: src/main.c:301
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
-msgstr "Вы жадаеце спыніць бягучую гульню?"
+msgstr "Спыніць бягучую гульню?"
 
-#: src/main.c:304
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "Працягваць _гульню"
 
+#. Translators: The first parameter is the number of minutes which have elapsed since the start of the game; the second parameter is
+#. * the number of seconds.
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr "Вы выйгралі за патрэбны час %02u:%02u!"
+msgstr "Вы перамаглі за %02u:%02u!"
+
+#: src/rules.c:272
+msgid "_Quit"
+msgstr "_Выйсці"
 
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Гуляць зноў"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "GNOME Hitori"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Праект GNOME"
+
+#~ msgid "org.gnome.Hitori"
+#~ msgstr "org.gnome.Hitori"
+
+#~ msgid "5×5"
+#~ msgstr "5×5"
+
+#~ msgid "6×6"
+#~ msgstr "6×6"
+
+#~ msgid "7×7"
+#~ msgstr "7×7"
+
+#~ msgid "8×8"
+#~ msgstr "8×8"
+
+#~ msgid "9×9"
+#~ msgstr "9×9"
+
+#~ msgid "_About"
+#~ msgstr "_Пра гульню"
