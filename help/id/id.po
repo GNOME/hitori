@@ -5,21 +5,24 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: hitori master\n"
-"POT-Creation-Date: 2017-01-07 11:57+0000\n"
-"PO-Revision-Date: 2017-01-14 17:41+0700\n"
+"Project-Id-Version: hitori-help gnome-3-38\n"
+"POT-Creation-Date: 2022-10-12 18:30+0000\n"
+"PO-Revision-Date: 2022-12-17 07:57+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <gnome-l10n-id@googlegroups.com>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: id\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
-"X-Generator: Poedit 1.8.11\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
-msgstr "Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017."
+msgstr ""
+"Kukuh Syafaat <syafaatkukuh@gmail.com>, 2017.\n"
+"Andika Triwidada <andika@gmail.com>, 2022."
 
 #. (itstool) path: info/desc
 #: C/customization.page:6
@@ -43,30 +46,17 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/customization.page:11
 msgid ""
-"To change the board size, choose an option from <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Board Size</gui></guiseq>. <app>Hitori</"
-"app> will ask if you want to stop the current game if you're in the middle "
-"of one, then start a new game with the requested board size."
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
 msgstr ""
-"Untuk mengubah ukuran papan, pilih opsi dari <guiseq><gui style=\"menu"
-"\">Permainan</gui><gui style=\"menuitem\">Ukuran Papan</gui></guiseq>. "
-"<app>Hitori</app> akan menanyakan apakah Anda ingin menghentikan permainan "
-"saat ini jika Anda berada di tengah-tengah permainan, kemudian memulai "
-"permainan baru dengan ukuran papan yang diminta."
-
-#. (itstool) path: media
-#. This is a reference to an external file such as an image or video. When
-#. the file changes, the md5 hash will change to let you know you need to
-#. update your localized copy. The msgstr is not used at all. Set it to
-#. whatever you like once you have updated your copy of the file.
-#: C/game.page:22
-msgctxt "_"
-msgid ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
-msgstr ""
-"external ref='figures/hitori_main_window.png' "
-"md5='b6ea3ee1ff73311d002cfdb4463032be'"
+"Untuk mengubah ukuran papan, tekan tombol menu di sudut kanan atas jendela, "
+"dan pilih opsi dari <gui style=\"menuitem\">Ukuran Papan</gui>. <app>Hitori</"
+"app> akan bertanya apakah Anda ingin menghentikan permainan saat ini jika "
+"Anda sedang setengah jalan, kemudian memulai permainan baru dengan ukuran "
+"papan yang diminta."
 
 #. (itstool) path: info/desc
 #: C/game.page:6
@@ -135,23 +125,54 @@ msgstr "Jendela utama permainan"
 msgid "<app>Hitori</app> main window"
 msgstr "Jendela utama <app>Hitori</app>"
 
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr "."
+
 #. (itstool) path: media/p
 #: C/game.page:23
 msgid "<app>Hitori</app> main window."
 msgstr "Jendela utama <app>Hitori</app>."
 
-#. (itstool) path: credit/name
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Bantuan Hitori"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Bantuan Hitori"
+
+#. (itstool) path: info/title
 #: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Bantuan Hitori"
+
+#. (itstool) path: credit/name
+#: C/index.page:11
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
 #. (itstool) path: credit/years
-#: C/index.page:8
-msgid "2008–2010"
-msgstr "2008–2010"
+#: C/index.page:13
+#| msgid "2008–2010"
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
 
 #. (itstool) path: license/p
-#: C/index.page:11
+#: C/index.page:16
 msgid ""
 "This work is licensed under a <link href=\"http://creativecommons.org/"
 "licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
@@ -162,17 +183,17 @@ msgstr ""
 "License</link>."
 
 #. (itstool) path: page/title
-#: C/index.page:15
-msgid "Hitori Help"
-msgstr "Bantuan Hitori"
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Bantuan Hitori"
 
 #. (itstool) path: section/title
-#: C/index.page:18
+#: C/index.page:26
 msgid "Basic Gameplay &amp; Usage"
 msgstr "Dasar Permainan &amp; Penggunaan"
 
 #. (itstool) path: section/title
-#: C/index.page:22
+#: C/index.page:30
 msgid "Tips &amp; Tricks"
 msgstr "Tips &amp; Trik"
 
@@ -199,17 +220,18 @@ msgstr "Bermain Permainan"
 #. (itstool) path: page/p
 #: C/playing.page:10
 msgid ""
-"To start a new game, choose <guiseq><gui style=\"menu\">Game</gui><gui style="
-"\"menuitem\">New Game</gui></guiseq>. If you are already playing a game, "
-"<app>Hitori</app> will ask if you want to stop the current game."
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
 msgstr ""
-"Untuk memulai permainan baru, pilih <guiseq><gui style=\"menu\">Permainan</"
-"gui><gui style=\"menuitem\">Permainan Baru</gui></guiseq>. Jika Anda sudah "
-"bermain permainan, <app>Hitori</app> akan menanyakan apakah Anda ingin "
-"menghentikan permainan saat ini."
+"Untuk memulai permainan baru, tekan tombol menu di sudut kanan atas jendela, "
+"dan pilih <gui style=\"menuitem\">Permainan Baru</gui>. Jika Anda sedang "
+"bermain, <app>Hitori</app> akan bertanya apakah Anda ingin menghentikan "
+"permainan saat ini."
 
 #. (itstool) path: page/p
-#: C/playing.page:12
+#: C/playing.page:13
 msgid ""
 "To paint a cell, click on it; to unpaint it again, click on it again. When "
 "cells are painted such that none of the three rules are broken, the game "
@@ -221,52 +243,62 @@ msgstr ""
 "dimanipulasi."
 
 #. (itstool) path: page/p
-#: C/playing.page:14
+#: C/playing.page:15
 msgid ""
-"<app>Hitori</app> also allows you to highlight cells for your own reference "
-"when solving a board. This can be achieved by holding <key>Ctrl</key> or "
-"<key>Shift</key> and clicking on a cell. They both highlight cells "
-"differently, and cells can be highlighted in both manners at the same time. "
-"Highlighted cells can be de-highlighted by clicking on them again while "
-"holding either <key>Ctrl</key> or <key>Shift</key> again."
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
 msgstr ""
 "<app>Hitori</app> juga memungkinkan Anda untuk menyorot sel untuk referensi "
 "Anda sendiri ketika memecahkan papan. Hal ini dapat dicapai dengan menahan "
-"tombol <key>Ctrl</key> atau <key>Shift</key> dan klik pada sel. Keduanya "
-"menyorot sel yang berbeda, dan sel dapat disorot dengan kedua cara tersebut "
-"pada waktu yang sama. sel yang disorot bisa dilepas-sorot dengan mengklik "
-"pada sel tersebut lagi sambil menahan tombol <key>Ctrl</key> atau "
-"<key>Shift</key> lagi."
+"tombol <key>Ctrl</key> atau <key>Shift</key> dan klik pada sel. Keduanya men-"
+"tag sel secara berbeda, dan sel dapat di-tag dengan kedua cara tersebut pada "
+"waktu yang sama. Sel yang di-tag bisa dilepas-tag dengan mengklik pada sel "
+"tersebut lagi sambil menahan tombol <key>Ctrl</key> atau <key>Shift</key> "
+"lagi."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Tak Jadi"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Jadi Lagi"
 
 #. (itstool) path: page/p
-#: C/playing.page:18
+#: C/playing.page:19
 msgid ""
-"To undo or redo a move, choose <guiseq><gui style=\"menu\">Game</gui><gui "
-"style=\"menuitem\">Undo</gui></guiseq> or <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Redo</gui></guiseq>. You may undo or redo as "
-"many moves as you like without restriction."
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
 msgstr ""
-"Untuk membatalkan langkah terakhir atau ulangi langkah, pilih <guiseq><gui "
-"style=\"menu\">Permainan</gui><gui style=\"menuitem\">Batalkan langkah "
-"terakhir Anda</gui></guiseq> atau <guiseq><gui style=\"menu\">Permainan</"
-"gui><gui style=\"menuitem\">Ulangi langkah</gui></guiseq>. Anda dapat "
-"membatalkan langkah terakhir atau ulangi langkah sebanyak pergerakan yang "
-"Anda inginkan tanpa pembatasan."
+"Untuk membatalkan atau mengulang gerakan, tekan <gui style=\"button\"><_:"
+"media-1/></gui> atau <gui style=\"button\"><_:media-2/></gui> di bilah "
+"header. Anda dapat membatalkan atau mengulang gerakan sebanyak yang Anda "
+"suka tanpa batasan."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Petunjuk"
 
 #. (itstool) path: page/p
-#: C/playing.page:21
+#: C/playing.page:23
 msgid ""
-"To get a hint on which cells to paint out, choose <guiseq><gui style=\"menu"
-"\">Game</gui><gui style=\"menuitem\">Hint</gui></guiseq>. A cell will be "
-"highlighted with a flashing red outline. This shows that the current status "
-"of the cell (painted or unpainted) is incorrect, and should be changed for "
-"the game to be won."
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
 msgstr ""
-"Untuk mendapatkan petujuk tentang sel mana yang akan diwarnai, pilih "
-"<guiseq><gui style=\"menu\">Permainan</gui><gui style=\"menuitem\">Petunjuk</"
-"gui></guiseq>. Sebuah sel akan disorot dengan garis merah berkedip. Hal ini "
-"menunjukkan bahwa status sel (diwarnai atau tidak diwarnai) tidak benar, dan "
-"harus diubah agar permainan bisa dimenangkan."
+"Untuk mendapatkan petunjuk tentang sel mana yang akan diwarnai, tekan <gui "
+"style=\"button\"><_:media-1/></gui> di bilah header. Sel akan diisyaratkan "
+"dengan garis merah berkedip. Ini menunjukkan bahwa status sel saat ini "
+"(dicat atau tidak dicat) salah, dan harus diubah agar permainan dimenangkan."
 
 #. (itstool) path: info/desc
 #: C/strategy.page:6
@@ -283,11 +315,11 @@ msgstr "Strategi Bermain Permainan"
 msgid ""
 "Hitori is quite similar to Sudoku, in that it takes logical deduction to "
 "work out which cells to paint out. One strategy is to use <key>Shift</key>-"
-"clicking to highlight all the repeated numbers in each <em>column</em>, then "
-"use <key>Ctrl</key>-clicking to highlight all the repeated numbers in each "
-"<em>row</em>."
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
 msgstr ""
-"Hitori sangat mirip dengan Sudoku, dibutuhkan deduksi logis untuk meyusun "
+"Hitori sangat mirip dengan Sudoku, dibutuhkan deduksi logis untuk menyusun "
 "sel yang akan mewarnai. Salah satu strategi adalah dengan menggunakan klik-"
 "<key>Shift</key> untuk menyorot semua nomor yang berulang di setiap "
 "<em>kolom</em>, kemudian gunakan klik-<key>Ctrl</key> untuk menyorot semua "
@@ -296,11 +328,11 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:13
 msgid ""
-"Once this is done for the entire board, the cells which have been "
-"highlighted both ways are good candidates for painting, although not always. "
-"When painting a cell, unhighlighting the other cells with the same number in "
-"the same row and column as that cell is a good way to keep track of which "
-"cells are still violating <link xref=\"game\">rule 1 of Hitori</link>."
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
 msgstr ""
 "Setelah hal ini dilakukan untuk seluruh papan, sel yang telah disorot dengan "
 "kedua cara adalah kandidat yang baik untuk diwarnai, meskipun tidak selalu. "
@@ -313,7 +345,7 @@ msgstr ""
 #: C/strategy.page:16
 msgid ""
 "Always bear in mind that rule 2 of Hitori means that two adjacent cells "
-"can't both be painted. <app>Hitori</app> will highlight in red the cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
 "which violate rule 2. Similarly, groups of cells which violate rule 3 by "
 "separating one or more unpainted cells from the other unpainted cells will "
 "be highlighted in red."
@@ -327,12 +359,10 @@ msgstr ""
 #. (itstool) path: page/p
 #: C/strategy.page:20
 msgid ""
-"If you get stuck at any point, choose <guiseq><gui style=\"menu\">Game</"
-"gui><gui style=\"menuitem\">Hint</gui></guiseq> for <app>Hitori</app> to "
-"flag a cell which should be painted or unpainted to move closer to a "
-"solution."
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
 msgstr ""
-"Jika Anda terjebak pada suatu titik, pilih <guiseq><gui style=\"menu"
-"\">Permainan</gui><gui style=\"menuitem\">Petunjuk</gui></guiseq> untuk "
-"<app>Hitori</app> untuk menandai sel yang harus diwarnai atau tidak diwarnai "
-"untuk bergerak lebih dekat ke solusi."
+"Jika Anda terjebak di titik mana pun, tekan <gui style=\"button\">Petunjuk</"
+"gui> di bilah header agar <app>Hitori</app> mengisyaratkan sel yang harus "
+"dicat atau tidak dicat untuk bergerak lebih dekat ke solusi."
