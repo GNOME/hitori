@@ -2,14 +2,14 @@
 # Copyright (C) 2012 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2012.
-# Yosef Or Boczko <yoseforb@gmail.com>, 2014-2020.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2014-2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
-"PO-Revision-Date: 2020-09-29 22:56+0300\n"
+"POT-Creation-Date: 2022-10-12 12:27+0000\n"
+"PO-Revision-Date: 2023-01-25 10:29+0200\n"
 "Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
 "Language-Team: Hebrew <yoseforb@gmail.com>\n"
 "Language: he\n"
@@ -20,9 +20,11 @@ msgstr ""
 "X-Poedit-Language: Hebrew\n"
 "X-Poedit-Country: ISRAEL\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Generator: Gtranslator 3.36.0\n"
+"X-Generator: Gtranslator 42.0\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "היטורי"
 
@@ -35,11 +37,6 @@ msgstr "לשחק במשחק החשיבה היטורי"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "תצרף;פאזל;משחק;לוגיקה;היגיון;הגיון;רשת;"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "היטורי GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -58,8 +55,8 @@ msgstr ""
 "לעזור להגיע לפתרון. אם נתקעת, ניתן לקבל רמז מהמשחק."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
-msgid "The GNOME Project"
-msgstr "מיזם GNOME"
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -72,19 +69,16 @@ msgid "Tag a cell"
 msgstr "תיוג תא"
 
 #: data/help-overlay.ui:30
-#| msgid "Undo your last move"
 msgctxt "shortcut window"
 msgid "Undo your last move"
 msgstr "ביטול המהלך האחרון שלך"
 
 #: data/help-overlay.ui:37
-#| msgid "Redo a move"
 msgctxt "shortcut window"
 msgid "Redo a move"
 msgstr "ביצוע חוזר של מהלך"
 
 #: data/help-overlay.ui:44
-#| msgid "Get a hint for your next move"
 msgctxt "shortcut window"
 msgid "Get a hint for your next move"
 msgstr "קבלת רמז למהלך הבא שלך"
@@ -100,7 +94,6 @@ msgid "Show Keyboard Shortcuts"
 msgstr "הצגת צירופי מקשים"
 
 #: data/help-overlay.ui:65
-#| msgid "_Quit"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr "יציאה"
@@ -110,7 +103,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "הצגת התפריט"
 
-#: data/hitori.ui:9 src/main.c:350
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "משחק _חדש"
 
@@ -139,7 +132,6 @@ msgid "_9×9"
 msgstr "_9×9"
 
 #: data/hitori.ui:41
-#| msgid "10×10"
 msgid "_10×10"
 msgstr "_10×10"
 
@@ -152,7 +144,6 @@ msgid "_Help"
 msgstr "ע_זרה"
 
 #: data/hitori.ui:58
-#| msgid "Hitori"
 msgid "_About Hitori"
 msgstr "_על אודות היטורי"
 
@@ -204,80 +195,80 @@ msgstr "Window size (width and height)."
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:194
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "1"
 msgstr "1"
 
-#: src/interface.c:195
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "2"
 msgstr "2"
 
-#: src/interface.c:196
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "3"
 msgstr "3"
 
-#: src/interface.c:197
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "4"
 msgstr "4"
 
-#: src/interface.c:198
+#: src/interface.c:205
 msgctxt "Board cell"
 msgid "5"
 msgstr "5"
 
-#: src/interface.c:199
+#: src/interface.c:206
 msgctxt "Board cell"
 msgid "6"
 msgstr "6"
 
-#: src/interface.c:200
+#: src/interface.c:207
 msgctxt "Board cell"
 msgid "7"
 msgstr "7"
 
-#: src/interface.c:201
+#: src/interface.c:208
 msgctxt "Board cell"
 msgid "8"
 msgstr "8"
 
-#: src/interface.c:202
+#: src/interface.c:209
 msgctxt "Board cell"
 msgid "9"
 msgstr "9"
 
-#: src/interface.c:203
+#: src/interface.c:210
 msgctxt "Board cell"
 msgid "10"
 msgstr "10"
 
-#: src/interface.c:204
+#: src/interface.c:211
 msgctxt "Board cell"
 msgid "11"
 msgstr "11"
 
-#: src/interface.c:722
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
 msgstr "לא ניתן להציג את תכני העזרה"
 
-#: src/interface.c:746
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "כל הזכויות שמורות © 2007–2010 Philip Withnall"
 
-#: src/interface.c:747
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "משחק חשיבה שתוכנן במקור על ידי ניקולי"
 
-#: src/interface.c:749
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr ""
 "ירון שהרבני <sh.yaron@gmail.com>\n"
 "יוסף אור בוצ׳קו <yoseforb@gnome.org>"
 
-#: src/interface.c:753
+#: src/interface.c:858
 msgid "Hitori Website"
 msgstr "האתר של היטורי"
 
@@ -301,11 +292,11 @@ msgstr "- Play a game of Hitori"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Command line options could not be parsed: %s\n"
 
-#: src/main.c:346
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
 msgstr "האם ברצונך לעצור את המשחק הנוכחי?"
 
-#: src/main.c:349
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "להמשיך _לשחק"
 
@@ -323,6 +314,12 @@ msgstr "י_ציאה"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "ל_שחק שוב"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "היטורי GNOME"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "מיזם GNOME"
 
 #~ msgid "5×5"
 #~ msgstr "5×5"
