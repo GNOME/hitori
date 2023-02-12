@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Iñaki Larrañaga Murgoitio <dooteo@zundan.com>, 2014, 2015, 2017.
-# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2019, 2020.
+# Asier Sarasua Garmendia <asiersarasua@ni.eus>, 2019, 2020, 2023s.
 #
 msgid ""
 msgstr "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
-"PO-Revision-Date: 2020-08-11 10:00+0100\n"
+"POT-Creation-Date: 2023-01-25 20:39+0000\n"
+"PO-Revision-Date: 2023-02-12 10:00+0100\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersarasua@ni.eus>\n"
 "Language-Team: Basque <librezale@librezale.eus>\n"
 "Language: eu\n"
@@ -18,7 +18,9 @@ msgstr "Project-Id-Version: hitori master\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -31,11 +33,6 @@ msgstr "Jokatu Hitori puzzlera"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzlea;jokoa;logika;sareta;"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "GNOME Hitori"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -51,8 +48,8 @@ msgid ""
 msgstr "Ordulariaren aurka jokatzen duzu, errenkada eta zutabe bakoitzean bikoiztutako zenbaki guztiak kentzen saiatuz ahalik eta azkarren. Hainbat tamainatako taulak daude, markatzaileak gelaxketan ezarri ditzakezu ebazpenean laguntzeko. Noraezean aurkitzen bazara, jokoak argibide bat eman dezake."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
-msgid "The GNOME Project"
-msgstr "GNOME proiektua"
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -99,7 +96,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "Txandakatu menua"
 
-#: data/hitori.ui:9 src/main.c:350
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "_Joko berria"
 
@@ -191,78 +188,78 @@ msgstr "Leihoaren tamaina (zabalera eta altuera)."
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:194
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "1"
 msgstr "1"
 
-#: src/interface.c:195
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "2"
 msgstr "2"
 
-#: src/interface.c:196
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "3"
 msgstr "3"
 
-#: src/interface.c:197
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "4"
 msgstr "4"
 
-#: src/interface.c:198
+#: src/interface.c:205
 msgctxt "Board cell"
 msgid "5"
 msgstr "5"
 
-#: src/interface.c:199
+#: src/interface.c:206
 msgctxt "Board cell"
 msgid "6"
 msgstr "6"
 
-#: src/interface.c:200
+#: src/interface.c:207
 msgctxt "Board cell"
 msgid "7"
 msgstr "7"
 
-#: src/interface.c:201
+#: src/interface.c:208
 msgctxt "Board cell"
 msgid "8"
 msgstr "8"
 
-#: src/interface.c:202
+#: src/interface.c:209
 msgctxt "Board cell"
 msgid "9"
 msgstr "9"
 
-#: src/interface.c:203
+#: src/interface.c:210
 msgctxt "Board cell"
 msgid "10"
 msgstr "10"
 
-#: src/interface.c:204
+#: src/interface.c:211
 msgctxt "Board cell"
 msgid "11"
 msgstr "11"
 
-#: src/interface.c:722
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
 msgstr "Ezin izan da laguntzaren edukia bistaratu"
 
-#: src/interface.c:746
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright-a © 2007–2010 Philip Withnall"
 
-#: src/interface.c:747
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Jatorrian Nikoli-k diseinatutako logika-puzzlea"
 
-#: src/interface.c:749
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr "Asier Sarasua Garmendia <asier.sarasua@gmail.com>"
 
-#: src/interface.c:753
+#: src/interface.c:858
 msgid "Hitori Website"
 msgstr "Hitoriren webgunea"
 
@@ -286,11 +283,11 @@ msgstr "- Jokatu Hitori jokora"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Ezin izan dira komando-lerroaren aukerak analizatu: %s\n"
 
-#: src/main.c:346
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
 msgstr "Uneko jokoa gelditzea nahi duzu?"
 
-#: src/main.c:349
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "Jarraitu _jokatzen"
 
@@ -308,6 +305,12 @@ msgstr "I_rten"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "Jokatu _berriro"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "GNOME Hitori"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "GNOME proiektua"
 
 #~ msgid "org.gnome.Hitori"
 #~ msgstr "org.gnome.Hitori"
