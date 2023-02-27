@@ -41,7 +41,8 @@
           [
             {
               "type": "git",
-              "url": "https://gitlab.gnome.org/GNOME/hitori.git"
+              "url": "https://gitlab.gnome.org/GNOME/hitori.git",
+              "branch": "main"
             }
           ]
       }
