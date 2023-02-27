@@ -39,7 +39,7 @@
             {
               "type": "git",
               "url": "https://gitlab.gnome.org/GNOME/hitori.git",
-              "branch": "gnome-3-22"
+              "branch": "gnome-3-38"
             }
           ]
       }
