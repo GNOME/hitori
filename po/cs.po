@@ -1,14 +1,14 @@
 # Czech translation for hitori.
 # Copyright (C) 2009 the author(s) of hitori.
 # This file is distributed under the same license as the hitori package.
-# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014, 2015, 2016, 2019, 2020.
+# Marek Černocký <marek@manet.cz>, 2009, 2010, 2013, 2014, 2015, 2016, 2019, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: hitori\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-05-31 06:33+0000\n"
-"PO-Revision-Date: 2020-08-13 00:43+0200\n"
+"POT-Creation-Date: 2023-01-25 20:39+0000\n"
+"PO-Revision-Date: 2023-03-02 19:24+0100\n"
 "Last-Translator: Marek Černocký <marek@manet.cz>\n"
 "Language-Team: čeština <gnome-cs-list@gnome.org>\n"
 "Language: cs\n"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Generator: Gtranslator 2.91.7\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -33,11 +35,6 @@ msgstr "Hrát logickou hru Hitori."
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "hlavolam;hra;logická;mřížka;"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "Hitori GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -57,8 +54,8 @@ msgstr ""
 "zaseknete, umí vám hra nabídnout radu."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
-msgid "The GNOME Project"
-msgstr "Projekt GNOME"
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -105,7 +102,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "Otevřít/zavřít nabídku"
 
-#: data/hitori.ui:9 src/main.c:350
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "_Nová hra"
 
@@ -197,78 +194,78 @@ msgstr "Velikost okna (šířka a výška)"
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:194
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "1"
 msgstr "1"
 
-#: src/interface.c:195
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "2"
 msgstr "2"
 
-#: src/interface.c:196
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "3"
 msgstr "3"
 
-#: src/interface.c:197
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "4"
 msgstr "4"
 
-#: src/interface.c:198
+#: src/interface.c:205
 msgctxt "Board cell"
 msgid "5"
 msgstr "5"
 
-#: src/interface.c:199
+#: src/interface.c:206
 msgctxt "Board cell"
 msgid "6"
 msgstr "6"
 
-#: src/interface.c:200
+#: src/interface.c:207
 msgctxt "Board cell"
 msgid "7"
 msgstr "7"
 
-#: src/interface.c:201
+#: src/interface.c:208
 msgctxt "Board cell"
 msgid "8"
 msgstr "8"
 
-#: src/interface.c:202
+#: src/interface.c:209
 msgctxt "Board cell"
 msgid "9"
 msgstr "9"
 
-#: src/interface.c:203
+#: src/interface.c:210
 msgctxt "Board cell"
 msgid "10"
 msgstr "10"
 
-#: src/interface.c:204
+#: src/interface.c:211
 msgctxt "Board cell"
 msgid "11"
 msgstr "11"
 
-#: src/interface.c:722
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
 msgstr "Nelze zobrazit obsah nápovědy"
 
-#: src/interface.c:746
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Copyright © 2007–2010 Philip Withnall"
 
-#: src/interface.c:747
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Logický hlavolam původně pocházející od Nikoli."
 
-#: src/interface.c:749
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr "Marek Černocký <marek@manet.cz>"
 
-#: src/interface.c:753
+#: src/interface.c:858
 msgid "Hitori Website"
 msgstr "Webové stránky Hitori"
 
@@ -292,11 +289,11 @@ msgstr "– hrát hru Hitori"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Nelze zpracovat přepínače příkazové řádky: %s\n"
 
-#: src/main.c:346
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
 msgstr "Opravdu chcete zastavit současnou hru?"
 
-#: src/main.c:349
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "_Pokračovat ve hře"
 
