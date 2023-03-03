@@ -54,6 +54,14 @@
   </requires>
   <translation type="gettext">hitori</translation>
   <releases>
+    <release version="44.0" date="2023-03-03" type="stable">
+      <description>
+        <ul>
+          <li>Remove GNOME branding as it’s not an official GNOME game any more.</li>
+          <li>Translation updates.</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.38.4" date="2022-04-04" type="stable">
       <description>
         <ul>
