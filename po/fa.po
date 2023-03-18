@@ -8,18 +8,20 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-07-03 15:34+0000\n"
-"PO-Revision-Date: 2020-08-31 06:48+0000\n"
+"POT-Creation-Date: 2023-01-25 20:39+0000\n"
+"PO-Revision-Date: 2023-03-18 04:06+0330\n"
 "Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: \n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.4.1\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.2.2\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "هیتوری"
 
@@ -32,11 +34,6 @@ msgstr "بازی پازلِ هیتوری را بازی کنید"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;پازل;بازی;منطق;شبکه;"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "گنوم هیتوری"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -57,8 +54,8 @@ msgstr ""
 "را راهنمایی کند."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
-msgid "The GNOME Project"
-msgstr "پروژهٔ گنوم"
+msgid "Philip Withnall"
+msgstr "فیلیپ ویت‌نال"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -105,7 +102,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "تغییر وضعیت فهرست"
 
-#: data/hitori.ui:9 src/main.c:350
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "_بازی جدید"
 
@@ -197,80 +194,80 @@ msgstr "اندازهٔ پنجره (پهنا و بلندا)"
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:194
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "1"
 msgstr "۱"
 
-#: src/interface.c:195
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "2"
 msgstr "۲"
 
-#: src/interface.c:196
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "3"
 msgstr "۳"
 
-#: src/interface.c:197
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "4"
 msgstr "۴"
 
-#: src/interface.c:198
+#: src/interface.c:205
 msgctxt "Board cell"
 msgid "5"
 msgstr "۵"
 
-#: src/interface.c:199
+#: src/interface.c:206
 msgctxt "Board cell"
 msgid "6"
 msgstr "۶"
 
-#: src/interface.c:200
+#: src/interface.c:207
 msgctxt "Board cell"
 msgid "7"
 msgstr "۷"
 
-#: src/interface.c:201
+#: src/interface.c:208
 msgctxt "Board cell"
 msgid "8"
 msgstr "۸"
 
-#: src/interface.c:202
+#: src/interface.c:209
 msgctxt "Board cell"
 msgid "9"
 msgstr "۹"
 
-#: src/interface.c:203
+#: src/interface.c:210
 msgctxt "Board cell"
 msgid "10"
 msgstr "۱۰"
 
-#: src/interface.c:204
+#: src/interface.c:211
 msgctxt "Board cell"
 msgid "11"
 msgstr "۱۱"
 
-#: src/interface.c:722
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
 msgstr "محتویات راهنما را نمی‌توان نمایش داد"
 
-#: src/interface.c:746
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "حق رونوشت © ۲۰۰۷-۲۰۱۰ فیلیپ ویتنال"
 
-#: src/interface.c:747
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "یک بازی پازل منطقی که نخستین بار به دست نیکولی ساخته شد"
 
-#: src/interface.c:749
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr ""
 "دانیال بهزادی <dani.behzi@ubuntu.com>\n"
 "آرش موسوی <mousavi.arash@gmail.com>"
 
-#: src/interface.c:753
+#: src/interface.c:858
 msgid "Hitori Website"
 msgstr "پایگاه وب هیتوری"
 
@@ -294,11 +291,11 @@ msgstr "- انجام یک بازی هیتوری"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "گزینه‌های خط فرمان را نمی‌توان تجزیه کرد: %s\n"
 
-#: src/main.c:346
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
 msgstr "می‌خواهید بازی فعلی را متوقّف کنید؟"
 
-#: src/main.c:349
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "_ادامهٔ بازی"
 
@@ -316,6 +313,12 @@ msgstr "_خروج"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_بازی دوباره"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "گنوم هیتوری"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "پروژهٔ گنوم"
 
 #~ msgid "org.gnome.Hitori"
 #~ msgstr "org.gnome.Hitori"
