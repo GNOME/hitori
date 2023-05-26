@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2022-10-12 12:27+0000\n"
+"POT-Creation-Date: 2023-03-26 16:09+0000\n"
 "PO-Revision-Date: 2023-01-22 14:38+0300\n"
 "Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <gnometurk@gnome.org>\n"
@@ -293,7 +293,7 @@ msgstr "- Hitori oyunu oyna"
 #: src/main.c:280
 #, c-format
 msgid "Command line options could not be parsed: %s\n"
-msgstr "Komut satırı seçenekleri ayrıştırılamadı: %s\n"
+msgstr "Komut satırı seçenekleri ayrıştırılamadı: %s\n"
 
 #: src/main.c:350
 msgid "Do you want to stop the current game?"
