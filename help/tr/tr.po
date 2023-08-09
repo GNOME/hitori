@@ -1,0 +1,368 @@
+# Turkish translation for hitori.
+# Copyright (C) 2023 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+#
+# Sabri Ünal <libreajans@gmail.com>, 2023.
+# Emin Tufan Çetin <etcetin@gmail.com>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori main\n"
+"POT-Creation-Date: 2023-02-28 18:25+0000\n"
+"PO-Revision-Date: 2023-03-01 03:20+0300\n"
+"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"Language-Team: Türkçe <gnome-turk@gnome.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Sabri Ünal <libreajans@gmail.com>, 2023.\n"
+"Emin Tufan Çetin <etcetin@gmail.com>, 2023."
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Oyunun nasıl göründüğünü ve oynandığını değiştirme."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Oyunu Özelleştirmek"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr ""
+"Oyun, tahta boyutunu değiştirerek özelleştirilebilir. Tahtalar 5 ila 10 "
+"hücre kare olabilir."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
+msgstr ""
+"Tahta boyutunu değiştirmek için, pencerenin sağ üst köşesindeki menü "
+"düğmesine basın ve <gui style=\"menuitem\">Tahta Boyutu</gui>'dan bir "
+"seçenek seçin. Eğer geçerli bir oyundaysanız, <app>Hitori</app> istenen "
+"tahta boyutuyla yeni bir oyun başlatmak için var olan oyunu durdurmak "
+"isteyip istemediğinizi soracaktır."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Hitori oyununa giriş."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Hitori Oyunu"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr ""
+"Hitori, Sudoku'ya benzer küçük bir mantık bulmacasıdır. Oyunda, oyuncu "
+"sayılardan oluşan bir kare tahtada başlar ve her satır ve sütunda "
+"tekrarlanan sayı kalmayana kadar hücreleri <em>boyamalıdır</em>. Aşağıdaki "
+"kurallar geçerlidir:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr ""
+"Her satır ve sütundaki boyanmamış hücrelerde her sayıdan yalnızca bir tane "
+"bulunmalıdır."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr "Boyanmış hiçbir hücre diğerine dikey yada yatay olarak bitişik olamaz."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr ""
+"Boyanmamış tüm hücreler, bir grupta dikey ve yatay olarak birleştirilmelidir."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr ""
+"Bunlar oyunun yalnızca üç kuralıdır ve bu nedenle Hitori yapboz tahtası için "
+"birden çok çözüm olabilir."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Ana oyun penceresi"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "<app>Hitori</app> ana penceresi"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "<app>Hitori</app> ana penceresi."
+
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Hitori Yardım"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Hitori Yardım"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Hitori Yardım"
+
+#. (itstool) path: credit/name
+#: C/index.page:11
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
+
+#. (itstool) path: credit/years
+#: C/index.page:13
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr ""
+"Bu çalışma <link href=\"http://creativecommons.org/licenses/by-sa/3.0/"
+"\">Creative Commons Attribution-Share Alike 3.0 Unported License</link> ile "
+"lisanslanmıştır."
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Hitori Yardım"
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Temel Oyun Oynama ve Kullanım"
+
+#. (itstool) path: section/title
+#: C/index.page:30
+msgid "Tips &amp; Tricks"
+msgstr "İpuçları ve İncelikler"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Bu çalışma <_:link-1/> ile lisanslanmıştır."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Oyun oynamak için <app>Hitori</app> kullanmak."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Oyun Oynamak"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
+msgstr ""
+"Yeni oyun başlatmak için, pencerenin sağ üst köşesindeki menü düğmesine "
+"basıp <gui style=\"menuitem\">Yeni Oyun</gui>'u seçin. Zaten oyun "
+"oynuyorsanız, <app>Hitori</app> var olan oyunu durdurup durdurmayacağınızı "
+"soracaktır."
+
+#. (itstool) path: page/p
+#: C/playing.page:13
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr ""
+"Hücreyi boyamak için üzerine tıklayın; aynı hücreyi tekrar boyamak için "
+"tekrar tıklayın. Hücreler, üç kuralın hiçbirinin ihlal edilmediği şekilde "
+"boyandığında oyun biter ve artık tahta düzenlenemez."
+
+#. (itstool) path: page/p
+#: C/playing.page:15
+msgid ""
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
+msgstr ""
+"<app>Hitori</app>, ayrıca tahtayı çözerken kendi referansınız için hücreleri "
+"etiketlemenizi sağlar. Bunu, <key>Ctrl</key> ya da <key>Shift</key> tuşunu "
+"basılı tutarak ve hücreye tıklayarak yapabilirsiniz. İkisi de hücreleri "
+"farklı şekilde etiketler ve hücreler aynı anda her iki şekilde de "
+"etiketlenebilir. Etiketlenmiş hücrelerin etiketleri, tekrar <key>Ctrl</key> "
+"ya da <key>Shift</key> tuşunu basılı tutup üzerlerine tıklanarak "
+"kaldırılabilir."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Geri Al"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Yinele"
+
+#. (itstool) path: page/p
+#: C/playing.page:19
+msgid ""
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
+msgstr ""
+"Hamleyi geri almak ya da yinelemek için, başlık çubuğundaki <gui "
+"style=\"button\"><_:media-1/></gui> ya da <gui style=\"button\"><_:media-2/"
+"></gui> düğmesine basın. Sınırsız sayıda hamleyi geri alabilir ya da "
+"yineleyebilirsiniz."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "İpucu"
+
+#. (itstool) path: page/p
+#: C/playing.page:23
+msgid ""
+"To get a hint on which cells to paint out, press <gui style=\"button\"><_:"
+"media-1/></gui> in the header bar. A cell will be hinted with a flashing red "
+"outline. This shows that the current status of the cell (painted or "
+"unpainted) is incorrect, and should be changed for the game to be won."
+msgstr ""
+"Hangi hücrelerin boyanacağı hakkında ipuçları almak için, başlık çubuğundaki "
+"<gui style=\"button\"><_:media-1/></gui> düğmesine basın. Bir hücre kırmızı "
+"çerçeveyle işaretlenecek ve yanıp sönecektir. Bu, hücrenin şu anki durumunun "
+"(boyanmış veya boyanmamış) yanlış olduğunu ve oyunun kazanılması için "
+"değiştirilmesi gerektiğini gösterir."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Hitori oynama stratejileri."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Oyun Oynama Stratejileri"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
+msgstr ""
+"Hitori, Sudoku'ya oldukça benzer, her ikisi de hangi hücreleri boyamak "
+"gerektiğini bilmek için mantıksal çıkarım gerektirir. Bir strateji, her "
+"<em>sütundaki</em> tekrarlanan tüm sayıları etiketlemek için <key>Shift</"
+"key>-tıklama kullanmak, ardından her <em>satırdaki</em> tekrarlanan tüm "
+"sayıları etiketlemek için <key>Ctrl</key>-tıklama kullanmaktır."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr ""
+"Bu, tahtanın tamamı için yapıldığında, her iki şekilde etiketlenen hücreler "
+"boyamak için iyi adaylardır, ancak her zaman değil. Bir hücre boyanırken, "
+"aynı sayıya sahip diğer hücreleri aynı satır ve sütunda etiketini kaldırmak, "
+"<link xref=\"game\">Hitori'nin 1. kuralını</link> hala ihlal eden hücreleri "
+"takip etmenin iyi bir yoludur."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr ""
+"Hitori'nin ikinci kuralını daima akılda tutun: bitişik iki hücre aynı renge "
+"boyanamaz. <app>Hitori</app>, 2. kuralı ihlal eden hücreleri kırmızı renkte "
+"vurgulayacaktır. Benzer şekilde, 3. kuralı ihlal eden hücre grupları, diğer "
+"boyanmamış hücrelerden bir veya daha fazlasını ayıran hücreler kırmızı "
+"renkte vurgulanacaktır."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
+msgstr ""
+"Eğer herhangi bir noktada takılırsanız, bir çözüme daha yakın olmak için "
+"hangi hücrenin boyanması veya boyanmaması gerektiği hakkında ipucu almak "
+"için <app>Hitori</app> başlık çubuğundaki <gui style=\"button\">İpucu</gui> "
+"düğmesine basın."
