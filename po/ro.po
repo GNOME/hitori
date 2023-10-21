@@ -7,10 +7,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori.master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2020-04-25 07:06+0000\n"
-"PO-Revision-Date: 2020-05-03 14:56+0300\n"
-"Last-Translator: Florentina Mușat <florentina.musat.28 [at] gmail [dot] "
-"com>\n"
+"POT-Creation-Date: 2023-01-25 20:39+0000\n"
+"PO-Revision-Date: 2023-10-21 16:45+0300\n"
+"Last-Translator: Florentina Mușat <florentina [dot] musat [dot] 28 [at] "
+"gmail [dot] com>\n"
 "Language-Team: Echipa de traducere în limba română Gnome România <gnomero-"
 "list@lists.sourceforge.net>\n"
 "Language: ro\n"
@@ -19,10 +19,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2);;\n"
-"X-Generator: Poedit 2.3\n"
+"X-Generator: Poedit 3.4\n"
 "X-Project-Style: gnome\n"
 
-#: data/org.gnome.Hitori.desktop.in:3 data/hitori.ui:68 src/main.c:101
+#. Translators: the name of the application as it appears in a software center
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
+#: data/hitori.ui:68 src/main.c:101
 msgid "Hitori"
 msgstr "Hitori"
 
@@ -35,11 +37,6 @@ msgstr "Joacă jocul de puzzle Hitori"
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;joc;logică;grilă;"
-
-#. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.appdata.xml.in:9
-msgid "GNOME Hitori"
-msgstr "Hitori GNOME"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
@@ -60,8 +57,8 @@ msgstr ""
 "să ofere un indiciu."
 
 #: data/org.gnome.Hitori.appdata.xml.in:41
-msgid "The GNOME Project"
-msgstr "Proiectul GNOME"
+msgid "Philip Withnall"
+msgstr "Philip Withnall"
 
 #: data/help-overlay.ui:16
 msgctxt "shortcut window"
@@ -108,7 +105,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "Comută meniul"
 
-#: data/hitori.ui:9 src/main.c:350
+#: data/hitori.ui:9 src/main.c:354
 msgid "_New Game"
 msgstr "Joc _nou"
 
@@ -200,80 +197,80 @@ msgstr "Dimensiunea ferestrei (lățime și înălțime)."
 #. * Translate it to your locale’s number system if you wish the game
 #. * board to be rendered in those digits. Otherwise, leave the digits as
 #. * Arabic numerals.
-#: src/interface.c:194
+#: src/interface.c:201
 msgctxt "Board cell"
 msgid "1"
 msgstr "1"
 
-#: src/interface.c:195
+#: src/interface.c:202
 msgctxt "Board cell"
 msgid "2"
 msgstr "2"
 
-#: src/interface.c:196
+#: src/interface.c:203
 msgctxt "Board cell"
 msgid "3"
 msgstr "3"
 
-#: src/interface.c:197
+#: src/interface.c:204
 msgctxt "Board cell"
 msgid "4"
 msgstr "4"
 
-#: src/interface.c:198
+#: src/interface.c:205
 msgctxt "Board cell"
 msgid "5"
 msgstr "5"
 
-#: src/interface.c:199
+#: src/interface.c:206
 msgctxt "Board cell"
 msgid "6"
 msgstr "6"
 
-#: src/interface.c:200
+#: src/interface.c:207
 msgctxt "Board cell"
 msgid "7"
 msgstr "7"
 
-#: src/interface.c:201
+#: src/interface.c:208
 msgctxt "Board cell"
 msgid "8"
 msgstr "8"
 
-#: src/interface.c:202
+#: src/interface.c:209
 msgctxt "Board cell"
 msgid "9"
 msgstr "9"
 
-#: src/interface.c:203
+#: src/interface.c:210
 msgctxt "Board cell"
 msgid "10"
 msgstr "10"
 
-#: src/interface.c:204
+#: src/interface.c:211
 msgctxt "Board cell"
 msgid "11"
 msgstr "11"
 
-#: src/interface.c:722
+#: src/interface.c:827
 msgid "The help contents could not be displayed"
 msgstr "Conținutul ajutorului nu a putut fi afișat"
 
-#: src/interface.c:746
+#: src/interface.c:851
 msgid "Copyright © 2007–2010 Philip Withnall"
 msgstr "Drepturi de autor © 2007–2010 Philip Withnall"
 
-#: src/interface.c:747
+#: src/interface.c:852
 msgid "A logic puzzle originally designed by Nikoli"
 msgstr "Un puzzle de logică proiectat de Nikoli"
 
-#: src/interface.c:749
+#: src/interface.c:854
 msgid "translator-credits"
 msgstr ""
 "Cristian Buzdugă <cristianbzdg@gmail.com>\n"
-"Florentina Mușat <emryslokadottir [at] gmail [dot] com>, 2019-2020"
+"Florentina Mușat <emryslokadottir [at] gmail [dot] com>, 2019-2020, 2023"
 
-#: src/interface.c:753
+#: src/interface.c:858
 msgid "Hitori Website"
 msgstr "Pagina de internet Hitori"
 
@@ -297,11 +294,11 @@ msgstr "- Porniți un joc de Hitori"
 msgid "Command line options could not be parsed: %s\n"
 msgstr "Opțiunile din linia de comandă nu au putut fi parsate: %s\n"
 
-#: src/main.c:346
+#: src/main.c:350
 msgid "Do you want to stop the current game?"
 msgstr "Doriți să opriți jocul curent?"
 
-#: src/main.c:349
+#: src/main.c:353
 msgid "Keep _Playing"
 msgstr "Continuați să _jucați"
 
@@ -319,6 +316,12 @@ msgstr "_Ieșire"
 #: src/rules.c:273
 msgid "_Play Again"
 msgstr "_Jucați din nou"
+
+#~ msgid "GNOME Hitori"
+#~ msgstr "Hitori GNOME"
+
+#~ msgid "The GNOME Project"
+#~ msgstr "Proiectul GNOME"
 
 #~ msgid "org.gnome.Hitori"
 #~ msgstr "org.gnome.Hitori"
