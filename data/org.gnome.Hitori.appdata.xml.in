@@ -35,7 +35,7 @@
   <url type="bugtracker">https://gitlab.gnome.org/GNOME/hitori/issues</url>
   <url type="donation">https://www.gnome.org/donate/</url>
   <url type="help">https://help.gnome.org/users/hitori/stable/</url>
-  <url type="translate">https://wiki.gnome.org/TranslationProject/LocalisationGuide</url>
+  <url type="translate">https://l10n.gnome.org/module/hitori/</url>
   <url type="vcs-browser">https://gitlab.gnome.org/GNOME/hitori</url>
   <update_contact>philip_at_tecnocode.co.uk</update_contact>
   <project_group>GNOME</project_group>
