@@ -11,16 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2023-03-26 16:09+0000\n"
-"PO-Revision-Date: 2023-01-22 14:38+0300\n"
-"Last-Translator: Sabri Ünal <libreajans@gmail.com>\n"
+"POT-Creation-Date: 2023-05-26 23:05+0000\n"
+"PO-Revision-Date: 2024-05-10 22:40+0300\n"
+"Last-Translator: Sabri Ünal <yakushabb@gmail.com>\n"
 "Language-Team: Turkish <gnometurk@gnome.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.4.3\n"
 
 #. Translators: the name of the application as it appears in a software center
 #: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
@@ -36,7 +36,7 @@ msgstr "Hitori bulmaca oyununu oynayın"
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
 #: data/org.gnome.Hitori.desktop.in:6
 msgid "puzzle;game;logic;grid;"
-msgstr "bulmaca;yapboz;oyun;mantık;ızgara;tablo;"
+msgstr "puzzle;game;logic;grid;bulmaca;yapboz;oyun;mantık;ızgara;tablo;"
 
 #. Translators: These are the application description paragraphs in the AppData file.
 #: data/org.gnome.Hitori.appdata.xml.in:16
