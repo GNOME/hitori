@@ -99,6 +99,7 @@ constructed (GObject *object)
 	textdomain (PACKAGE);
 
 	g_set_application_name (_("Hitori"));
+	g_set_prgname ("org.gnome.Hitori");
 	gtk_window_set_default_icon_name ("org.gnome.Hitori");
 
 	/* Chain up to the parent class */
