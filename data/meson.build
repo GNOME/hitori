@@ -1,5 +1,16 @@
 subdir('icons')
 
+service_conf = configuration_data()
+service_conf.set('bindir', join_paths(get_option('prefix'), get_option('bindir')))
+
+configure_file(
+  input: '@0@.service.in'.format(application_id),
+  output: '@0@.service'.format(application_id),
+  install: true,
+  install_dir: join_paths(get_option('datadir'), 'dbus-1', 'services'),
+  configuration: service_conf
+)
+
 desktop_file = i18n.merge_file(
   type: 'desktop',
   input: '@0@.desktop.in'.format(application_id),
