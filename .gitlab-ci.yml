@@ -9,7 +9,7 @@ build-and-test:
     - apt update -qq
     - apt install -y -qq build-essential meson pkg-config gtk-doc-tools
                          libxml2-utils gobject-introspection dbus
-                         libglib2.0-dev libgtk-3-dev appstream-util
+                         libglib2.0-dev libgtk-3-dev appstream
                          desktop-file-utils lcov gettext itstool
     - export LANG=C.UTF-8
   script:
