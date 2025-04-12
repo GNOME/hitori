@@ -18,6 +18,7 @@
  */
 
 #include <config.h>
+#include <locale.h>
 #include <stdlib.h>
 #include <gtk/gtk.h>
 #include <glib/gi18n.h>
@@ -33,7 +34,6 @@ static void set_property (GObject *object, guint property_id, const GValue *valu
 
 static void startup (GApplication *application);
 static void activate (GApplication *application);
-static gint handle_command_line (GApplication *application, GApplicationCommandLine *command_line);
 
 typedef struct {
 	/* Command line parameters. */
@@ -60,7 +60,6 @@ hitori_application_class_init (HitoriApplicationClass *klass)
 
 	gapplication_class->startup = startup;
 	gapplication_class->activate = activate;
-	gapplication_class->command_line = handle_command_line;
 
 	g_object_class_install_property (gobject_class, PROP_DEBUG,
 	                                 g_param_spec_boolean ("debug",
@@ -89,14 +88,28 @@ hitori_application_init (HitoriApplication *self)
 static void
 constructed (GObject *object)
 {
+	HitoriApplicationPrivate *priv;
+
+	priv = hitori_application_get_instance_private (HITORI_APPLICATION (object));
+
 	/* Set various properties up */
 	g_application_set_application_id (G_APPLICATION (object), "org.gnome.Hitori");
-	g_application_set_flags (G_APPLICATION (object), G_APPLICATION_HANDLES_COMMAND_LINE);
 
 	/* Localisation */
+	setlocale (LC_ALL, "");
 	bindtextdomain (PACKAGE, PACKAGE_LOCALE_DIR);
 	bind_textdomain_codeset (PACKAGE, "UTF-8");
 	textdomain (PACKAGE);
+
+	const GOptionEntry options[] = {
+		{ "debug", 0, 0, G_OPTION_ARG_NONE, &(priv->debug), N_("Enable debug mode"), NULL },
+		/* Translators: This means to choose a number as the "seed" for random number generation used when creating a board */
+		{ "seed", 0, 0, G_OPTION_ARG_INT, &(priv->seed), N_("Seed the board generation"), NULL },
+		{ NULL }
+	};
+
+	g_application_add_main_option_entries (G_APPLICATION (object), options);
+	g_application_set_option_context_parameter_string (G_APPLICATION (object), _("- Play a game of Hitori"));
 
 	g_set_application_name (_("Hitori"));
 	g_set_prgname ("org.gnome.Hitori");
@@ -240,56 +253,6 @@ activate (GApplication *application)
 
 	/* Bring it to the foreground */
 	gtk_window_present (GTK_WINDOW (self->window));
-}
-
-static gint
-handle_command_line (GApplication *application, GApplicationCommandLine *command_line)
-{
-	HitoriApplicationPrivate *priv = hitori_application_get_instance_private (HITORI_APPLICATION (application));
-	GOptionContext *context;
-	GError *error = NULL;
-	gchar **args, **argv;
-	gint argc, i, status = 0;
-
-	const GOptionEntry options[] = {
-		{ "debug", 0, 0, G_OPTION_ARG_NONE, &(priv->debug), N_("Enable debug mode"), NULL },
-		/* Translators: This means to choose a number as the "seed" for random number generation used when creating a board */
-		{ "seed", 0, 0, G_OPTION_ARG_INT, &(priv->seed), N_("Seed the board generation"), NULL },
-		{ NULL }
-	};
-
-	args = g_application_command_line_get_arguments (command_line, &argc);
-
-	/* We have to make an extra copy of the array, since g_option_context_parse() assumes that it can remove strings from the array without
-	 * freeing them. */
-	argv = g_new (gchar*, argc + 1);
-	for (i = 0; i <= argc; i++) {
-		argv[i] = args[i];
-	}
-
-	/* Options */
-	context = g_option_context_new (_("- Play a game of Hitori"));
-	g_option_context_set_translation_domain (context, PACKAGE);
-	g_option_context_add_main_entries (context, options, PACKAGE);
-
-	if (g_option_context_parse (context, &argc, &argv, &error) == TRUE) {
-		/* Activate the remote instance */
-		g_application_activate (application);
-		status = 0;
-	} else {
-		/* Print an error */
-		g_application_command_line_printerr (command_line, _("Command line options could not be parsed: %s\n"), error->message);
-		g_error_free (error);
-
-		status = 1;
-	}
-
-	g_option_context_free (context);
-
-	g_free (argv);
-	g_strfreev (args);
-
-	return status;
 }
 
 HitoriApplication *
