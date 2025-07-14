@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2014 Philip Withnall <philip@tecnocode.co.uk> -->
-<component type="desktop">
+<component type="desktop-application">
   <id>org.gnome.Hitori</id>
   <metadata_license>CC-BY-SA-3.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
@@ -12,7 +12,7 @@
   <summary>Play the Hitori puzzle game</summary>
   <description>
 
-    <!-- Translators: These are the application description paragraphs in the AppData file. -->
+    <!-- Translators: These are the application description paragraphs in the Metainfo file. -->
     <p>Hitori is a logic game similar to the popular game of Sudoku.</p>
     <p>
       You play the game against the clock, aiming to eliminate all the duplicate
