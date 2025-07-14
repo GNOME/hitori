@@ -20,9 +20,9 @@ if desktop_file_validate.found()
   )
 endif
 
-appdata_file = i18n.merge_file(
-  input: '@0@.appdata.xml.in'.format(application_id),
-  output: '@0@.appdata.xml'.format(application_id),
+metainfo_file = i18n.merge_file(
+  input: '@0@.metainfo.xml.in'.format(application_id),
+  output: '@0@.metainfo.xml'.format(application_id),
   po_dir: join_paths(meson.source_root(), 'po'),
   install: true,
   install_dir: join_paths(get_option('datadir'), 'metainfo'),
@@ -31,9 +31,9 @@ appdata_file = i18n.merge_file(
 appstreamcli = find_program('appstreamcli', required: false)
 if appstreamcli.found()
   test(
-    'validate-appdata', appstreamcli,
+    'validate-metainfo', appstreamcli,
     args: [
-      'validate', '--no-net', '--explain', appdata_file.full_path(),
+      'validate', '--no-net', '--explain', metainfo_file.full_path(),
     ],
   )
 endif

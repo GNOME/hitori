@@ -12,7 +12,7 @@
   <summary>Play the Hitori puzzle game</summary>
   <description>
 
-    <!-- Translators: These are the application description paragraphs in the AppData file. -->
+    <!-- Translators: These are the application description paragraphs in the Metainfo file. -->
     <p>Hitori is a logic game similar to the popular game of Sudoku.</p>
     <p>
       You play the game against the clock, aiming to eliminate all the duplicate
