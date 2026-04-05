@@ -1,0 +1,305 @@
+# Serbian translation for hitori.
+# Copyright (C) 2026 hitori's COPYRIGHT HOLDER
+# This file is distributed under the same license as the hitori package.
+# Марко Костић <marko.m.kostic@gmail.com>,  2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: hitori main\n"
+"POT-Creation-Date: 2026-04-02 14:17+0000\n"
+"PO-Revision-Date: 2026-04-05 06:53+0200\n"
+"Last-Translator: Марко Костић <marko.m.kostic@gmail.com>\n"
+"Language-Team: Serbian <Serbian>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1? 3 : n%10==1 && n%100!=11 ? 0 : "
+"n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Poedit 3.9\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Марко Костић <marko.m.kostic@gmail.com>\n"
+"Превод на српски језик https://гном.срб"
+
+#. (itstool) path: info/desc
+#: C/customization.page:6
+msgid "Changing how the game appears and plays."
+msgstr "Мењање изгледа и начина играња игре."
+
+#. (itstool) path: page/title
+#: C/customization.page:8
+msgid "Customizing the Game"
+msgstr "Прилагођавање игре"
+
+#. (itstool) path: page/p
+#: C/customization.page:10
+msgid ""
+"The game can be customized by changing the board size — boards from 5–10 "
+"cells square are allowed."
+msgstr "Игра се може прилагодити мењањем величине табле — дозвољене су табле величине од 5–10 поља."
+
+#. (itstool) path: page/p
+#: C/customization.page:11
+msgid ""
+"To change the board size, press the menu button in the top-right corner of "
+"the window, and select an option from <gui style=\"menuitem\">Board Size</"
+"gui>. <app>Hitori</app> will ask if you want to stop the current game if "
+"you’re in the middle of one, then start a new game with the requested board "
+"size."
+msgstr "Да бисте променили величину табле, притисните дугме менија у горњем десном углу прозора и изаберите опцију из ставке <gui style=\"menuitem\">Величина табле</gui>. <app>Хитори</app> ће вас питати да ли желите да прекинете тренутну игру ако сте усред ње, а затим ће започети нову игру са траженом величином табле."
+
+#. (itstool) path: info/desc
+#: C/game.page:6
+msgid "Introduction to the game of Hitori."
+msgstr "Увод у игру Хитори."
+
+#. (itstool) path: page/title
+#: C/game.page:8
+msgid "Hitori the Game"
+msgstr "Игра Хитори"
+
+#. (itstool) path: page/p
+#: C/game.page:10
+msgid ""
+"Hitori is a small logic puzzle in a similar vein to the more popular Sudoku. "
+"In the game, the player starts with a square board of numbers, and has to "
+"<em>paint out</em> cells until there are no duplicate numbers in each row "
+"and column. The following rules apply:"
+msgstr "Хитори је мала логичка слагалица слична популарном Судокуу. У овој игри, играч почиње са квадратном таблом са бројевима и мора да <em>прецрта</em> поља све док не преостане ниједан исти број у сваком реду и колони. Важе следећа правила:"
+
+#. (itstool) path: item/p
+#: C/game.page:13
+msgid ""
+"There must only be one of each number in the unpainted cells in each row and "
+"column."
+msgstr "Сваки број се сме појавити само једном у непрецртаним пољима у сваком реду и колони."
+
+#. (itstool) path: item/p
+#: C/game.page:14
+msgid "No painted cell may be adjacent to another, vertically or horizontally."
+msgstr "Ниједно прецртано поље не сме бити суседно другом, усправно или водоравно."
+
+#. (itstool) path: item/p
+#: C/game.page:15
+msgid ""
+"All the unpainted cells must be joined together vertically and horizontally "
+"in one group."
+msgstr "Сва непрецртана поља морају бити међусобно повезана усправно и водоравно у једну групу."
+
+#. (itstool) path: page/p
+#: C/game.page:17
+msgid ""
+"These are the only three rules of the game, and so there may well be "
+"multiple solutions to a Hitori puzzle board."
+msgstr "Ово су једина три правила игре, па тако може бити више решења за једну таблу Хитори слагалице."
+
+#. (itstool) path: figure/title
+#: C/game.page:20
+msgid "Main game window"
+msgstr "Главни прозор игре"
+
+#. (itstool) path: figure/desc
+#: C/game.page:21
+msgid "<app>Hitori</app> main window"
+msgstr "Главни прозор <app>Хиторија</app>"
+
+#. (itstool) path: figure/media
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/game.page:22
+msgctxt "_"
+msgid ""
+"external ref='figures/hitori_main_window.png' "
+"md5='7aa0ef330099fdc2b2d9b93b19393033'"
+msgstr "external ref='figures/hitori_main_window.png' md5='7aa0ef330099fdc2b2d9b93b19393033'"
+
+#. (itstool) path: media/p
+#: C/game.page:23
+msgid "<app>Hitori</app> main window."
+msgstr "Главни прозор <app>Хиторија</app>."
+
+#. (itstool) path: info/title
+#: C/index.page:4
+msgctxt "link:trail"
+msgid "Hitori Help"
+msgstr "Помоћ за Хитори"
+
+#. (itstool) path: info/title
+#: C/index.page:5
+msgctxt "text"
+msgid "Hitori Help"
+msgstr "Помоћ за Хитори"
+
+#. (itstool) path: info/title
+#: C/index.page:6
+msgctxt "link"
+msgid "Hitori Help"
+msgstr "Помоћ за Хитори"
+
+#. (itstool) path: credit/name
+#: C/index.page:11
+msgid "Philip Withnall"
+msgstr "Филип Витнал"
+
+#. (itstool) path: credit/years
+#: C/index.page:13
+msgid "2008–2010, 2019"
+msgstr "2008–2010, 2019"
+
+#. (itstool) path: license/p
+#: C/index.page:16
+msgid ""
+"This work is licensed under a <link href=\"http://creativecommons.org/"
+"licenses/by-sa/3.0/\">Creative Commons Attribution-Share Alike 3.0 Unported "
+"License</link>."
+msgstr "Овај рад је лиценциран под <link href=\"http://creativecommons.org/licenses/by-sa/3.0/\">Creative Commons Ауторство-Делити под истим условима 3.0 нелокализованом лиценцом</link>."
+
+#. (itstool) path: page/title
+#: C/index.page:20
+msgid "<_:media-1/> Hitori Help"
+msgstr "<_:media-1/> Помоћ за Хитори"
+
+#. (itstool) path: section/title
+#: C/index.page:26
+msgid "Basic Gameplay &amp; Usage"
+msgstr "Основе игре и употреба"
+
+#. (itstool) path: section/title
+#: C/index.page:30
+msgid "Tips &amp; Tricks"
+msgstr "Савети и трикови"
+
+#. (itstool) path: p/link
+#: C/legal.xml:5
+msgid "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+msgstr "Creative Commons Attribution-ShareAlike 3.0 Unported License"
+
+#. (itstool) path: license/p
+#: C/legal.xml:4
+msgid "This work is licensed under a <_:link-1/>."
+msgstr "Овај рад је лиценциран под <_:link-1/>."
+
+#. (itstool) path: info/desc
+#: C/playing.page:6
+msgid "Using <app>Hitori</app> to play a game."
+msgstr "Коришћење <app>Хиторија</app> за играње игре."
+
+#. (itstool) path: page/title
+#: C/playing.page:8
+msgid "Playing a Game"
+msgstr "Играње игре"
+
+#. (itstool) path: page/p
+#: C/playing.page:10
+msgid ""
+"To start a new game, press the menu button in the top-right corner of the "
+"window, and select <gui style=\"menuitem\">New Game</gui>. If you are "
+"already playing a game, <app>Hitori</app> will ask if you want to stop the "
+"current game."
+msgstr "Да бисте започели нову игру, притисните дугме менија у горњем десном углу прозора и изаберите <gui style=\"menuitem\">Нова игра</gui>. Ако већ играте игру, <app>Хитори</app> ће вас питати да ли желите да прекинете тренутну игру."
+
+#. (itstool) path: page/p
+#: C/playing.page:13
+msgid ""
+"To paint a cell, click on it; to unpaint it again, click on it again. When "
+"cells are painted such that none of the three rules are broken, the game "
+"will end and the board may no longer be manipulated."
+msgstr "Да бисте обојили поље, кликните на њега; да бисте га поново одбојили, кликните поново на њега. Када су поља обојена тако да ниједно од три правила није прекршено, игра ће се завршити и таблом се више не може управљати."
+
+#. (itstool) path: page/p
+#: C/playing.page:15
+msgid ""
+"<app>Hitori</app> also allows you to tag cells for your own reference when "
+"solving a board. This can be achieved by holding <key>Ctrl</key> or "
+"<key>Shift</key> and clicking on a cell. They both tag cells differently, "
+"and cells can be tagged in both manners at the same time. Tagged cells can "
+"be un-tagged by clicking on them again while holding either <key>Ctrl</key> "
+"or <key>Shift</key> again."
+msgstr "<app>Хитори</app> вам такође омогућава да означите поља ради сопствене напомене приликом решавања табле. Ово се може постићи држањем тастера <key>Ctrl</key> или <key>Shift</key> и кликом на поље. Оба тастера означавају поља различито, а поља могу бити означена на оба начина истовремено. Означена поља се могу одзначити поновним кликом на њих док поново држите или <key>Ctrl</key> или <key>Shift</key>."
+
+#. (itstool) path: media/span
+#: C/playing.page:19
+msgid "Undo"
+msgstr "Поништи"
+
+#. (itstool) path: media/span
+#: C/playing.page:20
+msgid "Redo"
+msgstr "Понови"
+
+#. (itstool) path: page/p
+#: C/playing.page:19
+msgid ""
+"To undo or redo a move, press <gui style=\"button\"><_:media-1/></gui> or "
+"<gui style=\"button\"><_:media-2/></gui> in the header bar. You may undo or "
+"redo as many moves as you like without restriction."
+msgstr "Да бисте опозвали или поновили потез, притисните <gui style=\"button\"><_:media-1/></gui> или <gui style=\"button\"><_:media-2/></gui> у траци заглавља. Можете опозвати или поновити онолико потеза колико желите без ограничења."
+
+#. (itstool) path: media/span
+#: C/playing.page:23
+msgid "Hint"
+msgstr "Помоћ"
+
+#. (itstool) path: page/p
+#: C/playing.page:23
+msgid ""
+"To get a hint on which cells to paint out, press <gui "
+"style=\"button\"><_:media-1/></gui> in the header bar. A cell will be hinted "
+"with a flashing red outline. This shows that the current status of the cell "
+"(painted or unpainted) is incorrect, and should be changed for the game to "
+"be won."
+msgstr "Да бисте добили савет о томе која поља треба обојити, притисните <gui style=\"button\"><_:media-1/></gui> у траци заглавља. Поље ће бити назначено трепћућом црвеном контуром. Ово показује да је тренутно стање поља (обојено или необојено) нетачно и да га треба променити да бисте победили у игри."
+
+#. (itstool) path: info/desc
+#: C/strategy.page:6
+msgid "Strategies for playing Hitori."
+msgstr "Стратегије за играње Хиторија."
+
+#. (itstool) path: page/title
+#: C/strategy.page:8
+msgid "Gameplay Strategies"
+msgstr "Стратегије за игру"
+
+#. (itstool) path: page/p
+#: C/strategy.page:10
+msgid ""
+"Hitori is quite similar to Sudoku, in that it takes logical deduction to "
+"work out which cells to paint out. One strategy is to use <key>Shift</key>-"
+"clicking to tag all the repeated numbers in each <em>column</em>, then use "
+"<key>Ctrl</key>-clicking to tag all the repeated numbers in each <em>row</"
+"em>."
+msgstr "Хитори је прилично сличан Судокуу, по томе што је потребна логичка дедукција да би се открило која поља треба обојити. Једна стратегија је коришћење <key>Shift</key>-клика за означавање свих поновљених бројева у свакој <em>колони</em>, а затим коришћење <key>Ctrl</key>-клика за означавање свих поновљених бројева у сваком <em>реду</em>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:13
+msgid ""
+"Once this is done for the entire board, the cells which have been tagged "
+"both ways are good candidates for painting, although not always. When "
+"painting a cell, un-tagging the other cells with the same number in the same "
+"row and column as that cell is a good way to keep track of which cells are "
+"still violating <link xref=\"game\">rule 1 of Hitori</link>."
+msgstr "Када се ово уради за целу таблу, поља која су означена на оба начина су добри кандидати за бојење, иако не увек. Приликом бојења поља, одзначавање осталих поља са истим бројем у истом реду и колони као то поље је добар начин да пратите која поља и даље крше <link xref=\"game\">1. правило Хиторија</link>."
+
+#. (itstool) path: page/p
+#: C/strategy.page:16
+msgid ""
+"Always bear in mind that rule 2 of Hitori means that two adjacent cells "
+"can’t both be painted. <app>Hitori</app> will highlight in red the cells "
+"which violate rule 2. Similarly, groups of cells which violate rule 3 by "
+"separating one or more unpainted cells from the other unpainted cells will "
+"be highlighted in red."
+msgstr "Увек имајте на уму да 2. правило Хиторија значи да два суседна поља не могу оба бити обојена. <app>Хитори</app> ће црвеном бојом истаћи поља која крше 2. правило. Слично томе, групе поља које крше 3. правило одвајањем једног или више необојених поља од осталих необојених поља биће истакнуте црвеном бојом."
+
+#. (itstool) path: page/p
+#: C/strategy.page:20
+msgid ""
+"If you get stuck at any point, press <gui style=\"button\">Hint</gui> in the "
+"header bar for <app>Hitori</app> to hint a cell which should be painted or "
+"unpainted to move closer to a solution."
+msgstr "Ако се у било ком тренутку заглавите, притисните <gui style=\"button\">Савет</gui> у траци заглавља да би <app>Хитори</app> назначио поље које треба обојити или одбојити како бисте се приближили решењу."
