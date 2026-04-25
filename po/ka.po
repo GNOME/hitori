@@ -1,53 +1,58 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Georgian translation for hitori.
+# Copyright (C) 2025 hitori's authors
+# This file is distributed under the same license as the hitori package.
+# Ekaterine Papava <papava.e@gtu.ge>,  2025 2026.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: hitori master\n"
 "Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/hitori/issues\n"
-"POT-Creation-Date: 2022-10-12 12:27+0000\n"
-"PO-Revision-Date: 2022-11-24 19:14+0100\n"
-"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"POT-Creation-Date: 2025-12-10 14:19+0000\n"
+"PO-Revision-Date: 2026-04-25 11:50+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
 "Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2\n"
+"X-Generator: Poedit 3.9\n"
 
 #. Translators: the name of the application as it appears in a software center
-#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.appdata.xml.in:9
-#: data/hitori.ui:68 src/main.c:101
+#: data/org.gnome.Hitori.desktop.in:2 data/org.gnome.Hitori.metainfo.xml.in:9
+#: data/hitori.ui:68 src/main.c:114
 msgid "Hitori"
 msgstr "Hitori"
 
 #. Translators: the brief summary of the application as it appears in a software center.
-#: data/org.gnome.Hitori.desktop.in:4 data/org.gnome.Hitori.appdata.xml.in:12
+#: data/org.gnome.Hitori.desktop.in:3 data/org.gnome.Hitori.metainfo.xml.in:12
 msgid "Play the Hitori puzzle game"
 msgstr "- ითამაშეთ Hitori პაზლი"
 
 #. Translators: Search terms to find this application. Do NOT translate or localise the semicolons! The list MUST also end with a semicolon!
-#: data/org.gnome.Hitori.desktop.in:6
+#: data/org.gnome.Hitori.desktop.in:5
 msgid "puzzle;game;logic;grid;"
 msgstr "puzzle;game;logic;grid;"
 
-#. Translators: These are the application description paragraphs in the AppData file.
-#: data/org.gnome.Hitori.appdata.xml.in:16
+#. Translators: These are the application description paragraphs in the Metainfo file.
+#: data/org.gnome.Hitori.metainfo.xml.in:16
 msgid "Hitori is a logic game similar to the popular game of Sudoku."
-msgstr ""
+msgstr "Hitori პოპულარული თამაშის, სუდოკუს მსგავსია."
 
-#: data/org.gnome.Hitori.appdata.xml.in:17
+#: data/org.gnome.Hitori.metainfo.xml.in:17
 msgid ""
 "You play the game against the clock, aiming to eliminate all the duplicate "
 "numbers in each row and column in the fastest time. Multiple sizes of game "
 "board are supported, and you can place markers on cells to help work out the "
 "solution. If you get stuck, the game can give you a hint."
 msgstr ""
+"შეგიძლიათ, დროის ამოწურვაზე ითამაშოთ და ეცადოთ, რაც შეიძლება, მეტი "
+"გამეორებადი რიცხვი გააქროთ თითოეული მწკრივიდან და სვეტიდან უმცირეს დროში. "
+"მხარდაჭერილია სათამაშო მაგიდის მრავალი ზომა და შეგიძლიათ, უჯრედებზე "
+"მარკერები მოათავსოთ ამოხსნის დასახმარებლად. თუ გაიჭედებით, თამაშს შეუძლია, "
+"მინიშნება მოგცეთ."
 
-#: data/org.gnome.Hitori.appdata.xml.in:41
+#: data/org.gnome.Hitori.metainfo.xml.in:42
 msgid "Philip Withnall"
 msgstr "Philip Withnall"
 
@@ -96,7 +101,7 @@ msgctxt "shortcut window"
 msgid "Toggle Menu"
 msgstr "მენიუს ჩართ/გამორთ"
 
-#: data/hitori.ui:9 src/main.c:354
+#: data/hitori.ui:9 src/main.c:318
 msgid "_New Game"
 msgstr "ახალი თამაში"
 
@@ -263,31 +268,24 @@ msgstr "თარგმანი-შესრულებულია"
 msgid "Hitori Website"
 msgstr "Hitori -ის ვებგვერდი"
 
-#: src/main.c:254
+#: src/main.c:105
 msgid "Enable debug mode"
 msgstr "გამართვის გამოტანის ჩართვა"
 
 #. Translators: This means to choose a number as the "seed" for random number generation used when creating a board
-#: src/main.c:256
+#: src/main.c:107
 msgid "Seed the board generation"
-msgstr ""
+msgstr "თესლი დაფის გენერაციისთვის"
 
-#. Options
-#: src/main.c:270
+#: src/main.c:112
 msgid "- Play a game of Hitori"
 msgstr "- ითამაშეთ Hitori"
 
-#. Print an error
-#: src/main.c:280
-#, c-format
-msgid "Command line options could not be parsed: %s\n"
-msgstr ""
-
-#: src/main.c:350
+#: src/main.c:314
 msgid "Do you want to stop the current game?"
 msgstr "გნებავთ, შეაჩეროთ მიმდინარე თამაში?"
 
-#: src/main.c:353
+#: src/main.c:317
 msgid "Keep _Playing"
 msgstr "_თამაშის გაგრძელება"
 
@@ -296,7 +294,7 @@ msgstr "_თამაშის გაგრძელება"
 #: src/rules.c:267
 #, c-format
 msgid "You’ve won in a time of %02u:%02u!"
-msgstr ""
+msgstr "თქვენ მოიგეთ თამაში დროში: %02u:%02u!"
 
 #: src/rules.c:272
 msgid "_Quit"
